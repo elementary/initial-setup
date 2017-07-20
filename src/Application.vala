@@ -22,8 +22,9 @@ public class InitialSetup.Application : Gtk.Application {
     }
 
     protected override void activate () {
-        if (get_windows ().length () > 0) {
-            get_windows ().data.present ();
+        unowned List<Gtk.Window> windows = get_windows ();
+        if (windows.length () > 0) {
+            windows.data.present ();
             return;
         }
 
