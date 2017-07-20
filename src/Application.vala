@@ -17,8 +17,10 @@
 
 public class InitialSetup.Application : Gtk.Application {
     public Application () {
-        Object (application_id: "io.elementary.initial-setup",
-        flags: ApplicationFlags.FLAGS_NONE);
+        Object (
+            application_id: "io.elementary.initial-setup",
+            flags: ApplicationFlags.FLAGS_NONE
+        );
     }
 
     protected override void activate () {
