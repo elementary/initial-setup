@@ -19,8 +19,21 @@ public class InitialSetup.MainWindow : Gtk.Window {
     public MainWindow (Gtk.Application application) {
         Object (
             application: application,
+            deletable: false,
             height_request: 640,
+            resizable: false,
             width_request: 910
         );
+    }
+
+    construct {
+        var finish_button = new Gtk.Button.with_label ("Finish");
+        finish_button.halign = Gtk.Align.CENTER;
+        finish_button.valign = Gtk.Align.CENTER;
+        finish_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+
+        add (finish_button);
+
+        finish_button.clicked.connect (() => application.quit ());
     }
 }
