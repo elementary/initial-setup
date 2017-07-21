@@ -27,7 +27,7 @@ public class InitialSetup.MainWindow : Gtk.Window {
     }
 
     construct {
-        var finish_button = new Gtk.Button.with_label ("Finish");
+        var finish_button = new Gtk.Button.with_label (_("Finish"));
         finish_button.halign = Gtk.Align.CENTER;
         finish_button.valign = Gtk.Align.CENTER;
         finish_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
