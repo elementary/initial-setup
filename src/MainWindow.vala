@@ -28,7 +28,9 @@ public class InitialSetup.MainWindow : Gtk.Window {
 
     construct {
         var account_view = new AccountView ();
-        account_view.expand = true;
+        account_view.halign = Gtk.Align.CENTER;
+        account_view.hexpand = true;
+        account_view.vexpand = true;
 
         var finish_button = new Gtk.Button.with_label (_("Finish"));
         finish_button.halign = Gtk.Align.END;
