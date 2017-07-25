@@ -19,6 +19,7 @@ public class InitialSetup.AccountView : Gtk.Grid {
     private Gtk.Entry confirm_entry;
     private Gtk.Entry pw_entry;
     private Gtk.Label confirm_label;
+    private Gtk.LevelBar pw_levelbar;
 
     public AccountView () {
         Object (
@@ -44,7 +45,7 @@ public class InitialSetup.AccountView : Gtk.Grid {
         pw_entry = new Gtk.Entry ();
         pw_entry.visibility = false;
 
-        var pw_levelbar = new Gtk.LevelBar ();
+        pw_levelbar = new Gtk.LevelBar ();
         pw_levelbar = new Gtk.LevelBar.for_interval (0.0, 100.0);
         pw_levelbar.set_mode (Gtk.LevelBarMode.CONTINUOUS);
         pw_levelbar.add_offset_value ("low", 50.0);
@@ -74,10 +75,21 @@ public class InitialSetup.AccountView : Gtk.Grid {
     }
 
     private void check_password () {
+        var pwquality = new PasswordQuality.Settings ();
+        void* error;
+        var quality = pwquality.check (pw_entry.text, null, null, out error);
+
+        if (quality >= 0) {
+            pw_levelbar.value = quality;
+        } else {
+            pw_levelbar.value = 0;
+        }
+
         if (pw_entry.text != "") {
             confirm_entry.sensitive = true;
             confirm_label.sensitive = true;
         } else {
+            confirm_entry.text = "";
             confirm_entry.sensitive = false;
             confirm_label.sensitive = false;
         }
