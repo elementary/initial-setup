@@ -27,12 +27,23 @@ public class InitialSetup.MainWindow : Gtk.Window {
     }
 
     construct {
+        var account_view = new AccountView ();
+        account_view.halign = Gtk.Align.CENTER;
+        account_view.hexpand = true;
+        account_view.vexpand = true;
+
         var finish_button = new Gtk.Button.with_label (_("Finish"));
-        finish_button.halign = Gtk.Align.CENTER;
-        finish_button.valign = Gtk.Align.CENTER;
+        finish_button.halign = Gtk.Align.END;
         finish_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
-        add (finish_button);
+        var grid = new Gtk.Grid ();
+        grid.margin = 12;
+        grid.margin_top = 0;
+        grid.orientation = Gtk.Orientation.VERTICAL;
+        grid.add (account_view);
+        grid.add (finish_button);
+
+        add (grid);
 
         var css_provider = new Gtk.CssProvider ();
         css_provider.load_from_resource ("io/elementary/initial-setup/application.css");
