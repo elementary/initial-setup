@@ -80,18 +80,22 @@ public class InitialSetup.AccountView : Gtk.Grid {
         var quality = pwquality.check (pw_entry.text, null, null, out error);
 
         if (quality >= 0) {
-            pw_levelbar.value = quality;
-        } else {
-            pw_levelbar.value = 0;
-        }
-
-        if (pw_entry.text != "") {
             confirm_entry.sensitive = true;
             confirm_label.sensitive = true;
+
+            pw_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-completed-symbolic");
+            pw_entry.tooltip_text = null;
+
+            pw_levelbar.value = quality;
         } else {
             confirm_entry.text = "";
             confirm_entry.sensitive = false;
             confirm_label.sensitive = false;
+
+            pw_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
+            pw_entry.tooltip_text = ((PasswordQuality.Error) quality).to_string (error);
+
+            pw_levelbar.value = 0;
         }
 
         if (confirm_entry.text != "") {
