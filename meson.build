@@ -8,6 +8,8 @@ asresources = gnome.compile_resources(
     c_name: 'as'
 )
 
+add_global_arguments('-DGETTEXT_PACKAGE="io.elementary.initial-setup"', language:'c')
+
 executable(
     meson.project_name(),
     'src/Application.vala',
