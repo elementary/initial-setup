@@ -34,6 +34,10 @@ public class InitialSetup.MainWindow : Gtk.Window {
 
         add (finish_button);
 
+        var css_provider = new Gtk.CssProvider ();
+        css_provider.load_from_resource ("io/elementary/initial-setup/application.css");
+        Gtk.StyleContext.add_provider_for_screen (get_screen (), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+
         finish_button.clicked.connect (() => application.quit ());
     }
 }
