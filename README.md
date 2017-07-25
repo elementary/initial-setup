@@ -5,6 +5,7 @@ An onboarding app for new installations
 
 You'll need the following dependencies:
 * libgtk-3-dev
+* libpwquality-dev
 * meson
 * valac
 
