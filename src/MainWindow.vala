@@ -34,9 +34,13 @@ public class InitialSetup.MainWindow : Gtk.Window {
 
         add (finish_button);
 
-        var css_provider = new Gtk.CssProvider ();
-        css_provider.load_from_resource ("io/elementary/initial-setup/application.css");
-        Gtk.StyleContext.add_provider_for_screen (get_screen (), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+        var headerbar = new Gtk.HeaderBar ();
+        var headerbar_style_context = headerbar.get_style_context ();
+        headerbar_style_context.add_class ("default-decoration");
+        headerbar_style_context.add_class (Gtk.STYLE_CLASS_FLAT);
+
+        set_titlebar (headerbar);
+        get_style_context ().add_class ("rounded");
 
         finish_button.clicked.connect (() => application.quit ());
     }
