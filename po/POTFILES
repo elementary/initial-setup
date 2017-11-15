@@ -1,0 +1,11 @@
+src/Application.vala
+src/MainWindow.vala
+src/Utils.vala
+src/Helpers/KeyboardLayoutHelper.vala
+src/Helpers/LocaleHelper.vala
+src/Objects/Configuration.vala
+src/Views/AbstractInstallerView.vala
+src/Views/KeyboardLayoutView.vala
+src/Views/LanguageView.vala
+src/Widgets/LayoutWidget.vala
+src/Widgets/VariantWidget.vala
