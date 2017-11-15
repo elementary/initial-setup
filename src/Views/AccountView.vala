@@ -87,7 +87,11 @@ public class Installer.AccountView : AbstractInstallerView {
 
         var back_button = new Gtk.Button.with_label (_("Back"));
 
+        var finish_button = new Gtk.Button.with_label (_("Finish Setup"));
+        finish_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+
         action_area.add (back_button);
+        action_area.add (finish_button);
 
         back_button.clicked.connect (() => ((Gtk.Stack) get_parent ()).visible_child = previous_view);
 
