@@ -83,7 +83,6 @@ public class Installer.AccountView : AbstractInstallerView {
         content_area.attach (title_label, 0, 1, 1, 1);
         content_area.attach (form_grid, 1, 0, 1, 2);
 
-
         var back_button = new Gtk.Button.with_label (_("Back"));
 
         action_area.add (back_button);
