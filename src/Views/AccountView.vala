@@ -39,6 +39,8 @@ public class Installer.AccountView : AbstractInstallerView {
         username_label.halign = Gtk.Align.END;
 
         var username_entry = new Gtk.Entry ();
+        username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-information-symbolic");
+        username_entry.set_icon_tooltip_text (Gtk.EntryIconPosition.SECONDARY, _("Can only contain lower case letters, numbers and no spaces"));
 
         var pw_label = new Gtk.Label (_("Choose a password:"));
         pw_label.halign = Gtk.Align.END;
@@ -88,6 +90,11 @@ public class Installer.AccountView : AbstractInstallerView {
         action_area.add (back_button);
 
         back_button.clicked.connect (() => ((Gtk.Stack) get_parent ()).visible_child = previous_view);
+
+        realname_entry.changed.connect (() => {
+            var username = Utils.gen_username (realname_entry.text);
+            username_entry.text = username;
+        });
 
         pw_entry.changed.connect (check_password);
         confirm_entry.changed.connect (check_password);

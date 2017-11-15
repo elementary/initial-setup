@@ -42,4 +42,20 @@ namespace Utils {
         }
         return os_pretty_name;
     }
+
+    public static string gen_username (string fullname) {
+        string username = "";
+        bool met_alpha = false;
+
+        foreach (char c in fullname.to_ascii ().to_utf8 ()) {
+            if (c.isalpha ()) {
+                username += c.to_string ().down ();
+                met_alpha = true;
+            } else if (c.isdigit () && met_alpha) {
+                username += c.to_string ();
+            }
+        }
+
+        return username;
+    }
 }
