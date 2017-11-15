@@ -29,21 +29,18 @@ public class Installer.AccountView : AbstractInstallerView {
         title_label.get_style_context ().add_class ("h2");
         title_label.valign = Gtk.Align.START;
 
-        var realname_label = new Gtk.Label (_("Full name:"));
-        realname_label.halign = Gtk.Align.END;
+        var realname_label = new Granite.HeaderLabel (_("Full Name"));
 
         var realname_entry = new Gtk.Entry ();
         realname_entry.hexpand = true;
 
-        var username_label = new Gtk.Label (_("Username:"));
-        username_label.halign = Gtk.Align.END;
+        var username_label = new Granite.HeaderLabel (_("Username"));
 
         var username_entry = new Gtk.Entry ();
         username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-information-symbolic");
         username_entry.set_icon_tooltip_text (Gtk.EntryIconPosition.SECONDARY, _("Can only contain lower case letters, numbers and no spaces"));
 
-        var pw_label = new Gtk.Label (_("Choose a password:"));
-        pw_label.halign = Gtk.Align.END;
+        var pw_label = new Granite.HeaderLabel (_("Choose a Password"));
 
         pw_entry = new Gtk.Entry ();
         pw_entry.visibility = false;
@@ -55,8 +52,7 @@ public class Installer.AccountView : AbstractInstallerView {
         pw_levelbar.add_offset_value ("high", 75.0);
         pw_levelbar.add_offset_value ("middle", 75.0);
 
-        confirm_label = new Gtk.Label (_("Confirm password:"));
-        confirm_label.halign = Gtk.Align.END;
+        confirm_label = new Granite.HeaderLabel (_("Confirm Password"));
         confirm_label.sensitive = false;
 
         confirm_entry = new Gtk.Entry ();
@@ -64,19 +60,18 @@ public class Installer.AccountView : AbstractInstallerView {
         confirm_entry.visibility = false;
 
         var form_grid = new Gtk.Grid ();
-        form_grid.column_spacing = 12;
-        form_grid.row_spacing = 12;
+        form_grid.row_spacing = 6;
         form_grid.valign = Gtk.Align.CENTER;
         form_grid.vexpand = true;
         form_grid.attach (realname_label, 0, 0, 1, 1);
-        form_grid.attach (realname_entry, 1, 0, 1, 1);
-        form_grid.attach (username_label, 0, 1, 1, 1);
-        form_grid.attach (username_entry, 1, 1, 1, 1);
-        form_grid.attach (pw_label, 0, 2, 1, 1);
-        form_grid.attach (pw_entry, 1, 2, 1, 1);
-        form_grid.attach (pw_levelbar, 1, 3, 1, 1);
-        form_grid.attach (confirm_label, 0, 4, 1, 1);
-        form_grid.attach (confirm_entry, 1, 4, 1, 1);
+        form_grid.attach (realname_entry, 0, 1, 1, 1);
+        form_grid.attach (username_label, 0, 2, 1, 1);
+        form_grid.attach (username_entry, 0, 3, 1, 1);
+        form_grid.attach (pw_label, 0, 4, 1, 1);
+        form_grid.attach (pw_entry, 0, 5, 1, 1);
+        form_grid.attach (pw_levelbar, 0, 6, 1, 1);
+        form_grid.attach (confirm_label, 0, 7, 1, 1);
+        form_grid.attach (confirm_entry, 0, 8, 1, 1);
 
         content_area.column_homogeneous = true;
         content_area.margin_end = 12;
