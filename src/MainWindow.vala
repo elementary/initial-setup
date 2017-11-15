@@ -1,5 +1,6 @@
+// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2017 elementary LLC. (https://elementary.io)
+ * Copyright (c) 2016-2017 elementary LLC. (https://elementary.io)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -13,35 +14,54 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class InitialSetup.MainWindow : Gtk.Window {
-    public MainWindow (Gtk.Application application) {
+public class Installer.MainWindow : Gtk.Dialog {
+    private Gtk.Stack stack;
+
+    private LanguageView language_view;
+    private KeyboardLayoutView keyboard_layout_view;
+
+    public MainWindow () {
         Object (
-            application: application,
             deletable: false,
-            height_request: 640,
+            height_request: 700,
+            icon_name: "system-os-installer",
             resizable: false,
-            width_request: 910
+            title: _("Set up %s").printf (Utils.get_pretty_name ()),
+            width_request: 950
         );
     }
 
     construct {
-        var finish_button = new Gtk.Button.with_label (_("Finish"));
-        finish_button.halign = Gtk.Align.CENTER;
-        finish_button.valign = Gtk.Align.CENTER;
-        finish_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        language_view = new LanguageView ();
 
-        add (finish_button);
+        stack = new Gtk.Stack ();
+        stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
+        stack.add (language_view);
 
-        var headerbar = new Gtk.HeaderBar ();
-        var headerbar_style_context = headerbar.get_style_context ();
-        headerbar_style_context.add_class ("default-decoration");
-        headerbar_style_context.add_class (Gtk.STYLE_CLASS_FLAT);
+        get_content_area ().add (stack);
 
-        set_titlebar (headerbar);
-        get_style_context ().add_class ("rounded");
-
-        finish_button.clicked.connect (() => application.quit ());
+        language_view.next_step.connect (() => load_keyboard_view ());
     }
+
+    /*
+     * We need to load all the view after the language has being chosen and set.
+     * We need to rebuild the view everytime the next button is clicked to reflect language changes.
+     */
+
+    private void load_keyboard_view () {
+        if (keyboard_layout_view != null) {
+            keyboard_layout_view.destroy ();
+        }
+
+        keyboard_layout_view = new KeyboardLayoutView ();
+        keyboard_layout_view.previous_view = language_view;
+        stack.add (keyboard_layout_view);
+        stack.visible_child = keyboard_layout_view;
+    }
+
+    public override void close () {}
 }
