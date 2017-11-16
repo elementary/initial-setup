@@ -46,6 +46,7 @@ public class Installer.AccountView : AbstractInstallerView {
         username_entry.set_icon_tooltip_text (Gtk.EntryIconPosition.SECONDARY, _("Can only contain lower case letters, numbers and no spaces"));
 
         username_error_label = new ErrorLabel ("");
+        username_error_label.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
 
         username_error_revealer = new Gtk.Revealer ();
         username_error_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
@@ -54,6 +55,7 @@ public class Installer.AccountView : AbstractInstallerView {
         var pw_label = new Granite.HeaderLabel (_("Choose a Password"));
 
         pw_error_label = new ErrorLabel ("");
+        pw_error_label.get_style_context ().add_class (Gtk.STYLE_CLASS_WARNING);
 
         pw_error_revealer = new Gtk.Revealer ();
         pw_error_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
@@ -123,35 +125,37 @@ public class Installer.AccountView : AbstractInstallerView {
     }
 
     private void check_password () {
-        var pwquality = new PasswordQuality.Settings ();
-        void* error;
-        var quality = pwquality.check (pw_entry.text, null, null, out error);
-
-        if (quality >= 0) {
-            confirm_entry.sensitive = true;
-            confirm_label.sensitive = true;
-
-            pw_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-completed-symbolic");
-            pw_error_revealer.reveal_child = false;
-
-            pw_levelbar.value = quality;
-        } else {
+        if (pw_entry.text == "") {
             confirm_entry.text = "";
             confirm_entry.sensitive = false;
             confirm_label.sensitive = false;
 
-            if (pw_entry.text == "") {
-                pw_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, null);
+            pw_levelbar.value = 0;
+
+            pw_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, null);
+            pw_error_revealer.reveal_child = false;
+        } else {
+            confirm_entry.sensitive = true;
+            confirm_label.sensitive = true;
+
+            var pwquality = new PasswordQuality.Settings ();
+            void* error;
+            var quality = pwquality.check (pw_entry.text, null, null, out error);
+
+            if (quality >= 0) {
+                pw_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-completed-symbolic");
                 pw_error_revealer.reveal_child = false;
+
+                pw_levelbar.value = quality;
             } else {
-                pw_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
+                pw_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-warning-symbolic");
                 pw_error_revealer.reveal_child = true;
 
                 var error_string = ((PasswordQuality.Error) quality).to_string (error);
                 pw_error_label.label = "<span font_size=\"small\">%s</span>".printf (error_string);
-            }
 
-            pw_levelbar.value = 0;
+                pw_levelbar.value = 0;
+            }
         }
 
         if (confirm_entry.text != "") {
@@ -194,7 +198,6 @@ public class Installer.AccountView : AbstractInstallerView {
             valign = Gtk.Align.END;
             wrap = true;
             xalign = 1;
-            get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
         }
     }
 }
