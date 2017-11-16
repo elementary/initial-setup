@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2016-2017 elementary LLC. (https://elementary.io)
+ * Copyright (c) 2014-2017 elementary LLC. (https://elementary.io)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,6 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  * Authored by: Corentin Noël <corentin@elementary.io>
+ *              Marvin Beckers <beckersmarvin@gmail.com>
  */
 
 namespace Utils {
@@ -41,6 +42,17 @@ namespace Utils {
             }
         }
         return os_pretty_name;
+    }
+
+    public static bool is_valid_username (string username) {
+        try {
+            if (new Regex("^[a-z]+[a-z0-9]*$").match (username))
+                return true;
+            return false;
+        } catch (Error e) {
+            critical (e.message);
+            return false;
+        }
     }
 
     public static string gen_username (string fullname) {
