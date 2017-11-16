@@ -45,7 +45,7 @@ public class Installer.AccountView : AbstractInstallerView {
         username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-information-symbolic");
         username_entry.set_icon_tooltip_text (Gtk.EntryIconPosition.SECONDARY, _("Can only contain lower case letters, numbers and no spaces"));
 
-        username_error_label = new ErrorLabel ("");
+        username_error_label = new ErrorLabel (".");
         username_error_label.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
 
         username_error_revealer = new Gtk.Revealer ();
@@ -54,7 +54,7 @@ public class Installer.AccountView : AbstractInstallerView {
 
         var pw_label = new Granite.HeaderLabel (_("Choose a Password"));
 
-        pw_error_label = new ErrorLabel ("");
+        pw_error_label = new ErrorLabel (".");
         pw_error_label.get_style_context ().add_class (Gtk.STYLE_CLASS_WARNING);
 
         pw_error_revealer = new Gtk.Revealer ();
@@ -79,20 +79,21 @@ public class Installer.AccountView : AbstractInstallerView {
         confirm_entry.visibility = false;
 
         var form_grid = new Gtk.Grid ();
-        form_grid.row_spacing = 6;
+        form_grid.row_spacing = 3;
         form_grid.valign = Gtk.Align.CENTER;
         form_grid.vexpand = true;
         form_grid.attach (realname_label, 0, 0, 1, 1);
-        form_grid.attach (realname_entry, 0, 1, 2, 1);
-        form_grid.attach (username_label, 0, 2, 1, 1);
-        form_grid.attach (username_error_revealer, 1, 2, 1, 1);
-        form_grid.attach (username_entry, 0, 3, 2, 1);
-        form_grid.attach (pw_label, 0, 5, 1, 1);
-        form_grid.attach (pw_error_revealer, 1, 5, 1, 1);
-        form_grid.attach (pw_entry, 0, 6, 2, 1);
-        form_grid.attach (pw_levelbar, 0, 7, 2, 1);
-        form_grid.attach (confirm_label, 0, 8, 1, 1);
-        form_grid.attach (confirm_entry, 0, 9, 2, 1);
+        form_grid.attach (realname_entry, 0, 1, 1, 1);
+        form_grid.attach (new ErrorLabel (""), 0, 2, 1, 1);
+        form_grid.attach (username_label, 0, 3, 1, 1);
+        form_grid.attach (username_entry, 0, 4, 1, 1);
+        form_grid.attach (username_error_revealer, 0, 5, 1, 1);
+        form_grid.attach (pw_label, 0, 6, 1, 1);
+        form_grid.attach (pw_entry, 0, 7, 2, 1);
+        form_grid.attach (pw_levelbar, 0, 8, 1, 1);
+        form_grid.attach (pw_error_revealer, 0, 9 , 1, 1);
+        form_grid.attach (confirm_label, 0, 10, 1, 1);
+        form_grid.attach (confirm_entry, 0, 11, 1, 1);
 
         content_area.column_homogeneous = true;
         content_area.margin_end = 12;
@@ -189,13 +190,12 @@ public class Installer.AccountView : AbstractInstallerView {
 
     private class ErrorLabel : Gtk.Label {
         public ErrorLabel (string label) {
-            Object (label: label);
+            Object (label: "<span font_size=\"small\">%s</span>".printf (label));
 
             halign = Gtk.Align.END;
             justify = Gtk.Justification.RIGHT;
-            max_width_chars = 40;
+            max_width_chars = 55;
             use_markup = true;
-            valign = Gtk.Align.END;
             wrap = true;
             xalign = 1;
         }
