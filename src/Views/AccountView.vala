@@ -40,34 +40,20 @@ public class Installer.AccountView : AbstractInstallerView {
         realname_entry.hexpand = true;
 
         var username_label = new Granite.HeaderLabel (_("Username"));
-        username_label.margin_top = 6;
 
         username_entry = new Gtk.Entry ();
         username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-information-symbolic");
         username_entry.set_icon_tooltip_text (Gtk.EntryIconPosition.SECONDARY, _("Can only contain lower case letters, numbers and no spaces"));
 
-        username_error_label = new Gtk.Label ("");
-        username_error_label.halign = Gtk.Align.END;
-        username_error_label.valign = Gtk.Align.END;
-        username_error_label.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
-        username_error_label.use_markup = true;
+        username_error_label = new ErrorLabel ("");
 
         username_error_revealer = new Gtk.Revealer ();
         username_error_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
         username_error_revealer.add (username_error_label);
 
         var pw_label = new Granite.HeaderLabel (_("Choose a Password"));
-        pw_label.margin_top = 6;
 
-        pw_error_label = new Gtk.Label ("");
-        pw_error_label.halign = Gtk.Align.END;
-        pw_error_label.justify = Gtk.Justification.RIGHT;
-        pw_error_label.valign = Gtk.Align.END;
-        pw_error_label.max_width_chars = 40;
-        pw_error_label.use_markup = true;
-        pw_error_label.wrap = true;
-        pw_error_label.xalign = 1;
-        pw_error_label.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
+        pw_error_label = new ErrorLabel ("");
 
         pw_error_revealer = new Gtk.Revealer ();
         pw_error_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
@@ -84,7 +70,6 @@ public class Installer.AccountView : AbstractInstallerView {
         pw_levelbar.add_offset_value ("middle", 75.0);
 
         confirm_label = new Granite.HeaderLabel (_("Confirm Password"));
-        confirm_label.margin_top = 6;
         confirm_label.sensitive = false;
 
         confirm_entry = new Gtk.Entry ();
@@ -157,7 +142,9 @@ public class Installer.AccountView : AbstractInstallerView {
 
             pw_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
             pw_error_revealer.reveal_child = true;
-            pw_error_label.label = ((PasswordQuality.Error) quality).to_string (error);
+
+            var error_string = ((PasswordQuality.Error) quality).to_string (error);
+            pw_error_label.label = "<span font_size=\"small\">%s</span>".printf (error_string);
 
             pw_levelbar.value = 0;
         }
@@ -188,6 +175,21 @@ public class Installer.AccountView : AbstractInstallerView {
             username_error_label.label = "<span font_size=\"small\">%s</span>".printf (_("Username is not valid"));
             username_error_revealer.reveal_child = true;
             username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
+        }
+    }
+
+    private class ErrorLabel : Gtk.Label {
+        public ErrorLabel (string label) {
+            Object (label: label);
+
+            halign = Gtk.Align.END;
+            justify = Gtk.Justification.RIGHT;
+            max_width_chars = 40;
+            use_markup = true;
+            valign = Gtk.Align.END;
+            wrap = true;
+            xalign = 1;
+            get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
         }
     }
 }
