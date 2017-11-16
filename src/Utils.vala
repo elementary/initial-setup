@@ -46,8 +46,9 @@ namespace Utils {
 
     public static bool is_valid_username (string username) {
         try {
-            if (new Regex("^[a-z]+[a-z0-9]*$").match (username))
+            if (new Regex("^[a-z]+[a-z0-9]*$").match (username)) {
                 return true;
+            }
             return false;
         } catch (Error e) {
             critical (e.message);
