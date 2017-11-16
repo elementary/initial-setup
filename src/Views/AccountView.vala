@@ -140,11 +140,16 @@ public class Installer.AccountView : AbstractInstallerView {
             confirm_entry.sensitive = false;
             confirm_label.sensitive = false;
 
-            pw_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
-            pw_error_revealer.reveal_child = true;
+            if (pw_entry.text == "") {
+                pw_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, null);
+                pw_error_revealer.reveal_child = false;
+            } else {
+                pw_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
+                pw_error_revealer.reveal_child = true;
 
-            var error_string = ((PasswordQuality.Error) quality).to_string (error);
-            pw_error_label.label = "<span font_size=\"small\">%s</span>".printf (error_string);
+                var error_string = ((PasswordQuality.Error) quality).to_string (error);
+                pw_error_label.label = "<span font_size=\"small\">%s</span>".printf (error_string);
+            }
 
             pw_levelbar.value = 0;
         }
