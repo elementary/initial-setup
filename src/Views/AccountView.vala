@@ -174,15 +174,22 @@ public class Installer.AccountView : AbstractInstallerView {
 
     private void check_username () {
         string username_entry_text = username_entry.text;
+        bool username_is_valid = Utils.is_valid_username (username_entry_text);
+        bool username_is_taken = Utils.is_taken_username (username_entry_text);
 
         if (username_entry_text == "") {
             username_error_revealer.reveal_child = false;
             username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-information-symbolic");
-        } else if (Utils.is_valid_username (username_entry_text)) {
+        } else if (username_is_valid && !username_is_taken) {
             username_error_revealer.reveal_child = false;
             username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-completed-symbolic");
         } else {
-            username_error_label.label = "<span font_size=\"small\">%s</span>".printf (_("Username is not valid"));
+            if (username_is_taken) {
+                username_error_label.label = "<span font_size=\"small\">%s</span>".printf (_("Username is already taken"));
+            } else if (!username_is_valid) {
+                username_error_label.label = "<span font_size=\"small\">%s</span>".printf (_("Username is not valid"));
+            }
+
             username_error_revealer.reveal_child = true;
             username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
         }
