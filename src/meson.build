@@ -7,6 +7,7 @@ vala_files = [
     'Objects/Configuration.vala',
     'Utils.vala',
     'Views/AbstractInstallerView.vala',
+    'Views/AccountView.vala',
     'Views/KeyboardLayoutView.vala',
     'Views/LanguageView.vala',
     'Widgets/LayoutWidget.vala',

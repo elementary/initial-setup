@@ -21,6 +21,7 @@
 public class Installer.MainWindow : Gtk.Dialog {
     private Gtk.Stack stack;
 
+    private AccountView account_view;
     private LanguageView language_view;
     private KeyboardLayoutView keyboard_layout_view;
 
@@ -61,6 +62,19 @@ public class Installer.MainWindow : Gtk.Dialog {
         keyboard_layout_view.previous_view = language_view;
         stack.add (keyboard_layout_view);
         stack.visible_child = keyboard_layout_view;
+
+        keyboard_layout_view.next_step.connect (() => load_account_view ());
+    }
+
+    private void load_account_view () {
+        if (account_view != null) {
+            account_view.destroy ();
+        }
+
+        account_view = new AccountView ();
+        account_view.previous_view = keyboard_layout_view;
+        stack.add (account_view);
+        stack.visible_child = account_view;
     }
 
     public override void close () {}
