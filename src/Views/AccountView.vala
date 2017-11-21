@@ -16,15 +16,13 @@
  */
 
 public class Installer.AccountView : AbstractInstallerView {
+    private ErrorRevealer pw_error_revealer;
+    private ErrorRevealer username_error_revealer;
     private Gtk.Entry confirm_entry;
     private Gtk.Entry username_entry;
     private Gtk.Entry pw_entry;
     private Gtk.Label confirm_label;
-    private Gtk.Label username_error_label;
-    private Gtk.Label pw_error_label;
     private Gtk.LevelBar pw_levelbar;
-    private Gtk.Revealer username_error_revealer;
-    private Gtk.Revealer pw_error_revealer;
 
     construct {
         var image = new Gtk.Image.from_icon_name ("avatar-default", Gtk.IconSize.DIALOG);
@@ -45,21 +43,13 @@ public class Installer.AccountView : AbstractInstallerView {
         username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-information-symbolic");
         username_entry.set_icon_tooltip_text (Gtk.EntryIconPosition.SECONDARY, _("Can only contain lower case letters, numbers and no spaces"));
 
-        username_error_label = new ErrorLabel (".");
-        username_error_label.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
-
-        username_error_revealer = new Gtk.Revealer ();
-        username_error_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
-        username_error_revealer.add (username_error_label);
+        username_error_revealer = new ErrorRevealer (".");
+        username_error_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
 
         var pw_label = new Granite.HeaderLabel (_("Choose a Password"));
 
-        pw_error_label = new ErrorLabel (".");
-        pw_error_label.get_style_context ().add_class (Gtk.STYLE_CLASS_WARNING);
-
-        pw_error_revealer = new Gtk.Revealer ();
-        pw_error_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
-        pw_error_revealer.add (pw_error_label);
+        pw_error_revealer = new ErrorRevealer (".");
+        pw_error_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_WARNING);
 
         pw_entry = new Gtk.Entry ();
         pw_entry.visibility = false;
@@ -84,7 +74,7 @@ public class Installer.AccountView : AbstractInstallerView {
         form_grid.vexpand = true;
         form_grid.attach (realname_label, 0, 0, 1, 1);
         form_grid.attach (realname_entry, 0, 1, 1, 1);
-        form_grid.attach (new ErrorLabel (""), 0, 2, 1, 1);
+        form_grid.attach (new ErrorRevealer ("."), 0, 2, 1, 1);
         form_grid.attach (username_label, 0, 3, 1, 1);
         form_grid.attach (username_entry, 0, 4, 1, 1);
         form_grid.attach (username_error_revealer, 0, 5, 1, 1);
@@ -150,10 +140,9 @@ public class Installer.AccountView : AbstractInstallerView {
                 pw_levelbar.value = quality;
             } else {
                 pw_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-warning-symbolic");
-                pw_error_revealer.reveal_child = true;
 
-                var error_string = ((PasswordQuality.Error) quality).to_string (error);
-                pw_error_label.label = "<span font_size=\"small\">%s</span>".printf (error_string);
+                pw_error_revealer.reveal_child = true;
+                pw_error_revealer.label = ((PasswordQuality.Error) quality).to_string (error);
 
                 pw_levelbar.value = 0;
             }
@@ -182,22 +171,32 @@ public class Installer.AccountView : AbstractInstallerView {
             username_error_revealer.reveal_child = false;
             username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-completed-symbolic");
         } else {
-            username_error_label.label = "<span font_size=\"small\">%s</span>".printf (_("Username is not valid"));
+            username_error_revealer.label = _("Username is not valid");
             username_error_revealer.reveal_child = true;
             username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
         }
     }
 
-    private class ErrorLabel : Gtk.Label {
-        public ErrorLabel (string label) {
-            Object (label: "<span font_size=\"small\">%s</span>".printf (label));
+    private class ErrorRevealer : Gtk.Revealer {
+        public Gtk.Label label_widget;
 
-            halign = Gtk.Align.END;
-            justify = Gtk.Justification.RIGHT;
-            max_width_chars = 55;
-            use_markup = true;
-            wrap = true;
-            xalign = 1;
+        public string label {
+            set {
+                label_widget.label = "<span font_size=\"small\">%s</span>".printf (value);
+            }
+        }
+
+        public ErrorRevealer (string label) {
+            label_widget = new Gtk.Label ("<span font_size=\"small\">%s</span>".printf (label));
+            label_widget.halign = Gtk.Align.END;
+            label_widget.justify = Gtk.Justification.RIGHT;
+            label_widget.max_width_chars = 55;
+            label_widget.use_markup = true;
+            label_widget.wrap = true;
+            label_widget.xalign = 1;
+
+            transition_type = Gtk.RevealerTransitionType.CROSSFADE;
+            add (label_widget);
         }
     }
 }
