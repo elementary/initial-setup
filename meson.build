@@ -7,6 +7,7 @@ add_project_arguments(['--vapidir', join_paths(meson.current_source_dir(), 'vapi
 gnome = import('gnome')
 i18n = import('i18n')
 
+accountservice_dep = dependency('accountsservice')
 glib_dep = dependency('glib-2.0')
 gobject_dep = dependency('gobject-2.0')
 gtk_dep = dependency('gtk+-3.0')
@@ -19,6 +20,7 @@ gnome_keyboard_ui_dep = meson.get_compiler('c').find_library('libgnomekbdui')
 pwquality_dep = dependency('pwquality')
 
 dependencies = [
+    accountservice_dep,
     glib_dep,
     gobject_dep,
     gtk_dep,
