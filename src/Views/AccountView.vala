@@ -44,12 +44,12 @@ public class Installer.AccountView : AbstractInstallerView {
         username_entry.set_icon_tooltip_text (Gtk.EntryIconPosition.SECONDARY, _("Can only contain lower case letters, numbers and no spaces"));
 
         username_error_revealer = new ErrorRevealer (".");
-        username_error_revealer.style_context.add_class (Gtk.STYLE_CLASS_ERROR);
+        username_error_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
 
         var pw_label = new Granite.HeaderLabel (_("Choose a Password"));
 
         pw_error_revealer = new ErrorRevealer (".");
-        pw_error_revealer.style_context.add_class (Gtk.STYLE_CLASS_WARNING);
+        pw_error_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_WARNING);
 
         pw_entry = new Gtk.Entry ();
         pw_entry.visibility = false;
@@ -178,33 +178,16 @@ public class Installer.AccountView : AbstractInstallerView {
     }
 
     private class ErrorRevealer : Gtk.Revealer {
-        private Gtk.Label label_widget;
-
-        public Gtk.StyleContext? style_context {
-            get {
-                return label_widget.get_style_context ();
-            }
-        }
+        public Gtk.Label label_widget;
 
         public string label {
-            get {
-                if (label_widget != null) {
-                    return label_widget.label;
-                } else {
-                    return "";
-                }
-            }
             set {
                 label_widget.label = "<span font_size=\"small\">%s</span>".printf (value);
             }
         }
 
         public ErrorRevealer (string label) {
-            Object (label: label);
-        }
-
-        construct {
-            label_widget = new Gtk.Label (label);
+            label_widget = new Gtk.Label ("<span font_size=\"small\">%s</span>".printf (label));
             label_widget.halign = Gtk.Align.END;
             label_widget.justify = Gtk.Justification.RIGHT;
             label_widget.max_width_chars = 55;
