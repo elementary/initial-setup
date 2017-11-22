@@ -120,6 +120,7 @@ public class Installer.AccountView : AbstractInstallerView {
 
         pw_entry.changed.connect (() => {
             valid_pw = check_password ();
+            valid_pw_confirm = confirm_password ();
             validate_form ();
         });
 
