@@ -16,8 +16,13 @@
  */
 
 public class Installer.AccountView : AbstractInstallerView {
+    private bool valid_username = false;
+    private bool valid_pw = false;
+    private bool valid_pw_confirm = false;
+
     private ErrorRevealer pw_error_revealer;
     private ErrorRevealer username_error_revealer;
+    private Gtk.Button finish_button;
     private Gtk.Entry confirm_entry;
     private Gtk.Entry username_entry;
     private Gtk.Entry pw_entry;
@@ -94,7 +99,7 @@ public class Installer.AccountView : AbstractInstallerView {
 
         var back_button = new Gtk.Button.with_label (_("Back"));
 
-        var finish_button = new Gtk.Button.with_label (_("Finish Setup"));
+        finish_button = new Gtk.Button.with_label (_("Finish Setup"));
         finish_button.sensitive = false;
         finish_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
@@ -108,9 +113,20 @@ public class Installer.AccountView : AbstractInstallerView {
             username_entry.text = username;
         });
 
-        username_entry.changed.connect (check_username);
-        pw_entry.changed.connect (check_password);
-        confirm_entry.changed.connect (check_password);
+        username_entry.changed.connect (() => {
+            check_username ();
+            validate_form ();
+        });
+
+        pw_entry.changed.connect (() => {
+            check_password ();
+            validate_form ();
+        });
+
+        confirm_entry.changed.connect (() => {
+            confirm_password ();
+            validate_form ();
+        });
 
         show_all ();
     }
@@ -146,8 +162,13 @@ public class Installer.AccountView : AbstractInstallerView {
 
                 pw_levelbar.value = 0;
             }
+            valid_pw = true;
+            return;
         }
+        valid_pw = false;
+    }
 
+    private void confirm_password () {
         if (confirm_entry.text != "") {
             if (pw_entry.text != confirm_entry.text) {
                 confirm_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
@@ -155,10 +176,13 @@ public class Installer.AccountView : AbstractInstallerView {
             } else {
                 confirm_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-completed-symbolic");
                 confirm_entry.tooltip_text = null;
+                valid_pw_confirm = true;
+                return;
             }
         } else {
             confirm_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, null);
         }
+        valid_pw_confirm = false;
     }
 
     private void check_username () {
@@ -172,6 +196,8 @@ public class Installer.AccountView : AbstractInstallerView {
         } else if (username_is_valid && !username_is_taken) {
             username_error_revealer.reveal_child = false;
             username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-completed-symbolic");
+            valid_username = true;
+            return;
         } else {
             if (username_is_taken) {
                 username_error_revealer.label = _("Username is already taken");
@@ -181,6 +207,15 @@ public class Installer.AccountView : AbstractInstallerView {
 
             username_error_revealer.reveal_child = true;
             username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
+        }
+        valid_username = false;
+    }
+
+    private void validate_form () {
+        if (valid_username && valid_pw && valid_pw_confirm) {
+            finish_button.sensitive = true;
+        } else {
+            finish_button.sensitive = false;
         }
     }
 
