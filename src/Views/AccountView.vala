@@ -16,6 +16,7 @@
  */
 
 public class Installer.AccountView : AbstractInstallerView {
+    private ErrorRevealer confirm_entry_revealer;
     private ErrorRevealer pw_error_revealer;
     private ErrorRevealer username_error_revealer;
     private Gtk.Entry confirm_entry;
@@ -68,6 +69,9 @@ public class Installer.AccountView : AbstractInstallerView {
         confirm_entry.sensitive = false;
         confirm_entry.visibility = false;
 
+        confirm_entry_revealer = new ErrorRevealer (".");
+        confirm_entry_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
+
         var form_grid = new Gtk.Grid ();
         form_grid.row_spacing = 3;
         form_grid.valign = Gtk.Align.CENTER;
@@ -84,6 +88,7 @@ public class Installer.AccountView : AbstractInstallerView {
         form_grid.attach (pw_error_revealer, 0, 9 , 1, 1);
         form_grid.attach (confirm_label, 0, 10, 1, 1);
         form_grid.attach (confirm_entry, 0, 11, 1, 1);
+        form_grid.attach (confirm_entry_revealer, 0, 12, 1, 1);
 
         content_area.column_homogeneous = true;
         content_area.margin_end = 12;
@@ -151,13 +156,15 @@ public class Installer.AccountView : AbstractInstallerView {
         if (confirm_entry.text != "") {
             if (pw_entry.text != confirm_entry.text) {
                 confirm_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
-                confirm_entry.tooltip_text = _("Passwords do not match");
+                confirm_entry_revealer.label = _("Passwords do not match");
+                confirm_entry_revealer.reveal_child = true;
             } else {
                 confirm_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-completed-symbolic");
-                confirm_entry.tooltip_text = null;
+                confirm_entry_revealer.reveal_child = false;
             }
         } else {
             confirm_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, null);
+            confirm_entry_revealer.reveal_child = false;
         }
     }
 
