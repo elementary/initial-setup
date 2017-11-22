@@ -44,6 +44,26 @@ namespace Utils {
         return os_pretty_name;
     }
 
+    private static Act.UserManager? usermanager = null;
+
+    public static unowned Act.UserManager? get_usermanager () {
+        if (usermanager != null && usermanager.is_loaded) {
+            return usermanager;
+        }
+
+        usermanager = Act.UserManager.get_default ();
+        return usermanager;
+    }
+
+    public static bool is_taken_username (string username) {
+        foreach (unowned Act.User user in get_usermanager ().list_users ()) {
+            if (user.get_user_name () == username) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public static bool is_valid_username (string username) {
         try {
             if (new Regex("^[a-z]+[a-z0-9]*$").match (username)) {

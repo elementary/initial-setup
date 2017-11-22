@@ -6,6 +6,7 @@ An onboarding app for new installations
 You'll need the following dependencies:
 * desktop-file-utils
 * gettext
+* libaccountsservice-dev
 * libgnomekbd-dev
 * libgtk-3-dev
 * libjson-glib-dev
