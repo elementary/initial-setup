@@ -165,6 +165,7 @@ public class Installer.AccountView : AbstractInstallerView {
             }
             return true;
         }
+
         return false;
     }
 
@@ -181,6 +182,7 @@ public class Installer.AccountView : AbstractInstallerView {
         } else {
             confirm_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, null);
         }
+
         return false;
     }
 
@@ -206,6 +208,7 @@ public class Installer.AccountView : AbstractInstallerView {
             username_error_revealer.reveal_child = true;
             username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
         }
+
         return false;
     }
 
