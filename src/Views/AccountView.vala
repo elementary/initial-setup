@@ -115,18 +115,18 @@ public class Installer.AccountView : AbstractInstallerView {
 
         username_entry.changed.connect (() => {
             valid_username = check_username ();
-            validate_form ();
+            update_finish_button ();
         });
 
         pw_entry.changed.connect (() => {
             valid_pw = check_password ();
             valid_pw_confirm = confirm_password ();
-            validate_form ();
+            update_finish_button ();
         });
 
         confirm_entry.changed.connect (() => {
             valid_pw_confirm = confirm_password ();
-            validate_form ();
+            update_finish_button ();
         });
 
         show_all ();
@@ -212,7 +212,7 @@ public class Installer.AccountView : AbstractInstallerView {
         return false;
     }
 
-    private void validate_form () {
+    private void update_finish_button () {
         if (valid_username && valid_pw && valid_pw_confirm) {
             finish_button.sensitive = true;
         } else {
