@@ -16,17 +16,13 @@
  */
 
 public class Installer.AccountView : AbstractInstallerView {
-    private bool valid_username = false;
-    private bool valid_pw = false;
-    private bool valid_pw_confirm = false;
-
     private ErrorRevealer confirm_entry_revealer;
     private ErrorRevealer pw_error_revealer;
     private ErrorRevealer username_error_revealer;
     private Gtk.Button finish_button;
-    private Gtk.Entry confirm_entry;
-    private Gtk.Entry username_entry;
-    private Gtk.Entry pw_entry;
+    private ValidatedEntry confirm_entry;
+    private ValidatedEntry username_entry;
+    private ValidatedEntry pw_entry;
     private Gtk.Label confirm_label;
     private Gtk.LevelBar pw_levelbar;
 
@@ -45,7 +41,7 @@ public class Installer.AccountView : AbstractInstallerView {
 
         var username_label = new Granite.HeaderLabel (_("Username"));
 
-        username_entry = new Gtk.Entry ();
+        username_entry = new ValidatedEntry ();
         username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-information-symbolic");
         username_entry.set_icon_tooltip_text (Gtk.EntryIconPosition.SECONDARY, _("Can only contain lower case letters, numbers and no spaces"));
 
@@ -57,7 +53,7 @@ public class Installer.AccountView : AbstractInstallerView {
         pw_error_revealer = new ErrorRevealer (".");
         pw_error_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_WARNING);
 
-        pw_entry = new Gtk.Entry ();
+        pw_entry = new ValidatedEntry ();
         pw_entry.visibility = false;
 
         pw_levelbar = new Gtk.LevelBar ();
@@ -70,7 +66,7 @@ public class Installer.AccountView : AbstractInstallerView {
         confirm_label = new Granite.HeaderLabel (_("Confirm Password"));
         confirm_label.sensitive = false;
 
-        confirm_entry = new Gtk.Entry ();
+        confirm_entry = new ValidatedEntry ();
         confirm_entry.sensitive = false;
         confirm_entry.visibility = false;
 
@@ -119,18 +115,18 @@ public class Installer.AccountView : AbstractInstallerView {
         });
 
         username_entry.changed.connect (() => {
-            valid_username = check_username ();
+            username_entry.is_valid = check_username ();
             update_finish_button ();
         });
 
         pw_entry.changed.connect (() => {
-            valid_pw = check_password ();
-            valid_pw_confirm = confirm_password ();
+            pw_entry.is_valid = check_password ();
+            confirm_entry.is_valid = confirm_password ();
             update_finish_button ();
         });
 
         confirm_entry.changed.connect (() => {
-            valid_pw_confirm = confirm_password ();
+            confirm_entry.is_valid = confirm_password ();
             update_finish_button ();
         });
 
@@ -220,11 +216,15 @@ public class Installer.AccountView : AbstractInstallerView {
     }
 
     private void update_finish_button () {
-        if (valid_username && valid_pw && valid_pw_confirm) {
+        if (username_entry.is_valid && pw_entry.is_valid && confirm_entry.is_valid) {
             finish_button.sensitive = true;
         } else {
             finish_button.sensitive = false;
         }
+    }
+
+    private class ValidatedEntry : Gtk.Entry {
+        public bool is_valid { get; set; default = false; }
     }
 
     private class ErrorRevealer : Gtk.Revealer {
