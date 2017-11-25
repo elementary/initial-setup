@@ -224,15 +224,7 @@ public class Installer.AccountView : AbstractInstallerView {
     }
 
     private class ValidatedEntry : Gtk.Entry {
-        private bool _is_valid = false;
-        public bool is_valid {
-            get {
-                return _is_valid;
-            }
-            set {
-                _is_valid = value;
-            }
-        }
+        public bool is_valid = false;
     }
 
     private class ErrorRevealer : Gtk.Revealer {
