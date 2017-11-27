@@ -77,7 +77,6 @@ namespace Utils {
 
                 user_manager.user_added.connect ((user) => {
                     if (user == created_user) {
-                        created_user.set_locked (false);
                         created_user.set_password (password, "");
                     }
                 });

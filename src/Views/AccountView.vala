@@ -100,7 +100,7 @@ public class Installer.AccountView : AbstractInstallerView {
         var back_button = new Gtk.Button.with_label (_("Back"));
 
         var finish_button = new Gtk.Button.with_label (_("Finish Setup"));
-        //finish_button.sensitive = false;
+        finish_button.sensitive = false;
         finish_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
         action_area.add (back_button);
@@ -120,9 +120,9 @@ public class Installer.AccountView : AbstractInstallerView {
         finish_button.clicked.connect (() => {
             string fullname = realname_entry.text;
             string username = username_entry.text;
-            string pw = pw_entry.text;
+            string password = pw_entry.text;
 
-            Utils.create_new_user (fullname, username, pw);
+            Utils.create_new_user (fullname, username, password);
         });
 
         show_all ();
