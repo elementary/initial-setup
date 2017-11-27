@@ -17,6 +17,8 @@ json_glib_dep = dependency('json-glib-1.0')
 xml2_dep = dependency('libxml-2.0')
 gnome_keyboard_dep = dependency('libgnomekbd')
 gnome_keyboard_ui_dep = meson.get_compiler('c').find_library('libgnomekbdui')
+polkit_dep = dependency('polkit-gobject-1')
+posix_dep = meson.get_compiler('vala').find_library('posix')
 pwquality_dep = dependency('pwquality')
 
 dependencies = [
@@ -30,6 +32,8 @@ dependencies = [
     gnome_keyboard_dep,
     gnome_keyboard_ui_dep,
     granite_dep,
+    polkit_dep,
+    posix_dep,
     pwquality_dep
 ]
 

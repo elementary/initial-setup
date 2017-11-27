@@ -5,15 +5,17 @@
 <policyconfig>
   <vendor>elementary</vendor>
   <vendor_url>https://github.com/elementary/initial-setup</vendor_url>
-  <icon_name>system-file-manager</icon_name>
-  <action id="org.freedesktop.policykit.pkexec.io.elementary.initial-setup">
-   <description>Run Initial Setup as Administrator</description>
-   <defaults>
-     <allow_any>auth_admin</allow_any>
-     <allow_inactive>auth_admin</allow_inactive>
-     <allow_active>auth_admin</allow_active>
-   </defaults>
-     <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/io.elementary.initial-setup</annotate>
-     <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
-   </action>
+  <icon_name>system-users</icon_name>
+  <action id="io.elementary.initial-setup">
+    <description>Run Initial Setup as Administrator</description>
+    <message gettext-domain="useraccounts-plug">Authentication is required to change user data</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/io.elementary.initial-setup</annotate>
+    <annotate key="org.freedesktop.policykit.imply">org.freedesktop.accounts.user-administration</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+  </action>
 </policyconfig>
