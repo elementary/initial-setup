@@ -42,8 +42,6 @@ public class Installer.AccountView : AbstractInstallerView {
         var username_label = new Granite.HeaderLabel (_("Username"));
 
         username_entry = new ValidatedEntry ();
-        username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-information-symbolic");
-        username_entry.set_icon_tooltip_text (Gtk.EntryIconPosition.SECONDARY, _("Can only contain lower case letters, numbers and no spaces"));
 
         username_error_revealer = new ErrorRevealer (".");
         username_error_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
