@@ -169,7 +169,6 @@ public class Installer.AccountView : AbstractInstallerView {
     private bool confirm_password () {
         if (confirm_entry.text != "") {
             if (pw_entry.text != confirm_entry.text) {
-                confirm_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
                 confirm_entry_revealer.label = _("Passwords do not match");
                 confirm_entry_revealer.reveal_child = true;
             } else {
@@ -205,7 +204,6 @@ public class Installer.AccountView : AbstractInstallerView {
             }
 
             username_error_revealer.reveal_child = true;
-            username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
         }
 
         return false;
@@ -220,7 +218,18 @@ public class Installer.AccountView : AbstractInstallerView {
     }
 
     private class ValidatedEntry : Gtk.Entry {
-        public bool is_valid { get; set; default = false; }
+        private bool _is_valid = false;
+        public bool is_valid {
+            get {
+                return _is_valid;
+            }
+            set {
+                if (!value && text != "") {
+                    set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
+                }
+                _is_valid = value;
+            }
+        }
     }
 
     private class ErrorRevealer : Gtk.Revealer {
