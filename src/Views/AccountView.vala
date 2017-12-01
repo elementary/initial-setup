@@ -123,11 +123,9 @@ public class Installer.AccountView : AbstractInstallerView {
                     username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-information-symbolic");
                 } else {
                     username_error_revealer.reveal_child = true;
-                    username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
                 }
             } else if (username_entry.is_valid == Gtk.MessageType.OTHER) {
                 username_error_revealer.reveal_child = false;
-                username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-completed-symbolic");
             }
 
             update_finish_button ();
@@ -166,14 +164,11 @@ public class Installer.AccountView : AbstractInstallerView {
             var quality = pwquality.check (pw_entry.text, null, null, out error);
 
             if (quality >= 0) {
-                pw_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-completed-symbolic");
                 pw_error_revealer.reveal_child = false;
 
                 pw_levelbar.value = quality;
                 return Gtk.MessageType.OTHER;
             } else {
-                pw_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-warning-symbolic");
-
                 pw_error_revealer.reveal_child = true;
                 pw_error_revealer.label = ((PasswordQuality.Error) quality).to_string (error);
 
@@ -188,11 +183,9 @@ public class Installer.AccountView : AbstractInstallerView {
     private Gtk.MessageType confirm_password () {
         if (confirm_entry.text != "") {
             if (pw_entry.text != confirm_entry.text) {
-                confirm_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
                 confirm_entry_revealer.label = _("Passwords do not match");
                 confirm_entry_revealer.reveal_child = true;
             } else {
-                confirm_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-completed-symbolic");
                 confirm_entry_revealer.reveal_child = false;
                 return Gtk.MessageType.OTHER;
             }
@@ -234,7 +227,23 @@ public class Installer.AccountView : AbstractInstallerView {
     }
 
     private class ValidatedEntry : Gtk.Entry {
-        public Gtk.MessageType is_valid { get; set; default = Gtk.MessageType.ERROR; }
+        private Gtk.MessageType _is_valid = Gtk.MessageType.ERROR;
+        public Gtk.MessageType is_valid {
+            get {
+                return _is_valid;
+            }
+            set {
+                if (value == Gtk.MessageType.OTHER) {
+                    set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-completed-symbolic");
+                } else if (value == Gtk.MessageType.ERROR && text != "") {
+                    set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
+                } else if (value == Gtk.MessageType.WARNING) {
+                    set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-warning-symbolic");
+                }
+
+                _is_valid = value;
+            }
+        }
     }
 
     private class ErrorRevealer : Gtk.Revealer {
