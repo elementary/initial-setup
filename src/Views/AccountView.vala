@@ -23,7 +23,6 @@ public class Installer.AccountView : AbstractInstallerView {
     private ValidatedEntry confirm_entry;
     private ValidatedEntry username_entry;
     private ValidatedEntry pw_entry;
-    private Gtk.Label confirm_label;
     private Gtk.LevelBar pw_levelbar;
 
     construct {
@@ -63,8 +62,7 @@ public class Installer.AccountView : AbstractInstallerView {
         pw_levelbar.add_offset_value ("high", 75.0);
         pw_levelbar.add_offset_value ("middle", 75.0);
 
-        confirm_label = new Granite.HeaderLabel (_("Confirm Password"));
-        confirm_label.sensitive = false;
+        var confirm_label = new Granite.HeaderLabel (_("Confirm Password"));
 
         confirm_entry = new ValidatedEntry ();
         confirm_entry.sensitive = false;
@@ -137,7 +135,6 @@ public class Installer.AccountView : AbstractInstallerView {
         if (pw_entry.text == "") {
             confirm_entry.text = "";
             confirm_entry.sensitive = false;
-            confirm_label.sensitive = false;
 
             pw_levelbar.value = 0;
 
@@ -145,7 +142,6 @@ public class Installer.AccountView : AbstractInstallerView {
             pw_error_revealer.reveal_child = false;
         } else {
             confirm_entry.sensitive = true;
-            confirm_label.sensitive = true;
 
             var pwquality = new PasswordQuality.Settings ();
             void* error;
