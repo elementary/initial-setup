@@ -19,9 +19,10 @@ public class Installer.AccountView : AbstractInstallerView {
     private ErrorRevealer confirm_entry_revealer;
     private ErrorRevealer pw_error_revealer;
     private ErrorRevealer username_error_revealer;
-    private Gtk.Entry confirm_entry;
-    private Gtk.Entry username_entry;
-    private Gtk.Entry pw_entry;
+    private Gtk.Button finish_button;
+    private ValidatedEntry confirm_entry;
+    private ValidatedEntry username_entry;
+    private ValidatedEntry pw_entry;
     private Gtk.Label confirm_label;
     private Gtk.LevelBar pw_levelbar;
 
@@ -40,7 +41,7 @@ public class Installer.AccountView : AbstractInstallerView {
 
         var username_label = new Granite.HeaderLabel (_("Username"));
 
-        username_entry = new Gtk.Entry ();
+        username_entry = new ValidatedEntry ();
         username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-information-symbolic");
         username_entry.set_icon_tooltip_text (Gtk.EntryIconPosition.SECONDARY, _("Can only contain lower case letters, numbers and no spaces"));
 
@@ -52,7 +53,7 @@ public class Installer.AccountView : AbstractInstallerView {
         pw_error_revealer = new ErrorRevealer (".");
         pw_error_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_WARNING);
 
-        pw_entry = new Gtk.Entry ();
+        pw_entry = new ValidatedEntry ();
         pw_entry.visibility = false;
 
         pw_levelbar = new Gtk.LevelBar ();
@@ -65,7 +66,7 @@ public class Installer.AccountView : AbstractInstallerView {
         confirm_label = new Granite.HeaderLabel (_("Confirm Password"));
         confirm_label.sensitive = false;
 
-        confirm_entry = new Gtk.Entry ();
+        confirm_entry = new ValidatedEntry ();
         confirm_entry.sensitive = false;
         confirm_entry.visibility = false;
 
@@ -99,7 +100,7 @@ public class Installer.AccountView : AbstractInstallerView {
 
         var back_button = new Gtk.Button.with_label (_("Back"));
 
-        var finish_button = new Gtk.Button.with_label (_("Finish Setup"));
+        finish_button = new Gtk.Button.with_label (_("Finish Setup"));
         finish_button.sensitive = false;
         finish_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
@@ -113,9 +114,21 @@ public class Installer.AccountView : AbstractInstallerView {
             username_entry.text = username;
         });
 
-        username_entry.changed.connect (check_username);
-        pw_entry.changed.connect (check_password);
-        confirm_entry.changed.connect (check_password);
+        username_entry.changed.connect (() => {
+            username_entry.is_valid = check_username ();
+            update_finish_button ();
+        });
+
+        pw_entry.changed.connect (() => {
+            pw_entry.is_valid = check_password ();
+            confirm_entry.is_valid = confirm_password ();
+            update_finish_button ();
+        });
+
+        confirm_entry.changed.connect (() => {
+            confirm_entry.is_valid = confirm_password ();
+            update_finish_button ();
+        });
 
         finish_button.clicked.connect (() => {
             string fullname = realname_entry.text;
@@ -128,7 +141,7 @@ public class Installer.AccountView : AbstractInstallerView {
         show_all ();
     }
 
-    private void check_password () {
+    private bool check_password () {
         if (pw_entry.text == "") {
             confirm_entry.text = "";
             confirm_entry.sensitive = false;
@@ -159,8 +172,13 @@ public class Installer.AccountView : AbstractInstallerView {
 
                 pw_levelbar.value = 0;
             }
+            return true;
         }
 
+        return false;
+    }
+
+    private bool confirm_password () {
         if (confirm_entry.text != "") {
             if (pw_entry.text != confirm_entry.text) {
                 confirm_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
@@ -169,14 +187,17 @@ public class Installer.AccountView : AbstractInstallerView {
             } else {
                 confirm_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-completed-symbolic");
                 confirm_entry_revealer.reveal_child = false;
+                return true;
             }
         } else {
             confirm_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, null);
             confirm_entry_revealer.reveal_child = false;
         }
+
+        return false;
     }
 
-    private void check_username () {
+    private bool check_username () {
         string username_entry_text = username_entry.text;
         bool username_is_valid = Utils.is_valid_username (username_entry_text);
         bool username_is_taken = Utils.is_taken_username (username_entry_text);
@@ -187,6 +208,7 @@ public class Installer.AccountView : AbstractInstallerView {
         } else if (username_is_valid && !username_is_taken) {
             username_error_revealer.reveal_child = false;
             username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-completed-symbolic");
+            return true;
         } else {
             if (username_is_taken) {
                 username_error_revealer.label = _("Username is already taken");
@@ -197,6 +219,20 @@ public class Installer.AccountView : AbstractInstallerView {
             username_error_revealer.reveal_child = true;
             username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
         }
+
+        return false;
+    }
+
+    private void update_finish_button () {
+        if (username_entry.is_valid && pw_entry.is_valid && confirm_entry.is_valid) {
+            finish_button.sensitive = true;
+        } else {
+            finish_button.sensitive = false;
+        }
+    }
+
+    private class ValidatedEntry : Gtk.Entry {
+        public bool is_valid { get; set; default = false; }
     }
 
     private class ErrorRevealer : Gtk.Revealer {
