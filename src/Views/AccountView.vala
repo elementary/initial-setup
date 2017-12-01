@@ -116,6 +116,20 @@ public class Installer.AccountView : AbstractInstallerView {
 
         username_entry.changed.connect (() => {
             username_entry.is_valid = check_username ();
+
+            if (username_entry.is_valid == Gtk.MessageType.ERROR) {
+                if (username_entry.text == "") {
+                    username_error_revealer.reveal_child = false;
+                    username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-information-symbolic");
+                } else {
+                    username_error_revealer.reveal_child = true;
+                    username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
+                }
+            } else if (username_entry.is_valid == Gtk.MessageType.OTHER) {
+                username_error_revealer.reveal_child = false;
+                username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-completed-symbolic");
+            }
+
             update_finish_button ();
         });
 
@@ -195,12 +209,7 @@ public class Installer.AccountView : AbstractInstallerView {
         bool username_is_valid = Utils.is_valid_username (username_entry_text);
         bool username_is_taken = Utils.is_taken_username (username_entry_text);
 
-        if (username_entry_text == "") {
-            username_error_revealer.reveal_child = false;
-            username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-information-symbolic");
-        } else if (username_is_valid && !username_is_taken) {
-            username_error_revealer.reveal_child = false;
-            username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-completed-symbolic");
+        if (username_is_valid && !username_is_taken) {
             return Gtk.MessageType.OTHER;
         } else {
             if (username_is_taken) {
@@ -208,9 +217,6 @@ public class Installer.AccountView : AbstractInstallerView {
             } else if (!username_is_valid) {
                 username_error_revealer.label = _("Username is not valid");
             }
-
-            username_error_revealer.reveal_child = true;
-            username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
         }
 
         return Gtk.MessageType.ERROR;
