@@ -70,16 +70,20 @@ namespace Utils {
     }
 
     public static void create_new_user (string fullname, string username, string password) {
-        if (get_permission ().allowed) {
+        var permission = get_permission ();
+
+        if (permission != null && permission.allowed) {
             try {
                 var user_manager = get_usermanager ();
-                var created_user = user_manager.create_user (username, fullname, Act.UserAccountType.ADMINISTRATOR);
+                if (user_manager != null) {
+                    var created_user = user_manager.create_user (username, fullname, Act.UserAccountType.ADMINISTRATOR);
 
-                user_manager.user_added.connect ((user) => {
-                    if (user == created_user) {
-                        created_user.set_password (password, "");
-                    }
-                });
+                    user_manager.user_added.connect ((user) => {
+                        if (user == created_user) {
+                            created_user.set_password (password, "");
+                        }
+                    });
+                }
             } catch (Error e) {
                 critical ("Creation of user '%s' failed".printf (username));
             }
