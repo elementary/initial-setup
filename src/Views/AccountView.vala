@@ -41,8 +41,6 @@ public class Installer.AccountView : AbstractInstallerView {
         var username_label = new Granite.HeaderLabel (_("Username"));
 
         username_entry = new ValidatedEntry ();
-        username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-information-symbolic");
-        username_entry.set_icon_tooltip_text (Gtk.EntryIconPosition.SECONDARY, _("Can only contain lower case letters, numbers and no spaces"));
 
         username_error_revealer = new ErrorRevealer (".");
         username_error_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
@@ -192,7 +190,7 @@ public class Installer.AccountView : AbstractInstallerView {
 
         if (username_entry_text == "") {
             username_error_revealer.reveal_child = false;
-            username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-information-symbolic");
+            username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, null);
         } else if (username_is_valid && !username_is_taken) {
             username_error_revealer.reveal_child = false;
             username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-completed-symbolic");
@@ -201,7 +199,7 @@ public class Installer.AccountView : AbstractInstallerView {
             if (username_is_taken) {
                 username_error_revealer.label = _("Username is already taken");
             } else if (!username_is_valid) {
-                username_error_revealer.label = _("Username is not valid");
+                username_error_revealer.label = _("Username can only contain lowercase letters and numbers, without spaces");
             }
 
             username_error_revealer.reveal_child = true;
