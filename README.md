@@ -1,4 +1,6 @@
 # Initial Setup
+[![Translation status](https://weblate.elementary.io/widgets/installer/-/initial-setup/svg-badge.svg)](https://l10n.elementary.io/projects/installer/initial-setup/?utm_source=widget)
+
 An onboarding app for new installations
 
 ## Building, Testing, and Installation
