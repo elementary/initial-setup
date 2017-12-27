@@ -55,6 +55,41 @@ namespace Utils {
         return usermanager;
     }
 
+    private static Polkit.Permission? permission = null;
+
+    public static Polkit.Permission? get_permission () {
+        if (permission != null)
+            return permission;
+        try {
+            permission = new Polkit.Permission.sync ("io.elementary.initial-setup", new Polkit.UnixProcess (Posix.getpid ()));
+            return permission;
+        } catch (Error e) {
+            critical (e.message);
+            return null;
+        }
+    }
+
+    public static void create_new_user (string fullname, string username, string password) {
+        var permission = get_permission ();
+
+        if (permission != null && permission.allowed) {
+            try {
+                var user_manager = get_usermanager ();
+                if (user_manager != null) {
+                    var created_user = user_manager.create_user (username, fullname, Act.UserAccountType.ADMINISTRATOR);
+
+                    user_manager.user_added.connect ((user) => {
+                        if (user == created_user) {
+                            created_user.set_password (password, "");
+                        }
+                    });
+                }
+            } catch (Error e) {
+                critical ("Creation of user '%s' failed".printf (username));
+            }
+        }
+    }
+
     public static bool is_taken_username (string username) {
         foreach (unowned Act.User user in get_usermanager ().list_users ()) {
             if (user.get_user_name () == username) {

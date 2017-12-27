@@ -126,6 +126,14 @@ public class Installer.AccountView : AbstractInstallerView {
             update_finish_button ();
         });
 
+        finish_button.clicked.connect (() => {
+            string fullname = realname_entry.text;
+            string username = username_entry.text;
+            string password = pw_entry.text;
+
+            Utils.create_new_user (fullname, username, password);
+        });
+
         show_all ();
     }
 
