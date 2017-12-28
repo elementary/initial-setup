@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2017-12-28 03:45+0000\n"
+"PO-Revision-Date: 2017-12-30 00:08+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/installer"
 "/initial-setup/ko/>\n"
@@ -22,7 +22,7 @@ msgstr "%s 설정하기"
 
 #: src/Utils.vala:26
 msgid "Operating System"
-msgstr "운영 체제"
+msgstr "운영체제"
 
 #: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:133
 #, c-format
