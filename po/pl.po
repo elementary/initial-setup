@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-01-03 02:26+0000\n"
+"PO-Revision-Date: 2018-01-04 00:14+0000\n"
 "Last-Translator: Piotr Strebski <strebski@o2.pl>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/installer"
 "/initial-setup/pl/>\n"
@@ -60,7 +60,7 @@ msgstr "Cofnij"
 
 #: src/Views/AccountView.vala:99
 msgid "Finish Setup"
-msgstr "Zakończ instalację"
+msgstr "Zakończ ustawienia"
 
 #: src/Views/AccountView.vala:179
 msgid "Passwords do not match"
