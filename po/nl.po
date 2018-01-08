@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
 "PO-Revision-Date: 2018-01-08 19:58+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
 "Language-Team: Dutch <https://weblate.elementary.io/projects/installer"
 "/initial-setup/nl/>\n"
 "Language: nl\n"
@@ -101,7 +101,7 @@ msgstr "Invoegtaal"
 
 #: src/Views/LanguageView.vala:201
 msgid "Languages"
-msgstr "Taal"
+msgstr "Talen"
 
 #: src/Views/LanguageView.vala:218
 msgid "Select a Language"
