@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
 "PO-Revision-Date: 2018-01-08 19:58+0000\n"
-"Last-Translator: stefan t <s.tomeij@gmail.com>\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch <https://weblate.elementary.io/projects/installer"
 "/initial-setup/nl/>\n"
 "Language: nl\n"
@@ -89,19 +89,19 @@ msgstr "Toon toetsenbordindeling"
 #: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:109
 #: src/Views/LanguageView.vala:150
 msgid "Select"
-msgstr ""
+msgstr "Selecteer"
 
 #: src/Views/KeyboardLayoutView.vala:96
 msgid "Default"
-msgstr ""
+msgstr "Standaard"
 
 #: src/Views/KeyboardLayoutView.vala:101
 msgid "Input Language"
-msgstr ""
+msgstr "Invoegtaal"
 
 #: src/Views/LanguageView.vala:201
 msgid "Languages"
-msgstr ""
+msgstr "Taal"
 
 #: src/Views/LanguageView.vala:218
 msgid "Select a Language"
