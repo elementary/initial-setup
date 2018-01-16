@@ -8,22 +8,22 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2017-09-06 14:01+0000\n"
-"Last-Translator: Lloyd Carr <l.carr@gmx.de>\n"
-"Language-Team: German <https://weblate.elementary.io/projects/installer/"
-"installer/de/>\n"
+"PO-Revision-Date: 2018-01-16 04:11+0000\n"
+"Last-Translator: SteffenL <steffenl@protonmail.com>\n"
+"Language-Team: German <https://weblate.elementary.io/projects/installer"
+"/initial-setup/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.16\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/MainWindow.vala:34
 #, c-format
 msgid "Set up %s"
-msgstr ""
+msgstr "%s einrichten"
 
 #: src/Utils.vala:26
 msgid "Operating System"
@@ -40,23 +40,23 @@ msgstr "Installation abbrechen"
 
 #: src/Views/AccountView.vala:32
 msgid "Create an Account"
-msgstr ""
+msgstr "Konto erstellen"
 
 #: src/Views/AccountView.vala:36
 msgid "Full Name"
-msgstr ""
+msgstr "Voller Name"
 
 #: src/Views/AccountView.vala:41
 msgid "Username"
-msgstr ""
+msgstr "Benutzername"
 
 #: src/Views/AccountView.vala:48
 msgid "Choose a Password"
-msgstr ""
+msgstr "Passwort auswählen"
 
 #: src/Views/AccountView.vala:63
 msgid "Confirm Password"
-msgstr ""
+msgstr "Passwort bestätigen"
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
 msgid "Back"
@@ -64,19 +64,21 @@ msgstr "Zurück"
 
 #: src/Views/AccountView.vala:99
 msgid "Finish Setup"
-msgstr ""
+msgstr "Setup abschließen"
 
 #: src/Views/AccountView.vala:179
 msgid "Passwords do not match"
-msgstr ""
+msgstr "Passwörter stimmen nicht überein"
 
 #: src/Views/AccountView.vala:208
 msgid "Username is already taken"
-msgstr ""
+msgstr "Benutzername ist bereits vergeben"
 
 #: src/Views/AccountView.vala:210
 msgid "Username can only contain lowercase letters and numbers, without spaces"
 msgstr ""
+"Benutzername kann nur Kleinbuchstaben und Ziffern enthalten (ohne "
+"Leerstellen)"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
@@ -93,7 +95,7 @@ msgstr "Tastaturbelegung zeigen"
 #: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:109
 #: src/Views/LanguageView.vala:150
 msgid "Select"
-msgstr "auswählen"
+msgstr "Auswählen"
 
 #: src/Views/KeyboardLayoutView.vala:96
 msgid "Default"
@@ -104,9 +106,8 @@ msgid "Input Language"
 msgstr "Eingabesprache"
 
 #: src/Views/LanguageView.vala:201
-#, fuzzy
 msgid "Languages"
-msgstr "Eingabesprache"
+msgstr "Sprachen"
 
 #: src/Views/LanguageView.vala:218
 msgid "Select a Language"
