@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-01-17 08:23+0000\n"
+"PO-Revision-Date: 2018-01-18 00:02+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/installer"
 "/initial-setup/fi/>\n"
@@ -72,7 +72,7 @@ msgstr "Käyttäjätunnus on jo käytössä"
 #: src/Views/AccountView.vala:210
 msgid "Username can only contain lowercase letters and numbers, without spaces"
 msgstr ""
-"Käyttäjätunnus voi sisltää vain pieniä kirjaimia ja numeroita ilman "
+"Käyttäjätunnus voi sisältää vain pieniä kirjaimia ja numeroita ilman "
 "välilyöntejä"
 
 #: src/Views/KeyboardLayoutView.vala:28
