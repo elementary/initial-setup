@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-01-23 00:06+0000\n"
+"PO-Revision-Date: 2018-01-23 07:31+0000\n"
 "Last-Translator: Deo Valiandro. M <vaeloox@gmail.com>\n"
 "Language-Team: English (United Kingdom) "
 "<https://weblate.elementary.io/projects/installer/initial-setup/en_GB/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 #: src/MainWindow.vala:34
 #, c-format
 msgid "Set up %s"
-msgstr ""
+msgstr "Mempersiapkan %s"
 
 #: src/Utils.vala:26
 msgid "Operating System"
@@ -27,7 +27,7 @@ msgstr "Sistem Operasi"
 #: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:133
 #, c-format
 msgid "%s…"
-msgstr ""
+msgstr "%s …"
 
 #: src/Views/AbstractInstallerView.vala:47
 msgid "Cancel Installation"
@@ -43,73 +43,72 @@ msgstr "Nama Lengkap"
 
 #: src/Views/AccountView.vala:41
 msgid "Username"
-msgstr ""
+msgstr "Nama Pengguna"
 
 #: src/Views/AccountView.vala:48
 msgid "Choose a Password"
-msgstr ""
+msgstr "Pilih Kata Sandi"
 
 #: src/Views/AccountView.vala:63
 msgid "Confirm Password"
-msgstr "Konfirmasi Password"
+msgstr "Konfirmasi Kata Sandi"
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
-#, fuzzy
 msgid "Back"
-msgstr "Backspace"
+msgstr "Kembali"
 
 #: src/Views/AccountView.vala:99
 msgid "Finish Setup"
-msgstr ""
+msgstr "Pengaturan Selesai"
 
 #: src/Views/AccountView.vala:179
 msgid "Passwords do not match"
-msgstr ""
+msgstr "Kata Sandi tidak cocok"
 
 #: src/Views/AccountView.vala:208
 msgid "Username is already taken"
-msgstr ""
+msgstr "Nama pengguna telah digunakan"
 
 #: src/Views/AccountView.vala:210
 msgid "Username can only contain lowercase letters and numbers, without spaces"
-msgstr ""
+msgstr "Nama pengguna hanya bisa berisi huruf kecil dan angka, tanpa spasi"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
-msgstr ""
+msgstr "Tata Letak Keyboard"
 
 #: src/Views/KeyboardLayoutView.vala:36
 msgid "Type to test your layout"
-msgstr ""
+msgstr "Ketik untuk menguji tata letak Anda"
 
 #: src/Views/KeyboardLayoutView.vala:39
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "Tampilkan tata letak keyboard"
 
 #: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:109
 #: src/Views/LanguageView.vala:150
 msgid "Select"
-msgstr ""
+msgstr "Pilih"
 
 #: src/Views/KeyboardLayoutView.vala:96
 msgid "Default"
-msgstr ""
+msgstr "Default"
 
 #: src/Views/KeyboardLayoutView.vala:101
 msgid "Input Language"
-msgstr ""
+msgstr "Bahasa masukan"
 
 #: src/Views/LanguageView.vala:201
 msgid "Languages"
-msgstr ""
+msgstr "Bahasa"
 
 #: src/Views/LanguageView.vala:218
 msgid "Select a Language"
-msgstr ""
+msgstr "Pilih sebuah Bahasa"
 
 #: src/Views/LanguageView.vala:246 src/Views/LanguageView.vala:289
 msgid "Currently active language"
-msgstr ""
+msgstr "Bahasa aktif saat ini"
 
 #~ msgid "translator-credits"
 #~ msgstr ""
