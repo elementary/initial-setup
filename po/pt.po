@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2017-03-08 19:36+0000\n"
-"Last-Translator: Leonardo <leonardo@elementary.io>\n"
-"Language-Team: Portuguese <http://weblate.elementary.io/projects/desktop/"
-"installer/pt/>\n"
+"PO-Revision-Date: 2018-02-07 00:09+0000\n"
+"Last-Translator: Paulo Moura <paulojmoura@gmail.com>\n"
+"Language-Team: Portuguese <https://weblate.elementary.io/projects/installer"
+"/initial-setup/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.12\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/MainWindow.vala:34
@@ -22,7 +22,7 @@ msgstr ""
 
 #: src/Utils.vala:26
 msgid "Operating System"
-msgstr ""
+msgstr "Sistema Operacional"
 
 #: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:133
 #, c-format
@@ -31,79 +31,78 @@ msgstr ""
 
 #: src/Views/AbstractInstallerView.vala:47
 msgid "Cancel Installation"
-msgstr ""
+msgstr "Cancelar instalação"
 
 #: src/Views/AccountView.vala:32
 msgid "Create an Account"
-msgstr ""
+msgstr "Criar conta"
 
 #: src/Views/AccountView.vala:36
 msgid "Full Name"
-msgstr ""
+msgstr "Nome Completo"
 
 #: src/Views/AccountView.vala:41
 msgid "Username"
-msgstr ""
+msgstr "Nome de usuário"
 
 #: src/Views/AccountView.vala:48
 msgid "Choose a Password"
-msgstr ""
+msgstr "Digite a senha"
 
 #: src/Views/AccountView.vala:63
 msgid "Confirm Password"
-msgstr ""
+msgstr "Confirme a senha"
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
-#, fuzzy
 msgid "Back"
-msgstr "Retroceder"
+msgstr "Voltar"
 
 #: src/Views/AccountView.vala:99
 msgid "Finish Setup"
-msgstr ""
+msgstr "Finalizar instalação"
 
 #: src/Views/AccountView.vala:179
 msgid "Passwords do not match"
-msgstr ""
+msgstr "As senhas não combinam"
 
 #: src/Views/AccountView.vala:208
 msgid "Username is already taken"
-msgstr ""
+msgstr "Nome de usuário já existe"
 
 #: src/Views/AccountView.vala:210
 msgid "Username can only contain lowercase letters and numbers, without spaces"
 msgstr ""
+"O nome de usuário somente pode conter letras minúsculas e números, sem "
+"espaços"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
-msgstr ""
+msgstr "Mapa de teclado"
 
 #: src/Views/KeyboardLayoutView.vala:36
 msgid "Type to test your layout"
-msgstr ""
+msgstr "Digite para testa seu mapa de teclado"
 
 #: src/Views/KeyboardLayoutView.vala:39
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "Mostrar mapa de teclado"
 
 #: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:109
 #: src/Views/LanguageView.vala:150
 msgid "Select"
-msgstr ""
+msgstr "Selecione"
 
 #: src/Views/KeyboardLayoutView.vala:96
 msgid "Default"
-msgstr ""
+msgstr "Padrão"
 
 #: src/Views/KeyboardLayoutView.vala:101
-#, fuzzy
 msgid "Input Language"
 msgstr "Selecionar um idioma"
 
 #: src/Views/LanguageView.vala:201
-#, fuzzy
 msgid "Languages"
-msgstr "Selecionar um idioma"
+msgstr "Idiomas"
 
 #: src/Views/LanguageView.vala:218
 msgid "Select a Language"
@@ -111,7 +110,7 @@ msgstr "Selecionar um idioma"
 
 #: src/Views/LanguageView.vala:246 src/Views/LanguageView.vala:289
 msgid "Currently active language"
-msgstr ""
+msgstr "Idioma escolhido"
 
 #, fuzzy
 #~ msgid "Install %s"
