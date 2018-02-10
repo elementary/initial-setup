@@ -3,15 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2016-05-27 15:28+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-02-11 00:08+0000\n"
+"Last-Translator: Lasha-Giorgi Esebua <lashagiorgiesebua@gmail.com>\n"
+"Language-Team: Georgian <https://weblate.elementary.io/projects/installer"
+"/initial-setup/ka/>\n"
+"Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
 
 #: src/MainWindow.vala:34
 #, c-format
@@ -20,7 +22,7 @@ msgstr ""
 
 #: src/Utils.vala:26
 msgid "Operating System"
-msgstr ""
+msgstr "ოპერატიული სისტემა"
 
 #: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:133
 #, c-format
@@ -29,7 +31,7 @@ msgstr ""
 
 #: src/Views/AbstractInstallerView.vala:47
 msgid "Cancel Installation"
-msgstr ""
+msgstr "ინსტალაციის გაუქმება"
 
 #: src/Views/AccountView.vala:32
 msgid "Create an Account"
@@ -52,9 +54,8 @@ msgid "Confirm Password"
 msgstr ""
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
-#, fuzzy
 msgid "Back"
-msgstr "უკუშლა (Backspace)"
+msgstr "უკუშლა"
 
 #: src/Views/AccountView.vala:99
 msgid "Finish Setup"
@@ -74,20 +75,20 @@ msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
-msgstr ""
+msgstr "კლავიატურის სქემა"
 
 #: src/Views/KeyboardLayoutView.vala:36
 msgid "Type to test your layout"
-msgstr ""
+msgstr "დაბეჭდეთ რათა გამოსცადოთ განლაგება"
 
 #: src/Views/KeyboardLayoutView.vala:39
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "გამოაჩინე კლავიატურის განლაგება"
 
 #: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:109
 #: src/Views/LanguageView.vala:150
 msgid "Select"
-msgstr ""
+msgstr "არჩევა"
 
 #: src/Views/KeyboardLayoutView.vala:96
 msgid "Default"
@@ -99,15 +100,15 @@ msgstr ""
 
 #: src/Views/LanguageView.vala:201
 msgid "Languages"
-msgstr ""
+msgstr "ენა"
 
 #: src/Views/LanguageView.vala:218
 msgid "Select a Language"
-msgstr ""
+msgstr "აირჩიეთ ენა"
 
 #: src/Views/LanguageView.vala:246 src/Views/LanguageView.vala:289
 msgid "Currently active language"
-msgstr ""
+msgstr "თარგმანი"
 
 #~ msgid "translator-credits"
 #~ msgstr ""
