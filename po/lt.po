@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-01-04 00:14+0000\n"
+"PO-Revision-Date: 2018-02-16 13:29+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/installer"
 "/initial-setup/lt/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 #: src/MainWindow.vala:34
 #, c-format
 msgid "Set up %s"
-msgstr ""
+msgstr "Nusistatyti %s"
 
 #: src/Utils.vala:26
 msgid "Operating System"
@@ -36,11 +36,11 @@ msgstr "Atsisakyti įdiegimo"
 
 #: src/Views/AccountView.vala:32
 msgid "Create an Account"
-msgstr ""
+msgstr "Susikurkite paskyrą"
 
 #: src/Views/AccountView.vala:36
 msgid "Full Name"
-msgstr ""
+msgstr "Visas vardas"
 
 #: src/Views/AccountView.vala:41
 msgid "Username"
@@ -48,11 +48,11 @@ msgstr "Naudotojo vardas"
 
 #: src/Views/AccountView.vala:48
 msgid "Choose a Password"
-msgstr ""
+msgstr "Pasirinkite slaptažodį"
 
 #: src/Views/AccountView.vala:63
 msgid "Confirm Password"
-msgstr ""
+msgstr "Pakartokite slaptažodį"
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
 msgid "Back"
@@ -60,7 +60,7 @@ msgstr "Atgal"
 
 #: src/Views/AccountView.vala:99
 msgid "Finish Setup"
-msgstr ""
+msgstr "Užbaigti sąranką"
 
 #: src/Views/AccountView.vala:179
 msgid "Passwords do not match"
