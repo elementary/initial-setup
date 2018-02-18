@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
 "PO-Revision-Date: 2018-02-18 18:46+0000\n"
-"Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
+"Last-Translator: Donato <donato.madalese@gmail.com>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/installer"
 "/initial-setup/it/>\n"
 "Language: it\n"
@@ -72,6 +72,7 @@ msgstr "Il nome utente è già in uso"
 #: src/Views/AccountView.vala:210
 msgid "Username can only contain lowercase letters and numbers, without spaces"
 msgstr ""
+"Il nome utente può contenere solo lettere minuscole e numeri, senza spazi"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
