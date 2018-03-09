@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-02-21 00:07+0000\n"
+"PO-Revision-Date: 2018-03-09 19:54+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/installer"
 "/initial-setup/it/>\n"
@@ -31,7 +31,7 @@ msgstr "%s…"
 
 #: src/Views/AbstractInstallerView.vala:47
 msgid "Cancel Installation"
-msgstr "Annulla installazione"
+msgstr "Annulla l'installazione"
 
 #: src/Views/AccountView.vala:32
 msgid "Create an Account"
@@ -59,7 +59,7 @@ msgstr "Indietro"
 
 #: src/Views/AccountView.vala:99
 msgid "Finish Setup"
-msgstr "Completa installazione"
+msgstr "Completa la configurazione"
 
 #: src/Views/AccountView.vala:179
 msgid "Passwords do not match"
@@ -109,7 +109,7 @@ msgstr "Seleziona una lingua"
 
 #: src/Views/LanguageView.vala:246 src/Views/LanguageView.vala:289
 msgid "Currently active language"
-msgstr "Lingua correntemente selezionata"
+msgstr "Lingua attualmente in uso"
 
 #~ msgid "translator-credits"
 #~ msgstr ""
