@@ -3,15 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2016-05-27 15:28+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-03-14 00:02+0000\n"
+"Last-Translator: Zorgo <zorgo@syndicate.sk>\n"
+"Language-Team: Slovak <https://weblate.elementary.io/projects/installer"
+"/initial-setup/sk/>\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
 
 #: src/MainWindow.vala:34
 #, c-format
@@ -20,7 +22,7 @@ msgstr ""
 
 #: src/Utils.vala:26
 msgid "Operating System"
-msgstr ""
+msgstr "Operačný systém"
 
 #: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:133
 #, c-format
@@ -29,27 +31,27 @@ msgstr ""
 
 #: src/Views/AbstractInstallerView.vala:47
 msgid "Cancel Installation"
-msgstr ""
+msgstr "Zrusiť inštaláciu"
 
 #: src/Views/AccountView.vala:32
 msgid "Create an Account"
-msgstr ""
+msgstr "Vytvoriť účet"
 
 #: src/Views/AccountView.vala:36
 msgid "Full Name"
-msgstr ""
+msgstr "Celé meno"
 
 #: src/Views/AccountView.vala:41
 msgid "Username"
-msgstr ""
+msgstr "Užívateľské meno"
 
 #: src/Views/AccountView.vala:48
 msgid "Choose a Password"
-msgstr ""
+msgstr "Zvoľte heslo"
 
 #: src/Views/AccountView.vala:63
 msgid "Confirm Password"
-msgstr ""
+msgstr "Potvrďte heslo"
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
 #, fuzzy
@@ -58,36 +60,36 @@ msgstr "Späť"
 
 #: src/Views/AccountView.vala:99
 msgid "Finish Setup"
-msgstr ""
+msgstr "Dokončiť inštaláciu"
 
 #: src/Views/AccountView.vala:179
 msgid "Passwords do not match"
-msgstr ""
+msgstr "Heslá sa nezhodujú"
 
 #: src/Views/AccountView.vala:208
 msgid "Username is already taken"
-msgstr ""
+msgstr "Užívateľské meno už existuje"
 
 #: src/Views/AccountView.vala:210
 msgid "Username can only contain lowercase letters and numbers, without spaces"
-msgstr ""
+msgstr "Užívateľské meno môže obsahovať iba malé písmená a čísla, bez medzier"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
-msgstr ""
+msgstr "Rozloženie klávesnice"
 
 #: src/Views/KeyboardLayoutView.vala:36
 msgid "Type to test your layout"
-msgstr ""
+msgstr "Píšte pre otestovanie Vašeho rozloženia"
 
 #: src/Views/KeyboardLayoutView.vala:39
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "Zobraziť rozloženie klávesnice"
 
 #: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:109
 #: src/Views/LanguageView.vala:150
 msgid "Select"
-msgstr ""
+msgstr "Vybrať"
 
 #: src/Views/KeyboardLayoutView.vala:96
 msgid "Default"
