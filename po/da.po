@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-03-19 22:33+0000\n"
-"Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
+"PO-Revision-Date: 2018-03-19 22:35+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/installer"
 "/initial-setup/da/>\n"
 "Language: da\n"
@@ -35,15 +35,15 @@ msgstr "Annullér Installation"
 
 #: src/Views/AccountView.vala:32
 msgid "Create an Account"
-msgstr ""
+msgstr "Lav en Bruger"
 
 #: src/Views/AccountView.vala:36
 msgid "Full Name"
-msgstr ""
+msgstr "Fulde Navn"
 
 #: src/Views/AccountView.vala:41
 msgid "Username"
-msgstr ""
+msgstr "Brugernavn"
 
 #: src/Views/AccountView.vala:48
 msgid "Choose a Password"
