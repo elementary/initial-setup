@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-03-19 22:37+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2018-03-19 22:39+0000\n"
+"Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/installer"
 "/initial-setup/da/>\n"
 "Language: da\n"
@@ -63,15 +63,15 @@ msgstr "Færdiggør Opsætning"
 
 #: src/Views/AccountView.vala:179
 msgid "Passwords do not match"
-msgstr ""
+msgstr "Adgangskoderne er ikke ens"
 
 #: src/Views/AccountView.vala:208
 msgid "Username is already taken"
-msgstr ""
+msgstr "Brugernavnet er optaget"
 
 #: src/Views/AccountView.vala:210
 msgid "Username can only contain lowercase letters and numbers, without spaces"
-msgstr ""
+msgstr "Brugernavn kan kun indeholde små bogstaver og tal uden mellemrum"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
