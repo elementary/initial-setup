@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2017-12-28 00:07+0000\n"
-"Last-Translator: haggen svastian <h2gn@openmailbox.org>\n"
+"PO-Revision-Date: 2018-03-21 00:04+0000\n"
+"Last-Translator: Adolfo Jayme-Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/installer"
 "/initial-setup/es/>\n"
 "Language: es\n"
@@ -35,7 +35,7 @@ msgstr "Cancelar instalación"
 
 #: src/Views/AccountView.vala:32
 msgid "Create an Account"
-msgstr "Crea una cuenta"
+msgstr "Crear una cuenta"
 
 #: src/Views/AccountView.vala:36
 msgid "Full Name"
@@ -47,7 +47,7 @@ msgstr "Nombre de usuario"
 
 #: src/Views/AccountView.vala:48
 msgid "Choose a Password"
-msgstr "Elije una contraseña"
+msgstr "Elija una contraseña"
 
 #: src/Views/AccountView.vala:63
 msgid "Confirm Password"
@@ -67,7 +67,7 @@ msgstr "Las contraseñas no coinciden"
 
 #: src/Views/AccountView.vala:208
 msgid "Username is already taken"
-msgstr "Este nombre de usuario ya ha sido tomado"
+msgstr "Ya se está utilizando este nombre de usuario"
 
 #: src/Views/AccountView.vala:210
 msgid "Username can only contain lowercase letters and numbers, without spaces"
@@ -77,11 +77,11 @@ msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
-msgstr "Disposición del teclado"
+msgstr "Disposición de teclado"
 
 #: src/Views/KeyboardLayoutView.vala:36
 msgid "Type to test your layout"
-msgstr "Escribe para probar la disposición"
+msgstr "Escriba para probar la disposición"
 
 #: src/Views/KeyboardLayoutView.vala:39
 msgid "Show keyboard layout"
@@ -94,11 +94,11 @@ msgstr "Seleccionar"
 
 #: src/Views/KeyboardLayoutView.vala:96
 msgid "Default"
-msgstr "Por defecto"
+msgstr "Predeterminado"
 
 #: src/Views/KeyboardLayoutView.vala:101
 msgid "Input Language"
-msgstr "Idioma de Entrada"
+msgstr "Idioma de entrada"
 
 #: src/Views/LanguageView.vala:201
 msgid "Languages"
@@ -106,7 +106,7 @@ msgstr "Idiomas"
 
 #: src/Views/LanguageView.vala:218
 msgid "Select a Language"
-msgstr "Selecciona un idioma"
+msgstr "Seleccione un idioma"
 
 #: src/Views/LanguageView.vala:246 src/Views/LanguageView.vala:289
 msgid "Currently active language"
