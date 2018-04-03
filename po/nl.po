@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-04-03 21:09+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2018-04-04 00:06+0000\n"
+"Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
 "Language-Team: Dutch <https://weblate.elementary.io/projects/installer"
 "/initial-setup/nl/>\n"
 "Language: nl\n"
@@ -80,7 +80,7 @@ msgstr "Toetsenbordindeling"
 
 #: src/Views/KeyboardLayoutView.vala:36
 msgid "Type to test your layout"
-msgstr "Type om je indeling te testen"
+msgstr "Type om uw indeling te testen"
 
 #: src/Views/KeyboardLayoutView.vala:39
 msgid "Show keyboard layout"
