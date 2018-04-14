@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-01-16 04:11+0000\n"
-"Last-Translator: SteffenL <steffenl@protonmail.com>\n"
+"PO-Revision-Date: 2018-04-15 00:09+0000\n"
+"Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
 "Language-Team: German <https://weblate.elementary.io/projects/installer"
 "/initial-setup/de/>\n"
 "Language: de\n"
@@ -52,7 +52,7 @@ msgstr "Benutzername"
 
 #: src/Views/AccountView.vala:48
 msgid "Choose a Password"
-msgstr "Passwort auswählen"
+msgstr "Passwort wählen"
 
 #: src/Views/AccountView.vala:63
 msgid "Confirm Password"
