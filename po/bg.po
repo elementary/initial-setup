@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-04-17 19:31+0000\n"
+"PO-Revision-Date: 2018-04-18 00:05+0000\n"
 "Last-Translator: Alex Skywalker <alexskywalkerbg@gmail.com>\n"
 "Language-Team: Bulgarian <https://weblate.elementary.io/projects/installer"
 "/initial-setup/bg/>\n"
@@ -80,7 +80,7 @@ msgstr "Клавиатурна подредба"
 
 #: src/Views/KeyboardLayoutView.vala:36
 msgid "Type to test your layout"
-msgstr "Пишете, за да изпробване подредбата"
+msgstr "Пишете, за да изпробвате подредбата"
 
 #: src/Views/KeyboardLayoutView.vala:39
 msgid "Show keyboard layout"
