@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-04-21 12:53+0000\n"
+"PO-Revision-Date: 2018-04-22 00:03+0000\n"
 "Last-Translator: Morteza Khazamipour <mormoroth@gmail.com>\n"
 "Language-Team: Persian <https://weblate.elementary.io/projects/installer"
 "/initial-setup/fa/>\n"
@@ -55,7 +55,7 @@ msgstr "تایید کردن پسورد"
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
 msgid "Back"
-msgstr "برگشت"
+msgstr "بازگشت"
 
 #: src/Views/AccountView.vala:99
 msgid "Finish Setup"
@@ -108,7 +108,7 @@ msgstr "انتخاب زبان"
 
 #: src/Views/LanguageView.vala:246 src/Views/LanguageView.vala:289
 msgid "Currently active language"
-msgstr "زبان فعلی فعال"
+msgstr "زبان فعال کنونی"
 
 #~ msgid "translator-credits"
 #~ msgstr ""
