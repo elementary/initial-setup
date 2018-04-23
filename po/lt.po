@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-02-16 13:29+0000\n"
+"PO-Revision-Date: 2018-04-24 00:07+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/installer"
 "/initial-setup/lt/>\n"
@@ -52,7 +52,7 @@ msgstr "Pasirinkite slaptažodį"
 
 #: src/Views/AccountView.vala:63
 msgid "Confirm Password"
-msgstr "Pakartokite slaptažodį"
+msgstr "Patvirtinkite slaptažodį"
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
 msgid "Back"
