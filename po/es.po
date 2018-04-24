@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-04-24 07:27+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2018-04-25 00:03+0000\n"
+"Last-Translator: Franklin Martinez <furankurinm@gmail.com>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/installer"
 "/initial-setup/es/>\n"
 "Language: es\n"
@@ -55,7 +55,7 @@ msgstr "Confirmar contraseña"
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
 msgid "Back"
-msgstr "Volver"
+msgstr "Atrás"
 
 #: src/Views/AccountView.vala:99
 msgid "Finish Setup"
