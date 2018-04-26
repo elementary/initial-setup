@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-04-14 00:11+0000\n"
-"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
+"PO-Revision-Date: 2018-04-27 00:02+0000\n"
+"Last-Translator: YRC <yrc@csie.io>\n"
 "Language-Team: Chinese (Traditional) "
 "<https://weblate.elementary.io/projects/installer/initial-setup/zh_TW/>\n"
 "Language: zh_TW\n"
@@ -18,7 +18,7 @@ msgstr ""
 #: src/MainWindow.vala:34
 #, c-format
 msgid "Set up %s"
-msgstr "設置 %s"
+msgstr "設定 %s"
 
 #: src/Utils.vala:26
 msgid "Operating System"
@@ -59,11 +59,11 @@ msgstr "返回"
 
 #: src/Views/AccountView.vala:99
 msgid "Finish Setup"
-msgstr "完成設置"
+msgstr "完成設定"
 
 #: src/Views/AccountView.vala:179
 msgid "Passwords do not match"
-msgstr "密碼不相符"
+msgstr "密碼與確認密碼不一致"
 
 #: src/Views/AccountView.vala:208
 msgid "Username is already taken"
