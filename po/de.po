@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-04-15 00:09+0000\n"
-"Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
+"PO-Revision-Date: 2018-04-27 00:02+0000\n"
+"Last-Translator: sdl-blue <bluethgen.kai@gmail.com>\n"
 "Language-Team: German <https://weblate.elementary.io/projects/installer"
 "/initial-setup/de/>\n"
 "Language: de\n"
@@ -68,7 +68,7 @@ msgstr "Setup abschließen"
 
 #: src/Views/AccountView.vala:179
 msgid "Passwords do not match"
-msgstr "Passwörter stimmen nicht überein"
+msgstr "Die Kennwörter stimmen nicht überein"
 
 #: src/Views/AccountView.vala:208
 msgid "Username is already taken"
