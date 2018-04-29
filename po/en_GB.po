@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-03-27 00:02+0000\n"
-"Last-Translator: Joey de sitter <joeydesitter@gmail.com>\n"
+"PO-Revision-Date: 2018-05-01 00:03+0000\n"
+"Last-Translator: Ciaran Ainsworth <cda@whistlingkappa.com>\n"
 "Language-Team: English (United Kingdom) "
 "<https://weblate.elementary.io/projects/installer/initial-setup/en_GB/>\n"
 "Language: en_GB\n"
@@ -51,7 +51,7 @@ msgstr "Pilih Kata Sandi"
 
 #: src/Views/AccountView.vala:63
 msgid "Confirm Password"
-msgstr "Konfirmasi Kata Sandi"
+msgstr "Confirm Password"
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
 msgid "Back"
@@ -63,7 +63,7 @@ msgstr "Pengaturan Selesai"
 
 #: src/Views/AccountView.vala:179
 msgid "Passwords do not match"
-msgstr "Kata Sandi tidak cocok"
+msgstr "Passwords do not match"
 
 #: src/Views/AccountView.vala:208
 msgid "Username is already taken"
