@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-01-05 13:11+0000\n"
+"PO-Revision-Date: 2018-05-04 00:05+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/installer"
 "/initial-setup/fr/>\n"
@@ -51,7 +51,7 @@ msgstr "Choisissez un mot-de-passe"
 
 #: src/Views/AccountView.vala:63
 msgid "Confirm Password"
-msgstr "Confirmez le mot-de-passe"
+msgstr "Confirmez le mot de passe"
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
 msgid "Back"
@@ -63,7 +63,7 @@ msgstr "Terminer la configuration"
 
 #: src/Views/AccountView.vala:179
 msgid "Passwords do not match"
-msgstr "Les mots-de-passe ne correspondent pas"
+msgstr "Les mots de passe ne correspondent pas"
 
 #: src/Views/AccountView.vala:208
 msgid "Username is already taken"
