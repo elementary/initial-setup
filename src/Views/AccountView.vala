@@ -205,9 +205,9 @@ public class Installer.AccountView : AbstractInstallerView {
             return true;
         } else {
             if (username_is_taken) {
-                username_error_revealer.label = _("Username is already taken");
+                username_error_revealer.label = _("Chosen username already taken");
             } else if (!username_is_valid) {
-                username_error_revealer.label = _("Username can only contain lowercase letters and numbers, without spaces");
+                username_error_revealer.label = _("A username can only contain lowercase letters and numbers, without spaces");
             }
 
             username_error_revealer.reveal_child = true;
