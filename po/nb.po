@@ -3,22 +3,22 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2017-09-26 22:27+0000\n"
+"PO-Revision-Date: 2018-05-08 00:10+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
-"installer/installer/nb/>\n"
+"Language-Team: Norwegian Bokmål "
+"<https://weblate.elementary.io/projects/installer/initial-setup/nb/>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.16\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/MainWindow.vala:34
 #, c-format
 msgid "Set up %s"
-msgstr ""
+msgstr "Sett opp"
 
 #: src/Utils.vala:26
 msgid "Operating System"
@@ -35,23 +35,23 @@ msgstr "Avbryt installasjon"
 
 #: src/Views/AccountView.vala:32
 msgid "Create an Account"
-msgstr ""
+msgstr "Opprett en konto"
 
 #: src/Views/AccountView.vala:36
 msgid "Full Name"
-msgstr ""
+msgstr "Fullt navn"
 
 #: src/Views/AccountView.vala:41
 msgid "Username"
-msgstr ""
+msgstr "Brukernavn"
 
 #: src/Views/AccountView.vala:48
 msgid "Choose a Password"
-msgstr ""
+msgstr "Velg et passord"
 
 #: src/Views/AccountView.vala:63
 msgid "Confirm Password"
-msgstr ""
+msgstr "Bekreft passord"
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
 #, fuzzy
@@ -60,19 +60,19 @@ msgstr "Tilbake"
 
 #: src/Views/AccountView.vala:99
 msgid "Finish Setup"
-msgstr ""
+msgstr "Fullfør oppsett"
 
 #: src/Views/AccountView.vala:179
 msgid "Passwords do not match"
-msgstr ""
+msgstr "Passordene samsvarer ikke"
 
 #: src/Views/AccountView.vala:208
 msgid "Username is already taken"
-msgstr ""
+msgstr "Brukernavn allerede tatt"
 
 #: src/Views/AccountView.vala:210
 msgid "Username can only contain lowercase letters and numbers, without spaces"
-msgstr ""
+msgstr "Brukernavnet kan bare inneholde små bokstaver og tall, uten mellomrom"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
