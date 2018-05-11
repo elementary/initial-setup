@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-02-07 00:09+0000\n"
+"PO-Revision-Date: 2018-05-11 03:33+0000\n"
 "Last-Translator: Paulo Moura <paulojmoura@gmail.com>\n"
 "Language-Team: Portuguese <https://weblate.elementary.io/projects/installer"
 "/initial-setup/pt/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 #: src/MainWindow.vala:34
 #, c-format
 msgid "Set up %s"
-msgstr ""
+msgstr "Configurar %s"
 
 #: src/Utils.vala:26
 msgid "Operating System"
