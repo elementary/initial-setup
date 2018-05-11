@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-05-11 03:33+0000\n"
+"PO-Revision-Date: 2018-05-12 00:11+0000\n"
 "Last-Translator: Pedro Ferreira <pmaf.ferreira@gmail.com>\n"
 "Language-Team: Portuguese <https://weblate.elementary.io/projects/installer"
 "/initial-setup/pt/>\n"
@@ -51,7 +51,7 @@ msgstr "Digite a senha"
 
 #: src/Views/AccountView.vala:63
 msgid "Confirm Password"
-msgstr "Confirme a senha"
+msgstr "Confirmar palavra-passe"
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
 msgid "Back"
@@ -63,7 +63,7 @@ msgstr "Finalizar instalação"
 
 #: src/Views/AccountView.vala:179
 msgid "Passwords do not match"
-msgstr "As senhas não combinam"
+msgstr "As palavras-passe não coincidem"
 
 #: src/Views/AccountView.vala:208
 msgid "Username is already taken"
