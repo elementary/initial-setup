@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
 "PO-Revision-Date: 2018-05-11 03:33+0000\n"
-"Last-Translator: Paulo Moura <paulojmoura@gmail.com>\n"
+"Last-Translator: Pedro Ferreira <pmaf.ferreira@gmail.com>\n"
 "Language-Team: Portuguese <https://weblate.elementary.io/projects/installer"
 "/initial-setup/pt/>\n"
 "Language: pt\n"
@@ -27,7 +27,7 @@ msgstr "Sistema Operacional"
 #: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:133
 #, c-format
 msgid "%s…"
-msgstr ""
+msgstr "%s…"
 
 #: src/Views/AbstractInstallerView.vala:47
 msgid "Cancel Installation"
