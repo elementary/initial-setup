@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
 "PO-Revision-Date: 2018-05-26 14:42+0000\n"
-"Last-Translator: Csepi Árpád <banderaszkormos@gmail.com>\n"
+"Last-Translator: Majer Tamás <tmajer@protonmail.com>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/installer"
 "/initial-setup/hu/>\n"
 "Language: hu\n"
@@ -101,7 +101,7 @@ msgstr "Beviteli nyelv"
 
 #: src/Views/LanguageView.vala:201
 msgid "Languages"
-msgstr ""
+msgstr "Nyelvek"
 
 #: src/Views/LanguageView.vala:218
 msgid "Select a Language"
