@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-05-23 00:06+0000\n"
+"PO-Revision-Date: 2018-05-26 14:40+0000\n"
 "Last-Translator: Majer Tamás <tmajer@protonmail.com>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/installer"
 "/initial-setup/hu/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 #: src/MainWindow.vala:34
 #, c-format
 msgid "Set up %s"
-msgstr ""
+msgstr "Beállítás %s"
 
 #: src/Utils.vala:26
 msgid "Operating System"
@@ -35,52 +35,52 @@ msgstr "Telepítés megszakítása"
 
 #: src/Views/AccountView.vala:32
 msgid "Create an Account"
-msgstr ""
+msgstr "Felhasználó létrehozása"
 
 #: src/Views/AccountView.vala:36
 msgid "Full Name"
-msgstr ""
+msgstr "Teljes név"
 
 #: src/Views/AccountView.vala:41
 msgid "Username"
-msgstr ""
+msgstr "Felhasználónév"
 
 #: src/Views/AccountView.vala:48
 msgid "Choose a Password"
-msgstr ""
+msgstr "Válasszon egy jelszót"
 
 #: src/Views/AccountView.vala:63
 msgid "Confirm Password"
-msgstr ""
+msgstr "Jelszó megerősítése"
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
-#, fuzzy
 msgid "Back"
-msgstr "Visszatörlés"
+msgstr "Vissza"
 
 #: src/Views/AccountView.vala:99
 msgid "Finish Setup"
-msgstr ""
+msgstr "Beállítás befejezése"
 
 #: src/Views/AccountView.vala:179
 msgid "Passwords do not match"
-msgstr ""
+msgstr "A jelszavak nem egyeznek"
 
 #: src/Views/AccountView.vala:208
 msgid "Username is already taken"
-msgstr ""
+msgstr "A felhasználónév már foglalt"
 
 #: src/Views/AccountView.vala:210
 msgid "Username can only contain lowercase letters and numbers, without spaces"
 msgstr ""
+"A felhasználónév csak kisbetűket és számokat tartalmazhat, szóköz nélkül"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
-msgstr ""
+msgstr "Billentyűzetkiosztás"
 
 #: src/Views/KeyboardLayoutView.vala:36
 msgid "Type to test your layout"
-msgstr ""
+msgstr "Gépeljen, hogy tesztelje a kiosztást"
 
 #: src/Views/KeyboardLayoutView.vala:39
 msgid "Show keyboard layout"
