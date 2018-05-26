@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
 "PO-Revision-Date: 2018-05-26 14:41+0000\n"
-"Last-Translator: Csepi Árpád <banderaszkormos@gmail.com>\n"
+"Last-Translator: Majer Tamás <tmajer@protonmail.com>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/installer"
 "/initial-setup/hu/>\n"
 "Language: hu\n"
@@ -84,7 +84,7 @@ msgstr "Gépeljen, hogy tesztelje a kiosztást"
 
 #: src/Views/KeyboardLayoutView.vala:39
 msgid "Show keyboard layout"
-msgstr "A billentyűzetkiosztásának megjelenítése"
+msgstr "Billentyűzetkiosztás megjelenítése"
 
 #: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:109
 #: src/Views/LanguageView.vala:150
