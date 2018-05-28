@@ -3,26 +3,26 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2017-07-01 13:46+0000\n"
-"Last-Translator: Abhijeet <hargange68b@gmail.com>\n"
-"Language-Team: Marathi <https://l10n.elementary.io/projects/installer/"
-"installer/mr/>\n"
+"PO-Revision-Date: 2018-05-28 19:12+0000\n"
+"Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
+"Language-Team: Marathi <https://weblate.elementary.io/projects/installer"
+"/initial-setup/mr/>\n"
 "Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.14\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/MainWindow.vala:34
 #, c-format
 msgid "Set up %s"
-msgstr ""
+msgstr "'%s चे सेटअप करा'"
 
 #: src/Utils.vala:26
 msgid "Operating System"
-msgstr ""
+msgstr "ऑपरेटिंग सिस्टिम"
 
 #: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:133
 #, c-format
@@ -31,85 +31,85 @@ msgstr ""
 
 #: src/Views/AbstractInstallerView.vala:47
 msgid "Cancel Installation"
-msgstr ""
+msgstr "इंस्टॉलेशन रद्द करा "
 
 #: src/Views/AccountView.vala:32
 msgid "Create an Account"
-msgstr ""
+msgstr "नवीन खाते बनवा "
 
 #: src/Views/AccountView.vala:36
 msgid "Full Name"
-msgstr ""
+msgstr "संपूर्ण नाव"
 
 #: src/Views/AccountView.vala:41
 msgid "Username"
-msgstr ""
+msgstr "यूझरनेम"
 
 #: src/Views/AccountView.vala:48
 msgid "Choose a Password"
-msgstr ""
+msgstr "एक पासवर्ड निवडा"
 
 #: src/Views/AccountView.vala:63
 msgid "Confirm Password"
-msgstr ""
+msgstr "पासवर्ड नक्की करा"
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
-#, fuzzy
 msgid "Back"
-msgstr "बॅकस्पेस"
+msgstr "मागे"
 
 #: src/Views/AccountView.vala:99
 msgid "Finish Setup"
-msgstr ""
+msgstr "सेटअप पूर्ण करा"
 
 #: src/Views/AccountView.vala:179
 msgid "Passwords do not match"
-msgstr ""
+msgstr "पासवर्डस जुळत नाहीत"
 
 #: src/Views/AccountView.vala:208
 msgid "Username is already taken"
-msgstr ""
+msgstr "युजरनेम आधीच कुणीतरी वापरले आहे"
 
 #: src/Views/AccountView.vala:210
 msgid "Username can only contain lowercase letters and numbers, without spaces"
 msgstr ""
+"युजरनेम मध्ये फक्त लहान(इंग्रजी) अक्षरे आणि अंक,रिकाम्या जागांशिवाय असावीत "
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
-msgstr ""
+msgstr "कीबोर्ड चे लेआऊट"
 
 #: src/Views/KeyboardLayoutView.vala:36
 msgid "Type to test your layout"
-msgstr ""
+msgstr "आपल्या लेआऊट ची चाचणी करण्यासाठी टाईप करा"
 
 #: src/Views/KeyboardLayoutView.vala:39
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "कीबोर्ड चे लेआऊट दाखवा"
 
 #: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:109
 #: src/Views/LanguageView.vala:150
 msgid "Select"
-msgstr ""
+msgstr "निवडा"
 
 #: src/Views/KeyboardLayoutView.vala:96
 msgid "Default"
-msgstr ""
+msgstr "मूळ"
 
 #: src/Views/KeyboardLayoutView.vala:101
 msgid "Input Language"
-msgstr ""
+msgstr "इनपुट भाषा"
 
 #: src/Views/LanguageView.vala:201
 msgid "Languages"
-msgstr ""
+msgstr "भाषा"
 
 #: src/Views/LanguageView.vala:218
 msgid "Select a Language"
-msgstr ""
+msgstr "एक भाषा निवडा"
 
 #: src/Views/LanguageView.vala:246 src/Views/LanguageView.vala:289
 msgid "Currently active language"
-msgstr ""
+msgstr "सध्या वापरात असलेली भाषा"
 
 #~ msgid "translator-credits"
 #~ msgstr ""
