@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-05-26 14:43+0000\n"
-"Last-Translator: Csepi Árpád <banderaszkormos@gmail.com>\n"
+"PO-Revision-Date: 2018-06-02 00:05+0000\n"
+"Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/installer"
 "/initial-setup/hu/>\n"
 "Language: hu\n"
@@ -18,7 +18,7 @@ msgstr ""
 #: src/MainWindow.vala:34
 #, c-format
 msgid "Set up %s"
-msgstr "Beállítás %s"
+msgstr "%s beállítása"
 
 #: src/Utils.vala:26
 msgid "Operating System"
@@ -72,7 +72,7 @@ msgstr "A felhasználónév már foglalt"
 #: src/Views/AccountView.vala:210
 msgid "Username can only contain lowercase letters and numbers, without spaces"
 msgstr ""
-"A felhasználónév csak kisbetűket és számokat tartalmazhat, szóköz nélkül"
+"A felhasználónév csak kisbetűket és számokat tartalmazhat, szóközöket nem"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
