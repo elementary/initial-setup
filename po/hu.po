@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-06-02 00:05+0000\n"
+"PO-Revision-Date: 2018-06-06 00:08+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/installer"
 "/initial-setup/hu/>\n"
@@ -80,7 +80,7 @@ msgstr "Billentyűzetkiosztás"
 
 #: src/Views/KeyboardLayoutView.vala:36
 msgid "Type to test your layout"
-msgstr "Gépeljen, hogy tesztelje a kiosztást"
+msgstr "Írjon ide, hogy tesztelje a kiosztást"
 
 #: src/Views/KeyboardLayoutView.vala:39
 msgid "Show keyboard layout"
