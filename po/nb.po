@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-05-08 00:10+0000\n"
+"PO-Revision-Date: 2018-06-06 00:08+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål "
 "<https://weblate.elementary.io/projects/installer/initial-setup/nb/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 #: src/MainWindow.vala:34
 #, c-format
 msgid "Set up %s"
-msgstr "Sett opp"
+msgstr "Sett opp %s"
 
 #: src/Utils.vala:26
 msgid "Operating System"
