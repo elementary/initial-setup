@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-07-20 01:08+0000\n"
+"PO-Revision-Date: 2018-07-21 00:07+0000\n"
 "Last-Translator: Nils K <slx@nilsk.net>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
 "installer/initial-setup/nb/>\n"
@@ -100,7 +100,7 @@ msgstr "Inndataspråk"
 
 #: src/Views/LanguageView.vala:201
 msgid "Languages"
-msgstr "Inndataspråk"
+msgstr "Språk"
 
 #: src/Views/LanguageView.vala:218
 msgid "Select a Language"
@@ -108,7 +108,7 @@ msgstr "Velg et språk"
 
 #: src/Views/LanguageView.vala:246 src/Views/LanguageView.vala:289
 msgid "Currently active language"
-msgstr "Aktivt språk nå"
+msgstr "Nåværende språk"
 
 #~ msgid "Install %s"
 #~ msgstr "Installer %s"
