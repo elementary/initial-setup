@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-06-06 00:08+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language-Team: Norwegian Bokmål "
-"<https://weblate.elementary.io/projects/installer/initial-setup/nb/>\n"
+"PO-Revision-Date: 2018-07-20 01:08+0000\n"
+"Last-Translator: Nils K <slx@nilsk.net>\n"
+"Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
+"installer/initial-setup/nb/>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/MainWindow.vala:34
@@ -54,7 +54,6 @@ msgid "Confirm Password"
 msgstr "Bekreft passord"
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
-#, fuzzy
 msgid "Back"
 msgstr "Tilbake"
 
@@ -68,7 +67,7 @@ msgstr "Passordene samsvarer ikke"
 
 #: src/Views/AccountView.vala:208
 msgid "Username is already taken"
-msgstr "Brukernavn allerede tatt"
+msgstr "Brukernavn allerede i bruk"
 
 #: src/Views/AccountView.vala:210
 msgid "Username can only contain lowercase letters and numbers, without spaces"
@@ -100,7 +99,6 @@ msgid "Input Language"
 msgstr "Inndataspråk"
 
 #: src/Views/LanguageView.vala:201
-#, fuzzy
 msgid "Languages"
 msgstr "Inndataspråk"
 
