@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-20 23:39+0200\n"
+"POT-Creation-Date: 2018-10-13 17:30-0700\n"
 "PO-Revision-Date: 2016-10-28 19:35+0200\n"
 "Last-Translator: Pierre Marchal <kayyow@hotmail.fr>\n"
 "Language-Team: French <fr@li.org>\n"
@@ -18,15 +18,17 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 "X-Generator: Poedit 1.8.7.1\n"
 
-#: data/io.elementary.installer.desktop.in:3
-msgid "Install elementary OS"
+#: data/io.elementary.initial-setup.desktop.in:3
+#, fuzzy
+msgid "Set up elementary OS"
 msgstr "Installer elementary OS"
 
-#: data/io.elementary.installer.desktop.in:4
-msgid "Install the system"
+#: data/io.elementary.initial-setup.desktop.in:4
+#, fuzzy
+msgid "Set up the system"
 msgstr "Installer le système"
 
-#: data/io.elementary.installer.desktop.in:6
+#: data/io.elementary.initial-setup.desktop.in:6
 msgid "system-os-installer"
 msgstr ""
 

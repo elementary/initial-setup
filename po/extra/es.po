@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-20 23:39+0200\n"
+"POT-Creation-Date: 2018-10-13 17:30-0700\n"
 "PO-Revision-Date: 2017-04-11 06:41+0000\n"
 "Last-Translator: Damian Rguez <damian@randombrains.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/installer/extra/"
@@ -20,15 +20,15 @@ msgstr ""
 "X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
-#: data/io.elementary.installer.desktop.in:3
-msgid "Install elementary OS"
+#: data/io.elementary.initial-setup.desktop.in:3
+msgid "Set up elementary OS"
 msgstr ""
 
-#: data/io.elementary.installer.desktop.in:4
-msgid "Install the system"
+#: data/io.elementary.initial-setup.desktop.in:4
+msgid "Set up the system"
 msgstr ""
 
-#: data/io.elementary.installer.desktop.in:6
+#: data/io.elementary.initial-setup.desktop.in:6
 msgid "system-os-installer"
 msgstr ""
 

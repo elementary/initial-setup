@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-27 10:24-0800\n"
+"POT-Creation-Date: 2018-10-13 17:29-0700\n"
 "PO-Revision-Date: 2018-08-02 00:01+0000\n"
 "Last-Translator: Lieven Hanssen <lhanssen@freedommail.co>\n"
 "Language-Team: Dutch <https://weblate.elementary.io/projects/installer/"
@@ -66,11 +66,14 @@ msgid "Passwords do not match"
 msgstr "Wachtwoorden komen niet overeen"
 
 #: src/Views/AccountView.vala:208
-msgid "Username is already taken"
+#, fuzzy
+msgid "The chosen username is already taken"
 msgstr "Gebruikersnaam is al in gebruik"
 
 #: src/Views/AccountView.vala:210
-msgid "Username can only contain lowercase letters and numbers, without spaces"
+#, fuzzy
+msgid ""
+"A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
 "Gebruikersnaam kan alleen kleine letters en cijfers bevatten, zonder spaties"
 
