@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-10-21 09:03+0000\n"
+"PO-Revision-Date: 2018-10-24 00:07+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/installer/"
 "initial-setup/sv/>\n"
@@ -27,7 +27,7 @@ msgstr "Operativsystem"
 #: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:133
 #, c-format
 msgid "%s…"
-msgstr "%s 1…"
+msgstr "%s…"
 
 #: src/Views/AbstractInstallerView.vala:47
 msgid "Cancel Installation"
@@ -63,7 +63,7 @@ msgstr "Slutför installation"
 
 #: src/Views/AccountView.vala:179
 msgid "Passwords do not match"
-msgstr "Lösenord matchar inte"
+msgstr "Lösenorden stämmer inte överens med varandra"
 
 #: src/Views/AccountView.vala:208
 msgid "Username is already taken"
@@ -76,15 +76,15 @@ msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
-msgstr "Tangentbordslayout"
+msgstr "Tangentbordsuppsättning"
 
 #: src/Views/KeyboardLayoutView.vala:36
 msgid "Type to test your layout"
-msgstr "Skriv för att kontrollera layout"
+msgstr "Skriv för att kontrollera din uppsättning"
 
 #: src/Views/KeyboardLayoutView.vala:39
 msgid "Show keyboard layout"
-msgstr "Visa tangentbordslayout"
+msgstr "Visa tangentbordsuppsättning"
 
 #: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:109
 #: src/Views/LanguageView.vala:150
