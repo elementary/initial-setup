@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-10-15 00:05+0000\n"
+"PO-Revision-Date: 2018-11-04 00:03+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/installer/"
 "initial-setup/ja/>\n"
@@ -43,7 +43,7 @@ msgstr "フルネーム"
 
 #: src/Views/AccountView.vala:41
 msgid "Username"
-msgstr "ユーザーネーム"
+msgstr "ユーザー名"
 
 #: src/Views/AccountView.vala:48
 msgid "Choose a Password"
@@ -67,11 +67,11 @@ msgstr "パスワードが一致しません"
 
 #: src/Views/AccountView.vala:208
 msgid "Username is already taken"
-msgstr "ユーザー名はすでに存在しています"
+msgstr "ユーザー名はすでに使われています"
 
 #: src/Views/AccountView.vala:210
 msgid "Username can only contain lowercase letters and numbers, without spaces"
-msgstr "ユーザーネームは小文字と数字のみを含むことができます。空白は使用しないでください"
+msgstr "ユーザー名は小文字と数字のみを含むことができます。空白は使用しないでください"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
