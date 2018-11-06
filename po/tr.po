@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-11-06 20:59+0000\n"
+"PO-Revision-Date: 2018-11-07 00:06+0000\n"
 "Last-Translator: Sinan Decron <intenfinitia@gmail.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/installer/"
 "initial-setup/tr/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 #: src/MainWindow.vala:34
 #, c-format
 msgid "Set up %s"
-msgstr "Kur %s"
+msgstr "%s Kur"
 
 #: src/Utils.vala:26
 msgid "Operating System"
