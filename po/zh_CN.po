@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-08-12 13:17+0000\n"
+"PO-Revision-Date: 2018-11-27 00:01+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
 "installer/initial-setup/zh_Hans/>\n"
@@ -100,7 +100,7 @@ msgstr "输入语言"
 
 #: src/Views/LanguageView.vala:201
 msgid "Languages"
-msgstr "语言"
+msgstr "选择语言"
 
 #: src/Views/LanguageView.vala:218
 msgid "Select a Language"
