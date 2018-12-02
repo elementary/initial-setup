@@ -4,7 +4,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
 "PO-Revision-Date: 2018-12-02 05:03+0000\n"
-"Last-Translator: achraf chetwene <achraf.bizerta@gmail.com>\n"
+"Last-Translator: ButterflyOfFire <butterflyoffire+elementary@protonmail.com>"
+"\n"
 "Language-Team: Arabic <https://weblate.elementary.io/projects/installer/"
 "initial-setup/ar/>\n"
 "Language: ar\n"
@@ -23,7 +24,7 @@ msgstr "تنصيب %s"
 
 #: src/Utils.vala:26
 msgid "Operating System"
-msgstr ""
+msgstr "نظام التشغيل"
 
 #: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:133
 #, c-format
