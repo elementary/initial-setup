@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
 "PO-Revision-Date: 2018-12-02 05:12+0000\n"
-"Last-Translator: Mohelm97 <mohelm97@gmail.com>\n"
+"Last-Translator: achraf chetwene <achraf.bizerta@gmail.com>\n"
 "Language-Team: Arabic <https://weblate.elementary.io/projects/installer/"
 "initial-setup/ar/>\n"
 "Language: ar\n"
@@ -73,6 +73,8 @@ msgstr "اسم المستخدم مأخوذ مسبقًا"
 #: src/Views/AccountView.vala:210
 msgid "Username can only contain lowercase letters and numbers, without spaces"
 msgstr ""
+"اسم المستخدم يجب أن لا يحتوي على أكثر من الحروف المصغرة أو الأرقام من دون "
+"فراغات"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
