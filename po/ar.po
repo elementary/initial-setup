@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-12-02 05:03+0000\n"
+"PO-Revision-Date: 2018-12-02 05:05+0000\n"
 "Last-Translator: Mohelm97 <mohelm97@gmail.com>\n"
 "Language-Team: Arabic <https://weblate.elementary.io/projects/installer/"
 "initial-setup/ar/>\n"
@@ -36,7 +36,7 @@ msgstr "الغاء التثبيت"
 
 #: src/Views/AccountView.vala:32
 msgid "Create an Account"
-msgstr "انشاء حساب"
+msgstr "إنشاء حساب"
 
 #: src/Views/AccountView.vala:36
 msgid "Full Name"
