@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-12-02 05:14+0000\n"
+"PO-Revision-Date: 2018-12-03 00:05+0000\n"
 "Last-Translator: Mohelm97 <mohelm97@gmail.com>\n"
 "Language-Team: Arabic <https://weblate.elementary.io/projects/installer/"
 "initial-setup/ar/>\n"
@@ -48,7 +48,7 @@ msgstr "اسم المستخدم"
 
 #: src/Views/AccountView.vala:48
 msgid "Choose a Password"
-msgstr "إختر كلمة مرور"
+msgstr "اختر كلمة مرور"
 
 #: src/Views/AccountView.vala:63
 msgid "Confirm Password"
@@ -60,11 +60,11 @@ msgstr "للخلف"
 
 #: src/Views/AccountView.vala:99
 msgid "Finish Setup"
-msgstr "انهاء التنصيب"
+msgstr "إنهاء التثبيت"
 
 #: src/Views/AccountView.vala:179
 msgid "Passwords do not match"
-msgstr "كلمة المرور غير متطابقة"
+msgstr "كلمات المرور غير متطابقة"
 
 #: src/Views/AccountView.vala:208
 msgid "Username is already taken"
@@ -82,7 +82,7 @@ msgstr "نموذج لوحة المفاتيح"
 
 #: src/Views/KeyboardLayoutView.vala:36
 msgid "Type to test your layout"
-msgstr "أكتب لإختبار النموذج الخاص بك"
+msgstr "اكتب لإختبار النموذج الخاص بك"
 
 #: src/Views/KeyboardLayoutView.vala:39
 msgid "Show keyboard layout"
@@ -91,7 +91,7 @@ msgstr "عرض نموذج لوحة المفاتيح"
 #: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:109
 #: src/Views/LanguageView.vala:150
 msgid "Select"
-msgstr "إختر"
+msgstr "اختر"
 
 #: src/Views/KeyboardLayoutView.vala:96
 msgid "Default"
@@ -99,7 +99,7 @@ msgstr "الإفتراضي"
 
 #: src/Views/KeyboardLayoutView.vala:101
 msgid "Input Language"
-msgstr "لغة الإدخال"
+msgstr "اختر لغة الإدخال"
 
 #: src/Views/LanguageView.vala:201
 msgid "Languages"
