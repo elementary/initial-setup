@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
 "PO-Revision-Date: 2018-12-02 05:10+0000\n"
-"Last-Translator: Mohelm97 <mohelm97@gmail.com>\n"
+"Last-Translator: achraf chetwene <achraf.bizerta@gmail.com>\n"
 "Language-Team: Arabic <https://weblate.elementary.io/projects/installer/"
 "initial-setup/ar/>\n"
 "Language: ar\n"
@@ -96,14 +96,12 @@ msgid "Default"
 msgstr "إفتراضي"
 
 #: src/Views/KeyboardLayoutView.vala:101
-#, fuzzy
 msgid "Input Language"
-msgstr "اختر اللغة"
+msgstr "لغة الإدخال"
 
 #: src/Views/LanguageView.vala:201
-#, fuzzy
 msgid "Languages"
-msgstr "اختر اللغة"
+msgstr "اللغات"
 
 #: src/Views/LanguageView.vala:218
 msgid "Select a Language"
@@ -111,7 +109,7 @@ msgstr "اختر اللغة"
 
 #: src/Views/LanguageView.vala:246 src/Views/LanguageView.vala:289
 msgid "Currently active language"
-msgstr ""
+msgstr "اللغة المفعلة حاليا"
 
 #, fuzzy
 #~ msgid "Install %s"
