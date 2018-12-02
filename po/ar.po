@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-12-02 05:06+0000\n"
+"PO-Revision-Date: 2018-12-02 05:08+0000\n"
 "Last-Translator: Mohelm97 <mohelm97@gmail.com>\n"
 "Language-Team: Arabic <https://weblate.elementary.io/projects/installer/"
 "initial-setup/ar/>\n"
@@ -80,7 +80,7 @@ msgstr "نموذج لوحة المفاتيح"
 
 #: src/Views/KeyboardLayoutView.vala:36
 msgid "Type to test your layout"
-msgstr "اكتب لاختبار التصميم الخاص بك"
+msgstr "أكتب لإختبار النموذج الخاص بك"
 
 #: src/Views/KeyboardLayoutView.vala:39
 msgid "Show keyboard layout"
