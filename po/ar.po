@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-27 10:24-0800\n"
 "PO-Revision-Date: 2018-12-02 05:11+0000\n"
-"Last-Translator: Mohelm97 <mohelm97@gmail.com>\n"
+"Last-Translator: achraf chetwene <achraf.bizerta@gmail.com>\n"
 "Language-Team: Arabic <https://weblate.elementary.io/projects/installer/"
 "initial-setup/ar/>\n"
 "Language: ar\n"
@@ -68,7 +68,7 @@ msgstr "كلمة المرور غير متطابقة"
 
 #: src/Views/AccountView.vala:208
 msgid "Username is already taken"
-msgstr ""
+msgstr "اسم المستخدم وقع استعماله"
 
 #: src/Views/AccountView.vala:210
 msgid "Username can only contain lowercase letters and numbers, without spaces"
