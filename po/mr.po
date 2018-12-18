@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 17:29-0700\n"
-"PO-Revision-Date: 2018-05-29 00:11+0000\n"
+"PO-Revision-Date: 2018-12-18 13:07+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/installer/"
 "initial-setup/mr/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/MainWindow.vala:34
@@ -66,15 +66,14 @@ msgid "Passwords do not match"
 msgstr "पासवर्डस जुळत नाहीत"
 
 #: src/Views/AccountView.vala:208
-#, fuzzy
 msgid "The chosen username is already taken"
 msgstr "युजरनेम आधीच कुणीतरी वापरले आहे"
 
 #: src/Views/AccountView.vala:210
-#, fuzzy
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
-msgstr "युजरनेम मध्ये फक्त लहान(इंग्रजी) अक्षरे आणि अंक,रिकाम्या जागांशिवाय असावीत"
+msgstr ""
+"युजरनेम मध्ये फक्त लहान(इंग्रजी) अक्षरे आणि अंक,रिकाम्या जागांशिवाय असावीत"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
