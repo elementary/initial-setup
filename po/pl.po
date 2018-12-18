@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-27 10:24-0800\n"
+"POT-Creation-Date: 2018-10-13 17:29-0700\n"
 "PO-Revision-Date: 2018-04-24 00:07+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
-"Language-Team: Polish <https://weblate.elementary.io/projects/installer"
-"/initial-setup/pl/>\n"
+"Language-Team: Polish <https://weblate.elementary.io/projects/installer/"
+"initial-setup/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -67,12 +67,16 @@ msgid "Passwords do not match"
 msgstr "Hasła do siebie nie pasują"
 
 #: src/Views/AccountView.vala:208
-msgid "Username is already taken"
+#, fuzzy
+msgid "The chosen username is already taken"
 msgstr "Nazwa użytkownika jest już zajęta"
 
 #: src/Views/AccountView.vala:210
-msgid "Username can only contain lowercase letters and numbers, without spaces"
-msgstr "Nazwa użytkownika może zawierać jedynie małe litery i cyfry, bez spacji"
+#, fuzzy
+msgid ""
+"A username must only contain lowercase letters and numbers, without spaces"
+msgstr ""
+"Nazwa użytkownika może zawierać jedynie małe litery i cyfry, bez spacji"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"

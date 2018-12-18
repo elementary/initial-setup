@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.initial-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-27 11:15-0800\n"
+"POT-Creation-Date: 2018-10-13 17:29-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,11 +68,12 @@ msgid "Passwords do not match"
 msgstr ""
 
 #: src/Views/AccountView.vala:208
-msgid "Username is already taken"
+msgid "The chosen username is already taken"
 msgstr ""
 
 #: src/Views/AccountView.vala:210
-msgid "Username can only contain lowercase letters and numbers, without spaces"
+msgid ""
+"A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:28

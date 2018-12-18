@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-10-24 00:07+0000\n"
-"Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
+"POT-Creation-Date: 2018-10-13 17:29-0700\n"
+"PO-Revision-Date: 2018-03-20 00:11+0000\n"
+"Last-Translator: Smalbenet <smalbenet@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/installer/"
 "initial-setup/sv/>\n"
 "Language: sv\n"
@@ -66,11 +66,14 @@ msgid "Passwords do not match"
 msgstr "Lösenorden stämmer inte överens med varandra"
 
 #: src/Views/AccountView.vala:208
-msgid "Username is already taken"
+#, fuzzy
+msgid "The chosen username is already taken"
 msgstr "Användarnamnet används redan"
 
 #: src/Views/AccountView.vala:210
-msgid "Username can only contain lowercase letters and numbers, without spaces"
+#, fuzzy
+msgid ""
+"A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
 "Användarnamnet kan bara innehålla små bokstäver och siffror, utan mellanslag"
 
@@ -110,102 +113,3 @@ msgstr "Välj ett språk"
 #: src/Views/LanguageView.vala:246 src/Views/LanguageView.vala:289
 msgid "Currently active language"
 msgstr "Nuvarande aktivt språk"
-
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "Launchpad Contributions:\n"
-#~ "  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount\n"
-#~ "  Mikael Nyberg https://launchpad.net/~miknyb\n"
-#~ "  Tobias Ahlström https://launchpad.net/~tobias-ahlstrom\n"
-#~ "  Yunas https://launchpad.net/~yunas-manzoor\n"
-#~ "  komakino https://launchpad.net/~salem-sallnas"
-
-#~ msgid "Calculator"
-#~ msgstr "Kalkylator"
-
-#~ msgid "History"
-#~ msgstr "Historik"
-
-#~ msgid "Value to add:"
-#~ msgstr "Värde att lägga till:"
-
-#~ msgid "Result"
-#~ msgstr "Resultat"
-
-#~ msgid "Expression"
-#~ msgstr "Uttryck"
-
-#~ msgid "Close"
-#~ msgstr "Stäng"
-
-#~ msgid "Add"
-#~ msgstr "Lägg till"
-
-#~ msgid "Show extended functionality"
-#~ msgstr "Visa utökad funktionalitet"
-
-#~ msgid "Calculate Result"
-#~ msgstr "Beräkna resultat"
-
-#~ msgid "Add last result"
-#~ msgstr "Lägg till senaste resultat"
-
-#~ msgid "Clear entry"
-#~ msgstr "Rensa inmatning"
-
-#~ msgid "Subtract"
-#~ msgstr "Subtrahera"
-
-#~ msgid "Multiply"
-#~ msgstr "Multiplicera"
-
-#~ msgid "Divide"
-#~ msgstr "Dividera"
-
-#~ msgid "Percentage"
-#~ msgstr "Procent"
-
-#~ msgid "Start Group"
-#~ msgstr "Börja gruppering"
-
-#~ msgid "End Group"
-#~ msgstr "Avsluta gruppering"
-
-#~ msgid "Exponent"
-#~ msgstr "Exponent"
-
-#~ msgid "Root"
-#~ msgstr "Kvadratrot"
-
-#~ msgid "Sine"
-#~ msgstr "Sinus"
-
-#~ msgid "Hyperbolic Sine"
-#~ msgstr "Hyperbolisk sinus"
-
-#~ msgid "Cosine"
-#~ msgstr "Cosinus"
-
-#~ msgid "Hyperbolic Cosine"
-#~ msgstr "Hyperbolisk cosinus"
-
-#~ msgid "Tangent"
-#~ msgstr "Tangens"
-
-#~ msgid "Hyperbolic Tangent"
-#~ msgstr "Hyperbolisk tangens"
-
-#~ msgid "Pi"
-#~ msgstr "Pi"
-
-#~ msgid "Euler's Number"
-#~ msgstr "Eulers tal"
-
-#~ msgid "Hide extended functionality"
-#~ msgstr "Dölj utökad funktionalitet"
-
-#~ msgid "'%s' is invalid."
-#~ msgstr "'%s' är ogiltigt."
-
-#~ msgid "'%s' is unknown."
-#~ msgstr "'%s' är okänt."

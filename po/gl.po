@@ -2,18 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-11-27 00:01+0000\n"
-"Last-Translator: Pablo Varela <pablovarela182@gmail.com>\n"
-"Language-Team: Galician <https://weblate.elementary.io/projects/installer/"
-"initial-setup/gl/>\n"
-"Language: gl\n"
+"POT-Creation-Date: 2018-10-13 17:29-0700\n"
+"PO-Revision-Date: 2016-05-27 15:28+0000\n"
+"Last-Translator: Maxwell Barvian <Unknown>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.0.1\n"
-"X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/MainWindow.vala:34
 #, c-format
@@ -66,11 +64,12 @@ msgid "Passwords do not match"
 msgstr "Os contrasinais non coinciden"
 
 #: src/Views/AccountView.vala:208
-msgid "Username is already taken"
+msgid "The chosen username is already taken"
 msgstr ""
 
 #: src/Views/AccountView.vala:210
-msgid "Username can only contain lowercase letters and numbers, without spaces"
+msgid ""
+"A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:28
@@ -110,9 +109,3 @@ msgstr "Seleccionar unha Linguaxe"
 msgid "Currently active language"
 msgstr "Linguaxe actualmente activa"
 
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "Launchpad Contributions:\n"
-#~ "  David Vilela https://launchpad.net/~david-vilela\n"
-#~ "  ERIC https://launchpad.net/~galleto-balu\n"
-#~ "  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount"

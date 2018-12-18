@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-27 10:24-0800\n"
-"PO-Revision-Date: 2018-10-26 00:03+0000\n"
-"Last-Translator: Ciaran Ainsworth <ciaranainsworth@outlook.com>\n"
+"POT-Creation-Date: 2018-10-13 17:29-0700\n"
+"PO-Revision-Date: 2018-05-01 00:03+0000\n"
+"Last-Translator: Ciaran Ainsworth <cda@whistlingkappa.com>\n"
 "Language-Team: English (United Kingdom) <https://weblate.elementary.io/"
 "projects/installer/initial-setup/en_GB/>\n"
 "Language: en_GB\n"
@@ -13,7 +13,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.0.1\n"
-"X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
 #: src/MainWindow.vala:34
 #, c-format
@@ -66,11 +65,14 @@ msgid "Passwords do not match"
 msgstr "Passwords do not match"
 
 #: src/Views/AccountView.vala:208
-msgid "Username is already taken"
+#, fuzzy
+msgid "The chosen username is already taken"
 msgstr "Nama pengguna telah digunakan"
 
 #: src/Views/AccountView.vala:210
-msgid "Username can only contain lowercase letters and numbers, without spaces"
+#, fuzzy
+msgid ""
+"A username must only contain lowercase letters and numbers, without spaces"
 msgstr "Nama pengguna hanya bisa berisi huruf kecil dan angka, tanpa spasi"
 
 #: src/Views/KeyboardLayoutView.vala:28
@@ -109,100 +111,3 @@ msgstr "Select a Language"
 #: src/Views/LanguageView.vala:246 src/Views/LanguageView.vala:289
 msgid "Currently active language"
 msgstr "Currently active language"
-
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "Launchpad Contributions:\n"
-#~ "  Andi Chandler https://launchpad.net/~bing\n"
-#~ "  Dominik Schwarzbauer https://launchpad.net/~dominik-schwarzbauer\n"
-#~ "  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount"
-
-#~ msgid "Calculator"
-#~ msgstr "Calculator"
-
-#~ msgid "History"
-#~ msgstr "History"
-
-#~ msgid "Value to add:"
-#~ msgstr "Value to add:"
-
-#~ msgid "Result"
-#~ msgstr "Result"
-
-#~ msgid "Expression"
-#~ msgstr "Expression"
-
-#~ msgid "Close"
-#~ msgstr "Close"
-
-#~ msgid "Add"
-#~ msgstr "Add"
-
-#~ msgid "Show extended functionality"
-#~ msgstr "Show extended functionality"
-
-#~ msgid "Calculate Result"
-#~ msgstr "Calculate Result"
-
-#~ msgid "Add last result"
-#~ msgstr "Add last result"
-
-#~ msgid "Clear entry"
-#~ msgstr "Clear entry"
-
-#~ msgid "Subtract"
-#~ msgstr "Subtract"
-
-#~ msgid "Multiply"
-#~ msgstr "Multiply"
-
-#~ msgid "Divide"
-#~ msgstr "Divide"
-
-#~ msgid "Percentage"
-#~ msgstr "Percentage"
-
-#~ msgid "Start Group"
-#~ msgstr "Start Group"
-
-#~ msgid "End Group"
-#~ msgstr "End Group"
-
-#~ msgid "Exponent"
-#~ msgstr "Exponent"
-
-#~ msgid "Root"
-#~ msgstr "Root"
-
-#~ msgid "Sine"
-#~ msgstr "Sine"
-
-#~ msgid "Hyperbolic Sine"
-#~ msgstr "Hyperbolic Sine"
-
-#~ msgid "Cosine"
-#~ msgstr "Cosine"
-
-#~ msgid "Hyperbolic Cosine"
-#~ msgstr "Hyperbolic Cosine"
-
-#~ msgid "Tangent"
-#~ msgstr "Tangent"
-
-#~ msgid "Hyperbolic Tangent"
-#~ msgstr "Hyperbolic Tangent"
-
-#~ msgid "Pi"
-#~ msgstr "Pi"
-
-#~ msgid "Euler's Number"
-#~ msgstr "Euler's Number"
-
-#~ msgid "Hide extended functionality"
-#~ msgstr "Hide extended functionality"
-
-#~ msgid "'%s' is invalid."
-#~ msgstr "'%s' is invalid."
-
-#~ msgid "'%s' is unknown."
-#~ msgstr "'%s' is unknown."
