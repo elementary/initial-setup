@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 17:29-0700\n"
-"PO-Revision-Date: 2018-07-03 00:06+0000\n"
+"PO-Revision-Date: 2018-12-19 00:07+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://weblate.elementary.io/projects/installer/"
 "initial-setup/ca/>\n"
@@ -66,12 +66,10 @@ msgid "Passwords do not match"
 msgstr "Les contrasenyes no coincideixen."
 
 #: src/Views/AccountView.vala:208
-#, fuzzy
 msgid "The chosen username is already taken"
-msgstr "El nom d'usuari ja està agafat."
+msgstr "El nom d'usuari triat ja està agafat."
 
 #: src/Views/AccountView.vala:210
-#, fuzzy
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
