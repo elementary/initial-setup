@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 17:29-0700\n"
-"PO-Revision-Date: 2018-05-04 00:05+0000\n"
+"PO-Revision-Date: 2018-12-21 08:18+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/installer/"
 "initial-setup/fr/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/MainWindow.vala:34
@@ -66,16 +66,14 @@ msgid "Passwords do not match"
 msgstr "Les mots de passe ne correspondent pas"
 
 #: src/Views/AccountView.vala:208
-#, fuzzy
 msgid "The chosen username is already taken"
 msgstr "Le nom d'utilisateur est déjà pris"
 
 #: src/Views/AccountView.vala:210
-#, fuzzy
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
-"Le nom d'utilisateur ne peut contenir que des lettres minuscules, des "
+"Le nom d'utilisateur ne peut contenir que des lettres minuscules et des "
 "nombres, mais pas d'espaces"
 
 #: src/Views/KeyboardLayoutView.vala:28
