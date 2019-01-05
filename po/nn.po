@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 17:29-0700\n"
-"PO-Revision-Date: 2019-01-05 02:25+0000\n"
+"PO-Revision-Date: 2019-01-05 06:01+0000\n"
 "Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
 "installer/initial-setup/nn/>\n"
@@ -51,7 +51,7 @@ msgstr "Vel eit passord"
 
 #: src/Views/AccountView.vala:63
 msgid "Confirm Password"
-msgstr "Bekreft passord"
+msgstr "Stadfest passord"
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
 msgid "Back"
