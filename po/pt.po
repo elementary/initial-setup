@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 17:29-0700\n"
-"PO-Revision-Date: 2019-01-07 00:02+0000\n"
+"PO-Revision-Date: 2019-01-09 00:06+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://weblate.elementary.io/projects/installer/"
 "initial-setup/pt/>\n"
@@ -31,7 +31,7 @@ msgstr "%s…"
 
 #: src/Views/AbstractInstallerView.vala:47
 msgid "Cancel Installation"
-msgstr "Cancelar instalação"
+msgstr "Cancelar Instalação"
 
 #: src/Views/AccountView.vala:32
 msgid "Create an Account"
@@ -78,15 +78,15 @@ msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
-msgstr "Esquema do Teclado"
+msgstr "Disposição do Teclado"
 
 #: src/Views/KeyboardLayoutView.vala:36
 msgid "Type to test your layout"
-msgstr "Escreva para testar o seu esquema de teclado"
+msgstr "Escreva para testar a sua disposição de teclado"
 
 #: src/Views/KeyboardLayoutView.vala:39
 msgid "Show keyboard layout"
-msgstr "Exibir o Esquema do teclado"
+msgstr "Exibir a disposição do teclado"
 
 #: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:109
 #: src/Views/LanguageView.vala:150
