@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 17:29-0700\n"
-"PO-Revision-Date: 2018-08-12 13:17+0000\n"
+"PO-Revision-Date: 2019-01-15 12:42+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
 "installer/initial-setup/zh_Hans/>\n"
@@ -66,12 +66,10 @@ msgid "Passwords do not match"
 msgstr "密码不匹配"
 
 #: src/Views/AccountView.vala:208
-#, fuzzy
 msgid "The chosen username is already taken"
 msgstr "用户名已存在"
 
 #: src/Views/AccountView.vala:210
-#, fuzzy
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr "用户名只能包含小写字母和数字，不能包含空格"
