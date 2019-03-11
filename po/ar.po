@@ -3,9 +3,9 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 17:29-0700\n"
-"PO-Revision-Date: 2018-12-21 11:05+0000\n"
-"Last-Translator: Mohelm97 <mohelm97@gmail.com>\n"
-"Language-Team: Arabic <https://weblate.elementary.io/projects/installer/"
+"PO-Revision-Date: 2019-03-12 15:26+0000\n"
+"Last-Translator: achraf chetwene <achraf.bizerta@gmail.com>\n"
+"Language-Team: Arabic <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.4\n"
 
 #: src/MainWindow.vala:34
 #, c-format
@@ -55,7 +55,7 @@ msgstr "تأكيد كلمة المرور"
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
 msgid "Back"
-msgstr "للخلف"
+msgstr "العودة"
 
 #: src/Views/AccountView.vala:99
 msgid "Finish Setup"
