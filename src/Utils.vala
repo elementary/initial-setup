@@ -71,8 +71,15 @@ namespace Utils {
 
     public static void create_new_user (string fullname, string username, string password) {
         var permission = get_permission ();
+        if (!permission.allowed) {
+            try {
+                permission.acquire (null);
+            } catch (Error e) {
+                critical (e.message);
+            }
+        }
 
-        if (permission != null && permission.allowed) {
+        if (permission.allowed) {
             try {
                 var user_manager = get_usermanager ();
                 if (user_manager != null) {
