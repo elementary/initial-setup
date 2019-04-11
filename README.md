@@ -2,7 +2,7 @@
 
 [![Translation status](https://weblate.elementary.io/widgets/installer/-/initial-setup/svg-badge.svg)](https://l10n.elementary.io/projects/installer/initial-setup/?utm_source=widget)
 
-An onboarding app for new users
+An initial setup app to create new users
 
 ## Building, Testing, and Installation
 
