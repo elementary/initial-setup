@@ -133,6 +133,8 @@ public class Installer.AccountView : AbstractInstallerView {
             string password = pw_entry.text;
 
             Utils.create_new_user (fullname, username, password);
+
+            get_toplevel ().destroy ();
         });
 
         show_all ();

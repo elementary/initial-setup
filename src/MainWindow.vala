@@ -18,7 +18,7 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class Installer.MainWindow : Gtk.Dialog {
+public class Installer.MainWindow : Gtk.Window {
     private Gtk.Stack stack;
 
     private AccountView account_view;
@@ -31,7 +31,7 @@ public class Installer.MainWindow : Gtk.Dialog {
             height_request: 700,
             icon_name: "system-os-installer",
             resizable: false,
-            title: _("Set up %s").printf (Utils.get_pretty_name ()),
+            title: _("Create a User"),
             width_request: 950
         );
     }
@@ -40,10 +40,17 @@ public class Installer.MainWindow : Gtk.Dialog {
         language_view = new LanguageView ();
 
         stack = new Gtk.Stack ();
+        stack.margin_bottom = 12;
         stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
         stack.add (language_view);
 
-        get_content_area ().add (stack);
+        var titlebar = new Gtk.HeaderBar ();
+        titlebar.get_style_context ().add_class ("default-decoration");
+        titlebar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+
+        get_style_context ().add_class ("rounded");
+        set_titlebar (titlebar);
+        add (stack);
 
         language_view.next_step.connect (() => load_keyboard_view ());
     }
@@ -76,6 +83,4 @@ public class Installer.MainWindow : Gtk.Dialog {
         stack.add (account_view);
         stack.visible_child = account_view;
     }
-
-    public override void close () {}
 }
