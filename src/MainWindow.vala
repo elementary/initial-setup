@@ -31,6 +31,7 @@ public class Installer.MainWindow : Gtk.Window {
             height_request: 700,
             icon_name: "system-os-installer",
             resizable: false,
+            title: _("Create a User"),
             width_request: 950
         );
     }
