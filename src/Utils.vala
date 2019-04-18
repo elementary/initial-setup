@@ -61,24 +61,33 @@ namespace Utils {
                     });
                 }
             } catch (Error e) {
-                string error_text = "Creation of user '%s' failed:".printf (username);
+                string error_text = "Creating User '%s' Failed".printf (username);
+                critical ("%s: %s", error_text, e.message);
 
-                try {
-                    Process.spawn_command_line_async ("zenity --error --width=256 --text=\"%s\n\n<tt>%s</tt>\"".printf (error_text, e.message));
-                } catch (Error e) {
-                    critical ("Unable to launch error dialog: %s", e.message);
-                }
+                var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
+                    error_text,
+                    _("Initial Setup could not create your user. Without it, you will not be able to log in and may need to reinstall the OS."),
+                    "dialog-error",
+                    Gtk.ButtonsType.CLOSE
+                );
 
-                critical ("%s %s", error_text, e.message);
+                error_dialog.show_error_details (e.message);
+                error_dialog.run ();
+                error_dialog.destroy ();
             }
         } else {
-            string error_text = "No permission to create user.";
+            string error_text = "No Permission to Create User '%s'".printf (username);
+            critical (error_text);
 
-            try {
-                Process.spawn_command_line_async ("zenity --error --width=128 --text=\"%s\"".printf (error_text));
-            } catch (Error e) {
-                critical ("Unable to launch error dialog: %s", e.message);
-            }
+            var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
+                error_text,
+                _("Initial Setup could not create your user. Without it, you will not be able to log in and may need to reinstall the OS."),
+                "dialog-error",
+                Gtk.ButtonsType.CLOSE
+            );
+
+            error_dialog.run ();
+            error_dialog.destroy ();
 
             critical (error_text);
         }
