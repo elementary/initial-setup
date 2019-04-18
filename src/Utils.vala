@@ -61,8 +61,26 @@ namespace Utils {
                     });
                 }
             } catch (Error e) {
-                critical ("Creation of user '%s' failed".printf (username));
+                string error_text = "Creation of user '%s' failed:".printf (username);
+
+                try {
+                    Process.spawn_command_line_async ("zenity --error --width=256 --text=\"%s\n\n<tt>%s</tt>\"".printf (error_text, e.message));
+                } catch (Error e) {
+                    critical ("Unable to launch error dialog: %s", e.message);
+                }
+
+                critical ("%s %s", error_text, e.message);
             }
+        } else {
+            string error_text = "No permission to create user.";
+
+            try {
+                Process.spawn_command_line_async ("zenity --error --width=128 --text=\"%s\"".printf (error_text));
+            } catch (Error e) {
+                critical ("Unable to launch error dialog: %s", e.message);
+            }
+
+            critical (error_text);
         }
     }
 
