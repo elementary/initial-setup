@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 17:29-0700\n"
+"POT-Creation-Date: 2019-04-18 13:09-0700\n"
 "PO-Revision-Date: 2018-12-22 10:42+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/installer/"
@@ -16,15 +16,27 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/MainWindow.vala:34
+#, fuzzy
+msgid "Create a User"
+msgstr "계정 만들기"
+
+#: src/Utils.vala:53
+msgid ""
+"Initial Setup could not create your user. Without it, you will not be able "
+"to log in and may need to reinstall the OS."
+msgstr ""
+
+#: src/Utils.vala:68
 #, c-format
-msgid "Set up %s"
-msgstr "%s 설정하기"
+msgid "Creating User '%s' Failed"
+msgstr ""
 
-#: src/Utils.vala:26
-msgid "Operating System"
-msgstr "운영체제"
+#: src/Utils.vala:72
+#, c-format
+msgid "No Permission to Create User '%s'"
+msgstr ""
 
-#: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:133
+#: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:137
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -61,15 +73,15 @@ msgstr "뒤로"
 msgid "Finish Setup"
 msgstr "설정 끝내기"
 
-#: src/Views/AccountView.vala:179
+#: src/Views/AccountView.vala:182
 msgid "Passwords do not match"
 msgstr "비밀번호가 맞지 않습니다"
 
-#: src/Views/AccountView.vala:208
+#: src/Views/AccountView.vala:211
 msgid "The chosen username is already taken"
 msgstr "사용자 이름이 이미 사용 중입니다"
 
-#: src/Views/AccountView.vala:210
+#: src/Views/AccountView.vala:213
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr "사용자 이름은 여백 없이 소문자와 숫자로만 구성할 수 있습니다"
@@ -86,30 +98,36 @@ msgstr "타이핑해서 키보드 배치를 확인해보세요"
 msgid "Show keyboard layout"
 msgstr "키보드 배치 보기"
 
-#: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:109
-#: src/Views/LanguageView.vala:150
+#: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:113
+#: src/Views/LanguageView.vala:154
 msgid "Select"
 msgstr "선택"
 
-#: src/Views/KeyboardLayoutView.vala:96
+#: src/Views/KeyboardLayoutView.vala:100
 msgid "Default"
 msgstr "기본"
 
-#: src/Views/KeyboardLayoutView.vala:101
+#: src/Views/KeyboardLayoutView.vala:105
 msgid "Input Language"
 msgstr "입력 언어"
 
-#: src/Views/LanguageView.vala:201
+#: src/Views/LanguageView.vala:205
 msgid "Languages"
 msgstr "언어"
 
-#: src/Views/LanguageView.vala:218
+#: src/Views/LanguageView.vala:222
 msgid "Select a Language"
 msgstr "언어 선택"
 
-#: src/Views/LanguageView.vala:246 src/Views/LanguageView.vala:289
+#: src/Views/LanguageView.vala:250 src/Views/LanguageView.vala:293
 msgid "Currently active language"
 msgstr "현재 사용하고 있는 언어"
+
+#~ msgid "Set up %s"
+#~ msgstr "%s 설정하기"
+
+#~ msgid "Operating System"
+#~ msgstr "운영체제"
 
 #~ msgid "translator-credits"
 #~ msgstr ""
