@@ -48,6 +48,10 @@ namespace Utils {
     public static void create_new_user (string fullname, string username, string password) {
         var permission = get_permission ();
 
+        string? primary_text = null;
+        string? error_message = null;
+        string secondary_text = _("Initial Setup could not create your user. Without it, you will not be able to log in and may need to reinstall the OS.");
+
         if (permission != null && permission.allowed) {
             try {
                 var user_manager = get_usermanager ();
@@ -61,35 +65,27 @@ namespace Utils {
                     });
                 }
             } catch (Error e) {
-                string error_text = "Creating User '%s' Failed".printf (username);
-                critical ("%s: %s", error_text, e.message);
-
-                var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
-                    error_text,
-                    _("Initial Setup could not create your user. Without it, you will not be able to log in and may need to reinstall the OS."),
-                    "dialog-error",
-                    Gtk.ButtonsType.CLOSE
-                );
-
-                error_dialog.show_error_details (e.message);
-                error_dialog.run ();
-                error_dialog.destroy ();
+                primary_text = _("Creating User '%s' Failed").printf (username);
+                error_message = e.message;
             }
         } else {
-            string error_text = "No Permission to Create User '%s'".printf (username);
-            critical (error_text);
+            primary_text = _("No Permission to Create User '%s'").printf (username);
+        }
 
+        if (primary_text != null) {
             var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
-                error_text,
-                _("Initial Setup could not create your user. Without it, you will not be able to log in and may need to reinstall the OS."),
+                primary_text,
+                secondary_text,
                 "dialog-error",
                 Gtk.ButtonsType.CLOSE
             );
 
+            if (error_message != null) {
+                error_dialog.show_error_details (error_message);
+            }
+
             error_dialog.run ();
             error_dialog.destroy ();
-
-            critical (error_text);
         }
     }
 
