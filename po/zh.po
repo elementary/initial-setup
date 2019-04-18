@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 17:29-0700\n"
+"POT-Creation-Date: 2019-04-18 13:09-0700\n"
 "PO-Revision-Date: 2018-04-18 00:05+0000\n"
 "Last-Translator: jianlongshi <shijian_long@163.com>\n"
 "Language-Team: Chinese <https://weblate.elementary.io/projects/installer/"
@@ -15,15 +15,27 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 
 #: src/MainWindow.vala:34
-#, c-format
-msgid "Set up %s"
+#, fuzzy
+msgid "Create a User"
+msgstr "创建用户"
+
+#: src/Utils.vala:53
+msgid ""
+"Initial Setup could not create your user. Without it, you will not be able "
+"to log in and may need to reinstall the OS."
 msgstr ""
 
-#: src/Utils.vala:26
-msgid "Operating System"
-msgstr "操作系统"
+#: src/Utils.vala:68
+#, c-format
+msgid "Creating User '%s' Failed"
+msgstr ""
 
-#: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:133
+#: src/Utils.vala:72
+#, c-format
+msgid "No Permission to Create User '%s'"
+msgstr ""
+
+#: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:137
 #, c-format
 msgid "%s…"
 msgstr ""
@@ -60,15 +72,15 @@ msgstr "返回"
 msgid "Finish Setup"
 msgstr "完成"
 
-#: src/Views/AccountView.vala:179
+#: src/Views/AccountView.vala:182
 msgid "Passwords do not match"
 msgstr "密码错误"
 
-#: src/Views/AccountView.vala:208
+#: src/Views/AccountView.vala:211
 msgid "The chosen username is already taken"
 msgstr ""
 
-#: src/Views/AccountView.vala:210
+#: src/Views/AccountView.vala:213
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
@@ -85,30 +97,33 @@ msgstr ""
 msgid "Show keyboard layout"
 msgstr ""
 
-#: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:109
-#: src/Views/LanguageView.vala:150
+#: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:113
+#: src/Views/LanguageView.vala:154
 msgid "Select"
 msgstr ""
 
-#: src/Views/KeyboardLayoutView.vala:96
+#: src/Views/KeyboardLayoutView.vala:100
 msgid "Default"
 msgstr ""
 
-#: src/Views/KeyboardLayoutView.vala:101
+#: src/Views/KeyboardLayoutView.vala:105
 msgid "Input Language"
 msgstr ""
 
-#: src/Views/LanguageView.vala:201
+#: src/Views/LanguageView.vala:205
 msgid "Languages"
 msgstr ""
 
-#: src/Views/LanguageView.vala:218
+#: src/Views/LanguageView.vala:222
 msgid "Select a Language"
 msgstr ""
 
-#: src/Views/LanguageView.vala:246 src/Views/LanguageView.vala:289
+#: src/Views/LanguageView.vala:250 src/Views/LanguageView.vala:293
 msgid "Currently active language"
 msgstr ""
+
+#~ msgid "Operating System"
+#~ msgstr "操作系统"
 
 #~ msgid "Use English"
 #~ msgstr "中国使用"
