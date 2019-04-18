@@ -1,0 +1,26 @@
+Source: io.elementary.initial-setup
+Section: x11
+Priority: extra
+Maintainer: elementary, Inc. <builds@elementary.io>
+Build-Depends: debhelper (>= 10.5.1),
+               desktop-file-utils,
+               gettext,
+               libaccountsservice-dev,
+               libgee-0.8-dev,
+               libgnomekbd-dev,
+               libgranite-dev,
+               libgtk-3-dev,
+               libjson-glib-dev,
+               libpolkit-gobject-1-dev,
+               libpwquality-dev,
+               libxml2-dev,
+               libxml2-utils,
+               meson,
+               valac
+Standards-Version: 4.1.1
+
+Package: io.elementary.initial-setup
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Perform essential OS setup
+ Initial Setup assists users with essential tasks before a fresh install is usable.
