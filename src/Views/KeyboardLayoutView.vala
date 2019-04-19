@@ -108,10 +108,21 @@ public class KeyboardLayoutView : AbstractInstallerView {
         input_variant_widget.variant_listbox.row_selected.connect ((row) => {
             next_button.sensitive = true;
         });
-        
+
         keyboard_test_entry.icon_release.connect (() => {
             var popover = new Gtk.Popover (keyboard_test_entry);
             var layout = new LayoutWidget ();
+
+            var layout_string = "us";
+            unowned Configuration config = Configuration.get_default ();
+            if (config.keyboard_layout != null) {
+                layout_string = config.keyboard_layout;
+                if (config.keyboard_variant != null) {
+                    layout_string += "\t" + config.keyboard_variant;
+                }
+            }
+
+            layout.set_layout (layout_string);
             popover.add (layout);
             popover.show_all ();
         });
@@ -121,10 +132,28 @@ public class KeyboardLayoutView : AbstractInstallerView {
         }
 
         show_all ();
+
+        Idle.add (() => {
+            string? country = Configuration.get_default ().country;
+            if (country != null) {
+                string default_layout = country.down ();
+
+                foreach (Gtk.Widget child in input_variant_widget.main_listbox.get_children ()) {
+                    if (child is LayoutRow) {
+                        var row = (LayoutRow) child;
+                        if (row.layout.name == default_layout) {
+                            input_variant_widget.main_listbox.select_row (row);
+                            row.grab_focus ();
+                            break;
+                        }
+                    }
+                }
+            }
+        });
     }
 
     public void set_language (string lang) {
-        
+
     }
 
     private class LayoutRow : Gtk.ListBoxRow {
