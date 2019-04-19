@@ -8,8 +8,8 @@ i18n.merge_file(
 )
 
 install_data(
-    meson.project_name() + '.policy',
-    install_dir: join_paths(get_option('datadir'), 'polkit-1', 'actions')
+    '49-' + meson.project_name() + '.pkla',
+    install_dir: join_paths(get_option('sharedstatedir'), 'polkit-1', 'localauthority', '10-vendor.d')
 )
 
 # Test the desktop file
