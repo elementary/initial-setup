@@ -65,11 +65,11 @@ public class KeyboardLayoutView : AbstractInstallerView {
         });
 
         input_variant_widget.variant_listbox.set_sort_func ((row1, row2) => {
-            if (((VariantRow) row1).code == "") {
+            if (((VariantRow) row1).code == null) {
                 return -1;
             }
 
-            if (((VariantRow) row2).code == "") {
+            if (((VariantRow) row2).code == null) {
                 return 1;
             }
 
@@ -82,30 +82,51 @@ public class KeyboardLayoutView : AbstractInstallerView {
 
         back_button.clicked.connect (() => ((Gtk.Stack) get_parent ()).visible_child = previous_view);
 
-        next_button.clicked.connect (() => next_step ());
+        next_button.clicked.connect (() => {
+            unowned Gtk.ListBoxRow row = input_variant_widget.main_listbox.get_selected_row ();
+            if (row != null) {
+                var layout = ((LayoutRow) row).layout;
+                unowned Configuration configuration = Configuration.get_default ();
+                configuration.keyboard_layout = layout.name;
 
-        input_variant_widget.going_to_main.connect (() => {
-            next_button.sensitive = false;
+                unowned Gtk.ListBoxRow vrow = input_variant_widget.variant_listbox.get_selected_row ();
+                if (vrow != null) {
+                    string variant = ((VariantRow) vrow).code;
+                    configuration.keyboard_variant = variant;
+                } else if (layout.variants.is_empty) {
+                    configuration.keyboard_variant = null;
+                } else {
+                    row.activate ();
+                    return;
+                }
+            } else {
+                warning ("next_button enabled when no keyboard selected");
+                next_button.sensitive = false;
+                return;
+            }
+
+            next_step ();
         });
 
         input_variant_widget.main_listbox.row_activated.connect ((row) => {
             var layout = ((LayoutRow) row).layout;
             var variants = layout.variants;
             if (variants.is_empty) {
-                next_button.sensitive = true;
                 return;
             }
 
             input_variant_widget.clear_variants ();
-            input_variant_widget.variant_listbox.add (new VariantRow ("", _("Default")));
+            input_variant_widget.variant_listbox.add (new VariantRow (null, _("Default")));
             foreach (var variant in variants.entries) {
                 input_variant_widget.variant_listbox.add (new VariantRow (variant.key, variant.value));
             }
 
+            input_variant_widget.variant_listbox.select_row (input_variant_widget.variant_listbox.get_row_at_index (0));
+
             input_variant_widget.show_variants (_("Input Language"), "<b>%s</b>".printf (layout.description));
         });
 
-        input_variant_widget.variant_listbox.row_selected.connect ((row) => {
+        input_variant_widget.main_listbox.row_selected.connect ((row) => {
             next_button.sensitive = true;
         });
 
@@ -152,10 +173,6 @@ public class KeyboardLayoutView : AbstractInstallerView {
         });
     }
 
-    public void set_language (string lang) {
-
-    }
-
     private class LayoutRow : Gtk.ListBoxRow {
         public KeyboardLayoutHelper.Layout layout;
         public LayoutRow (KeyboardLayoutHelper.Layout layout) {
@@ -176,9 +193,9 @@ public class KeyboardLayoutView : AbstractInstallerView {
     }
 
     private class VariantRow : Gtk.ListBoxRow {
-        public string code;
+        public string? code;
         public string description;
-        public VariantRow (string code, string description) {
+        public VariantRow (string? code, string description) {
             this.code = code;
             this.description = description;
             var label = new Gtk.Label (description);
@@ -190,3 +207,4 @@ public class KeyboardLayoutView : AbstractInstallerView {
         }
     }
 }
+
