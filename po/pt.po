@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 17:29-0700\n"
+"POT-Creation-Date: 2019-04-18 13:09-0700\n"
 "PO-Revision-Date: 2019-01-09 00:06+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://weblate.elementary.io/projects/installer/"
@@ -16,15 +16,27 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/MainWindow.vala:34
+#, fuzzy
+msgid "Create a User"
+msgstr "Criar uma conta"
+
+#: src/Utils.vala:53
+msgid ""
+"Initial Setup could not create your user. Without it, you will not be able "
+"to log in and may need to reinstall the OS."
+msgstr ""
+
+#: src/Utils.vala:68
 #, c-format
-msgid "Set up %s"
-msgstr "Configurar %s"
+msgid "Creating User '%s' Failed"
+msgstr ""
 
-#: src/Utils.vala:26
-msgid "Operating System"
-msgstr "Sistema Operativo"
+#: src/Utils.vala:72
+#, c-format
+msgid "No Permission to Create User '%s'"
+msgstr ""
 
-#: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:133
+#: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:137
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -61,15 +73,15 @@ msgstr "Voltar"
 msgid "Finish Setup"
 msgstr "Finalizar Instalação"
 
-#: src/Views/AccountView.vala:179
+#: src/Views/AccountView.vala:182
 msgid "Passwords do not match"
 msgstr "As Palavras-passe não coincidem"
 
-#: src/Views/AccountView.vala:208
+#: src/Views/AccountView.vala:211
 msgid "The chosen username is already taken"
 msgstr "Este nome de utilizador já está a ser utilizado"
 
-#: src/Views/AccountView.vala:210
+#: src/Views/AccountView.vala:213
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
@@ -88,30 +100,36 @@ msgstr "Escreva para testar a sua disposição de teclado"
 msgid "Show keyboard layout"
 msgstr "Exibir a disposição do teclado"
 
-#: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:109
-#: src/Views/LanguageView.vala:150
+#: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:113
+#: src/Views/LanguageView.vala:154
 msgid "Select"
 msgstr "Selecione"
 
-#: src/Views/KeyboardLayoutView.vala:96
+#: src/Views/KeyboardLayoutView.vala:100
 msgid "Default"
 msgstr "Padrão"
 
-#: src/Views/KeyboardLayoutView.vala:101
+#: src/Views/KeyboardLayoutView.vala:105
 msgid "Input Language"
 msgstr "Selecionar um idioma"
 
-#: src/Views/LanguageView.vala:201
+#: src/Views/LanguageView.vala:205
 msgid "Languages"
 msgstr "Idiomas"
 
-#: src/Views/LanguageView.vala:218
+#: src/Views/LanguageView.vala:222
 msgid "Select a Language"
 msgstr "Selecionar um idioma"
 
-#: src/Views/LanguageView.vala:246 src/Views/LanguageView.vala:289
+#: src/Views/LanguageView.vala:250 src/Views/LanguageView.vala:293
 msgid "Currently active language"
 msgstr "Idioma escolhido"
+
+#~ msgid "Set up %s"
+#~ msgstr "Configurar %s"
+
+#~ msgid "Operating System"
+#~ msgstr "Sistema Operativo"
 
 #, fuzzy
 #~ msgid "Install %s"
