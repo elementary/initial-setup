@@ -20,30 +20,6 @@
  */
 
 namespace Utils {
-    private static string os_pretty_name;
-    private static string get_pretty_name () {
-        if (os_pretty_name == null) {
-            os_pretty_name = _("Operating System");
-            const string ETC_OS_RELEASE = "/etc/os-release";
-
-            try {
-                var data_stream = new DataInputStream (File.new_for_path (ETC_OS_RELEASE).read ());
-
-                string line;
-                while ((line = data_stream.read_line (null)) != null) {
-                    var osrel_component = line.split ("=", 2);
-                    if (osrel_component.length == 2 && osrel_component[0] == "PRETTY_NAME") {
-                        os_pretty_name = osrel_component[1].replace ("\"", "");
-                        break;
-                    }
-                }
-            } catch (Error e) {
-                warning ("Couldn't read os-release file: %s", e.message);
-            }
-        }
-        return os_pretty_name;
-    }
-
     private static Act.UserManager? usermanager = null;
 
     public static unowned Act.UserManager? get_usermanager () {
@@ -61,7 +37,7 @@ namespace Utils {
         if (permission != null)
             return permission;
         try {
-            permission = new Polkit.Permission.sync ("io.elementary.initial-setup", new Polkit.UnixProcess (Posix.getpid ()));
+            permission = new Polkit.Permission.sync ("org.freedesktop.accounts.user-administration", new Polkit.UnixProcess (Posix.getpid ()));
             return permission;
         } catch (Error e) {
             critical (e.message);
@@ -71,6 +47,10 @@ namespace Utils {
 
     public static void create_new_user (string fullname, string username, string password) {
         var permission = get_permission ();
+
+        string? primary_text = null;
+        string? error_message = null;
+        string secondary_text = _("Initial Setup could not create your user. Without it, you will not be able to log in and may need to reinstall the OS.");
 
         if (permission != null && permission.allowed) {
             try {
@@ -85,8 +65,27 @@ namespace Utils {
                     });
                 }
             } catch (Error e) {
-                critical ("Creation of user '%s' failed".printf (username));
+                primary_text = _("Creating User '%s' Failed").printf (username);
+                error_message = e.message;
             }
+        } else {
+            primary_text = _("No Permission to Create User '%s'").printf (username);
+        }
+
+        if (primary_text != null) {
+            var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
+                primary_text,
+                secondary_text,
+                "dialog-error",
+                Gtk.ButtonsType.CLOSE
+            );
+
+            if (error_message != null) {
+                error_dialog.show_error_details (error_message);
+            }
+
+            error_dialog.run ();
+            error_dialog.destroy ();
         }
     }
 

@@ -97,6 +97,7 @@ public class Installer.AccountView : AbstractInstallerView {
         var back_button = new Gtk.Button.with_label (_("Back"));
 
         finish_button = new Gtk.Button.with_label (_("Finish Setup"));
+        finish_button.can_default = true;
         finish_button.sensitive = false;
         finish_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
@@ -132,6 +133,8 @@ public class Installer.AccountView : AbstractInstallerView {
             string password = pw_entry.text;
 
             Utils.create_new_user (fullname, username, password);
+
+            get_toplevel ().destroy ();
         });
 
         show_all ();
@@ -220,6 +223,7 @@ public class Installer.AccountView : AbstractInstallerView {
     private void update_finish_button () {
         if (username_entry.is_valid && pw_entry.is_valid && confirm_entry.is_valid) {
             finish_button.sensitive = true;
+            finish_button.has_default = true;
         } else {
             finish_button.sensitive = false;
         }
@@ -227,6 +231,10 @@ public class Installer.AccountView : AbstractInstallerView {
 
     private class ValidatedEntry : Gtk.Entry {
         public bool is_valid { get; set; default = false; }
+
+        construct {
+            activates_default = true;
+        }
     }
 
     private class ErrorRevealer : Gtk.Revealer {
