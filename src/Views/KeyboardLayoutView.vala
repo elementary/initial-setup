@@ -17,8 +17,6 @@
  */
 
 public class KeyboardLayoutView : AbstractInstallerView {
-    public signal void next_step ();
-
     private VariantWidget input_variant_widget;
 
     construct {

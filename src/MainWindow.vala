@@ -31,10 +31,7 @@ public class Installer.MainWindow : Gtk.Window {
             height_request: 700,
             icon_name: "system-os-installer",
             resizable: false,
-<<<<<<< HEAD
-=======
             title: _("Create a User"),
->>>>>>> ca4d6f84eff3a6275953205387fe3c3f240571d0
             width_request: 950
         );
     }
@@ -85,5 +82,15 @@ public class Installer.MainWindow : Gtk.Window {
         account_view.previous_view = keyboard_layout_view;
         stack.add (account_view);
         stack.visible_child = account_view;
+
+        account_view.next_step.connect (on_finish);
+    }
+
+    private void on_finish () {
+        if (account_view.created != null) {
+            account_view.created.set_language (Configuration.get_default ().lang);
+        }
+
+        destroy ();
     }
 }

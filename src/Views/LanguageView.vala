@@ -26,8 +26,6 @@ public class Installer.LanguageView : AbstractInstallerView {
 
     private VariantWidget lang_variant_widget;
 
-    public signal void next_step ();
-
     public LanguageView () {
         GLib.Timeout.add_seconds (3, timeout);
     }
@@ -214,28 +212,9 @@ public class Installer.LanguageView : AbstractInstallerView {
 
             Environment.set_variable ("LANGUAGE", lang, true);
             Configuration.get_default ().lang = lang;
-    
-            LocaleHelper.set_language.begin (lang, on_set_laungage_end);
         }
 
         next_step ();
-    }
-
-    private void on_set_laungage_end (Object? obj, AsyncResult res) {
-        try {
-            LocaleHelper.set_language.end (res);
-        } catch (IOError e) {
-            var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
-                _("Setting System Language Failed"),
-                _("Initial setup could not set a system language."),
-                "dialog-error",
-                Gtk.ButtonsType.CLOSE
-            );
-
-            error_dialog.show_error_details (e.message);
-            error_dialog.run ();
-            error_dialog.destroy ();
-        }
     }
 
     private bool timeout () {
