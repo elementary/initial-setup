@@ -115,16 +115,7 @@ public class Installer.LanguageView : AbstractInstallerView {
         lang_variant_widget.main_listbox.select_row (lang_variant_widget.main_listbox.get_row_at_index (0));
         lang_variant_widget.main_listbox.row_activated.connect (row_activated);
 
-        next_button.clicked.connect (() => {
-            unowned Gtk.ListBoxRow row = lang_variant_widget.main_listbox.get_selected_row ();
-            if (row != null) {
-                string lang = ((LangRow) row).lang_entry.get_code ();
-                Environment.set_variable ("LANGUAGE", lang, true);
-                Configuration.get_default ().lang = lang;
-            }
-            
-            next_step ();
-        });
+        next_button.clicked.connect (on_next_button_clicked);
 
         destroy.connect (() => {
             // We need to disconnect the signal otherwise it's called several time when destroying the window…
@@ -199,6 +190,48 @@ public class Installer.LanguageView : AbstractInstallerView {
             Environment.set_variable ("LANGUAGE", lang_entry.get_code (), true);
             Intl.textdomain (Build.GETTEXT_PACKAGE);
             lang_variant_widget.show_variants (_("Languages"), "<b>%s</b>".printf (lang_entry.name));
+    }
+
+    private void on_next_button_clicked () {
+        string? lang = null;
+        unowned Gtk.ListBoxRow row = lang_variant_widget.main_listbox.get_selected_row ();
+        if (row != null) {
+            var lang_entry = ((LangRow) row).lang_entry;
+            lang = lang_entry.get_code ();
+
+            if (lang_entry.countries.length > 0) {
+                row = lang_variant_widget.variant_listbox.get_selected_row ();
+                if (row != null) {
+                    lang += "_%s".printf (((CountryRow)row).country_entry.get_code ());
+                } else {
+                    lang += "_%s".printf (lang_entry.countries[0].get_code ());
+                }
+            }
+
+            Environment.set_variable ("LANGUAGE", lang, true);
+            Configuration.get_default ().lang = lang;
+    
+            LocaleHelper.set_language.begin (lang, on_set_laungage_end);
+        }
+
+        next_step ();
+    }
+
+    private void on_set_laungage_end (Object? obj, AsyncResult res) {
+        try {
+            LocaleHelper.set_language.end (res);
+        } catch (IOError e) {
+            var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
+                _("Setting System Language Failed"),
+                _("Initial setup could not set a system language."),
+                "dialog-error",
+                Gtk.ButtonsType.CLOSE
+            );
+
+            error_dialog.show_error_details (e.message);
+            error_dialog.run ();
+            error_dialog.destroy ();
+        }
     }
 
     private bool timeout () {
