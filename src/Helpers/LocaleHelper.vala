@@ -17,12 +17,6 @@
  */
 
 namespace LocaleHelper {
-    [DBus (name = "org.freedesktop.locale1")]
-    public interface Locale1Proxy : GLib.Object {
-        public async abstract void set_locale (string[] arg_0, bool arg_1) throws GLib.Error;
-        public async abstract void set_x11_keyboard (string arg_0, string arg_1, string arg_2, string arg_3, bool arg_4, bool arg_5) throws GLib.Error;
-    }
-
     public class LangEntry {
         public string alpha_3;
         public string? alpha_2;
@@ -54,26 +48,6 @@ namespace LocaleHelper {
         }
     }
 
-    private static Locale1Proxy locale_proxy;
-    public static async void set_language (string language) throws IOError {
-        if (locale_proxy == null) {
-            locale_proxy = Bus.get_proxy_sync (BusType.SYSTEM, "org.freedesktop.locale1", "/org/freedesktop/locale1", DBusProxyFlags.NONE);
-        }
-
-        if (locale_proxy == null) {
-            throw new IOError.FAILED (_("Could not connect to org.freedesktop.locale1 proxy."));
-        }
-
-        print (language + "\n");
-        string[] param = {};
-        param += "LANG=%s".printf (language);
-        try {
-            yield locale_proxy.set_locale (param, true);
-        } catch (Error e) {
-            throw new IOError.FAILED (e.message);
-        }
-    }
-    
     private static Gee.HashMap<string, LangEntry?> lang_entries;
     public static Gee.HashMap<string, LangEntry?> get_lang_entries () {
         if (lang_entries == null) {
