@@ -74,6 +74,8 @@ public class Installer.LanguageView : AbstractInstallerView {
                 return -1;
             } else if (langrow2.preferred_row && langrow1.preferred_row == false) {
                 return 1;
+            } else if (langrow1.preferred_row == false && langrow2.preferred_row == false) {
+                return strcmp (langrow1.lang_entry.name.down (), langrow2.lang_entry.name.down ());
             } else if (langrow1.preferred_row && langrow2.preferred_row) {
                 return preferred_langs.index_of (langrow1.lang_entry.get_code ()) - preferred_langs.index_of (langrow2.lang_entry.get_code ());
             }
