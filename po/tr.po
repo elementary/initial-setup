@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-18 13:09-0700\n"
-"PO-Revision-Date: 2018-05-27 00:05+0000\n"
-"Last-Translator: İbrahim Ethem Göl <ethem578@gmail.com>\n"
-"Language-Team: Turkish <https://weblate.elementary.io/projects/installer/"
+"POT-Creation-Date: 2018-10-13 17:29-0700\n"
+"PO-Revision-Date: 2019-04-21 18:58+0000\n"
+"Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
+"Language-Team: Turkish <https://l10n.elementary.io/projects/installer/"
 "initial-setup/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.5.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/MainWindow.vala:34
@@ -28,8 +28,8 @@ msgstr ""
 
 #: src/Utils.vala:68
 #, c-format
-msgid "Creating User '%s' Failed"
-msgstr ""
+msgid "Set up %s"
+msgstr "%s Kurulumu"
 
 #: src/Utils.vala:72
 #, c-format
@@ -77,17 +77,15 @@ msgstr "Kurulumu Bitir"
 msgid "Passwords do not match"
 msgstr "Şifreler uyuşmuyor"
 
-#: src/Views/AccountView.vala:211
-#, fuzzy
+#: src/Views/AccountView.vala:208
 msgid "The chosen username is already taken"
-msgstr "Bu kullanıcı adı zaten alınmış"
+msgstr "Seçilen kullanıcı adı zaten kullanılıyor"
 
-#: src/Views/AccountView.vala:213
-#, fuzzy
+#: src/Views/AccountView.vala:210
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
-"Kullanıcı adı yalnızca küçük harf ve rakam içerebilir, boşluk içermemelidir"
+"Bir kullanıcı adı yalnızca küçük harf ve rakam içermeli, boşluk içermemelidir"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
