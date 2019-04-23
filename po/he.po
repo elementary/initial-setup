@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 17:29-0700\n"
+"POT-Creation-Date: 2019-04-23 11:58-0700\n"
 "PO-Revision-Date: 2019-04-21 18:58+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://l10n.elementary.io/projects/installer/"
-"initial-setup/he/>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/installer/initial-"
+"setup/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,8 +28,8 @@ msgstr ""
 
 #: src/Utils.vala:68
 #, c-format
-msgid "Set up %s"
-msgstr "הגדרת %s"
+msgid "Creating User '%s' Failed"
+msgstr ""
 
 #: src/Utils.vala:72
 #, c-format
@@ -124,7 +124,7 @@ msgid "Currently active language"
 msgstr "השפה הפעילה כרגע"
 
 #~ msgid "Set up %s"
-#~ msgstr "התקנת %s"
+#~ msgstr "הגדרת %s"
 
 #~ msgid "Operating System"
 #~ msgstr "מערכת הפעלה"

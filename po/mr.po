@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 17:29-0700\n"
+"POT-Creation-Date: 2019-04-23 11:58-0700\n"
 "PO-Revision-Date: 2019-04-21 18:58+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/installer/"
@@ -28,8 +28,8 @@ msgstr ""
 
 #: src/Utils.vala:68
 #, c-format
-msgid "Set up %s"
-msgstr "%s चे सेटअप करा"
+msgid "Creating User '%s' Failed"
+msgstr ""
 
 #: src/Utils.vala:72
 #, c-format
@@ -124,7 +124,7 @@ msgid "Currently active language"
 msgstr "सध्या वापरात असलेली भाषा"
 
 #~ msgid "Set up %s"
-#~ msgstr "'%s चे सेटअप करा'"
+#~ msgstr "%s चे सेटअप करा"
 
 #~ msgid "Operating System"
 #~ msgstr "ऑपरेटिंग सिस्टिम"

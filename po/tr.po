@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 17:29-0700\n"
+"POT-Creation-Date: 2019-04-23 11:58-0700\n"
 "PO-Revision-Date: 2019-04-21 18:58+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/installer/"
@@ -28,8 +28,8 @@ msgstr ""
 
 #: src/Utils.vala:68
 #, c-format
-msgid "Set up %s"
-msgstr "%s Kurulumu"
+msgid "Creating User '%s' Failed"
+msgstr ""
 
 #: src/Utils.vala:72
 #, c-format
@@ -77,11 +77,11 @@ msgstr "Kurulumu Bitir"
 msgid "Passwords do not match"
 msgstr "Şifreler uyuşmuyor"
 
-#: src/Views/AccountView.vala:208
+#: src/Views/AccountView.vala:211
 msgid "The chosen username is already taken"
 msgstr "Seçilen kullanıcı adı zaten kullanılıyor"
 
-#: src/Views/AccountView.vala:210
+#: src/Views/AccountView.vala:213
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
@@ -125,7 +125,7 @@ msgid "Currently active language"
 msgstr "Şuan aktif olan dil"
 
 #~ msgid "Set up %s"
-#~ msgstr "%s Kur"
+#~ msgstr "%s Kurulumu"
 
 #~ msgid "Operating System"
 #~ msgstr "İşletim Sistemi"

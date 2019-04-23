@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 17:29-0700\n"
+"POT-Creation-Date: 2019-04-23 11:58-0700\n"
 "PO-Revision-Date: 2019-04-21 18:58+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
-"Language-Team: Czech <https://l10n.elementary.io/projects/installer/"
-"initial-setup/cs/>\n"
+"Language-Team: Czech <https://l10n.elementary.io/projects/installer/initial-"
+"setup/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -77,11 +77,11 @@ msgstr "Dokončit nastavení"
 msgid "Passwords do not match"
 msgstr "Hesla se neshodují"
 
-#: src/Views/AccountView.vala:208
+#: src/Views/AccountView.vala:211
 msgid "The chosen username is already taken"
 msgstr "Zvolené uživatelské jméno je již obsazené"
 
-#: src/Views/AccountView.vala:210
+#: src/Views/AccountView.vala:213
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr "Uživatelské jméno může obsahovat pouze malá písmena a čísla bez mezer"
