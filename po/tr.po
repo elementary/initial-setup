@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-23 11:58-0700\n"
-"PO-Revision-Date: 2019-04-21 18:58+0000\n"
+"PO-Revision-Date: 2019-04-23 23:02+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/installer/"
 "initial-setup/tr/>\n"
@@ -16,25 +16,26 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/MainWindow.vala:34
-#, fuzzy
 msgid "Create a User"
-msgstr "Hesap Oluştur"
+msgstr "Kullanıcı Oluşturma"
 
 #: src/Utils.vala:53
 msgid ""
 "Initial Setup could not create your user. Without it, you will not be able "
 "to log in and may need to reinstall the OS."
 msgstr ""
+"İlk Kurulum kullanıcınızı oluşturamadı. Bu olmadan oturum açamazsınız ve "
+"işletim sistemini yeniden kurmanız gerekebilir."
 
 #: src/Utils.vala:68
 #, c-format
 msgid "Creating User '%s' Failed"
-msgstr ""
+msgstr "'%s' Kullanıcısı Oluşturulamadı"
 
 #: src/Utils.vala:72
 #, c-format
 msgid "No Permission to Create User '%s'"
-msgstr ""
+msgstr "'%s' Kullanıcısını Oluşturma İzniniz Yok"
 
 #: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:137
 #, c-format
