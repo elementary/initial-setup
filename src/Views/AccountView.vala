@@ -138,6 +138,7 @@ public class Installer.AccountView : AbstractInstallerView {
         });
 
         show_all ();
+        realname_entry.grab_focus ();
     }
 
     private bool check_password () {
