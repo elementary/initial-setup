@@ -47,6 +47,7 @@ public class Installer.MainWindow : Gtk.Window {
         var titlebar = new Gtk.HeaderBar ();
         titlebar.get_style_context ().add_class ("default-decoration");
         titlebar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+        titlebar.set_custom_title (new Gtk.Label (null));
 
         get_style_context ().add_class ("rounded");
         set_titlebar (titlebar);
