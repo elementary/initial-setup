@@ -120,33 +120,7 @@ public class Installer.LanguageView : AbstractInstallerView {
         lang_variant_widget.main_listbox.select_row (lang_variant_widget.main_listbox.get_row_at_index (0));
         lang_variant_widget.main_listbox.row_activated.connect (row_activated);
 
-        next_button.clicked.connect (() => {
-            unowned Gtk.ListBoxRow row = lang_variant_widget.main_listbox.get_selected_row ();
-            if (row != null) {
-                var lang_entry = ((LangRow) row).lang_entry;
-                string lang = lang_entry.get_code ();
-                Environment.set_variable ("LANGUAGE", lang, true);
-                unowned Configuration configuration = Configuration.get_default ();
-                configuration.lang = lang;
-
-                unowned Gtk.ListBoxRow crow = lang_variant_widget.variant_listbox.get_selected_row ();
-                if (crow != null) {
-                    string country = ((CountryRow) crow).country_entry.alpha_2;
-                    configuration.country = country;
-                } else if (lang_entry.countries.length == 0) {
-                    configuration.country = null;
-                } else {
-                    row.activate ();
-                    return;
-                }
-            } else {
-                warning ("next_button enabled when no language selected");
-                next_button.sensitive = false;
-                return;
-            }
-
-            next_step ();
-        });
+        next_button.clicked.connect (on_next_button_clicked);
 
         lang_variant_widget.going_to_main.connect (() => {
             next_button.sensitive = false;
@@ -230,6 +204,34 @@ public class Installer.LanguageView : AbstractInstallerView {
             Environment.set_variable ("LANGUAGE", lang_entry.get_code (), true);
             Intl.textdomain (Build.GETTEXT_PACKAGE);
             lang_variant_widget.show_variants (_("Languages"), "<b>%s</b>".printf (lang_entry.name));
+    }
+
+    private void on_next_button_clicked () {
+        unowned Gtk.ListBoxRow row = lang_variant_widget.main_listbox.get_selected_row ();
+        if (row != null) {
+            var lang_entry = ((LangRow) row).lang_entry;
+            string lang = lang_entry.get_code ();
+            Environment.set_variable ("LANGUAGE", lang, true);
+            unowned Configuration configuration = Configuration.get_default ();
+            configuration.lang = lang;
+
+            unowned Gtk.ListBoxRow crow = lang_variant_widget.variant_listbox.get_selected_row ();
+            if (crow != null) {
+                string country = ((CountryRow) crow).country_entry.alpha_2;
+                configuration.country = country;
+            } else if (lang_entry.countries.length == 0) {
+                configuration.country = null;
+            } else {
+                row.activate ();
+                return;
+            }
+        } else {
+            warning ("next_button enabled when no language selected");
+            next_button.sensitive = false;
+            return;
+        }
+
+        next_step ();
     }
 
     private bool timeout () {
