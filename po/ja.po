@@ -3,38 +3,37 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-23 11:58-0700\n"
-"PO-Revision-Date: 2018-06-14 00:08+0000\n"
-"Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
-"Language-Team: Japanese <https://weblate.elementary.io/projects/installer/"
+"PO-Revision-Date: 2019-05-05 16:32+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
+"Language-Team: Japanese <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.6.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/MainWindow.vala:34
-#, fuzzy
 msgid "Create a User"
-msgstr "アカウントを作成"
+msgstr "ユーザーを作成"
 
 #: src/Utils.vala:53
 msgid ""
 "Initial Setup could not create your user. Without it, you will not be able "
 "to log in and may need to reinstall the OS."
-msgstr ""
+msgstr "アカウントを作成できませんでした。アカウントがないと、ログインできず、OS の再インストールが必要になる可能性があります。"
 
 #: src/Utils.vala:68
 #, c-format
 msgid "Creating User '%s' Failed"
-msgstr ""
+msgstr "ユーザー '%s' の作成に失敗しました"
 
 #: src/Utils.vala:72
 #, c-format
 msgid "No Permission to Create User '%s'"
-msgstr ""
+msgstr "ユーザー '%s' を作成するための権限がありません"
 
 #: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:137
 #, c-format
@@ -78,16 +77,13 @@ msgid "Passwords do not match"
 msgstr "パスワードが一致しません"
 
 #: src/Views/AccountView.vala:211
-#, fuzzy
 msgid "The chosen username is already taken"
-msgstr "ユーザー名はすでに使われています"
+msgstr "指定されたユーザー名はすでに使われています"
 
 #: src/Views/AccountView.vala:213
-#, fuzzy
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
-msgstr ""
-"ユーザー名は小文字と数字のみを含むことができます。空白は使用しないでください"
+msgstr "ユーザー名には小文字と数字のみが許可されます。空白は使用しないでください"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"

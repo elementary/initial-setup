@@ -3,38 +3,39 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-23 11:58-0700\n"
-"PO-Revision-Date: 2018-12-19 00:07+0000\n"
-"Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://weblate.elementary.io/projects/installer/"
+"PO-Revision-Date: 2019-05-02 19:39+0000\n"
+"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"Language-Team: Catalan <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.6\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/MainWindow.vala:34
-#, fuzzy
 msgid "Create a User"
-msgstr "Crea un compte"
+msgstr "Crea un usuari"
 
 #: src/Utils.vala:53
 msgid ""
 "Initial Setup could not create your user. Without it, you will not be able "
 "to log in and may need to reinstall the OS."
 msgstr ""
+"La Configuració inicial no ha pogut crear l'usuari. Sense, no podreu entrar "
+"a la sessió i potser hauríeu de reinstal·lar el sistema."
 
 #: src/Utils.vala:68
 #, c-format
 msgid "Creating User '%s' Failed"
-msgstr ""
+msgstr "Ha fallat crear l'usuari \"%s\"."
 
 #: src/Utils.vala:72
 #, c-format
 msgid "No Permission to Create User '%s'"
-msgstr ""
+msgstr "No teniu permís per crear l'usuari \"%s\"."
 
 #: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:137
 #, c-format
@@ -75,18 +76,18 @@ msgstr "Acaba la configuració"
 
 #: src/Views/AccountView.vala:182
 msgid "Passwords do not match"
-msgstr "Les contrasenyes no coincideixen."
+msgstr "Les contrasenyes no coincideixen"
 
 #: src/Views/AccountView.vala:211
 msgid "The chosen username is already taken"
-msgstr "El nom d'usuari triat ja està agafat."
+msgstr "El nom d'usuari triat ja està agafat"
 
 #: src/Views/AccountView.vala:213
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
 "El nom d'usuari només pot contenir lletres en minúscula i números, sense "
-"espais."
+"espais"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
@@ -94,7 +95,7 @@ msgstr "Disposició del teclat"
 
 #: src/Views/KeyboardLayoutView.vala:36
 msgid "Type to test your layout"
-msgstr "Teclegeu per provar la disposició del teclat."
+msgstr "Teclegeu per provar la disposició del teclat"
 
 #: src/Views/KeyboardLayoutView.vala:39
 msgid "Show keyboard layout"

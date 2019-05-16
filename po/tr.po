@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-23 11:58-0700\n"
-"PO-Revision-Date: 2019-04-23 23:02+0000\n"
+"PO-Revision-Date: 2019-05-06 11:32+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/installer/"
 "initial-setup/tr/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.5.1\n"
+"X-Generator: Weblate 3.6.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/MainWindow.vala:34
@@ -52,7 +52,7 @@ msgstr "Hesap Oluştur"
 
 #: src/Views/AccountView.vala:36
 msgid "Full Name"
-msgstr "Ad Soyad"
+msgstr "Tam Ad"
 
 #: src/Views/AccountView.vala:41
 msgid "Username"
@@ -64,7 +64,7 @@ msgstr "Bir Parola Seçin"
 
 #: src/Views/AccountView.vala:63
 msgid "Confirm Password"
-msgstr "Şifreyi Onayla"
+msgstr "Parolayı Onayla"
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
 msgid "Back"
@@ -76,7 +76,7 @@ msgstr "Kurulumu Bitir"
 
 #: src/Views/AccountView.vala:182
 msgid "Passwords do not match"
-msgstr "Şifreler uyuşmuyor"
+msgstr "Parolalar eşleşmiyor"
 
 #: src/Views/AccountView.vala:211
 msgid "The chosen username is already taken"
@@ -123,7 +123,7 @@ msgstr "Bir Dil Seçin"
 
 #: src/Views/LanguageView.vala:250 src/Views/LanguageView.vala:293
 msgid "Currently active language"
-msgstr "Şuan aktif olan dil"
+msgstr "Şu anda etkin olan dil"
 
 #~ msgid "Set up %s"
 #~ msgstr "%s Kurulumu"
