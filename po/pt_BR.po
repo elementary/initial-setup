@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-23 11:58-0700\n"
 "PO-Revision-Date: 2019-05-28 08:03+0000\n"
-"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
+"Last-Translator: Mariana Felin <marianafelin@outlook.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "installer/initial-setup/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -24,16 +24,19 @@ msgid ""
 "Initial Setup could not create your user. Without it, you will not be able "
 "to log in and may need to reinstall the OS."
 msgstr ""
+"A Configuração Inicial não pode criar seu usuário. Sem ele, você não poderá "
+"iniciar uma sessão e é possível que necessite reinstalar o Sistema "
+"Operacional."
 
 #: src/Utils.vala:68
 #, c-format
 msgid "Creating User '%s' Failed"
-msgstr ""
+msgstr "A criação do usuário '%s' falhou"
 
 #: src/Utils.vala:72
 #, c-format
 msgid "No Permission to Create User '%s'"
-msgstr ""
+msgstr "Sem permissão para criar o usuário '%s'"
 
 #: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:137
 #, c-format
