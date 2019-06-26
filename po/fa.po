@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-23 11:58-0700\n"
+"POT-Creation-Date: 2019-06-26 22:43+0200\n"
 "PO-Revision-Date: 2018-04-22 00:03+0000\n"
 "Last-Translator: Morteza Khazamipour <mormoroth@gmail.com>\n"
 "Language-Team: Persian <https://weblate.elementary.io/projects/installer/"
@@ -36,7 +36,7 @@ msgstr ""
 msgid "No Permission to Create User '%s'"
 msgstr ""
 
-#: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:137
+#: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:183
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -73,16 +73,16 @@ msgstr "بازگشت"
 msgid "Finish Setup"
 msgstr "اتمام نصب"
 
-#: src/Views/AccountView.vala:182
+#: src/Views/AccountView.vala:183
 msgid "Passwords do not match"
 msgstr "رمز عبور یکسان نمیباشد"
 
-#: src/Views/AccountView.vala:211
+#: src/Views/AccountView.vala:212
 #, fuzzy
 msgid "The chosen username is already taken"
 msgstr "این نام کاربری قبلا گرفته شده است"
 
-#: src/Views/AccountView.vala:213
+#: src/Views/AccountView.vala:214
 #, fuzzy
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
@@ -101,27 +101,26 @@ msgid "Show keyboard layout"
 msgstr "نمایش قالب صفحه کلید"
 
 #: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:113
-#: src/Views/LanguageView.vala:154
 msgid "Select"
 msgstr "انتخاب"
 
-#: src/Views/KeyboardLayoutView.vala:100
+#: src/Views/KeyboardLayoutView.vala:119
 msgid "Default"
 msgstr "پیشفرض"
 
-#: src/Views/KeyboardLayoutView.vala:105
+#: src/Views/KeyboardLayoutView.vala:126
 msgid "Input Language"
 msgstr "زبان ورودی"
 
-#: src/Views/LanguageView.vala:205
+#: src/Views/LanguageView.vala:206
 msgid "Languages"
 msgstr "زبان ها"
 
-#: src/Views/LanguageView.vala:222
+#: src/Views/LanguageView.vala:251
 msgid "Select a Language"
 msgstr "انتخاب زبان"
 
-#: src/Views/LanguageView.vala:250 src/Views/LanguageView.vala:293
+#: src/Views/LanguageView.vala:279 src/Views/LanguageView.vala:322
 msgid "Currently active language"
 msgstr "زبان فعال کنونی"
 

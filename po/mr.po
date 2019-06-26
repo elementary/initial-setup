@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-23 11:58-0700\n"
+"POT-Creation-Date: 2019-06-26 22:43+0200\n"
 "PO-Revision-Date: 2019-05-06 01:33+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/installer/"
@@ -24,8 +24,8 @@ msgid ""
 "Initial Setup could not create your user. Without it, you will not be able "
 "to log in and may need to reinstall the OS."
 msgstr ""
-"आरंभिक सेटअप आपला वापरकर्ता तयार करू शकला नाही. त्याशिवाय, आपण लॉग इन करण्या"
-"स सक्षम असणार नाही आणि ओएस पुन्हा स्थापित करण्याची आवश्यकता असू शकते."
+"आरंभिक सेटअप आपला वापरकर्ता तयार करू शकला नाही. त्याशिवाय, आपण लॉग इन करण्यास सक्षम "
+"असणार नाही आणि ओएस पुन्हा स्थापित करण्याची आवश्यकता असू शकते."
 
 #: src/Utils.vala:68
 #, c-format
@@ -37,7 +37,7 @@ msgstr "वापरकर्ता '%s' तयार करणे अयशस�
 msgid "No Permission to Create User '%s'"
 msgstr "वापरकर्ता '%s' तयार करण्याची परवानगी नाही"
 
-#: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:137
+#: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:183
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -74,15 +74,15 @@ msgstr "मागे"
 msgid "Finish Setup"
 msgstr "सेटअप पूर्ण करा"
 
-#: src/Views/AccountView.vala:182
+#: src/Views/AccountView.vala:183
 msgid "Passwords do not match"
 msgstr "पासवर्डस जुळत नाहीत"
 
-#: src/Views/AccountView.vala:211
+#: src/Views/AccountView.vala:212
 msgid "The chosen username is already taken"
 msgstr "युजरनेम आधीच कुणीतरी वापरले आहे"
 
-#: src/Views/AccountView.vala:213
+#: src/Views/AccountView.vala:214
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr "युजरनेम मध्ये फक्त लहान(इंग्रजी) अक्षरे आणि अंक,रिकाम्या जागांशिवाय असावीत"
@@ -100,27 +100,26 @@ msgid "Show keyboard layout"
 msgstr "कीबोर्ड चे लेआऊट दाखवा"
 
 #: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:113
-#: src/Views/LanguageView.vala:154
 msgid "Select"
 msgstr "निवडा"
 
-#: src/Views/KeyboardLayoutView.vala:100
+#: src/Views/KeyboardLayoutView.vala:119
 msgid "Default"
 msgstr "मूळ"
 
-#: src/Views/KeyboardLayoutView.vala:105
+#: src/Views/KeyboardLayoutView.vala:126
 msgid "Input Language"
 msgstr "इनपुट भाषा"
 
-#: src/Views/LanguageView.vala:205
+#: src/Views/LanguageView.vala:206
 msgid "Languages"
 msgstr "भाषा"
 
-#: src/Views/LanguageView.vala:222
+#: src/Views/LanguageView.vala:251
 msgid "Select a Language"
 msgstr "एक भाषा निवडा"
 
-#: src/Views/LanguageView.vala:250 src/Views/LanguageView.vala:293
+#: src/Views/LanguageView.vala:279 src/Views/LanguageView.vala:322
 msgid "Currently active language"
 msgstr "सध्या वापरात असलेली भाषा"
 

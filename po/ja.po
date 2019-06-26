@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-23 11:58-0700\n"
+"POT-Creation-Date: 2019-06-26 22:43+0200\n"
 "PO-Revision-Date: 2019-05-05 16:32+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/installer/"
@@ -23,7 +23,9 @@ msgstr "ユーザーを作成"
 msgid ""
 "Initial Setup could not create your user. Without it, you will not be able "
 "to log in and may need to reinstall the OS."
-msgstr "アカウントを作成できませんでした。アカウントがないと、ログインできず、OS の再インストールが必要になる可能性があります。"
+msgstr ""
+"アカウントを作成できませんでした。アカウントがないと、ログインできず、OS の再"
+"インストールが必要になる可能性があります。"
 
 #: src/Utils.vala:68
 #, c-format
@@ -35,7 +37,7 @@ msgstr "ユーザー '%s' の作成に失敗しました"
 msgid "No Permission to Create User '%s'"
 msgstr "ユーザー '%s' を作成するための権限がありません"
 
-#: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:137
+#: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:183
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -72,18 +74,19 @@ msgstr "戻る"
 msgid "Finish Setup"
 msgstr "セットアップを完了"
 
-#: src/Views/AccountView.vala:182
+#: src/Views/AccountView.vala:183
 msgid "Passwords do not match"
 msgstr "パスワードが一致しません"
 
-#: src/Views/AccountView.vala:211
+#: src/Views/AccountView.vala:212
 msgid "The chosen username is already taken"
 msgstr "指定されたユーザー名はすでに使われています"
 
-#: src/Views/AccountView.vala:213
+#: src/Views/AccountView.vala:214
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
-msgstr "ユーザー名には小文字と数字のみが許可されます。空白は使用しないでください"
+msgstr ""
+"ユーザー名には小文字と数字のみが許可されます。空白は使用しないでください"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
@@ -98,27 +101,26 @@ msgid "Show keyboard layout"
 msgstr "キーボードレイアウトを表示"
 
 #: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:113
-#: src/Views/LanguageView.vala:154
 msgid "Select"
 msgstr "選択"
 
-#: src/Views/KeyboardLayoutView.vala:100
+#: src/Views/KeyboardLayoutView.vala:119
 msgid "Default"
 msgstr "デフォルト"
 
-#: src/Views/KeyboardLayoutView.vala:105
+#: src/Views/KeyboardLayoutView.vala:126
 msgid "Input Language"
 msgstr "入力言語"
 
-#: src/Views/LanguageView.vala:205
+#: src/Views/LanguageView.vala:206
 msgid "Languages"
 msgstr "言語"
 
-#: src/Views/LanguageView.vala:222
+#: src/Views/LanguageView.vala:251
 msgid "Select a Language"
 msgstr "言語を選択してください"
 
-#: src/Views/LanguageView.vala:250 src/Views/LanguageView.vala:293
+#: src/Views/LanguageView.vala:279 src/Views/LanguageView.vala:322
 msgid "Currently active language"
 msgstr "現在使用可能な言語"
 

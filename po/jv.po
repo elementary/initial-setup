@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-23 11:58-0700\n"
+"POT-Creation-Date: 2019-06-26 22:43+0200\n"
 "PO-Revision-Date: 2016-05-27 15:28+0000\n"
 "Last-Translator: Maxwell Barvian <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr ""
 msgid "No Permission to Create User '%s'"
 msgstr ""
 
-#: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:137
+#: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:183
 #, c-format
 msgid "%s…"
 msgstr ""
@@ -71,15 +71,15 @@ msgstr "Busak"
 msgid "Finish Setup"
 msgstr ""
 
-#: src/Views/AccountView.vala:182
+#: src/Views/AccountView.vala:183
 msgid "Passwords do not match"
 msgstr ""
 
-#: src/Views/AccountView.vala:211
+#: src/Views/AccountView.vala:212
 msgid "The chosen username is already taken"
 msgstr ""
 
-#: src/Views/AccountView.vala:213
+#: src/Views/AccountView.vala:214
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
@@ -97,27 +97,26 @@ msgid "Show keyboard layout"
 msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:113
-#: src/Views/LanguageView.vala:154
 msgid "Select"
 msgstr ""
 
-#: src/Views/KeyboardLayoutView.vala:100
+#: src/Views/KeyboardLayoutView.vala:119
 msgid "Default"
 msgstr ""
 
-#: src/Views/KeyboardLayoutView.vala:105
+#: src/Views/KeyboardLayoutView.vala:126
 msgid "Input Language"
 msgstr ""
 
-#: src/Views/LanguageView.vala:205
+#: src/Views/LanguageView.vala:206
 msgid "Languages"
 msgstr ""
 
-#: src/Views/LanguageView.vala:222
+#: src/Views/LanguageView.vala:251
 msgid "Select a Language"
 msgstr ""
 
-#: src/Views/LanguageView.vala:250 src/Views/LanguageView.vala:293
+#: src/Views/LanguageView.vala:279 src/Views/LanguageView.vala:322
 msgid "Currently active language"
 msgstr ""
 
