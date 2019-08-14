@@ -125,9 +125,6 @@ public class Installer.LanguageView : AbstractInstallerView {
             lang_variant_widget.main_listbox.row_selected.disconnect (row_selected);
         });
 
-        content_area.column_homogeneous = true;
-        content_area.margin_end = 10;
-        content_area.margin_start = 10;
         content_area.attach (image, 0, 0, 1, 1);
         content_area.attach (select_stack, 0, 1, 1, 1);
         content_area.attach (lang_variant_widget, 1, 0, 1, 2);

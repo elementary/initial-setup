@@ -42,9 +42,6 @@ public class KeyboardLayoutView : AbstractInstallerView {
         stack_grid.add (input_variant_widget);
         stack_grid.add (keyboard_test_entry);
 
-        content_area.column_homogeneous = true;
-        content_area.margin_end = 12;
-        content_area.margin_start = 12;
         content_area.attach (image, 0, 0, 1, 1);
         content_area.attach (title_label, 0, 1, 1, 1);
         content_area.attach (stack_grid, 1, 0, 1, 2);
