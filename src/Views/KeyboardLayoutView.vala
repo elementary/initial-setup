@@ -24,7 +24,7 @@ public class KeyboardLayoutView : AbstractInstallerView {
         image.valign = Gtk.Align.END;
 
         var title_label = new Gtk.Label (_("Keyboard Layout"));
-        title_label.get_style_context ().add_class ("h2");
+        title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
         title_label.valign = Gtk.Align.START;
 
         input_variant_widget = new VariantWidget ();
@@ -184,7 +184,7 @@ public class KeyboardLayoutView : AbstractInstallerView {
             var label = new Gtk.Label (layout_description);
             label.margin = 6;
             label.xalign = 0;
-            label.get_style_context ().add_class ("h3");
+            label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
             add (label);
             show_all ();
         }
@@ -199,7 +199,7 @@ public class KeyboardLayoutView : AbstractInstallerView {
             var label = new Gtk.Label (description);
             label.margin = 6;
             label.xalign = 0;
-            label.get_style_context ().add_class ("h3");
+            label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
             add (label);
             show_all ();
         }

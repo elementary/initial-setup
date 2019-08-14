@@ -45,7 +45,7 @@ public class Installer.LanguageView : AbstractInstallerView {
 
         select_stack = new Gtk.Stack ();
         select_stack.valign = Gtk.Align.START;
-        select_stack.get_style_context ().add_class ("h2");
+        select_stack.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
         select_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
         select_stack.add (select_label);
 
@@ -283,7 +283,7 @@ public class Installer.LanguageView : AbstractInstallerView {
             image.icon_size = Gtk.IconSize.BUTTON;
 
             var label = new Gtk.Label (lang_entry.name);
-            label.get_style_context ().add_class ("h3");
+            label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
             label.xalign = 0;
 
             var grid = new Gtk.Grid ();
@@ -325,7 +325,7 @@ public class Installer.LanguageView : AbstractInstallerView {
             image.icon_size = Gtk.IconSize.BUTTON;
 
             var label = new Gtk.Label (country_entry.name);
-            label.get_style_context ().add_class ("h3");
+            label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
             label.xalign = 0;
 
             var grid = new Gtk.Grid ();
