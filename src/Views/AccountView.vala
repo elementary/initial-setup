@@ -16,6 +16,8 @@
  */
 
 public class Installer.AccountView : AbstractInstallerView {
+    public Act.User? created { get; private set; }
+
     private ErrorRevealer confirm_entry_revealer;
     private ErrorRevealer pw_error_revealer;
     private ErrorRevealer username_error_revealer;
@@ -132,9 +134,9 @@ public class Installer.AccountView : AbstractInstallerView {
             string username = username_entry.text;
             string password = pw_entry.text;
 
-            Utils.create_new_user (fullname, username, password);
+            created = Utils.create_new_user (fullname, username, password);
 
-            get_toplevel ().destroy ();
+            next_step ();
         });
 
         show_all ();

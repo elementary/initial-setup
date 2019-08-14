@@ -45,7 +45,7 @@ namespace Utils {
         }
     }
 
-    public static void create_new_user (string fullname, string username, string password) {
+    public static Act.User? create_new_user (string fullname, string username, string password) {
         var permission = get_permission ();
 
         string? primary_text = null;
@@ -63,6 +63,8 @@ namespace Utils {
                             created_user.set_password (password, "");
                         }
                     });
+
+                    return created_user;
                 }
             } catch (Error e) {
                 primary_text = _("Creating User '%s' Failed").printf (username);
@@ -87,6 +89,8 @@ namespace Utils {
             error_dialog.run ();
             error_dialog.destroy ();
         }
+
+        return null;
     }
 
     public static bool is_taken_username (string username) {
