@@ -9,6 +9,7 @@ An initial setup app to create new users
 You'll need the following dependencies:
 * desktop-file-utils
 * gettext
+* granite >= 0.5
 * libaccountsservice-dev
 * libgnomekbd-dev
 * libgtk-3-dev

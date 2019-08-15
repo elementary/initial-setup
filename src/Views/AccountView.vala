@@ -32,7 +32,7 @@ public class Installer.AccountView : AbstractInstallerView {
         image.valign = Gtk.Align.END;
 
         var title_label = new Gtk.Label (_("Create an Account"));
-        title_label.get_style_context ().add_class ("h2");
+        title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
         title_label.valign = Gtk.Align.START;
 
         var realname_label = new Granite.HeaderLabel (_("Full Name"));
