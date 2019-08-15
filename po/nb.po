@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-23 11:58-0700\n"
-"PO-Revision-Date: 2019-04-23 23:02+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"POT-Creation-Date: 2019-07-01 15:04-0700\n"
+"PO-Revision-Date: 2019-06-27 18:09+0000\n"
+"Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "installer/initial-setup/nb/>\n"
 "Language: nb\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.5.1\n"
+"X-Generator: Weblate 3.6.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/MainWindow.vala:34
@@ -37,7 +37,7 @@ msgstr "Oppretting av brukeren \"%s\" mislyktes"
 msgid "No Permission to Create User '%s'"
 msgstr "Ingen tilgang til oppretting av brukeren \"%s\""
 
-#: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:137
+#: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:183
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -74,20 +74,20 @@ msgstr "Tilbake"
 msgid "Finish Setup"
 msgstr "Fullfør oppsett"
 
-#: src/Views/AccountView.vala:182
+#: src/Views/AccountView.vala:183
 msgid "Passwords do not match"
 msgstr "Passordene samsvarer ikke"
 
-#: src/Views/AccountView.vala:211
+#: src/Views/AccountView.vala:212
 #, fuzzy
 msgid "The chosen username is already taken"
-msgstr "Brukernavn allerede i bruk"
+msgstr "Brukernavnet du har valgt er allerede i bruk"
 
-#: src/Views/AccountView.vala:213
+#: src/Views/AccountView.vala:214
 #, fuzzy
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
-msgstr "Brukernavnet kan bare inneholde små bokstaver og tall, uten mellomrom"
+msgstr "Brukernavnet kan kun inneholde små bokstaver og tall, uten mellomrom"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
@@ -102,27 +102,26 @@ msgid "Show keyboard layout"
 msgstr "Vis tastaturoppsett"
 
 #: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:113
-#: src/Views/LanguageView.vala:154
 msgid "Select"
 msgstr "Velg"
 
-#: src/Views/KeyboardLayoutView.vala:100
+#: src/Views/KeyboardLayoutView.vala:119
 msgid "Default"
 msgstr "Forvalg"
 
-#: src/Views/KeyboardLayoutView.vala:105
+#: src/Views/KeyboardLayoutView.vala:126
 msgid "Input Language"
 msgstr "Inndataspråk"
 
-#: src/Views/LanguageView.vala:205
+#: src/Views/LanguageView.vala:206
 msgid "Languages"
 msgstr "Språk"
 
-#: src/Views/LanguageView.vala:222
+#: src/Views/LanguageView.vala:251
 msgid "Select a Language"
 msgstr "Velg et språk"
 
-#: src/Views/LanguageView.vala:250 src/Views/LanguageView.vala:293
+#: src/Views/LanguageView.vala:279 src/Views/LanguageView.vala:322
 msgid "Currently active language"
 msgstr "Nåværende språk"
 

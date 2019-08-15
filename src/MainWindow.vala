@@ -83,5 +83,15 @@ public class Installer.MainWindow : Gtk.Window {
         account_view.previous_view = keyboard_layout_view;
         stack.add (account_view);
         stack.visible_child = account_view;
+
+        account_view.next_step.connect (on_finish);
+    }
+
+    private void on_finish () {
+        if (account_view.created != null) {
+            account_view.created.set_language (Configuration.get_default ().lang);
+        }
+
+        destroy ();
     }
 }
