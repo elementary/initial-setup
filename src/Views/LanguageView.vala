@@ -204,20 +204,24 @@ public class Installer.LanguageView : AbstractInstallerView {
         string? lang = null;
         unowned Gtk.ListBoxRow row = lang_variant_widget.main_listbox.get_selected_row ();
         if (row != null) {
+            unowned Configuration configuration = Configuration.get_default ();
+
             var lang_entry = ((LangRow) row).lang_entry;
             lang = lang_entry.get_code ();
 
             if (lang_entry.countries.length > 0) {
                 row = lang_variant_widget.variant_listbox.get_selected_row ();
                 if (row != null) {
-                    lang += "_%s".printf (((CountryRow)row).country_entry.get_code ());
+                    var country = ((CountryRow) row).country_entry;
+                    configuration.country = country.alpha_2;
+                    lang += "_%s".printf (country.get_code ());
                 } else {
                     lang += "_%s".printf (lang_entry.countries[0].get_code ());
                 }
             }
 
             Environment.set_variable ("LANGUAGE", lang, true);
-            Configuration.get_default ().lang = lang;
+            configuration.lang = lang;
         }
 
         next_step ();
