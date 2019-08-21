@@ -75,29 +75,54 @@ public class KeyboardLayoutView : AbstractInstallerView {
             next_button.activate ();
         });
 
-        back_button.clicked.connect (() => ((Gtk.Stack) get_parent ()).visible_child = previous_view);
-
-        next_button.clicked.connect (() => {
+        input_variant_widget.variant_listbox.row_selected.connect (() => {
             unowned Gtk.ListBoxRow row = input_variant_widget.main_listbox.get_selected_row ();
             if (row != null) {
                 var layout = ((LayoutRow) row).layout;
                 unowned Configuration configuration = Configuration.get_default ();
                 configuration.keyboard_layout = layout.name;
+                string second_variant = layout.name;
 
                 unowned Gtk.ListBoxRow vrow = input_variant_widget.variant_listbox.get_selected_row ();
                 if (vrow != null) {
                     string variant = ((VariantRow) vrow).code;
                     configuration.keyboard_variant = variant;
+                    if (variant != null) {
+                        second_variant += "+%s".printf (variant);
+                    }
                 } else if (layout.variants.is_empty) {
                     configuration.keyboard_variant = null;
-                } else {
+                }
+
+                GLib.Variant first = new GLib.Variant.string ("xkb");
+                GLib.Variant second = new GLib.Variant.string (second_variant);
+                GLib.Variant result = new GLib.Variant.tuple ({first, second});
+
+                Variant[] elements = {};
+                elements += result;
+
+                GLib.Variant list = new GLib.Variant.array (new VariantType ("(ss)"), elements);
+
+                var settings = new Settings ("org.gnome.desktop.input-sources");
+                settings.set_value ("sources", list);
+                settings.set_uint ("current", 0);
+            }
+        });
+
+        back_button.clicked.connect (() => ((Gtk.Stack) get_parent ()).visible_child = previous_view);
+
+        next_button.clicked.connect (() => {
+            unowned Gtk.ListBoxRow vrow = input_variant_widget.variant_listbox.get_selected_row ();
+            if (vrow == null) {
+                unowned Gtk.ListBoxRow row = input_variant_widget.main_listbox.get_selected_row ();
+                if (row != null) {
                     row.activate ();
                     return;
+                } else {
+                    warning ("next_button enabled when no keyboard selected");
+                    next_button.sensitive = false;
+                    return;
                 }
-            } else {
-                warning ("next_button enabled when no keyboard selected");
-                next_button.sensitive = false;
-                return;
             }
 
             next_step ();
