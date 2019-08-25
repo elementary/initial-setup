@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:43+0200\n"
-"PO-Revision-Date: 2019-07-01 22:05+0000\n"
+"PO-Revision-Date: 2019-08-26 21:22+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/installer/"
 "initial-setup/eo/>\n"
@@ -12,33 +12,35 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/MainWindow.vala:34
 msgid "Create a User"
-msgstr ""
+msgstr "Krei Uzanton"
 
 #: src/Utils.vala:53
 msgid ""
 "Initial Setup could not create your user. Without it, you will not be able "
 "to log in and may need to reinstall the OS."
 msgstr ""
+"La komenca agordo ne povis krei la uzanton. Sen tio, ne eblos ensaluti kaj "
+"eble necesos reinstali la operaciumon."
 
 #: src/Utils.vala:68
 #, c-format
 msgid "Creating User '%s' Failed"
-msgstr ""
+msgstr "Fiaskis kreado de uzanto „%s“"
 
 #: src/Utils.vala:72
 #, c-format
 msgid "No Permission to Create User '%s'"
-msgstr ""
+msgstr "Estas malpermesita krei uzanton „%s“"
 
 #: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:183
 #, c-format
 msgid "%s…"
-msgstr ""
+msgstr "%s…"
 
 #: src/Views/AbstractInstallerView.vala:47
 msgid "Cancel Installation"
@@ -46,81 +48,80 @@ msgstr "Rezigni instalon"
 
 #: src/Views/AccountView.vala:32
 msgid "Create an Account"
-msgstr ""
+msgstr "Krei konton"
 
 #: src/Views/AccountView.vala:36
 msgid "Full Name"
-msgstr ""
+msgstr "Plena nomo"
 
 #: src/Views/AccountView.vala:41
 msgid "Username"
-msgstr ""
+msgstr "Uzantonomo"
 
 #: src/Views/AccountView.vala:48
 msgid "Choose a Password"
-msgstr ""
+msgstr "Elekti pasvorton"
 
 #: src/Views/AccountView.vala:63
 msgid "Confirm Password"
-msgstr ""
+msgstr "Konfirmi pasvorton"
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
-#, fuzzy
 msgid "Back"
-msgstr "Retroklavo"
+msgstr "Reen"
 
 #: src/Views/AccountView.vala:99
 msgid "Finish Setup"
-msgstr ""
+msgstr "Fini agordon"
 
 #: src/Views/AccountView.vala:183
 msgid "Passwords do not match"
-msgstr ""
+msgstr "Pasvortoj ne kongruas"
 
 #: src/Views/AccountView.vala:212
 msgid "The chosen username is already taken"
-msgstr ""
+msgstr "La elektita uzantonomo jam ekzistas"
 
 #: src/Views/AccountView.vala:214
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
-msgstr ""
+msgstr "Uzantonomo entenu nur minusklojn kaj ciferoj, sen spaco"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
-msgstr ""
+msgstr "Klavara aranĝo"
 
 #: src/Views/KeyboardLayoutView.vala:36
 msgid "Type to test your layout"
-msgstr ""
+msgstr "Tajpu por testi la aranĝon"
 
 #: src/Views/KeyboardLayoutView.vala:39
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "Montri klavaran aranĝon"
 
 #: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:113
 msgid "Select"
-msgstr ""
+msgstr "Elekti"
 
 #: src/Views/KeyboardLayoutView.vala:119
 msgid "Default"
-msgstr ""
+msgstr "Apriora"
 
 #: src/Views/KeyboardLayoutView.vala:126
 msgid "Input Language"
-msgstr ""
+msgstr "Eniga lingvo"
 
 #: src/Views/LanguageView.vala:206
 msgid "Languages"
-msgstr ""
+msgstr "Lingvoj"
 
 #: src/Views/LanguageView.vala:251
 msgid "Select a Language"
-msgstr ""
+msgstr "Elekti lingvon"
 
 #: src/Views/LanguageView.vala:279 src/Views/LanguageView.vala:322
 msgid "Currently active language"
-msgstr ""
+msgstr "Nun aktiva lingvo"
 
 #~ msgid "translator-credits"
 #~ msgstr ""
