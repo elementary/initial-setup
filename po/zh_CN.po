@@ -3,20 +3,19 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:43+0200\n"
-"PO-Revision-Date: 2019-01-15 12:42+0000\n"
+"PO-Revision-Date: 2019-08-28 10:22+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
-"Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
+"Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "installer/initial-setup/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
 #: src/MainWindow.vala:34
-#, fuzzy
 msgid "Create a User"
 msgstr "新建账户"
 
@@ -24,17 +23,17 @@ msgstr "新建账户"
 msgid ""
 "Initial Setup could not create your user. Without it, you will not be able "
 "to log in and may need to reinstall the OS."
-msgstr ""
+msgstr "初始设置无法创建您的账户。缺少此账户，您将无法登入设备，还可能需要重新安装系统。"
 
 #: src/Utils.vala:68
 #, c-format
 msgid "Creating User '%s' Failed"
-msgstr ""
+msgstr "创建账户 '%s' 失败"
 
 #: src/Utils.vala:72
 #, c-format
 msgid "No Permission to Create User '%s'"
-msgstr ""
+msgstr "无权创建账户 '%s'"
 
 #: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:183
 #, c-format
