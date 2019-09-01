@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:43+0200\n"
 "PO-Revision-Date: 2019-09-01 13:03+0000\n"
-"Last-Translator: Uwe S <saabisto@gmx.de>\n"
+"Last-Translator: Jason  B <jason.bilevitz.webseiten@aikq.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/installer/"
 "initial-setup/de/>\n"
 "Language: de\n"
@@ -36,7 +36,7 @@ msgstr ""
 #: src/Utils.vala:68
 #, c-format
 msgid "Creating User '%s' Failed"
-msgstr ""
+msgstr "Benutzerkonto '%s' konnte nicht erstellt werden"
 
 #: src/Utils.vala:72
 #, c-format
