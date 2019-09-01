@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:43+0200\n"
 "PO-Revision-Date: 2019-09-02 13:22+0000\n"
-"Last-Translator: Uwe S <saabisto@gmx.de>\n"
+"Last-Translator: MrBlue9 <r3spavvn@gmail.com>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/de/>\n"
 "Language: de\n"
@@ -22,11 +22,11 @@ msgstr ""
 
 #: data/io.elementary.initial-setup.desktop.in:3
 msgid "Set up elementary OS"
-msgstr ""
+msgstr "elementary OS einrichten"
 
 #: data/io.elementary.initial-setup.desktop.in:4
 msgid "Set up the system"
-msgstr ""
+msgstr "System einrichten"
 
 #: data/io.elementary.initial-setup.desktop.in:6
 msgid "system-os-installer"
