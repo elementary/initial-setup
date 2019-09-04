@@ -89,9 +89,6 @@ public class Installer.AccountView : AbstractInstallerView {
         form_grid.attach (confirm_entry, 0, 11, 1, 1);
         form_grid.attach (confirm_entry_revealer, 0, 12, 1, 1);
 
-        content_area.column_homogeneous = true;
-        content_area.margin_end = 12;
-        content_area.margin_start = 12;
         content_area.attach (image, 0, 0, 1, 1);
         content_area.attach (title_label, 0, 1, 1, 1);
         content_area.attach (form_grid, 1, 0, 1, 2);
