@@ -2,9 +2,10 @@
 vala_files = [
     'Application.vala',
     'MainWindow.vala',
-    'Helpers/KeyboardLayoutHelper.vala',
     'Helpers/LocaleHelper.vala',
     'Objects/Configuration.vala',
+    'Objects/KeyboardLayout.vala',
+    'Objects/KeyboardVariant.vala',
     'Utils.vala',
     'Views/AbstractInstallerView.vala',
     'Views/AccountView.vala',

@@ -55,22 +55,6 @@ public class KeyboardLayoutView : AbstractInstallerView {
         action_area.add (back_button);
         action_area.add (next_button);
 
-        input_variant_widget.main_listbox.set_sort_func ((row1, row2) => {
-            return ((LayoutRow) row1).layout.description.collate (((LayoutRow) row2).layout.description);
-        });
-
-        input_variant_widget.variant_listbox.set_sort_func ((row1, row2) => {
-            if (((VariantRow) row1).code == null) {
-                return -1;
-            }
-
-            if (((VariantRow) row2).code == null) {
-                return 1;
-            }
-
-            return ((VariantRow) row1).description.collate (((VariantRow) row2).description);
-        });
-
         input_variant_widget.variant_listbox.row_activated.connect (() => {
             next_button.activate ();
         });
@@ -81,28 +65,25 @@ public class KeyboardLayoutView : AbstractInstallerView {
                 var layout = ((LayoutRow) row).layout;
                 unowned Configuration configuration = Configuration.get_default ();
                 configuration.keyboard_layout = layout.name;
+                GLib.Variant? layout_variant = null;
                 string second_variant = layout.name;
 
                 unowned Gtk.ListBoxRow vrow = input_variant_widget.variant_listbox.get_selected_row ();
                 if (vrow != null) {
-                    string variant = ((VariantRow) vrow).code;
-                    configuration.keyboard_variant = variant;
+                    unowned InitialSetup.KeyboardVariant variant = ((VariantRow) vrow).variant;
+                    configuration.keyboard_variant = variant.name;
                     if (variant != null) {
-                        second_variant += "+%s".printf (variant);
+                        layout_variant = variant.to_gsd_variant ();
                     }
-                } else if (layout.variants.is_empty) {
+                } else if (!layout.has_variants ()) {
                     configuration.keyboard_variant = null;
                 }
 
-                GLib.Variant first = new GLib.Variant.string ("xkb");
-                GLib.Variant second = new GLib.Variant.string (second_variant);
-                GLib.Variant result = new GLib.Variant.tuple ({first, second});
+                if (layout_variant == null) {
+                    layout_variant = layout.to_gsd_variant ();
+                }
 
-                Variant[] elements = {};
-                elements += result;
-
-                GLib.Variant list = new GLib.Variant.array (new VariantType ("(ss)"), elements);
-
+                GLib.Variant list = new GLib.Variant.array (new VariantType ("(ss)"), { layout_variant });
                 var settings = new Settings ("org.gnome.desktop.input-sources");
                 settings.set_value ("sources", list);
                 settings.set_uint ("current", 0);
@@ -129,21 +110,15 @@ public class KeyboardLayoutView : AbstractInstallerView {
         });
 
         input_variant_widget.main_listbox.row_activated.connect ((row) => {
-            var layout = ((LayoutRow) row).layout;
-            var variants = layout.variants;
-            if (variants.is_empty) {
+            unowned InitialSetup.KeyboardLayout layout = ((LayoutRow) row).layout;
+            if (!layout.has_variants ()) {
                 return;
             }
 
-            input_variant_widget.clear_variants ();
-            input_variant_widget.variant_listbox.add (new VariantRow (null, _("Default")));
-            foreach (var variant in variants.entries) {
-                input_variant_widget.variant_listbox.add (new VariantRow (variant.key, variant.value));
-            }
-
+            input_variant_widget.variant_listbox.bind_model (layout.get_variants (), (variant) => { return new VariantRow (variant as InitialSetup.KeyboardVariant); });
             input_variant_widget.variant_listbox.select_row (input_variant_widget.variant_listbox.get_row_at_index (0));
 
-            input_variant_widget.show_variants (_("Input Language"), "<b>%s</b>".printf (layout.description));
+            input_variant_widget.show_variants (_("Input Language"), "<b>%s</b>".printf (layout.display_name));
         });
 
         input_variant_widget.main_listbox.row_selected.connect ((row) => {
@@ -168,14 +143,12 @@ public class KeyboardLayoutView : AbstractInstallerView {
             popover.show_all ();
         });
 
-        foreach (var layout in KeyboardLayoutHelper.get_layouts ()) {
-            input_variant_widget.main_listbox.add (new LayoutRow (layout));
-        }
+        input_variant_widget.main_listbox.bind_model (InitialSetup.KeyboardLayout.get_all (), (layout) => { return new LayoutRow (layout as InitialSetup.KeyboardLayout); });
 
         show_all ();
 
         Idle.add (() => {
-            string? country = Configuration.get_default ().country;
+            unowned string? country = Configuration.get_default ().country;
             if (country != null) {
                 string default_layout = country.down ();
 
@@ -194,14 +167,14 @@ public class KeyboardLayoutView : AbstractInstallerView {
     }
 
     private class LayoutRow : Gtk.ListBoxRow {
-        public KeyboardLayoutHelper.Layout layout;
-        public LayoutRow (KeyboardLayoutHelper.Layout layout) {
+        public unowned InitialSetup.KeyboardLayout layout;
+        public LayoutRow (InitialSetup.KeyboardLayout layout) {
             this.layout = layout;
 
-            string layout_description = layout.description;
-            if (!layout.variants.is_empty) {
+            string layout_description = layout.display_name;
+            if (layout.has_variants ()) {
                 layout_description = _("%s…").printf (layout_description);
-            };
+            }
 
             var label = new Gtk.Label (layout_description);
             label.margin = 6;
@@ -213,12 +186,10 @@ public class KeyboardLayoutView : AbstractInstallerView {
     }
 
     private class VariantRow : Gtk.ListBoxRow {
-        public string? code;
-        public string description;
-        public VariantRow (string? code, string description) {
-            this.code = code;
-            this.description = description;
-            var label = new Gtk.Label (description);
+        public unowned InitialSetup.KeyboardVariant variant;
+        public VariantRow (InitialSetup.KeyboardVariant variant) {
+            this.variant = variant;
+            var label = new Gtk.Label (variant.display_name);
             label.margin = 6;
             label.xalign = 0;
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);

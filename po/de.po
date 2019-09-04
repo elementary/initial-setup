@@ -8,38 +8,40 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:43+0200\n"
-"PO-Revision-Date: 2018-08-29 00:03+0000\n"
-"Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
-"Language-Team: German <https://weblate.elementary.io/projects/installer/"
+"PO-Revision-Date: 2019-09-02 13:22+0000\n"
+"Last-Translator: Uwe S <saabisto@gmx.de>\n"
+"Language-Team: German <https://l10n.elementary.io/projects/installer/"
 "initial-setup/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/MainWindow.vala:34
-#, fuzzy
 msgid "Create a User"
-msgstr "Konto erstellen"
+msgstr "Benutzerkonto erstellen"
 
 #: src/Utils.vala:53
 msgid ""
 "Initial Setup could not create your user. Without it, you will not be able "
 "to log in and may need to reinstall the OS."
 msgstr ""
+"Es konnte kein Benutzerkonto für Sie erstellt werden. Ohne Konto können Sie "
+"sich nicht anmelden und müssen daher möglicherweise das Betriebssystem neu "
+"installieren."
 
 #: src/Utils.vala:68
 #, c-format
 msgid "Creating User '%s' Failed"
-msgstr ""
+msgstr "Benutzerkonto »%s« konnte nicht erstellt werden"
 
 #: src/Utils.vala:72
 #, c-format
 msgid "No Permission to Create User '%s'"
-msgstr ""
+msgstr "Fehlende Rechte zum Erstellen des Benutzerkontos »%s«"
 
 #: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:183
 #, c-format
@@ -83,17 +85,15 @@ msgid "Passwords do not match"
 msgstr "Die Kennwörter stimmen nicht überein"
 
 #: src/Views/AccountView.vala:212
-#, fuzzy
 msgid "The chosen username is already taken"
 msgstr "Benutzername ist bereits vergeben"
 
 #: src/Views/AccountView.vala:214
-#, fuzzy
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
-"Benutzername kann nur Kleinbuchstaben und Ziffern enthalten (ohne "
-"Leerzeichen)"
+"Ein Benutzername darf nur Kleinbuchstaben und Ziffern enthalten, nicht aber "
+"Leerzeichen"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
