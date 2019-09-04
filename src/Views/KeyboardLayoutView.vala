@@ -87,6 +87,18 @@ public class KeyboardLayoutView : AbstractInstallerView {
                 var settings = new Settings ("org.gnome.desktop.input-sources");
                 settings.set_value ("sources", list);
                 settings.set_uint ("current", 0);
+
+                try {
+                    LocaleHelper.Locale1 locale1 = Bus.get_proxy_sync (
+                        BusType.SYSTEM,
+                        "org.freedesktop.locale1",
+                        "/org/freedesktop/locale1"
+                    );
+
+                    locale1.set_x11_keyboard (configuration.keyboard_layout, "", configuration.keyboard_variant ?? "", "", true, true);
+                } catch (Error e) {
+                    critical ("Unable to get Locale1 interface");
+                }
             }
         });
 

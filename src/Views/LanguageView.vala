@@ -71,6 +71,7 @@ public class Installer.LanguageView : AbstractInstallerView {
         size_group.add_widget (image);
 
         lang_variant_widget = new VariantWidget ();
+        lang_variant_widget.variant_listbox.set_sort_func ((Gtk.ListBoxSortFunc) CountryRow.compare);
 
         lang_variant_widget.variant_listbox.row_activated.connect (() => {
             next_button.activate ();
@@ -128,12 +129,13 @@ public class Installer.LanguageView : AbstractInstallerView {
     }
 
     private void row_selected (Gtk.ListBoxRow? row) {
-        var lang_entry = ((LangRow) row).lang_entry;
+        unowned LocaleHelper.LangEntry lang_entry = ((LangRow) row).lang_entry;
+        unowned string lang_code = lang_entry.get_code ();
 
-        foreach (Gtk.Widget child in lang_variant_widget.main_listbox.get_children ()) {
+        foreach (weak Gtk.Widget child in lang_variant_widget.main_listbox.get_children ()) {
             if (child is LangRow) {
-                var lang_row = (LangRow) child;
-                if (lang_row.lang_entry.get_code () == lang_entry.get_code ()) {
+                weak LangRow lang_row = (LangRow) child;
+                if (lang_row.lang_entry.get_code () == lang_code) {
                     lang_row.selected = true;
                 } else {
                     lang_row.selected = false;
@@ -145,10 +147,10 @@ public class Installer.LanguageView : AbstractInstallerView {
     }
 
     private void variant_row_selected (Gtk.ListBoxRow? row) {
-        var country_entry = ((CountryRow) row).country_entry;
-        foreach (Gtk.Widget child in lang_variant_widget.variant_listbox.get_children ()) {
+        unowned LocaleHelper.CountryEntry country_entry = ((CountryRow) row).country_entry;
+        foreach (weak Gtk.Widget child in lang_variant_widget.variant_listbox.get_children ()) {
             if (child is CountryRow) {
-                var country_row = (CountryRow) child;
+                weak CountryRow country_row = (CountryRow) child;
                 if (country_row.country_entry.alpha_2 == country_entry.alpha_2) {
                     country_row.selected = true;
                 } else {
@@ -157,28 +159,38 @@ public class Installer.LanguageView : AbstractInstallerView {
             }
         }
 
+        next_button.label = LocaleHelper.lang_gettext (N_("Select"), country_entry.get_full_code ());
         next_button.sensitive = true;
     }
 
     private void row_activated (Gtk.ListBoxRow row) {
             var lang_entry = ((LangRow) row).lang_entry;
-            var countries = lang_entry.countries;
+            unowned LocaleHelper.CountryEntry[] countries = lang_entry.countries;
             if (countries.length == 0) {
                 next_button.sensitive = true;
                 return;
             }
 
+            unowned string lang_code = lang_entry.get_code ();
+            string? main_country = LocaleHelper.get_main_country (lang_code);
+
             lang_variant_widget.variant_listbox.row_selected.disconnect (variant_row_selected);
             lang_variant_widget.clear_variants ();
             lang_variant_widget.variant_listbox.row_selected.connect (variant_row_selected);
-            foreach (var country in countries) {
-                lang_variant_widget.variant_listbox.add (new CountryRow (country));
+            foreach (unowned LocaleHelper.CountryEntry country in countries) {
+                var country_row = new CountryRow (country);
+                lang_variant_widget.variant_listbox.add (country_row);
+                if (country.get_code () == main_country) {
+                    lang_variant_widget.variant_listbox.select_row (country_row);
+                }
             }
 
-            lang_variant_widget.variant_listbox.select_row (lang_variant_widget.variant_listbox.get_row_at_index (0));
+            if (main_country == null || lang_variant_widget.variant_listbox.get_selected_row () == null) {
+                lang_variant_widget.variant_listbox.select_row (lang_variant_widget.variant_listbox.get_row_at_index (0));
+            }
 
             lang_variant_widget.variant_listbox.show_all ();
-            Environment.set_variable ("LANGUAGE", lang_entry.get_code (), true);
+            Environment.set_variable ("LANGUAGE", lang_code, true);
             Intl.textdomain (Build.GETTEXT_PACKAGE);
             lang_variant_widget.show_variants (_("Languages"), "<b>%s</b>".printf (lang_entry.name));
     }
@@ -195,11 +207,13 @@ public class Installer.LanguageView : AbstractInstallerView {
             if (lang_entry.countries.length > 0) {
                 row = lang_variant_widget.variant_listbox.get_selected_row ();
                 if (row != null) {
-                    var country = ((CountryRow) row).country_entry;
-                    configuration.country = country.alpha_2;
-                    lang += "_%s".printf (country.get_code ());
+                    unowned LocaleHelper.CountryEntry country = ((CountryRow) row).country_entry;
+                    configuration.country = country.get_code ();
+                    lang = country.get_full_code ();
                 } else {
-                    lang += "_%s".printf (lang_entry.countries[0].get_code ());
+                    unowned string country = lang_entry.countries[0].get_code ();
+                    lang += "_%s".printf (country);
+                    configuration.country = country;
                 }
             }
 
@@ -327,6 +341,11 @@ public class Installer.LanguageView : AbstractInstallerView {
             grid.add (image);
 
             add (grid);
+        }
+
+
+        public static int compare (CountryRow countryrow1, CountryRow countryrow2) {
+            return countryrow1.country_entry.name.collate (countryrow2.country_entry.name);
         }
     }
 }
