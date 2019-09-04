@@ -23,11 +23,18 @@ public class Installer.LanguageView : AbstractInstallerView {
     Gtk.Button next_button;
     int select_number = 0;
     Gee.LinkedList<string> preferred_langs;
+    uint lang_timeout = 0U;
 
     private VariantWidget lang_variant_widget;
 
     public LanguageView () {
-        GLib.Timeout.add_seconds (3, timeout);
+        lang_timeout = GLib.Timeout.add_seconds (3, timeout);
+    }
+
+    ~LanguageView () {
+        if (lang_timeout > 0U) {
+            GLib.Source.remove (lang_timeout);
+        }
     }
 
     construct {
@@ -136,10 +143,7 @@ public class Installer.LanguageView : AbstractInstallerView {
     }
 
     private void row_selected (Gtk.ListBoxRow? row) {
-        var current_lang = Environment.get_variable ("LANGUAGE");
         var lang_entry = ((LangRow) row).lang_entry;
-        Environment.set_variable ("LANGUAGE", lang_entry.get_code (), true);
-        Intl.textdomain (Build.GETTEXT_PACKAGE);
 
         foreach (Gtk.Widget child in lang_variant_widget.main_listbox.get_children ()) {
             if (child is LangRow) {
@@ -150,12 +154,6 @@ public class Installer.LanguageView : AbstractInstallerView {
                     lang_row.selected = false;
                 }
             }
-        }
-
-        if (current_lang != null) {
-            Environment.set_variable ("LANGUAGE", current_lang, true);
-        } else {
-            Environment.unset_variable ("LANGUAGE");
         }
 
         next_button.sensitive = true;
@@ -234,23 +232,16 @@ public class Installer.LanguageView : AbstractInstallerView {
             row = lang_variant_widget.main_listbox.get_row_at_index (select_number);
 
             if (row == null) {
+                lang_timeout = 0;
                 return Source.REMOVE;
             }
         }
 
-        var current_lang = Environment.get_variable ("LANGUAGE");
-        Environment.set_variable ("LANGUAGE", ((LangRow) row).lang_entry.get_code (), true);
-        Intl.textdomain (Build.GETTEXT_PACKAGE);
-        select_label = new Gtk.Label (_("Select a Language"));
+        unowned string label_text = LocaleHelper.lang_gettext (N_("Select a Language"), ((LangRow) row).lang_entry.get_code ());
+        select_label = new Gtk.Label (label_text);
         select_label.show_all ();
         select_stack.add (select_label);
         select_stack.set_visible_child (select_label);
-
-        if (current_lang != null) {
-            Environment.set_variable ("LANGUAGE", current_lang, true);
-        } else {
-            Environment.unset_variable ("LANGUAGE");
-        }
 
         select_number++;
         return GLib.Source.CONTINUE;
