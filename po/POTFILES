@@ -1,9 +1,10 @@
 src/Application.vala
 src/MainWindow.vala
 src/Utils.vala
-src/Helpers/KeyboardLayoutHelper.vala
 src/Helpers/LocaleHelper.vala
 src/Objects/Configuration.vala
+src/Objects/KeyboardLayout.vala
+src/Objects/KeyboardVariant.vala
 src/Views/AbstractInstallerView.vala
 src/Views/AccountView.vala
 src/Views/KeyboardLayoutView.vala
