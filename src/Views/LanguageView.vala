@@ -18,11 +18,11 @@
  */
 
 public class Installer.LanguageView : AbstractInstallerView {
+    static Gee.LinkedList<string> preferred_langs;
     Gtk.Label select_label;
     Gtk.Stack select_stack;
     Gtk.Button next_button;
     int select_number = 0;
-    Gee.LinkedList<string> preferred_langs;
     uint lang_timeout = 0U;
 
     private VariantWidget lang_variant_widget;
@@ -37,12 +37,12 @@ public class Installer.LanguageView : AbstractInstallerView {
         }
     }
 
-    construct {
+    static construct {
         preferred_langs = new Gee.LinkedList<string> ();
-        foreach (var lang in Build.PREFERRED_LANG_LIST.split (";")) {
-            preferred_langs.add (lang);
-        }
+        preferred_langs.add_all_array (Build.PREFERRED_LANG_LIST.split (";"));
+    }
 
+    construct {
         var image = new Gtk.Image.from_icon_name ("preferences-desktop-locale", Gtk.IconSize.DIALOG);
         image.valign = Gtk.Align.END;
 
@@ -76,19 +76,7 @@ public class Installer.LanguageView : AbstractInstallerView {
             next_button.activate ();
         });
 
-        lang_variant_widget.main_listbox.set_sort_func ((row1, row2) => {
-            var langrow1 = (LangRow) row1;
-            var langrow2 = (LangRow) row2;
-            if (langrow1.preferred_row && langrow2.preferred_row == false) {
-                return -1;
-            } else if (langrow2.preferred_row && langrow1.preferred_row == false) {
-                return 1;
-            } else if (langrow1.preferred_row && langrow2.preferred_row) {
-                return preferred_langs.index_of (langrow1.lang_entry.get_code ()) - preferred_langs.index_of (langrow2.lang_entry.get_code ());
-            }
-
-            return langrow1.lang_entry.name.collate (langrow2.lang_entry.name);
-        });
+        lang_variant_widget.main_listbox.set_sort_func ((Gtk.ListBoxSortFunc) LangRow.compare);
 
         lang_variant_widget.main_listbox.set_header_func ((row, before) => {
             row.set_header (null);
@@ -285,6 +273,18 @@ public class Installer.LanguageView : AbstractInstallerView {
             grid.add (image);
 
             add (grid);
+        }
+
+        public static int compare (LangRow langrow1, LangRow langrow2) {
+            if (langrow1.preferred_row && langrow2.preferred_row == false) {
+                return -1;
+            } else if (langrow2.preferred_row && langrow1.preferred_row == false) {
+                return 1;
+            } else if (langrow1.preferred_row && langrow2.preferred_row) {
+                return preferred_langs.index_of (langrow1.lang_entry.get_code ()) - preferred_langs.index_of (langrow2.lang_entry.get_code ());
+            }
+
+            return langrow1.lang_entry.name.collate (langrow2.lang_entry.name);
         }
     }
 
