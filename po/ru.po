@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:43+0200\n"
 "PO-Revision-Date: 2019-09-06 18:03+0000\n"
-"Last-Translator: Stas <SedovSG@yandex.ru>\n"
+"Last-Translator: Глеб Буваненко <glebbuvanenko@ya.ru>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ru/>\n"
 "Language: ru\n"
@@ -95,7 +95,7 @@ msgstr "Раскладка клавиатуры"
 
 #: src/Views/KeyboardLayoutView.vala:36
 msgid "Type to test your layout"
-msgstr ""
+msgstr "Проверьте раскладку"
 
 #: src/Views/KeyboardLayoutView.vala:39
 msgid "Show keyboard layout"
