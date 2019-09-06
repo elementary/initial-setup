@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:43+0200\n"
 "PO-Revision-Date: 2019-09-07 18:22+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"Last-Translator: Bogdanvex <ukram78118@gmail.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/uk/>\n"
 "Language: uk\n"
@@ -31,12 +31,12 @@ msgstr ""
 #: src/Utils.vala:68
 #, c-format
 msgid "Creating User '%s' Failed"
-msgstr ""
+msgstr "Створення користувача ʼ%sʼ було провалено"
 
 #: src/Utils.vala:72
 #, c-format
 msgid "No Permission to Create User '%s'"
-msgstr ""
+msgstr "Немає прав для створення користувача ʼ%sʼ"
 
 #: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:183
 #, c-format
@@ -81,7 +81,7 @@ msgstr "Паролі не співпадають"
 
 #: src/Views/AccountView.vala:212
 msgid "The chosen username is already taken"
-msgstr ""
+msgstr "Обране ім’я користувача вже зайнято"
 
 #: src/Views/AccountView.vala:214
 msgid ""
