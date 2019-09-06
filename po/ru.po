@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:43+0200\n"
 "PO-Revision-Date: 2019-09-06 18:03+0000\n"
-"Last-Translator: Velison <velisonchik@gmail.com>\n"
+"Last-Translator: p0werpwn <p0werpwnx@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ru/>\n"
 "Language: ru\n"
@@ -53,32 +53,31 @@ msgstr "Зарегистрироваться"
 
 #: src/Views/AccountView.vala:36
 msgid "Full Name"
-msgstr ""
+msgstr "Полное имя"
 
 #: src/Views/AccountView.vala:41
 msgid "Username"
-msgstr ""
+msgstr "Имя пользователя"
 
 #: src/Views/AccountView.vala:48
 msgid "Choose a Password"
-msgstr ""
+msgstr "Укажите пароль"
 
 #: src/Views/AccountView.vala:63
 msgid "Confirm Password"
 msgstr ""
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
-#, fuzzy
 msgid "Back"
-msgstr "Назад (Стереть)"
+msgstr "Назад"
 
 #: src/Views/AccountView.vala:99
 msgid "Finish Setup"
-msgstr ""
+msgstr "Завершить установку"
 
 #: src/Views/AccountView.vala:183
 msgid "Passwords do not match"
-msgstr ""
+msgstr "Пароли не совпадают"
 
 #: src/Views/AccountView.vala:212
 msgid "The chosen username is already taken"
@@ -91,7 +90,7 @@ msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
-msgstr ""
+msgstr "Раскладка клавиатуры"
 
 #: src/Views/KeyboardLayoutView.vala:36
 msgid "Type to test your layout"
@@ -99,15 +98,15 @@ msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:39
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "Показать раскладку клавиатуры"
 
 #: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:113
 msgid "Select"
-msgstr ""
+msgstr "Выбрать"
 
 #: src/Views/KeyboardLayoutView.vala:119
 msgid "Default"
-msgstr ""
+msgstr "По умолчанию "
 
 #: src/Views/KeyboardLayoutView.vala:126
 #, fuzzy
@@ -125,7 +124,7 @@ msgstr "Выберите язык"
 
 #: src/Views/LanguageView.vala:279 src/Views/LanguageView.vala:322
 msgid "Currently active language"
-msgstr ""
+msgstr "Активный язык"
 
 #~ msgid "Operating System"
 #~ msgstr "Операционной системы"
