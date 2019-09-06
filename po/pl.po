@@ -3,9 +3,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:43+0200\n"
-"PO-Revision-Date: 2019-01-02 00:10+0000\n"
-"Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
-"Language-Team: Polish <https://weblate.elementary.io/projects/installer/"
+"PO-Revision-Date: 2019-09-07 18:22+0000\n"
+"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/installer/"
 "initial-setup/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/MainWindow.vala:34
@@ -26,16 +26,18 @@ msgid ""
 "Initial Setup could not create your user. Without it, you will not be able "
 "to log in and may need to reinstall the OS."
 msgstr ""
+"Instalator nie mógł utworzyć konta. Bez niego, nie będziesz mógł sie "
+"zalogować i może zainstalować ponownie system."
 
 #: src/Utils.vala:68
 #, c-format
 msgid "Creating User '%s' Failed"
-msgstr ""
+msgstr "Tworzenie użytkownika '%s' nie powiodło się"
 
 #: src/Utils.vala:72
 #, c-format
 msgid "No Permission to Create User '%s'"
-msgstr ""
+msgstr "Brak uprawnień do stworzenia użytkownika '%s'"
 
 #: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:183
 #, c-format
