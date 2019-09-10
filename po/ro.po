@@ -3,9 +3,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:43+0200\n"
-"PO-Revision-Date: 2018-03-23 00:05+0000\n"
-"Last-Translator: Raresh Nistor <me@thegreatrazz.nz>\n"
-"Language-Team: Romanian <https://weblate.elementary.io/projects/installer/"
+"PO-Revision-Date: 2019-09-07 18:22+0000\n"
+"Last-Translator: HeyLinux <heylinux.me@gmail.com>\n"
+"Language-Team: Romanian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ro/>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/MainWindow.vala:34
@@ -76,7 +76,7 @@ msgstr "Terminați configurarea"
 
 #: src/Views/AccountView.vala:183
 msgid "Passwords do not match"
-msgstr ""
+msgstr "Parolele nu se potrivesc"
 
 #: src/Views/AccountView.vala:212
 #, fuzzy
@@ -92,27 +92,27 @@ msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
-msgstr ""
+msgstr "Structura Tastaturii"
 
 #: src/Views/KeyboardLayoutView.vala:36
 msgid "Type to test your layout"
-msgstr ""
+msgstr "Tasteaza pentru a testa structura"
 
 #: src/Views/KeyboardLayoutView.vala:39
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "Arata amenajarea tastaturii"
 
 #: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:113
 msgid "Select"
-msgstr ""
+msgstr "Alege"
 
 #: src/Views/KeyboardLayoutView.vala:119
 msgid "Default"
-msgstr ""
+msgstr "Normal"
 
 #: src/Views/KeyboardLayoutView.vala:126
 msgid "Input Language"
-msgstr ""
+msgstr "Limba de introducere"
 
 #: src/Views/LanguageView.vala:206
 msgid "Languages"

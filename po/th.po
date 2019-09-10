@@ -3,64 +3,68 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:43+0200\n"
-"PO-Revision-Date: 2016-05-27 15:29+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-09-07 18:22+0000\n"
+"Last-Translator: Wattana Gaming <artjang301@gmail.com>\n"
+"Language-Team: Thai <https://l10n.elementary.io/projects/installer/"
+"initial-setup/th/>\n"
+"Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
 
 #: src/MainWindow.vala:34
 msgid "Create a User"
-msgstr ""
+msgstr "สร้างบัญชีผู้ใช้"
 
 #: src/Utils.vala:53
 msgid ""
 "Initial Setup could not create your user. Without it, you will not be able "
 "to log in and may need to reinstall the OS."
 msgstr ""
+"โปรแกรมติดตั้งไม่สามารถที่จะสร้างบัญชีผู้ใช้ได้. หากไม่มีบัญชีผู้ใช้, "
+"คุณจะไม่สามารถเข้าสู้ระบบได้และอาจจะต้องทำการติดตั้งใหม่"
 
 #: src/Utils.vala:68
 #, c-format
 msgid "Creating User '%s' Failed"
-msgstr ""
+msgstr "การสร้างบัญชีผู้ใช้ '%s' ล้มเลว"
 
 #: src/Utils.vala:72
 #, c-format
 msgid "No Permission to Create User '%s'"
-msgstr ""
+msgstr "ไม่มีสิทธิ์ในการสร้างบัญชีผู้ใช้  '%s'"
 
 #: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:183
 #, c-format
 msgid "%s…"
-msgstr ""
+msgstr "%s…"
 
 #: src/Views/AbstractInstallerView.vala:47
 msgid "Cancel Installation"
-msgstr ""
+msgstr "ยกเลิกการติดตั้ง"
 
 #: src/Views/AccountView.vala:32
 msgid "Create an Account"
-msgstr ""
+msgstr "สร้างบัญชีผู้ใช้"
 
 #: src/Views/AccountView.vala:36
 msgid "Full Name"
-msgstr ""
+msgstr "ชื่อเต็ม"
 
 #: src/Views/AccountView.vala:41
 msgid "Username"
-msgstr ""
+msgstr "ชื่อผู้ใช้"
 
 #: src/Views/AccountView.vala:48
 msgid "Choose a Password"
-msgstr ""
+msgstr "ตั้งรหัสผ่าน"
 
 #: src/Views/AccountView.vala:63
 msgid "Confirm Password"
-msgstr ""
+msgstr "ยืนยันรหัส"
 
 #: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
 #, fuzzy
@@ -69,56 +73,56 @@ msgstr "ลบ"
 
 #: src/Views/AccountView.vala:99
 msgid "Finish Setup"
-msgstr ""
+msgstr "เสร็จสิ้นการติดตั้ง"
 
 #: src/Views/AccountView.vala:183
 msgid "Passwords do not match"
-msgstr ""
+msgstr "รหัสผ่านไม่ตรงกัน"
 
 #: src/Views/AccountView.vala:212
 msgid "The chosen username is already taken"
-msgstr ""
+msgstr "ชื่อผู้ใช้นี้มีอยู้ในระบบแล้ว"
 
 #: src/Views/AccountView.vala:214
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
-msgstr ""
+msgstr "ชื่อผู้ใช้จะต้องประกอบด้วยตัวอักษรและตัวเลขเล็กโดยไม่มีช่องว่าง"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Keyboard Layout"
-msgstr ""
+msgstr "รูปแบบแป้นพิมพ์"
 
 #: src/Views/KeyboardLayoutView.vala:36
 msgid "Type to test your layout"
-msgstr ""
+msgstr "พิมพ์เพื่อทดสอบเค้าโครงแป้นพิมพ์ของคุณ"
 
 #: src/Views/KeyboardLayoutView.vala:39
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "แสดงเค้าโครงแป้นพิมพ์"
 
 #: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:113
 msgid "Select"
-msgstr ""
+msgstr "เลือก"
 
 #: src/Views/KeyboardLayoutView.vala:119
 msgid "Default"
-msgstr ""
+msgstr "ค่าเริ่มต้น"
 
 #: src/Views/KeyboardLayoutView.vala:126
 msgid "Input Language"
-msgstr ""
+msgstr "ภาษาที่ป้อน"
 
 #: src/Views/LanguageView.vala:206
 msgid "Languages"
-msgstr ""
+msgstr "ภาษา"
 
 #: src/Views/LanguageView.vala:251
 msgid "Select a Language"
-msgstr ""
+msgstr "เลือกภาษา"
 
 #: src/Views/LanguageView.vala:279 src/Views/LanguageView.vala:322
 msgid "Currently active language"
-msgstr ""
+msgstr "ภาษาที่ใช้งานในปัจจุบัน"
 
 #~ msgid "translator-credits"
 #~ msgstr ""
