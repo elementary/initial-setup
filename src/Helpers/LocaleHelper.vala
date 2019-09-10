@@ -17,6 +17,30 @@
  */
 
 namespace LocaleHelper {
+    [DBus (name = "org.freedesktop.locale1")]
+    interface Locale1 : Object {
+        [DBus (name = "SetLocale")]
+        public abstract void set_locale (string[] locale, bool user_interaction) throws GLib.Error;
+        [DBus (name = "SetVConsoleKeyboard")]
+        public abstract void set_vconsole_keyboard (string keymap, string keymap_toggle, bool convert, bool user_interaction) throws GLib.Error;
+        [DBus (name = "SetX11Keyboard")]
+        public abstract void set_x11_keyboard (string layout, string model, string variant, string options, bool convert, bool user_interaction) throws GLib.Error;
+        [DBus (name = "Locale")]
+        public abstract string[] locale { owned get; }
+        [DBus (name = "VConsoleKeymap")]
+        public abstract string vconsole_keymap { owned get; }
+        [DBus (name = "VConsoleKeymapToggle")]
+        public abstract string vconsole_keymap_toggle { owned get; }
+        [DBus (name = "X11Layout")]
+        public abstract string x11_layout { owned get; }
+        [DBus (name = "X11Model")]
+        public abstract string x11_model { owned get; }
+        [DBus (name = "X11Variant")]
+        public abstract string x11_variant { owned get; }
+        [DBus (name = "X11Options")]
+        public abstract string x11_options { owned get; }
+    }
+
     public class LangEntry {
         public string alpha_3;
         public string? alpha_2;
@@ -27,11 +51,12 @@ namespace LocaleHelper {
             countries = {};
         }
 
-        public string get_code () {
+        public unowned string get_code () {
             return alpha_2 ?? alpha_3;
         }
 
         public void add_country (CountryEntry country_entry) {
+            country_entry.lang = this;
             var _countries = countries;
             _countries += country_entry;
             countries = _countries;
@@ -42,9 +67,14 @@ namespace LocaleHelper {
         public string alpha_2;
         public string alpha_3;
         public string name;
+        public unowned LangEntry lang;
 
-        public string get_code () {
+        public unowned string get_code () {
             return alpha_2 ?? alpha_3;
+        }
+
+        public string get_full_code () {
+            return "%s_%s".printf (lang.get_code (), get_code ());
         }
     }
 
