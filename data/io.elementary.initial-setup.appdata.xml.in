@@ -7,7 +7,7 @@
   <name>Initial Setup</name>
   <summary>Set up elementary OS</summary>
   <description>
-    <p></p>
+    <p>Assists with essential tasks before a fresh install is usable, like choosing a language and creating a user account.</p>
   </description>
   <screenshots>
     <screenshot type="default">
