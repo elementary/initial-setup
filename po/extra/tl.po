@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:43+0200\n"
+"POT-Creation-Date: 2019-09-27 08:12-0700\n"
 "PO-Revision-Date: 2016-05-23 18:48+0000\n"
 "Last-Translator: yavinfour <anjelo.passionist@gmail.com>\n"
 "Language-Team: Tagalog <tl@li.org>\n"
@@ -19,6 +19,7 @@ msgstr ""
 "X-Generator: Launchpad (build 18204)\n"
 
 #: data/io.elementary.initial-setup.desktop.in:3
+#: data/io.elementary.initial-setup.appdata.xml.in:8
 msgid "Set up elementary OS"
 msgstr ""
 
@@ -28,6 +29,20 @@ msgstr ""
 
 #: data/io.elementary.initial-setup.desktop.in:6
 msgid "system-os-installer"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:7
+msgid "Initial Setup"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:10
+msgid ""
+"Assists with essential tasks before a fresh install is usable, like choosing "
+"a language and creating a user account."
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:59
+msgid "elementary, Inc."
 msgstr ""
 
 #~ msgid "Calculator"
