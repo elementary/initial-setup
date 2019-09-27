@@ -7,6 +7,15 @@ i18n.merge_file(
     install: true
 )
 
+i18n.merge_file(
+    input: meson.project_name() + '.appdata.xml.in',
+    output: meson.project_name() + '.appdata.xml',
+    po_dir: join_paths(meson.source_root(), 'po', 'extra'),
+    type: 'xml',
+    install: true,
+    install_dir: join_paths(get_option('datadir'), 'metainfo'),
+)
+
 install_data(
     '49-' + meson.project_name() + '.pkla',
     install_dir: join_paths(get_option('sharedstatedir'), 'polkit-1', 'localauthority', '10-vendor.d')
