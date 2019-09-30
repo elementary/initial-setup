@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-27 08:12-0700\n"
-"PO-Revision-Date: 2019-05-06 01:33+0000\n"
+"PO-Revision-Date: 2019-10-01 20:23+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/mr/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.7.1\n"
 
 #: data/io.elementary.initial-setup.desktop.in:3
 #: data/io.elementary.initial-setup.appdata.xml.in:8
@@ -28,15 +28,16 @@ msgstr "system-os-installer"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:7
 msgid "Initial Setup"
-msgstr ""
+msgstr "प्राथमिक आस्थापना"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:10
 msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
 msgstr ""
+"एखादी भाषा निवडणे आणि वापरकर्ता खाते तयार करणे यासारख्या नवीन स्थापनेपूर्वी "
+"आवश्यक असणाऱ्या कार्यांमध्ये सहाय्य करते."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:59
-#, fuzzy
 msgid "elementary, Inc."
-msgstr "एलिमेंटरी ओएस सेटअप करा"
+msgstr "elementary, Inc."
