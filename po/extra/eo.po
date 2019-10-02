@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-27 08:12-0700\n"
-"PO-Revision-Date: 2019-08-26 21:22+0000\n"
+"PO-Revision-Date: 2019-09-29 19:23+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/eo/>\n"
@@ -28,15 +28,16 @@ msgstr "system-os-installer"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:7
 msgid "Initial Setup"
-msgstr ""
+msgstr "Komenca agordo"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:10
 msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
 msgstr ""
+"Helpas pri nepraj taskoj antaŭ freŝa instalo uzeblu, ekzemple rilate elekton "
+"de lingvo kaj kreadon de uzantokonto."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:59
-#, fuzzy
 msgid "elementary, Inc."
-msgstr "Agordi elementary OS"
+msgstr "elementary, Inc."

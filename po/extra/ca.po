@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-27 08:12-0700\n"
-"PO-Revision-Date: 2019-05-01 03:26+0000\n"
+"PO-Revision-Date: 2019-10-01 20:23+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/ca/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6\n"
+"X-Generator: Weblate 3.7.1\n"
 
 #: data/io.elementary.initial-setup.desktop.in:3
 #: data/io.elementary.initial-setup.appdata.xml.in:8
@@ -28,15 +28,16 @@ msgstr "system-os-installer"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:7
 msgid "Initial Setup"
-msgstr ""
+msgstr "Configuració inicial"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:10
 msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
 msgstr ""
+"Ajuda amb les tasques essencials abans que es pugui usar una instal·lació "
+"nova, com ara triar una llengua i crear un compte d'usuari."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:59
-#, fuzzy
 msgid "elementary, Inc."
-msgstr "Configureu l'elementary OS"
+msgstr "elementary, Inc."
