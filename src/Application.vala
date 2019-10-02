@@ -40,4 +40,3 @@ public static int main (string[] args) {
     var application = new Installer.App ();
     return application.run (args);
 }
-

@@ -349,4 +349,3 @@ public class Installer.LanguageView : AbstractInstallerView {
         }
     }
 }
-
