@@ -87,7 +87,6 @@ public class InitialSetup.KeyboardLayout : GLib.Object {
                 continue;
             }
 
-        
             var layout = new KeyboardLayout (name_node->children->content, description_node->children->content);
             layout_store.insert_sorted (layout, (GLib.CompareDataFunc<GLib.Object>) KeyboardLayout.compare);
 

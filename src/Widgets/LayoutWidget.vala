@@ -50,4 +50,3 @@ public class LayoutWidget : Gtk.Grid {
         return true;
     }
 }
-
