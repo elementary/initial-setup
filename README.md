@@ -4,6 +4,10 @@
 
 An initial setup app to create new users
 
+## Screenshots : 
+
+![screenshot@2x](https://user-images.githubusercontent.com/35162705/66404764-b4785880-ea06-11e9-8ebc-2eccce5bb92f.png)
+
 ## Building, Testing, and Installation
 
 You'll need the following dependencies:
