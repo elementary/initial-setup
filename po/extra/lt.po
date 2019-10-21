@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-27 08:12-0700\n"
+"POT-Creation-Date: 2019-10-21 15:18-0700\n"
 "PO-Revision-Date: 2019-09-29 19:23+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/installer/"
@@ -47,7 +47,16 @@ msgstr ""
 "Padeda su esminėmis užduotimis (tokiomis kaip kalbos pasirinkimas ar "
 "naudotojo sukūrimas) dar iki to, kol naujas diegimas taps praktiškas naudoti."
 
-#: data/io.elementary.initial-setup.appdata.xml.in:59
+#: data/io.elementary.initial-setup.appdata.xml.in:26
+msgid "Translation updates"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:31
+#, fuzzy
+msgid "Initial release"
+msgstr "Pradinė sąranka"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:66
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

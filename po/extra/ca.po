@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-27 08:12-0700\n"
+"POT-Creation-Date: 2019-10-21 15:18-0700\n"
 "PO-Revision-Date: 2019-10-01 20:23+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/installer/"
@@ -38,6 +38,15 @@ msgstr ""
 "Ajuda amb les tasques essencials abans que es pugui usar una instal·lació "
 "nova, com ara triar una llengua i crear un compte d'usuari."
 
-#: data/io.elementary.initial-setup.appdata.xml.in:59
+#: data/io.elementary.initial-setup.appdata.xml.in:26
+msgid "Translation updates"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:31
+#, fuzzy
+msgid "Initial release"
+msgstr "Configuració inicial"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:66
 msgid "elementary, Inc."
 msgstr "elementary, Inc."

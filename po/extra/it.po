@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-27 08:12-0700\n"
+"POT-Creation-Date: 2019-10-21 15:18-0700\n"
 "PO-Revision-Date: 2019-07-02 08:27+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/installer/"
@@ -43,7 +43,15 @@ msgid ""
 "a language and creating a user account."
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:59
+#: data/io.elementary.initial-setup.appdata.xml.in:26
+msgid "Translation updates"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:31
+msgid "Initial release"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:66
 #, fuzzy
 msgid "elementary, Inc."
 msgstr "Configura elementary OS"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-27 08:12-0700\n"
+"POT-Creation-Date: 2019-10-21 15:18-0700\n"
 "PO-Revision-Date: 2019-10-01 20:23+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/installer/"
@@ -35,9 +35,18 @@ msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
 msgstr ""
-"एखादी भाषा निवडणे आणि वापरकर्ता खाते तयार करणे यासारख्या नवीन स्थापनेपूर्वी "
-"आवश्यक असणाऱ्या कार्यांमध्ये सहाय्य करते."
+"एखादी भाषा निवडणे आणि वापरकर्ता खाते तयार करणे यासारख्या नवीन स्थापनेपूर्वी आवश्यक "
+"असणाऱ्या कार्यांमध्ये सहाय्य करते."
 
-#: data/io.elementary.initial-setup.appdata.xml.in:59
+#: data/io.elementary.initial-setup.appdata.xml.in:26
+msgid "Translation updates"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:31
+#, fuzzy
+msgid "Initial release"
+msgstr "प्राथमिक आस्थापना"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:66
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
