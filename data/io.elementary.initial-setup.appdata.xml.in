@@ -20,11 +20,18 @@
   <provides>
     <binary>io.elementary.initial-setup</binary>
   </provides>
-  <release version="1.0.0" date="2019-09-26" urgency="medium">
-    <description>
-      <p>Initial release</p>
-    </description>
-  </release>
+  <releases>
+    <release version="1.0.1" date="2019-10-21" urgency="medium">
+      <description>
+        <p>Translation updates</p>
+      </description>
+    </release>
+    <release version="1.0.0" date="2019-09-26" urgency="medium">
+      <description>
+        <p>Initial release</p>
+      </description>
+    </release>
+  </releases>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">none</content_attribute>
     <content_attribute id="violence-fantasy">none</content_attribute>
