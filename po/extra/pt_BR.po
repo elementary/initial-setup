@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-21 15:18-0700\n"
-"PO-Revision-Date: 2019-10-04 16:23+0000\n"
+"PO-Revision-Date: 2019-10-25 15:24+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "installer/initial-setup-extra/pt_BR/>\n"
@@ -47,12 +47,11 @@ msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:26
 msgid "Translation updates"
-msgstr ""
+msgstr "Atualizações de tradução"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:31
-#, fuzzy
 msgid "Initial release"
-msgstr "Configuração Inicial"
+msgstr "Lançamento inicial"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:66
 msgid "elementary, Inc."
