@@ -1,3 +1,12 @@
+io.elementary.initial-setup (1.0.2) bionic; urgency=medium
+
+  * Release 1.0.2 (#79)
+  * Release.yml: Use consistent two-space indentation (#78)
+  * use secrets for git username and email in release pipeline (#77)
+  * Update translation files
+
+ -- elementary, Inc. <builds@elementary.io>  Tue, 29 Oct 2019 17:07:37 +0000
+
 io.elementary.initial-setup (1.0.0) bionic; urgency=medium
 
   * Initial release
