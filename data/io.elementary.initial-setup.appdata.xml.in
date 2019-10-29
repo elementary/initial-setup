@@ -21,7 +21,7 @@
     <binary>io.elementary.initial-setup</binary>
   </provides>
   <releases>
-    <release version="1.0.2" date="2019-10-25" urgency="medium">
+    <release version="1.0.2" date="2019-10-29" urgency="medium">
       <description>
         <p>Translation updates</p>
       </description>
