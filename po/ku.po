@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:43+0200\n"
+"POT-Creation-Date: 2019-11-06 00:35+0000\n"
 "PO-Revision-Date: 2018-02-05 00:11+0000\n"
 "Last-Translator: Rokar <mail@rokar.de>\n"
 "Language-Team: Kurdish <https://weblate.elementary.io/projects/installer/"
@@ -26,101 +26,101 @@ msgid ""
 "to log in and may need to reinstall the OS."
 msgstr ""
 
-#: src/Utils.vala:68
+#: src/Utils.vala:70
 #, c-format
 msgid "Creating User '%s' Failed"
 msgstr ""
 
-#: src/Utils.vala:72
+#: src/Utils.vala:74
 #, c-format
 msgid "No Permission to Create User '%s'"
 msgstr ""
 
-#: src/Helpers/LocaleHelper.vala:114 src/Views/KeyboardLayoutView.vala:183
+#: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:188
 #, c-format
 msgid "%s…"
 msgstr "%s…"
 
-#: src/Views/AbstractInstallerView.vala:47
-msgid "Cancel Installation"
-msgstr "Saz kirin betal bike"
+#: src/Objects/KeyboardVariant.vala:27
+msgid "Default"
+msgstr "Wekî erkên destpêkê"
 
-#: src/Views/AccountView.vala:32
+#: src/Views/AccountView.vala:34
 msgid "Create an Account"
 msgstr "Hesab çê bike"
 
-#: src/Views/AccountView.vala:36
+#: src/Views/AccountView.vala:38
 msgid "Full Name"
 msgstr "Nave Tije"
 
-#: src/Views/AccountView.vala:41
+#: src/Views/AccountView.vala:43
 msgid "Username"
 msgstr "Navê bikarhêner"
 
-#: src/Views/AccountView.vala:48
+#: src/Views/AccountView.vala:50
 msgid "Choose a Password"
 msgstr "Nasnav bijare"
 
-#: src/Views/AccountView.vala:63
+#: src/Views/AccountView.vala:65
 msgid "Confirm Password"
 msgstr "Nasnav tesdîq bike"
 
-#: src/Views/AccountView.vala:97 src/Views/KeyboardLayoutView.vala:54
+#: src/Views/AccountView.vala:96 src/Views/KeyboardLayoutView.vala:49
 msgid "Back"
 msgstr "Paşve"
 
-#: src/Views/AccountView.vala:99
+#: src/Views/AccountView.vala:98
 msgid "Finish Setup"
 msgstr "Pêkhatin Xilas bike"
 
-#: src/Views/AccountView.vala:183
+#: src/Views/AccountView.vala:182
 msgid "Passwords do not match"
 msgstr ""
 
-#: src/Views/AccountView.vala:212
+#: src/Views/AccountView.vala:211
 msgid "The chosen username is already taken"
 msgstr ""
 
-#: src/Views/AccountView.vala:214
+#: src/Views/AccountView.vala:213
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
 
-#: src/Views/KeyboardLayoutView.vala:28
+#: src/Views/KeyboardLayoutView.vala:26
 msgid "Keyboard Layout"
 msgstr "Nimûne Textekilîl"
 
-#: src/Views/KeyboardLayoutView.vala:36
+#: src/Views/KeyboardLayoutView.vala:34
 msgid "Type to test your layout"
 msgstr ""
 
-#: src/Views/KeyboardLayoutView.vala:39
+#: src/Views/KeyboardLayoutView.vala:37
 msgid "Show keyboard layout"
 msgstr "Nimûne Textekilîl nîşan bike"
 
-#: src/Views/KeyboardLayoutView.vala:56 src/Views/LanguageView.vala:113
+#: src/Views/KeyboardLayoutView.vala:51 src/Views/LanguageView.vala:107
+#: src/Views/LanguageView.vala:162
 msgid "Select"
 msgstr "Bijartin"
 
-#: src/Views/KeyboardLayoutView.vala:119
-msgid "Default"
-msgstr "Wekî erkên destpêkê"
-
-#: src/Views/KeyboardLayoutView.vala:126
+#: src/Views/KeyboardLayoutView.vala:133
 msgid "Input Language"
 msgstr "Zimane têxistin"
 
-#: src/Views/LanguageView.vala:206
+#: src/Views/LanguageView.vala:195
 msgid "Languages"
 msgstr "Ziman"
 
-#: src/Views/LanguageView.vala:251
+#: src/Views/LanguageView.vala:239
 msgid "Select a Language"
 msgstr "Ziman bijartin"
 
-#: src/Views/LanguageView.vala:279 src/Views/LanguageView.vala:322
+#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:317
 msgid "Currently active language"
 msgstr "Zimane niha Sazkirî"
+
+#~ msgid "Cancel Installation"
+#~ msgstr "Saz kirin betal bike"
 
 #~ msgid "Set up %s"
 #~ msgstr "%s bi rêk xistin"
