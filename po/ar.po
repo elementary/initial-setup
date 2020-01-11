@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2019-12-19 21:07+0000\n"
+"PO-Revision-Date: 2020-01-12 04:07+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ar/>\n"
@@ -24,16 +24,18 @@ msgid ""
 "Initial Setup could not create your user. Without it, you will not be able "
 "to log in and may need to reinstall the OS."
 msgstr ""
+"لقد فشل برنامج التنزيل في إنشاء الحساب. بدون الحساب، لا يمكنك الدخول إلى "
+"النظام وقد تضطر إلى تنزيل النظام مرة أخرة."
 
 #: src/Utils.vala:70
 #, c-format
 msgid "Creating User '%s' Failed"
-msgstr ""
+msgstr "فشل إنشاء المستخدم '%s'"
 
 #: src/Utils.vala:74
 #, c-format
 msgid "No Permission to Create User '%s'"
-msgstr ""
+msgstr "ليس هناك صلاحية لإنشاء المستخدم '%s'"
 
 #: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:188
 #, c-format
@@ -42,7 +44,7 @@ msgstr "%s…"
 
 #: src/Objects/KeyboardVariant.vala:27
 msgid "Default"
-msgstr "الإفتراضي"
+msgstr "افتراضي"
 
 #: src/Views/AccountView.vala:34
 msgid "Create an Account"
