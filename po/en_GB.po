@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2019-08-21 23:22+0000\n"
-"Last-Translator: Ciarán Ainsworth <ciaranainsworth@posteo.net>\n"
+"PO-Revision-Date: 2020-02-23 20:40+0000\n"
+"Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "installer/initial-setup/en_GB/>\n"
 "Language: en_GB\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: src/MainWindow.vala:34
 msgid "Create a User"
@@ -47,19 +47,19 @@ msgstr "Default"
 
 #: src/Views/AccountView.vala:34
 msgid "Create an Account"
-msgstr "Buat Akun"
+msgstr "Create an Account"
 
 #: src/Views/AccountView.vala:38
 msgid "Full Name"
-msgstr "Nama Lengkap"
+msgstr "Full Name"
 
 #: src/Views/AccountView.vala:43
 msgid "Username"
-msgstr "Nama Pengguna"
+msgstr "Username"
 
 #: src/Views/AccountView.vala:50
 msgid "Choose a Password"
-msgstr "Pilih Kata Sandi"
+msgstr "Choose a Password"
 
 #: src/Views/AccountView.vala:65
 msgid "Confirm Password"
