@@ -57,12 +57,7 @@ namespace Utils {
                 var user_manager = get_usermanager ();
                 if (user_manager != null) {
                     var created_user = user_manager.create_user (username, fullname, Act.UserAccountType.ADMINISTRATOR);
-
-                    user_manager.user_added.connect ((user) => {
-                        if (user == created_user) {
-                            created_user.set_password (password, "");
-                        }
-                    });
+                    created_user.set_password (password, "");
 
                     return created_user;
                 }
