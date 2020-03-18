@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2020-01-12 04:07+0000\n"
+"PO-Revision-Date: 2020-03-19 22:09+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ar/>\n"
@@ -76,7 +76,7 @@ msgstr "إنهاء التثبيت"
 
 #: src/Views/AccountView.vala:182
 msgid "Passwords do not match"
-msgstr "كلمات المرور غير متطابقة"
+msgstr "كلمتا المرور غير متطابقتين"
 
 #: src/Views/AccountView.vala:211
 msgid "The chosen username is already taken"
