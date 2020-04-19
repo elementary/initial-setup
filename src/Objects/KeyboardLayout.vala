@@ -58,9 +58,20 @@ public class InitialSetup.KeyboardLayout : GLib.Object {
         return a.display_name.collate (b.display_name);
     }
 
+    private const string XKB_RULES_FILE = "base.xml";
+
+    private static string get_xml_rules_file_path () {
+        unowned string? base_path = GLib.Environment.get_variable ("XKB_CONFIG_ROOT");
+        if (base_path == null) {
+            base_path = Build.XKB_BASE;
+        }
+
+        return Path.build_filename (base_path, "rules", XKB_RULES_FILE);
+    }
+
     public static GLib.ListStore get_all () {
         var layout_store = new GLib.ListStore (typeof (KeyboardLayout));
-        unowned Xml.Doc* doc = Xml.Parser.read_file ("/usr/share/X11/xkb/rules/base.xml");
+        unowned Xml.Doc* doc = Xml.Parser.read_file (get_xml_rules_file_path ());
 
         Xml.XPath.Context cntx = new Xml.XPath.Context (doc);
         unowned Xml.XPath.Object* res = cntx.eval_expression ("/xkbConfigRegistry/layoutList/layout");
