@@ -58,9 +58,9 @@ public class InitialSetup.KeyboardLayout : GLib.Object {
         return a.display_name.collate (b.display_name);
     }
 
-    public const string XKB_RULES_FILE = "base.xml";
+    private const string XKB_RULES_FILE = "base.xml";
 
-    public string get_xml_rules_file_path () {
+    private static string get_xml_rules_file_path () {
         unowned string? base_path = GLib.Environment.get_variable ("XKB_CONFIG_ROOT");
         if (base_path == null) {
             base_path = Build.XKB_BASE;
