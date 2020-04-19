@@ -89,7 +89,7 @@ namespace LocaleHelper {
 
             var parser = new Json.Parser ();
             try {
-                parser.load_from_file ("/usr/share/iso-codes/json/iso_639-3.json");
+                parser.load_from_file ("%s/iso_639-3.json".printf (Build.ISO_CODES_LOCATION));
                 weak Json.Object root_object = parser.get_root ().get_object ();
                 weak Json.Array 639_3_array = root_object.get_array_member ("639-3");
                 foreach (unowned Json.Node element in 639_3_array.get_elements ()) {
@@ -113,7 +113,7 @@ namespace LocaleHelper {
             var countries = new Gee.HashMap<string, CountryEntry?> ();
             parser = new Json.Parser ();
             try {
-                parser.load_from_file ("/usr/share/iso-codes/json/iso_3166-1.json");
+                parser.load_from_file ("%s/iso_3166-1.json".printf (Build.ISO_CODES_LOCATION));
                 weak Json.Object root_object = parser.get_root ().get_object ();
                 weak Json.Array 639_3_array = root_object.get_array_member ("3166-1");
                 foreach (unowned Json.Node element in 639_3_array.get_elements ()) {
