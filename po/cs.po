@@ -3,38 +3,39 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2019-04-21 18:58+0000\n"
-"Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
-"Language-Team: Czech <https://l10n.elementary.io/projects/installer/initial-"
-"setup/cs/>\n"
+"PO-Revision-Date: 2020-05-07 23:10+0000\n"
+"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
+"Language-Team: Czech <https://l10n.elementary.io/projects/installer/"
+"initial-setup/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.5.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/MainWindow.vala:34
-#, fuzzy
 msgid "Create a User"
-msgstr "Vytvořit účet"
+msgstr "Vytvořit uživatelský účet"
 
 #: src/Utils.vala:53
 msgid ""
 "Initial Setup could not create your user. Without it, you will not be able "
 "to log in and may need to reinstall the OS."
 msgstr ""
+"Prvotní nastavení nemohlo vytvořit Váš uživatelský účet. Bez něj se nebudete "
+"moci přihlásit a možná budete muset přeinstalovat systém."
 
 #: src/Utils.vala:70
 #, c-format
 msgid "Creating User '%s' Failed"
-msgstr ""
+msgstr "Vytváření uživatele „%s“ se nezdařilo"
 
 #: src/Utils.vala:74
 #, c-format
 msgid "No Permission to Create User '%s'"
-msgstr ""
+msgstr "Nemáte oprávnění vytvořit účet „%s“"
 
 #: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:188
 #, c-format
@@ -59,11 +60,11 @@ msgstr "Uživatelské jméno"
 
 #: src/Views/AccountView.vala:50
 msgid "Choose a Password"
-msgstr "Zvolit si heslo"
+msgstr "Zvolte si heslo"
 
 #: src/Views/AccountView.vala:65
 msgid "Confirm Password"
-msgstr "Potvrdit heslo"
+msgstr "Potvrďte heslo"
 
 #: src/Views/AccountView.vala:96 src/Views/KeyboardLayoutView.vala:49
 msgid "Back"
@@ -84,7 +85,7 @@ msgstr "Zvolené uživatelské jméno je již obsazené"
 #: src/Views/AccountView.vala:213
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
-msgstr "Uživatelské jméno může obsahovat pouze malá písmena a čísla bez mezer"
+msgstr "Uživatelské jméno může obsahovat pouze malá písmena a čísla, bez mezer"
 
 #: src/Views/KeyboardLayoutView.vala:26
 msgid "Keyboard Layout"
