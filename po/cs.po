@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2020-05-07 23:10+0000\n"
+"PO-Revision-Date: 2020-05-12 01:20+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/installer/"
 "initial-setup/cs/>\n"
@@ -24,8 +24,8 @@ msgid ""
 "Initial Setup could not create your user. Without it, you will not be able "
 "to log in and may need to reinstall the OS."
 msgstr ""
-"Prvotní nastavení nemohlo vytvořit Váš uživatelský účet. Bez něj se nebudete "
-"moci přihlásit a možná budete muset přeinstalovat systém."
+"V prvotním nastavení se nepodařilo vytvořit váš uživatelský účet. Bez něj se "
+"nebudete moci přihlásit a možná bude třeba operační systém přeinstalovat."
 
 #: src/Utils.vala:70
 #, c-format
@@ -48,7 +48,7 @@ msgstr "Výchozí"
 
 #: src/Views/AccountView.vala:34
 msgid "Create an Account"
-msgstr "Vytvořit účet"
+msgstr "Vytvořit uživatelský účet"
 
 #: src/Views/AccountView.vala:38
 msgid "Full Name"
@@ -76,16 +76,17 @@ msgstr "Dokončit nastavení"
 
 #: src/Views/AccountView.vala:182
 msgid "Passwords do not match"
-msgstr "Hesla se neshodují"
+msgstr "Zadání hesla se neshodují"
 
 #: src/Views/AccountView.vala:211
 msgid "The chosen username is already taken"
-msgstr "Zvolené uživatelské jméno je již obsazené"
+msgstr "Zvolené uživatelské jméno už je obsazené"
 
 #: src/Views/AccountView.vala:213
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
-msgstr "Uživatelské jméno může obsahovat pouze malá písmena a čísla, bez mezer"
+msgstr ""
+"Uživatelské jméno může obsahovat pouze malá písmena a číslice, bez mezer"
 
 #: src/Views/KeyboardLayoutView.vala:26
 msgid "Keyboard Layout"
@@ -93,7 +94,7 @@ msgstr "Rozložení klávesnice"
 
 #: src/Views/KeyboardLayoutView.vala:34
 msgid "Type to test your layout"
-msgstr "Pište pro otestování rozložení klávesnice"
+msgstr "Vyzkoušejte rozložení klávesnice psaním"
 
 #: src/Views/KeyboardLayoutView.vala:37
 msgid "Show keyboard layout"
@@ -106,7 +107,7 @@ msgstr "Vybrat"
 
 #: src/Views/KeyboardLayoutView.vala:133
 msgid "Input Language"
-msgstr "Vstupní jazyk"
+msgstr "Jazyk vstupu z klávesnice"
 
 #: src/Views/LanguageView.vala:195
 msgid "Languages"
@@ -118,7 +119,7 @@ msgstr "Vyberte jazyk"
 
 #: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:317
 msgid "Currently active language"
-msgstr "Právě aktivní jazyk"
+msgstr "Právě používaný jazyk"
 
 #~ msgid "Cancel Installation"
 #~ msgstr "Zrušit instalaci"
