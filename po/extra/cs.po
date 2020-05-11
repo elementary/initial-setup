@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2020-05-07 23:10+0000\n"
+"PO-Revision-Date: 2020-05-12 01:20+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/cs/>\n"
@@ -24,7 +24,7 @@ msgstr "Nastavit systém"
 
 #: data/io.elementary.initial-setup.desktop.in:6
 msgid "system-os-installer"
-msgstr "system-os-installer"
+msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:7
 msgid "Initial Setup"
@@ -35,8 +35,8 @@ msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
 msgstr ""
-"Pomáhá s nezbytnými úkony před tím, než je nová instalace použitelná, jako "
-"například výběr jazyka a vytváření uživatelského účtu."
+"Pomáhá s nezbytnými úkony k tomu, aby novou instalaci bylo možné používat, "
+"jako je například výběr jazyka a vytvoření uživatelského účtu."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:26
 msgid "Translation updates"
