@@ -58,9 +58,10 @@ public class Installer.AccountView : AbstractInstallerView {
         pw_levelbar = new Gtk.LevelBar ();
         pw_levelbar = new Gtk.LevelBar.for_interval (0.0, 100.0);
         pw_levelbar.set_mode (Gtk.LevelBarMode.CONTINUOUS);
-        pw_levelbar.add_offset_value ("low", 50.0);
-        pw_levelbar.add_offset_value ("high", 75.0);
-        pw_levelbar.add_offset_value ("middle", 75.0);
+        pw_levelbar.add_offset_value ("low", 30.0);
+        pw_levelbar.add_offset_value ("middle", 50.0);
+        pw_levelbar.add_offset_value ("high", 80.0);
+        pw_levelbar.add_offset_value ("full", 100.0);
 
         var confirm_label = new Granite.HeaderLabel (_("Confirm Password"));
 
