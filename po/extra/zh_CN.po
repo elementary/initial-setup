@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2020-05-16 03:10+0000\n"
+"PO-Revision-Date: 2020-05-23 09:11+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "installer/initial-setup-extra/zh_Hans/>\n"
@@ -45,15 +45,15 @@ msgstr "在全新安装前配置系统参数，如选择语言和创建用户账
 
 #: data/io.elementary.initial-setup.appdata.xml.in:26
 msgid "Translation updates"
-msgstr ""
+msgstr "翻译更新"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:31
 msgid "Initial release"
-msgstr ""
+msgstr "初始发行版本"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:66
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #~ msgid "Calculator"
 #~ msgstr "计算器"
