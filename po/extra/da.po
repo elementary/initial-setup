@@ -2,25 +2,25 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2019-09-07 18:22+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
-"Language-Team: Danish <https://l10n.elementary.io/projects/installer/initial-"
-"setup-extra/da/>\n"
+"PO-Revision-Date: 2020-05-28 12:11+0000\n"
+"Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
+"Language-Team: Danish <https://l10n.elementary.io/projects/installer/"
+"initial-setup-extra/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.initial-setup.desktop.in:3
 #: data/io.elementary.initial-setup.appdata.xml.in:8
 msgid "Set up elementary OS"
-msgstr ""
+msgstr "Opsætning af elementary OS"
 
 #: data/io.elementary.initial-setup.desktop.in:4
 msgid "Set up the system"
-msgstr ""
+msgstr "Opsætning af systemet"
 
 #: data/io.elementary.initial-setup.desktop.in:6
 msgid "system-os-installer"
@@ -28,22 +28,24 @@ msgstr "system-os-installer"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:7
 msgid "Initial Setup"
-msgstr ""
+msgstr "Førstegangs Opsætning"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:10
 msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
 msgstr ""
+"Hjælper med vigtige opgaver, før en ny installation kan bruges, som f.eks. "
+"valg af sprog og oprettelse af en brugerkonto."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:26
 msgid "Translation updates"
-msgstr ""
+msgstr "Opdaterede oversættelser"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:31
 msgid "Initial release"
-msgstr ""
+msgstr "Første udgivelse"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:66
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
