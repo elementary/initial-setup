@@ -90,6 +90,11 @@ public class Installer.MainWindow : Gtk.Window {
     private void on_finish () {
         if (account_view.created != null) {
             account_view.created.set_language (Configuration.get_default ().lang);
+
+            var 24_format_lang_list = Build.24H_FORMAT_LANG_LIST.split (";");
+            if (Configuration.get_default ().lang in 24_format_lang_list) {
+                Utils.set_time_format_for_user ("24h", account_view.created);
+            }
         }
 
         destroy ();

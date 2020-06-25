@@ -124,4 +124,10 @@ namespace Utils {
 
         return username;
     }
+
+    public static void set_time_format_for_user (string time_format, Act.User user) {
+        // TODO get settings for new user
+        var clock_settings = new GLib.Settings ("org.gnome.desktop.interface");
+        clock_settings.set_string ("clock-format", time_format);
+    }
 }
