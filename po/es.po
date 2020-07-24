@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2020-03-06 15:09+0000\n"
+"PO-Revision-Date: 2020-07-25 01:12+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/installer/"
 "initial-setup/es/>\n"
@@ -44,7 +44,7 @@ msgstr "%s…"
 
 #: src/Objects/KeyboardVariant.vala:27
 msgid "Default"
-msgstr "Predeterminado"
+msgstr "Predeterminada"
 
 #: src/Views/AccountView.vala:34
 msgid "Create an Account"
