@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2020-02-23 20:40+0000\n"
+"PO-Revision-Date: 2020-07-26 18:29+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "installer/initial-setup/en_GB/>\n"
@@ -71,7 +71,7 @@ msgstr "Back"
 
 #: src/Views/AccountView.vala:98
 msgid "Finish Setup"
-msgstr "Pengaturan Selesai"
+msgstr "Finish Setup"
 
 #: src/Views/AccountView.vala:182
 msgid "Passwords do not match"
