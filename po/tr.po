@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2019-05-06 11:32+0000\n"
-"Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
+"PO-Revision-Date: 2020-07-28 15:12+0000\n"
+"Last-Translator: Sinan Decron <intenfinitia@gmail.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/installer/"
 "initial-setup/tr/>\n"
 "Language: tr\n"
@@ -12,12 +12,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/MainWindow.vala:34
 msgid "Create a User"
-msgstr "Kullanıcı Oluşturma"
+msgstr "Kullanıcı Oluştur"
 
 #: src/Utils.vala:53
 msgid ""
@@ -80,7 +80,7 @@ msgstr "Parolalar eşleşmiyor"
 
 #: src/Views/AccountView.vala:211
 msgid "The chosen username is already taken"
-msgstr "Seçilen kullanıcı adı zaten kullanılıyor"
+msgstr "Seçilen kullanıcı adı zaten alınmış"
 
 #: src/Views/AccountView.vala:213
 msgid ""
