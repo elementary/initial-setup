@@ -2,6 +2,7 @@
 vala_files = [
     'Application.vala',
     'MainWindow.vala',
+    'Helpers/AccountsServiceInterface.vala',
     'Helpers/LocaleHelper.vala',
     'Objects/Configuration.vala',
     'Objects/KeyboardLayout.vala',
