@@ -119,7 +119,7 @@ public class Installer.MainWindow : Gtk.Window {
         }
 
         if (accounts_service != null) {
-            var layout = AccountsService.Layout ();
+            var layout = AccountsService.KeyboardLayout ();
             layout.backend = "xkb";
             layout.name = Configuration.get_default ().keyboard_layout;
             if (Configuration.get_default ().keyboard_variant != null) {

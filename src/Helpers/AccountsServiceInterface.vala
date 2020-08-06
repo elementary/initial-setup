@@ -1,11 +1,11 @@
-[DBus (name = "io.elementary.pantheon.AccountsService")]
+[DBus (name = "io.elementary.SettingsDaemon.AccountsService")]
 interface Installer.AccountsService : Object {
-    public struct Layout {
+    public struct KeyboardLayout {
         public string backend;
         public string name;
     }
 
-    public abstract Layout[] keyboard_layouts { owned get; set; }
+    public abstract KeyboardLayout[] keyboard_layouts { owned get; set; }
     public abstract uint active_keyboard_layout { get; set; }
 }
 
