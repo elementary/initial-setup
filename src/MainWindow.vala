@@ -38,9 +38,11 @@ public class Installer.MainWindow : Hdy.Window {
     construct {
         language_view = new LanguageView ();
 
-        stack = new Gtk.Stack ();
-        stack.margin_bottom = 12;
-        stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
+        stack = new Gtk.Stack () {
+            margin_bottom = 12,
+            margin_top = 12,
+            transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT
+        };
         stack.add (language_view);
 
         add (stack);
