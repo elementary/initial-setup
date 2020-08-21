@@ -1,6 +1,11 @@
 project('io.elementary.initial-setup', 'vala', 'c')
 
-add_global_arguments('-DGETTEXT_PACKAGE="' + meson.project_name() + '"', language:'c')
+add_global_arguments([
+        '-DGETTEXT_PACKAGE="@0@"'.format(meson.project_name()),
+        '-DHANDY_USE_UNSTABLE_API'
+    ],
+    language:'c'
+)
 add_project_arguments(['--vapidir', join_paths(meson.current_source_dir(), 'vapi')],
                       language: 'vala')
 
@@ -15,6 +20,7 @@ gnome_keyboard_ui_dep = meson.get_compiler('c').find_library('libgnomekbdui')
 gobject_dep = dependency('gobject-2.0')
 granite_dep = dependency('granite', version: '>=0.5')
 gtk_dep = dependency('gtk+-3.0')
+handy_dep = dependency('libhandy-1', version: '>= 0.83.0')
 json_glib_dep = dependency('json-glib-1.0')
 polkit_dep = dependency('polkit-gobject-1')
 posix_dep = meson.get_compiler('vala').find_library('posix')
@@ -30,6 +36,7 @@ dependencies = [
     gobject_dep,
     granite_dep,
     gtk_dep,
+    handy_dep,
     json_glib_dep,
     polkit_dep,
     posix_dep,
