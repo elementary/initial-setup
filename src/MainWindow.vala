@@ -95,8 +95,43 @@ public class Installer.MainWindow : Gtk.Window {
             if (Configuration.get_default ().lang in 24_format_lang_list) {
                 Utils.set_time_format_for_user ("24h", account_view.created);
             }
+
+            set_keyboard_layout.begin ((obj, res) => {
+                set_keyboard_layout.end (res);
+                destroy ();
+            });
+        } else {
+            destroy ();
         }
 
-        destroy ();
+    }
+
+    private async void set_keyboard_layout () {
+        AccountsService accounts_service = null;
+
+        try {
+            var act_service = yield GLib.Bus.get_proxy<FDO.Accounts> (GLib.BusType.SYSTEM,
+                                                                      "org.freedesktop.Accounts",
+                                                                      "/org/freedesktop/Accounts");
+            var user_path = act_service.find_user_by_name (account_view.created.user_name);
+
+            accounts_service = yield GLib.Bus.get_proxy (GLib.BusType.SYSTEM,
+                                                        "org.freedesktop.Accounts",
+                                                        user_path,
+                                                        GLib.DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
+        } catch (Error e) {
+            warning ("Unable to get AccountsService proxy, keyboard layout on new user may be incorrect: %s", e.message);
+        }
+
+        if (accounts_service != null) {
+            var layout = AccountsService.KeyboardLayout ();
+            layout.backend = "xkb";
+            layout.name = Configuration.get_default ().keyboard_layout;
+            if (Configuration.get_default ().keyboard_variant != null) {
+                layout.name += "+" + Configuration.get_default ().keyboard_variant;
+            }
+
+            accounts_service.keyboard_layouts = { layout };
+        }
     }
 }

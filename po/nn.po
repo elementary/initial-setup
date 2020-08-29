@@ -3,38 +3,40 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2019-01-05 06:01+0000\n"
-"Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
-"Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
+"PO-Revision-Date: 2020-07-25 01:12+0000\n"
+"Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
+"Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
 "installer/initial-setup/nn/>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/MainWindow.vala:34
-#, fuzzy
 msgid "Create a User"
-msgstr "Opprett ein konto"
+msgstr "Opprett ein brukar"
 
 #: src/Utils.vala:53
 msgid ""
 "Initial Setup could not create your user. Without it, you will not be able "
 "to log in and may need to reinstall the OS."
 msgstr ""
+"Fyrsteoppsett kunne ikkje laga ein brukar. Utan ein brukar vil du ikkje "
+"kunna logga inn, og du blir kanskje nøydd til å installera operativsystemet "
+"på nytt."
 
 #: src/Utils.vala:70
 #, c-format
 msgid "Creating User '%s' Failed"
-msgstr ""
+msgstr "Oppretting av brukar  '%s' gjekk galt"
 
 #: src/Utils.vala:74
 #, c-format
 msgid "No Permission to Create User '%s'"
-msgstr ""
+msgstr "Ingen tillating til å laga brukaren '%s'"
 
 #: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:188
 #, c-format
@@ -43,7 +45,7 @@ msgstr "%s…"
 
 #: src/Objects/KeyboardVariant.vala:27
 msgid "Default"
-msgstr "Standardval"
+msgstr "Standard"
 
 #: src/Views/AccountView.vala:34
 msgid "Create an Account"
