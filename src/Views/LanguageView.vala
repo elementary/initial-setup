@@ -276,9 +276,11 @@ public class Installer.LanguageView : AbstractInstallerView {
             image.halign = Gtk.Align.END;
             image.icon_size = Gtk.IconSize.BUTTON;
 
-            var label = new Gtk.Label (lang_entry.name);
+            var label = new Gtk.Label (lang_entry.name) {
+                ellipsize = Pango.EllipsizeMode.END,
+                xalign = 0
+            };
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
-            label.xalign = 0;
 
             var grid = new Gtk.Grid ();
             grid.column_spacing = 6;
@@ -330,9 +332,11 @@ public class Installer.LanguageView : AbstractInstallerView {
             image.halign = Gtk.Align.END;
             image.icon_size = Gtk.IconSize.BUTTON;
 
-            var label = new Gtk.Label (country_entry.name);
+            var label = new Gtk.Label (country_entry.name) {
+                ellipsize = Pango.EllipsizeMode.END,
+                xalign = 0
+            };
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
-            label.xalign = 0;
 
             var grid = new Gtk.Grid ();
             grid.column_spacing = 6;
