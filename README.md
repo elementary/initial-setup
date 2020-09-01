@@ -15,6 +15,7 @@ You'll need the following dependencies:
 * libaccountsservice-dev
 * libgnomekbd-dev
 * libgtk-3-dev
+* libhandy-1-dev
 * libjson-glib-dev
 * libpwquality-dev
 * libxml2-dev
