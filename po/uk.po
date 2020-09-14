@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2020-09-12 22:14+0000\n"
+"PO-Revision-Date: 2020-09-15 03:14+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/uk/>\n"
@@ -31,12 +31,12 @@ msgstr ""
 #: src/Utils.vala:70
 #, c-format
 msgid "Creating User '%s' Failed"
-msgstr "Створення користувача ʼ%sʼ було провалено"
+msgstr "Не вдалося створити користувача '%s'"
 
 #: src/Utils.vala:74
 #, c-format
 msgid "No Permission to Create User '%s'"
-msgstr "Немає прав для створення користувача ʼ%sʼ"
+msgstr "Немає дозволу для створення користувача'%s'"
 
 #: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:188
 #, c-format
@@ -45,7 +45,7 @@ msgstr "%s…"
 
 #: src/Objects/KeyboardVariant.vala:27
 msgid "Default"
-msgstr "Типово"
+msgstr "Типовий"
 
 #: src/Views/AccountView.vala:34
 msgid "Create an Account"
@@ -81,12 +81,12 @@ msgstr "Паролі не збігаються"
 
 #: src/Views/AccountView.vala:211
 msgid "The chosen username is already taken"
-msgstr "Обране ім’я користувача вже зайнято"
+msgstr "Вибране ім’я користувача вже зайнято"
 
 #: src/Views/AccountView.vala:213
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
-msgstr "Ім'я користувача має містити тільки малі літери і цифри без пробілів"
+msgstr "Ім'я користувача повинно містити лише малі літери і цифри без пробілів"
 
 #: src/Views/KeyboardLayoutView.vala:26
 msgid "Keyboard Layout"
@@ -94,7 +94,7 @@ msgstr "Розкладка клавіатури"
 
 #: src/Views/KeyboardLayoutView.vala:34
 msgid "Type to test your layout"
-msgstr "Введіть, щоб перевірити свій макет"
+msgstr "Введіть щось для перевірки розкладки"
 
 #: src/Views/KeyboardLayoutView.vala:37
 msgid "Show keyboard layout"
