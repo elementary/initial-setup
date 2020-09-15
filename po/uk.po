@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2020-09-15 03:14+0000\n"
+"PO-Revision-Date: 2020-09-16 13:14+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/uk/>\n"
@@ -65,7 +65,7 @@ msgstr "Виберіть пароль"
 
 #: src/Views/AccountView.vala:65
 msgid "Confirm Password"
-msgstr "Підтвердьте пароль"
+msgstr "Підтвердити пароль"
 
 #: src/Views/AccountView.vala:96 src/Views/KeyboardLayoutView.vala:49
 msgid "Back"
