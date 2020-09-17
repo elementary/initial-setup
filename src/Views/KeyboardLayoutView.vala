@@ -188,10 +188,13 @@ public class KeyboardLayoutView : AbstractInstallerView {
                 layout_description = _("%s…").printf (layout_description);
             }
 
-            var label = new Gtk.Label (layout_description);
-            label.margin = 6;
-            label.xalign = 0;
+            var label = new Gtk.Label (layout_description) {
+                ellipsize = Pango.EllipsizeMode.END,
+                margin = 6,
+                xalign = 0
+            };
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+
             add (label);
             show_all ();
         }
@@ -201,10 +204,14 @@ public class KeyboardLayoutView : AbstractInstallerView {
         public unowned InitialSetup.KeyboardVariant variant;
         public VariantRow (InitialSetup.KeyboardVariant variant) {
             this.variant = variant;
-            var label = new Gtk.Label (variant.display_name);
-            label.margin = 6;
-            label.xalign = 0;
+
+            var label = new Gtk.Label (variant.display_name) {
+                ellipsize = Pango.EllipsizeMode.END,
+                margin = 6,
+                xalign = 0
+            };
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+
             add (label);
             show_all ();
         }
