@@ -23,6 +23,7 @@ public class Installer.MainWindow : Gtk.Window {
 
     private AccountView account_view;
     private LanguageView language_view;
+    private LocationView location_view;
     private KeyboardLayoutView keyboard_layout_view;
 
     public MainWindow () {
@@ -71,7 +72,20 @@ public class Installer.MainWindow : Gtk.Window {
         stack.add (keyboard_layout_view);
         stack.visible_child = keyboard_layout_view;
 
-        keyboard_layout_view.next_step.connect (() => load_account_view ());
+        keyboard_layout_view.next_step.connect (() => load_location_view ());
+    }
+
+    private void load_location_view () {
+        if (location_view != null) {
+            location_view.destroy ();
+        }
+
+        location_view = new LocationView ();
+        location_view.previous_view = keyboard_layout_view;
+        stack.add (location_view);
+        stack.visible_child = location_view;
+
+        location_view.next_step.connect (() => load_account_view ());
     }
 
     private void load_account_view () {
@@ -80,7 +94,7 @@ public class Installer.MainWindow : Gtk.Window {
         }
 
         account_view = new AccountView ();
-        account_view.previous_view = keyboard_layout_view;
+        account_view.previous_view = location_view;
         stack.add (account_view);
         stack.visible_child = account_view;
 
@@ -91,10 +105,7 @@ public class Installer.MainWindow : Gtk.Window {
         if (account_view.created != null) {
             account_view.created.set_language (Configuration.get_default ().lang);
 
-            var 24_format_lang_list = Build.24H_FORMAT_LANG_LIST.split (";");
-            if (Configuration.get_default ().lang in 24_format_lang_list) {
-                Utils.set_time_format_for_user ("24h", account_view.created);
-            }
+            // TODO set time format based on timezone
 
             set_keyboard_layout.begin ((obj, res) => {
                 set_keyboard_layout.end (res);

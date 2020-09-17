@@ -4,14 +4,18 @@ vala_files = [
     'MainWindow.vala',
     'Helpers/AccountsServiceInterface.vala',
     'Helpers/LocaleHelper.vala',
+    'Helpers/LocationHelper.vala',
     'Objects/Configuration.vala',
     'Objects/KeyboardLayout.vala',
     'Objects/KeyboardVariant.vala',
+    'Objects/LocationLayout.vala',
+    'Objects/LocationVariant.vala',
     'Utils.vala',
     'Views/AbstractInstallerView.vala',
     'Views/AccountView.vala',
     'Views/KeyboardLayoutView.vala',
     'Views/LanguageView.vala',
+    'Views/LocationView.vala',
     'Widgets/LayoutWidget.vala',
     'Widgets/VariantWidget.vala'
 ]
@@ -20,7 +24,6 @@ configuration_data = configuration_data()
 configuration_data.set('GETTEXT_PACKAGE', meson.project_name())
 configuration_data.set('LANG_LIST', get_option('supported_languages'))
 configuration_data.set('PREFERRED_LANG_LIST', get_option('preferred_languages'))
-configuration_data.set('24H_FORMAT_LANG_LIST', get_option('24h_format_languages'))
 
 xkbconf = dependency('xkeyboard-config')
 xkb_base = xkbconf.get_pkgconfig_variable('xkb_base')
