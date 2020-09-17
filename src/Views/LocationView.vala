@@ -53,19 +53,16 @@ public class LocationView : AbstractInstallerView {
             if (row != null) {
                 var layout = ((LayoutRow) row).layout;
                 unowned Configuration configuration = Configuration.get_default ();
-                configuration.location_continent = layout.name;
                 GLib.Variant? layout_variant = null;
                 string second_variant = layout.name;
 
                 unowned Gtk.ListBoxRow vrow = location_variant_widget.variant_listbox.get_selected_row ();
                 if (vrow != null) {
                     unowned InitialSetup.LocationVariant variant = ((VariantRow) vrow).variant;
-                    configuration.location_city = variant.name;
+                    configuration.timezone = variant.original_name;
                     if (variant != null) {
                         layout_variant = variant.to_gsd_variant ();
                     }
-                } else if (!layout.has_variants ()) {
-                    configuration.location_city = null;
                 }
 
                 if (layout_variant == null) {
@@ -77,19 +74,6 @@ public class LocationView : AbstractInstallerView {
         back_button.clicked.connect (() => ((Gtk.Stack) get_parent ()).visible_child = previous_view);
 
         next_button.clicked.connect (() => {
-            unowned Gtk.ListBoxRow vrow = location_variant_widget.variant_listbox.get_selected_row ();
-            if (vrow == null) {
-                unowned Gtk.ListBoxRow row = location_variant_widget.main_listbox.get_selected_row ();
-                if (row != null) {
-                    row.activate ();
-                    return;
-                } else {
-                    warning ("next_button enabled when no keyboard selected");
-                    next_button.sensitive = false;
-                    return;
-                }
-            }
-
             next_step ();
         });
 
@@ -112,24 +96,6 @@ public class LocationView : AbstractInstallerView {
         location_variant_widget.main_listbox.bind_model (InitialSetup.LocationLayout.get_all (), (layout) => { return new LayoutRow (layout as InitialSetup.LocationLayout); });
 
         show_all ();
-
-        Idle.add (() => {
-            unowned string? country = Configuration.get_default ().country;
-            if (country != null) {
-                string default_layout = country.down ();
-
-                foreach (weak Gtk.Widget child in location_variant_widget.main_listbox.get_children ()) {
-                    if (child is LayoutRow) {
-                        weak LayoutRow row = (LayoutRow) child;
-                        if (row.layout.name == default_layout) {
-                            location_variant_widget.main_listbox.select_row (row);
-                            row.grab_focus ();
-                            break;
-                        }
-                    }
-                }
-            }
-        });
     }
 
     private class LayoutRow : Gtk.ListBoxRow {

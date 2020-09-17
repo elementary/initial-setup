@@ -77,8 +77,8 @@ public class InitialSetup.LocationLayout : GLib.Object {
             layout_store.insert_sorted (layout, (GLib.CompareDataFunc<GLib.Object>) LocationLayout.compare);
 
             var timezones = LocationHelper.get_default ().get_timezones_from_continent (continent);
-            timezones.foreach ((city, value) => {
-                layout.add_variant (_(city), city);
+            timezones.foreach ((city, timezone) => {
+                layout.add_variant (_(city), timezone);
             });
         });
 

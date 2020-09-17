@@ -100,6 +100,7 @@ public class Installer.MainWindow : Hdy.Window {
             account_view.created.set_language (Configuration.get_default ().lang);
 
             // TODO set time format based on timezone
+            set_timezone ();
 
             set_keyboard_layout.begin ((obj, res) => {
                 set_keyboard_layout.end (res);
@@ -109,6 +110,16 @@ public class Installer.MainWindow : Hdy.Window {
             destroy ();
         }
 
+    }
+
+    private void set_timezone () {
+        try {
+            LocationHelper.DateTime1 datetime1 = Bus.get_proxy_sync (BusType.SYSTEM, "org.freedesktop.timedate1", "/org/freedesktop/timedate1");
+            unowned Configuration configuration = Configuration.get_default ();
+            datetime1.set_timezone (configuration.timezone, true);
+        } catch (Error e) {
+            warning (e.message);
+        }
     }
 
     private async void set_keyboard_layout () {

@@ -32,7 +32,6 @@ public class Configuration : GLib.Object {
     public string? country { get; set; default = null; }
     public string keyboard_layout { get; set; }
     public string? keyboard_variant { get; set; default = null; }
-    public string location_continent { get; set; }
-    public string location_city { get; set; }
+    public string timezone { get; set; }
     public string clock_format { get; set; default = "24h"; }
 }

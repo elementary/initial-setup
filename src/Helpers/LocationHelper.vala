@@ -19,6 +19,20 @@
  */
 
 public class LocationHelper : GLib.Object {
+    [DBus (name = "org.freedesktop.timedate1")]
+    public interface DateTime1 : Object {
+        public abstract string Timezone {public owned get;}
+        public abstract bool LocalRTC {public get;}
+        public abstract bool CanNTP {public get;}
+        public abstract bool NTP {public get;}
+
+        //usec_utc expects number of microseconds since 1 Jan 1970 UTC
+        public abstract void set_time (int64 usec_utc, bool relative, bool user_interaction) throws GLib.Error;
+        public abstract void set_timezone (string timezone, bool user_interaction) throws GLib.Error;
+        public abstract void SetLocalRTC (bool local_rtc, bool fix_system, bool user_interaction) throws GLib.Error; //vala-lint=naming-convention
+        public abstract void SetNTP (bool use_ntp, bool user_interaction) throws GLib.Error; //vala-lint=naming-convention
+    }
+
     private static List<string> lines;
     private static LocationHelper? helper = null;
 
