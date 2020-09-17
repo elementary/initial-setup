@@ -99,6 +99,19 @@ public class LocationHelper : GLib.Object {
         return timezones;
     }
 
+    public string? get_countrycode_from_timezone (string timezone) {
+        foreach (var line in lines) {
+            var items = line.split ("\t", 4);
+            string value = items[2];
+            
+            if (value == timezone) {
+                return items[0];
+            }
+        }
+
+        return null;
+    }
+
     public HashTable<string, string> get_locations () {
         var locations = new HashTable<string, string> (str_hash, str_equal);
         foreach (var line in lines) {
