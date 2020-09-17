@@ -128,7 +128,7 @@ public class Installer.MainWindow : Hdy.Window {
 
         var countrycode = LocationHelper.get_default ().get_countrycode_from_timezone (Configuration.get_default ().timezone);
         if (countrycode != null) {
-            var 12h_format_countries_list = Build.12H_FORMAT_COUNTRIES_LIST.split (";");            
+            var 12h_format_countries_list = Build.12H_FORMAT_COUNTRIES_LIST.split (";");
             if (countrycode in 12h_format_countries_list) {
                 configuration.clock_format = "12h";
             }

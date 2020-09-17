@@ -103,7 +103,7 @@ public class LocationHelper : GLib.Object {
         foreach (var line in lines) {
             var items = line.split ("\t", 4);
             string value = items[2];
-            
+
             if (value == timezone) {
                 return items[0];
             }
