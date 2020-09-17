@@ -17,7 +17,7 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class InitialSetup.LocationLayout : GLib.Object {    
+public class InitialSetup.LocationLayout : GLib.Object {
     public string name { get; construct; }
     public string original_name { get; construct; }
     public string display_name {
