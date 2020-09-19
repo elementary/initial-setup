@@ -35,7 +35,7 @@ public class Installer.ThirdPartySoftwareView : AbstractInstallerView {
         additional_media_formats_name_label.halign = Gtk.Align.START;
         additional_media_formats_name_label.hexpand = true;
 
-        var additional_media_formats_description_label = new Gtk.Label (_("This software is subject to license terms included with its documentation. Some is propietary."));
+        var additional_media_formats_description_label = new Gtk.Label (_("This software is subject to license terms included with its documentation. Some is proprietary."));
         additional_media_formats_description_label.wrap = true;
         additional_media_formats_description_label.xalign = 0;
 
