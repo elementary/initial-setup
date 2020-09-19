@@ -24,6 +24,7 @@ public class Installer.MainWindow : Gtk.Window {
     private AccountView account_view;
     private LanguageView language_view;
     private KeyboardLayoutView keyboard_layout_view;
+    private ThirdPartySoftwareView third_party_software_view;
 
     public MainWindow () {
         Object (
@@ -71,7 +72,20 @@ public class Installer.MainWindow : Gtk.Window {
         stack.add (keyboard_layout_view);
         stack.visible_child = keyboard_layout_view;
 
-        keyboard_layout_view.next_step.connect (() => load_account_view ());
+        keyboard_layout_view.next_step.connect (() => load_third_party_software_view ());
+    }
+
+    private void load_third_party_software_view () {
+        if (third_party_software_view != null) {
+            third_party_software_view.destroy ();
+        }
+
+        third_party_software_view = new ThirdPartySoftwareView ();
+        third_party_software_view.previous_view = keyboard_layout_view;
+        stack.add (third_party_software_view);
+        stack.visible_child = third_party_software_view;
+
+        third_party_software_view.next_step.connect (() => load_account_view ());
     }
 
     private void load_account_view () {
@@ -80,7 +94,7 @@ public class Installer.MainWindow : Gtk.Window {
         }
 
         account_view = new AccountView ();
-        account_view.previous_view = keyboard_layout_view;
+        account_view.previous_view = third_party_software_view;
         stack.add (account_view);
         stack.visible_child = account_view;
 
