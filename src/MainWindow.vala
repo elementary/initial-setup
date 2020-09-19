@@ -23,7 +23,7 @@ public class Installer.MainWindow : Hdy.Window {
     private AccountView account_view;
     private LanguageView language_view;
     private KeyboardLayoutView keyboard_layout_view;
-    private ThirdPartySoftwareView third_party_software_view;
+    private SoftwareView third_party_software_view;
 
     public MainWindow () {
         Object (
@@ -74,7 +74,7 @@ public class Installer.MainWindow : Hdy.Window {
             third_party_software_view.destroy ();
         }
 
-        third_party_software_view = new ThirdPartySoftwareView ();
+        third_party_software_view = new SoftwareView ();
         third_party_software_view.previous_view = keyboard_layout_view;
         stack.add (third_party_software_view);
         stack.visible_child = third_party_software_view;
