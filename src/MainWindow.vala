@@ -126,7 +126,7 @@ public class Installer.MainWindow : Hdy.Window {
     private void set_clock_format_for_user (Act.User user) {
         unowned Configuration configuration = Configuration.get_default ();
 
-        configuration.clock_format = LocationHelper.get_default ().get_clock_format ();
+        configuration.clock_format = LocationHelper.get_clock_format ();
 
         Utils.set_clock_format_for_user (configuration.clock_format, user);
     }
