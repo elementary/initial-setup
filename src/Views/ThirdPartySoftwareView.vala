@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2017 elementary LLC. (https://elementary.io)
+ * Copyright 2020 elementary, Inc. (https://elementary.io)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -13,6 +13,7 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
  */
 
 public class Installer.ThirdPartySoftwareView : AbstractInstallerView {
@@ -29,7 +30,7 @@ public class Installer.ThirdPartySoftwareView : AbstractInstallerView {
         form_grid.valign = Gtk.Align.CENTER;
         form_grid.vexpand = true;
 
-        var additional_media_formats_name_label = new Gtk.Label ("Install additional media formats");
+        var additional_media_formats_name_label = new Gtk.Label (_("Install additional media formats"));
         additional_media_formats_name_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
         additional_media_formats_name_label.halign = Gtk.Align.START;
         additional_media_formats_name_label.hexpand = true;
@@ -69,7 +70,12 @@ public class Installer.ThirdPartySoftwareView : AbstractInstallerView {
 
     private void on_next_button_clicked () {
         unowned Configuration configuration = Configuration.get_default ();
-        print ("install_additional_media_formats: %s\n", configuration.install_additional_media_formats ? "true" : "false");
+        var additional_packages_to_install = new List<string> ();
+        if (configuration.install_additional_media_formats) {
+            additional_packages_to_install.append ("gstreamer1.0-libav");
+            additional_packages_to_install.append ("gstreamer1.0-plugins-bad");
+            additional_packages_to_install.append ("gstreamer1.0-plugins-ugly");
+        }
 
         next_step ();
     }
