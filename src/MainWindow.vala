@@ -1,6 +1,5 @@
-// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2016-2017 elementary LLC. (https://elementary.io)
+ * Copyright 2016-2020 elementary, Inc. (https://elementary.io)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,7 +17,7 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class Installer.MainWindow : Gtk.Window {
+public class Installer.MainWindow : Hdy.Window {
     private Gtk.Stack stack;
 
     private AccountView account_view;
@@ -40,18 +39,13 @@ public class Installer.MainWindow : Gtk.Window {
     construct {
         language_view = new LanguageView ();
 
-        stack = new Gtk.Stack ();
-        stack.margin_bottom = 12;
-        stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
+        stack = new Gtk.Stack () {
+            margin_bottom = 12,
+            margin_top = 12,
+            transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT
+        };
         stack.add (language_view);
 
-        var titlebar = new Gtk.HeaderBar ();
-        titlebar.get_style_context ().add_class ("default-decoration");
-        titlebar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
-        titlebar.set_custom_title (new Gtk.Label (null));
-
-        get_style_context ().add_class ("rounded");
-        set_titlebar (titlebar);
         add (stack);
 
         language_view.next_step.connect (() => load_keyboard_view ());
