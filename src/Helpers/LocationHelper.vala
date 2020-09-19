@@ -129,7 +129,7 @@ public class LocationHelper : GLib.Object {
     }
 
     public static string get_clock_format () {
-        var T_FMT = Posix.nl_langinfo (Posix.NLItem.T_FMT);
+        const string T_FMT = Posix.nl_langinfo (Posix.NLItem.T_FMT);
 
         if (T_FMT.contains ("%r") || T_FMT.contains ("%l") || T_FMT.contains ("%I")) {
             return "12h";
