@@ -24,7 +24,6 @@ configuration_data = configuration_data()
 configuration_data.set('GETTEXT_PACKAGE', meson.project_name())
 configuration_data.set('LANG_LIST', get_option('supported_languages'))
 configuration_data.set('PREFERRED_LANG_LIST', get_option('preferred_languages'))
-configuration_data.set('12H_FORMAT_COUNTRIES_LIST', get_option('12h_format_countries'))
 
 xkbconf = dependency('xkeyboard-config')
 xkb_base = xkbconf.get_pkgconfig_variable('xkb_base')

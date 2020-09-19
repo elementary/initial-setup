@@ -128,6 +128,16 @@ public class LocationHelper : GLib.Object {
         return city.replace ("_", " ").replace ("/", ", ");
     }
 
+    public static string get_clock_format () {
+        var T_FMT = Posix.nl_langinfo (Posix.NLItem.T_FMT);
+
+        if (T_FMT.contains ("%r") || T_FMT.contains ("%l") || T_FMT.contains ("%I")) {
+            return "12h";
+        }
+
+        return "24h";
+    }
+
 #if GENERATE
     public void generate_translation_template () {
         var file = GLib.File.new_for_path (GLib.Environment.get_home_dir () + "/Translations.vala");

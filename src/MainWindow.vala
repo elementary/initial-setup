@@ -99,9 +99,9 @@ public class Installer.MainWindow : Hdy.Window {
         if (account_view.created != null) {
             account_view.created.set_language (Configuration.get_default ().lang);
 
-            set_clock_format_for_user (account_view.created);
-
             set_timezone ();
+
+            set_clock_format_for_user (account_view.created);
 
             set_keyboard_layout.begin ((obj, res) => {
                 set_keyboard_layout.end (res);
@@ -126,13 +126,7 @@ public class Installer.MainWindow : Hdy.Window {
     private void set_clock_format_for_user (Act.User user) {
         unowned Configuration configuration = Configuration.get_default ();
 
-        var countrycode = LocationHelper.get_default ().get_countrycode_from_timezone (Configuration.get_default ().timezone);
-        if (countrycode != null) {
-            var 12h_format_countries_list = Build.12H_FORMAT_COUNTRIES_LIST.split (";");
-            if (countrycode in 12h_format_countries_list) {
-                configuration.clock_format = "12h";
-            }
-        }
+        configuration.clock_format = LocationHelper.get_default ().get_clock_format ();
 
         Utils.set_clock_format_for_user (configuration.clock_format, user);
     }
