@@ -18,6 +18,7 @@ handy_dep = dependency('libhandy-1', version: '>=0.90.0')
 gtk_dep = dependency('gtk+-3.0')
 handy_dep = dependency('libhandy-1', version: '>= 0.90.0')
 json_glib_dep = dependency('json-glib-1.0')
+packagekit_dep = dependency ('packagekit-glib2')
 polkit_dep = dependency('polkit-gobject-1')
 posix_dep = meson.get_compiler('vala').find_library('posix')
 pwquality_dep = dependency('pwquality')
@@ -34,6 +35,7 @@ dependencies = [
     gtk_dep,
     handy_dep,
     json_glib_dep,
+    packagekit_dep,
     polkit_dep,
     posix_dep,
     pwquality_dep,
