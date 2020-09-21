@@ -23,7 +23,7 @@ public class Installer.MainWindow : Hdy.Window {
     private AccountView account_view;
     private LanguageView language_view;
     private KeyboardLayoutView keyboard_layout_view;
-    private SoftwareView third_party_software_view;
+    private SoftwareView software_view;
 
     public MainWindow () {
         Object (
@@ -66,20 +66,7 @@ public class Installer.MainWindow : Hdy.Window {
         stack.add (keyboard_layout_view);
         stack.visible_child = keyboard_layout_view;
 
-        keyboard_layout_view.next_step.connect (() => load_third_party_software_view ());
-    }
-
-    private void load_third_party_software_view () {
-        if (third_party_software_view != null) {
-            third_party_software_view.destroy ();
-        }
-
-        third_party_software_view = new SoftwareView ();
-        third_party_software_view.previous_view = keyboard_layout_view;
-        stack.add (third_party_software_view);
-        stack.visible_child = third_party_software_view;
-
-        third_party_software_view.next_step.connect (() => load_account_view ());
+        keyboard_layout_view.next_step.connect (() => load_account_view ());
     }
 
     private void load_account_view () {
@@ -88,25 +75,49 @@ public class Installer.MainWindow : Hdy.Window {
         }
 
         account_view = new AccountView ();
-        account_view.previous_view = third_party_software_view;
+        account_view.previous_view = keyboard_layout_view;
         stack.add (account_view);
         stack.visible_child = account_view;
 
-        account_view.next_step.connect (on_finish);
+        account_view.next_step.connect (() => load_software_view ());
+    }
+
+    private void load_software_view () {
+        if (software_view != null) {
+            software_view.destroy ();
+        }
+
+        software_view = new SoftwareView ();
+        software_view.previous_view = account_view;
+        stack.add (software_view);
+        stack.visible_child = software_view;
+
+        software_view.next_step.connect (on_finish);
     }
 
     private void on_finish () {
         if (account_view.created != null) {
-            account_view.created.set_language (Configuration.get_default ().lang);
+            unowned Configuration configuration = Configuration.get_default ();
+            account_view.created.set_language (configuration.lang);
 
             set_keyboard_layout.begin ((obj, res) => {
                 set_keyboard_layout.end (res);
                 destroy ();
             });
+
+            var additional_packages_to_install = new List<string> ();
+            if (configuration.install_additional_media_formats) {
+                additional_packages_to_install.append ("gstreamer1.0-libav");
+                additional_packages_to_install.append ("gstreamer1.0-plugins-bad");
+                additional_packages_to_install.append ("gstreamer1.0-plugins-ugly");
+            }
+
+            if (additional_packages_to_install.length () > 0) {
+                //  TODO: install additional packages
+            }
         } else {
             destroy ();
         }
-
     }
 
     private async void set_keyboard_layout () {

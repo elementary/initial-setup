@@ -96,7 +96,7 @@ public class Installer.AccountView : AbstractInstallerView {
 
         var back_button = new Gtk.Button.with_label (_("Back"));
 
-        finish_button = new Gtk.Button.with_label (_("Finish Setup"));
+        finish_button = new Gtk.Button.with_label (_("Select"));
         finish_button.can_default = true;
         finish_button.sensitive = false;
         finish_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);

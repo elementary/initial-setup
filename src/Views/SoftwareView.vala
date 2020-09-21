@@ -55,7 +55,7 @@ public class Installer.SoftwareView : AbstractInstallerView {
 
         var back_button = new Gtk.Button.with_label (_("Back"));
 
-        var next_button = new Gtk.Button.with_label (_("Select"));
+        var next_button = new Gtk.Button.with_label (_("Finish Setup"));
         next_button.sensitive = true;
         next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
@@ -69,14 +69,6 @@ public class Installer.SoftwareView : AbstractInstallerView {
     }
 
     private void on_next_button_clicked () {
-        unowned Configuration configuration = Configuration.get_default ();
-        var additional_packages_to_install = new List<string> ();
-        if (configuration.install_additional_media_formats) {
-            additional_packages_to_install.append ("gstreamer1.0-libav");
-            additional_packages_to_install.append ("gstreamer1.0-plugins-bad");
-            additional_packages_to_install.append ("gstreamer1.0-plugins-ugly");
-        }
-
         next_step ();
     }
 }
