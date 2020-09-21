@@ -109,11 +109,11 @@ public class Installer.MainWindow : Hdy.Window {
             progress_view.progressbar_label.label = _("Setting keyboard layout");
             set_keyboard_layout.begin ((obj, res) => {
                 set_keyboard_layout.end (res);
-                
+
                 install_additional_packages.begin ((obj, res) => {
                     install_additional_packages.end (res);
                     destroy ();
-                }); 
+                });
             });
         } else {
             destroy ();
