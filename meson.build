@@ -1,6 +1,10 @@
 project('io.elementary.initial-setup', 'vala', 'c')
 
-add_global_arguments('-DGETTEXT_PACKAGE="' + meson.project_name() + '"', language:'c')
+add_global_arguments(
+    '-DGETTEXT_PACKAGE="' + meson.project_name() + '"',
+    '-DI_KNOW_THE_PACKAGEKIT_GLIB2_API_IS_SUBJECT_TO_CHANGE',
+    language:'c'
+)
 add_project_arguments(['--vapidir', join_paths(meson.current_source_dir(), 'vapi')],
                       language: 'vala')
 

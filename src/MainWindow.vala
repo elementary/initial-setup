@@ -24,6 +24,7 @@ public class Installer.MainWindow : Hdy.Window {
     private LanguageView language_view;
     private KeyboardLayoutView keyboard_layout_view;
     private SoftwareView software_view;
+    private ProgressView progress_view;
 
     public MainWindow () {
         Object (
@@ -96,25 +97,24 @@ public class Installer.MainWindow : Hdy.Window {
     }
 
     private void on_finish () {
+        progress_view = new ProgressView ();
+        stack.add (progress_view);
+        stack.visible_child = progress_view;
+
         if (account_view.created != null) {
             unowned Configuration configuration = Configuration.get_default ();
+            progress_view.progressbar_label.label = _("Setting language");
             account_view.created.set_language (configuration.lang);
 
+            progress_view.progressbar_label.label = _("Setting keyboard layout");
             set_keyboard_layout.begin ((obj, res) => {
                 set_keyboard_layout.end (res);
-                destroy ();
+                
+                install_additional_packages.begin ((obj, res) => {
+                    install_additional_packages.end (res);
+                    destroy ();
+                }); 
             });
-
-            var additional_packages_to_install = new List<string> ();
-            if (configuration.install_additional_media_formats) {
-                additional_packages_to_install.append ("gstreamer1.0-libav");
-                additional_packages_to_install.append ("gstreamer1.0-plugins-bad");
-                additional_packages_to_install.append ("gstreamer1.0-plugins-ugly");
-            }
-
-            if (additional_packages_to_install.length () > 0) {
-                //  TODO: install additional packages
-            }
         } else {
             destroy ();
         }
@@ -146,6 +146,44 @@ public class Installer.MainWindow : Hdy.Window {
             }
 
             accounts_service.keyboard_layouts = { layout };
+        }
+    }
+
+    private async void install_additional_packages () {
+        unowned Configuration configuration = Configuration.get_default ();
+
+        string[] additional_packages_to_install = {};
+        if (configuration.install_additional_media_formats) {
+            additional_packages_to_install += "gstreamer1.0-libav";
+            additional_packages_to_install += "gstreamer1.0-plugins-bad";
+            additional_packages_to_install += "gstreamer1.0-plugins-ugly";
+        }
+
+        additional_packages_to_install += null;
+
+        if (additional_packages_to_install.length > 0) {
+            var client = new Pk.Client ();
+            var transaction_flags = Pk.Bitfield.from_enums (Pk.Filter.NEWEST, Pk.Filter.ARCH);
+
+            yield client.refresh_cache_async (true, null, (progress, status) => {
+                progress_view.progressbar.fraction = progress.percentage;
+            });
+
+            progress_view.progressbar_label.label = _("Refreshing the package cache");
+            var results = yield client.resolve_async (transaction_flags, additional_packages_to_install, null, (progress, status) => {});
+            var package_array = results.get_package_array ();
+
+            string[] packages_ids = {};
+            package_array.foreach ((package) => {
+                packages_ids += package.package_id;
+            });
+
+            packages_ids += null;
+
+            progress_view.progressbar_label.label = _("Installing additional packages");
+            yield client.install_packages_async (transaction_flags, packages_ids, null, (progress, status) => {
+                progress_view.progressbar.fraction = progress.percentage;
+            });
         }
     }
 }
