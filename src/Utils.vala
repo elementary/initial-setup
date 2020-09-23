@@ -126,8 +126,13 @@ namespace Utils {
     }
 
     public static void set_clock_format_for_user (string clock_format, Act.User user) {
-        // TODO get settings for new user
-        var clock_settings = new GLib.Settings ("org.gnome.desktop.interface");
+        var settings_backend = SettingsBackend.keyfile_settings_backend_new (
+            "user",
+            "%s/.config/dconf/".printf (user.get_home_dir ()),
+            null
+        );
+    
+        var clock_settings = new GLib.Settings.with_backend ("org.gnome.desktop.interface", settings_backend);
         clock_settings.set_string ("clock-format", clock_format);
     }
 }
