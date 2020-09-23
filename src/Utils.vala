@@ -131,7 +131,7 @@ namespace Utils {
             "%s/.config/dconf/".printf (user.get_home_dir ()),
             null
         );
-    
+
         var clock_settings = new GLib.Settings.with_backend ("org.gnome.desktop.interface", settings_backend);
         clock_settings.set_string ("clock-format", clock_format);
     }
