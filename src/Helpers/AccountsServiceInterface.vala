@@ -7,6 +7,7 @@ interface Installer.AccountsService : Object {
 
     public abstract KeyboardLayout[] keyboard_layouts { owned get; set; }
     public abstract uint active_keyboard_layout { get; set; }
+    public abstract string clock_format { get; set; }
 }
 
 [DBus (name = "org.freedesktop.Accounts")]
