@@ -99,12 +99,8 @@ public class Installer.MainWindow : Hdy.Window {
         if (account_view.created != null) {
             account_view.created.set_language (Configuration.get_default ().lang);
 
-            set_timezone ();
-
-            set_clock_format ();
-
-            set_keyboard_layout.begin ((obj, res) => {
-                set_keyboard_layout.end (res);
+            set_settings.begin ((obj, res) => {
+                set_settings.end (res);
                 destroy ();
             });
         } else {
@@ -113,9 +109,9 @@ public class Installer.MainWindow : Hdy.Window {
 
     }
 
-    private void set_timezone () {
+    private async void set_timezone () {
         try {
-            LocationHelper.DateTime1 datetime1 = Bus.get_proxy_sync (BusType.SYSTEM, "org.freedesktop.timedate1", "/org/freedesktop/timedate1");
+            LocationHelper.DateTime1 datetime1 = yield Bus.get_proxy (BusType.SYSTEM, "org.freedesktop.timedate1", "/org/freedesktop/timedate1");
             unowned Configuration configuration = Configuration.get_default ();
             datetime1.set_timezone (configuration.timezone, true);
         } catch (Error e) {
@@ -123,16 +119,16 @@ public class Installer.MainWindow : Hdy.Window {
         }
     }
 
-    private void set_clock_format () {
+    private async void set_clock_format () {
         AccountsService accounts_service = null;
 
         try {
-            var act_service = GLib.Bus.get_proxy_sync<FDO.Accounts> (GLib.BusType.SYSTEM,
+            var act_service = yield GLib.Bus.get_proxy<FDO.Accounts> (GLib.BusType.SYSTEM,
                                                                       "org.freedesktop.Accounts",
                                                                       "/org/freedesktop/Accounts");
             var user_path = act_service.find_user_by_name (account_view.created.user_name);
 
-            accounts_service = GLib.Bus.get_proxy_sync (GLib.BusType.SYSTEM,
+            accounts_service = yield GLib.Bus.get_proxy (GLib.BusType.SYSTEM,
                                                         "org.freedesktop.Accounts",
                                                         user_path,
                                                         GLib.DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
@@ -172,5 +168,11 @@ public class Installer.MainWindow : Hdy.Window {
 
             accounts_service.keyboard_layouts = { layout };
         }
+    }
+
+    private async void set_settings () {
+        yield set_timezone ();
+        yield set_clock_format ();
+        yield set_keyboard_layout ();
     }
 }
