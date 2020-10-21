@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2020-07-28 15:12+0000\n"
+"PO-Revision-Date: 2020-10-10 13:25+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/installer/"
 "initial-setup/pt/>\n"
@@ -30,12 +30,12 @@ msgstr ""
 #: src/Utils.vala:70
 #, c-format
 msgid "Creating User '%s' Failed"
-msgstr "A criação do Utilizador %s falhou"
+msgstr "Falha ao criar o Utilizador '%s'"
 
 #: src/Utils.vala:74
 #, c-format
 msgid "No Permission to Create User '%s'"
-msgstr "Sem permissão para criar utilizador '%s'"
+msgstr "Sem permissão para criar o utilizador '%s'"
 
 #: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:188
 #, c-format
@@ -48,7 +48,7 @@ msgstr "Predefinido"
 
 #: src/Views/AccountView.vala:34
 msgid "Create an Account"
-msgstr "Criar uma conta"
+msgstr "Criar uma Conta"
 
 #: src/Views/AccountView.vala:38
 msgid "Full Name"
