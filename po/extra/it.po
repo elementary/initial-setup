@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2019-07-02 08:27+0000\n"
+"PO-Revision-Date: 2020-10-23 19:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
 #: data/io.elementary.initial-setup.desktop.in:3
@@ -35,26 +35,28 @@ msgstr "system-os-installer"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:7
 msgid "Initial Setup"
-msgstr ""
+msgstr "Configurazione iniziale"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:10
 msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
 msgstr ""
+"Assiste con le attività essenziali prima che una nuova installazione sia "
+"utilizzabile, come la scelta di una lingua e la creazione di un account "
+"utente."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:26
 msgid "Translation updates"
-msgstr ""
+msgstr "Traduzioni aggiornate"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:31
 msgid "Initial release"
-msgstr ""
+msgstr "Rilascio iniziale"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:66
-#, fuzzy
 msgid "elementary, Inc."
-msgstr "Configura elementary OS"
+msgstr "elementary, Inc."
 
 #~ msgid "Calculator"
 #~ msgstr "Calcolatrice"
