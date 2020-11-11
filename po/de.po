@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2020-10-28 03:15+0000\n"
+"PO-Revision-Date: 2020-11-12 20:15+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/installer/"
 "initial-setup/de/>\n"
@@ -50,7 +50,7 @@ msgstr "%s …"
 
 #: src/Objects/KeyboardVariant.vala:27
 msgid "Default"
-msgstr "Standard"
+msgstr "Vorgabe"
 
 #: src/Views/AccountView.vala:34
 msgid "Create an Account"
