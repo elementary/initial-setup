@@ -1,6 +1,6 @@
 [Initial setup]
 Identity=unix-user:lightdm
-Action=org.freedesktop.accounts.user-administration
+Action=org.freedesktop.accounts.user-administration;io.elementary.pantheon.AccountsService.ModifyAny
 ResultAny=yes
 ResultInactive=yes
 ResultActive=yes
