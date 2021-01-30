@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2020-10-25 04:15+0000\n"
+"PO-Revision-Date: 2021-01-29 23:59+0000\n"
 "Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "installer/initial-setup/zh_Hans/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
 #: src/MainWindow.vala:34
@@ -23,9 +23,7 @@ msgstr "新建用户"
 msgid ""
 "Initial Setup could not create your user. Without it, you will not be able "
 "to log in and may need to reinstall the OS."
-msgstr ""
-"初始设置无法创建您的账户。缺少此账户，您将无法登入设备，还可能需要重新安装系"
-"统。"
+msgstr "初始设置无法创建您的账户。如果缺少此账户，您将无法登入设备，还可能需要重新安装系统。"
 
 #: src/Utils.vala:70
 #, c-format
@@ -93,7 +91,7 @@ msgstr "键盘布局"
 
 #: src/Views/KeyboardLayoutView.vala:34
 msgid "Type to test your layout"
-msgstr "输入以检测布局"
+msgstr "输入以测试布局"
 
 #: src/Views/KeyboardLayoutView.vala:37
 msgid "Show keyboard layout"
