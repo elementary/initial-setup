@@ -89,16 +89,29 @@ public class Installer.MainWindow : Gtk.Window {
 
     private void on_finish () {
         if (account_view.created != null) {
-            account_view.created.set_language (Configuration.get_default ().lang);
-
-            set_keyboard_layout.begin ((obj, res) => {
-                set_keyboard_layout.end (res);
+            set_keyboard_and_locale.begin ((obj, res) => {
+                set_keyboard_and_locale.end (res);
                 destroy ();
             });
         } else {
             destroy ();
         }
 
+    }
+
+    private async void set_keyboard_and_locale () {
+        yield set_keyboard_layout ();
+
+        string lang = Configuration.get_default ().lang;
+        string? locale = null;
+        bool success = yield LocaleHelper.language2locale (lang, out locale);
+
+        if (!success || locale == null || locale == "") {
+            warning ("Falling back to setting unconverted language as user's locale, may result in incorrect language");
+            account_view.created.set_language (lang);
+        } else {
+            account_view.created.set_language (locale);
+        }
     }
 
     private async void set_keyboard_layout () {
