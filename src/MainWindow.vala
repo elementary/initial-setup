@@ -107,8 +107,8 @@ public class Installer.MainWindow : Hdy.Window {
             account_view.created.set_language (configuration.lang);
 
             progress_view.progressbar_label.label = _("Setting keyboard layout");
-            set_keyboard_layout.begin ((obj, res) => {
-                set_keyboard_layout.end (res);
+            set_keyboard_and_locale.begin ((obj, res) => {
+                set_keyboard_and_locale.end (res);
 
                 install_additional_packages.begin ((obj, res) => {
                     install_additional_packages.end (res);
@@ -117,6 +117,21 @@ public class Installer.MainWindow : Hdy.Window {
             });
         } else {
             destroy ();
+        }
+    }
+
+    private async void set_keyboard_and_locale () {
+        yield set_keyboard_layout ();
+
+        string lang = Configuration.get_default ().lang;
+        string? locale = null;
+        bool success = yield LocaleHelper.language2locale (lang, out locale);
+
+        if (!success || locale == null || locale == "") {
+            warning ("Falling back to setting unconverted language as user's locale, may result in incorrect language");
+            account_view.created.set_language (lang);
+        } else {
+            account_view.created.set_language (locale);
         }
     }
 
