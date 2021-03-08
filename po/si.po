@@ -3,21 +3,21 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2018-06-10 00:11+0000\n"
-"Last-Translator: Gamunu Balagalla <gamunu.balagalla@gmail.com>\n"
-"Language-Team: Sinhala <https://weblate.elementary.io/projects/installer/"
+"PO-Revision-Date: 2021-03-04 15:31+0000\n"
+"Last-Translator: HelaBasa <R45XvezA@pm.me>\n"
+"Language-Team: Sinhala <https://l10n.elementary.io/projects/installer/"
 "initial-setup/si/>\n"
 "Language: si\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/MainWindow.vala:34
 msgid "Create a User"
-msgstr ""
+msgstr "පරිශීලකයෙකු සාදන්න"
 
 #: src/Utils.vala:53
 msgid ""
@@ -50,15 +50,15 @@ msgstr ""
 
 #: src/Views/AccountView.vala:38
 msgid "Full Name"
-msgstr ""
+msgstr "සම්පූර්ණ නම"
 
 #: src/Views/AccountView.vala:43
 msgid "Username"
-msgstr ""
+msgstr "පරිශීලක නාමය"
 
 #: src/Views/AccountView.vala:50
 msgid "Choose a Password"
-msgstr ""
+msgstr "මුරපදයක් තෝරන්න"
 
 #: src/Views/AccountView.vala:65
 msgid "Confirm Password"
@@ -78,7 +78,7 @@ msgstr "මුර පද ගැලපෙන්නේ නැත"
 
 #: src/Views/AccountView.vala:211
 msgid "The chosen username is already taken"
-msgstr ""
+msgstr "තෝරාගත් පරිශීලක නාමය දැනටමත් ගෙන ඇත"
 
 #: src/Views/AccountView.vala:213
 msgid ""
@@ -112,11 +112,11 @@ msgstr "භාෂා"
 
 #: src/Views/LanguageView.vala:239
 msgid "Select a Language"
-msgstr "භාෂාව තෝරන්න"
+msgstr "භාෂාවක් තෝරන්න"
 
 #: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:317
 msgid "Currently active language"
-msgstr "දැනට ක්රියාකාරී භාෂාව"
+msgstr "දැනට ක්‍රියාකාරී භාෂාව"
 
 #~ msgid "Cancel Installation"
 #~ msgstr "ස්ථාපනය අවලංගු කරන්න"

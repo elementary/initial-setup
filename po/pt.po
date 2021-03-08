@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2020-10-10 13:25+0000\n"
+"PO-Revision-Date: 2021-03-03 01:39+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/installer/"
 "initial-setup/pt/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/MainWindow.vala:34
@@ -91,15 +91,15 @@ msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:26
 msgid "Keyboard Layout"
-msgstr "Disposição do Teclado"
+msgstr "Esquema de Teclado"
 
 #: src/Views/KeyboardLayoutView.vala:34
 msgid "Type to test your layout"
-msgstr "Escreva para testar a sua disposição de teclado"
+msgstr "Digite para testar o seu esquema de teclado"
 
 #: src/Views/KeyboardLayoutView.vala:37
 msgid "Show keyboard layout"
-msgstr "Mostrar a disposição do teclado"
+msgstr "Mostrar o esquema de teclado"
 
 #: src/Views/KeyboardLayoutView.vala:51 src/Views/LanguageView.vala:107
 #: src/Views/LanguageView.vala:162
@@ -108,7 +108,7 @@ msgstr "Selecione"
 
 #: src/Views/KeyboardLayoutView.vala:133
 msgid "Input Language"
-msgstr "Selecionar um idioma"
+msgstr "Idioma de introdução"
 
 #: src/Views/LanguageView.vala:195
 msgid "Languages"
