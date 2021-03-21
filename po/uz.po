@@ -3,115 +3,122 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2016-05-25 22:12+0000\n"
-"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-03-21 22:19+0000\n"
+"Last-Translator: Shukrullo Turgunov <shookrullo@gmail.com>\n"
+"Language-Team: Uzbek <https://l10n.elementary.io/projects/installer/"
+"initial-setup/uz/>\n"
+"Language: uz\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
 
 #: src/MainWindow.vala:34
 msgid "Create a User"
-msgstr ""
+msgstr "Foydalanuvchi yaratish"
 
 #: src/Utils.vala:53
 msgid ""
 "Initial Setup could not create your user. Without it, you will not be able "
 "to log in and may need to reinstall the OS."
 msgstr ""
+"Boshlang'ich sozlovchi sizning foydalanuvchingizni yarata olmadi. Busiz esa "
+"siz tizimga kira olmaysiz, sizga Operatsion Tizimni to'liq qayta "
+"o'rnatishingizga ham to'g'ri kelishi mumkin."
 
 #: src/Utils.vala:70
 #, c-format
 msgid "Creating User '%s' Failed"
-msgstr ""
+msgstr "\"%s\" foydalanuvchini yaratib bo'lmadi"
 
 #: src/Utils.vala:74
 #, c-format
 msgid "No Permission to Create User '%s'"
-msgstr ""
+msgstr "\"%s\" foydalanuvchini yaratish uchun huquq yetarli emas"
 
 #: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:188
 #, c-format
 msgid "%s…"
-msgstr ""
+msgstr "%s…"
 
 #: src/Objects/KeyboardVariant.vala:27
 msgid "Default"
-msgstr ""
+msgstr "Odatdagi"
 
 #: src/Views/AccountView.vala:34
 msgid "Create an Account"
-msgstr ""
+msgstr "Ro'yxatdan o'tish"
 
 #: src/Views/AccountView.vala:38
 msgid "Full Name"
-msgstr ""
+msgstr "To'liq ism"
 
 #: src/Views/AccountView.vala:43
 msgid "Username"
-msgstr ""
+msgstr "Foydalanuvchi nomi"
 
 #: src/Views/AccountView.vala:50
 msgid "Choose a Password"
-msgstr ""
+msgstr "Parol tanlang"
 
 #: src/Views/AccountView.vala:65
 msgid "Confirm Password"
-msgstr ""
+msgstr "Parolni qaytadan kiriting"
 
 #: src/Views/AccountView.vala:96 src/Views/KeyboardLayoutView.vala:49
 msgid "Back"
-msgstr ""
+msgstr "Orqaga"
 
 #: src/Views/AccountView.vala:98
 msgid "Finish Setup"
-msgstr ""
+msgstr "O'rnatishni yakunlash"
 
 #: src/Views/AccountView.vala:182
 msgid "Passwords do not match"
-msgstr ""
+msgstr "Parollar mos kelmadi"
 
 #: src/Views/AccountView.vala:211
 msgid "The chosen username is already taken"
-msgstr ""
+msgstr "Tanlangan foydalanuvchi nomi allaqachon band qilingan"
 
 #: src/Views/AccountView.vala:213
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
+"Foydalanuvchi nomi bo'shliqlarsiz faqatgina kichik harflar va raqamlardan "
+"tashkil topishi mumkin"
 
 #: src/Views/KeyboardLayoutView.vala:26
 msgid "Keyboard Layout"
-msgstr ""
+msgstr "Klaviatura tili"
 
 #: src/Views/KeyboardLayoutView.vala:34
 msgid "Type to test your layout"
-msgstr ""
+msgstr "Klaviatura yozuv tilini sinab ko'rish uchun nimadir yozib ko'ring"
 
 #: src/Views/KeyboardLayoutView.vala:37
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "Klaviatura yozuv tilini ko'rsatish"
 
 #: src/Views/KeyboardLayoutView.vala:51 src/Views/LanguageView.vala:107
 #: src/Views/LanguageView.vala:162
 msgid "Select"
-msgstr ""
+msgstr "Tanlash"
 
 #: src/Views/KeyboardLayoutView.vala:133
 msgid "Input Language"
-msgstr ""
+msgstr "Kiritish tili"
 
 #: src/Views/LanguageView.vala:195
 msgid "Languages"
-msgstr ""
+msgstr "Tillar"
 
 #: src/Views/LanguageView.vala:239
 msgid "Select a Language"
-msgstr ""
+msgstr "Tilni tanlang"
 
 #: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:317
 msgid "Currently active language"
-msgstr ""
+msgstr "Joriy til"
