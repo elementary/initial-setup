@@ -158,6 +158,27 @@ namespace LocaleHelper {
         return lang_entries;
     }
 
+    public static async bool language2locale (string language, out string? locale) {
+        locale = null;
+
+        try {
+            var command = new GLib.Subprocess (
+                SubprocessFlags.STDOUT_PIPE,
+                "/usr/share/language-tools/language2locale",
+                language
+            );
+
+            yield command.communicate_utf8_async (null, null, out locale, null);
+            locale = locale.strip ();
+
+            return command.get_exit_status () == 0;
+        } catch (Error e) {
+            warning ("Error running language2locale, new user's language may be incorrect: %s", e.message);
+        }
+
+        return false;
+    }
+
     // Taken from the /usr/share/language-tools/main-countries script.
     public static string? get_main_country (string lang_prefix) {
         switch (lang_prefix) {

@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2019-09-07 18:22+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"PO-Revision-Date: 2021-03-04 02:39+0000\n"
+"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ru/>\n"
 "Language: ru\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/MainWindow.vala:34
@@ -36,7 +36,7 @@ msgstr "Не удалось создать пользователя '%s'"
 #: src/Utils.vala:74
 #, c-format
 msgid "No Permission to Create User '%s'"
-msgstr ""
+msgstr "Недостаточно прав для создания пользователя '%s'"
 
 #: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:188
 #, c-format
@@ -61,11 +61,11 @@ msgstr "Имя пользователя"
 
 #: src/Views/AccountView.vala:50
 msgid "Choose a Password"
-msgstr "Укажите пароль"
+msgstr "Выберите пароль"
 
 #: src/Views/AccountView.vala:65
 msgid "Confirm Password"
-msgstr "Подтвердить пароль"
+msgstr "Подтвердите пароль"
 
 #: src/Views/AccountView.vala:96 src/Views/KeyboardLayoutView.vala:49
 msgid "Back"
@@ -95,7 +95,7 @@ msgstr "Раскладка клавиатуры"
 
 #: src/Views/KeyboardLayoutView.vala:34
 msgid "Type to test your layout"
-msgstr "Проверьте раскладку"
+msgstr "Введите что-то для проверки раскладки"
 
 #: src/Views/KeyboardLayoutView.vala:37
 msgid "Show keyboard layout"
@@ -107,14 +107,12 @@ msgid "Select"
 msgstr "Выбрать"
 
 #: src/Views/KeyboardLayoutView.vala:133
-#, fuzzy
 msgid "Input Language"
-msgstr "Выберите язык"
+msgstr "Язык ввода"
 
 #: src/Views/LanguageView.vala:195
-#, fuzzy
 msgid "Languages"
-msgstr "Выберите язык"
+msgstr "Языки"
 
 #: src/Views/LanguageView.vala:239
 msgid "Select a Language"
@@ -122,7 +120,7 @@ msgstr "Выберите язык"
 
 #: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:317
 msgid "Currently active language"
-msgstr "Активный язык"
+msgstr "Текущий язык"
 
 #~ msgid "Cancel Installation"
 #~ msgstr "Отменить установку"
