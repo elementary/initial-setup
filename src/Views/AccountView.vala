@@ -22,8 +22,8 @@ public class Installer.AccountView : AbstractInstallerView {
     private ErrorRevealer pw_error_revealer;
     private ErrorRevealer username_error_revealer;
     private Gtk.Button finish_button;
-    private ValidatedEntry confirm_entry;
-    private ValidatedEntry username_entry;
+    private Granite.ValidatedEntry confirm_entry;
+    private Granite.ValidatedEntry username_entry;
     private ValidatedEntry pw_entry;
     private Gtk.LevelBar pw_levelbar;
 
@@ -42,7 +42,7 @@ public class Installer.AccountView : AbstractInstallerView {
 
         var username_label = new Granite.HeaderLabel (_("Username"));
 
-        username_entry = new ValidatedEntry ();
+        username_entry = new Granite.ValidatedEntry ();
 
         username_error_revealer = new ErrorRevealer (".");
         username_error_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
@@ -65,9 +65,10 @@ public class Installer.AccountView : AbstractInstallerView {
 
         var confirm_label = new Granite.HeaderLabel (_("Confirm Password"));
 
-        confirm_entry = new ValidatedEntry ();
-        confirm_entry.sensitive = false;
-        confirm_entry.visibility = false;
+        confirm_entry = new Granite.ValidatedEntry () {
+            sensitive = false,
+            visibility = false
+        };
 
         confirm_entry_revealer = new ErrorRevealer (".");
         confirm_entry_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
@@ -179,16 +180,13 @@ public class Installer.AccountView : AbstractInstallerView {
     private bool confirm_password () {
         if (confirm_entry.text != "") {
             if (pw_entry.text != confirm_entry.text) {
-                confirm_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
                 confirm_entry_revealer.label = _("Passwords do not match");
                 confirm_entry_revealer.reveal_child = true;
             } else {
-                confirm_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-completed-symbolic");
                 confirm_entry_revealer.reveal_child = false;
                 return true;
             }
         } else {
-            confirm_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, null);
             confirm_entry_revealer.reveal_child = false;
         }
 
@@ -202,10 +200,8 @@ public class Installer.AccountView : AbstractInstallerView {
 
         if (username_entry_text == "") {
             username_error_revealer.reveal_child = false;
-            username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, null);
         } else if (username_is_valid && !username_is_taken) {
             username_error_revealer.reveal_child = false;
-            username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-completed-symbolic");
             return true;
         } else {
             if (username_is_taken) {
@@ -215,7 +211,6 @@ public class Installer.AccountView : AbstractInstallerView {
             }
 
             username_error_revealer.reveal_child = true;
-            username_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-error-symbolic");
         }
 
         return false;
