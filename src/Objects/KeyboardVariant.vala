@@ -38,7 +38,36 @@ public class InitialSetup.KeyboardVariant : GLib.Object {
         if (name == null) {
             return layout.to_gsd_variant ();
         } else {
-            return new GLib.Variant ("(ss)", "xkb", "%s+%s".printf (layout.name, name));
+            string xkb_layout_name = "%s(%s)".printf (layout.name, name);
+            if (!(xkb_layout_name in KeyboardLayout.NON_LATIN_LAYOUTS)) {
+                // Layout can type latin characters, return a single layout
+                var primary_layout = new GLib.Variant ("(ss)", "xkb", "%s+%s".printf (layout.name, name));
+                return new GLib.Variant.array (new VariantType ("(ss)"), { primary_layout });
+            } else {
+                // User's layout doesn't use latin characters, also add US layout so they can type a username and password
+                var en_us = new GLib.Variant ("(ss)", "xkb", "us");
+                var primary_layout = new GLib.Variant ("(ss)", "xkb", "%s+%s".printf (layout.name, name));
+                return new GLib.Variant.array (new VariantType ("(ss)"), { en_us, primary_layout });
+            }
+        }
+    }
+
+    public Installer.AccountsService.KeyboardLayout[] to_accountsservice_array () {
+        if (name == null) {
+            return layout.to_accountsservice_array ();
+        } else {
+            string xkb_layout_name = "%s(%s)".printf (layout.name, name);
+            if (!(xkb_layout_name in KeyboardLayout.NON_LATIN_LAYOUTS)) {
+                // Layout can type latin characters, return a single layout
+                return {
+                    Installer.AccountsService.KeyboardLayout () { backend = "xkb", name = "%s+%s".printf (layout.name, name) }
+                };
+            } else {
+                return {
+                    Installer.AccountsService.KeyboardLayout () { backend = "xkb", name = "us" },
+                    Installer.AccountsService.KeyboardLayout () { backend = "xkb", name = "%s+%s".printf (layout.name, name) }
+                };
+            }
         }
     }
 
