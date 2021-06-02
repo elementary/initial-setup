@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 00:35+0000\n"
+"POT-Creation-Date: 2021-06-02 17:04+0000\n"
 "PO-Revision-Date: 2021-03-04 02:39+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/installer/"
@@ -16,7 +16,7 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
-#: src/MainWindow.vala:34
+#: src/MainWindow.vala:33
 msgid "Create a User"
 msgstr "Создать пользователя"
 
@@ -28,12 +28,12 @@ msgstr ""
 "Начальная установка не может создать вашего пользователя. Без этого вы не "
 "сможете войти в систему и, возможно, придется переустановить ОС."
 
-#: src/Utils.vala:70
+#: src/Utils.vala:65
 #, c-format
 msgid "Creating User '%s' Failed"
 msgstr "Не удалось создать пользователя '%s'"
 
-#: src/Utils.vala:74
+#: src/Utils.vala:69
 #, c-format
 msgid "No Permission to Create User '%s'"
 msgstr "Недостаточно прав для создания пользователя '%s'"
@@ -47,50 +47,52 @@ msgstr "%s…"
 msgid "Default"
 msgstr "По умолчанию"
 
-#: src/Views/AccountView.vala:34
+#: src/Views/AccountView.vala:35
 msgid "Create an Account"
 msgstr "Зарегистрироваться"
 
-#: src/Views/AccountView.vala:38
+#: src/Views/AccountView.vala:39
 msgid "Full Name"
 msgstr "Полное имя"
 
-#: src/Views/AccountView.vala:43
+#: src/Views/AccountView.vala:44
 msgid "Username"
 msgstr "Имя пользователя"
 
-#: src/Views/AccountView.vala:50
+#: src/Views/AccountView.vala:51
 msgid "Choose a Password"
 msgstr "Выберите пароль"
 
-#: src/Views/AccountView.vala:65
+#: src/Views/AccountView.vala:67
 msgid "Confirm Password"
 msgstr "Подтвердите пароль"
 
-#: src/Views/AccountView.vala:96 src/Views/KeyboardLayoutView.vala:49
+#: src/Views/AccountView.vala:98 src/Views/KeyboardLayoutView.vala:49
 msgid "Back"
 msgstr "Назад"
 
-#: src/Views/AccountView.vala:98
+#: src/Views/AccountView.vala:100
 msgid "Finish Setup"
 msgstr "Завершить установку"
 
-#: src/Views/AccountView.vala:182
+#: src/Views/AccountView.vala:186
 msgid "Passwords do not match"
 msgstr "Пароли не совпадают"
 
-#: src/Views/AccountView.vala:211
+#: src/Views/AccountView.vala:215
 msgid "The chosen username is already taken"
 msgstr "Выбранное имя пользователя уже занято"
 
-#: src/Views/AccountView.vala:213
+#: src/Views/AccountView.vala:217
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
 "Имя пользователя должно содержать только строчные буквы и цифры, без пробелов"
 
 #: src/Views/KeyboardLayoutView.vala:26
-msgid "Keyboard Layout"
+#, fuzzy
+#| msgid "Keyboard Layout"
+msgid "Select Keyboard Layout"
 msgstr "Раскладка клавиатуры"
 
 #: src/Views/KeyboardLayoutView.vala:34
@@ -118,7 +120,7 @@ msgstr "Языки"
 msgid "Select a Language"
 msgstr "Выберите язык"
 
-#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:317
+#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:319
 msgid "Currently active language"
 msgstr "Текущий язык"
 

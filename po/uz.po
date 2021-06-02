@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 00:35+0000\n"
+"POT-Creation-Date: 2021-06-02 17:04+0000\n"
 "PO-Revision-Date: 2021-03-21 22:19+0000\n"
 "Last-Translator: Shukrullo Turgunov <shookrullo@gmail.com>\n"
-"Language-Team: Uzbek <https://l10n.elementary.io/projects/installer/"
-"initial-setup/uz/>\n"
+"Language-Team: Uzbek <https://l10n.elementary.io/projects/installer/initial-"
+"setup/uz/>\n"
 "Language: uz\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
-#: src/MainWindow.vala:34
+#: src/MainWindow.vala:33
 msgid "Create a User"
 msgstr "Foydalanuvchi yaratish"
 
@@ -28,12 +28,12 @@ msgstr ""
 "siz tizimga kira olmaysiz, sizga Operatsion Tizimni to'liq qayta "
 "o'rnatishingizga ham to'g'ri kelishi mumkin."
 
-#: src/Utils.vala:70
+#: src/Utils.vala:65
 #, c-format
 msgid "Creating User '%s' Failed"
 msgstr "\"%s\" foydalanuvchini yaratib bo'lmadi"
 
-#: src/Utils.vala:74
+#: src/Utils.vala:69
 #, c-format
 msgid "No Permission to Create User '%s'"
 msgstr "\"%s\" foydalanuvchini yaratish uchun huquq yetarli emas"
@@ -47,43 +47,43 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Odatdagi"
 
-#: src/Views/AccountView.vala:34
+#: src/Views/AccountView.vala:35
 msgid "Create an Account"
 msgstr "Ro'yxatdan o'tish"
 
-#: src/Views/AccountView.vala:38
+#: src/Views/AccountView.vala:39
 msgid "Full Name"
 msgstr "To'liq ism"
 
-#: src/Views/AccountView.vala:43
+#: src/Views/AccountView.vala:44
 msgid "Username"
 msgstr "Foydalanuvchi nomi"
 
-#: src/Views/AccountView.vala:50
+#: src/Views/AccountView.vala:51
 msgid "Choose a Password"
 msgstr "Parol tanlang"
 
-#: src/Views/AccountView.vala:65
+#: src/Views/AccountView.vala:67
 msgid "Confirm Password"
 msgstr "Parolni qaytadan kiriting"
 
-#: src/Views/AccountView.vala:96 src/Views/KeyboardLayoutView.vala:49
+#: src/Views/AccountView.vala:98 src/Views/KeyboardLayoutView.vala:49
 msgid "Back"
 msgstr "Orqaga"
 
-#: src/Views/AccountView.vala:98
+#: src/Views/AccountView.vala:100
 msgid "Finish Setup"
 msgstr "O'rnatishni yakunlash"
 
-#: src/Views/AccountView.vala:182
+#: src/Views/AccountView.vala:186
 msgid "Passwords do not match"
 msgstr "Parollar mos kelmadi"
 
-#: src/Views/AccountView.vala:211
+#: src/Views/AccountView.vala:215
 msgid "The chosen username is already taken"
 msgstr "Tanlangan foydalanuvchi nomi allaqachon band qilingan"
 
-#: src/Views/AccountView.vala:213
+#: src/Views/AccountView.vala:217
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
@@ -91,7 +91,9 @@ msgstr ""
 "tashkil topishi mumkin"
 
 #: src/Views/KeyboardLayoutView.vala:26
-msgid "Keyboard Layout"
+#, fuzzy
+#| msgid "Keyboard Layout"
+msgid "Select Keyboard Layout"
 msgstr "Klaviatura tili"
 
 #: src/Views/KeyboardLayoutView.vala:34
@@ -119,6 +121,6 @@ msgstr "Tillar"
 msgid "Select a Language"
 msgstr "Tilni tanlang"
 
-#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:317
+#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:319
 msgid "Currently active language"
 msgstr "Joriy til"

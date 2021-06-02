@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 00:35+0000\n"
+"POT-Creation-Date: 2021-06-02 17:04+0000\n"
 "PO-Revision-Date: 2019-12-30 06:47+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
-"Language-Team: Dutch <https://l10n.elementary.io/projects/installer/"
-"initial-setup/nl/>\n"
+"Language-Team: Dutch <https://l10n.elementary.io/projects/installer/initial-"
+"setup/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
-#: src/MainWindow.vala:34
+#: src/MainWindow.vala:33
 msgid "Create a User"
 msgstr "Gebruiker aanmaken"
 
@@ -28,12 +28,12 @@ msgstr ""
 "kunt u niet inloggen en moet u mogelijk het besturingssysteem opnieuw "
 "installeren."
 
-#: src/Utils.vala:70
+#: src/Utils.vala:65
 #, c-format
 msgid "Creating User '%s' Failed"
 msgstr "Gebruiker '%s' aanmaken is mislukt"
 
-#: src/Utils.vala:74
+#: src/Utils.vala:69
 #, c-format
 msgid "No Permission to Create User '%s'"
 msgstr "U heeft geen bevoegdheid om gebruiker '%s' aan te maken"
@@ -47,43 +47,43 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Standaard"
 
-#: src/Views/AccountView.vala:34
+#: src/Views/AccountView.vala:35
 msgid "Create an Account"
 msgstr "Account aanmaken"
 
-#: src/Views/AccountView.vala:38
+#: src/Views/AccountView.vala:39
 msgid "Full Name"
 msgstr "Volledige naam"
 
-#: src/Views/AccountView.vala:43
+#: src/Views/AccountView.vala:44
 msgid "Username"
 msgstr "Gebruikersnaam"
 
-#: src/Views/AccountView.vala:50
+#: src/Views/AccountView.vala:51
 msgid "Choose a Password"
 msgstr "Kies een wachtwoord"
 
-#: src/Views/AccountView.vala:65
+#: src/Views/AccountView.vala:67
 msgid "Confirm Password"
 msgstr "Wachtwoord bevestigen"
 
-#: src/Views/AccountView.vala:96 src/Views/KeyboardLayoutView.vala:49
+#: src/Views/AccountView.vala:98 src/Views/KeyboardLayoutView.vala:49
 msgid "Back"
 msgstr "Terug"
 
-#: src/Views/AccountView.vala:98
+#: src/Views/AccountView.vala:100
 msgid "Finish Setup"
 msgstr "Installatie voltooien"
 
-#: src/Views/AccountView.vala:182
+#: src/Views/AccountView.vala:186
 msgid "Passwords do not match"
 msgstr "Wachtwoorden komen niet overeen"
 
-#: src/Views/AccountView.vala:211
+#: src/Views/AccountView.vala:215
 msgid "The chosen username is already taken"
 msgstr "Deze gebruikersnaam wordt al gebruikt"
 
-#: src/Views/AccountView.vala:213
+#: src/Views/AccountView.vala:217
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
@@ -91,7 +91,9 @@ msgstr ""
 "spaties"
 
 #: src/Views/KeyboardLayoutView.vala:26
-msgid "Keyboard Layout"
+#, fuzzy
+#| msgid "Keyboard Layout"
+msgid "Select Keyboard Layout"
 msgstr "Toetsenbordindeling"
 
 #: src/Views/KeyboardLayoutView.vala:34
@@ -119,7 +121,7 @@ msgstr "Talen"
 msgid "Select a Language"
 msgstr "Selecteer een taal"
 
-#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:317
+#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:319
 msgid "Currently active language"
 msgstr "Momenteel actieve taal"
 
