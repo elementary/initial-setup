@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-02 17:04+0000\n"
-"PO-Revision-Date: 2021-05-30 23:12+0000\n"
+"PO-Revision-Date: 2021-06-02 22:27+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/uk/>\n"
@@ -89,10 +89,8 @@ msgid ""
 msgstr "Ім'я користувача повинно містити лише малі літери і цифри без пробілів"
 
 #: src/Views/KeyboardLayoutView.vala:26
-#, fuzzy
-#| msgid "Keyboard Layout"
 msgid "Select Keyboard Layout"
-msgstr "Розкладка клавіатури"
+msgstr "Виберіть розкладку клавіатури"
 
 #: src/Views/KeyboardLayoutView.vala:34
 msgid "Type to test your layout"
