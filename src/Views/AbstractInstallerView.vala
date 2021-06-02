@@ -33,7 +33,6 @@ public abstract class AbstractInstallerView : Gtk.Grid {
             orientation = Gtk.Orientation.VERTICAL
         };
 
-
         action_area = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL) {
             margin_end = 10,
             margin_start = 10,
