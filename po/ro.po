@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 00:35+0000\n"
+"POT-Creation-Date: 2021-06-02 17:04+0000\n"
 "PO-Revision-Date: 2019-09-07 18:22+0000\n"
 "Last-Translator: HeyLinux <heylinux.me@gmail.com>\n"
 "Language-Team: Romanian <https://l10n.elementary.io/projects/installer/"
@@ -16,7 +16,7 @@ msgstr ""
 "X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
-#: src/MainWindow.vala:34
+#: src/MainWindow.vala:33
 #, fuzzy
 msgid "Create a User"
 msgstr "Creați un cont"
@@ -27,12 +27,12 @@ msgid ""
 "to log in and may need to reinstall the OS."
 msgstr ""
 
-#: src/Utils.vala:70
+#: src/Utils.vala:65
 #, c-format
 msgid "Creating User '%s' Failed"
 msgstr ""
 
-#: src/Utils.vala:74
+#: src/Utils.vala:69
 #, c-format
 msgid "No Permission to Create User '%s'"
 msgstr ""
@@ -46,44 +46,44 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Normal"
 
-#: src/Views/AccountView.vala:34
+#: src/Views/AccountView.vala:35
 msgid "Create an Account"
 msgstr "Creați un cont"
 
-#: src/Views/AccountView.vala:38
+#: src/Views/AccountView.vala:39
 msgid "Full Name"
 msgstr "Nume complet"
 
-#: src/Views/AccountView.vala:43
+#: src/Views/AccountView.vala:44
 msgid "Username"
 msgstr "Nume de utilizator"
 
-#: src/Views/AccountView.vala:50
+#: src/Views/AccountView.vala:51
 msgid "Choose a Password"
 msgstr "Alegeți o parolă"
 
-#: src/Views/AccountView.vala:65
+#: src/Views/AccountView.vala:67
 msgid "Confirm Password"
 msgstr "Confirmați parola"
 
-#: src/Views/AccountView.vala:96 src/Views/KeyboardLayoutView.vala:49
+#: src/Views/AccountView.vala:98 src/Views/KeyboardLayoutView.vala:49
 msgid "Back"
 msgstr "Înapoi"
 
-#: src/Views/AccountView.vala:98
+#: src/Views/AccountView.vala:100
 msgid "Finish Setup"
 msgstr "Terminați configurarea"
 
-#: src/Views/AccountView.vala:182
+#: src/Views/AccountView.vala:186
 msgid "Passwords do not match"
 msgstr "Parolele nu se potrivesc"
 
-#: src/Views/AccountView.vala:211
+#: src/Views/AccountView.vala:215
 #, fuzzy
 msgid "The chosen username is already taken"
 msgstr "Numele de utilizator a fost deja folosit"
 
-#: src/Views/AccountView.vala:213
+#: src/Views/AccountView.vala:217
 #, fuzzy
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
@@ -91,7 +91,9 @@ msgstr ""
 "Numele de utilizator poate conține numai litere mici și numere, fără spații"
 
 #: src/Views/KeyboardLayoutView.vala:26
-msgid "Keyboard Layout"
+#, fuzzy
+#| msgid "Keyboard Layout"
+msgid "Select Keyboard Layout"
 msgstr "Structura Tastaturii"
 
 #: src/Views/KeyboardLayoutView.vala:34
@@ -119,7 +121,7 @@ msgstr "Limbi"
 msgid "Select a Language"
 msgstr "Selectați o limbă"
 
-#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:317
+#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:319
 msgid "Currently active language"
 msgstr "Limba selectată curent"
 

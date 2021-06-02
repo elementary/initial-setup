@@ -28,8 +28,9 @@ public class Installer.AccountView : AbstractInstallerView {
     private Gtk.LevelBar pw_levelbar;
 
     construct {
-        var image = new Gtk.Image.from_icon_name ("avatar-default", Gtk.IconSize.DIALOG);
-        image.valign = Gtk.Align.END;
+        var avatar = new Hdy.Avatar (48, null, true) {
+            valign = Gtk.Align.END
+        };
 
         var title_label = new Gtk.Label (_("Create an Account"));
         title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
@@ -91,7 +92,7 @@ public class Installer.AccountView : AbstractInstallerView {
         form_grid.attach (confirm_entry, 0, 11, 1, 1);
         form_grid.attach (confirm_entry_revealer, 0, 12, 1, 1);
 
-        content_area.attach (image, 0, 0, 1, 1);
+        content_area.attach (avatar, 0, 0);
         content_area.attach (title_label, 0, 1, 1, 1);
         content_area.attach (form_grid, 1, 0, 1, 2);
 
@@ -139,6 +140,8 @@ public class Installer.AccountView : AbstractInstallerView {
         });
 
         show_all ();
+
+        realname_entry.bind_property ("text", avatar, "text");
         realname_entry.grab_focus ();
     }
 
