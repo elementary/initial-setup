@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-02 17:04+0000\n"
-"PO-Revision-Date: 2021-02-11 01:41+0000\n"
+"PO-Revision-Date: 2021-06-03 15:57+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
-"Language-Team: German <https://l10n.elementary.io/projects/installer/initial-"
-"setup/de/>\n"
+"Language-Team: German <https://l10n.elementary.io/projects/installer/"
+"initial-setup/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -96,10 +96,8 @@ msgstr ""
 "Leerzeichen"
 
 #: src/Views/KeyboardLayoutView.vala:26
-#, fuzzy
-#| msgid "Keyboard Layout"
 msgid "Select Keyboard Layout"
-msgstr "Tastaturbelegung"
+msgstr "Tastaturbelegung wählen"
 
 #: src/Views/KeyboardLayoutView.vala:34
 msgid "Type to test your layout"
