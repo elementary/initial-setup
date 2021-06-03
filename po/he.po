@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-02 17:04+0000\n"
-"PO-Revision-Date: 2021-03-02 09:56+0000\n"
+"PO-Revision-Date: 2021-06-03 09:11+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://l10n.elementary.io/projects/installer/initial-"
-"setup/he/>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/installer/"
+"initial-setup/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -88,10 +88,8 @@ msgid ""
 msgstr "שם המשתמש יכול להכיל אותיות לטיניות קטנות ומספרים בלבד, ללא רווחים"
 
 #: src/Views/KeyboardLayoutView.vala:26
-#, fuzzy
-#| msgid "Keyboard Layout"
 msgid "Select Keyboard Layout"
-msgstr "פריסת מקלדת"
+msgstr "בחירת פריסת מקלדת"
 
 #: src/Views/KeyboardLayoutView.vala:34
 msgid "Type to test your layout"
