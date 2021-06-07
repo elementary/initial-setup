@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2021-02-12 17:18+0000\n"
+"POT-Creation-Date: 2021-06-02 17:04+0000\n"
+"PO-Revision-Date: 2021-06-02 22:27+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ca/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
-#: src/MainWindow.vala:34
+#: src/MainWindow.vala:33
 msgid "Create a User"
 msgstr "Crea un usuari"
 
@@ -27,12 +27,12 @@ msgstr ""
 "La Configuració inicial no ha pogut crear l'usuari. Sense, no podreu entrar "
 "a la sessió i potser hauríeu de reinstal·lar el sistema."
 
-#: src/Utils.vala:70
+#: src/Utils.vala:65
 #, c-format
 msgid "Creating User '%s' Failed"
 msgstr "Ha fallat crear l'usuari \"%s\"."
 
-#: src/Utils.vala:74
+#: src/Utils.vala:69
 #, c-format
 msgid "No Permission to Create User '%s'"
 msgstr "No teniu permís per crear l'usuari \"%s\"."
@@ -46,43 +46,43 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Per defecte"
 
-#: src/Views/AccountView.vala:34
+#: src/Views/AccountView.vala:35
 msgid "Create an Account"
 msgstr "Crea un compte"
 
-#: src/Views/AccountView.vala:38
+#: src/Views/AccountView.vala:39
 msgid "Full Name"
 msgstr "Nom complet"
 
-#: src/Views/AccountView.vala:43
+#: src/Views/AccountView.vala:44
 msgid "Username"
 msgstr "Nom d'usuari"
 
-#: src/Views/AccountView.vala:50
+#: src/Views/AccountView.vala:51
 msgid "Choose a Password"
 msgstr "Trieu una contrasenya"
 
-#: src/Views/AccountView.vala:65
+#: src/Views/AccountView.vala:67
 msgid "Confirm Password"
 msgstr "Confirmeu la contrasenya"
 
-#: src/Views/AccountView.vala:96 src/Views/KeyboardLayoutView.vala:49
+#: src/Views/AccountView.vala:98 src/Views/KeyboardLayoutView.vala:49
 msgid "Back"
 msgstr "Enrere"
 
-#: src/Views/AccountView.vala:98
+#: src/Views/AccountView.vala:100
 msgid "Finish Setup"
 msgstr "Acaba la configuració"
 
-#: src/Views/AccountView.vala:182
+#: src/Views/AccountView.vala:186
 msgid "Passwords do not match"
 msgstr "Les contrasenyes no coincideixen."
 
-#: src/Views/AccountView.vala:211
+#: src/Views/AccountView.vala:215
 msgid "The chosen username is already taken"
 msgstr "El nom d'usuari triat ja està agafat"
 
-#: src/Views/AccountView.vala:213
+#: src/Views/AccountView.vala:217
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
@@ -90,8 +90,8 @@ msgstr ""
 "espais"
 
 #: src/Views/KeyboardLayoutView.vala:26
-msgid "Keyboard Layout"
-msgstr "Disposició del teclat"
+msgid "Select Keyboard Layout"
+msgstr "Seleccioneu la disposició del teclat"
 
 #: src/Views/KeyboardLayoutView.vala:34
 msgid "Type to test your layout"
@@ -118,7 +118,7 @@ msgstr "Llengües"
 msgid "Select a Language"
 msgstr "Seleccioneu una llengua"
 
-#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:317
+#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:319
 msgid "Currently active language"
 msgstr "Llengua activa actual"
 

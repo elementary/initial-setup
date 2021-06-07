@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2019-05-05 16:32+0000\n"
+"POT-Creation-Date: 2021-06-02 17:04+0000\n"
+"PO-Revision-Date: 2021-06-03 09:11+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ja/>\n"
@@ -12,10 +12,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
-#: src/MainWindow.vala:34
+#: src/MainWindow.vala:33
 msgid "Create a User"
 msgstr "ユーザーを作成"
 
@@ -27,12 +27,12 @@ msgstr ""
 "アカウントを作成できませんでした。アカウントがないと、ログインできず、OS の再"
 "インストールが必要になる可能性があります。"
 
-#: src/Utils.vala:70
+#: src/Utils.vala:65
 #, c-format
 msgid "Creating User '%s' Failed"
 msgstr "ユーザー '%s' の作成に失敗しました"
 
-#: src/Utils.vala:74
+#: src/Utils.vala:69
 #, c-format
 msgid "No Permission to Create User '%s'"
 msgstr "ユーザー '%s' を作成するための権限がありません"
@@ -46,51 +46,51 @@ msgstr "%s…"
 msgid "Default"
 msgstr "デフォルト"
 
-#: src/Views/AccountView.vala:34
+#: src/Views/AccountView.vala:35
 msgid "Create an Account"
 msgstr "アカウントを作成"
 
-#: src/Views/AccountView.vala:38
+#: src/Views/AccountView.vala:39
 msgid "Full Name"
 msgstr "フルネーム"
 
-#: src/Views/AccountView.vala:43
+#: src/Views/AccountView.vala:44
 msgid "Username"
 msgstr "ユーザー名"
 
-#: src/Views/AccountView.vala:50
+#: src/Views/AccountView.vala:51
 msgid "Choose a Password"
 msgstr "パスワードを入力"
 
-#: src/Views/AccountView.vala:65
+#: src/Views/AccountView.vala:67
 msgid "Confirm Password"
 msgstr "パスワードを確認"
 
-#: src/Views/AccountView.vala:96 src/Views/KeyboardLayoutView.vala:49
+#: src/Views/AccountView.vala:98 src/Views/KeyboardLayoutView.vala:49
 msgid "Back"
 msgstr "戻る"
 
-#: src/Views/AccountView.vala:98
+#: src/Views/AccountView.vala:100
 msgid "Finish Setup"
 msgstr "セットアップを完了"
 
-#: src/Views/AccountView.vala:182
+#: src/Views/AccountView.vala:186
 msgid "Passwords do not match"
 msgstr "パスワードが一致しません"
 
-#: src/Views/AccountView.vala:211
+#: src/Views/AccountView.vala:215
 msgid "The chosen username is already taken"
 msgstr "指定されたユーザー名はすでに使われています"
 
-#: src/Views/AccountView.vala:213
+#: src/Views/AccountView.vala:217
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
 "ユーザー名には小文字と数字のみが許可されます。空白は使用しないでください"
 
 #: src/Views/KeyboardLayoutView.vala:26
-msgid "Keyboard Layout"
-msgstr "キーボードレイアウト"
+msgid "Select Keyboard Layout"
+msgstr "キーボードレイアウトを選択"
 
 #: src/Views/KeyboardLayoutView.vala:34
 msgid "Type to test your layout"
@@ -117,7 +117,7 @@ msgstr "言語"
 msgid "Select a Language"
 msgstr "言語を選択してください"
 
-#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:317
+#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:319
 msgid "Currently active language"
 msgstr "現在使用可能な言語"
 

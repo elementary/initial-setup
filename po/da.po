@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2020-05-26 11:11+0000\n"
+"POT-Creation-Date: 2021-06-02 17:04+0000\n"
+"PO-Revision-Date: 2021-06-05 23:54+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/installer/"
 "initial-setup/da/>\n"
@@ -12,10 +12,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
-#: src/MainWindow.vala:34
+#: src/MainWindow.vala:33
 msgid "Create a User"
 msgstr "Opret en Bruger"
 
@@ -27,12 +27,12 @@ msgstr ""
 "Opsætningen kunne ikke lave din bruger. Uden den, vil du ikke være i stand "
 "til, at logge ind, og kan muligvis ikke gen-installere dit operativ system."
 
-#: src/Utils.vala:70
+#: src/Utils.vala:65
 #, c-format
 msgid "Creating User '%s' Failed"
 msgstr "Oprettelse af brugeren \"%s\" slog fejl"
 
-#: src/Utils.vala:74
+#: src/Utils.vala:69
 #, c-format
 msgid "No Permission to Create User '%s'"
 msgstr "Ingen rettigheder til at oprette brugeren \"%s\""
@@ -46,51 +46,51 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Standard"
 
-#: src/Views/AccountView.vala:34
+#: src/Views/AccountView.vala:35
 msgid "Create an Account"
 msgstr "Lav en Bruger"
 
-#: src/Views/AccountView.vala:38
+#: src/Views/AccountView.vala:39
 msgid "Full Name"
 msgstr "Fulde Navn"
 
-#: src/Views/AccountView.vala:43
+#: src/Views/AccountView.vala:44
 msgid "Username"
 msgstr "Brugernavn"
 
-#: src/Views/AccountView.vala:50
+#: src/Views/AccountView.vala:51
 msgid "Choose a Password"
 msgstr "Vælg en adgangskode"
 
-#: src/Views/AccountView.vala:65
+#: src/Views/AccountView.vala:67
 msgid "Confirm Password"
 msgstr "Bekræft adgangskode"
 
-#: src/Views/AccountView.vala:96 src/Views/KeyboardLayoutView.vala:49
+#: src/Views/AccountView.vala:98 src/Views/KeyboardLayoutView.vala:49
 msgid "Back"
 msgstr "Tilbage"
 
-#: src/Views/AccountView.vala:98
+#: src/Views/AccountView.vala:100
 msgid "Finish Setup"
 msgstr "Færdiggør Opsætning"
 
-#: src/Views/AccountView.vala:182
+#: src/Views/AccountView.vala:186
 msgid "Passwords do not match"
 msgstr "Adgangskoderne er ikke ens"
 
-#: src/Views/AccountView.vala:211
+#: src/Views/AccountView.vala:215
 msgid "The chosen username is already taken"
 msgstr "Dette valgte brugernavn er allerede taget"
 
-#: src/Views/AccountView.vala:213
+#: src/Views/AccountView.vala:217
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
 "Et brugernavn må kun indeholde små bogstaver, tal og ikke indeholde mellemrum"
 
 #: src/Views/KeyboardLayoutView.vala:26
-msgid "Keyboard Layout"
-msgstr "Tastatur Layout"
+msgid "Select Keyboard Layout"
+msgstr "Vælg Tastatur Layout"
 
 #: src/Views/KeyboardLayoutView.vala:34
 msgid "Type to test your layout"
@@ -117,7 +117,7 @@ msgstr "Sprog"
 msgid "Select a Language"
 msgstr "Vælg et sprog"
 
-#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:317
+#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:319
 msgid "Currently active language"
 msgstr "Nuværende aktivt sprog"
 

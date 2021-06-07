@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 00:35+0000\n"
+"POT-Creation-Date: 2021-06-02 17:04+0000\n"
 "PO-Revision-Date: 2019-05-05 21:32+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/installer/"
@@ -16,7 +16,7 @@ msgstr ""
 "X-Generator: Weblate 3.6.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
-#: src/MainWindow.vala:34
+#: src/MainWindow.vala:33
 msgid "Create a User"
 msgstr "Susikurkite naudotoją"
 
@@ -28,12 +28,12 @@ msgstr ""
 "Pradinei sąrankai nepavyko sukurti jūsų naudotojo. Be jo, jūs negalėsite "
 "prisijungti ir jums gali tekti iš naujo įdiegti operacinę sistemą."
 
-#: src/Utils.vala:70
+#: src/Utils.vala:65
 #, c-format
 msgid "Creating User '%s' Failed"
 msgstr "Naudotojo \"%s\" sukūrimas patyrė nesėkmę"
 
-#: src/Utils.vala:74
+#: src/Utils.vala:69
 #, c-format
 msgid "No Permission to Create User '%s'"
 msgstr "Nėra leidimo sukurti naudotoją \"%s\""
@@ -47,50 +47,52 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Numatytasis"
 
-#: src/Views/AccountView.vala:34
+#: src/Views/AccountView.vala:35
 msgid "Create an Account"
 msgstr "Susikurkite paskyrą"
 
-#: src/Views/AccountView.vala:38
+#: src/Views/AccountView.vala:39
 msgid "Full Name"
 msgstr "Visas vardas"
 
-#: src/Views/AccountView.vala:43
+#: src/Views/AccountView.vala:44
 msgid "Username"
 msgstr "Naudotojo vardas"
 
-#: src/Views/AccountView.vala:50
+#: src/Views/AccountView.vala:51
 msgid "Choose a Password"
 msgstr "Pasirinkite slaptažodį"
 
-#: src/Views/AccountView.vala:65
+#: src/Views/AccountView.vala:67
 msgid "Confirm Password"
 msgstr "Patvirtinkite slaptažodį"
 
-#: src/Views/AccountView.vala:96 src/Views/KeyboardLayoutView.vala:49
+#: src/Views/AccountView.vala:98 src/Views/KeyboardLayoutView.vala:49
 msgid "Back"
 msgstr "Atgal"
 
-#: src/Views/AccountView.vala:98
+#: src/Views/AccountView.vala:100
 msgid "Finish Setup"
 msgstr "Užbaigti sąranką"
 
-#: src/Views/AccountView.vala:182
+#: src/Views/AccountView.vala:186
 msgid "Passwords do not match"
 msgstr "Slaptažodžiai nesutampa"
 
-#: src/Views/AccountView.vala:211
+#: src/Views/AccountView.vala:215
 msgid "The chosen username is already taken"
 msgstr "Pasirinktas naudotojo vardas jau yra užimtas"
 
-#: src/Views/AccountView.vala:213
+#: src/Views/AccountView.vala:217
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
 "Naudotojo varde privalo būti tik mažosios raidės ir skaitmenys, be tarpų"
 
 #: src/Views/KeyboardLayoutView.vala:26
-msgid "Keyboard Layout"
+#, fuzzy
+#| msgid "Keyboard Layout"
+msgid "Select Keyboard Layout"
 msgstr "Klaviatūros išdėstymas"
 
 #: src/Views/KeyboardLayoutView.vala:34
@@ -118,7 +120,7 @@ msgstr "Kalbos"
 msgid "Select a Language"
 msgstr "Pasirinkite kalbą"
 
-#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:317
+#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:319
 msgid "Currently active language"
 msgstr "Šiuo metu aktyvi kalba"
 

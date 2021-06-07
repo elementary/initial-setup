@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2019-05-05 06:32+0000\n"
+"POT-Creation-Date: 2021-06-02 17:04+0000\n"
+"PO-Revision-Date: 2021-06-04 03:31+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/installer/"
 "initial-setup/fi/>\n"
@@ -12,10 +12,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
-#: src/MainWindow.vala:34
+#: src/MainWindow.vala:33
 msgid "Create a User"
 msgstr "Luo käyttäjä"
 
@@ -28,12 +28,12 @@ msgstr ""
 "sisäänkirjautumaan, joten käyttöjärjestelmän uudelleenasennus saattaa olla "
 "tarpeen."
 
-#: src/Utils.vala:70
+#: src/Utils.vala:65
 #, c-format
 msgid "Creating User '%s' Failed"
 msgstr "Käyttäjän '%s' luominen epäonnistui"
 
-#: src/Utils.vala:74
+#: src/Utils.vala:69
 #, c-format
 msgid "No Permission to Create User '%s'"
 msgstr "Ei käyttöoikeuksia lisätä käyttäjää '%s'"
@@ -47,43 +47,43 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Oletus"
 
-#: src/Views/AccountView.vala:34
+#: src/Views/AccountView.vala:35
 msgid "Create an Account"
 msgstr "Luo tili"
 
-#: src/Views/AccountView.vala:38
+#: src/Views/AccountView.vala:39
 msgid "Full Name"
 msgstr "Koko nimi"
 
-#: src/Views/AccountView.vala:43
+#: src/Views/AccountView.vala:44
 msgid "Username"
 msgstr "Käyttäjätunnus"
 
-#: src/Views/AccountView.vala:50
+#: src/Views/AccountView.vala:51
 msgid "Choose a Password"
 msgstr "Valitse salasana"
 
-#: src/Views/AccountView.vala:65
+#: src/Views/AccountView.vala:67
 msgid "Confirm Password"
 msgstr "Vahvista salasana"
 
-#: src/Views/AccountView.vala:96 src/Views/KeyboardLayoutView.vala:49
+#: src/Views/AccountView.vala:98 src/Views/KeyboardLayoutView.vala:49
 msgid "Back"
 msgstr "Takaisin"
 
-#: src/Views/AccountView.vala:98
+#: src/Views/AccountView.vala:100
 msgid "Finish Setup"
 msgstr "Viimeistele määritykset"
 
-#: src/Views/AccountView.vala:182
+#: src/Views/AccountView.vala:186
 msgid "Passwords do not match"
 msgstr "Salasanat eivät täsmää"
 
-#: src/Views/AccountView.vala:211
+#: src/Views/AccountView.vala:215
 msgid "The chosen username is already taken"
 msgstr "Valittu käyttäjätunnus on jo käytössä"
 
-#: src/Views/AccountView.vala:213
+#: src/Views/AccountView.vala:217
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
@@ -91,8 +91,8 @@ msgstr ""
 "välilyöntejä"
 
 #: src/Views/KeyboardLayoutView.vala:26
-msgid "Keyboard Layout"
-msgstr "Näppäimistön asettelu"
+msgid "Select Keyboard Layout"
+msgstr "Valitse näppäimistön asettelu"
 
 #: src/Views/KeyboardLayoutView.vala:34
 msgid "Type to test your layout"
@@ -119,7 +119,7 @@ msgstr "Kielet"
 msgid "Select a Language"
 msgstr "Valitse kieli"
 
-#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:317
+#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:319
 msgid "Currently active language"
 msgstr "Parhaillaan aktiivinen kieli"
 

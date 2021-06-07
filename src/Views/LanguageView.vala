@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2016 elementary LLC. (https://elementary.io)
+ * Copyright 2016-2021 elementary, Inc. (https://elementary.io)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,13 +18,12 @@
  */
 
 public class Installer.LanguageView : AbstractInstallerView {
-    static Gee.LinkedList<string> preferred_langs;
-    Gtk.Label select_label;
-    Gtk.Stack select_stack;
-    Gtk.Button next_button;
-    int select_number = 0;
-    uint lang_timeout = 0U;
-
+    private Gtk.Button next_button;
+    private Gtk.Label select_label;
+    private Gtk.Stack select_stack;
+    private int select_number = 0;
+    private static Gee.LinkedList<string> preferred_langs;
+    private uint lang_timeout = 0U;
     private VariantWidget lang_variant_widget;
 
     public LanguageView () {
@@ -43,17 +42,20 @@ public class Installer.LanguageView : AbstractInstallerView {
     }
 
     construct {
-        var image = new Gtk.Image.from_icon_name ("preferences-desktop-locale", Gtk.IconSize.DIALOG);
-        image.valign = Gtk.Align.END;
+        var image = new Gtk.Image.from_icon_name ("preferences-desktop-locale", Gtk.IconSize.DIALOG) {
+            valign = Gtk.Align.END
+        };
 
-        select_label = new Gtk.Label (null);
-        select_label.halign = Gtk.Align.CENTER;
-        select_label.wrap = true;
+        select_label = new Gtk.Label (null) {
+            halign = Gtk.Align.CENTER,
+            wrap = true
+        };
 
-        select_stack = new Gtk.Stack ();
-        select_stack.valign = Gtk.Align.START;
+        select_stack = new Gtk.Stack () {
+            transition_type = Gtk.StackTransitionType.CROSSFADE,
+            valign = Gtk.Align.START
+        };
         select_stack.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
-        select_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
         select_stack.add (select_label);
 
         select_stack.notify["transition-running"].connect (() => {
@@ -83,11 +85,13 @@ public class Installer.LanguageView : AbstractInstallerView {
             row.set_header (null);
             if (!((LangRow)row).preferred_row) {
                 if (before != null && ((LangRow)before).preferred_row) {
-                    var separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL);
+                    var separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
+                        margin = 3,
+                        margin_end = 6,
+                        margin_start = 6
+                    };
                     separator.show_all ();
-                    separator.margin = 3;
-                    separator.margin_end = 6;
-                    separator.margin_start = 6;
+
                     row.set_header (separator);
                 }
             }
@@ -104,8 +108,9 @@ public class Installer.LanguageView : AbstractInstallerView {
             lang_variant_widget.main_listbox.add (langrow);
         }
 
-        next_button = new Gtk.Button.with_label (_("Select"));
-        next_button.sensitive = false;
+        next_button = new Gtk.Button.with_label (_("Select")) {
+            sensitive = false
+        };
         next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
         action_area.add (next_button);
@@ -121,8 +126,8 @@ public class Installer.LanguageView : AbstractInstallerView {
             lang_variant_widget.main_listbox.row_selected.disconnect (row_selected);
         });
 
-        content_area.attach (image, 0, 0, 1, 1);
-        content_area.attach (select_stack, 0, 1, 1, 1);
+        content_area.attach (image, 0, 0);
+        content_area.attach (select_stack, 0, 1);
         content_area.attach (lang_variant_widget, 1, 0, 1, 2);
 
         timeout ();
@@ -132,9 +137,9 @@ public class Installer.LanguageView : AbstractInstallerView {
         unowned LocaleHelper.LangEntry lang_entry = ((LangRow) row).lang_entry;
         unowned string lang_code = lang_entry.get_code ();
 
-        foreach (weak Gtk.Widget child in lang_variant_widget.main_listbox.get_children ()) {
+        foreach (unowned var child in lang_variant_widget.main_listbox.get_children ()) {
             if (child is LangRow) {
-                weak LangRow lang_row = (LangRow) child;
+                unowned var lang_row = (LangRow) child;
                 if (lang_row.lang_entry.get_code () == lang_code) {
                     lang_row.selected = true;
                 } else {
@@ -148,9 +153,9 @@ public class Installer.LanguageView : AbstractInstallerView {
 
     private void variant_row_selected (Gtk.ListBoxRow? row) {
         unowned LocaleHelper.CountryEntry country_entry = ((CountryRow) row).country_entry;
-        foreach (weak Gtk.Widget child in lang_variant_widget.variant_listbox.get_children ()) {
+        foreach (unowned var child in lang_variant_widget.variant_listbox.get_children ()) {
             if (child is CountryRow) {
-                weak CountryRow country_row = (CountryRow) child;
+                unowned var country_row = (CountryRow) child;
                 if (country_row.country_entry.alpha_2 == country_entry.alpha_2) {
                     country_row.selected = true;
                 } else {
@@ -165,19 +170,19 @@ public class Installer.LanguageView : AbstractInstallerView {
 
     private void row_activated (Gtk.ListBoxRow row) {
             var lang_entry = ((LangRow) row).lang_entry;
-            unowned LocaleHelper.CountryEntry[] countries = lang_entry.countries;
+            unowned var countries = lang_entry.countries;
             if (countries.length == 0) {
                 next_button.sensitive = true;
                 return;
             }
 
-            unowned string lang_code = lang_entry.get_code ();
+            unowned var lang_code = lang_entry.get_code ();
             string? main_country = LocaleHelper.get_main_country (lang_code);
 
             lang_variant_widget.variant_listbox.row_selected.disconnect (variant_row_selected);
             lang_variant_widget.clear_variants ();
             lang_variant_widget.variant_listbox.row_selected.connect (variant_row_selected);
-            foreach (unowned LocaleHelper.CountryEntry country in countries) {
+            foreach (unowned var country in countries) {
                 var country_row = new CountryRow (country);
                 lang_variant_widget.variant_listbox.add (country_row);
                 if (country.get_code () == main_country) {
@@ -197,9 +202,9 @@ public class Installer.LanguageView : AbstractInstallerView {
 
     private void on_next_button_clicked () {
         string? lang = null;
-        unowned Gtk.ListBoxRow row = lang_variant_widget.main_listbox.get_selected_row ();
+        unowned var row = lang_variant_widget.main_listbox.get_selected_row ();
         if (row != null) {
-            unowned Configuration configuration = Configuration.get_default ();
+            unowned var configuration = Configuration.get_default ();
 
             var lang_entry = ((LangRow) row).lang_entry;
             lang = lang_entry.get_code ();
@@ -207,11 +212,11 @@ public class Installer.LanguageView : AbstractInstallerView {
             if (lang_entry.countries.length > 0) {
                 row = lang_variant_widget.variant_listbox.get_selected_row ();
                 if (row != null) {
-                    unowned LocaleHelper.CountryEntry country = ((CountryRow) row).country_entry;
+                    unowned var country = ((CountryRow) row).country_entry;
                     configuration.country = country.get_code ();
                     lang = country.get_full_code ();
                 } else {
-                    unowned string country = lang_entry.countries[0].get_code ();
+                    unowned var country = lang_entry.countries[0].get_code ();
                     lang += "_%s".printf (country);
                     configuration.country = country;
                 }
@@ -236,7 +241,7 @@ public class Installer.LanguageView : AbstractInstallerView {
             }
         }
 
-        unowned string label_text = LocaleHelper.lang_gettext (N_("Select a Language"), ((LangRow) row).lang_entry.get_code ());
+        unowned var label_text = LocaleHelper.lang_gettext (N_("Select a Language"), ((LangRow) row).lang_entry.get_code ());
         select_label = new Gtk.Label (label_text);
         select_label.show_all ();
         select_stack.add (select_label);
@@ -249,7 +254,7 @@ public class Installer.LanguageView : AbstractInstallerView {
     public class LangRow : Gtk.ListBoxRow {
         private Gtk.Image image;
         public LocaleHelper.LangEntry lang_entry;
-        public bool preferred_row { get; set; default=false; }
+        public bool preferred_row { get; set; default = false; }
 
         private bool _selected;
         public bool selected {
@@ -271,10 +276,11 @@ public class Installer.LanguageView : AbstractInstallerView {
         public LangRow (LocaleHelper.LangEntry lang_entry) {
             this.lang_entry = lang_entry;
 
-            image = new Gtk.Image ();
-            image.hexpand = true;
-            image.halign = Gtk.Align.END;
-            image.icon_size = Gtk.IconSize.BUTTON;
+            image = new Gtk.Image () {
+                halign = Gtk.Align.END,
+                hexpand = true,
+                icon_size = Gtk.IconSize.BUTTON
+            };
 
             var label = new Gtk.Label (lang_entry.name) {
                 ellipsize = Pango.EllipsizeMode.END,
@@ -282,9 +288,10 @@ public class Installer.LanguageView : AbstractInstallerView {
             };
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
-            var grid = new Gtk.Grid ();
-            grid.column_spacing = 6;
-            grid.margin = 6;
+            var grid = new Gtk.Grid () {
+                column_spacing = 6,
+                margin = 6
+            };
             grid.add (label);
             grid.add (image);
 
@@ -327,10 +334,12 @@ public class Installer.LanguageView : AbstractInstallerView {
 
         public CountryRow (LocaleHelper.CountryEntry country_entry) {
             this.country_entry = country_entry;
-            image = new Gtk.Image ();
-            image.hexpand = true;
-            image.halign = Gtk.Align.END;
-            image.icon_size = Gtk.IconSize.BUTTON;
+
+            image = new Gtk.Image () {
+                halign = Gtk.Align.END,
+                hexpand = true,
+                icon_size = Gtk.IconSize.BUTTON
+            };
 
             var label = new Gtk.Label (country_entry.name) {
                 ellipsize = Pango.EllipsizeMode.END,
@@ -338,9 +347,10 @@ public class Installer.LanguageView : AbstractInstallerView {
             };
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
-            var grid = new Gtk.Grid ();
-            grid.column_spacing = 6;
-            grid.margin = 6;
+            var grid = new Gtk.Grid () {
+                column_spacing = 6,
+                margin = 6
+            };
             grid.add (label);
             grid.add (image);
 

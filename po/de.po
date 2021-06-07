@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2021-02-11 01:41+0000\n"
+"POT-Creation-Date: 2021-06-02 17:04+0000\n"
+"PO-Revision-Date: 2021-06-03 15:57+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/installer/"
 "initial-setup/de/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
-#: src/MainWindow.vala:34
+#: src/MainWindow.vala:33
 msgid "Create a User"
 msgstr "Benutzerkonto erstellen"
 
@@ -33,12 +33,12 @@ msgstr ""
 "sich nicht anmelden und müssen daher möglicherweise das Betriebssystem neu "
 "installieren."
 
-#: src/Utils.vala:70
+#: src/Utils.vala:65
 #, c-format
 msgid "Creating User '%s' Failed"
 msgstr "Benutzerkonto »%s« konnte nicht erstellt werden"
 
-#: src/Utils.vala:74
+#: src/Utils.vala:69
 #, c-format
 msgid "No Permission to Create User '%s'"
 msgstr "Fehlende Rechte zum Erstellen des Benutzerkontos »%s«"
@@ -52,43 +52,43 @@ msgstr "%s …"
 msgid "Default"
 msgstr "Vorgabe"
 
-#: src/Views/AccountView.vala:34
+#: src/Views/AccountView.vala:35
 msgid "Create an Account"
 msgstr "Konto erstellen"
 
-#: src/Views/AccountView.vala:38
+#: src/Views/AccountView.vala:39
 msgid "Full Name"
 msgstr "Voller Name"
 
-#: src/Views/AccountView.vala:43
+#: src/Views/AccountView.vala:44
 msgid "Username"
 msgstr "Benutzername"
 
-#: src/Views/AccountView.vala:50
+#: src/Views/AccountView.vala:51
 msgid "Choose a Password"
 msgstr "Passwort wählen"
 
-#: src/Views/AccountView.vala:65
+#: src/Views/AccountView.vala:67
 msgid "Confirm Password"
 msgstr "Passwort bestätigen"
 
-#: src/Views/AccountView.vala:96 src/Views/KeyboardLayoutView.vala:49
+#: src/Views/AccountView.vala:98 src/Views/KeyboardLayoutView.vala:49
 msgid "Back"
 msgstr "Zurück"
 
-#: src/Views/AccountView.vala:98
+#: src/Views/AccountView.vala:100
 msgid "Finish Setup"
 msgstr "Einrichtung abschließen"
 
-#: src/Views/AccountView.vala:182
+#: src/Views/AccountView.vala:186
 msgid "Passwords do not match"
 msgstr "Die Passwörter stimmen nicht überein"
 
-#: src/Views/AccountView.vala:211
+#: src/Views/AccountView.vala:215
 msgid "The chosen username is already taken"
 msgstr "Benutzername ist bereits vergeben"
 
-#: src/Views/AccountView.vala:213
+#: src/Views/AccountView.vala:217
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
@@ -96,8 +96,8 @@ msgstr ""
 "Leerzeichen"
 
 #: src/Views/KeyboardLayoutView.vala:26
-msgid "Keyboard Layout"
-msgstr "Tastaturbelegung"
+msgid "Select Keyboard Layout"
+msgstr "Tastaturbelegung wählen"
 
 #: src/Views/KeyboardLayoutView.vala:34
 msgid "Type to test your layout"
@@ -124,7 +124,7 @@ msgstr "Sprachen"
 msgid "Select a Language"
 msgstr "Sprache wählen"
 
-#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:317
+#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:319
 msgid "Currently active language"
 msgstr "Aktuell eingestellte Sprache"
 
