@@ -21,6 +21,15 @@
     <binary>io.elementary.initial-setup</binary>
   </provides>
   <releases>
+    <release version="6.0.0" date="2021-07-14" urgency="medium">
+      <description>
+        <p>Set keyboard layout in accountsservice</p>
+        <p>Add multitouch gestures</p>
+        <p>Set correct locales</p>
+        <p>New colorful avatar fallback</p>
+        <p>Translation updates</p>
+      </description>
+    </release>
     <release version="1.0.2" date="2019-10-29" urgency="medium">
       <description>
         <p>Translation updates</p>
