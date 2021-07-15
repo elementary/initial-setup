@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 17:04+0000\n"
+"POT-Creation-Date: 2021-07-15 22:57+0000\n"
 "PO-Revision-Date: 2018-02-10 10:48+0000\n"
 "Last-Translator: Subhadeep Jasu <subhajasu@gmail.com>\n"
 "Language-Team: Bengali <https://weblate.elementary.io/projects/installer/"
@@ -36,7 +36,7 @@ msgstr ""
 msgid "No Permission to Create User '%s'"
 msgstr ""
 
-#: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:188
+#: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:194
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -65,11 +65,11 @@ msgstr "একটি পাসওয়ার্ড বেছে নিন"
 msgid "Confirm Password"
 msgstr "পাসওয়ার্ড নিশ্চিত করুন"
 
-#: src/Views/AccountView.vala:98 src/Views/KeyboardLayoutView.vala:49
+#: src/Views/AccountView.vala:99 src/Views/KeyboardLayoutView.vala:52
 msgid "Back"
 msgstr "ব্যাক"
 
-#: src/Views/AccountView.vala:100
+#: src/Views/AccountView.vala:101
 msgid "Finish Setup"
 msgstr "সেটআপ শেষ করুন"
 
@@ -77,12 +77,12 @@ msgstr "সেটআপ শেষ করুন"
 msgid "Passwords do not match"
 msgstr "পাসওয়ার্ডগুলি  মিলছে না"
 
-#: src/Views/AccountView.vala:215
+#: src/Views/AccountView.vala:211
 #, fuzzy
 msgid "The chosen username is already taken"
 msgstr "ইউসার নাম ইতিমধ্যে ব্যবহৃত"
 
-#: src/Views/AccountView.vala:217
+#: src/Views/AccountView.vala:213
 #, fuzzy
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
@@ -96,32 +96,32 @@ msgstr ""
 msgid "Select Keyboard Layout"
 msgstr "কিবোর্ডের ভিত্তি ধরণ"
 
-#: src/Views/KeyboardLayoutView.vala:34
+#: src/Views/KeyboardLayoutView.vala:35
 msgid "Type to test your layout"
 msgstr "কিবোর্ডের ভিত্তি ধরণ পরীক্ষা করে দেখবার জন্য টাইপ করুন"
 
-#: src/Views/KeyboardLayoutView.vala:37
+#: src/Views/KeyboardLayoutView.vala:38
 msgid "Show keyboard layout"
 msgstr "কিবোর্ডের ভিত্তি ধরণ দেখাও"
 
-#: src/Views/KeyboardLayoutView.vala:51 src/Views/LanguageView.vala:107
-#: src/Views/LanguageView.vala:162
+#: src/Views/KeyboardLayoutView.vala:54 src/Views/LanguageView.vala:111
+#: src/Views/LanguageView.vala:167
 msgid "Select"
 msgstr "সিলেক্ট"
 
-#: src/Views/KeyboardLayoutView.vala:133
+#: src/Views/KeyboardLayoutView.vala:137
 msgid "Input Language"
 msgstr "ইনপুটের জন্য ভাষা"
 
-#: src/Views/LanguageView.vala:195
+#: src/Views/LanguageView.vala:200
 msgid "Languages"
 msgstr "ভাষা"
 
-#: src/Views/LanguageView.vala:239
+#: src/Views/LanguageView.vala:244
 msgid "Select a Language"
 msgstr "একটি ভাষা বেছে নিন"
 
-#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:319
+#: src/Views/LanguageView.vala:267 src/Views/LanguageView.vala:326
 msgid "Currently active language"
 msgstr "বর্তমানে সক্রিয় ভাষা"
 
