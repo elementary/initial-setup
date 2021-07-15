@@ -1,3 +1,29 @@
+io.elementary.initial-setup (6.0.0) bionic; urgency=medium
+
+  * Release 6.0.0 (#111)
+  * AccountView: use Granite.ValidatedEntry (#98)
+  * LanguageView: Use modern code style (#109)
+  * AbstractInstallerView: Use modern code style (#107)
+  * KeyboardLayoutView: Use modern codestyle (#108)
+  * Remove unused gresource (#106)
+  * Update translation files
+  * Update translation template
+  * Make titles consistent (#105)
+  * AccountView: Use Hdy.Avatar and bind to realname_entry (#104)
+  * Use language2locale to set new user's language (#95)
+  * LINGUAS: sort, remove en_US
+  * Give accountsservice modify permission (#93)
+  * VariantWidget: Use Hdy.Deck instead of Stack (#87)
+  * MainWindow: Subclass Hdy.Window (#86)
+  * Set keyboard layout for new user in AccountsService (#85)
+  * AccountView: Adjust pw_levelbar values (#83)
+  * Honor XKB_CONFIG_ROOT environment variable, don't hardcode, fix
+    isocodes (#82)
+  * Fix disabled account after creation on focal (#81)
+  * Add Gettext Updates to Actions
+
+ -- elementary, Inc. <builds@elementary.io>  Thu, 15 Jul 2021 22:57:19 +0000
+
 io.elementary.initial-setup (1.0.2) bionic; urgency=medium
 
   * Release 1.0.2 (#79)
