@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2019 elementary, Inc. <contact@elementary.io> -->
+<!-- Copyright 2019–2021 elementary, Inc. <contact@elementary.io> -->
 <component type="desktop-application">
   <id>io.elementary.initial-setup</id>
   <metadata_license>CC0-1.0</metadata_license>
@@ -10,11 +10,14 @@
     <p>Assists with essential tasks before a fresh install is usable, like choosing a language and creating a user account.</p>
   </description>
   <screenshots>
-    <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/initial-setup/master/data/screenshot-create-account@2x.png</image>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/initial-setup/master/data/screenshot-language.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/initial-setup/master/data/screenshot@2x.png</image>
+      <image>https://raw.githubusercontent.com/elementary/initial-setup/master/data/screenshot-keyboard.png</image>
+    </screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/initial-setup/master/data/screenshot-user.png</image>
     </screenshot>
   </screenshots>
   <provides>
@@ -23,11 +26,14 @@
   <releases>
     <release version="6.0.0" date="2021-07-14" urgency="medium">
       <description>
-        <p>Set keyboard layout in accountsservice</p>
-        <p>Add multitouch gestures</p>
-        <p>Set correct locales</p>
-        <p>New colorful avatar fallback</p>
-        <p>Translation updates</p>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Set keyboard layout in accountsservice</li>
+          <li>Add multitouch gestures</li>
+          <li>Set correct locales</li>
+          <li>New colorful avatar fallback</li>
+          <li>Translation updates</li>
+        </ul>
       </description>
     </release>
     <release version="1.0.2" date="2019-10-29" urgency="medium">
