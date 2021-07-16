@@ -2,16 +2,16 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:57+0000\n"
-"PO-Revision-Date: 2019-10-27 19:24+0000\n"
+"PO-Revision-Date: 2021-07-16 10:41+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://l10n.elementary.io/projects/installer/initial-"
-"setup-extra/he/>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/installer/"
+"initial-setup-extra/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.initial-setup.desktop.in:3
 #: data/io.elementary.initial-setup.appdata.xml.in:8
@@ -39,26 +39,24 @@ msgstr ""
 "וליצור חשבון משתמש."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:29
-#, fuzzy
-#| msgid "Translation updates"
 msgid "Minor updates:"
-msgstr "עדכון תרגומים"
+msgstr "עדכונים משניים:"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:31
 msgid "Set keyboard layout in accountsservice"
-msgstr ""
+msgstr "הגדרת פריסת מקלדת בשירות החשבונות (accountsservice)"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:32
 msgid "Add multitouch gestures"
-msgstr ""
+msgstr "נוספה תמיכה במחוות מגע במספר נקודות"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:33
 msgid "Set correct locales"
-msgstr ""
+msgstr "הגדרות השפה הנכונות תיבחרנה"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:34
 msgid "New colorful avatar fallback"
-msgstr ""
+msgstr "תמונה ייצוגית צבעונית חדשה כנסיגה"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:35
 #: data/io.elementary.initial-setup.appdata.xml.in:41
