@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 17:04+0000\n"
+"POT-Creation-Date: 2021-07-15 22:57+0000\n"
 "PO-Revision-Date: 2021-03-04 15:31+0000\n"
 "Last-Translator: HelaBasa <R45XvezA@pm.me>\n"
 "Language-Team: Sinhala <https://l10n.elementary.io/projects/installer/"
@@ -35,7 +35,7 @@ msgstr ""
 msgid "No Permission to Create User '%s'"
 msgstr ""
 
-#: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:188
+#: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:194
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -64,11 +64,11 @@ msgstr "මුරපදයක් තෝරන්න"
 msgid "Confirm Password"
 msgstr "මුරපදය තහවුරු කරන්න"
 
-#: src/Views/AccountView.vala:98 src/Views/KeyboardLayoutView.vala:49
+#: src/Views/AccountView.vala:99 src/Views/KeyboardLayoutView.vala:52
 msgid "Back"
 msgstr "ආපසු"
 
-#: src/Views/AccountView.vala:100
+#: src/Views/AccountView.vala:101
 msgid "Finish Setup"
 msgstr ""
 
@@ -76,11 +76,11 @@ msgstr ""
 msgid "Passwords do not match"
 msgstr "මුර පද ගැලපෙන්නේ නැත"
 
-#: src/Views/AccountView.vala:215
+#: src/Views/AccountView.vala:211
 msgid "The chosen username is already taken"
 msgstr "තෝරාගත් පරිශීලක නාමය දැනටමත් ගෙන ඇත"
 
-#: src/Views/AccountView.vala:217
+#: src/Views/AccountView.vala:213
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
@@ -91,32 +91,32 @@ msgstr ""
 msgid "Select Keyboard Layout"
 msgstr "යතුරු පුවරුවේ සැකැස්ම"
 
-#: src/Views/KeyboardLayoutView.vala:34
+#: src/Views/KeyboardLayoutView.vala:35
 msgid "Type to test your layout"
 msgstr "ඔබේ පිරිසැලසුම පරීක්ෂා කිරීමට ටයිප් කරන්න"
 
-#: src/Views/KeyboardLayoutView.vala:37
+#: src/Views/KeyboardLayoutView.vala:38
 msgid "Show keyboard layout"
 msgstr "යතුරුපුවරු ආකෘතිය පෙන්වන්න"
 
-#: src/Views/KeyboardLayoutView.vala:51 src/Views/LanguageView.vala:107
-#: src/Views/LanguageView.vala:162
+#: src/Views/KeyboardLayoutView.vala:54 src/Views/LanguageView.vala:111
+#: src/Views/LanguageView.vala:167
 msgid "Select"
 msgstr "තෝරන්න"
 
-#: src/Views/KeyboardLayoutView.vala:133
+#: src/Views/KeyboardLayoutView.vala:137
 msgid "Input Language"
 msgstr "ආදාන භාෂාව"
 
-#: src/Views/LanguageView.vala:195
+#: src/Views/LanguageView.vala:200
 msgid "Languages"
 msgstr "භාෂා"
 
-#: src/Views/LanguageView.vala:239
+#: src/Views/LanguageView.vala:244
 msgid "Select a Language"
 msgstr "භාෂාවක් තෝරන්න"
 
-#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:319
+#: src/Views/LanguageView.vala:267 src/Views/LanguageView.vala:326
 msgid "Currently active language"
 msgstr "දැනට ක්‍රියාකාරී භාෂාව"
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 17:04+0000\n"
+"POT-Creation-Date: 2021-07-15 22:57+0000\n"
 "PO-Revision-Date: 2020-07-04 18:12+0000\n"
 "Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
@@ -38,14 +38,37 @@ msgstr ""
 "Hjelper deg med enkle oppgåver før installeringa er brukande, som t.d. å "
 "velga språk og oppretting av ein brukar."
 
-#: data/io.elementary.initial-setup.appdata.xml.in:26
-msgid "Translation updates"
+#: data/io.elementary.initial-setup.appdata.xml.in:29
+#, fuzzy
+#| msgid "Translation updates"
+msgid "Minor updates:"
 msgstr "Oppdaterte oversettelsar"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:31
+msgid "Set keyboard layout in accountsservice"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:32
+msgid "Add multitouch gestures"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:33
+msgid "Set correct locales"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:34
+msgid "New colorful avatar fallback"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:35
+#: data/io.elementary.initial-setup.appdata.xml.in:41
+msgid "Translation updates"
+msgstr "Oppdaterte oversettelsar"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:46
 msgid "Initial release"
 msgstr "Fyrste utgåve"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:66
+#: data/io.elementary.initial-setup.appdata.xml.in:81
 msgid "elementary, Inc."
 msgstr "elementary, Inc."

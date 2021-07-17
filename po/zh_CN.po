@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 17:04+0000\n"
+"POT-Creation-Date: 2021-07-15 22:57+0000\n"
 "PO-Revision-Date: 2021-06-20 22:40+0000\n"
 "Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -37,7 +37,7 @@ msgstr "创建账户 '%s' 失败"
 msgid "No Permission to Create User '%s'"
 msgstr "无权创建账户 '%s'"
 
-#: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:188
+#: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:194
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -66,11 +66,11 @@ msgstr "选择密码"
 msgid "Confirm Password"
 msgstr "确认密码"
 
-#: src/Views/AccountView.vala:98 src/Views/KeyboardLayoutView.vala:49
+#: src/Views/AccountView.vala:99 src/Views/KeyboardLayoutView.vala:52
 msgid "Back"
 msgstr "返回"
 
-#: src/Views/AccountView.vala:100
+#: src/Views/AccountView.vala:101
 msgid "Finish Setup"
 msgstr "完成设置"
 
@@ -78,11 +78,11 @@ msgstr "完成设置"
 msgid "Passwords do not match"
 msgstr "密码不匹配"
 
-#: src/Views/AccountView.vala:215
+#: src/Views/AccountView.vala:211
 msgid "The chosen username is already taken"
 msgstr "用户名已存在"
 
-#: src/Views/AccountView.vala:217
+#: src/Views/AccountView.vala:213
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr "用户名只能包含小写字母和数字，不能包含空格"
@@ -91,32 +91,32 @@ msgstr "用户名只能包含小写字母和数字，不能包含空格"
 msgid "Select Keyboard Layout"
 msgstr "选择键盘布局"
 
-#: src/Views/KeyboardLayoutView.vala:34
+#: src/Views/KeyboardLayoutView.vala:35
 msgid "Type to test your layout"
 msgstr "输入以测试布局"
 
-#: src/Views/KeyboardLayoutView.vala:37
+#: src/Views/KeyboardLayoutView.vala:38
 msgid "Show keyboard layout"
 msgstr "显示键盘布局"
 
-#: src/Views/KeyboardLayoutView.vala:51 src/Views/LanguageView.vala:107
-#: src/Views/LanguageView.vala:162
+#: src/Views/KeyboardLayoutView.vala:54 src/Views/LanguageView.vala:111
+#: src/Views/LanguageView.vala:167
 msgid "Select"
 msgstr "选择"
 
-#: src/Views/KeyboardLayoutView.vala:133
+#: src/Views/KeyboardLayoutView.vala:137
 msgid "Input Language"
 msgstr "输入语言"
 
-#: src/Views/LanguageView.vala:195
+#: src/Views/LanguageView.vala:200
 msgid "Languages"
 msgstr "语言"
 
-#: src/Views/LanguageView.vala:239
+#: src/Views/LanguageView.vala:244
 msgid "Select a Language"
 msgstr "选择语言"
 
-#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:319
+#: src/Views/LanguageView.vala:267 src/Views/LanguageView.vala:326
 msgid "Currently active language"
 msgstr "当前选中的语言"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 17:04+0000\n"
+"POT-Creation-Date: 2021-07-15 22:57+0000\n"
 "PO-Revision-Date: 2021-03-21 22:19+0000\n"
 "Last-Translator: Shukrullo Turgunov <shookrullo@gmail.com>\n"
 "Language-Team: Uzbek <https://l10n.elementary.io/projects/installer/initial-"
@@ -38,7 +38,7 @@ msgstr "\"%s\" foydalanuvchini yaratib bo'lmadi"
 msgid "No Permission to Create User '%s'"
 msgstr "\"%s\" foydalanuvchini yaratish uchun huquq yetarli emas"
 
-#: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:188
+#: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:194
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -67,11 +67,11 @@ msgstr "Parol tanlang"
 msgid "Confirm Password"
 msgstr "Parolni qaytadan kiriting"
 
-#: src/Views/AccountView.vala:98 src/Views/KeyboardLayoutView.vala:49
+#: src/Views/AccountView.vala:99 src/Views/KeyboardLayoutView.vala:52
 msgid "Back"
 msgstr "Orqaga"
 
-#: src/Views/AccountView.vala:100
+#: src/Views/AccountView.vala:101
 msgid "Finish Setup"
 msgstr "O'rnatishni yakunlash"
 
@@ -79,11 +79,11 @@ msgstr "O'rnatishni yakunlash"
 msgid "Passwords do not match"
 msgstr "Parollar mos kelmadi"
 
-#: src/Views/AccountView.vala:215
+#: src/Views/AccountView.vala:211
 msgid "The chosen username is already taken"
 msgstr "Tanlangan foydalanuvchi nomi allaqachon band qilingan"
 
-#: src/Views/AccountView.vala:217
+#: src/Views/AccountView.vala:213
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
@@ -96,31 +96,31 @@ msgstr ""
 msgid "Select Keyboard Layout"
 msgstr "Klaviatura tili"
 
-#: src/Views/KeyboardLayoutView.vala:34
+#: src/Views/KeyboardLayoutView.vala:35
 msgid "Type to test your layout"
 msgstr "Klaviatura yozuv tilini sinab ko'rish uchun nimadir yozib ko'ring"
 
-#: src/Views/KeyboardLayoutView.vala:37
+#: src/Views/KeyboardLayoutView.vala:38
 msgid "Show keyboard layout"
 msgstr "Klaviatura yozuv tilini ko'rsatish"
 
-#: src/Views/KeyboardLayoutView.vala:51 src/Views/LanguageView.vala:107
-#: src/Views/LanguageView.vala:162
+#: src/Views/KeyboardLayoutView.vala:54 src/Views/LanguageView.vala:111
+#: src/Views/LanguageView.vala:167
 msgid "Select"
 msgstr "Tanlash"
 
-#: src/Views/KeyboardLayoutView.vala:133
+#: src/Views/KeyboardLayoutView.vala:137
 msgid "Input Language"
 msgstr "Kiritish tili"
 
-#: src/Views/LanguageView.vala:195
+#: src/Views/LanguageView.vala:200
 msgid "Languages"
 msgstr "Tillar"
 
-#: src/Views/LanguageView.vala:239
+#: src/Views/LanguageView.vala:244
 msgid "Select a Language"
 msgstr "Tilni tanlang"
 
-#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:319
+#: src/Views/LanguageView.vala:267 src/Views/LanguageView.vala:326
 msgid "Currently active language"
 msgstr "Joriy til"
