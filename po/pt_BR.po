@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2019-05-28 08:03+0000\n"
-"Last-Translator: Mariana Felin <marianafelin@outlook.com>\n"
+"POT-Creation-Date: 2021-07-15 22:57+0000\n"
+"PO-Revision-Date: 2021-07-15 22:57+0000\n"
+"Last-Translator: lucaspifonseca <lucaspifonseca@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "installer/initial-setup/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -12,10 +12,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
-#: src/MainWindow.vala:34
+#: src/MainWindow.vala:33
 msgid "Create a User"
 msgstr "Crie um usuário"
 
@@ -28,17 +28,17 @@ msgstr ""
 "iniciar uma sessão e é possível que necessite reinstalar o Sistema "
 "Operacional."
 
-#: src/Utils.vala:70
+#: src/Utils.vala:65
 #, c-format
 msgid "Creating User '%s' Failed"
 msgstr "A criação do usuário '%s' falhou"
 
-#: src/Utils.vala:74
+#: src/Utils.vala:69
 #, c-format
 msgid "No Permission to Create User '%s'"
 msgstr "Sem permissão para criar o usuário '%s'"
 
-#: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:188
+#: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:194
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -47,35 +47,35 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Padrão"
 
-#: src/Views/AccountView.vala:34
+#: src/Views/AccountView.vala:35
 msgid "Create an Account"
 msgstr "Criar uma conta"
 
-#: src/Views/AccountView.vala:38
+#: src/Views/AccountView.vala:39
 msgid "Full Name"
 msgstr "Nome completo"
 
-#: src/Views/AccountView.vala:43
+#: src/Views/AccountView.vala:44
 msgid "Username"
 msgstr "Nome de usuário"
 
-#: src/Views/AccountView.vala:50
+#: src/Views/AccountView.vala:51
 msgid "Choose a Password"
 msgstr "Escolha uma senha"
 
-#: src/Views/AccountView.vala:65
+#: src/Views/AccountView.vala:67
 msgid "Confirm Password"
 msgstr "Confirmar a Senha"
 
-#: src/Views/AccountView.vala:96 src/Views/KeyboardLayoutView.vala:49
+#: src/Views/AccountView.vala:99 src/Views/KeyboardLayoutView.vala:52
 msgid "Back"
 msgstr "Voltar"
 
-#: src/Views/AccountView.vala:98
+#: src/Views/AccountView.vala:101
 msgid "Finish Setup"
 msgstr "Finalizar configuração"
 
-#: src/Views/AccountView.vala:182
+#: src/Views/AccountView.vala:186
 msgid "Passwords do not match"
 msgstr "Senhas não coincidem"
 
@@ -91,35 +91,35 @@ msgstr ""
 "espaços"
 
 #: src/Views/KeyboardLayoutView.vala:26
-msgid "Keyboard Layout"
-msgstr "Layout de teclado"
+msgid "Select Keyboard Layout"
+msgstr "Selecione o Layout de teclado"
 
-#: src/Views/KeyboardLayoutView.vala:34
+#: src/Views/KeyboardLayoutView.vala:35
 msgid "Type to test your layout"
 msgstr "Digite para testar seu layout"
 
-#: src/Views/KeyboardLayoutView.vala:37
+#: src/Views/KeyboardLayoutView.vala:38
 msgid "Show keyboard layout"
 msgstr "Mostrar layout de teclado"
 
-#: src/Views/KeyboardLayoutView.vala:51 src/Views/LanguageView.vala:107
-#: src/Views/LanguageView.vala:162
+#: src/Views/KeyboardLayoutView.vala:54 src/Views/LanguageView.vala:111
+#: src/Views/LanguageView.vala:167
 msgid "Select"
 msgstr "Selecionar"
 
-#: src/Views/KeyboardLayoutView.vala:133
+#: src/Views/KeyboardLayoutView.vala:137
 msgid "Input Language"
 msgstr "Idioma de Entrada"
 
-#: src/Views/LanguageView.vala:195
+#: src/Views/LanguageView.vala:200
 msgid "Languages"
 msgstr "Idiomas"
 
-#: src/Views/LanguageView.vala:239
+#: src/Views/LanguageView.vala:244
 msgid "Select a Language"
 msgstr "Escolha o Idioma"
 
-#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:317
+#: src/Views/LanguageView.vala:267 src/Views/LanguageView.vala:326
 msgid "Currently active language"
 msgstr "Linguagem atualmente ativa"
 

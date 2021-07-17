@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 00:35+0000\n"
+"POT-Creation-Date: 2021-07-15 22:57+0000\n"
 "PO-Revision-Date: 2019-11-03 00:24+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/installer/"
@@ -45,15 +45,38 @@ msgstr ""
 "Auxilia em tarefas essenciais antes que uma nova instalação seja utilizável, "
 "como escolher um idioma e criar uma conta de utilizador."
 
-#: data/io.elementary.initial-setup.appdata.xml.in:26
-msgid "Translation updates"
+#: data/io.elementary.initial-setup.appdata.xml.in:29
+#, fuzzy
+#| msgid "Translation updates"
+msgid "Minor updates:"
 msgstr "Atualizações de tradução"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:31
+msgid "Set keyboard layout in accountsservice"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:32
+msgid "Add multitouch gestures"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:33
+msgid "Set correct locales"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:34
+msgid "New colorful avatar fallback"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:35
+#: data/io.elementary.initial-setup.appdata.xml.in:41
+msgid "Translation updates"
+msgstr "Atualizações de tradução"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:46
 msgid "Initial release"
 msgstr "Lançamento inicial"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:66
+#: data/io.elementary.initial-setup.appdata.xml.in:81
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

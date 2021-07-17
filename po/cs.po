@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 00:35+0000\n"
+"POT-Creation-Date: 2021-07-15 22:57+0000\n"
 "PO-Revision-Date: 2020-05-12 01:20+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
-"Language-Team: Czech <https://l10n.elementary.io/projects/installer/"
-"initial-setup/cs/>\n"
+"Language-Team: Czech <https://l10n.elementary.io/projects/installer/initial-"
+"setup/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
-#: src/MainWindow.vala:34
+#: src/MainWindow.vala:33
 msgid "Create a User"
 msgstr "Vytvořit uživatelský účet"
 
@@ -27,17 +27,17 @@ msgstr ""
 "V prvotním nastavení se nepodařilo vytvořit váš uživatelský účet. Bez něj se "
 "nebudete moci přihlásit a možná bude třeba operační systém přeinstalovat."
 
-#: src/Utils.vala:70
+#: src/Utils.vala:65
 #, c-format
 msgid "Creating User '%s' Failed"
 msgstr "Vytváření uživatele „%s“ se nezdařilo"
 
-#: src/Utils.vala:74
+#: src/Utils.vala:69
 #, c-format
 msgid "No Permission to Create User '%s'"
 msgstr "Nemáte oprávnění vytvořit účet „%s“"
 
-#: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:188
+#: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:194
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -46,35 +46,35 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Výchozí"
 
-#: src/Views/AccountView.vala:34
+#: src/Views/AccountView.vala:35
 msgid "Create an Account"
 msgstr "Vytvořit uživatelský účet"
 
-#: src/Views/AccountView.vala:38
+#: src/Views/AccountView.vala:39
 msgid "Full Name"
 msgstr "Celé jméno"
 
-#: src/Views/AccountView.vala:43
+#: src/Views/AccountView.vala:44
 msgid "Username"
 msgstr "Uživatelské jméno"
 
-#: src/Views/AccountView.vala:50
+#: src/Views/AccountView.vala:51
 msgid "Choose a Password"
 msgstr "Zvolte si heslo"
 
-#: src/Views/AccountView.vala:65
+#: src/Views/AccountView.vala:67
 msgid "Confirm Password"
 msgstr "Potvrďte heslo"
 
-#: src/Views/AccountView.vala:96 src/Views/KeyboardLayoutView.vala:49
+#: src/Views/AccountView.vala:99 src/Views/KeyboardLayoutView.vala:52
 msgid "Back"
 msgstr "Zpět"
 
-#: src/Views/AccountView.vala:98
+#: src/Views/AccountView.vala:101
 msgid "Finish Setup"
 msgstr "Dokončit nastavení"
 
-#: src/Views/AccountView.vala:182
+#: src/Views/AccountView.vala:186
 msgid "Passwords do not match"
 msgstr "Zadání hesla se neshodují"
 
@@ -89,35 +89,37 @@ msgstr ""
 "Uživatelské jméno může obsahovat pouze malá písmena a číslice, bez mezer"
 
 #: src/Views/KeyboardLayoutView.vala:26
-msgid "Keyboard Layout"
+#, fuzzy
+#| msgid "Keyboard Layout"
+msgid "Select Keyboard Layout"
 msgstr "Rozložení klávesnice"
 
-#: src/Views/KeyboardLayoutView.vala:34
+#: src/Views/KeyboardLayoutView.vala:35
 msgid "Type to test your layout"
 msgstr "Vyzkoušejte rozložení klávesnice psaním"
 
-#: src/Views/KeyboardLayoutView.vala:37
+#: src/Views/KeyboardLayoutView.vala:38
 msgid "Show keyboard layout"
 msgstr "Zobrazit rozložení klávesnice"
 
-#: src/Views/KeyboardLayoutView.vala:51 src/Views/LanguageView.vala:107
-#: src/Views/LanguageView.vala:162
+#: src/Views/KeyboardLayoutView.vala:54 src/Views/LanguageView.vala:111
+#: src/Views/LanguageView.vala:167
 msgid "Select"
 msgstr "Vybrat"
 
-#: src/Views/KeyboardLayoutView.vala:133
+#: src/Views/KeyboardLayoutView.vala:137
 msgid "Input Language"
 msgstr "Jazyk vstupu z klávesnice"
 
-#: src/Views/LanguageView.vala:195
+#: src/Views/LanguageView.vala:200
 msgid "Languages"
 msgstr "Jazyky"
 
-#: src/Views/LanguageView.vala:239
+#: src/Views/LanguageView.vala:244
 msgid "Select a Language"
 msgstr "Vyberte jazyk"
 
-#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:317
+#: src/Views/LanguageView.vala:267 src/Views/LanguageView.vala:326
 msgid "Currently active language"
 msgstr "Právě používaný jazyk"
 

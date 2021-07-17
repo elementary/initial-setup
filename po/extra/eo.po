@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 00:35+0000\n"
+"POT-Creation-Date: 2021-07-15 22:57+0000\n"
 "PO-Revision-Date: 2019-10-28 20:24+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/installer/"
@@ -38,14 +38,37 @@ msgstr ""
 "Helpas pri nepraj taskoj antaŭ freŝa instalo uzeblu, ekzemple rilate elekton "
 "de lingvo kaj kreadon de uzantokonto."
 
-#: data/io.elementary.initial-setup.appdata.xml.in:26
-msgid "Translation updates"
+#: data/io.elementary.initial-setup.appdata.xml.in:29
+#, fuzzy
+#| msgid "Translation updates"
+msgid "Minor updates:"
 msgstr "Tradukaj ĝisdatigoj"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:31
+msgid "Set keyboard layout in accountsservice"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:32
+msgid "Add multitouch gestures"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:33
+msgid "Set correct locales"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:34
+msgid "New colorful avatar fallback"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:35
+#: data/io.elementary.initial-setup.appdata.xml.in:41
+msgid "Translation updates"
+msgstr "Tradukaj ĝisdatigoj"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:46
 msgid "Initial release"
 msgstr "Komenca lanĉo"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:66
+#: data/io.elementary.initial-setup.appdata.xml.in:81
 msgid "elementary, Inc."
 msgstr "elementary, Inc."

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 00:35+0000\n"
+"POT-Creation-Date: 2021-07-15 22:57+0000\n"
 "PO-Revision-Date: 2019-09-07 18:22+0000\n"
 "Last-Translator: Wattana Gaming <artjang301@gmail.com>\n"
 "Language-Team: Thai <https://l10n.elementary.io/projects/installer/initial-"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
-#: src/MainWindow.vala:34
+#: src/MainWindow.vala:33
 msgid "Create a User"
 msgstr "สร้างบัญชีผู้ใช้"
 
@@ -27,17 +27,17 @@ msgstr ""
 "โปรแกรมติดตั้งไม่สามารถที่จะสร้างบัญชีผู้ใช้ได้. หากไม่มีบัญชีผู้ใช้, "
 "คุณจะไม่สามารถเข้าสู้ระบบได้และอาจจะต้องทำการติดตั้งใหม่"
 
-#: src/Utils.vala:70
+#: src/Utils.vala:65
 #, c-format
 msgid "Creating User '%s' Failed"
 msgstr "การสร้างบัญชีผู้ใช้ '%s' ล้มเลว"
 
-#: src/Utils.vala:74
+#: src/Utils.vala:69
 #, c-format
 msgid "No Permission to Create User '%s'"
 msgstr "ไม่มีสิทธิ์ในการสร้างบัญชีผู้ใช้  '%s'"
 
-#: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:188
+#: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:194
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -46,36 +46,36 @@ msgstr "%s…"
 msgid "Default"
 msgstr "ค่าเริ่มต้น"
 
-#: src/Views/AccountView.vala:34
+#: src/Views/AccountView.vala:35
 msgid "Create an Account"
 msgstr "สร้างบัญชีผู้ใช้"
 
-#: src/Views/AccountView.vala:38
+#: src/Views/AccountView.vala:39
 msgid "Full Name"
 msgstr "ชื่อเต็ม"
 
-#: src/Views/AccountView.vala:43
+#: src/Views/AccountView.vala:44
 msgid "Username"
 msgstr "ชื่อผู้ใช้"
 
-#: src/Views/AccountView.vala:50
+#: src/Views/AccountView.vala:51
 msgid "Choose a Password"
 msgstr "ตั้งรหัสผ่าน"
 
-#: src/Views/AccountView.vala:65
+#: src/Views/AccountView.vala:67
 msgid "Confirm Password"
 msgstr "ยืนยันรหัส"
 
-#: src/Views/AccountView.vala:96 src/Views/KeyboardLayoutView.vala:49
+#: src/Views/AccountView.vala:99 src/Views/KeyboardLayoutView.vala:52
 #, fuzzy
 msgid "Back"
 msgstr "ลบ"
 
-#: src/Views/AccountView.vala:98
+#: src/Views/AccountView.vala:101
 msgid "Finish Setup"
 msgstr "เสร็จสิ้นการติดตั้ง"
 
-#: src/Views/AccountView.vala:182
+#: src/Views/AccountView.vala:186
 msgid "Passwords do not match"
 msgstr "รหัสผ่านไม่ตรงกัน"
 
@@ -89,35 +89,37 @@ msgid ""
 msgstr "ชื่อผู้ใช้จะต้องประกอบด้วยตัวอักษรและตัวเลขเล็กโดยไม่มีช่องว่าง"
 
 #: src/Views/KeyboardLayoutView.vala:26
-msgid "Keyboard Layout"
+#, fuzzy
+#| msgid "Keyboard Layout"
+msgid "Select Keyboard Layout"
 msgstr "รูปแบบแป้นพิมพ์"
 
-#: src/Views/KeyboardLayoutView.vala:34
+#: src/Views/KeyboardLayoutView.vala:35
 msgid "Type to test your layout"
 msgstr "พิมพ์เพื่อทดสอบเค้าโครงแป้นพิมพ์ของคุณ"
 
-#: src/Views/KeyboardLayoutView.vala:37
+#: src/Views/KeyboardLayoutView.vala:38
 msgid "Show keyboard layout"
 msgstr "แสดงเค้าโครงแป้นพิมพ์"
 
-#: src/Views/KeyboardLayoutView.vala:51 src/Views/LanguageView.vala:107
-#: src/Views/LanguageView.vala:162
+#: src/Views/KeyboardLayoutView.vala:54 src/Views/LanguageView.vala:111
+#: src/Views/LanguageView.vala:167
 msgid "Select"
 msgstr "เลือก"
 
-#: src/Views/KeyboardLayoutView.vala:133
+#: src/Views/KeyboardLayoutView.vala:137
 msgid "Input Language"
 msgstr "ภาษาที่ป้อน"
 
-#: src/Views/LanguageView.vala:195
+#: src/Views/LanguageView.vala:200
 msgid "Languages"
 msgstr "ภาษา"
 
-#: src/Views/LanguageView.vala:239
+#: src/Views/LanguageView.vala:244
 msgid "Select a Language"
 msgstr "เลือกภาษา"
 
-#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:317
+#: src/Views/LanguageView.vala:267 src/Views/LanguageView.vala:326
 msgid "Currently active language"
 msgstr "ภาษาที่ใช้งานในปัจจุบัน"
 

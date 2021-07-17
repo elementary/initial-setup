@@ -39,6 +39,5 @@ config_file = configure_file(
 )
 
 executable(meson.project_name(), vala_files, config_file,
-           asresources,
            dependencies : dependencies,
            install: true)
