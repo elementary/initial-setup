@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:57+0000\n"
-"PO-Revision-Date: 2019-11-01 23:24+0000\n"
+"PO-Revision-Date: 2021-07-17 12:17+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
 #: data/io.elementary.initial-setup.desktop.in:3
@@ -46,26 +46,24 @@ msgstr ""
 "援します。"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:29
-#, fuzzy
-#| msgid "Translation updates"
 msgid "Minor updates:"
-msgstr "翻訳の更新"
+msgstr "軽微なアップデート:"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:31
 msgid "Set keyboard layout in accountsservice"
-msgstr ""
+msgstr "AccountsService を利用してキーボードレイアウトを設定するように変更"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:32
 msgid "Add multitouch gestures"
-msgstr ""
+msgstr "マルチタッチジェスチャーを追加"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:33
 msgid "Set correct locales"
-msgstr ""
+msgstr "適切な地域を設定するように修正"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:34
 msgid "New colorful avatar fallback"
-msgstr ""
+msgstr "アバター画像未設定時に背景を色付きで表示するように変更"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:35
 #: data/io.elementary.initial-setup.appdata.xml.in:41
