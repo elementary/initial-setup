@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:57+0000\n"
-"PO-Revision-Date: 2019-10-25 15:24+0000\n"
+"PO-Revision-Date: 2021-07-19 14:43+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/ca/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.initial-setup.desktop.in:3
 #: data/io.elementary.initial-setup.appdata.xml.in:8
@@ -39,26 +39,24 @@ msgstr ""
 "nova, com ara triar una llengua i crear un compte d'usuari."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:29
-#, fuzzy
-#| msgid "Translation updates"
 msgid "Minor updates:"
-msgstr "Actualitzacions de la traducció"
+msgstr "Actualitzacions menors:"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:31
 msgid "Set keyboard layout in accountsservice"
-msgstr ""
+msgstr "Establiu la disposició del teclat al servei del compte."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:32
 msgid "Add multitouch gestures"
-msgstr ""
+msgstr "Afegiu-hi gests multitàctils"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:33
 msgid "Set correct locales"
-msgstr ""
+msgstr "Establiment de la llengua correcta"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:34
 msgid "New colorful avatar fallback"
-msgstr ""
+msgstr "Avatar acolorit alternatiu nou"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:35
 #: data/io.elementary.initial-setup.appdata.xml.in:41
