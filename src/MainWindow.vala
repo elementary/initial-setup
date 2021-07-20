@@ -22,6 +22,7 @@ public class Installer.MainWindow : Hdy.Window {
 
     private AccountView account_view;
     private LanguageView language_view;
+    private LocationView location_view;
     private KeyboardLayoutView keyboard_layout_view;
 
     public MainWindow () {
@@ -65,7 +66,20 @@ public class Installer.MainWindow : Hdy.Window {
         stack.add (keyboard_layout_view);
         stack.visible_child = keyboard_layout_view;
 
-        keyboard_layout_view.next_step.connect (() => load_account_view ());
+        keyboard_layout_view.next_step.connect (() => load_location_view ());
+    }
+
+    private void load_location_view () {
+        if (location_view != null) {
+            location_view.destroy ();
+        }
+
+        location_view = new LocationView ();
+        location_view.previous_view = keyboard_layout_view;
+        stack.add (location_view);
+        stack.visible_child = location_view;
+
+        location_view.next_step.connect (() => load_account_view ());
     }
 
     private void load_account_view () {
@@ -74,7 +88,7 @@ public class Installer.MainWindow : Hdy.Window {
         }
 
         account_view = new AccountView ();
-        account_view.previous_view = keyboard_layout_view;
+        account_view.previous_view = location_view;
         stack.add (account_view);
         stack.visible_child = account_view;
 
@@ -83,8 +97,10 @@ public class Installer.MainWindow : Hdy.Window {
 
     private void on_finish () {
         if (account_view.created != null) {
-            set_keyboard_and_locale.begin ((obj, res) => {
-                set_keyboard_and_locale.end (res);
+            account_view.created.set_language (Configuration.get_default ().lang);
+
+            set_settings.begin ((obj, res) => {
+                set_settings.end (res);
                 destroy ();
             });
         } else {
@@ -93,18 +109,35 @@ public class Installer.MainWindow : Hdy.Window {
 
     }
 
-    private async void set_keyboard_and_locale () {
-        yield set_keyboard_layout ();
+    private async void set_timezone () {
+        try {
+            LocationHelper.DateTime1 datetime1 = yield Bus.get_proxy (BusType.SYSTEM, "org.freedesktop.timedate1", "/org/freedesktop/timedate1");
+            unowned Configuration configuration = Configuration.get_default ();
+            datetime1.set_timezone (configuration.timezone, true);
+        } catch (Error e) {
+            warning (e.message);
+        }
+    }
 
-        string lang = Configuration.get_default ().lang;
-        string? locale = null;
-        bool success = yield LocaleHelper.language2locale (lang, out locale);
+    private async void set_clock_format () {
+        AccountsService accounts_service = null;
 
-        if (!success || locale == null || locale == "") {
-            warning ("Falling back to setting unconverted language as user's locale, may result in incorrect language");
-            account_view.created.set_language (lang);
-        } else {
-            account_view.created.set_language (locale);
+        try {
+            var act_service = yield GLib.Bus.get_proxy<FDO.Accounts> (GLib.BusType.SYSTEM,
+                                                                      "org.freedesktop.Accounts",
+                                                                      "/org/freedesktop/Accounts");
+            var user_path = act_service.find_user_by_name (account_view.created.user_name);
+
+            accounts_service = yield GLib.Bus.get_proxy (GLib.BusType.SYSTEM,
+                                                        "org.freedesktop.Accounts",
+                                                        user_path,
+                                                        GLib.DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
+        } catch (Error e) {
+            warning ("Unable to get AccountsService proxy, clock format on new user may be incorrect: %s", e.message);
+        }
+
+        if (accounts_service != null) {
+            accounts_service.clock_format = Configuration.get_default ().clock_format;
         }
     }
 
@@ -135,5 +168,11 @@ public class Installer.MainWindow : Hdy.Window {
 
             accounts_service.keyboard_layouts = { layout };
         }
+    }
+
+    private async void set_settings () {
+        yield set_timezone ();
+        yield set_clock_format ();
+        yield set_keyboard_layout ();
     }
 }
