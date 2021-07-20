@@ -4,7 +4,11 @@ project(
   version: '6.0.0',
 )
 
-add_global_arguments('-DGETTEXT_PACKAGE="' + meson.project_name() + '"', language:'c')
+add_global_arguments(
+    '-DGETTEXT_PACKAGE="' + meson.project_name() + '"',
+    '-DI_KNOW_THE_PACKAGEKIT_GLIB2_API_IS_SUBJECT_TO_CHANGE',
+    language:'c'
+)
 add_project_arguments(['--vapidir', join_paths(meson.current_source_dir(), 'vapi')],
                       language: 'vala')
 
@@ -22,6 +26,7 @@ handy_dep = dependency('libhandy-1', version: '>=0.90.0')
 gtk_dep = dependency('gtk+-3.0')
 handy_dep = dependency('libhandy-1', version: '>= 0.90.0')
 json_glib_dep = dependency('json-glib-1.0')
+packagekit_dep = dependency ('packagekit-glib2')
 polkit_dep = dependency('polkit-gobject-1')
 posix_dep = meson.get_compiler('vala').find_library('posix')
 pwquality_dep = dependency('pwquality')
@@ -38,6 +43,7 @@ dependencies = [
     gtk_dep,
     handy_dep,
     json_glib_dep,
+    packagekit_dep,
     polkit_dep,
     posix_dep,
     pwquality_dep,

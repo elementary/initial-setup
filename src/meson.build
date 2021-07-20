@@ -12,6 +12,8 @@ vala_files = [
     'Views/AccountView.vala',
     'Views/KeyboardLayoutView.vala',
     'Views/LanguageView.vala',
+    'Views/ProgressView.vala',
+    'Views/SoftwareView.vala',
     'Widgets/LayoutWidget.vala',
     'Widgets/VariantWidget.vala'
 ]

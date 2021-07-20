@@ -17,6 +17,7 @@ You'll need the following dependencies:
 * libgtk-3-dev
 * libhandy-1-dev
 * libjson-glib-dev
+* libpackagekit-glib2-dev
 * libpwquality-dev
 * libxml2-dev
 * libxml2-utils
