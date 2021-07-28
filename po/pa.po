@@ -8,113 +8,120 @@ msgstr ""
 "Project-Id-Version: io.elementary.initial-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:57+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-07-28 09:15+0000\n"
+"Last-Translator: elSolus <tumbleweed@tuta.io>\n"
+"Language-Team: Punjabi <https://l10n.elementary.io/projects/installer/"
+"initial-setup/pa/>\n"
 "Language: pa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: src/MainWindow.vala:33
 msgid "Create a User"
-msgstr ""
+msgstr "ਕੋਈ ਵਰਤੋਂਕਾਰ ਬਣਾਓ"
 
 #: src/Utils.vala:53
 msgid ""
 "Initial Setup could not create your user. Without it, you will not be able "
 "to log in and may need to reinstall the OS."
 msgstr ""
+"ਸ਼ੁਰੂਆਤੀ ਸੈੱਟਅਪ ਤੁਹਾਡੇ ਵਰਤੋਂਕਾਰ ਨੂੰ ਬਣਾ ਨਹੀਂ ਸਕਿਆ। ਇਸ ਤੋਂ ਬਿਨਾਂ ਤੁਸੀਂ ਲਾਗਇਨ "
+"ਨਹੀਂ ਕਰ ਸਕਦੇ ਅਤੇ ਹੋ ਸਕਦੈ ਤੁਹਾਨੂੰ ਅਪਰੇਟਿੰਗ ਸਿਸਟਮ ਦੁਬਾਰਾ ਇੰਸਟਾਲ ਕਰਨਾ ਪਵੇ।"
 
 #: src/Utils.vala:65
 #, c-format
 msgid "Creating User '%s' Failed"
-msgstr ""
+msgstr "ਵਰਤੋਂਕਾਰ '%s' ਬਣਾਉਣਾ ਨਾਕਾਮ ਰਿਹਾ"
 
 #: src/Utils.vala:69
 #, c-format
 msgid "No Permission to Create User '%s'"
-msgstr ""
+msgstr "ਵਰਤੋਂਕਾਰ '%s' ਬਣਾਉਣ ਦੀ ਇਜਾਜ਼ਤ ਨਹੀਂ ਹੈ"
 
 #: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:194
 #, c-format
 msgid "%s…"
-msgstr ""
+msgstr "%s…"
 
 #: src/Objects/KeyboardVariant.vala:27
 msgid "Default"
-msgstr ""
+msgstr "ਡਿਫ਼ਾਲਟ"
 
 #: src/Views/AccountView.vala:35
 msgid "Create an Account"
-msgstr ""
+msgstr "ਕੋਈ ਖਾਤਾ ਬਣਾਓ"
 
 #: src/Views/AccountView.vala:39
 msgid "Full Name"
-msgstr ""
+msgstr "ਪੂਰਾ ਨਾਂ"
 
 #: src/Views/AccountView.vala:44
 msgid "Username"
-msgstr ""
+msgstr "ਵਰਤੋਂਕਾਰ-ਨਾਂ"
 
 #: src/Views/AccountView.vala:51
 msgid "Choose a Password"
-msgstr ""
+msgstr "ਪਾਸਵਰਡ ਚੁਣੋ"
 
 #: src/Views/AccountView.vala:67
 msgid "Confirm Password"
-msgstr ""
+msgstr "ਪਾਸਵਰਡ ਤਸਦੀਕ ਕਰੋ"
 
 #: src/Views/AccountView.vala:99 src/Views/KeyboardLayoutView.vala:52
 msgid "Back"
-msgstr ""
+msgstr "ਪਿੱਛੇ"
 
 #: src/Views/AccountView.vala:101
 msgid "Finish Setup"
-msgstr ""
+msgstr "ਸੈੱਟਅਪ ਮੁਕਾਓ"
 
 #: src/Views/AccountView.vala:186
 msgid "Passwords do not match"
-msgstr ""
+msgstr "ਪਾਸਵਰਡ ਮੇਲ ਨਹੀਂ ਖਾਂਦੇ"
 
 #: src/Views/AccountView.vala:211
 msgid "The chosen username is already taken"
-msgstr ""
+msgstr "ਚੁਣਿਆ ਹੋਇਆ ਵਰਤੋਂਕਾਰ-ਨਾਂ ਪਹਿਲਾਂ ਹੀ ਕਿਸੇ ਨੇ ਵਰਤਿਆ ਹੋਇਐ"
 
 #: src/Views/AccountView.vala:213
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
+"ਵਰਤੋਂਕਾਰ-ਨਾਂ ਵਿੱਚ ਸਿਰਫ਼ ਅੰਗਰੇਜ਼ੀ ਦੇ ਛੋਟੇ ਅੱਖਰ ਅਤੇ ਨੰਬਰ ਵਰਤਣ ਦੀ ਇਜਾਜ਼ਤ ਹੈ, "
+"ਬਿਨਾਂ ਸਪੇਸ ਤੋਂ"
 
 #: src/Views/KeyboardLayoutView.vala:26
 msgid "Select Keyboard Layout"
-msgstr ""
+msgstr "ਕੀਬੋਰਡ ਲੇਆਊਟ ਚੁਣੋ"
 
 #: src/Views/KeyboardLayoutView.vala:35
 msgid "Type to test your layout"
-msgstr ""
+msgstr "ਲੇਆਊਟ ਜਾਂਚਣ ਲਈ ਟਾਈਪ ਕਰੋ"
 
 #: src/Views/KeyboardLayoutView.vala:38
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "ਕੀਬੋਰਡ ਲੇਆਊਟ ਵਿਖਾਓ"
 
 #: src/Views/KeyboardLayoutView.vala:54 src/Views/LanguageView.vala:111
 #: src/Views/LanguageView.vala:167
 msgid "Select"
-msgstr ""
+msgstr "ਚੁਣੋ"
 
 #: src/Views/KeyboardLayoutView.vala:137
 msgid "Input Language"
-msgstr ""
+msgstr "ਇਨਪੁਟ ਭਾਸ਼ਾ"
 
 #: src/Views/LanguageView.vala:200
 msgid "Languages"
-msgstr ""
+msgstr "ਭਾਸ਼ਾਵਾਂ"
 
 #: src/Views/LanguageView.vala:244
 msgid "Select a Language"
-msgstr ""
+msgstr "ਕੋਈ ਭਾਸ਼ਾ ਚੁਣੋ"
 
 #: src/Views/LanguageView.vala:267 src/Views/LanguageView.vala:326
 msgid "Currently active language"
-msgstr ""
+msgstr "ਹਾਲੀਆ ਸਰਗਰਮ ਭਾਸ਼ਾ"
