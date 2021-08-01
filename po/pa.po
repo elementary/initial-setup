@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.initial-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:57+0000\n"
-"PO-Revision-Date: 2021-08-01 04:52+0000\n"
+"PO-Revision-Date: 2021-08-01 12:30+0000\n"
 "Last-Translator: elSolus <tumbleweed@tuta.io>\n"
 "Language-Team: Punjabi <https://l10n.elementary.io/projects/installer/"
 "initial-setup/pa/>\n"
@@ -99,7 +99,7 @@ msgstr "ਕੀਬੋਰਡ ਲੇਆਊਟ ਚੁਣੋ"
 
 #: src/Views/KeyboardLayoutView.vala:35
 msgid "Type to test your layout"
-msgstr "ਲੇਆਊਟ ਜਾਂਚਣ ਲਈ ਟਾਈਪ ਕਰੋ"
+msgstr "ਲੇਆਊਟ ਟੈਸਟ ਕਰਨ ਲਈ ਟਾਈਪ ਕਰੋ"
 
 #: src/Views/KeyboardLayoutView.vala:38
 msgid "Show keyboard layout"
@@ -112,7 +112,7 @@ msgstr "ਚੁਣੋ"
 
 #: src/Views/KeyboardLayoutView.vala:137
 msgid "Input Language"
-msgstr "ਇਨਪੁਟ ਭਾਸ਼ਾ"
+msgstr "ਟਾਈਪਿੰਗ ਲਈ ਭਾਸ਼ਾ"
 
 #: src/Views/LanguageView.vala:200
 msgid "Languages"
@@ -124,4 +124,4 @@ msgstr "ਕੋਈ ਭਾਸ਼ਾ ਚੁਣੋ"
 
 #: src/Views/LanguageView.vala:267 src/Views/LanguageView.vala:326
 msgid "Currently active language"
-msgstr "ਹਾਲੀਆ ਸਰਗਰਮ ਭਾਸ਼ਾ"
+msgstr "ਮੌਜੂਦਾ ਚੁਣੀ ਹੋਈ ਭਾਸ਼ਾ"
