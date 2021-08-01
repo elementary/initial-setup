@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.initial-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:57+0000\n"
-"PO-Revision-Date: 2021-07-28 09:15+0000\n"
+"PO-Revision-Date: 2021-08-01 04:52+0000\n"
 "Last-Translator: elSolus <tumbleweed@tuta.io>\n"
 "Language-Team: Punjabi <https://l10n.elementary.io/projects/installer/"
 "initial-setup/pa/>\n"
@@ -72,7 +72,7 @@ msgstr "ਪਾਸਵਰਡ ਤਸਦੀਕ ਕਰੋ"
 
 #: src/Views/AccountView.vala:99 src/Views/KeyboardLayoutView.vala:52
 msgid "Back"
-msgstr "ਪਿੱਛੇ"
+msgstr "ਪਿੱਛੇ ਜਾਓ"
 
 #: src/Views/AccountView.vala:101
 msgid "Finish Setup"
