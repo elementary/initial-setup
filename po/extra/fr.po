@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:57+0000\n"
-"PO-Revision-Date: 2021-07-29 18:27+0000\n"
-"Last-Translator: Corentin Noël <tintou@noel.tf>\n"
+"PO-Revision-Date: 2021-08-03 17:09+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/fr/>\n"
 "Language: fr\n"
@@ -55,7 +55,7 @@ msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:32
 msgid "Add multitouch gestures"
-msgstr ""
+msgstr "Ajout des gestes multiples"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:33
 msgid "Set correct locales"
@@ -63,7 +63,7 @@ msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:34
 msgid "New colorful avatar fallback"
-msgstr ""
+msgstr "Nouvel avatar coloré par défaut"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:35
 #: data/io.elementary.initial-setup.appdata.xml.in:41
