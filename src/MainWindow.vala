@@ -88,7 +88,7 @@ public class Installer.MainWindow : Hdy.Window {
         }
 
         account_view = new AccountView ();
-        account_view.previous_view = keyboard_layout_view;
+        account_view.previous_view = system_view;
         stack.add (account_view);
         stack.visible_child = account_view;
 
