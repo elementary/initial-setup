@@ -67,6 +67,8 @@ public class Installer.SystemView : AbstractInstallerView {
         back_button.clicked.connect (() => ((Gtk.Stack) get_parent ()).visible_child = previous_view);
 
         next_button.clicked.connect (() => {
+            Utils.set_hostname (hostname_entry.text);
+
             next_step ();
         });
 

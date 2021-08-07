@@ -124,4 +124,36 @@ namespace Utils {
 
         return username;
     }
+
+    [DBus (name = "org.freedesktop.hostname1")]
+    interface HostnameInterface : Object {
+        public abstract void set_hostname (string hostname, bool interactive) throws GLib.Error;
+    }
+
+    private static HostnameInterface? hostname_interface_instance;
+    private static void get_hostname_interface_instance () {
+        if (hostname_interface_instance == null) {
+            try {
+                hostname_interface_instance = Bus.get_proxy_sync (
+                    BusType.SYSTEM,
+                    "org.freedesktop.hostname1",
+                    "/org/freedesktop/hostname1"
+                );
+            } catch (GLib.Error e) {
+                warning ("%s", e.message);
+            }
+        }
+    }
+
+    public static bool set_hostname (string hostname) {
+        try {
+            get_hostname_interface_instance ();
+            hostname_interface_instance.set_hostname (hostname, true);
+        } catch (GLib.Error e) {
+            warning ("Could not set hostname: %s", e.message);
+            return false;
+        }
+
+        return true;
+    }
 }
