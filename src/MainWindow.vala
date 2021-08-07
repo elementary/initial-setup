@@ -23,6 +23,7 @@ public class Installer.MainWindow : Hdy.Window {
     private AccountView account_view;
     private LanguageView language_view;
     private KeyboardLayoutView keyboard_layout_view;
+    private SystemView system_view;
 
     public MainWindow () {
         Object (
@@ -65,7 +66,20 @@ public class Installer.MainWindow : Hdy.Window {
         stack.add (keyboard_layout_view);
         stack.visible_child = keyboard_layout_view;
 
-        keyboard_layout_view.next_step.connect (() => load_account_view ());
+        keyboard_layout_view.next_step.connect (() => load_system_view ());
+    }
+
+    private void load_system_view () {
+        if (system_view != null) {
+            system_view.destroy ();
+        }
+
+        system_view = new SystemView ();
+        system_view.previous_view = keyboard_layout_view;
+        stack.add (system_view);
+        stack.visible_child = system_view;
+
+        system_view.next_step.connect (() => load_account_view ());
     }
 
     private void load_account_view () {
