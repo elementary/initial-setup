@@ -32,7 +32,7 @@ public class Installer.SystemView : AbstractInstallerView {
 
         var hostname_entry = new Gtk.Entry () {
             hexpand = true,
-            text = GLib.Environment.get_host_name ()
+            text = Utils.get_hostname ()
         };
 
         var hostname_info = new Gtk.Label (_("Visible to other devices when sharing, e.g. with Bluetooth or over the network.")) {

@@ -127,6 +127,8 @@ namespace Utils {
 
     [DBus (name = "org.freedesktop.hostname1")]
     interface HostnameInterface : Object {
+        public abstract string hostname { owned get; }
+
         public abstract void set_hostname (string hostname, bool interactive) throws GLib.Error;
     }
 
@@ -143,6 +145,12 @@ namespace Utils {
                 warning ("%s", e.message);
             }
         }
+    }
+
+    public static string get_hostname () {
+        get_hostname_interface_instance ();
+
+        return hostname_interface_instance.hostname;
     }
 
     public static bool set_hostname (string hostname) {
