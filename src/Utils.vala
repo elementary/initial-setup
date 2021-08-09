@@ -125,10 +125,34 @@ namespace Utils {
         return username;
     }
 
+    public static string gen_hostname (string pretty_hostname) {
+        string hostname = "";
+        bool met_alpha = false;
+        bool whitespace_before = false;
+
+        foreach (char c in pretty_hostname.to_ascii ().to_utf8 ()) {
+            if (c.isalpha ()) {
+                hostname += c.to_string ().down ();
+                met_alpha = true;
+                whitespace_before = false;
+            } else if (c.isdigit () && met_alpha) {
+                hostname += c.to_string ();
+                whitespace_before = false;
+            } else if (c.isspace () && !whitespace_before) {
+                hostname += "-";
+                whitespace_before = true;
+            }
+        }
+
+        return hostname;
+    }
+
     [DBus (name = "org.freedesktop.hostname1")]
     interface HostnameInterface : Object {
+        public abstract string pretty_hostname { owned get; }
         public abstract string static_hostname { owned get; }
 
+        public abstract void set_pretty_hostname (string hostname, bool interactive) throws GLib.Error;
         public abstract void set_static_hostname (string hostname, bool interactive) throws GLib.Error;
     }
 
@@ -150,13 +174,20 @@ namespace Utils {
     public static string get_hostname () {
         get_hostname_interface_instance ();
 
-        return hostname_interface_instance.static_hostname;
+        string hostname = hostname_interface_instance.pretty_hostname;
+
+        if (hostname.length == 0) {
+            hostname = hostname_interface_instance.static_hostname;
+        }
+
+        return hostname;
     }
 
     public static bool set_hostname (string hostname) {
         try {
             get_hostname_interface_instance ();
-            hostname_interface_instance.set_static_hostname (hostname, false);
+            hostname_interface_instance.set_pretty_hostname (hostname, false);
+            hostname_interface_instance.set_static_hostname (gen_hostname (hostname), false);
         } catch (GLib.Error e) {
             warning ("Could not set hostname: %s", e.message);
             return false;
