@@ -74,7 +74,9 @@ public class Installer.AccountView : AbstractInstallerView {
         confirm_entry_revealer = new ErrorRevealer (".");
         confirm_entry_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
 
-        var hostname_label = new Granite.HeaderLabel (_("Device name"));
+        var hostname_label = new Granite.HeaderLabel (_("Device name")) {
+            margin_top = 16
+        };
 
         var hostname_entry = new Gtk.Entry () {
             hexpand = true,
