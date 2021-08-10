@@ -26,6 +26,7 @@ public class Installer.AccountView : AbstractInstallerView {
     private Granite.ValidatedEntry username_entry;
     private ValidatedEntry pw_entry;
     private Gtk.LevelBar pw_levelbar;
+    private Granite.ValidatedEntry hostname_entry;
 
     construct {
         var avatar = new Hdy.Avatar (48, null, true) {
@@ -78,7 +79,8 @@ public class Installer.AccountView : AbstractInstallerView {
             margin_top = 16
         };
 
-        var hostname_entry = new Gtk.Entry () {
+        hostname_entry = new Granite.ValidatedEntry () {
+            activates_default = true,
             hexpand = true,
             text = Utils.get_hostname ()
         };
@@ -146,6 +148,11 @@ public class Installer.AccountView : AbstractInstallerView {
 
         confirm_entry.changed.connect (() => {
             confirm_entry.is_valid = confirm_password ();
+            update_finish_button ();
+        });
+
+        hostname_entry.changed.connect (() => {
+            hostname_entry.is_valid = check_hostname ();
             update_finish_button ();
         });
 
@@ -239,6 +246,10 @@ public class Installer.AccountView : AbstractInstallerView {
         }
 
         return false;
+    }
+
+    private bool check_hostname () {
+        return Utils.gen_hostname (hostname_entry.text).length > 0;
     }
 
     private void update_finish_button () {
