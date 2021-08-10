@@ -189,7 +189,22 @@ namespace Utils {
             hostname_interface_instance.set_pretty_hostname (hostname, false);
             hostname_interface_instance.set_static_hostname (gen_hostname (hostname), false);
         } catch (GLib.Error e) {
-            warning ("Could not set hostname: %s", e.message);
+            string primary_text = _("Setting Hostname '%s' Failed").printf (hostname);
+            string secondary_text = _("Initial Setup could not set your hostname.");
+            string error_message = e.message;
+
+            var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
+                primary_text,
+                secondary_text,
+                "dialog-error",
+                Gtk.ButtonsType.CLOSE
+            );
+
+            error_dialog.show_error_details (error_message);
+
+            error_dialog.run ();
+            error_dialog.destroy ();
+
             return false;
         }
 
