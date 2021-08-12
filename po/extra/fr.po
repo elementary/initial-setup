@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:57+0000\n"
-"PO-Revision-Date: 2021-08-03 17:09+0000\n"
+"PO-Revision-Date: 2021-08-12 14:59+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/fr/>\n"
@@ -55,7 +55,7 @@ msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:32
 msgid "Add multitouch gestures"
-msgstr "Ajout des gestes multiples"
+msgstr "Ajout du multi-touch"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:33
 msgid "Set correct locales"
