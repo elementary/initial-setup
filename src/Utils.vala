@@ -184,15 +184,26 @@ namespace Utils {
     }
 
     public static bool set_hostname (string hostname) {
-        try {
-            get_hostname_interface_instance ();
-            hostname_interface_instance.set_pretty_hostname (hostname, false);
-            hostname_interface_instance.set_static_hostname (gen_hostname (hostname), false);
-        } catch (GLib.Error e) {
-            string primary_text = _("Setting Hostname '%s' Failed").printf (hostname);
-            string secondary_text = _("Initial Setup could not set your hostname.");
-            string error_message = e.message;
+        string? primary_text = null;
+        string secondary_text = _("Initial Setup could not set your hostname.");
+        string? error_message = null;
 
+        try {
+            var permission = new Polkit.Permission.sync ("org.freedesktop.hostname1.set-static-hostname", new Polkit.UnixProcess (Posix.getpid ()));
+
+            if (permission != null && permission.allowed) {
+                get_hostname_interface_instance ();
+                hostname_interface_instance.set_pretty_hostname (hostname, false);
+                hostname_interface_instance.set_static_hostname (gen_hostname (hostname), false);
+            } else {
+                primary_text = _("No Permission to set hostname '%s'").printf (hostname);
+            }
+        } catch (GLib.Error e) {
+            primary_text = _("Unable to set Hostname '%s'").printf (hostname);
+            error_message = e.message;
+        }
+
+        if (primary_text != null) {
             var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
                 primary_text,
                 secondary_text,
@@ -200,7 +211,10 @@ namespace Utils {
                 Gtk.ButtonsType.CLOSE
             );
 
-            error_dialog.show_error_details (error_message);
+            if (error_message != null) {
+                error_dialog.show_error_details (error_message);
+            }
+
 
             error_dialog.run ();
             error_dialog.destroy ();
