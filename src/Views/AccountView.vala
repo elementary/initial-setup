@@ -81,9 +81,12 @@ public class Installer.AccountView : AbstractInstallerView {
 
         hostname_entry = new Granite.ValidatedEntry () {
             activates_default = true,
-            hexpand = true,
-            text = Utils.get_hostname ()
+            hexpand = true
         };
+
+        hostname_entry.map.connect (() => {
+            hostname_entry.text = Utils.get_hostname ();
+        });
 
         var hostname_info = new Gtk.Label (_("Visible to other devices when sharing, e.g. with Bluetooth or over the network.")) {
             max_width_chars = 60,
