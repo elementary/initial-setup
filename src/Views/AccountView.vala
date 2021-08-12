@@ -256,7 +256,7 @@ public class Installer.AccountView : AbstractInstallerView {
     }
 
     private void update_finish_button () {
-        if (username_entry.is_valid && pw_entry.is_valid && confirm_entry.is_valid) {
+        if (username_entry.is_valid && pw_entry.is_valid && confirm_entry.is_valid && hostname_entry.is_valid) {
             finish_button.sensitive = true;
             finish_button.has_default = true;
         } else {
