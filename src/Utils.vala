@@ -132,7 +132,7 @@ namespace Utils {
 
         foreach (char c in pretty_hostname.to_ascii ().to_utf8 ()) {
             if (c.isalpha ()) {
-                hostname += c.to_string ().down ();
+                hostname += c.to_string ();
                 met_alpha = true;
                 whitespace_before = false;
             } else if (c.isdigit () && met_alpha) {

@@ -89,7 +89,8 @@ public class Installer.AccountView : AbstractInstallerView {
         });
 
         var hostname_info = new Gtk.Label (_("Visible to other devices when sharing, e.g. with Bluetooth or over the network.")) {
-            max_width_chars = 60,
+            // Wrap without expanding the view
+            max_width_chars = 0,
             margin_bottom = 18,
             wrap = true,
             xalign = 0
