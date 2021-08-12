@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:57+0000\n"
-"PO-Revision-Date: 2021-07-06 20:32+0000\n"
+"PO-Revision-Date: 2021-08-10 22:24+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/uk/>\n"
@@ -107,7 +107,7 @@ msgstr "Вибрати"
 
 #: src/Views/KeyboardLayoutView.vala:137
 msgid "Input Language"
-msgstr "Мова вводу"
+msgstr "Мова введення"
 
 #: src/Views/LanguageView.vala:200
 msgid "Languages"
