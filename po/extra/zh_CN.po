@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 22:57+0000\n"
+"POT-Creation-Date: 2021-08-20 22:23+0000\n"
 "PO-Revision-Date: 2020-05-23 09:11+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -44,37 +44,47 @@ msgid ""
 msgstr "在全新安装前配置系统参数，如选择语言和创建用户账户。"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:29
+msgid "New features:"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:31
+msgid "Confirm and change device name"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:33
+#: data/io.elementary.initial-setup.appdata.xml.in:41
 #, fuzzy
 #| msgid "Translation updates"
 msgid "Minor updates:"
 msgstr "翻译更新"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:31
-msgid "Set keyboard layout in accountsservice"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:32
-msgid "Add multitouch gestures"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:33
-msgid "Set correct locales"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:34
-msgid "New colorful avatar fallback"
-msgstr ""
-
 #: data/io.elementary.initial-setup.appdata.xml.in:35
-#: data/io.elementary.initial-setup.appdata.xml.in:41
+#: data/io.elementary.initial-setup.appdata.xml.in:47
+#: data/io.elementary.initial-setup.appdata.xml.in:53
 msgid "Translation updates"
 msgstr "翻译更新"
 
+#: data/io.elementary.initial-setup.appdata.xml.in:43
+msgid "Set keyboard layout in accountsservice"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:44
+msgid "Add multitouch gestures"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:45
+msgid "Set correct locales"
+msgstr ""
+
 #: data/io.elementary.initial-setup.appdata.xml.in:46
+msgid "New colorful avatar fallback"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:58
 msgid "Initial release"
 msgstr "初始发行版本"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:81
+#: data/io.elementary.initial-setup.appdata.xml.in:93
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

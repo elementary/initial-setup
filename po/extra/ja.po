@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 22:57+0000\n"
+"POT-Creation-Date: 2021-08-20 22:23+0000\n"
 "PO-Revision-Date: 2021-07-17 12:17+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/installer/"
@@ -46,35 +46,45 @@ msgstr ""
 "援します。"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:29
+msgid "New features:"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:31
+msgid "Confirm and change device name"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:33
+#: data/io.elementary.initial-setup.appdata.xml.in:41
 msgid "Minor updates:"
 msgstr "軽微なアップデート:"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:31
-msgid "Set keyboard layout in accountsservice"
-msgstr "AccountsService を利用してキーボードレイアウトを設定するように変更"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:32
-msgid "Add multitouch gestures"
-msgstr "マルチタッチジェスチャーを追加"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:33
-msgid "Set correct locales"
-msgstr "適切な地域を設定するように修正"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:34
-msgid "New colorful avatar fallback"
-msgstr "アバター画像未設定時に背景を色付きで表示するように変更"
-
 #: data/io.elementary.initial-setup.appdata.xml.in:35
-#: data/io.elementary.initial-setup.appdata.xml.in:41
+#: data/io.elementary.initial-setup.appdata.xml.in:47
+#: data/io.elementary.initial-setup.appdata.xml.in:53
 msgid "Translation updates"
 msgstr "翻訳の更新"
 
+#: data/io.elementary.initial-setup.appdata.xml.in:43
+msgid "Set keyboard layout in accountsservice"
+msgstr "AccountsService を利用してキーボードレイアウトを設定するように変更"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:44
+msgid "Add multitouch gestures"
+msgstr "マルチタッチジェスチャーを追加"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:45
+msgid "Set correct locales"
+msgstr "適切な地域を設定するように修正"
+
 #: data/io.elementary.initial-setup.appdata.xml.in:46
+msgid "New colorful avatar fallback"
+msgstr "アバター画像未設定時に背景を色付きで表示するように変更"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:58
 msgid "Initial release"
 msgstr "最初のリリース"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:81
+#: data/io.elementary.initial-setup.appdata.xml.in:93
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
