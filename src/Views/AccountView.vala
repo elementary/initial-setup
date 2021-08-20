@@ -26,6 +26,7 @@ public class Installer.AccountView : AbstractInstallerView {
     private Granite.ValidatedEntry username_entry;
     private ValidatedEntry pw_entry;
     private Gtk.LevelBar pw_levelbar;
+    private Granite.ValidatedEntry hostname_entry;
 
     construct {
         var avatar = new Hdy.Avatar (48, null, true) {
@@ -74,6 +75,28 @@ public class Installer.AccountView : AbstractInstallerView {
         confirm_entry_revealer = new ErrorRevealer (".");
         confirm_entry_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
 
+        var hostname_label = new Granite.HeaderLabel (_("Device name")) {
+            margin_top = 16
+        };
+
+        hostname_entry = new Granite.ValidatedEntry () {
+            activates_default = true,
+            hexpand = true
+        };
+
+        hostname_entry.map.connect (() => {
+            hostname_entry.text = Utils.get_hostname ();
+        });
+
+        var hostname_info = new Gtk.Label (_("Visible to other devices when sharing, e.g. with Bluetooth or over the network.")) {
+            // Wrap without expanding the view
+            max_width_chars = 0,
+            margin_bottom = 18,
+            wrap = true,
+            xalign = 0
+        };
+        hostname_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
         var form_grid = new Gtk.Grid ();
         form_grid.row_spacing = 3;
         form_grid.valign = Gtk.Align.CENTER;
@@ -91,6 +114,9 @@ public class Installer.AccountView : AbstractInstallerView {
         form_grid.attach (confirm_label, 0, 10, 1, 1);
         form_grid.attach (confirm_entry, 0, 11, 1, 1);
         form_grid.attach (confirm_entry_revealer, 0, 12, 1, 1);
+        form_grid.attach (hostname_label, 0, 13, 1, 1);
+        form_grid.attach (hostname_entry, 0, 14, 1, 1);
+        form_grid.attach (hostname_info, 0, 15, 1, 1);
 
         content_area.attach (avatar, 0, 0);
         content_area.attach (title_label, 0, 1, 1, 1);
@@ -129,12 +155,19 @@ public class Installer.AccountView : AbstractInstallerView {
             update_finish_button ();
         });
 
+        hostname_entry.changed.connect (() => {
+            hostname_entry.is_valid = check_hostname ();
+            update_finish_button ();
+        });
+
         finish_button.clicked.connect (() => {
             string fullname = realname_entry.text;
             string username = username_entry.text;
             string password = pw_entry.text;
 
             created = Utils.create_new_user (fullname, username, password);
+
+            Utils.set_hostname (hostname_entry.text);
 
             next_step ();
         });
@@ -219,8 +252,12 @@ public class Installer.AccountView : AbstractInstallerView {
         return false;
     }
 
+    private bool check_hostname () {
+        return Utils.gen_hostname (hostname_entry.text).length > 0;
+    }
+
     private void update_finish_button () {
-        if (username_entry.is_valid && pw_entry.is_valid && confirm_entry.is_valid) {
+        if (username_entry.is_valid && pw_entry.is_valid && confirm_entry.is_valid && hostname_entry.is_valid) {
             finish_button.sensitive = true;
             finish_button.has_default = true;
         } else {

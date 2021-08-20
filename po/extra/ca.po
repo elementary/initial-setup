@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 22:57+0000\n"
+"POT-Creation-Date: 2021-08-20 22:23+0000\n"
 "PO-Revision-Date: 2021-07-19 14:43+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/installer/"
@@ -39,34 +39,44 @@ msgstr ""
 "nova, com ara triar una llengua i crear un compte d'usuari."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:29
+msgid "New features:"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:31
+msgid "Confirm and change device name"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:33
+#: data/io.elementary.initial-setup.appdata.xml.in:41
 msgid "Minor updates:"
 msgstr "Actualitzacions menors:"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:31
-msgid "Set keyboard layout in accountsservice"
-msgstr "Establiu la disposició del teclat al servei del compte."
-
-#: data/io.elementary.initial-setup.appdata.xml.in:32
-msgid "Add multitouch gestures"
-msgstr "Afegiu-hi gests multitàctils"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:33
-msgid "Set correct locales"
-msgstr "Establiment de la llengua correcta"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:34
-msgid "New colorful avatar fallback"
-msgstr "Avatar acolorit alternatiu nou"
-
 #: data/io.elementary.initial-setup.appdata.xml.in:35
-#: data/io.elementary.initial-setup.appdata.xml.in:41
+#: data/io.elementary.initial-setup.appdata.xml.in:47
+#: data/io.elementary.initial-setup.appdata.xml.in:53
 msgid "Translation updates"
 msgstr "Actualitzacions de la traducció"
 
+#: data/io.elementary.initial-setup.appdata.xml.in:43
+msgid "Set keyboard layout in accountsservice"
+msgstr "Establiu la disposició del teclat al servei del compte."
+
+#: data/io.elementary.initial-setup.appdata.xml.in:44
+msgid "Add multitouch gestures"
+msgstr "Afegiu-hi gests multitàctils"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:45
+msgid "Set correct locales"
+msgstr "Establiment de la llengua correcta"
+
 #: data/io.elementary.initial-setup.appdata.xml.in:46
+msgid "New colorful avatar fallback"
+msgstr "Avatar acolorit alternatiu nou"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:58
 msgid "Initial release"
 msgstr "Publicació inicial"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:81
+#: data/io.elementary.initial-setup.appdata.xml.in:93
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
