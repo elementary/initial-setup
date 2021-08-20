@@ -26,9 +26,12 @@
   <releases>
     <release version="6.1.0" date="2021-08-11" urgency="medium">
       <description>
-        <p>Minor updates:</p>
+        <p>New features:</p>
         <ul>
           <li>Confirm and change device name</li>
+        </ul>
+        <p>Minor updates:</p>
+        <ul>
           <li>Translation updates</li>
         </ul>
       </description>
