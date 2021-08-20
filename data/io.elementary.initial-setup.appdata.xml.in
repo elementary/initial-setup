@@ -24,7 +24,7 @@
     <binary>io.elementary.initial-setup</binary>
   </provides>
   <releases>
-    <release version="6.1.0" date="2021-08-11" urgency="medium">
+    <release version="6.1.0" date="2021-08-20" urgency="medium">
       <description>
         <p>New features:</p>
         <ul>
