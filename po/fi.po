@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 22:57+0000\n"
+"POT-Creation-Date: 2021-08-20 22:23+0000\n"
 "PO-Revision-Date: 2021-06-04 03:31+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/installer/"
@@ -38,6 +38,21 @@ msgstr "Käyttäjän '%s' luominen epäonnistui"
 msgid "No Permission to Create User '%s'"
 msgstr "Ei käyttöoikeuksia lisätä käyttäjää '%s'"
 
+#: src/Utils.vala:188
+msgid "Initial Setup could not set your hostname."
+msgstr ""
+
+#: src/Utils.vala:199
+#, fuzzy, c-format
+#| msgid "No Permission to Create User '%s'"
+msgid "No Permission to set hostname '%s'"
+msgstr "Ei käyttöoikeuksia lisätä käyttäjää '%s'"
+
+#: src/Utils.vala:202
+#, c-format
+msgid "Unable to set Hostname '%s'"
+msgstr ""
+
 #: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:194
 #, c-format
 msgid "%s…"
@@ -47,43 +62,53 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Oletus"
 
-#: src/Views/AccountView.vala:35
+#: src/Views/AccountView.vala:36
 msgid "Create an Account"
 msgstr "Luo tili"
 
-#: src/Views/AccountView.vala:39
+#: src/Views/AccountView.vala:40
 msgid "Full Name"
 msgstr "Koko nimi"
 
-#: src/Views/AccountView.vala:44
+#: src/Views/AccountView.vala:45
 msgid "Username"
 msgstr "Käyttäjätunnus"
 
-#: src/Views/AccountView.vala:51
+#: src/Views/AccountView.vala:52
 msgid "Choose a Password"
 msgstr "Valitse salasana"
 
-#: src/Views/AccountView.vala:67
+#: src/Views/AccountView.vala:68
 msgid "Confirm Password"
 msgstr "Vahvista salasana"
 
-#: src/Views/AccountView.vala:99 src/Views/KeyboardLayoutView.vala:52
+#: src/Views/AccountView.vala:78
+msgid "Device name"
+msgstr ""
+
+#: src/Views/AccountView.vala:91
+msgid ""
+"Visible to other devices when sharing, e.g. with Bluetooth or over the "
+"network."
+msgstr ""
+
+#: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
 msgid "Back"
 msgstr "Takaisin"
 
-#: src/Views/AccountView.vala:101
+#: src/Views/AccountView.vala:127
 msgid "Finish Setup"
 msgstr "Viimeistele määritykset"
 
-#: src/Views/AccountView.vala:186
+#: src/Views/AccountView.vala:219
 msgid "Passwords do not match"
 msgstr "Salasanat eivät täsmää"
 
-#: src/Views/AccountView.vala:211
+#: src/Views/AccountView.vala:244
 msgid "The chosen username is already taken"
 msgstr "Valittu käyttäjätunnus on jo käytössä"
 
-#: src/Views/AccountView.vala:213
+#: src/Views/AccountView.vala:246
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
