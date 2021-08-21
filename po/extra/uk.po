@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-20 22:23+0000\n"
-"PO-Revision-Date: 2021-07-16 10:41+0000\n"
+"PO-Revision-Date: 2021-08-20 23:28+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/uk/>\n"
@@ -48,11 +48,11 @@ msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:29
 msgid "New features:"
-msgstr ""
+msgstr "Нові можливості:"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:31
 msgid "Confirm and change device name"
-msgstr ""
+msgstr "Підтвердити та змінити назву пристрою"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:33
 #: data/io.elementary.initial-setup.appdata.xml.in:41

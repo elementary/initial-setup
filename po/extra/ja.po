@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-20 22:23+0000\n"
-"PO-Revision-Date: 2021-07-17 12:17+0000\n"
+"PO-Revision-Date: 2021-08-21 05:14+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/ja/>\n"
@@ -47,11 +47,11 @@ msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:29
 msgid "New features:"
-msgstr ""
+msgstr "新機能:"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:31
 msgid "Confirm and change device name"
-msgstr ""
+msgstr "デバイス名を確認・変更できる機能を追加"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:33
 #: data/io.elementary.initial-setup.appdata.xml.in:41
