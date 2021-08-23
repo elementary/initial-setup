@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 00:35+0000\n"
+"POT-Creation-Date: 2021-08-20 22:23+0000\n"
 "PO-Revision-Date: 2020-05-16 03:10+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
-"Language-Team: Arabic <https://l10n.elementary.io/projects/installer/"
-"initial-setup/ar/>\n"
+"Language-Team: Arabic <https://l10n.elementary.io/projects/installer/initial-"
+"setup/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,7 +15,7 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "X-Generator: Weblate 3.9.1\n"
 
-#: src/MainWindow.vala:34
+#: src/MainWindow.vala:33
 msgid "Create a User"
 msgstr "إنشاء حساب"
 
@@ -27,17 +27,32 @@ msgstr ""
 "لقد فشل برنامج التنزيل في إنشاء الحساب. بدون الحساب، لا يمكنك الدخول إلى "
 "النظام وقد تضطر إلى تنزيل النظام مرة أخرة."
 
-#: src/Utils.vala:70
+#: src/Utils.vala:65
 #, c-format
 msgid "Creating User '%s' Failed"
 msgstr "فشل إنشاء المستخدم '%s'"
 
-#: src/Utils.vala:74
+#: src/Utils.vala:69
 #, c-format
 msgid "No Permission to Create User '%s'"
 msgstr "ليس هناك صلاحية لإنشاء المستخدم '%s'"
 
-#: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:188
+#: src/Utils.vala:188
+msgid "Initial Setup could not set your hostname."
+msgstr ""
+
+#: src/Utils.vala:199
+#, fuzzy, c-format
+#| msgid "No Permission to Create User '%s'"
+msgid "No Permission to set hostname '%s'"
+msgstr "ليس هناك صلاحية لإنشاء المستخدم '%s'"
+
+#: src/Utils.vala:202
+#, c-format
+msgid "Unable to set Hostname '%s'"
+msgstr ""
+
+#: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:194
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -46,43 +61,53 @@ msgstr "%s…"
 msgid "Default"
 msgstr "الإفتراضي"
 
-#: src/Views/AccountView.vala:34
+#: src/Views/AccountView.vala:36
 msgid "Create an Account"
 msgstr "إنشاء حساب"
 
-#: src/Views/AccountView.vala:38
+#: src/Views/AccountView.vala:40
 msgid "Full Name"
 msgstr "الاسم الكامل"
 
-#: src/Views/AccountView.vala:43
+#: src/Views/AccountView.vala:45
 msgid "Username"
 msgstr "اسم المستخدم"
 
-#: src/Views/AccountView.vala:50
+#: src/Views/AccountView.vala:52
 msgid "Choose a Password"
 msgstr "اختر كلمة مرور"
 
-#: src/Views/AccountView.vala:65
+#: src/Views/AccountView.vala:68
 msgid "Confirm Password"
 msgstr "تأكيد كلمة المرور"
 
-#: src/Views/AccountView.vala:96 src/Views/KeyboardLayoutView.vala:49
+#: src/Views/AccountView.vala:78
+msgid "Device name"
+msgstr ""
+
+#: src/Views/AccountView.vala:91
+msgid ""
+"Visible to other devices when sharing, e.g. with Bluetooth or over the "
+"network."
+msgstr ""
+
+#: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
 msgid "Back"
 msgstr "العودة"
 
-#: src/Views/AccountView.vala:98
+#: src/Views/AccountView.vala:127
 msgid "Finish Setup"
 msgstr "إنهاء التثبيت"
 
-#: src/Views/AccountView.vala:182
+#: src/Views/AccountView.vala:219
 msgid "Passwords do not match"
 msgstr "كلمتا المرور غير متطابقتين"
 
-#: src/Views/AccountView.vala:211
+#: src/Views/AccountView.vala:244
 msgid "The chosen username is already taken"
 msgstr "اسم المستخدم مأخوذ"
 
-#: src/Views/AccountView.vala:213
+#: src/Views/AccountView.vala:246
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
@@ -90,35 +115,37 @@ msgstr ""
 "فراغات"
 
 #: src/Views/KeyboardLayoutView.vala:26
-msgid "Keyboard Layout"
+#, fuzzy
+#| msgid "Keyboard Layout"
+msgid "Select Keyboard Layout"
 msgstr "تخطيط لوحة المفاتيح"
 
-#: src/Views/KeyboardLayoutView.vala:34
+#: src/Views/KeyboardLayoutView.vala:35
 msgid "Type to test your layout"
 msgstr "اكتب لاختبار تخطيطك"
 
-#: src/Views/KeyboardLayoutView.vala:37
+#: src/Views/KeyboardLayoutView.vala:38
 msgid "Show keyboard layout"
 msgstr "اظهر تخطيط لوحة المفاتيح"
 
-#: src/Views/KeyboardLayoutView.vala:51 src/Views/LanguageView.vala:107
-#: src/Views/LanguageView.vala:162
+#: src/Views/KeyboardLayoutView.vala:54 src/Views/LanguageView.vala:111
+#: src/Views/LanguageView.vala:167
 msgid "Select"
 msgstr "إختر"
 
-#: src/Views/KeyboardLayoutView.vala:133
+#: src/Views/KeyboardLayoutView.vala:137
 msgid "Input Language"
 msgstr "اختر لغة الإدخال"
 
-#: src/Views/LanguageView.vala:195
+#: src/Views/LanguageView.vala:200
 msgid "Languages"
 msgstr "اللغات"
 
-#: src/Views/LanguageView.vala:239
+#: src/Views/LanguageView.vala:244
 msgid "Select a Language"
 msgstr "اختر اللغة"
 
-#: src/Views/LanguageView.vala:262 src/Views/LanguageView.vala:317
+#: src/Views/LanguageView.vala:267 src/Views/LanguageView.vala:326
 msgid "Currently active language"
 msgstr "اللغة المفعلة حاليا"
 

@@ -1,6 +1,5 @@
-// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2017 elementary LLC. (https://elementary.io)
+ * Copyright 2017-2021 elementary, Inc. (https://elementary.io)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,36 +19,41 @@ public class KeyboardLayoutView : AbstractInstallerView {
     private VariantWidget input_variant_widget;
 
     construct {
-        var image = new Gtk.Image.from_icon_name ("input-keyboard", Gtk.IconSize.DIALOG);
-        image.valign = Gtk.Align.END;
+        var image = new Gtk.Image.from_icon_name ("input-keyboard", Gtk.IconSize.DIALOG) {
+            valign = Gtk.Align.END
+        };
 
-        var title_label = new Gtk.Label (_("Keyboard Layout"));
+        var title_label = new Gtk.Label (_("Select Keyboard Layout")) {
+            valign = Gtk.Align.START
+        };
         title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
-        title_label.valign = Gtk.Align.START;
 
         input_variant_widget = new VariantWidget ();
 
-        var keyboard_test_entry = new Gtk.Entry ();
-        keyboard_test_entry.hexpand = true;
-        keyboard_test_entry.placeholder_text = _("Type to test your layout");
-        keyboard_test_entry.secondary_icon_activatable = true;
-        keyboard_test_entry.secondary_icon_name = "input-keyboard-symbolic";
-        keyboard_test_entry.secondary_icon_tooltip_text = _("Show keyboard layout");
+        var keyboard_test_entry = new Gtk.Entry () {
+            hexpand = true,
+            placeholder_text = _("Type to test your layout"),
+            secondary_icon_activatable = true,
+            secondary_icon_name = "input-keyboard-symbolic",
+            secondary_icon_tooltip_text = _("Show keyboard layout")
+        };
 
-        var stack_grid = new Gtk.Grid ();
-        stack_grid.orientation = Gtk.Orientation.VERTICAL;
-        stack_grid.row_spacing = 12;
+        var stack_grid = new Gtk.Grid () {
+            orientation = Gtk.Orientation.VERTICAL,
+            row_spacing = 12
+        };
         stack_grid.add (input_variant_widget);
         stack_grid.add (keyboard_test_entry);
 
-        content_area.attach (image, 0, 0, 1, 1);
-        content_area.attach (title_label, 0, 1, 1, 1);
+        content_area.attach (image, 0, 0);
+        content_area.attach (title_label, 0, 1);
         content_area.attach (stack_grid, 1, 0, 1, 2);
 
         var back_button = new Gtk.Button.with_label (_("Back"));
 
-        var next_button = new Gtk.Button.with_label (_("Select"));
-        next_button.sensitive = false;
+        var next_button = new Gtk.Button.with_label (_("Select")) {
+            sensitive = false
+        };
         next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
         action_area.add (back_button);
@@ -60,14 +64,14 @@ public class KeyboardLayoutView : AbstractInstallerView {
         });
 
         input_variant_widget.variant_listbox.row_selected.connect (() => {
-            unowned Gtk.ListBoxRow row = input_variant_widget.main_listbox.get_selected_row ();
+            unowned var row = input_variant_widget.main_listbox.get_selected_row ();
             if (row != null) {
                 var layout = ((LayoutRow) row).layout;
                 unowned Configuration configuration = Configuration.get_default ();
                 configuration.keyboard_layout = layout;
                 GLib.Variant? layout_variant = null;
 
-                unowned Gtk.ListBoxRow vrow = input_variant_widget.variant_listbox.get_selected_row ();
+                unowned var vrow = input_variant_widget.variant_listbox.get_selected_row ();
                 if (vrow != null) {
                     unowned InitialSetup.KeyboardVariant variant = ((VariantRow) vrow).variant;
                     configuration.keyboard_variant = variant;
@@ -91,9 +95,9 @@ public class KeyboardLayoutView : AbstractInstallerView {
         back_button.clicked.connect (() => ((Gtk.Stack) get_parent ()).visible_child = previous_view);
 
         next_button.clicked.connect (() => {
-            unowned Gtk.ListBoxRow vrow = input_variant_widget.variant_listbox.get_selected_row ();
+            unowned var vrow = input_variant_widget.variant_listbox.get_selected_row ();
             if (vrow == null) {
-                unowned Gtk.ListBoxRow row = input_variant_widget.main_listbox.get_selected_row ();
+                unowned var row = input_variant_widget.main_listbox.get_selected_row ();
                 if (row != null) {
                     row.activate ();
                     return;
@@ -124,9 +128,6 @@ public class KeyboardLayoutView : AbstractInstallerView {
         });
 
         keyboard_test_entry.icon_release.connect (() => {
-            var popover = new Gtk.Popover (keyboard_test_entry);
-            var layout = new LayoutWidget ();
-
             var layout_string = "us";
             unowned Configuration config = Configuration.get_default ();
             if (config.keyboard_layout != null) {
@@ -136,23 +137,28 @@ public class KeyboardLayoutView : AbstractInstallerView {
                 }
             }
 
+            var layout = new LayoutWidget ();
             layout.set_layout (layout_string);
+
+            var popover = new Gtk.Popover (keyboard_test_entry);
             popover.add (layout);
             popover.show_all ();
         });
 
-        input_variant_widget.main_listbox.bind_model (InitialSetup.KeyboardLayout.get_all (), (layout) => { return new LayoutRow (layout as InitialSetup.KeyboardLayout); });
+        input_variant_widget.main_listbox.bind_model (InitialSetup.KeyboardLayout.get_all (), (layout) => {
+            return new LayoutRow (layout as InitialSetup.KeyboardLayout);
+        });
 
         show_all ();
 
         Idle.add (() => {
             unowned string? country = Configuration.get_default ().country;
             if (country != null) {
-                string default_layout = country.down ();
+                var default_layout = country.down ();
 
-                foreach (weak Gtk.Widget child in input_variant_widget.main_listbox.get_children ()) {
+                foreach (unowned var child in input_variant_widget.main_listbox.get_children ()) {
                     if (child is LayoutRow) {
-                        weak LayoutRow row = (LayoutRow) child;
+                        unowned var row = (LayoutRow) child;
                         if (row.layout.name == default_layout) {
                             input_variant_widget.main_listbox.select_row (row);
                             row.grab_focus ();

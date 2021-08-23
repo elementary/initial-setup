@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2019-11-01 23:24+0000\n"
+"POT-Creation-Date: 2021-08-20 22:23+0000\n"
+"PO-Revision-Date: 2021-08-21 05:14+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
 #: data/io.elementary.initial-setup.desktop.in:3
@@ -45,15 +45,46 @@ msgstr ""
 "言語の選択やユーザーアカウントの作成など、新規インストール時に必要な作業を支"
 "援します。"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:26
+#: data/io.elementary.initial-setup.appdata.xml.in:29
+msgid "New features:"
+msgstr "新機能:"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:31
+msgid "Confirm and change device name"
+msgstr "デバイス名を確認・変更できる機能を追加"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:33
+#: data/io.elementary.initial-setup.appdata.xml.in:41
+msgid "Minor updates:"
+msgstr "軽微なアップデート:"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:35
+#: data/io.elementary.initial-setup.appdata.xml.in:47
+#: data/io.elementary.initial-setup.appdata.xml.in:53
 msgid "Translation updates"
 msgstr "翻訳の更新"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:31
+#: data/io.elementary.initial-setup.appdata.xml.in:43
+msgid "Set keyboard layout in accountsservice"
+msgstr "AccountsService を利用してキーボードレイアウトを設定するように変更"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:44
+msgid "Add multitouch gestures"
+msgstr "マルチタッチジェスチャーを追加"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:45
+msgid "Set correct locales"
+msgstr "適切な地域を設定するように修正"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:46
+msgid "New colorful avatar fallback"
+msgstr "アバター画像未設定時に背景を色付きで表示するように変更"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:58
 msgid "Initial release"
 msgstr "最初のリリース"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:66
+#: data/io.elementary.initial-setup.appdata.xml.in:93
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 00:35+0000\n"
+"POT-Creation-Date: 2021-08-20 22:23+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2;\n"
@@ -29,14 +29,45 @@ msgid ""
 "a language and creating a user account."
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:26
-msgid "Translation updates"
+#: data/io.elementary.initial-setup.appdata.xml.in:29
+msgid "New features:"
 msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:31
+msgid "Confirm and change device name"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:33
+#: data/io.elementary.initial-setup.appdata.xml.in:41
+msgid "Minor updates:"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:35
+#: data/io.elementary.initial-setup.appdata.xml.in:47
+#: data/io.elementary.initial-setup.appdata.xml.in:53
+msgid "Translation updates"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:43
+msgid "Set keyboard layout in accountsservice"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:44
+msgid "Add multitouch gestures"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:45
+msgid "Set correct locales"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:46
+msgid "New colorful avatar fallback"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:58
 msgid "Initial release"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:66
+#: data/io.elementary.initial-setup.appdata.xml.in:93
 msgid "elementary, Inc."
 msgstr ""

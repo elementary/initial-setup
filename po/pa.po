@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the io.elementary.initial-setup package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: io.elementary.initial-setup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-20 22:23+0000\n"
+"PO-Revision-Date: 2021-08-01 12:30+0000\n"
+"Last-Translator: elSolus <tumbleweed@tuta.io>\n"
+"Language-Team: Punjabi <https://l10n.elementary.io/projects/installer/"
+"initial-setup/pa/>\n"
+"Language: pa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.4.2\n"
+
+#: src/MainWindow.vala:33
+msgid "Create a User"
+msgstr "ਕੋਈ ਵਰਤੋਂਕਾਰ ਬਣਾਓ"
+
+#: src/Utils.vala:53
+msgid ""
+"Initial Setup could not create your user. Without it, you will not be able "
+"to log in and may need to reinstall the OS."
+msgstr ""
+"ਸ਼ੁਰੂਆਤੀ ਸੈੱਟਅਪ ਤੁਹਾਡੇ ਵਰਤੋਂਕਾਰ ਨੂੰ ਬਣਾ ਨਹੀਂ ਸਕਿਆ। ਇਸ ਤੋਂ ਬਿਨਾਂ ਤੁਸੀਂ ਲਾਗਇਨ ਨਹੀਂ ਕਰ ਸਕਦੇ ਅਤੇ ਹੋ "
+"ਸਕਦੈ ਤੁਹਾਨੂੰ ਅਪਰੇਟਿੰਗ ਸਿਸਟਮ ਦੁਬਾਰਾ ਇੰਸਟਾਲ ਕਰਨਾ ਪਵੇ।"
+
+#: src/Utils.vala:65
+#, c-format
+msgid "Creating User '%s' Failed"
+msgstr "ਵਰਤੋਂਕਾਰ '%s' ਬਣਾਉਣਾ ਨਾਕਾਮ ਰਿਹਾ"
+
+#: src/Utils.vala:69
+#, c-format
+msgid "No Permission to Create User '%s'"
+msgstr "ਵਰਤੋਂਕਾਰ '%s' ਬਣਾਉਣ ਦੀ ਇਜਾਜ਼ਤ ਨਹੀਂ ਹੈ"
+
+#: src/Utils.vala:188
+msgid "Initial Setup could not set your hostname."
+msgstr ""
+
+#: src/Utils.vala:199
+#, fuzzy, c-format
+#| msgid "No Permission to Create User '%s'"
+msgid "No Permission to set hostname '%s'"
+msgstr "ਵਰਤੋਂਕਾਰ '%s' ਬਣਾਉਣ ਦੀ ਇਜਾਜ਼ਤ ਨਹੀਂ ਹੈ"
+
+#: src/Utils.vala:202
+#, c-format
+msgid "Unable to set Hostname '%s'"
+msgstr ""
+
+#: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:194
+#, c-format
+msgid "%s…"
+msgstr "%s…"
+
+#: src/Objects/KeyboardVariant.vala:27
+msgid "Default"
+msgstr "ਡਿਫ਼ਾਲਟ"
+
+#: src/Views/AccountView.vala:36
+msgid "Create an Account"
+msgstr "ਕੋਈ ਖਾਤਾ ਬਣਾਓ"
+
+#: src/Views/AccountView.vala:40
+msgid "Full Name"
+msgstr "ਪੂਰਾ ਨਾਂ"
+
+#: src/Views/AccountView.vala:45
+msgid "Username"
+msgstr "ਵਰਤੋਂਕਾਰ-ਨਾਂ"
+
+#: src/Views/AccountView.vala:52
+msgid "Choose a Password"
+msgstr "ਪਾਸਵਰਡ ਚੁਣੋ"
+
+#: src/Views/AccountView.vala:68
+msgid "Confirm Password"
+msgstr "ਪਾਸਵਰਡ ਤਸਦੀਕ ਕਰੋ"
+
+#: src/Views/AccountView.vala:78
+msgid "Device name"
+msgstr ""
+
+#: src/Views/AccountView.vala:91
+msgid ""
+"Visible to other devices when sharing, e.g. with Bluetooth or over the "
+"network."
+msgstr ""
+
+#: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
+msgid "Back"
+msgstr "ਪਿੱਛੇ ਜਾਓ"
+
+#: src/Views/AccountView.vala:127
+msgid "Finish Setup"
+msgstr "ਸੈੱਟਅਪ ਮੁਕਾਓ"
+
+#: src/Views/AccountView.vala:219
+msgid "Passwords do not match"
+msgstr "ਪਾਸਵਰਡ ਮੇਲ ਨਹੀਂ ਖਾਂਦੇ"
+
+#: src/Views/AccountView.vala:244
+msgid "The chosen username is already taken"
+msgstr "ਚੁਣਿਆ ਹੋਇਆ ਵਰਤੋਂਕਾਰ-ਨਾਂ ਪਹਿਲਾਂ ਹੀ ਕਿਸੇ ਨੇ ਵਰਤਿਆ ਹੋਇਐ"
+
+#: src/Views/AccountView.vala:246
+msgid ""
+"A username must only contain lowercase letters and numbers, without spaces"
+msgstr "ਵਰਤੋਂਕਾਰ-ਨਾਂ ਵਿੱਚ ਸਿਰਫ਼ ਅੰਗਰੇਜ਼ੀ ਦੇ ਛੋਟੇ ਅੱਖਰ ਅਤੇ ਨੰਬਰ ਵਰਤਣ ਦੀ ਇਜਾਜ਼ਤ ਹੈ, ਬਿਨਾਂ ਸਪੇਸ ਤੋਂ"
+
+#: src/Views/KeyboardLayoutView.vala:26
+msgid "Select Keyboard Layout"
+msgstr "ਕੀਬੋਰਡ ਲੇਆਊਟ ਚੁਣੋ"
+
+#: src/Views/KeyboardLayoutView.vala:35
+msgid "Type to test your layout"
+msgstr "ਲੇਆਊਟ ਟੈਸਟ ਕਰਨ ਲਈ ਟਾਈਪ ਕਰੋ"
+
+#: src/Views/KeyboardLayoutView.vala:38
+msgid "Show keyboard layout"
+msgstr "ਕੀਬੋਰਡ ਲੇਆਊਟ ਵਿਖਾਓ"
+
+#: src/Views/KeyboardLayoutView.vala:54 src/Views/LanguageView.vala:111
+#: src/Views/LanguageView.vala:167
+msgid "Select"
+msgstr "ਚੁਣੋ"
+
+#: src/Views/KeyboardLayoutView.vala:137
+msgid "Input Language"
+msgstr "ਟਾਈਪਿੰਗ ਲਈ ਭਾਸ਼ਾ"
+
+#: src/Views/LanguageView.vala:200
+msgid "Languages"
+msgstr "ਭਾਸ਼ਾਵਾਂ"
+
+#: src/Views/LanguageView.vala:244
+msgid "Select a Language"
+msgstr "ਕੋਈ ਭਾਸ਼ਾ ਚੁਣੋ"
+
+#: src/Views/LanguageView.vala:267 src/Views/LanguageView.vala:326
+msgid "Currently active language"
+msgstr "ਮੌਜੂਦਾ ਚੁਣੀ ਹੋਈ ਭਾਸ਼ਾ"

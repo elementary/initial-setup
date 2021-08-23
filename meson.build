@@ -1,4 +1,8 @@
-project('io.elementary.initial-setup', 'vala', 'c')
+project(
+  'io.elementary.initial-setup',
+  'vala', 'c',
+  version: '6.0.0',
+)
 
 add_global_arguments('-DGETTEXT_PACKAGE="' + meson.project_name() + '"', language:'c')
 add_project_arguments(['--vapidir', join_paths(meson.current_source_dir(), 'vapi')],
@@ -13,7 +17,7 @@ glib_dep = dependency('glib-2.0')
 gnome_keyboard_dep = dependency('libgnomekbd')
 gnome_keyboard_ui_dep = meson.get_compiler('c').find_library('libgnomekbdui')
 gobject_dep = dependency('gobject-2.0')
-granite_dep = dependency('granite', version: '>=0.5')
+granite_dep = dependency('granite', version: '>=6.0.0')
 handy_dep = dependency('libhandy-1', version: '>=0.90.0')
 gtk_dep = dependency('gtk+-3.0')
 handy_dep = dependency('libhandy-1', version: '>= 0.90.0')
@@ -39,12 +43,6 @@ dependencies = [
     pwquality_dep,
     xml2_dep,
 ]
-
-asresources = gnome.compile_resources(
-    'as-resources', 'data/' + meson.project_name() + '.gresource.xml',
-    source_dir: 'data',
-    c_name: 'as'
-)
 
 subdir('po')
 subdir('src')

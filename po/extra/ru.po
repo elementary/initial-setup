@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 00:35+0000\n"
-"PO-Revision-Date: 2021-03-03 01:39+0000\n"
-"Last-Translator: Igor <igor.13.sarik@gmail.com>\n"
+"POT-Creation-Date: 2021-08-20 22:23+0000\n"
+"PO-Revision-Date: 2021-08-21 17:09+0000\n"
+"Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/ru/>\n"
 "Language: ru\n"
@@ -47,15 +47,46 @@ msgstr ""
 "пригодной для использования, например, выбор языка и создание учетной записи "
 "пользователя."
 
-#: data/io.elementary.initial-setup.appdata.xml.in:26
+#: data/io.elementary.initial-setup.appdata.xml.in:29
+msgid "New features:"
+msgstr "Новые возможности:"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:31
+msgid "Confirm and change device name"
+msgstr "Подтверждение и смена имени устройства"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:33
+#: data/io.elementary.initial-setup.appdata.xml.in:41
+msgid "Minor updates:"
+msgstr "Незначительные обновления:"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:35
+#: data/io.elementary.initial-setup.appdata.xml.in:47
+#: data/io.elementary.initial-setup.appdata.xml.in:53
 msgid "Translation updates"
 msgstr "Обновления переводов"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:31
+#: data/io.elementary.initial-setup.appdata.xml.in:43
+msgid "Set keyboard layout in accountsservice"
+msgstr "Установка раскладки клавиатуры в службе учетных записей"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:44
+msgid "Add multitouch gestures"
+msgstr "Добавлены мультитач-жесты"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:45
+msgid "Set correct locales"
+msgstr "Установка правильных локалей"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:46
+msgid "New colorful avatar fallback"
+msgstr "Возвращение нового красочного аватара"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:58
 msgid "Initial release"
 msgstr "Начальный выпуск"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:66
+#: data/io.elementary.initial-setup.appdata.xml.in:93
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
