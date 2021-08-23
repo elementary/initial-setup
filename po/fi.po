@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-20 22:23+0000\n"
-"PO-Revision-Date: 2021-06-04 03:31+0000\n"
+"PO-Revision-Date: 2021-08-23 08:44+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/installer/"
 "initial-setup/fi/>\n"
@@ -40,18 +40,17 @@ msgstr "Ei käyttöoikeuksia lisätä käyttäjää '%s'"
 
 #: src/Utils.vala:188
 msgid "Initial Setup could not set your hostname."
-msgstr ""
+msgstr "Alkuasetukset ei voinut asettaa laitenimeä."
 
 #: src/Utils.vala:199
-#, fuzzy, c-format
-#| msgid "No Permission to Create User '%s'"
+#, c-format
 msgid "No Permission to set hostname '%s'"
-msgstr "Ei käyttöoikeuksia lisätä käyttäjää '%s'"
+msgstr "Ei käyttöoikeuksia asettaa laitenimeä '%s'"
 
 #: src/Utils.vala:202
 #, c-format
 msgid "Unable to set Hostname '%s'"
-msgstr ""
+msgstr "Ei voitu asettaa laitenimeä '%s'"
 
 #: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:194
 #, c-format
@@ -84,13 +83,13 @@ msgstr "Vahvista salasana"
 
 #: src/Views/AccountView.vala:78
 msgid "Device name"
-msgstr ""
+msgstr "Laitteen nimi"
 
 #: src/Views/AccountView.vala:91
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
-msgstr ""
+msgstr "Näkyvissä muille laitteille esimerkiksi Bluetooth- ja verkkojaoissa."
 
 #: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
 msgid "Back"
