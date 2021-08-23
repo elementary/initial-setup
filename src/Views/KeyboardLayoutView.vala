@@ -67,7 +67,7 @@ public class KeyboardLayoutView : AbstractInstallerView {
             unowned var row = input_variant_widget.main_listbox.get_selected_row ();
             if (row != null) {
                 var layout = ((LayoutRow) row).layout;
-                unowned Configuration configuration = Configuration.get_default ();
+                unowned var configuration = Configuration.get_default ();
                 configuration.keyboard_layout = layout;
                 GLib.Variant? layout_variant = null;
 
