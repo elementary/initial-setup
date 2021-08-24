@@ -109,20 +109,18 @@ public class KeyboardLayoutView : AbstractInstallerView {
         back_button.clicked.connect (() => ((Hdy.Deck) get_parent ()).navigate (Hdy.NavigationDirection.BACK));
 
         next_button.clicked.connect (() => {
-            unowned var vrow = input_variant_widget.variant_listbox.get_selected_row ();
-            if (vrow == null) {
-                unowned var row = input_variant_widget.main_listbox.get_selected_row ();
-                if (row != null) {
-                    row.activate ();
-                    return;
+            unowned var row = input_variant_widget.main_listbox.get_selected_row ();
+            if (row != null) {
+                unowned var vrow = input_variant_widget.variant_listbox.get_selected_row ();
+                if (vrow != null) {
+                    next_step ();
                 } else {
-                    warning ("next_button enabled when no keyboard selected");
-                    next_button.sensitive = false;
-                    return;
+                    row.activate ();
                 }
+            } else {
+                warning ("next_button enabled when no keyboard selected");
+                next_button.sensitive = false;
             }
-
-            next_step ();
         });
 
         input_variant_widget.main_listbox.row_activated.connect ((row) => {

@@ -210,15 +210,14 @@ public class Installer.LanguageView : AbstractInstallerView {
             lang = lang_entry.get_code ();
 
             if (lang_entry.countries.length > 0) {
-                row = lang_variant_widget.variant_listbox.get_selected_row ();
-                if (row != null) {
-                    unowned var country = ((CountryRow) row).country_entry;
+                unowned var crow = lang_variant_widget.variant_listbox.get_selected_row ();
+                if (crow != null) {
+                    unowned var country = ((CountryRow) crow).country_entry;
                     configuration.country = country.get_code ();
                     lang = country.get_full_code ();
                 } else {
-                    unowned var country = lang_entry.countries[0].get_code ();
-                    lang += "_%s".printf (country);
-                    configuration.country = country;
+                    row.activate ();
+                    return;
                 }
             }
 
