@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-20 22:23+0000\n"
+"POT-Creation-Date: 2021-08-24 22:23+0000\n"
 "PO-Revision-Date: 2021-08-21 05:14+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/installer/"
@@ -53,38 +53,42 @@ msgstr "新機能:"
 msgid "Confirm and change device name"
 msgstr "デバイス名を確認・変更できる機能を追加"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:33
-#: data/io.elementary.initial-setup.appdata.xml.in:41
+#: data/io.elementary.initial-setup.appdata.xml.in:32
+msgid "Two-finger swipe to navigate back"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:34
+#: data/io.elementary.initial-setup.appdata.xml.in:42
 msgid "Minor updates:"
 msgstr "軽微なアップデート:"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:35
-#: data/io.elementary.initial-setup.appdata.xml.in:47
-#: data/io.elementary.initial-setup.appdata.xml.in:53
+#: data/io.elementary.initial-setup.appdata.xml.in:36
+#: data/io.elementary.initial-setup.appdata.xml.in:48
+#: data/io.elementary.initial-setup.appdata.xml.in:54
 msgid "Translation updates"
 msgstr "翻訳の更新"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:43
+#: data/io.elementary.initial-setup.appdata.xml.in:44
 msgid "Set keyboard layout in accountsservice"
 msgstr "AccountsService を利用してキーボードレイアウトを設定するように変更"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:44
+#: data/io.elementary.initial-setup.appdata.xml.in:45
 msgid "Add multitouch gestures"
 msgstr "マルチタッチジェスチャーを追加"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:45
+#: data/io.elementary.initial-setup.appdata.xml.in:46
 msgid "Set correct locales"
 msgstr "適切な地域を設定するように修正"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:46
+#: data/io.elementary.initial-setup.appdata.xml.in:47
 msgid "New colorful avatar fallback"
 msgstr "アバター画像未設定時に背景を色付きで表示するように変更"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:58
+#: data/io.elementary.initial-setup.appdata.xml.in:59
 msgid "Initial release"
 msgstr "最初のリリース"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:93
+#: data/io.elementary.initial-setup.appdata.xml.in:94
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
