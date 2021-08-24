@@ -16,7 +16,6 @@
  */
 
 public abstract class AbstractInstallerView : Gtk.Grid {
-    public unowned Gtk.Widget? previous_view { get; set; }
     public signal void next_step ();
 
     protected Gtk.Grid content_area;
@@ -27,20 +26,17 @@ public abstract class AbstractInstallerView : Gtk.Grid {
             column_homogeneous = true,
             column_spacing = 12,
             row_spacing = 12,
-            margin_end = 10,
-            margin_start = 10,
             expand = true,
             orientation = Gtk.Orientation.VERTICAL
         };
 
         action_area = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL) {
-            margin_end = 10,
-            margin_start = 10,
             spacing = 6,
             layout_style = Gtk.ButtonBoxStyle.END
         };
 
         orientation = Gtk.Orientation.VERTICAL;
+        margin = 12;
         row_spacing = 24;
         add (content_area);
         add (action_area);
