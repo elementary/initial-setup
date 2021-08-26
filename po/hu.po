@@ -36,7 +36,7 @@ msgstr "A(z) '%s' felhasználó létrehozása meghiúsult."
 #: src/Utils.vala:69
 #, c-format
 msgid "No Permission to Create User '%s'"
-msgstr ""
+msgstr "Nincs jogosultsága létrehozni a(z) '%s' felhasználót."
 
 #: src/Utils.vala:188
 msgid "Initial Setup could not set your hostname."
