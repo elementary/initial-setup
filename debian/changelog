@@ -1,3 +1,15 @@
+io.elementary.initial-setup (6.1.0) bionic; urgency=medium
+
+  * Release 6.1.0 (#114)
+  * Add additional US layout when non-latin layout is selected (#100)
+  * Update translation files
+  * Update translation template
+  * Add Multitouch navigation with Deck (#117)
+  * Set hostname (#113)
+  * LINGUAS: Add Panjabi and sort (#112)
+
+ -- elementary, Inc. <builds@elementary.io>  Thu, 26 Aug 2021 02:08:54 +0000
+
 io.elementary.initial-setup (6.0.0) bionic; urgency=medium
 
   * Release 6.0.0 (#111)
