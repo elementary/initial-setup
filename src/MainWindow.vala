@@ -18,7 +18,7 @@
  */
 
 public class Installer.MainWindow : Hdy.Window {
-    private Gtk.Stack stack;
+    private Hdy.Deck deck;
 
     private AccountView account_view;
     private LanguageView language_view;
@@ -38,14 +38,12 @@ public class Installer.MainWindow : Hdy.Window {
     construct {
         language_view = new LanguageView ();
 
-        stack = new Gtk.Stack () {
-            margin_bottom = 12,
-            margin_top = 12,
-            transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT
+        deck = new Hdy.Deck () {
+            can_swipe_back = true
         };
-        stack.add (language_view);
+        deck.add (language_view);
 
-        add (stack);
+        add (deck);
 
         language_view.next_step.connect (() => load_keyboard_view ());
     }
@@ -60,10 +58,14 @@ public class Installer.MainWindow : Hdy.Window {
             keyboard_layout_view.destroy ();
         }
 
+        if (account_view != null) {
+            account_view.destroy ();
+        }
+
         keyboard_layout_view = new KeyboardLayoutView ();
-        keyboard_layout_view.previous_view = language_view;
-        stack.add (keyboard_layout_view);
-        stack.visible_child = keyboard_layout_view;
+
+        deck.add (keyboard_layout_view);
+        deck.visible_child = keyboard_layout_view;
 
         keyboard_layout_view.next_step.connect (() => load_account_view ());
     }
@@ -74,9 +76,9 @@ public class Installer.MainWindow : Hdy.Window {
         }
 
         account_view = new AccountView ();
-        account_view.previous_view = keyboard_layout_view;
-        stack.add (account_view);
-        stack.visible_child = account_view;
+
+        deck.add (account_view);
+        deck.visible_child = account_view;
 
         account_view.next_step.connect (on_finish);
     }
@@ -126,14 +128,12 @@ public class Installer.MainWindow : Hdy.Window {
         }
 
         if (accounts_service != null) {
-            var layout = AccountsService.KeyboardLayout ();
-            layout.backend = "xkb";
-            layout.name = Configuration.get_default ().keyboard_layout;
+            var layouts = Configuration.get_default ().keyboard_layout.to_accountsservice_array ();
             if (Configuration.get_default ().keyboard_variant != null) {
-                layout.name += "+" + Configuration.get_default ().keyboard_variant;
+                layouts = Configuration.get_default ().keyboard_variant.to_accountsservice_array ();
             }
 
-            accounts_service.keyboard_layouts = { layout };
+            accounts_service.keyboard_layouts = layouts;
         }
     }
 }
