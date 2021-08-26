@@ -68,14 +68,13 @@ public class KeyboardLayoutView : AbstractInstallerView {
             if (row != null) {
                 var layout = ((LayoutRow) row).layout;
                 unowned var configuration = Configuration.get_default ();
-                configuration.keyboard_layout = layout.name;
+                configuration.keyboard_layout = layout;
                 GLib.Variant? layout_variant = null;
-                string second_variant = layout.name;
 
                 unowned var vrow = input_variant_widget.variant_listbox.get_selected_row ();
                 if (vrow != null) {
                     unowned InitialSetup.KeyboardVariant variant = ((VariantRow) vrow).variant;
-                    configuration.keyboard_variant = variant.name;
+                    configuration.keyboard_variant = variant;
                     if (variant != null) {
                         layout_variant = variant.to_gsd_variant ();
                     }
@@ -87,22 +86,9 @@ public class KeyboardLayoutView : AbstractInstallerView {
                     layout_variant = layout.to_gsd_variant ();
                 }
 
-                var list = new GLib.Variant.array (new VariantType ("(ss)"), { layout_variant });
                 var settings = new Settings ("org.gnome.desktop.input-sources");
-                settings.set_value ("sources", list);
+                settings.set_value ("sources", layout_variant);
                 settings.set_uint ("current", 0);
-
-                try {
-                    LocaleHelper.Locale1 locale1 = Bus.get_proxy_sync (
-                        BusType.SYSTEM,
-                        "org.freedesktop.locale1",
-                        "/org/freedesktop/locale1"
-                    );
-
-                    locale1.set_x11_keyboard (configuration.keyboard_layout, "", configuration.keyboard_variant ?? "", "", true, true);
-                } catch (Error e) {
-                    critical ("Unable to get Locale1 interface");
-                }
             }
         });
 
@@ -145,9 +131,9 @@ public class KeyboardLayoutView : AbstractInstallerView {
             var layout_string = "us";
             unowned Configuration config = Configuration.get_default ();
             if (config.keyboard_layout != null) {
-                layout_string = config.keyboard_layout;
+                layout_string = config.keyboard_layout.name;
                 if (config.keyboard_variant != null) {
-                    layout_string += "\t" + config.keyboard_variant;
+                    layout_string += "\t" + config.keyboard_variant.name;
                 }
             }
 
