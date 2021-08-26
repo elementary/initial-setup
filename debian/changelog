@@ -1,3 +1,10 @@
+io.elementary.initial-setup (6.1.1) bionic; urgency=medium
+
+  * Release 6.1.1 (#123)
+  * LocalHelper: use "common_name" instead of "name" (#122)
+
+ -- elementary, Inc. <builds@elementary.io>  Thu, 26 Aug 2021 21:17:04 +0000
+
 io.elementary.initial-setup (6.1.0) bionic; urgency=medium
 
   * Release 6.1.0 (#114)
