@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-24 22:23+0000\n"
-"PO-Revision-Date: 2021-08-21 17:09+0000\n"
+"PO-Revision-Date: 2021-08-26 12:08+0000\n"
 "Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ru/>\n"
@@ -31,12 +31,12 @@ msgstr ""
 #: src/Utils.vala:65
 #, c-format
 msgid "Creating User '%s' Failed"
-msgstr "Не удалось создать пользователя '%s'"
+msgstr "Не удалось создать пользователя «%s»"
 
 #: src/Utils.vala:69
 #, c-format
 msgid "No Permission to Create User '%s'"
-msgstr "Недостаточно прав для создания пользователя '%s'"
+msgstr "Недостаточно прав для создания пользователя «%s»"
 
 #: src/Utils.vala:188
 msgid "Initial Setup could not set your hostname."
