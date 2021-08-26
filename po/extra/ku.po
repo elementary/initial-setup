@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-20 22:23+0000\n"
+"POT-Creation-Date: 2021-08-24 22:23+0000\n"
 "PO-Revision-Date: 2019-09-07 18:22+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Kurdish <https://l10n.elementary.io/projects/installer/"
@@ -44,37 +44,41 @@ msgstr ""
 msgid "Confirm and change device name"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:33
-#: data/io.elementary.initial-setup.appdata.xml.in:41
+#: data/io.elementary.initial-setup.appdata.xml.in:32
+msgid "Two-finger swipe to navigate back"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:34
+#: data/io.elementary.initial-setup.appdata.xml.in:42
 msgid "Minor updates:"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:35
-#: data/io.elementary.initial-setup.appdata.xml.in:47
-#: data/io.elementary.initial-setup.appdata.xml.in:53
+#: data/io.elementary.initial-setup.appdata.xml.in:36
+#: data/io.elementary.initial-setup.appdata.xml.in:48
+#: data/io.elementary.initial-setup.appdata.xml.in:54
 msgid "Translation updates"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:43
+#: data/io.elementary.initial-setup.appdata.xml.in:44
 msgid "Set keyboard layout in accountsservice"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:44
+#: data/io.elementary.initial-setup.appdata.xml.in:45
 msgid "Add multitouch gestures"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:45
+#: data/io.elementary.initial-setup.appdata.xml.in:46
 msgid "Set correct locales"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:46
+#: data/io.elementary.initial-setup.appdata.xml.in:47
 msgid "New colorful avatar fallback"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:58
+#: data/io.elementary.initial-setup.appdata.xml.in:59
 msgid "Initial release"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:93
+#: data/io.elementary.initial-setup.appdata.xml.in:94
 msgid "elementary, Inc."
 msgstr ""

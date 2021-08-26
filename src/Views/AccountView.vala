@@ -132,7 +132,7 @@ public class Installer.AccountView : AbstractInstallerView {
         action_area.add (back_button);
         action_area.add (finish_button);
 
-        back_button.clicked.connect (() => ((Gtk.Stack) get_parent ()).visible_child = previous_view);
+        back_button.clicked.connect (() => ((Hdy.Deck) get_parent ()).navigate (Hdy.NavigationDirection.BACK));
 
         realname_entry.changed.connect (() => {
             var username = Utils.gen_username (realname_entry.text);

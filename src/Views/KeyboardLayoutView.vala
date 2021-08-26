@@ -92,7 +92,7 @@ public class KeyboardLayoutView : AbstractInstallerView {
             }
         });
 
-        back_button.clicked.connect (() => ((Gtk.Stack) get_parent ()).visible_child = previous_view);
+        back_button.clicked.connect (() => ((Hdy.Deck) get_parent ()).navigate (Hdy.NavigationDirection.BACK));
 
         next_button.clicked.connect (() => {
             unowned var vrow = input_variant_widget.variant_listbox.get_selected_row ();
