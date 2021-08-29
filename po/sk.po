@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-24 22:23+0000\n"
-"PO-Revision-Date: 2021-08-29 13:22+0000\n"
+"PO-Revision-Date: 2021-08-29 14:20+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/installer/"
 "initial-setup/sk/>\n"
@@ -59,7 +59,7 @@ msgstr "%s…"
 
 #: src/Objects/KeyboardVariant.vala:27
 msgid "Default"
-msgstr "Predvolené"
+msgstr "Predvolený"
 
 #: src/Views/AccountView.vala:36
 msgid "Create an Account"
