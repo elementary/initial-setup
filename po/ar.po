@@ -3,29 +3,29 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-24 22:23+0000\n"
-"PO-Revision-Date: 2020-05-16 03:10+0000\n"
-"Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
-"Language-Team: Arabic <https://l10n.elementary.io/projects/installer/initial-"
-"setup/ar/>\n"
+"PO-Revision-Date: 2021-08-27 15:13+0000\n"
+"Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
+"Language-Team: Arabic <https://l10n.elementary.io/projects/installer/"
+"initial-setup/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: src/MainWindow.vala:33
 msgid "Create a User"
-msgstr "إنشاء حساب"
+msgstr "أنشئ مستخدماً"
 
 #: src/Utils.vala:53
 msgid ""
 "Initial Setup could not create your user. Without it, you will not be able "
 "to log in and may need to reinstall the OS."
 msgstr ""
-"لقد فشل برنامج التنزيل في إنشاء الحساب. بدون الحساب، لا يمكنك الدخول إلى "
-"النظام وقد تضطر إلى تنزيل النظام مرة أخرة."
+"لم يتمكن برنامج الإعداد الأولي من إنشاء مستخدم. بدونه، لن تتمكن من تسجيل "
+"الدخول ومن المحتمل أنك ستحتاج لإعادة تثبيت نظام التشغيل."
 
 #: src/Utils.vala:65
 #, c-format
@@ -39,18 +39,17 @@ msgstr "ليس هناك صلاحية لإنشاء المستخدم '%s'"
 
 #: src/Utils.vala:188
 msgid "Initial Setup could not set your hostname."
-msgstr ""
+msgstr "لم يتمكن برنامج الإعداد الأولي من ضبط اسم الجهاز الخاص بك."
 
 #: src/Utils.vala:199
-#, fuzzy, c-format
-#| msgid "No Permission to Create User '%s'"
+#, c-format
 msgid "No Permission to set hostname '%s'"
-msgstr "ليس هناك صلاحية لإنشاء المستخدم '%s'"
+msgstr "ليس هناك صلاحية لتعيين اسم الجهاز '%s'"
 
 #: src/Utils.vala:202
 #, c-format
 msgid "Unable to set Hostname '%s'"
-msgstr ""
+msgstr "فشل تعيين اسم الجهاز '%s'"
 
 #: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:194
 #, c-format
@@ -59,11 +58,11 @@ msgstr "%s…"
 
 #: src/Objects/KeyboardVariant.vala:27
 msgid "Default"
-msgstr "الإفتراضي"
+msgstr "الافتراضي"
 
 #: src/Views/AccountView.vala:36
 msgid "Create an Account"
-msgstr "إنشاء حساب"
+msgstr "أنشئ حساباً"
 
 #: src/Views/AccountView.vala:40
 msgid "Full Name"
@@ -79,25 +78,25 @@ msgstr "اختر كلمة مرور"
 
 #: src/Views/AccountView.vala:68
 msgid "Confirm Password"
-msgstr "تأكيد كلمة المرور"
+msgstr "قم بتأكيد كلمة المرور"
 
 #: src/Views/AccountView.vala:78
 msgid "Device name"
-msgstr ""
+msgstr "اسم الجهاز"
 
 #: src/Views/AccountView.vala:91
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
-msgstr ""
+msgstr "يتم إظهاره للأجهزة الأخرى عند المشاركة مع جهاز بلوتوث أو عبر الشبكة."
 
 #: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
 msgid "Back"
-msgstr "العودة"
+msgstr "ارجع"
 
 #: src/Views/AccountView.vala:127
 msgid "Finish Setup"
-msgstr "إنهاء التثبيت"
+msgstr "أنه الإعداد"
 
 #: src/Views/AccountView.vala:219
 msgid "Passwords do not match"
@@ -110,15 +109,11 @@ msgstr "اسم المستخدم مأخوذ"
 #: src/Views/AccountView.vala:246
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
-msgstr ""
-"اسم المستخدم يجب أن لا يحتوي على أكثر من الحروف المصغرة أو الأرقام من دون "
-"فراغات"
+msgstr "اسم المستخدم يجب أن يحتوي فقط على حروف صغيرة أو أرقام، وبدون فراغات"
 
 #: src/Views/KeyboardLayoutView.vala:26
-#, fuzzy
-#| msgid "Keyboard Layout"
 msgid "Select Keyboard Layout"
-msgstr "تخطيط لوحة المفاتيح"
+msgstr "اختر تخطيط لوحة المفاتيح"
 
 #: src/Views/KeyboardLayoutView.vala:35
 msgid "Type to test your layout"
@@ -126,16 +121,16 @@ msgstr "اكتب لاختبار تخطيطك"
 
 #: src/Views/KeyboardLayoutView.vala:38
 msgid "Show keyboard layout"
-msgstr "اظهر تخطيط لوحة المفاتيح"
+msgstr "أظهر تخطيط لوحة المفاتيح"
 
 #: src/Views/KeyboardLayoutView.vala:54 src/Views/LanguageView.vala:111
 #: src/Views/LanguageView.vala:167
 msgid "Select"
-msgstr "إختر"
+msgstr "اختر"
 
 #: src/Views/KeyboardLayoutView.vala:137
 msgid "Input Language"
-msgstr "اختر لغة الإدخال"
+msgstr "لغة الإدخال"
 
 #: src/Views/LanguageView.vala:200
 msgid "Languages"
@@ -147,7 +142,7 @@ msgstr "اختر اللغة"
 
 #: src/Views/LanguageView.vala:267 src/Views/LanguageView.vala:326
 msgid "Currently active language"
-msgstr "اللغة المفعلة حاليا"
+msgstr "اللغة المفعلة حالياً"
 
 #~ msgid "Cancel Installation"
 #~ msgstr "إلغاء التثبيت"

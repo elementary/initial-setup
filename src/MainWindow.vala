@@ -128,14 +128,12 @@ public class Installer.MainWindow : Hdy.Window {
         }
 
         if (accounts_service != null) {
-            var layout = AccountsService.KeyboardLayout ();
-            layout.backend = "xkb";
-            layout.name = Configuration.get_default ().keyboard_layout;
+            var layouts = Configuration.get_default ().keyboard_layout.to_accountsservice_array ();
             if (Configuration.get_default ().keyboard_variant != null) {
-                layout.name += "+" + Configuration.get_default ().keyboard_variant;
+                layouts = Configuration.get_default ().keyboard_variant.to_accountsservice_array ();
             }
 
-            accounts_service.keyboard_layouts = { layout };
+            accounts_service.keyboard_layouts = layouts;
         }
     }
 }
