@@ -3,17 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-24 22:23+0000\n"
-"PO-Revision-Date: 2019-11-15 22:24+0000\n"
-"Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
-"Language-Team: Polish <https://l10n.elementary.io/projects/installer/initial-"
-"setup/pl/>\n"
+"PO-Revision-Date: 2021-09-27 16:18+0000\n"
+"Last-Translator: DarkKnightComes <darkknightcomes@gmail.com>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/installer/"
+"initial-setup/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/MainWindow.vala:33
@@ -114,10 +114,8 @@ msgid ""
 msgstr "Nazwa użytkownika musi zawierać tylko małe litery i cyfry, bez spacji"
 
 #: src/Views/KeyboardLayoutView.vala:26
-#, fuzzy
-#| msgid "Keyboard Layout"
 msgid "Select Keyboard Layout"
-msgstr "Układ klawiatury"
+msgstr "Wybierz układ klawiatury"
 
 #: src/Views/KeyboardLayoutView.vala:35
 msgid "Type to test your layout"
