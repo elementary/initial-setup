@@ -74,7 +74,7 @@ public class Installer.NetworkView : AbstractInstallerView {
 
         back_button.clicked.connect (() => ((Hdy.Deck) get_parent ()).navigate (Hdy.NavigationDirection.BACK));
 
-        next_button.clicked.connect (() => (next_step ()));
+        skip_button.clicked.connect (() => (next_step ()));
 
         next_button.clicked.connect (() => (next_step ()));
 
