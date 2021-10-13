@@ -18,8 +18,13 @@
  */
 
 public class Installer.NetworkView : AbstractInstallerView {
+    private Gtk.Image image;
+    private Gtk.Button next_button;
+    private Granite.HeaderLabel description_label;
+    private Gtk.Label network_info;
+
     construct {
-        var image = new Gtk.Image.from_icon_name ("preferences-system-network", Gtk.IconSize.DIALOG) {
+        image = new Gtk.Image.from_icon_name ("network-offline", Gtk.IconSize.DIALOG) {
             valign = Gtk.Align.END
         };
 
@@ -28,9 +33,9 @@ public class Installer.NetworkView : AbstractInstallerView {
         };
         title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
 
-        var description_label = new Granite.HeaderLabel (_("Manage network devices and connectivity"));
+        description_label = new Granite.HeaderLabel ("");
 
-        var network_info = new Gtk.Label (_("It looks like your device is not connected to any network. To use your device to its full potential, we recommend that you set up a network connection.")) {
+        network_info = new Gtk.Label ("") {
             // Wrap without expanding the view
             max_width_chars = 0,
             margin_bottom = 18,
@@ -56,18 +61,41 @@ public class Installer.NetworkView : AbstractInstallerView {
 
         var back_button = new Gtk.Button.with_label (_("Back"));
 
-        var next_button = new Gtk.Button.with_label (_("Next"));
+        var skip_button = new Gtk.Button.with_label (_("Skip"));
+
+        next_button = new Gtk.Button.with_label (_("Next")) {
+            sensitive = false
+        };
         next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
         action_area.add (back_button);
+        action_area.add (skip_button);
         action_area.add (next_button);
 
         back_button.clicked.connect (() => ((Hdy.Deck) get_parent ()).navigate (Hdy.NavigationDirection.BACK));
 
-        next_button.clicked.connect (() => {
-            next_step ();
-        });
+        next_button.clicked.connect (() => (next_step ()));
+
+        next_button.clicked.connect (() => (next_step ()));
+
+        NetworkMonitor.get_default ().network_changed.connect (update);
+
+        update ();
 
         show_all ();
+    }
+
+    private void update () {
+        if (NetworkMonitor.get_default ().get_network_available ()) {
+            image.icon_name = "preferences-system-network";
+            description_label.label = _("Network Available");
+            network_info.label = _("Network is setup.");
+            next_button.sensitive = true;
+        } else {
+            image.icon_name = "network-offline";
+            description_label.label = _("Network Not Available");
+            network_info.label = _("It looks like your device is not connected to any network. To use your device to its full potential, we recommend that you set up a network connection.");
+            next_button.sensitive = false;
+        }
     }
 }
