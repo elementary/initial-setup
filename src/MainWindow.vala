@@ -78,7 +78,7 @@ public class Installer.MainWindow : Hdy.Window {
 
         if (!NetworkMonitor.get_default ().get_network_available ()) {
             network_view = new NetworkView ();
-            
+
             deck.add (network_view);
             deck.visible_child = network_view;
 
