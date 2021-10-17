@@ -17,30 +17,6 @@
  */
 
 namespace LocaleHelper {
-    [DBus (name = "org.freedesktop.locale1")]
-    interface Locale1 : Object {
-        [DBus (name = "SetLocale")]
-        public abstract void set_locale (string[] locale, bool user_interaction) throws GLib.Error;
-        [DBus (name = "SetVConsoleKeyboard")]
-        public abstract void set_vconsole_keyboard (string keymap, string keymap_toggle, bool convert, bool user_interaction) throws GLib.Error;
-        [DBus (name = "SetX11Keyboard")]
-        public abstract void set_x11_keyboard (string layout, string model, string variant, string options, bool convert, bool user_interaction) throws GLib.Error;
-        [DBus (name = "Locale")]
-        public abstract string[] locale { owned get; }
-        [DBus (name = "VConsoleKeymap")]
-        public abstract string vconsole_keymap { owned get; }
-        [DBus (name = "VConsoleKeymapToggle")]
-        public abstract string vconsole_keymap_toggle { owned get; }
-        [DBus (name = "X11Layout")]
-        public abstract string x11_layout { owned get; }
-        [DBus (name = "X11Model")]
-        public abstract string x11_model { owned get; }
-        [DBus (name = "X11Variant")]
-        public abstract string x11_variant { owned get; }
-        [DBus (name = "X11Options")]
-        public abstract string x11_options { owned get; }
-    }
-
     public class LangEntry {
         public string alpha_3;
         public string? alpha_2;
@@ -115,13 +91,20 @@ namespace LocaleHelper {
             try {
                 parser.load_from_file ("%s/iso_3166-1.json".printf (Build.ISO_CODES_LOCATION));
                 weak Json.Object root_object = parser.get_root ().get_object ();
-                weak Json.Array 639_3_array = root_object.get_array_member ("3166-1");
-                foreach (unowned Json.Node element in 639_3_array.get_elements ()) {
+                weak Json.Array 3166_1_array = root_object.get_array_member ("3166-1");
+                foreach (unowned Json.Node element in 3166_1_array.get_elements ()) {
                     weak Json.Object object = element.get_object ();
                     var entry = CountryEntry ();
                     entry.alpha_3 = object.get_string_member ("alpha_3");
                     entry.alpha_2 = object.get_string_member ("alpha_2");
-                    entry.name = object.get_string_member ("name");
+
+                    // Try to get common name to avoid problematic political naming of some locales
+                    if (object.has_member ("common_name")) {
+                        entry.name = object.get_string_member ("common_name");
+                    } else {
+                        entry.name = object.get_string_member ("name");
+                    }
+
                     countries[entry.alpha_2] = entry;
                 }
             } catch (Error e) {

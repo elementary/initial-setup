@@ -1,27 +1,27 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-20 22:23+0000\n"
-"PO-Revision-Date: 2020-05-16 03:10+0000\n"
-"Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
-"Language-Team: Arabic <https://l10n.elementary.io/projects/installer/initial-"
-"setup-extra/ar/>\n"
+"POT-Creation-Date: 2021-08-24 22:23+0000\n"
+"PO-Revision-Date: 2021-08-27 15:13+0000\n"
+"Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
+"Language-Team: Arabic <https://l10n.elementary.io/projects/installer/"
+"initial-setup-extra/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.initial-setup.desktop.in:3
 #: data/io.elementary.initial-setup.appdata.xml.in:8
 msgid "Set up elementary OS"
-msgstr "ثبت المنتري او اس"
+msgstr "قم بإعداد elementary OS"
 
 #: data/io.elementary.initial-setup.desktop.in:4
 msgid "Set up the system"
-msgstr "ثبت النظام"
+msgstr "قم بإعداد النظام"
 
 #: data/io.elementary.initial-setup.desktop.in:6
 msgid "system-os-installer"
@@ -36,50 +36,52 @@ msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
 msgstr ""
-"يساعد في المهام الأساسية قبل أن يكون التثبيت الجديد قابلا للاستخدام، مثل "
-"اختيار اللغة وانشاء مستخدم."
+"يساعد في المهام الأساسية قبل أن يكون التثبيت الجديد قابلاً للاستخدام، مثل "
+"اختيار اللغة وإنشاء مستخدم."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:29
 msgid "New features:"
-msgstr ""
+msgstr "ميزات جديدة:"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:31
 msgid "Confirm and change device name"
-msgstr ""
+msgstr "تأكيد وتغيير اسم الجهاز"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:33
-#: data/io.elementary.initial-setup.appdata.xml.in:41
-#, fuzzy
-#| msgid "Translation updates"
+#: data/io.elementary.initial-setup.appdata.xml.in:32
+msgid "Two-finger swipe to navigate back"
+msgstr "تمريرة بأصبعين للرجوع إلى الوراء"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:34
+#: data/io.elementary.initial-setup.appdata.xml.in:42
 msgid "Minor updates:"
-msgstr "تحديثات في الترجمة"
+msgstr "تحديثات طفيفة:"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:35
-#: data/io.elementary.initial-setup.appdata.xml.in:47
-#: data/io.elementary.initial-setup.appdata.xml.in:53
+#: data/io.elementary.initial-setup.appdata.xml.in:36
+#: data/io.elementary.initial-setup.appdata.xml.in:48
+#: data/io.elementary.initial-setup.appdata.xml.in:54
 msgid "Translation updates"
-msgstr "تحديثات في الترجمة"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:43
-msgid "Set keyboard layout in accountsservice"
-msgstr ""
+msgstr "تحديثات على الترجمة"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:44
-msgid "Add multitouch gestures"
-msgstr ""
+msgid "Set keyboard layout in accountsservice"
+msgstr "اختيار تخطيط لوحة المفاتيح في accountsservice"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:45
-msgid "Set correct locales"
-msgstr ""
+msgid "Add multitouch gestures"
+msgstr "إضافة حركات اللمس المتعدد"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:46
-msgid "New colorful avatar fallback"
-msgstr ""
+msgid "Set correct locales"
+msgstr "ضبط الأماكن بشكل صحيح"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:58
+#: data/io.elementary.initial-setup.appdata.xml.in:47
+msgid "New colorful avatar fallback"
+msgstr "ألوان بديلة احتياطية مكان الصورة الشخصية في حال لم توجد"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:59
 msgid "Initial release"
 msgstr "الإصدار الأولي"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:93
+#: data/io.elementary.initial-setup.appdata.xml.in:94
 msgid "elementary, Inc."
 msgstr "elementary, Inc."

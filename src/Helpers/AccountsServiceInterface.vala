@@ -1,5 +1,5 @@
 [DBus (name = "io.elementary.SettingsDaemon.AccountsService")]
-interface Installer.AccountsService : Object {
+public interface Installer.AccountsService : Object {
     public struct KeyboardLayout {
         public string backend;
         public string name;

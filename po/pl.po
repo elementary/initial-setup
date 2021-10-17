@@ -2,18 +2,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-20 22:23+0000\n"
-"PO-Revision-Date: 2019-11-15 22:24+0000\n"
-"Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
-"Language-Team: Polish <https://l10n.elementary.io/projects/installer/initial-"
-"setup/pl/>\n"
+"POT-Creation-Date: 2021-08-24 22:23+0000\n"
+"PO-Revision-Date: 2021-09-27 16:18+0000\n"
+"Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/installer/"
+"initial-setup/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/MainWindow.vala:33
@@ -40,18 +40,17 @@ msgstr "Brak uprawnień do stworzenia użytkownika '%s'"
 
 #: src/Utils.vala:188
 msgid "Initial Setup could not set your hostname."
-msgstr ""
+msgstr "Instalator nie mógł ustawić twojej nazwy hosta."
 
 #: src/Utils.vala:199
-#, fuzzy, c-format
-#| msgid "No Permission to Create User '%s'"
+#, c-format
 msgid "No Permission to set hostname '%s'"
-msgstr "Brak uprawnień do stworzenia użytkownika '%s'"
+msgstr "Brak uprawnień do ustawienia nazwy hosta '%s'"
 
 #: src/Utils.vala:202
 #, c-format
 msgid "Unable to set Hostname '%s'"
-msgstr ""
+msgstr "Nie można ustawić nazwy hosta '%s'"
 
 #: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:194
 #, c-format
@@ -84,13 +83,15 @@ msgstr "Potwierdź hasło"
 
 #: src/Views/AccountView.vala:78
 msgid "Device name"
-msgstr ""
+msgstr "Nazwa urządzenia"
 
 #: src/Views/AccountView.vala:91
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
+"Widoczny dla innych urządzeń podczas udostępniania, np. za pomocą Bluetooth "
+"lub przez sieć."
 
 #: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
 msgid "Back"
@@ -114,10 +115,8 @@ msgid ""
 msgstr "Nazwa użytkownika musi zawierać tylko małe litery i cyfry, bez spacji"
 
 #: src/Views/KeyboardLayoutView.vala:26
-#, fuzzy
-#| msgid "Keyboard Layout"
 msgid "Select Keyboard Layout"
-msgstr "Układ klawiatury"
+msgstr "Wybierz układ klawiatury"
 
 #: src/Views/KeyboardLayoutView.vala:35
 msgid "Type to test your layout"

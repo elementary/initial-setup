@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-20 22:23+0000\n"
-"PO-Revision-Date: 2021-07-05 10:04+0000\n"
+"POT-Creation-Date: 2021-08-24 22:23+0000\n"
+"PO-Revision-Date: 2021-09-22 21:59+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "installer/initial-setup/en_GB/>\n"
@@ -38,18 +38,17 @@ msgstr "No Permission to Create User '%s'"
 
 #: src/Utils.vala:188
 msgid "Initial Setup could not set your hostname."
-msgstr ""
+msgstr "Initial Setup could not set your hostname."
 
 #: src/Utils.vala:199
-#, fuzzy, c-format
-#| msgid "No Permission to Create User '%s'"
+#, c-format
 msgid "No Permission to set hostname '%s'"
-msgstr "No Permission to Create User '%s'"
+msgstr "No Permission to set hostname '%s'"
 
 #: src/Utils.vala:202
 #, c-format
 msgid "Unable to set Hostname '%s'"
-msgstr ""
+msgstr "Unable to set Hostname '%s'"
 
 #: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:194
 #, c-format
@@ -82,13 +81,15 @@ msgstr "Confirm Password"
 
 #: src/Views/AccountView.vala:78
 msgid "Device name"
-msgstr ""
+msgstr "Device name"
 
 #: src/Views/AccountView.vala:91
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
+"Visible to other devices when sharing, e.g. with Bluetooth or over the "
+"network."
 
 #: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
 msgid "Back"

@@ -71,7 +71,7 @@ public class LocationView : AbstractInstallerView {
             }
         });
 
-        back_button.clicked.connect (() => ((Gtk.Stack) get_parent ()).visible_child = previous_view);
+        back_button.clicked.connect (() => ((Hdy.Deck) get_parent ()).navigate (Hdy.NavigationDirection.BACK));
 
         next_button.clicked.connect (() => {
             next_step ();
