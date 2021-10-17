@@ -91,17 +91,17 @@ public class Installer.MainWindow : Hdy.Window {
         }
 
         software_view = new SoftwareView ();
-        software_view.previous_view = account_view;
-        stack.add (software_view);
-        stack.visible_child = software_view;
+
+        deck.add (software_view);
+        deck.visible_child = software_view;
 
         software_view.next_step.connect (on_finish);
     }
 
     private void on_finish () {
         progress_view = new ProgressView ();
-        stack.add (progress_view);
-        stack.visible_child = progress_view;
+        deck.add (progress_view);
+        deck.visible_child = progress_view;
 
         if (account_view.created != null) {
             unowned Configuration configuration = Configuration.get_default ();
