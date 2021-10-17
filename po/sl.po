@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 22:57+0000\n"
+"POT-Creation-Date: 2021-08-24 22:23+0000\n"
 "PO-Revision-Date: 2020-01-08 00:07+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/installer/"
@@ -38,6 +38,21 @@ msgstr "Ustvarjanje uporabnika '%s' ni uspelo"
 msgid "No Permission to Create User '%s'"
 msgstr "Nimate dovoljenja za ustvarjanje uporabnika '%s'"
 
+#: src/Utils.vala:188
+msgid "Initial Setup could not set your hostname."
+msgstr ""
+
+#: src/Utils.vala:199
+#, fuzzy, c-format
+#| msgid "No Permission to Create User '%s'"
+msgid "No Permission to set hostname '%s'"
+msgstr "Nimate dovoljenja za ustvarjanje uporabnika '%s'"
+
+#: src/Utils.vala:202
+#, c-format
+msgid "Unable to set Hostname '%s'"
+msgstr ""
+
 #: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:194
 #, c-format
 msgid "%s…"
@@ -47,43 +62,53 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Privzeto"
 
-#: src/Views/AccountView.vala:35
+#: src/Views/AccountView.vala:36
 msgid "Create an Account"
 msgstr "Ustvari račun"
 
-#: src/Views/AccountView.vala:39
+#: src/Views/AccountView.vala:40
 msgid "Full Name"
 msgstr "Ime in priimek"
 
-#: src/Views/AccountView.vala:44
+#: src/Views/AccountView.vala:45
 msgid "Username"
 msgstr "Uporabniško ime"
 
-#: src/Views/AccountView.vala:51
+#: src/Views/AccountView.vala:52
 msgid "Choose a Password"
 msgstr "Geslo"
 
-#: src/Views/AccountView.vala:67
+#: src/Views/AccountView.vala:68
 msgid "Confirm Password"
 msgstr "Ponovite geslo"
 
-#: src/Views/AccountView.vala:99 src/Views/KeyboardLayoutView.vala:52
+#: src/Views/AccountView.vala:78
+msgid "Device name"
+msgstr ""
+
+#: src/Views/AccountView.vala:91
+msgid ""
+"Visible to other devices when sharing, e.g. with Bluetooth or over the "
+"network."
+msgstr ""
+
+#: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
 msgid "Back"
 msgstr "Nazaj"
 
-#: src/Views/AccountView.vala:101
+#: src/Views/AccountView.vala:127
 msgid "Finish Setup"
 msgstr "Dokončaj"
 
-#: src/Views/AccountView.vala:186
+#: src/Views/AccountView.vala:219
 msgid "Passwords do not match"
 msgstr "Gesli se ne ujemata"
 
-#: src/Views/AccountView.vala:211
+#: src/Views/AccountView.vala:244
 msgid "The chosen username is already taken"
 msgstr "Uporabniško ime je že v uporabi"
 
-#: src/Views/AccountView.vala:213
+#: src/Views/AccountView.vala:246
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr "Uporabniško ime ima lahko samo male črke in številke, brez presledkov"
