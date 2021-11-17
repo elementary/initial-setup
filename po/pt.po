@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-24 22:23+0000\n"
-"PO-Revision-Date: 2021-11-17 14:14+0000\n"
+"PO-Revision-Date: 2021-11-17 14:18+0000\n"
 "Last-Translator: Bil Fro <bilfro@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/installer/"
 "initial-setup/pt/>\n"
@@ -83,13 +83,15 @@ msgstr "Confirmar palavra-passe"
 
 #: src/Views/AccountView.vala:78
 msgid "Device name"
-msgstr ""
+msgstr "Nome do dispositivo"
 
 #: src/Views/AccountView.vala:91
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
+"Visível a outros aparelhos quando partilhado por ex. Via Bluetooth ou via "
+"rede"
 
 #: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
 msgid "Back"
