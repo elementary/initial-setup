@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-24 22:23+0000\n"
-"PO-Revision-Date: 2021-07-14 21:57+0000\n"
+"PO-Revision-Date: 2021-11-17 16:19+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/installer/"
 "initial-setup/pt/>\n"
@@ -39,18 +39,17 @@ msgstr "Sem permissão para criar o utilizador '%s'"
 
 #: src/Utils.vala:188
 msgid "Initial Setup could not set your hostname."
-msgstr ""
+msgstr "A configuração inicial não conseguiu definir o nome de utilizador."
 
 #: src/Utils.vala:199
-#, fuzzy, c-format
-#| msgid "No Permission to Create User '%s'"
+#, c-format
 msgid "No Permission to set hostname '%s'"
-msgstr "Sem permissão para criar o utilizador '%s'"
+msgstr "Sem permissão para definir o nome da máquina '%s'"
 
 #: src/Utils.vala:202
 #, c-format
 msgid "Unable to set Hostname '%s'"
-msgstr ""
+msgstr "Não foi possível definir o nome da máquina '%s'"
 
 #: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:194
 #, c-format
@@ -83,13 +82,15 @@ msgstr "Confirmar palavra-passe"
 
 #: src/Views/AccountView.vala:78
 msgid "Device name"
-msgstr ""
+msgstr "Nome do dispositivo"
 
 #: src/Views/AccountView.vala:91
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
+"Visível a outros dispositivos quando partilhado por ex: com Bluetooth ou "
+"através da rede."
 
 #: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
 msgid "Back"

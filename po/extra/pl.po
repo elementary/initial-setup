@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-24 22:23+0000\n"
-"PO-Revision-Date: 2021-09-27 16:18+0000\n"
+"PO-Revision-Date: 2021-11-03 06:34+0000\n"
 "Last-Translator: Kamil Makowski <kamil.makowski97@gmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/pl/>\n"
@@ -56,14 +56,12 @@ msgstr "Potwierdź i zmień nazwę urządzenia"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:32
 msgid "Two-finger swipe to navigate back"
-msgstr ""
+msgstr "Przesuń dwoma palcami by się cofnąć"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:34
 #: data/io.elementary.initial-setup.appdata.xml.in:42
-#, fuzzy
-#| msgid "Translation updates"
 msgid "Minor updates:"
-msgstr "Aktualizacje tłumaczenia"
+msgstr "Drobne aktualizacje:"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:36
 #: data/io.elementary.initial-setup.appdata.xml.in:48
@@ -73,19 +71,19 @@ msgstr "Aktualizacje tłumaczenia"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:44
 msgid "Set keyboard layout in accountsservice"
-msgstr ""
+msgstr "Ustawiono układ klawiatury w accountsservice"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:45
 msgid "Add multitouch gestures"
-msgstr ""
+msgstr "Dodano gesty wielodotykowe"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:46
 msgid "Set correct locales"
-msgstr ""
+msgstr "Ustawiono poprawne dane regionalne"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:47
 msgid "New colorful avatar fallback"
-msgstr ""
+msgstr "Nowy kolorowy awatar zastępczy"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:59
 msgid "Initial release"

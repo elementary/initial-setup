@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-24 22:23+0000\n"
-"PO-Revision-Date: 2021-08-25 01:58+0000\n"
+"PO-Revision-Date: 2021-11-01 08:19+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/ja/>\n"
@@ -35,7 +35,7 @@ msgstr "system-os-installer"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:7
 msgid "Initial Setup"
-msgstr "初期セットアップ"
+msgstr "初期設定"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:10
 msgid ""
