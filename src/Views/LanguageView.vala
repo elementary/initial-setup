@@ -120,6 +120,13 @@ public class Installer.LanguageView : AbstractInstallerView {
         lang_variant_widget.main_listbox.row_activated.connect (row_activated);
 
         next_button.clicked.connect (on_next_button_clicked);
+        next_button.button_press_event.connect ((event) => {
+            if (event.button == Gdk.BUTTON_SECONDARY) {
+                on_next_button_secondary_clicked ();
+            }
+
+            return base.button_press_event (event);
+        });
 
         destroy.connect (() => {
             // We need to disconnect the signal otherwise it's called several time when destroying the window…
@@ -227,6 +234,29 @@ public class Installer.LanguageView : AbstractInstallerView {
         }
 
         next_step ();
+    }
+
+    private void on_next_button_secondary_clicked () {
+        var dialog = new Granite.MessageDialog.with_image_from_icon_name (
+            _("Unexpected click"),
+            _("You clicked the right mouse button where a left-click was expected. Do you want to switch left and right mouse buttons?"),
+            "input-mouse",
+            Gtk.ButtonsType.CANCEL
+        );
+        dialog.transient_for = (Gtk.Window) get_toplevel ();
+
+        var switch_button = dialog.add_button (_("Switch mouse buttons"), Gtk.ResponseType.ACCEPT);
+        switch_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        switch_button.grab_focus ();
+
+        var result = dialog.run ();
+        dialog.destroy ();
+
+        if (result == Gtk.ResponseType.ACCEPT) {
+            var mouse_settings = new GLib.Settings ("org.gnome.desktop.peripherals.mouse");
+            mouse_settings.set_boolean ("left-handed", true);
+            next_step ();
+        }
     }
 
     private bool timeout () {
