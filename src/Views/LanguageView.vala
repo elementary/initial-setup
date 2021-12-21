@@ -249,6 +249,14 @@ public class Installer.LanguageView : AbstractInstallerView {
         switch_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
         switch_button.grab_focus ();
 
+        switch_button.button_press_event.connect ((event) => {
+            if (event.button == Gdk.BUTTON_SECONDARY) {
+                switch_button.activate ();
+            }
+
+            return base.button_press_event (event);
+        });
+
         var result = dialog.run ();
         dialog.destroy ();
 
