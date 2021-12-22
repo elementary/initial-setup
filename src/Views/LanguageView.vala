@@ -241,17 +241,26 @@ public class Installer.LanguageView : AbstractInstallerView {
             _("Use the right mouse button for primary click?"),
             _("The right mouse button was used where a primary click was expected. You can choose to always use the right mouse button for primary click."),
             "input-mouse",
-            Gtk.ButtonsType.CANCEL
+            Gtk.ButtonsType.NONE
         );
         dialog.transient_for = (Gtk.Window) get_toplevel ();
 
-        var switch_button = dialog.add_button (_("Switch mouse buttons"), Gtk.ResponseType.ACCEPT);
-        switch_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
-        switch_button.grab_focus ();
-
-        switch_button.button_press_event.connect ((event) => {
+        var left_click_as_primary_button = dialog.add_button (_("Left-Click as Primary"), Gtk.ResponseType.REJECT);
+        left_click_as_primary_button.button_press_event.connect ((event) => {
             if (event.button == Gdk.BUTTON_SECONDARY) {
-                switch_button.activate ();
+                left_click_as_primary_button.activate ();
+            }
+
+            return base.button_press_event (event);
+        });
+
+        var right_click_as_primary_button = dialog.add_button (_("Right-Click as Primary"), Gtk.ResponseType.ACCEPT);
+        right_click_as_primary_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        right_click_as_primary_button.grab_focus ();
+
+        right_click_as_primary_button.button_press_event.connect ((event) => {
+            if (event.button == Gdk.BUTTON_SECONDARY) {
+                right_click_as_primary_button.activate ();
             }
 
             return base.button_press_event (event);
@@ -260,11 +269,10 @@ public class Installer.LanguageView : AbstractInstallerView {
         var result = dialog.run ();
         dialog.destroy ();
 
-        if (result == Gtk.ResponseType.ACCEPT) {
-            var mouse_settings = new GLib.Settings ("org.gnome.desktop.peripherals.mouse");
-            mouse_settings.set_boolean ("left-handed", true);
-            next_step ();
-        }
+        var left_handed = result == Gtk.ResponseType.ACCEPT;
+        var mouse_settings = new GLib.Settings ("org.gnome.desktop.peripherals.mouse");
+        mouse_settings.set_boolean ("left-handed", left_handed);
+        next_step ();
     }
 
     private bool timeout () {
