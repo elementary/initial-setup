@@ -32,4 +32,5 @@ public class Configuration : GLib.Object {
     public string? country { get; set; default = null; }
     public InitialSetup.KeyboardLayout keyboard_layout { get; set; }
     public InitialSetup.KeyboardVariant? keyboard_variant { get; set; default = null; }
+    public bool left_handed { get; set; }
 }

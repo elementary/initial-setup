@@ -85,14 +85,19 @@ public class Installer.MainWindow : Hdy.Window {
 
     private void on_finish () {
         if (account_view.created != null) {
-            set_keyboard_and_locale.begin ((obj, res) => {
-                set_keyboard_and_locale.end (res);
+            set_settings.begin ((obj, res) => {
+                set_settings.end (res);
                 destroy ();
             });
         } else {
             destroy ();
         }
 
+    }
+
+    private async void set_settings () {
+        yield set_keyboard_and_locale ();
+        yield set_left_handed ();
     }
 
     private async void set_keyboard_and_locale () {
@@ -134,6 +139,28 @@ public class Installer.MainWindow : Hdy.Window {
             }
 
             accounts_service.keyboard_layouts = layouts;
+        }
+    }
+
+    private async void set_left_handed () {
+        AccountsService accounts_service = null;
+
+        try {
+            var act_service = yield GLib.Bus.get_proxy<FDO.Accounts> (GLib.BusType.SYSTEM,
+                                                                      "org.freedesktop.Accounts",
+                                                                      "/org/freedesktop/Accounts");
+            var user_path = act_service.find_user_by_name (account_view.created.user_name);
+
+            accounts_service = yield GLib.Bus.get_proxy (GLib.BusType.SYSTEM,
+                                                        "org.freedesktop.Accounts",
+                                                        user_path,
+                                                        GLib.DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
+        } catch (Error e) {
+            warning ("Unable to get AccountsService proxy, clock format on new user may be incorrect: %s", e.message);
+        }
+
+        if (accounts_service != null) {
+            accounts_service.left_handed = Configuration.get_default ().left_handed;
         }
     }
 }

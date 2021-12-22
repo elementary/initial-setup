@@ -272,6 +272,7 @@ public class Installer.LanguageView : AbstractInstallerView {
         var left_handed = result == Gtk.ResponseType.ACCEPT;
         var mouse_settings = new GLib.Settings ("org.gnome.desktop.peripherals.mouse");
         mouse_settings.set_boolean ("left-handed", left_handed);
+        Configuration.get_default ().left_handed = left_handed;
         next_step ();
     }
 
