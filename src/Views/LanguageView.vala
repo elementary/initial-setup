@@ -238,8 +238,8 @@ public class Installer.LanguageView : AbstractInstallerView {
 
     private void on_next_button_secondary_clicked () {
         var dialog = new Granite.MessageDialog.with_image_from_icon_name (
-            _("Unexpected click"),
-            _("You clicked the right mouse button where a left-click was expected. Do you want to switch left and right mouse buttons?"),
+            _("Use the right mouse button for primary click?"),
+            _("The right mouse button was used where a primary click was expected. You can choose to always use the right mouse button for primary click."),
             "input-mouse",
             Gtk.ButtonsType.CANCEL
         );
