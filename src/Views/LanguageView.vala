@@ -267,9 +267,6 @@ public class Installer.LanguageView : AbstractInstallerView {
         });
 
         var right_click_as_primary_button = dialog.add_button (_("Right-Click as Primary"), Gtk.ResponseType.ACCEPT);
-        right_click_as_primary_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
-        right_click_as_primary_button.grab_focus ();
-
         right_click_as_primary_button.button_press_event.connect ((event) => {
             if (event.button == Gdk.BUTTON_SECONDARY) {
                 right_click_as_primary_button.activate ();
@@ -277,6 +274,14 @@ public class Installer.LanguageView : AbstractInstallerView {
 
             return base.button_press_event (event);
         });
+
+        if (mouse_settings.get_boolean("left-handed")) {
+            left_click_as_primary_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+            left_click_as_primary_button.grab_focus ();
+        } else {
+            right_click_as_primary_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+            right_click_as_primary_button.grab_focus ();
+        }
 
         var result = dialog.run ();
         dialog.destroy ();
