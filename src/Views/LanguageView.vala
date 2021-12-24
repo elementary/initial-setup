@@ -240,7 +240,7 @@ public class Installer.LanguageView : AbstractInstallerView {
         var mouse_settings = new GLib.Settings ("org.gnome.desktop.peripherals.mouse");
 
         Granite.MessageDialog dialog;
-        if (mouse_settings.get_boolean("left-handed")) {
+        if (mouse_settings.get_boolean ("left-handed")) {
             dialog = new Granite.MessageDialog.with_image_from_icon_name (
                 _("Use the left mouse button for primary click?"),
                 _("The left mouse button was used where a primary click was expected. You can choose to always use the left mouse button for primary click."),
@@ -253,7 +253,7 @@ public class Installer.LanguageView : AbstractInstallerView {
                 _("The right mouse button was used where a primary click was expected. You can choose to always use the right mouse button for primary click."),
                 "input-mouse",
                 Gtk.ButtonsType.NONE
-            );    
+            );
         }
         dialog.transient_for = (Gtk.Window) get_toplevel ();
 
@@ -275,7 +275,7 @@ public class Installer.LanguageView : AbstractInstallerView {
             return base.button_press_event (event);
         });
 
-        if (mouse_settings.get_boolean("left-handed")) {
+        if (mouse_settings.get_boolean ("left-handed")) {
             left_click_as_primary_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
             left_click_as_primary_button.grab_focus ();
         } else {
