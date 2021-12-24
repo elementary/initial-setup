@@ -237,12 +237,24 @@ public class Installer.LanguageView : AbstractInstallerView {
     }
 
     private void on_next_button_secondary_clicked () {
-        var dialog = new Granite.MessageDialog.with_image_from_icon_name (
-            _("Use the right mouse button for primary click?"),
-            _("The right mouse button was used where a primary click was expected. You can choose to always use the right mouse button for primary click."),
-            "input-mouse",
-            Gtk.ButtonsType.NONE
-        );
+        var mouse_settings = new GLib.Settings ("org.gnome.desktop.peripherals.mouse");
+
+        Granite.MessageDialog dialog;
+        if (mouse_settings.get_boolean("left-handed")) {
+            dialog = new Granite.MessageDialog.with_image_from_icon_name (
+                _("Use the left mouse button for primary click?"),
+                _("The left mouse button was used where a primary click was expected. You can choose to always use the left mouse button for primary click."),
+                "input-mouse",
+                Gtk.ButtonsType.NONE
+            );
+        } else {
+            dialog = new Granite.MessageDialog.with_image_from_icon_name (
+                _("Use the right mouse button for primary click?"),
+                _("The right mouse button was used where a primary click was expected. You can choose to always use the right mouse button for primary click."),
+                "input-mouse",
+                Gtk.ButtonsType.NONE
+            );    
+        }
         dialog.transient_for = (Gtk.Window) get_toplevel ();
 
         var left_click_as_primary_button = dialog.add_button (_("Left-Click as Primary"), Gtk.ResponseType.REJECT);
@@ -270,7 +282,6 @@ public class Installer.LanguageView : AbstractInstallerView {
         dialog.destroy ();
 
         var left_handed = result == Gtk.ResponseType.ACCEPT;
-        var mouse_settings = new GLib.Settings ("org.gnome.desktop.peripherals.mouse");
         mouse_settings.set_boolean ("left-handed", left_handed);
         Configuration.get_default ().left_handed = left_handed;
         next_step ();
