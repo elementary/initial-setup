@@ -40,7 +40,8 @@ public class Installer.MainWindow : Gtk.Window {
         language_view = new LanguageView ();
 
         leaflet = new Adw.Leaflet () {
-            can_swipe_back = true
+            can_swipe_back = true,
+            can_unfold = false
         };
         leaflet.append (language_view);
 

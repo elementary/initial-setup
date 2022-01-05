@@ -71,12 +71,14 @@ public class VariantWidget : Gtk.Frame {
         variant_box.append (variant_scrolled);
 
         leaflet = new Adw.Leaflet () {
-            can_swipe_back = true
+            can_swipe_back = true,
+            can_unfold = false
         };
         leaflet.append (main_scrolled);
         leaflet.append (variant_box);
 
         child = leaflet;
+        vexpand = true;
 
         back_button.clicked.connect (() => {
             going_to_main ();
