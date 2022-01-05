@@ -46,6 +46,11 @@ public class Installer.MainWindow : Gtk.Window {
 
         child = leaflet;
 
+        var titlebar = new Gtk.Label ("") {
+            visible = false
+        };
+        set_titlebar (titlebar);
+
         language_view.next_step.connect (() => load_keyboard_view ());
     }
 
