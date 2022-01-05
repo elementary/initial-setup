@@ -19,7 +19,7 @@ public class KeyboardLayoutView : AbstractInstallerView {
     private VariantWidget input_variant_widget;
 
     construct {
-        var image = new Gtk.Image.from_icon_name ("input-keyboard", Gtk.IconSize.DIALOG) {
+        var image = new Gtk.Image.from_icon_name ("input-keyboard") {
             pixel_size = 128,
             valign = Gtk.Align.END
         };
@@ -39,12 +39,9 @@ public class KeyboardLayoutView : AbstractInstallerView {
             secondary_icon_tooltip_text = _("Show keyboard layout")
         };
 
-        var stack_grid = new Gtk.Grid () {
-            orientation = Gtk.Orientation.VERTICAL,
-            row_spacing = 12
-        };
-        stack_grid.add (input_variant_widget);
-        stack_grid.add (keyboard_test_entry);
+        var stack_grid = new Gtk.Box (Gtk.Orientation.VERTICAL, 12);
+        stack_grid.append (input_variant_widget);
+        stack_grid.append (keyboard_test_entry);
 
         content_area.attach (image, 0, 0);
         content_area.attach (title_label, 0, 1);
@@ -55,10 +52,10 @@ public class KeyboardLayoutView : AbstractInstallerView {
         var next_button = new Gtk.Button.with_label (_("Select")) {
             sensitive = false
         };
-        next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        next_button.get_style_context ().add_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
-        action_area.add (back_button);
-        action_area.add (next_button);
+        action_area.append (back_button);
+        action_area.append (next_button);
 
         input_variant_widget.variant_listbox.row_activated.connect (() => {
             next_button.activate ();
@@ -93,7 +90,7 @@ public class KeyboardLayoutView : AbstractInstallerView {
             }
         });
 
-        back_button.clicked.connect (() => ((Hdy.Deck) get_parent ()).navigate (Hdy.NavigationDirection.BACK));
+        back_button.clicked.connect (() => ((Adw.Leaflet) get_parent ()).navigate (Adw.NavigationDirection.BACK));
 
         next_button.clicked.connect (() => {
             unowned var vrow = input_variant_widget.variant_listbox.get_selected_row ();
@@ -138,35 +135,34 @@ public class KeyboardLayoutView : AbstractInstallerView {
                 }
             }
 
-            var layout = new LayoutWidget ();
-            layout.set_layout (layout_string);
+            // var layout = new LayoutWidget ();
+            // layout.set_layout (layout_string);
 
-            var popover = new Gtk.Popover (keyboard_test_entry);
-            popover.add (layout);
-            popover.show_all ();
+            // var popover = new Gtk.Popover (keyboard_test_entry) {
+            //     child = layout
+            // };
         });
 
         input_variant_widget.main_listbox.bind_model (InitialSetup.KeyboardLayout.get_all (), (layout) => {
             return new LayoutRow (layout as InitialSetup.KeyboardLayout);
         });
 
-        show_all ();
 
         Idle.add (() => {
             unowned string? country = Configuration.get_default ().country;
             if (country != null) {
                 var default_layout = country.down ();
 
-                foreach (unowned var child in input_variant_widget.main_listbox.get_children ()) {
-                    if (child is LayoutRow) {
-                        unowned var row = (LayoutRow) child;
-                        if (row.layout.name == default_layout) {
-                            input_variant_widget.main_listbox.select_row (row);
-                            row.grab_focus ();
-                            break;
-                        }
-                    }
-                }
+                // foreach (unowned var child in input_variant_widget.main_listbox.get_children ()) {
+                //     if (child is LayoutRow) {
+                //         unowned var row = (LayoutRow) child;
+                //         if (row.layout.name == default_layout) {
+                //             input_variant_widget.main_listbox.select_row (row);
+                //             row.grab_focus ();
+                //             break;
+                //         }
+                //     }
+                // }
             }
         });
     }
@@ -183,13 +179,15 @@ public class KeyboardLayoutView : AbstractInstallerView {
 
             var label = new Gtk.Label (layout_description) {
                 ellipsize = Pango.EllipsizeMode.END,
-                margin = 6,
+                margin_top = 6,
+                margin_end = 6,
+                margin_bottom = 6,
+                margin_start = 6,
                 xalign = 0
             };
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
-            add (label);
-            show_all ();
+            child = label;
         }
     }
 
@@ -200,13 +198,15 @@ public class KeyboardLayoutView : AbstractInstallerView {
 
             var label = new Gtk.Label (variant.display_name) {
                 ellipsize = Pango.EllipsizeMode.END,
-                margin = 6,
+                margin_top = 6,
+                margin_end = 6,
+                margin_bottom = 6,
+                margin_start = 6,
                 xalign = 0
             };
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
-            add (label);
-            show_all ();
+            child = label;
         }
     }
 }

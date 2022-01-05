@@ -32,7 +32,6 @@ public class LayoutWidget : Gtk.Grid {
         height_request = 230;
         gkbd_drawing.set_groups_levels (((unowned Gkbd.KeyboardDrawingGroupLevel)[])group);
         set_layout ("gb\tcolemak");
-        gkbd_drawing.show_all ();
     }
 
     public void set_layout (string layout_id) {

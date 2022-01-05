@@ -58,13 +58,13 @@ public class Installer.AccountView : AbstractInstallerView {
     private Granite.ValidatedEntry hostname_entry;
 
     construct {
-        var avatar = new Hdy.Avatar (104, null, true) {
+        var avatar = new Adw.Avatar (104, null, true) {
             margin = 12,
             valign = Gtk.Align.END
         };
 
         var title_label = new Gtk.Label (_("Create an Account"));
-        title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
+        title_label.add_css_class (Granite.STYLE_CLASS_H2_LABEL);
         title_label.valign = Gtk.Align.START;
 
         var realname_label = new Granite.HeaderLabel (_("Full Name"));
@@ -77,12 +77,12 @@ public class Installer.AccountView : AbstractInstallerView {
         username_entry = new Granite.ValidatedEntry ();
 
         username_error_revealer = new ErrorRevealer (".");
-        username_error_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
+        username_error_revealer.label_widget.add_css_class (Granite.STYLE_CLASS_ERROR);
 
         var pw_label = new Granite.HeaderLabel (_("Choose a Password"));
 
         pw_error_revealer = new ErrorRevealer (".");
-        pw_error_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_WARNING);
+        pw_error_revealer.label_widget.add_css_class (Granite.STYLE_CLASS_WARNING);
 
         pw_entry = new ValidatedEntry ();
         pw_entry.visibility = false;
@@ -103,7 +103,7 @@ public class Installer.AccountView : AbstractInstallerView {
         };
 
         confirm_entry_revealer = new ErrorRevealer (".");
-        confirm_entry_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
+        confirm_entry_revealer.label_widget.add_css_class (Granite.STYLE_CLASS_ERROR);
 
         var hostname_label = new Granite.HeaderLabel (_("Device name")) {
             margin_top = 16
@@ -125,7 +125,7 @@ public class Installer.AccountView : AbstractInstallerView {
             wrap = true,
             xalign = 0
         };
-        hostname_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+        hostname_info.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
         var form_grid = new Gtk.Grid ();
         form_grid.row_spacing = 3;
@@ -154,15 +154,16 @@ public class Installer.AccountView : AbstractInstallerView {
 
         var back_button = new Gtk.Button.with_label (_("Back"));
 
-        finish_button = new Gtk.Button.with_label (_("Finish Setup"));
-        finish_button.can_default = true;
-        finish_button.sensitive = false;
-        finish_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        finish_button = new Gtk.Button.with_label (_("Finish Setup")) {
+            receives_default = true,
+            sensitive = false
+        };
+        finish_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
-        action_area.add (back_button);
-        action_area.add (finish_button);
+        action_area.append (back_button);
+        action_area.append (finish_button);
 
-        back_button.clicked.connect (() => ((Hdy.Deck) get_parent ()).navigate (Hdy.NavigationDirection.BACK));
+        back_button.clicked.connect (() => ((Adw.Leaflet) get_parent ()).navigate (Adw.NavigationDirection.BACK));
 
         realname_entry.changed.connect (() => {
             var username = gen_username (realname_entry.text);
@@ -191,8 +192,6 @@ public class Installer.AccountView : AbstractInstallerView {
         });
 
         finish_button.clicked.connect (create_new_user);
-
-        show_all ();
 
         realname_entry.bind_property ("text", avatar, "text");
         realname_entry.grab_focus ();
@@ -279,7 +278,7 @@ public class Installer.AccountView : AbstractInstallerView {
     private void update_finish_button () {
         if (username_entry.is_valid && pw_entry.is_valid && confirm_entry.is_valid && hostname_entry.is_valid) {
             finish_button.sensitive = true;
-            finish_button.has_default = true;
+            finish_button.receives_default = true;
         } else {
             finish_button.sensitive = false;
         }
@@ -470,7 +469,8 @@ public class Installer.AccountView : AbstractInstallerView {
         }
     }
 
-    private class ErrorRevealer : Gtk.Revealer {
+    private class ErrorRevealer : Gtk.Box {
+        public bool reveal_child { get; set; }
         public Gtk.Label label_widget;
 
         public string label {
@@ -488,8 +488,14 @@ public class Installer.AccountView : AbstractInstallerView {
             label_widget.wrap = true;
             label_widget.xalign = 1;
 
-            transition_type = Gtk.RevealerTransitionType.CROSSFADE;
-            add (label_widget);
+            var revealer = new Gtk.Revealer () {
+                child = label_widget,
+                transition_type = Gtk.RevealerTransitionType.CROSSFADE
+            };
+
+            append (revealer);
+
+            bind_property ("reveal-child", revealer, "reveal-child");
         }
     }
 }

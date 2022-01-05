@@ -27,7 +27,8 @@ public class Installer.App : Gtk.Application {
 
     public override void activate () {
         var window = new MainWindow ();
-        window.show_all ();
+        window.present ();
+
         this.add_window (window);
     }
 }

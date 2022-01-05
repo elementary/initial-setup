@@ -42,7 +42,7 @@ public class Installer.LanguageView : AbstractInstallerView {
     }
 
     construct {
-        var image = new Gtk.Image.from_icon_name ("preferences-desktop-locale", Gtk.IconSize.DIALOG) {
+        var image = new Gtk.Image.from_icon_name ("preferences-desktop-locale") {
             pixel_size = 128,
             valign = Gtk.Align.END
         };
@@ -58,15 +58,15 @@ public class Installer.LanguageView : AbstractInstallerView {
             valign = Gtk.Align.START
         };
         select_stack.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
-        select_stack.add (select_label);
+        select_stack.add_child (select_label);
 
         select_stack.notify["transition-running"].connect (() => {
             if (!select_stack.transition_running) {
-                select_stack.get_children ().foreach ((child) => {
-                    if (child != select_stack.get_visible_child ()) {
-                        child.destroy ();
-                    }
-                });
+                // select_stack.get_children ().foreach ((child) => {
+                //     if (child != select_stack.get_visible_child ()) {
+                //         child.destroy ();
+                //     }
+                // });
             }
         });
 
@@ -84,11 +84,11 @@ public class Installer.LanguageView : AbstractInstallerView {
             if (!((LangRow)row).preferred_row) {
                 if (before != null && ((LangRow)before).preferred_row) {
                     var separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
-                        margin = 3,
+                        margin_top = 3,
+                        margin_bottom = 3,
                         margin_end = 6,
                         margin_start = 6
                     };
-                    separator.show_all ();
 
                     row.set_header (separator);
                 }
@@ -99,19 +99,19 @@ public class Installer.LanguageView : AbstractInstallerView {
             if (lang_entry.key in preferred_langs) {
                 var pref_langrow = new LangRow (lang_entry.value);
                 pref_langrow.preferred_row = true;
-                lang_variant_widget.main_listbox.add (pref_langrow);
+                lang_variant_widget.main_listbox.append (pref_langrow);
             }
 
             var langrow = new LangRow (lang_entry.value);
-            lang_variant_widget.main_listbox.add (langrow);
+            lang_variant_widget.main_listbox.append (langrow);
         }
 
         next_button = new Gtk.Button.with_label (_("Select")) {
             sensitive = false
         };
-        next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        next_button.get_style_context ().add_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
-        action_area.add (next_button);
+        action_area.append (next_button);
 
         lang_variant_widget.main_listbox.row_selected.connect (row_selected);
         lang_variant_widget.main_listbox.select_row (lang_variant_widget.main_listbox.get_row_at_index (0));
@@ -142,32 +142,32 @@ public class Installer.LanguageView : AbstractInstallerView {
         unowned LocaleHelper.LangEntry lang_entry = ((LangRow) row).lang_entry;
         unowned string lang_code = lang_entry.get_code ();
 
-        foreach (unowned var child in lang_variant_widget.main_listbox.get_children ()) {
-            if (child is LangRow) {
-                unowned var lang_row = (LangRow) child;
-                if (lang_row.lang_entry.get_code () == lang_code) {
-                    lang_row.selected = true;
-                } else {
-                    lang_row.selected = false;
-                }
-            }
-        }
+        // foreach (unowned var child in lang_variant_widget.main_listbox.get_children ()) {
+        //     if (child is LangRow) {
+        //         unowned var lang_row = (LangRow) child;
+        //         if (lang_row.lang_entry.get_code () == lang_code) {
+        //             lang_row.selected = true;
+        //         } else {
+        //             lang_row.selected = false;
+        //         }
+        //     }
+        // }
 
         next_button.sensitive = true;
     }
 
     private void variant_row_selected (Gtk.ListBoxRow? row) {
         unowned LocaleHelper.CountryEntry country_entry = ((CountryRow) row).country_entry;
-        foreach (unowned var child in lang_variant_widget.variant_listbox.get_children ()) {
-            if (child is CountryRow) {
-                unowned var country_row = (CountryRow) child;
-                if (country_row.country_entry.alpha_2 == country_entry.alpha_2) {
-                    country_row.selected = true;
-                } else {
-                    country_row.selected = false;
-                }
-            }
-        }
+        // foreach (unowned var child in lang_variant_widget.variant_listbox.get_children ()) {
+        //     if (child is CountryRow) {
+        //         unowned var country_row = (CountryRow) child;
+        //         if (country_row.country_entry.alpha_2 == country_entry.alpha_2) {
+        //             country_row.selected = true;
+        //         } else {
+        //             country_row.selected = false;
+        //         }
+        //     }
+        // }
 
         next_button.label = LocaleHelper.lang_gettext (N_("Select"), country_entry.get_full_code ());
         next_button.sensitive = true;
@@ -189,7 +189,7 @@ public class Installer.LanguageView : AbstractInstallerView {
             lang_variant_widget.variant_listbox.row_selected.connect (variant_row_selected);
             foreach (unowned var country in countries) {
                 var country_row = new CountryRow (country);
-                lang_variant_widget.variant_listbox.add (country_row);
+                lang_variant_widget.variant_listbox.append (country_row);
                 if (country.get_code () == main_country) {
                     lang_variant_widget.variant_listbox.select_row (country_row);
                 }
@@ -199,7 +199,6 @@ public class Installer.LanguageView : AbstractInstallerView {
                 lang_variant_widget.variant_listbox.select_row (lang_variant_widget.variant_listbox.get_row_at_index (0));
             }
 
-            lang_variant_widget.variant_listbox.show_all ();
             Environment.set_variable ("LANGUAGE", lang_code, true);
             Intl.textdomain (Build.GETTEXT_PACKAGE);
             lang_variant_widget.show_variants (_("Languages"), "<b>%s</b>".printf (lang_entry.name));
@@ -311,8 +310,7 @@ public class Installer.LanguageView : AbstractInstallerView {
 
         unowned var label_text = LocaleHelper.lang_gettext (N_("Select a Language"), ((LangRow) row).lang_entry.get_code ());
         select_label = new Gtk.Label (label_text);
-        select_label.show_all ();
-        select_stack.add (select_label);
+        select_stack.add_child (select_label);
         select_stack.set_visible_child (select_label);
 
         select_number++;
@@ -347,7 +345,7 @@ public class Installer.LanguageView : AbstractInstallerView {
             image = new Gtk.Image () {
                 halign = Gtk.Align.END,
                 hexpand = true,
-                icon_size = Gtk.IconSize.BUTTON
+                pixel_size = 16
             };
 
             var label = new Gtk.Label (lang_entry.name) {
@@ -356,14 +354,16 @@ public class Installer.LanguageView : AbstractInstallerView {
             };
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
-            var grid = new Gtk.Grid () {
-                column_spacing = 6,
-                margin = 6
+            var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
+                margin_top = 6,
+                margin_end = 6,
+                margin_bottom = 6,
+                margin_start = 6
             };
-            grid.add (label);
-            grid.add (image);
+            box.append (label);
+            box.append (image);
 
-            add (grid);
+            child = box;
         }
 
         public static int compare (LangRow langrow1, LangRow langrow2) {
@@ -406,7 +406,7 @@ public class Installer.LanguageView : AbstractInstallerView {
             image = new Gtk.Image () {
                 halign = Gtk.Align.END,
                 hexpand = true,
-                icon_size = Gtk.IconSize.BUTTON
+                pixel_size = 16
             };
 
             var label = new Gtk.Label (country_entry.name) {
@@ -415,14 +415,16 @@ public class Installer.LanguageView : AbstractInstallerView {
             };
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
-            var grid = new Gtk.Grid () {
-                column_spacing = 6,
-                margin = 6
+            var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
+                margin_top = 6,
+                margin_end = 6,
+                margin_bottom = 6,
+                margin_start = 6
             };
-            grid.add (label);
-            grid.add (image);
+            box.append (label);
+            box.append (image);
 
-            add (grid);
+            child = box;
         }
 
 

@@ -13,7 +13,7 @@ vala_files = [
     'Views/KeyboardLayoutView.vala',
     'Views/LanguageView.vala',
     'Views/NetworkView.vala',
-    'Widgets/LayoutWidget.vala',
+    # 'Widgets/LayoutWidget.vala',
     'Widgets/VariantWidget.vala'
 ]
 
