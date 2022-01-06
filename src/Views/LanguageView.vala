@@ -240,6 +240,8 @@ public class Installer.LanguageView : AbstractInstallerView {
         var mouse_settings = new GLib.Settings ("org.gnome.desktop.peripherals.mouse");
 
         Granite.MessageDialog dialog;
+        unowned Gtk.Widget left_click_as_primary_button;
+        unowned Gtk.Widget right_click_as_primary_button;
         if (mouse_settings.get_boolean ("left-handed")) {
             dialog = new Granite.MessageDialog.with_image_from_icon_name (
                 _("Use the left mouse button for primary click?"),
@@ -247,6 +249,12 @@ public class Installer.LanguageView : AbstractInstallerView {
                 "input-mouse",
                 Gtk.ButtonsType.NONE
             );
+
+            right_click_as_primary_button = dialog.add_button (_("Right-Click as Primary"), Gtk.ResponseType.ACCEPT);
+
+            left_click_as_primary_button = dialog.add_button (_("Left-Click as Primary"), Gtk.ResponseType.REJECT);
+            left_click_as_primary_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+            left_click_as_primary_button.grab_focus ();
         } else {
             dialog = new Granite.MessageDialog.with_image_from_icon_name (
                 _("Use the right mouse button for primary click?"),
@@ -254,10 +262,15 @@ public class Installer.LanguageView : AbstractInstallerView {
                 "input-mouse",
                 Gtk.ButtonsType.NONE
             );
+
+            left_click_as_primary_button = dialog.add_button (_("Left-Click as Primary"), Gtk.ResponseType.REJECT);
+
+            right_click_as_primary_button = dialog.add_button (_("Right-Click as Primary"), Gtk.ResponseType.ACCEPT);
+            right_click_as_primary_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+            right_click_as_primary_button.grab_focus ();
         }
         dialog.transient_for = (Gtk.Window) get_toplevel ();
 
-        var left_click_as_primary_button = dialog.add_button (_("Left-Click as Primary"), Gtk.ResponseType.REJECT);
         left_click_as_primary_button.button_press_event.connect ((event) => {
             if (event.button == Gdk.BUTTON_SECONDARY) {
                 left_click_as_primary_button.activate ();
@@ -266,7 +279,6 @@ public class Installer.LanguageView : AbstractInstallerView {
             return base.button_press_event (event);
         });
 
-        var right_click_as_primary_button = dialog.add_button (_("Right-Click as Primary"), Gtk.ResponseType.ACCEPT);
         right_click_as_primary_button.button_press_event.connect ((event) => {
             if (event.button == Gdk.BUTTON_SECONDARY) {
                 right_click_as_primary_button.activate ();
@@ -274,14 +286,6 @@ public class Installer.LanguageView : AbstractInstallerView {
 
             return base.button_press_event (event);
         });
-
-        if (mouse_settings.get_boolean ("left-handed")) {
-            left_click_as_primary_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
-            left_click_as_primary_button.grab_focus ();
-        } else {
-            right_click_as_primary_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
-            right_click_as_primary_button.grab_focus ();
-        }
 
         var result = dialog.run ();
         dialog.destroy ();
