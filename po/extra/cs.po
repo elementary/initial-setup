@@ -2,16 +2,16 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-24 22:23+0000\n"
-"PO-Revision-Date: 2020-05-30 21:11+0000\n"
+"PO-Revision-Date: 2022-01-08 19:57+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
-"Language-Team: Czech <https://l10n.elementary.io/projects/installer/initial-"
-"setup-extra/cs/>\n"
+"Language-Team: Czech <https://l10n.elementary.io/projects/installer/"
+"initial-setup-extra/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.initial-setup.desktop.in:3
 #: data/io.elementary.initial-setup.appdata.xml.in:8
@@ -40,7 +40,7 @@ msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:29
 msgid "New features:"
-msgstr ""
+msgstr "Nové funkce:"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:31
 msgid "Confirm and change device name"
@@ -48,7 +48,7 @@ msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:32
 msgid "Two-finger swipe to navigate back"
-msgstr ""
+msgstr "Pokud se chcete dostat zpět, potáhněte dvěma prsty"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:34
 #: data/io.elementary.initial-setup.appdata.xml.in:42
