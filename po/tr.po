@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-11 20:09+0000\n"
-"PO-Revision-Date: 2021-08-23 20:40+0000\n"
+"PO-Revision-Date: 2022-01-12 03:30+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/installer/"
 "initial-setup/tr/>\n"
@@ -141,31 +141,35 @@ msgstr "Diller"
 
 #: src/Views/LanguageView.vala:242
 msgid "Use the right mouse button for primary click?"
-msgstr ""
+msgstr "Birincil tıklama için sağ fare düğmesi kullanılsın mı?"
 
 #: src/Views/LanguageView.vala:243
 msgid ""
 "The right mouse button was used where a primary click was expected. You can "
 "choose to always use the right mouse button for primary click."
 msgstr ""
+"Birincil tıklamanın beklendiği yerde sağ fare düğmesi kullanıldı. Birincil "
+"tıklama için her zaman sağ fare düğmesini kullanmayı seçebilirsiniz."
 
 #: src/Views/LanguageView.vala:244 src/Views/LanguageView.vala:251
 msgid "Right-Click as Primary"
-msgstr ""
+msgstr "Birincil Olarak Sağ Tıklayın"
 
 #: src/Views/LanguageView.vala:245 src/Views/LanguageView.vala:250
 msgid "Left-Click as Primary"
-msgstr ""
+msgstr "Birincil Olarak Sol Tıklayın"
 
 #: src/Views/LanguageView.vala:248
 msgid "Use the left mouse button for primary click?"
-msgstr ""
+msgstr "Birincil tıklama için sol fare düğmesi kullanılsın mı?"
 
 #: src/Views/LanguageView.vala:249
 msgid ""
 "The left mouse button was used where a primary click was expected. You can "
 "choose to always use the left mouse button for primary click."
 msgstr ""
+"Birincil tıklamanın beklendiği yerde sol fare düğmesi kullanıldı. Birincil "
+"tıklama için her zaman sol fare düğmesini kullanmayı seçebilirsiniz."
 
 #: src/Views/LanguageView.vala:309
 msgid "Select a Language"
