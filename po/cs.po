@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-11 20:09+0000\n"
-"PO-Revision-Date: 2022-01-09 20:32+0000\n"
+"PO-Revision-Date: 2022-01-13 01:18+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
-"Language-Team: Czech <https://l10n.elementary.io/projects/installer/initial-"
-"setup/cs/>\n"
+"Language-Team: Czech <https://l10n.elementary.io/projects/installer/"
+"initial-setup/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -140,31 +140,37 @@ msgstr "Jazyky"
 
 #: src/Views/LanguageView.vala:242
 msgid "Use the right mouse button for primary click?"
-msgstr ""
+msgstr "Použít pravé tlačítko myši pro akce kliknutí původně levým tlačítkem?"
 
 #: src/Views/LanguageView.vala:243
 msgid ""
 "The right mouse button was used where a primary click was expected. You can "
 "choose to always use the right mouse button for primary click."
 msgstr ""
+"Tam, kde bylo očekáváno kliknutí levým tlačítkem, bylo použito tlačítko "
+"levé. Vždy ale můžete zvolit, že chcete použít pro akce kliknutí levým "
+"tlačítkem naopak tlačítko pravé."
 
 #: src/Views/LanguageView.vala:244 src/Views/LanguageView.vala:251
 msgid "Right-Click as Primary"
-msgstr ""
+msgstr "Kliknutí pravým ve funkci toho levého"
 
 #: src/Views/LanguageView.vala:245 src/Views/LanguageView.vala:250
 msgid "Left-Click as Primary"
-msgstr ""
+msgstr "Kliknutí levým ve funkci levého"
 
 #: src/Views/LanguageView.vala:248
 msgid "Use the left mouse button for primary click?"
-msgstr ""
+msgstr "Použít pro akce kliknutí levým tlačítkem skutečně to levé?"
 
 #: src/Views/LanguageView.vala:249
 msgid ""
 "The left mouse button was used where a primary click was expected. You can "
 "choose to always use the left mouse button for primary click."
 msgstr ""
+"Tam, kde bylo očekáváno kliknutí levým tlačítkem, bylo použito právě to. "
+"Vždy můžete zvolit, že chcete použít pro akce kliknutí levým tlačítkem "
+"skutečně levé tlačítko."
 
 #: src/Views/LanguageView.vala:309
 msgid "Select a Language"
