@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-11 20:09+0000\n"
-"PO-Revision-Date: 2021-08-21 08:45+0000\n"
+"PO-Revision-Date: 2022-01-13 12:16+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ca/>\n"
@@ -142,31 +142,35 @@ msgstr "Llengües"
 
 #: src/Views/LanguageView.vala:242
 msgid "Use the right mouse button for primary click?"
-msgstr ""
+msgstr "S'usa el botó dret del ratolí per fer el clic principal?"
 
 #: src/Views/LanguageView.vala:243
 msgid ""
 "The right mouse button was used where a primary click was expected. You can "
 "choose to always use the right mouse button for primary click."
 msgstr ""
+"El botó dret del ratolí s'ha usat on s'esperava un clic principal. Podeu "
+"triar usar sempre el botó dret del ratolí per fer el clic principal."
 
 #: src/Views/LanguageView.vala:244 src/Views/LanguageView.vala:251
 msgid "Right-Click as Primary"
-msgstr ""
+msgstr "Clic amb el botó dret com a principal"
 
 #: src/Views/LanguageView.vala:245 src/Views/LanguageView.vala:250
 msgid "Left-Click as Primary"
-msgstr ""
+msgstr "Clic amb el botó esquerre com a principal"
 
 #: src/Views/LanguageView.vala:248
 msgid "Use the left mouse button for primary click?"
-msgstr ""
+msgstr "Voleu usar el botó esquerre del ratolí per fer el clic principal?"
 
 #: src/Views/LanguageView.vala:249
 msgid ""
 "The left mouse button was used where a primary click was expected. You can "
 "choose to always use the left mouse button for primary click."
 msgstr ""
+"El botó esquerre del ratolí s'ha usat on s'esperava un clic principal. Podeu "
+"triar usar sempre el botó esquerre del ratolí per fer el clic principal."
 
 #: src/Views/LanguageView.vala:309
 msgid "Select a Language"
