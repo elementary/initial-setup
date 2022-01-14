@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-11 20:09+0000\n"
-"PO-Revision-Date: 2022-01-14 00:24+0000\n"
+"PO-Revision-Date: 2022-01-14 20:16+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/installer/"
 "initial-setup/nl/>\n"
@@ -44,12 +44,12 @@ msgstr "Het opzetprogramma kon uw hostnaam niet instellen."
 #: src/Utils.vala:199
 #, c-format
 msgid "No Permission to set hostname '%s'"
-msgstr "Geen Bevoegdheid om hostnaam '%s' in te stellen"
+msgstr "Geen bevoegdheid om de hostnaam '%s' in te stellen"
 
 #: src/Utils.vala:202
 #, c-format
 msgid "Unable to set Hostname '%s'"
-msgstr "Kon Hostnaam '%s' niet instellen"
+msgstr "Kon hostnaam '%s' niet instellen"
 
 #: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:180
 #, c-format
@@ -117,7 +117,7 @@ msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:26
 msgid "Select Keyboard Layout"
-msgstr "Selecteer Toetsenbordindeling"
+msgstr "Selecteer toetsenbordindeling"
 
 #: src/Views/KeyboardLayoutView.vala:35
 msgid "Type to test your layout"
@@ -155,11 +155,11 @@ msgstr ""
 
 #: src/Views/LanguageView.vala:244 src/Views/LanguageView.vala:251
 msgid "Right-Click as Primary"
-msgstr "Rechter Muisklik als Primair"
+msgstr "Rechter muisklik als primair"
 
 #: src/Views/LanguageView.vala:245 src/Views/LanguageView.vala:250
 msgid "Left-Click as Primary"
-msgstr "Linker Muisklik als Primair"
+msgstr "Linker muisklik als primair"
 
 #: src/Views/LanguageView.vala:248
 msgid "Use the left mouse button for primary click?"
