@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-11 20:09+0000\n"
-"PO-Revision-Date: 2022-01-15 07:58+0000\n"
+"PO-Revision-Date: 2022-01-16 10:11+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/installer/"
 "initial-setup/fi/>\n"
@@ -148,24 +148,30 @@ msgid ""
 "The right mouse button was used where a primary click was expected. You can "
 "choose to always use the right mouse button for primary click."
 msgstr ""
+"Hiiren oikeaa painiketta käytettiin, kun odotettiin hiiren ensisijaista "
+"napsautusta. Voit valita ensisijaiseksi napsautuksen tehtäväksi aina hiiren "
+"oikealla painikkeella."
 
 #: src/Views/LanguageView.vala:244 src/Views/LanguageView.vala:251
 msgid "Right-Click as Primary"
-msgstr ""
+msgstr "Oikea napsautus ensisijaiseksi"
 
 #: src/Views/LanguageView.vala:245 src/Views/LanguageView.vala:250
 msgid "Left-Click as Primary"
-msgstr ""
+msgstr "Vasen napsautus ensisijaiseksi"
 
 #: src/Views/LanguageView.vala:248
 msgid "Use the left mouse button for primary click?"
-msgstr ""
+msgstr "Haluatko käyttää hiiren vasenta painiketta ensisijaisena napsautuksena?"
 
 #: src/Views/LanguageView.vala:249
 msgid ""
 "The left mouse button was used where a primary click was expected. You can "
 "choose to always use the left mouse button for primary click."
 msgstr ""
+"Hiiren vasenta painiketta käytettiin, kun odotettiin hiiren ensisijaista "
+"napsautusta. Voit valita ensisijaiseksi napsautuksen tehtäväksi aina hiiren "
+"vasemmalla painikkeella."
 
 #: src/Views/LanguageView.vala:309
 msgid "Select a Language"
