@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-11 20:09+0000\n"
 "PO-Revision-Date: 2022-01-28 09:06+0000\n"
-"Last-Translator: Guochengjie <i@guoch.xyz>\n"
+"Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "installer/initial-setup-extra/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -58,7 +58,7 @@ msgstr "双指滑动以返回导航"
 #: data/io.elementary.initial-setup.appdata.xml.in:48
 #: data/io.elementary.initial-setup.appdata.xml.in:56
 msgid "Minor updates:"
-msgstr "优化细节："
+msgstr "次要更新："
 
 #: data/io.elementary.initial-setup.appdata.xml.in:50
 #: data/io.elementary.initial-setup.appdata.xml.in:62
