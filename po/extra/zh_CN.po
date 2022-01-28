@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-11 20:09+0000\n"
-"PO-Revision-Date: 2022-01-28 09:06+0000\n"
+"PO-Revision-Date: 2022-01-28 11:06+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "installer/initial-setup-extra/zh_Hans/>\n"
@@ -80,7 +80,7 @@ msgstr "设置正确的语言环境"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:61
 msgid "New colorful avatar fallback"
-msgstr "新增鲜艳的默认头像"
+msgstr "新增彩色默认头像"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:73
 msgid "Initial release"
