@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-11 20:09+0000\n"
+"POT-Creation-Date: 2022-02-01 19:26+0000\n"
 "PO-Revision-Date: 2021-08-21 17:09+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
-#: src/MainWindow.vala:33
+#: src/MainWindow.vala:34
 msgid "Create a User"
 msgstr "Opprett en bruker"
 
@@ -95,6 +95,7 @@ msgstr ""
 "Synlig for andre enheter ved deling. F.eks med Blåtann over nettverket."
 
 #: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
+#: src/Views/NetworkView.vala:86
 msgid "Back"
 msgstr "Tilbake"
 
@@ -176,6 +177,38 @@ msgstr "Velg et språk"
 msgid "Currently active language"
 msgstr "Nåværende språk"
 
+#: src/Views/NetworkView.vala:29
+#, fuzzy
+#| msgid "Connect to a Power Source"
+msgid "Connect Network"
+msgstr "Koble til strømkilde"
+
+#: src/Views/NetworkView.vala:34
+msgid ""
+"An Internet connection is required to receive updates, install new apps, and "
+"connect to online services"
+msgstr ""
+
+#. /Translators: for RTL languages, the UI is flipped
+#: src/Views/NetworkView.vala:49
+msgid ""
+"Choose a nearby wireless network from the network indicator in the top right."
+msgstr ""
+
+#: src/Views/NetworkView.vala:63
+#, fuzzy
+#| msgid "Connect to a Power Source"
+msgid "Connect a network cable"
+msgstr "Koble til strømkilde"
+
+#: src/Views/NetworkView.vala:88
+msgid "Skip"
+msgstr ""
+
+#: src/Views/NetworkView.vala:106
+msgid "Next"
+msgstr ""
+
 #~ msgid "Cancel Installation"
 #~ msgstr "Avbryt installasjon"
 
@@ -232,9 +265,6 @@ msgstr "Nåværende språk"
 #~ msgstr ""
 #~ "Din enhet svarer ikke til de anbefalte maskinvarekravene. Dette kan "
 #~ "forårsake at ting går tregt eller henger."
-
-#~ msgid "Connect to a Power Source"
-#~ msgstr "Koble til strømkilde"
 
 #~ msgid ""
 #~ "Your device is running on battery power. It's recommended to be plugged "

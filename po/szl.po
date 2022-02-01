@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-11 20:09+0000\n"
+"POT-Creation-Date: 2022-02-01 19:26+0000\n"
 "PO-Revision-Date: 2020-06-12 23:11+0000\n"
 "Last-Translator: Grzegorz Kulik <g.kulik@o2.pl>\n"
 "Language-Team: Silesian <https://l10n.elementary.io/projects/installer/"
@@ -14,7 +14,7 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.9.1\n"
 
-#: src/MainWindow.vala:33
+#: src/MainWindow.vala:34
 msgid "Create a User"
 msgstr "Stwōrz używocza"
 
@@ -91,6 +91,7 @@ msgid ""
 msgstr ""
 
 #: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
+#: src/Views/NetworkView.vala:86
 msgid "Back"
 msgstr "Nazod"
 
@@ -173,3 +174,31 @@ msgstr "Ôbier jynzyk"
 #: src/Views/LanguageView.vala:332 src/Views/LanguageView.vala:391
 msgid "Currently active language"
 msgstr "Teroźnie aktywny jynzyk"
+
+#: src/Views/NetworkView.vala:29
+msgid "Connect Network"
+msgstr ""
+
+#: src/Views/NetworkView.vala:34
+msgid ""
+"An Internet connection is required to receive updates, install new apps, and "
+"connect to online services"
+msgstr ""
+
+#. /Translators: for RTL languages, the UI is flipped
+#: src/Views/NetworkView.vala:49
+msgid ""
+"Choose a nearby wireless network from the network indicator in the top right."
+msgstr ""
+
+#: src/Views/NetworkView.vala:63
+msgid "Connect a network cable"
+msgstr ""
+
+#: src/Views/NetworkView.vala:88
+msgid "Skip"
+msgstr ""
+
+#: src/Views/NetworkView.vala:106
+msgid "Next"
+msgstr ""

@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-11 20:09+0000\n"
+"POT-Creation-Date: 2022-02-01 19:26+0000\n"
 "PO-Revision-Date: 2022-01-12 03:30+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://l10n.elementary.io/projects/installer/"
-"initial-setup/he/>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/installer/initial-"
+"setup/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
-#: src/MainWindow.vala:33
+#: src/MainWindow.vala:34
 msgid "Create a User"
 msgstr "יצירת חשבון"
 
@@ -91,6 +91,7 @@ msgid ""
 msgstr "גלוי למכשירים אחרים בעת שיתוף, למשל עם Bluetooth או דרך הרשת."
 
 #: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
+#: src/Views/NetworkView.vala:86
 msgid "Back"
 msgstr "חזרה"
 
@@ -176,6 +177,38 @@ msgstr "בחירת שפה"
 msgid "Currently active language"
 msgstr "השפה הפעילה כרגע"
 
+#: src/Views/NetworkView.vala:29
+#, fuzzy
+#| msgid "Connect to a Power Source"
+msgid "Connect Network"
+msgstr "נא לחבר למקור חשמל"
+
+#: src/Views/NetworkView.vala:34
+msgid ""
+"An Internet connection is required to receive updates, install new apps, and "
+"connect to online services"
+msgstr ""
+
+#. /Translators: for RTL languages, the UI is flipped
+#: src/Views/NetworkView.vala:49
+msgid ""
+"Choose a nearby wireless network from the network indicator in the top right."
+msgstr ""
+
+#: src/Views/NetworkView.vala:63
+#, fuzzy
+#| msgid "Connect to a Power Source"
+msgid "Connect a network cable"
+msgstr "נא לחבר למקור חשמל"
+
+#: src/Views/NetworkView.vala:88
+msgid "Skip"
+msgstr ""
+
+#: src/Views/NetworkView.vala:106
+msgid "Next"
+msgstr ""
+
 #~ msgid "Cancel Installation"
 #~ msgstr "ביטול ההתקנה"
 
@@ -227,9 +260,6 @@ msgstr "השפה הפעילה כרגע"
 #~ msgstr ""
 #~ "ההתקן שלך לא עומד בדרישות החומרה המומלצות. מצב זה עשוי לגרום למערכת לפעול "
 #~ "לאט או להיתקע."
-
-#~ msgid "Connect to a Power Source"
-#~ msgstr "נא לחבר למקור חשמל"
 
 #~ msgid ""
 #~ "Your device is running on battery power. It's recommended to be plugged "

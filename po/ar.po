@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-11 20:09+0000\n"
+"POT-Creation-Date: 2022-02-01 19:26+0000\n"
 "PO-Revision-Date: 2021-08-27 15:13+0000\n"
 "Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/installer/initial-"
@@ -15,7 +15,7 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: src/MainWindow.vala:33
+#: src/MainWindow.vala:34
 msgid "Create a User"
 msgstr "أنشئ مستخدماً"
 
@@ -91,6 +91,7 @@ msgid ""
 msgstr "يتم إظهاره للأجهزة الأخرى عند المشاركة مع جهاز بلوتوث أو عبر الشبكة."
 
 #: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
+#: src/Views/NetworkView.vala:86
 msgid "Back"
 msgstr "ارجع"
 
@@ -171,6 +172,34 @@ msgstr "اختر اللغة"
 #: src/Views/LanguageView.vala:332 src/Views/LanguageView.vala:391
 msgid "Currently active language"
 msgstr "اللغة المفعلة حالياً"
+
+#: src/Views/NetworkView.vala:29
+msgid "Connect Network"
+msgstr ""
+
+#: src/Views/NetworkView.vala:34
+msgid ""
+"An Internet connection is required to receive updates, install new apps, and "
+"connect to online services"
+msgstr ""
+
+#. /Translators: for RTL languages, the UI is flipped
+#: src/Views/NetworkView.vala:49
+msgid ""
+"Choose a nearby wireless network from the network indicator in the top right."
+msgstr ""
+
+#: src/Views/NetworkView.vala:63
+msgid "Connect a network cable"
+msgstr ""
+
+#: src/Views/NetworkView.vala:88
+msgid "Skip"
+msgstr ""
+
+#: src/Views/NetworkView.vala:106
+msgid "Next"
+msgstr ""
 
 #~ msgid "Cancel Installation"
 #~ msgstr "إلغاء التثبيت"
