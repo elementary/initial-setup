@@ -18,67 +18,84 @@
  */
 
 public class Installer.NetworkView : AbstractInstallerView {
-    private Gtk.Image image;
-    private Gtk.Button next_button;
-    private Granite.HeaderLabel description_label;
-    private Gtk.Label network_info;
+    private NetworkMonitor network_monitor;
+    private Gtk.Button skip_button;
 
     construct {
-        image = new Gtk.Image.from_icon_name ("network-offline", Gtk.IconSize.DIALOG) {
+        var image = new Gtk.Image.from_icon_name ("network-wireless", Gtk.IconSize.DIALOG) {
             valign = Gtk.Align.END
         };
 
-        var title_label = new Gtk.Label (_("Configure network")) {
+        var title_label = new Gtk.Label (_("Connect Network")) {
             valign = Gtk.Align.START
         };
         title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
 
-        description_label = new Granite.HeaderLabel ("");
-
-        network_info = new Gtk.Label ("") {
-            // Wrap without expanding the view
-            max_width_chars = 0,
-            margin_bottom = 18,
+        var details_label = new Gtk.Label (_("An Internet connection is required to receive updates, install new apps, and connect to online services")) {
+            hexpand = true,
+            max_width_chars = 1, // Make Gtk wrap, but not expand the window
             wrap = true,
             xalign = 0
         };
-        network_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+        details_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
-        var settings_link = new Gtk.LinkButton.with_label ("settings://network", _("Manage network devices…"));
+        var wireless_image = new Gtk.Image.from_icon_name ("network-wireless-signal-excellent-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
 
-        var form_grid = new Gtk.Grid () {
-            row_spacing = 3,
+        unowned var wireless_image_context = wireless_image.get_style_context ();
+        wireless_image_context.add_class (Granite.STYLE_CLASS_ACCENT);
+        wireless_image_context.add_class ("blue");
+
+        ///Translators: for RTL languages, the UI is flipped
+        var wireless_label = new Gtk.Label (_("Choose a nearby wireless network from the network indicator in the top right.")) {
+            hexpand = true,
+            max_width_chars = 1, // Make Gtk wrap, but not expand the window
+            wrap = true,
+            xalign = 0
+        };
+
+        var wired_image = new Gtk.Image.from_icon_name ("network-wired-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
+
+        unowned var wired_image_context = wired_image.get_style_context ();
+        wired_image_context.add_class (Granite.STYLE_CLASS_ACCENT);
+        wired_image_context.add_class ("orange");
+
+
+        var wired_label = new Gtk.Label (_("Connect a network cable")) {
+            hexpand = true,
+            max_width_chars = 1, // Make Gtk wrap, but not expand the window
+            wrap = true,
+            xalign = 0
+        };
+
+        var choice_grid = new Gtk.Grid () {
+            column_spacing = 12,
+            row_spacing = 32,
             valign = Gtk.Align.CENTER,
             vexpand = true
         };
-        form_grid.attach (description_label, 0, 0);
-        form_grid.attach (network_info, 0, 1);
-        form_grid.attach (settings_link, 0, 2);
+        choice_grid.attach (details_label, 0, 0, 2);
+        choice_grid.attach (wireless_image, 0, 1);
+        choice_grid.attach (wireless_label, 1, 1);
+        choice_grid.attach (wired_image, 0, 2);
+        choice_grid.attach (wired_label, 1, 2);
 
         content_area.attach (image, 0, 0);
         content_area.attach (title_label, 0, 1);
-        content_area.attach (form_grid, 1, 0, 1, 2);
+        content_area.attach (choice_grid, 1, 0, 1, 2);
 
         var back_button = new Gtk.Button.with_label (_("Back"));
 
-        var skip_button = new Gtk.Button.with_label (_("Skip"));
-
-        next_button = new Gtk.Button.with_label (_("Next")) {
-            sensitive = false
-        };
-        next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        skip_button = new Gtk.Button.with_label (_("Skip"));
+        skip_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
         action_area.add (back_button);
         action_area.add (skip_button);
-        action_area.add (next_button);
 
         back_button.clicked.connect (() => ((Hdy.Deck) get_parent ()).navigate (Hdy.NavigationDirection.BACK));
-
         skip_button.clicked.connect (() => (next_step ()));
 
-        next_button.clicked.connect (() => (next_step ()));
-
-        NetworkMonitor.get_default ().network_changed.connect (update);
+        network_monitor = NetworkMonitor.get_default ();
+        network_monitor.network_changed.connect (update);
 
         update ();
 
@@ -86,16 +103,10 @@ public class Installer.NetworkView : AbstractInstallerView {
     }
 
     private void update () {
-        if (NetworkMonitor.get_default ().get_network_available ()) {
-            image.icon_name = "preferences-system-network";
-            description_label.label = _("Network Available");
-            network_info.label = _("Network is setup.");
-            next_button.sensitive = true;
-        } else {
-            image.icon_name = "network-offline";
-            description_label.label = _("Network Not Available");
-            network_info.label = _("It looks like your device is not connected to any network. To use your device to its full potential, we recommend that you set up a network connection.");
-            next_button.sensitive = false;
+        if (network_monitor.get_network_available ()) {
+            network_monitor.network_changed.disconnect (update);
+            skip_button.label = _("Next");
+            next_step ();
         }
     }
 }
