@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-11 20:09+0000\n"
+"POT-Creation-Date: 2022-02-01 19:26+0000\n"
 "PO-Revision-Date: 2022-01-13 01:18+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
-"Language-Team: French <https://l10n.elementary.io/projects/installer/"
-"initial-setup/fr/>\n"
+"Language-Team: French <https://l10n.elementary.io/projects/installer/initial-"
+"setup/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
-#: src/MainWindow.vala:33
+#: src/MainWindow.vala:34
 msgid "Create a User"
 msgstr "Créer un compte utilisateur"
 
@@ -94,6 +94,7 @@ msgstr ""
 "sur le réseau."
 
 #: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
+#: src/Views/NetworkView.vala:86
 msgid "Back"
 msgstr "Précédent"
 
@@ -183,6 +184,38 @@ msgstr "Sélectionner une langue"
 msgid "Currently active language"
 msgstr "Langue actuellement active"
 
+#: src/Views/NetworkView.vala:29
+#, fuzzy
+#| msgid "Connect to a Power Source"
+msgid "Connect Network"
+msgstr "Connecter à une source d'alimentation"
+
+#: src/Views/NetworkView.vala:34
+msgid ""
+"An Internet connection is required to receive updates, install new apps, and "
+"connect to online services"
+msgstr ""
+
+#. /Translators: for RTL languages, the UI is flipped
+#: src/Views/NetworkView.vala:49
+msgid ""
+"Choose a nearby wireless network from the network indicator in the top right."
+msgstr ""
+
+#: src/Views/NetworkView.vala:63
+#, fuzzy
+#| msgid "Connect to a Power Source"
+msgid "Connect a network cable"
+msgstr "Connecter à une source d'alimentation"
+
+#: src/Views/NetworkView.vala:88
+msgid "Skip"
+msgstr "Ignorer"
+
+#: src/Views/NetworkView.vala:106
+msgid "Next"
+msgstr "Suivant"
+
 #~ msgid "Cancel Installation"
 #~ msgstr "Annuler l'installation"
 
@@ -240,9 +273,6 @@ msgstr "Langue actuellement active"
 #~ "Votre matériel ne satisfait pas à la configuration minimale requise. Ceci "
 #~ "peut entraîner des lenteurs ou des plantages lors de l'exécution de "
 #~ "certaines tâches."
-
-#~ msgid "Connect to a Power Source"
-#~ msgstr "Connecter à une source d'alimentation"
 
 #~ msgid ""
 #~ "Your device is running on battery power. It's recommended to be plugged "
@@ -407,9 +437,6 @@ msgstr "Langue actuellement active"
 #~ "Créez, redimensionnez et configurez manuellement les partitions du "
 #~ "disque. Cette méthode peut entraîner des pertes de données."
 
-#~ msgid "Next"
-#~ msgstr "Suivant"
-
 #~ msgid "Disk:"
 #~ msgstr "Disque :"
 
@@ -419,9 +446,6 @@ msgstr "Langue actuellement active"
 
 #~ msgid "Erase and install"
 #~ msgstr "Supprimer et installer"
-
-#~ msgid "Skip"
-#~ msgstr "Ignorer"
 
 #~ msgid "Upgrade"
 #~ msgstr "Mise à jour"

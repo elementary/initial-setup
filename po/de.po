@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-11 20:09+0000\n"
+"POT-Creation-Date: 2022-02-01 19:26+0000\n"
 "PO-Revision-Date: 2022-01-12 03:30+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
-"Language-Team: German <https://l10n.elementary.io/projects/installer/"
-"initial-setup/de/>\n"
+"Language-Team: German <https://l10n.elementary.io/projects/installer/initial-"
+"setup/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
-#: src/MainWindow.vala:33
+#: src/MainWindow.vala:34
 msgid "Create a User"
 msgstr "Benutzerkonto erstellen"
 
@@ -99,6 +99,7 @@ msgstr ""
 "das Netzwerk."
 
 #: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
+#: src/Views/NetworkView.vala:86
 msgid "Back"
 msgstr "Zurück"
 
@@ -188,6 +189,38 @@ msgstr "Sprache wählen"
 msgid "Currently active language"
 msgstr "Aktuell eingestellte Sprache"
 
+#: src/Views/NetworkView.vala:29
+#, fuzzy
+#| msgid "Connect to a Power Source"
+msgid "Connect Network"
+msgstr "Schließen Sie die Stromversorgung an"
+
+#: src/Views/NetworkView.vala:34
+msgid ""
+"An Internet connection is required to receive updates, install new apps, and "
+"connect to online services"
+msgstr ""
+
+#. /Translators: for RTL languages, the UI is flipped
+#: src/Views/NetworkView.vala:49
+msgid ""
+"Choose a nearby wireless network from the network indicator in the top right."
+msgstr ""
+
+#: src/Views/NetworkView.vala:63
+#, fuzzy
+#| msgid "Connect to a Power Source"
+msgid "Connect a network cable"
+msgstr "Schließen Sie die Stromversorgung an"
+
+#: src/Views/NetworkView.vala:88
+msgid "Skip"
+msgstr ""
+
+#: src/Views/NetworkView.vala:106
+msgid "Next"
+msgstr ""
+
 #~ msgid "Cancel Installation"
 #~ msgstr "Installation abbrechen"
 
@@ -242,9 +275,6 @@ msgstr "Aktuell eingestellte Sprache"
 #~ msgstr ""
 #~ "Ihr Rechner erfüllt nicht die empfohlenen Hardware-Anforderungen. Dies "
 #~ "kann dafür verantwortlich sein, dass er langsam läuft oder sich aufhängt."
-
-#~ msgid "Connect to a Power Source"
-#~ msgstr "Schließen Sie die Stromversorgung an"
 
 #~ msgid ""
 #~ "Your device is running on battery power. It's recommended to be plugged "
