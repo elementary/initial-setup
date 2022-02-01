@@ -103,8 +103,8 @@ public class Installer.MainWindow : Hdy.Window {
 
     private void on_finish () {
         if (account_view.created != null) {
-            set_keyboard_and_locale.begin ((obj, res) => {
-                set_keyboard_and_locale.end (res);
+            set_settings.begin ((obj, res) => {
+                set_settings.end (res);
                 destroy ();
             });
         } else {
@@ -113,9 +113,12 @@ public class Installer.MainWindow : Hdy.Window {
 
     }
 
-    private async void set_keyboard_and_locale () {
-        yield set_keyboard_layout ();
+    private async void set_settings () {
+        yield set_accounts_service_settings ();
+        yield set_locale ();
+    }
 
+    private async void set_locale () {
         string lang = Configuration.get_default ().lang;
         string? locale = null;
         bool success = yield LocaleHelper.language2locale (lang, out locale);
@@ -128,7 +131,7 @@ public class Installer.MainWindow : Hdy.Window {
         }
     }
 
-    private async void set_keyboard_layout () {
+    private async void set_accounts_service_settings () {
         AccountsService accounts_service = null;
 
         try {
@@ -142,7 +145,7 @@ public class Installer.MainWindow : Hdy.Window {
                                                         user_path,
                                                         GLib.DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
         } catch (Error e) {
-            warning ("Unable to get AccountsService proxy, keyboard layout on new user may be incorrect: %s", e.message);
+            warning ("Unable to get AccountsService proxy, settings on new user may be incorrect: %s", e.message);
         }
 
         if (accounts_service != null) {
@@ -152,6 +155,7 @@ public class Installer.MainWindow : Hdy.Window {
             }
 
             accounts_service.keyboard_layouts = layouts;
+            accounts_service.left_handed = Configuration.get_default ().left_handed;
         }
     }
 }

@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-24 22:23+0000\n"
-"PO-Revision-Date: 2021-08-21 17:09+0000\n"
+"POT-Creation-Date: 2022-01-11 20:09+0000\n"
+"PO-Revision-Date: 2022-01-13 01:18+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
-"Language-Team: French <https://l10n.elementary.io/projects/installer/initial-"
-"setup/fr/>\n"
+"Language-Team: French <https://l10n.elementary.io/projects/installer/"
+"initial-setup/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -52,7 +52,7 @@ msgstr "Aucun autorisation pour créer le nom d'hôte « %s »"
 msgid "Unable to set Hostname '%s'"
 msgstr "Impossible de définir le nom d'hôte « %s »"
 
-#: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:194
+#: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:180
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -129,23 +129,57 @@ msgid "Show keyboard layout"
 msgstr "Afficher la disposition du clavier"
 
 #: src/Views/KeyboardLayoutView.vala:54 src/Views/LanguageView.vala:111
-#: src/Views/LanguageView.vala:167
+#: src/Views/LanguageView.vala:174
 msgid "Select"
 msgstr "Sélectionner"
 
-#: src/Views/KeyboardLayoutView.vala:137
+#: src/Views/KeyboardLayoutView.vala:123
 msgid "Input Language"
 msgstr "Langue d'entrée"
 
-#: src/Views/LanguageView.vala:200
+#: src/Views/LanguageView.vala:207
 msgid "Languages"
 msgstr "Langues"
 
-#: src/Views/LanguageView.vala:244
+#: src/Views/LanguageView.vala:242
+msgid "Use the right mouse button for primary click?"
+msgstr "Utiliser le bouton droit de la souris pour le clic principal ?"
+
+#: src/Views/LanguageView.vala:243
+msgid ""
+"The right mouse button was used where a primary click was expected. You can "
+"choose to always use the right mouse button for primary click."
+msgstr ""
+"Le bouton droit de la souris a été utilisé là où un clic principal était "
+"attendu. Vous pouvez choisir de toujours utiliser le bouton droit de la "
+"souris pour le clic principal."
+
+#: src/Views/LanguageView.vala:244 src/Views/LanguageView.vala:251
+msgid "Right-Click as Primary"
+msgstr "Clic droit en tant que clic principal"
+
+#: src/Views/LanguageView.vala:245 src/Views/LanguageView.vala:250
+msgid "Left-Click as Primary"
+msgstr "Clic gauche en tant que clic principal"
+
+#: src/Views/LanguageView.vala:248
+msgid "Use the left mouse button for primary click?"
+msgstr "Utiliser le bouton gauche de la souris pour le clic principal ?"
+
+#: src/Views/LanguageView.vala:249
+msgid ""
+"The left mouse button was used where a primary click was expected. You can "
+"choose to always use the left mouse button for primary click."
+msgstr ""
+"Le bouton gauche de la souris a été utilisé là où un clic principal était "
+"attendu. Vous pouvez choisir de toujours utiliser le bouton gauche de la "
+"souris pour le clic principal."
+
+#: src/Views/LanguageView.vala:309
 msgid "Select a Language"
 msgstr "Sélectionner une langue"
 
-#: src/Views/LanguageView.vala:267 src/Views/LanguageView.vala:326
+#: src/Views/LanguageView.vala:332 src/Views/LanguageView.vala:391
 msgid "Currently active language"
 msgstr "Langue actuellement active"
 

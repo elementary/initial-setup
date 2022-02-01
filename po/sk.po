@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-24 22:23+0000\n"
+"POT-Creation-Date: 2022-01-11 20:09+0000\n"
 "PO-Revision-Date: 2021-08-29 14:20+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
-"Language-Team: Slovak <https://l10n.elementary.io/projects/installer/"
-"initial-setup/sk/>\n"
+"Language-Team: Slovak <https://l10n.elementary.io/projects/installer/initial-"
+"setup/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -52,7 +52,7 @@ msgstr "Nemáte povolenie na nastavenie názvu hostiteľa ‚%s‘"
 msgid "Unable to set Hostname '%s'"
 msgstr "Nastavenie názvu hostiteľa ‚%s‘ sa nepodarilo"
 
-#: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:194
+#: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:180
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -112,7 +112,8 @@ msgstr "Zvolené používateľské meno je už obsadené"
 #: src/Views/AccountView.vala:246
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
-msgstr "Používateľské meno môže obsahovať iba malé písmená a čísla, bez medzier"
+msgstr ""
+"Používateľské meno môže obsahovať iba malé písmená a čísla, bez medzier"
 
 #: src/Views/KeyboardLayoutView.vala:26
 msgid "Select Keyboard Layout"
@@ -127,23 +128,51 @@ msgid "Show keyboard layout"
 msgstr "Zobraziť rozloženie klávesnice"
 
 #: src/Views/KeyboardLayoutView.vala:54 src/Views/LanguageView.vala:111
-#: src/Views/LanguageView.vala:167
+#: src/Views/LanguageView.vala:174
 msgid "Select"
 msgstr "Vybrať"
 
-#: src/Views/KeyboardLayoutView.vala:137
+#: src/Views/KeyboardLayoutView.vala:123
 msgid "Input Language"
 msgstr "Vstupný jazyk"
 
-#: src/Views/LanguageView.vala:200
+#: src/Views/LanguageView.vala:207
 msgid "Languages"
 msgstr "Jazyky"
 
-#: src/Views/LanguageView.vala:244
+#: src/Views/LanguageView.vala:242
+msgid "Use the right mouse button for primary click?"
+msgstr ""
+
+#: src/Views/LanguageView.vala:243
+msgid ""
+"The right mouse button was used where a primary click was expected. You can "
+"choose to always use the right mouse button for primary click."
+msgstr ""
+
+#: src/Views/LanguageView.vala:244 src/Views/LanguageView.vala:251
+msgid "Right-Click as Primary"
+msgstr ""
+
+#: src/Views/LanguageView.vala:245 src/Views/LanguageView.vala:250
+msgid "Left-Click as Primary"
+msgstr ""
+
+#: src/Views/LanguageView.vala:248
+msgid "Use the left mouse button for primary click?"
+msgstr ""
+
+#: src/Views/LanguageView.vala:249
+msgid ""
+"The left mouse button was used where a primary click was expected. You can "
+"choose to always use the left mouse button for primary click."
+msgstr ""
+
+#: src/Views/LanguageView.vala:309
 msgid "Select a Language"
 msgstr "Vyberte jazyk"
 
-#: src/Views/LanguageView.vala:267 src/Views/LanguageView.vala:326
+#: src/Views/LanguageView.vala:332 src/Views/LanguageView.vala:391
 msgid "Currently active language"
 msgstr "Práve používaný jazyk"
 
