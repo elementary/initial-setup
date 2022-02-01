@@ -298,6 +298,14 @@ public class Installer.AccountView : AbstractInstallerView {
                     Application.get_default ().quit ();
                 });
             } catch (Error e) {
+                if (created_user != null) {
+                    try {
+                        user_manager.delete_user (created_user, true);
+                    } catch (Error e) {
+                        critical ("Unable to clean up failed user: %s", e.message);
+                    }
+                }
+
                 primary_text = _("Creating User '%s' Failed").printf (username_entry.text);
                 error_message = e.message;
             }
