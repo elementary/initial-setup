@@ -23,6 +23,7 @@ public class Installer.MainWindow : Hdy.Window {
     private AccountView account_view;
     private LanguageView language_view;
     private KeyboardLayoutView keyboard_layout_view;
+    private NetworkView network_view;
 
     public MainWindow () {
         Object (
@@ -67,7 +68,24 @@ public class Installer.MainWindow : Hdy.Window {
         deck.add (keyboard_layout_view);
         deck.visible_child = keyboard_layout_view;
 
-        keyboard_layout_view.next_step.connect (() => load_account_view ());
+        keyboard_layout_view.next_step.connect (() => load_network_view ());
+    }
+
+    private void load_network_view () {
+        if (network_view != null) {
+            network_view.destroy ();
+        }
+
+        if (!NetworkMonitor.get_default ().get_network_available ()) {
+            network_view = new NetworkView ();
+
+            deck.add (network_view);
+            deck.visible_child = network_view;
+
+            network_view.next_step.connect (load_account_view);
+        } else {
+            load_account_view ();
+        }
     }
 
     private void load_account_view () {
