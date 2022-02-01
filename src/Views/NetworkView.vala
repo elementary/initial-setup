@@ -97,8 +97,6 @@ public class Installer.NetworkView : AbstractInstallerView {
         network_monitor = NetworkMonitor.get_default ();
         network_monitor.network_changed.connect (update);
 
-        update ();
-
         show_all ();
     }
 
