@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-01 19:26+0000\n"
-"PO-Revision-Date: 2021-08-21 17:09+0000\n"
+"PO-Revision-Date: 2022-02-01 23:42+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "installer/initial-setup/nb/>\n"
@@ -143,31 +143,35 @@ msgstr "Språk"
 
 #: src/Views/LanguageView.vala:242
 msgid "Use the right mouse button for primary click?"
-msgstr ""
+msgstr "Høyre museknapp for primærklikk?"
 
 #: src/Views/LanguageView.vala:243
 msgid ""
 "The right mouse button was used where a primary click was expected. You can "
 "choose to always use the right mouse button for primary click."
 msgstr ""
+"Høyre museknapp ble brukt der et primærklikk var forventet. Du kan velge å "
+"alltid bruke høyre museknapp for primærklikk."
 
 #: src/Views/LanguageView.vala:244 src/Views/LanguageView.vala:251
 msgid "Right-Click as Primary"
-msgstr ""
+msgstr "Høyreklikk som primærklikk"
 
 #: src/Views/LanguageView.vala:245 src/Views/LanguageView.vala:250
 msgid "Left-Click as Primary"
-msgstr ""
+msgstr "Venstreklikk som primærklikk"
 
 #: src/Views/LanguageView.vala:248
 msgid "Use the left mouse button for primary click?"
-msgstr ""
+msgstr "Venstre museknapp for primærklikk?"
 
 #: src/Views/LanguageView.vala:249
 msgid ""
 "The left mouse button was used where a primary click was expected. You can "
 "choose to always use the left mouse button for primary click."
 msgstr ""
+"Venstre museknapp ble brukt der et primærklikk var forventet. Du kan velge å "
+"alltid bruke venstre museknapp for primærklikk."
 
 #: src/Views/LanguageView.vala:309
 msgid "Select a Language"
@@ -188,12 +192,14 @@ msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
 msgstr ""
+"Tilkobling til Internett kreves for å motta oppgraderinger, installere nye "
+"programmer, og koble til nettbaserte tjenester"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:49
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
-msgstr ""
+msgstr "Velg et trådløsnettverk fra nettverksindikatoren øverst til høyre."
 
 #: src/Views/NetworkView.vala:63
 #, fuzzy
@@ -203,11 +209,11 @@ msgstr "Koble til strømkilde"
 
 #: src/Views/NetworkView.vala:88
 msgid "Skip"
-msgstr ""
+msgstr "Hopp over"
 
 #: src/Views/NetworkView.vala:106
 msgid "Next"
-msgstr ""
+msgstr "Neste"
 
 #~ msgid "Cancel Installation"
 #~ msgstr "Avbryt installasjon"
