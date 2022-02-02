@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-01 19:26+0000\n"
-"PO-Revision-Date: 2022-01-13 01:18+0000\n"
+"PO-Revision-Date: 2022-02-02 08:50+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
-"Language-Team: Polish <https://l10n.elementary.io/projects/installer/initial-"
-"setup/pl/>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/installer/"
+"initial-setup/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -183,36 +183,35 @@ msgid "Currently active language"
 msgstr "Aktywny język"
 
 #: src/Views/NetworkView.vala:29
-#, fuzzy
-#| msgid "Connect to a Power Source"
 msgid "Connect Network"
-msgstr "Podłącz do źródła zasilania"
+msgstr "Podłącz z siecią"
 
 #: src/Views/NetworkView.vala:34
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
 msgstr ""
+"Połączenie z internetem jest wymagane aby otrzymywać aktualizacje, "
+"instalować nowe aplikacje i do łączenia z usługami online"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:49
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
 msgstr ""
+"Wybierz pobliską sieć bezprzewodową z indykatora sieci w prawym górnym rogu."
 
 #: src/Views/NetworkView.vala:63
-#, fuzzy
-#| msgid "Connect to a Power Source"
 msgid "Connect a network cable"
-msgstr "Podłącz do źródła zasilania"
+msgstr "Podłącz kabel sieciowy"
 
 #: src/Views/NetworkView.vala:88
 msgid "Skip"
-msgstr ""
+msgstr "Pomiń"
 
 #: src/Views/NetworkView.vala:106
 msgid "Next"
-msgstr ""
+msgstr "Dalej"
 
 #~ msgid "Cancel Installation"
 #~ msgstr "Anuluj instalację"

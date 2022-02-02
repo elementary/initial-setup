@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-01 19:26+0000\n"
-"PO-Revision-Date: 2022-01-13 12:16+0000\n"
+"PO-Revision-Date: 2022-02-02 13:50+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ca/>\n"
@@ -182,36 +182,36 @@ msgid "Currently active language"
 msgstr "Llengua activa actual"
 
 #: src/Views/NetworkView.vala:29
-#, fuzzy
-#| msgid "Connect to a Power Source"
 msgid "Connect Network"
-msgstr "Connecteu una font d'energia"
+msgstr "Connecta a la xarxa"
 
 #: src/Views/NetworkView.vala:34
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
 msgstr ""
+"Cal una connexió a Internet per rebre actualitzacions, instal·lar "
+"aplicacions noves i connectar-se als serveis en línia."
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:49
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
 msgstr ""
+"Trieu una xarxa sense fil propera a l'indicador de xarxa de la part superior "
+"dreta."
 
 #: src/Views/NetworkView.vala:63
-#, fuzzy
-#| msgid "Connect to a Power Source"
 msgid "Connect a network cable"
-msgstr "Connecteu una font d'energia"
+msgstr "Connecteu un cable de xarxa"
 
 #: src/Views/NetworkView.vala:88
 msgid "Skip"
-msgstr ""
+msgstr "Omet"
 
 #: src/Views/NetworkView.vala:106
 msgid "Next"
-msgstr ""
+msgstr "Següent"
 
 #~ msgid "Cancel Installation"
 #~ msgstr "Cancel·la la instal·lació"

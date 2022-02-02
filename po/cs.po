@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-01 19:26+0000\n"
-"PO-Revision-Date: 2022-01-13 01:18+0000\n"
+"PO-Revision-Date: 2022-02-02 13:50+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
-"Language-Team: Czech <https://l10n.elementary.io/projects/installer/initial-"
-"setup/cs/>\n"
+"Language-Team: Czech <https://l10n.elementary.io/projects/installer/"
+"initial-setup/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -182,34 +182,34 @@ msgid "Currently active language"
 msgstr "Právě používaný jazyk"
 
 #: src/Views/NetworkView.vala:29
-#, fuzzy
 msgid "Connect Network"
-msgstr "Připojte napájení"
+msgstr "Připojte síť"
 
 #: src/Views/NetworkView.vala:34
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
 msgstr ""
+"Připojení k Internetu je zapotřebí pro získávání aktualizací, instalaci "
+"nových aplikací a připojování k online službám"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:49
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
-msgstr ""
+msgstr "Vyberte Wi-Fi síť poblíž z indikátoru sítě vpravo nahoře."
 
 #: src/Views/NetworkView.vala:63
-#, fuzzy
 msgid "Connect a network cable"
-msgstr "Připojte napájení"
+msgstr "Připojte kabel datové sítě"
 
 #: src/Views/NetworkView.vala:88
 msgid "Skip"
-msgstr ""
+msgstr "Přeskočit"
 
 #: src/Views/NetworkView.vala:106
 msgid "Next"
-msgstr ""
+msgstr "Další"
 
 #~ msgid "Cancel Installation"
 #~ msgstr "Zrušit instalaci"

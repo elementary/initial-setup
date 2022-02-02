@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-01 19:26+0000\n"
-"PO-Revision-Date: 2022-01-12 03:30+0000\n"
+"PO-Revision-Date: 2022-02-02 03:57+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
-"Language-Team: German <https://l10n.elementary.io/projects/installer/initial-"
-"setup/de/>\n"
+"Language-Team: German <https://l10n.elementary.io/projects/installer/"
+"initial-setup/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -190,36 +190,36 @@ msgid "Currently active language"
 msgstr "Aktuell eingestellte Sprache"
 
 #: src/Views/NetworkView.vala:29
-#, fuzzy
-#| msgid "Connect to a Power Source"
 msgid "Connect Network"
-msgstr "Schließen Sie die Stromversorgung an"
+msgstr "Mit Netzwerk verbinden"
 
 #: src/Views/NetworkView.vala:34
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
 msgstr ""
+"Für Aktualisierungen, der Installation neuer Anwendungen und die Verbindung "
+"zu Online-Diensten ist eine Internet-Verbindung nötig"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:49
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
 msgstr ""
+"Eines der verfügbaren drahtlosen Netzwerke im Netzwerkindikator oben rechts "
+"wählen."
 
 #: src/Views/NetworkView.vala:63
-#, fuzzy
-#| msgid "Connect to a Power Source"
 msgid "Connect a network cable"
-msgstr "Schließen Sie die Stromversorgung an"
+msgstr "Netzwerkkabel anschließen"
 
 #: src/Views/NetworkView.vala:88
 msgid "Skip"
-msgstr ""
+msgstr "Überspringen"
 
 #: src/Views/NetworkView.vala:106
 msgid "Next"
-msgstr ""
+msgstr "Weiter"
 
 #~ msgid "Cancel Installation"
 #~ msgstr "Installation abbrechen"
