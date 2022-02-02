@@ -43,11 +43,13 @@ public class Installer.LanguageView : AbstractInstallerView {
 
     construct {
         var image = new Gtk.Image.from_icon_name ("preferences-desktop-locale", Gtk.IconSize.DIALOG) {
+            pixel_size = 128,
             valign = Gtk.Align.END
         };
 
         select_label = new Gtk.Label (null) {
             halign = Gtk.Align.CENTER,
+            valign = Gtk.Align.START,
             wrap = true
         };
 
@@ -67,10 +69,6 @@ public class Installer.LanguageView : AbstractInstallerView {
                 });
             }
         });
-
-        var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.VERTICAL);
-        size_group.add_widget (select_stack);
-        size_group.add_widget (image);
 
         lang_variant_widget = new VariantWidget ();
         lang_variant_widget.variant_listbox.set_sort_func ((Gtk.ListBoxSortFunc) CountryRow.compare);

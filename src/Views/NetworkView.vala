@@ -23,6 +23,7 @@ public class Installer.NetworkView : AbstractInstallerView {
 
     construct {
         var image = new Gtk.Image.from_icon_name ("network-wireless", Gtk.IconSize.DIALOG) {
+            pixel_size = 128,
             valign = Gtk.Align.END
         };
 
