@@ -120,6 +120,13 @@ public class Installer.LanguageView : AbstractInstallerView {
         lang_variant_widget.main_listbox.row_activated.connect (row_activated);
 
         next_button.clicked.connect (on_next_button_clicked);
+        next_button.button_press_event.connect ((event) => {
+            if (event.button == Gdk.BUTTON_SECONDARY) {
+                on_next_button_secondary_clicked ();
+            }
+
+            return base.button_press_event (event);
+        });
 
         destroy.connect (() => {
             // We need to disconnect the signal otherwise it's called several time when destroying the window…
@@ -224,6 +231,64 @@ public class Installer.LanguageView : AbstractInstallerView {
 
             Environment.set_variable ("LANGUAGE", lang, true);
             configuration.lang = lang;
+        }
+
+        next_step ();
+    }
+
+    private void on_next_button_secondary_clicked () {
+        var mouse_settings = new GLib.Settings ("org.gnome.desktop.peripherals.mouse");
+
+        string primary_label = _("Use the right mouse button for primary click?");
+        string secondary_label = _("The right mouse button was used where a primary click was expected. You can choose to always use the right mouse button for primary click.");
+        string suggested_action_label = _("Right-Click as Primary");
+        string cancel_action_label = _("Left-Click as Primary");
+
+        if (mouse_settings.get_boolean ("left-handed")) {
+            primary_label = _("Use the left mouse button for primary click?");
+            secondary_label = _("The left mouse button was used where a primary click was expected. You can choose to always use the left mouse button for primary click.");
+            suggested_action_label = _("Left-Click as Primary");
+            cancel_action_label = _("Right-Click as Primary");
+        }
+
+        var dialog = new Granite.MessageDialog.with_image_from_icon_name (
+            primary_label,
+            secondary_label,
+            "input-mouse",
+            Gtk.ButtonsType.NONE
+        ) {
+            transient_for = (Gtk.Window) get_toplevel ()
+        };
+        var cancel_action_button = dialog.add_button (cancel_action_label, Gtk.ResponseType.CANCEL);
+
+        var suggested_action_button = dialog.add_button (suggested_action_label, Gtk.ResponseType.ACCEPT);
+        suggested_action_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+
+        suggested_action_button.button_press_event.connect ((event) => {
+            if (event.button == Gdk.BUTTON_SECONDARY) {
+                suggested_action_button.activate ();
+            }
+
+            return base.button_press_event (event);
+        });
+
+        cancel_action_button.button_press_event.connect ((event) => {
+            if (event.button == Gdk.BUTTON_SECONDARY) {
+                cancel_action_button.activate ();
+            }
+
+            return base.button_press_event (event);
+        });
+
+        var result = dialog.run ();
+        dialog.destroy ();
+
+        if (!mouse_settings.get_boolean ("left-handed") && result == Gtk.ResponseType.ACCEPT) {
+            mouse_settings.set_boolean ("left-handed", true);
+            Configuration.get_default ().left_handed = true;
+        } else if (mouse_settings.get_boolean ("left-handed") && result == Gtk.ResponseType.ACCEPT) {
+            mouse_settings.set_boolean ("left-handed", false);
+            Configuration.get_default ().left_handed = false;
         }
 
         next_step ();

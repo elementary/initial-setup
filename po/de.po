@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-24 22:23+0000\n"
-"PO-Revision-Date: 2021-08-22 13:18+0000\n"
+"POT-Creation-Date: 2022-02-01 19:26+0000\n"
+"PO-Revision-Date: 2022-02-02 03:57+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
-"Language-Team: German <https://l10n.elementary.io/projects/installer/initial-"
-"setup/de/>\n"
+"Language-Team: German <https://l10n.elementary.io/projects/installer/"
+"initial-setup/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
-#: src/MainWindow.vala:33
+#: src/MainWindow.vala:34
 msgid "Create a User"
 msgstr "Benutzerkonto erstellen"
 
@@ -57,7 +57,7 @@ msgstr "Fehlende Rechte zum Festlegen des Gerätenamens »%s«"
 msgid "Unable to set Hostname '%s'"
 msgstr "Gerätename »%s« kann nicht festgelegt werden"
 
-#: src/Helpers/LocaleHelper.vala:149 src/Views/KeyboardLayoutView.vala:194
+#: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:180
 #, c-format
 msgid "%s…"
 msgstr "%s …"
@@ -99,6 +99,7 @@ msgstr ""
 "das Netzwerk."
 
 #: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
+#: src/Views/NetworkView.vala:86
 msgid "Back"
 msgstr "Zurück"
 
@@ -134,25 +135,91 @@ msgid "Show keyboard layout"
 msgstr "Tastaturbelegung zeigen"
 
 #: src/Views/KeyboardLayoutView.vala:54 src/Views/LanguageView.vala:111
-#: src/Views/LanguageView.vala:167
+#: src/Views/LanguageView.vala:174
 msgid "Select"
 msgstr "Auswählen"
 
-#: src/Views/KeyboardLayoutView.vala:137
+#: src/Views/KeyboardLayoutView.vala:123
 msgid "Input Language"
 msgstr "Eingabesprache"
 
-#: src/Views/LanguageView.vala:200
+#: src/Views/LanguageView.vala:207
 msgid "Languages"
 msgstr "Sprachen"
 
-#: src/Views/LanguageView.vala:244
+#: src/Views/LanguageView.vala:242
+msgid "Use the right mouse button for primary click?"
+msgstr "Rechte Maustaste für den primärem Klick verwenden?"
+
+#: src/Views/LanguageView.vala:243
+msgid ""
+"The right mouse button was used where a primary click was expected. You can "
+"choose to always use the right mouse button for primary click."
+msgstr ""
+"Die rechte Maustaste wurde verwendet, als ein primärer Klick erwartet wurde. "
+"Sie können festlegen, dass die rechte Maustaste immer für den primären Klick "
+"verwendet werden soll."
+
+#: src/Views/LanguageView.vala:244 src/Views/LanguageView.vala:251
+msgid "Right-Click as Primary"
+msgstr "Rechtsklick als primärer"
+
+#: src/Views/LanguageView.vala:245 src/Views/LanguageView.vala:250
+msgid "Left-Click as Primary"
+msgstr "Linksklick als primärer"
+
+#: src/Views/LanguageView.vala:248
+msgid "Use the left mouse button for primary click?"
+msgstr "Linke Maustaste für den primären Klick verwenden?"
+
+#: src/Views/LanguageView.vala:249
+msgid ""
+"The left mouse button was used where a primary click was expected. You can "
+"choose to always use the left mouse button for primary click."
+msgstr ""
+"Die linke Maustaste wurde verwendet, als ein primärer Klick erwartet wurde. "
+"Sie können festlegen, dass die linke Maustaste immer für den primären Klick "
+"verwendet werden soll."
+
+#: src/Views/LanguageView.vala:309
 msgid "Select a Language"
 msgstr "Sprache wählen"
 
-#: src/Views/LanguageView.vala:267 src/Views/LanguageView.vala:326
+#: src/Views/LanguageView.vala:332 src/Views/LanguageView.vala:391
 msgid "Currently active language"
 msgstr "Aktuell eingestellte Sprache"
+
+#: src/Views/NetworkView.vala:29
+msgid "Connect Network"
+msgstr "Mit Netzwerk verbinden"
+
+#: src/Views/NetworkView.vala:34
+msgid ""
+"An Internet connection is required to receive updates, install new apps, and "
+"connect to online services"
+msgstr ""
+"Für Aktualisierungen, der Installation neuer Anwendungen und die Verbindung "
+"zu Online-Diensten ist eine Internet-Verbindung nötig"
+
+#. /Translators: for RTL languages, the UI is flipped
+#: src/Views/NetworkView.vala:49
+msgid ""
+"Choose a nearby wireless network from the network indicator in the top right."
+msgstr ""
+"Eines der verfügbaren drahtlosen Netzwerke im Netzwerkindikator oben rechts "
+"wählen."
+
+#: src/Views/NetworkView.vala:63
+msgid "Connect a network cable"
+msgstr "Netzwerkkabel anschließen"
+
+#: src/Views/NetworkView.vala:88
+msgid "Skip"
+msgstr "Überspringen"
+
+#: src/Views/NetworkView.vala:106
+msgid "Next"
+msgstr "Weiter"
 
 #~ msgid "Cancel Installation"
 #~ msgstr "Installation abbrechen"
@@ -208,9 +275,6 @@ msgstr "Aktuell eingestellte Sprache"
 #~ msgstr ""
 #~ "Ihr Rechner erfüllt nicht die empfohlenen Hardware-Anforderungen. Dies "
 #~ "kann dafür verantwortlich sein, dass er langsam läuft oder sich aufhängt."
-
-#~ msgid "Connect to a Power Source"
-#~ msgstr "Schließen Sie die Stromversorgung an"
 
 #~ msgid ""
 #~ "Your device is running on battery power. It's recommended to be plugged "

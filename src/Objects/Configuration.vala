@@ -34,4 +34,5 @@ public class Configuration : GLib.Object {
     public InitialSetup.KeyboardVariant? keyboard_variant { get; set; default = null; }
     public string timezone { get; set; }
     public string clock_format { get; set; default = "24h"; }
+    public bool left_handed { get; set; }
 }

@@ -24,6 +24,7 @@ public class Installer.MainWindow : Hdy.Window {
     private LanguageView language_view;
     private LocationView location_view;
     private KeyboardLayoutView keyboard_layout_view;
+    private NetworkView network_view;
 
     public MainWindow () {
         Object (
@@ -68,7 +69,24 @@ public class Installer.MainWindow : Hdy.Window {
         deck.add (keyboard_layout_view);
         deck.visible_child = keyboard_layout_view;
 
-        keyboard_layout_view.next_step.connect (() => load_location_view ());
+        keyboard_layout_view.next_step.connect (() => load_network_view ());
+    }
+
+    private void load_network_view () {
+        if (network_view != null) {
+            network_view.destroy ();
+        }
+
+        if (!NetworkMonitor.get_default ().get_network_available ()) {
+            network_view = new NetworkView ();
+
+            deck.add (network_view);
+            deck.visible_child = network_view;
+
+            network_view.next_step.connect (load_location_view);
+        } else {
+            load_location_view ();
+        }
     }
 
     private void load_location_view () {
@@ -141,7 +159,7 @@ public class Installer.MainWindow : Hdy.Window {
         }
     }
 
-    private async void set_keyboard_layout () {
+    private async void set_accounts_service_settings () {
         AccountsService accounts_service = null;
 
         try {
@@ -155,7 +173,7 @@ public class Installer.MainWindow : Hdy.Window {
                                                         user_path,
                                                         GLib.DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
         } catch (Error e) {
-            warning ("Unable to get AccountsService proxy, keyboard layout on new user may be incorrect: %s", e.message);
+            warning ("Unable to get AccountsService proxy, settings on new user may be incorrect: %s", e.message);
         }
 
         if (accounts_service != null) {
@@ -165,12 +183,13 @@ public class Installer.MainWindow : Hdy.Window {
             }
 
             accounts_service.keyboard_layouts = layouts;
+            accounts_service.left_handed = Configuration.get_default ().left_handed;
         }
     }
 
     private async void set_settings () {
+        yield set_accounts_service_settings ();
         yield set_timezone ();
         yield set_clock_format ();
-        yield set_keyboard_layout ();
     }
 }
