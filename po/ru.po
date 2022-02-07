@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-01 19:26+0000\n"
-"PO-Revision-Date: 2022-01-17 23:23+0000\n"
+"PO-Revision-Date: 2022-02-07 14:41+0000\n"
 "Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ru/>\n"
@@ -185,31 +185,34 @@ msgstr "Текущий язык"
 
 #: src/Views/NetworkView.vala:29
 msgid "Connect Network"
-msgstr ""
+msgstr "Подключится к интернету"
 
 #: src/Views/NetworkView.vala:34
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
 msgstr ""
+"Для получения обновлений, установки новых приложений и подключения к онлайн-"
+"сервисам нужно соединение с интернетом"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:49
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
 msgstr ""
+"Выберите беспроводную сеть с помощью индикатора сети в правом верхнем углу."
 
 #: src/Views/NetworkView.vala:63
 msgid "Connect a network cable"
-msgstr ""
+msgstr "Подключите сетевой кабель"
 
 #: src/Views/NetworkView.vala:88
 msgid "Skip"
-msgstr ""
+msgstr "Пропустить"
 
 #: src/Views/NetworkView.vala:106
 msgid "Next"
-msgstr ""
+msgstr "Далее"
 
 #~ msgid "Cancel Installation"
 #~ msgstr "Отменить установку"
