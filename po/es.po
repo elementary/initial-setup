@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-01 19:26+0000\n"
-"PO-Revision-Date: 2021-09-29 21:46+0000\n"
-"Last-Translator: Alvaro <alvaroaraoz_92@hotmail.com>\n"
+"PO-Revision-Date: 2022-02-17 14:34+0000\n"
+"Last-Translator: Jose Manuel Hernandez Farias <ing.josemhf@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/installer/"
 "initial-setup/es/>\n"
 "Language: es\n"
@@ -168,6 +168,9 @@ msgid ""
 "The left mouse button was used where a primary click was expected. You can "
 "choose to always use the left mouse button for primary click."
 msgstr ""
+"Se usó el botón izquierdo del ratón donde se esperaba un clic principal. "
+"Puede elegir usar siempre el botón izquierdo del ratón para el clic "
+"principal."
 
 #: src/Views/LanguageView.vala:309
 msgid "Select a Language"
@@ -188,12 +191,16 @@ msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
 msgstr ""
+"Se requiere una conexión a Internet para recibir actualizaciones, instalar "
+"nuevas aplicaciones, y conectarse a servicios en línea"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:49
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
 msgstr ""
+"Elija una red inalámbrica cercana desde el indicador de red en la parte "
+"superior derecha."
 
 #: src/Views/NetworkView.vala:63
 #, fuzzy
@@ -203,11 +210,11 @@ msgstr "Conectar a una fuente de alimentación"
 
 #: src/Views/NetworkView.vala:88
 msgid "Skip"
-msgstr ""
+msgstr "Saltar"
 
 #: src/Views/NetworkView.vala:106
 msgid "Next"
-msgstr ""
+msgstr "Siguiente"
 
 #~ msgid "Cancel Installation"
 #~ msgstr "Cancelar instalación"
