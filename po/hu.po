@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-01 19:26+0000\n"
-"PO-Revision-Date: 2022-01-16 10:11+0000\n"
+"PO-Revision-Date: 2022-02-12 04:20+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/hu/>\n"
@@ -184,31 +184,35 @@ msgstr "Jelenlegi nyelv"
 
 #: src/Views/NetworkView.vala:29
 msgid "Connect Network"
-msgstr ""
+msgstr "Csatlakozás hálózathoz"
 
 #: src/Views/NetworkView.vala:34
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
 msgstr ""
+"Internetkapcsolat szükséges a frissítések fogadásához, új alkalmazások "
+"telepítéséhez és az online szolgáltatásokhoz való kapcsolódáshoz"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:49
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
 msgstr ""
+"Válasszon egy közeli vezetéknélküli kapcsolatot a hálózati indikátorról jobb "
+"felül."
 
 #: src/Views/NetworkView.vala:63
 msgid "Connect a network cable"
-msgstr ""
+msgstr "Csatlakozás egy hálózati kábellel"
 
 #: src/Views/NetworkView.vala:88
 msgid "Skip"
-msgstr ""
+msgstr "Kihagyás"
 
 #: src/Views/NetworkView.vala:106
 msgid "Next"
-msgstr ""
+msgstr "Következő"
 
 #~ msgid "Cancel Installation"
 #~ msgstr "Telepítés megszakítása"

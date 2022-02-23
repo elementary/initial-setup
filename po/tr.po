@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-01 19:26+0000\n"
-"PO-Revision-Date: 2022-01-12 03:30+0000\n"
+"PO-Revision-Date: 2022-02-10 18:25+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/installer/"
 "initial-setup/tr/>\n"
@@ -182,31 +182,33 @@ msgstr "Şu anda etkin olan dil"
 
 #: src/Views/NetworkView.vala:29
 msgid "Connect Network"
-msgstr ""
+msgstr "Ağı Bağla"
 
 #: src/Views/NetworkView.vala:34
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
 msgstr ""
+"Güncellemeleri almak, yeni uygulamalar yüklemek ve çevrimiçi hizmetlere "
+"bağlanmak için İnternet bağlantısı gereklidir"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:49
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
-msgstr ""
+msgstr "Sağ üstteki ağ göstergesinden yakındaki bir kablosuz ağı seçin."
 
 #: src/Views/NetworkView.vala:63
 msgid "Connect a network cable"
-msgstr ""
+msgstr "Bir ağ kablosu bağlayın"
 
 #: src/Views/NetworkView.vala:88
 msgid "Skip"
-msgstr ""
+msgstr "Atla"
 
 #: src/Views/NetworkView.vala:106
 msgid "Next"
-msgstr ""
+msgstr "İleri"
 
 #~ msgid "Cancel Installation"
 #~ msgstr "Kurulumu İptal Et"
