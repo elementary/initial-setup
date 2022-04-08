@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-01 19:26+0000\n"
-"PO-Revision-Date: 2022-01-16 10:11+0000\n"
+"PO-Revision-Date: 2022-03-27 04:29+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/installer/"
 "initial-setup/fi/>\n"
@@ -184,36 +184,35 @@ msgid "Currently active language"
 msgstr "Parhaillaan aktiivinen kieli"
 
 #: src/Views/NetworkView.vala:29
-#, fuzzy
-#| msgid "Connect to a Power Source"
 msgid "Connect Network"
-msgstr "Yhdistä virtalähteeseen"
+msgstr "Yhdistä verkkoon"
 
 #: src/Views/NetworkView.vala:34
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
 msgstr ""
+"Internetyhteys vaaditaan päivitysten vastaanottamista, uusien sovellusten "
+"asentamista ja verkkopalveluihin yhdistämistä varten"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:49
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
 msgstr ""
+"Valitse lähellä oleva langaton verkko oikean yläkulman verkkoilmaisimesta."
 
 #: src/Views/NetworkView.vala:63
-#, fuzzy
-#| msgid "Connect to a Power Source"
 msgid "Connect a network cable"
-msgstr "Yhdistä virtalähteeseen"
+msgstr "Yhdistä verkkokaapeli"
 
 #: src/Views/NetworkView.vala:88
 msgid "Skip"
-msgstr ""
+msgstr "Ohita"
 
 #: src/Views/NetworkView.vala:106
 msgid "Next"
-msgstr ""
+msgstr "Seuraava"
 
 #~ msgid "Cancel Installation"
 #~ msgstr "Peru asennus"
