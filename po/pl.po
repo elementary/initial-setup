@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-01 19:26+0000\n"
+"POT-Creation-Date: 2022-04-08 03:19+0000\n"
 "PO-Revision-Date: 2022-02-02 08:50+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
-"Language-Team: Polish <https://l10n.elementary.io/projects/installer/"
-"initial-setup/pl/>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/installer/initial-"
+"setup/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,34 +20,16 @@ msgstr ""
 msgid "Create a User"
 msgstr "Utwórz konto użytkownika"
 
-#: src/Utils.vala:53
-msgid ""
-"Initial Setup could not create your user. Without it, you will not be able "
-"to log in and may need to reinstall the OS."
-msgstr ""
-"Instalator nie mógł utworzyć konta. Bez niego, nie będziesz mógł sie "
-"zalogować i może zainstalować ponownie system."
-
-#: src/Utils.vala:65
-#, c-format
-msgid "Creating User '%s' Failed"
-msgstr "Tworzenie użytkownika '%s' nie powiodło się"
-
-#: src/Utils.vala:69
-#, c-format
-msgid "No Permission to Create User '%s'"
-msgstr "Brak uprawnień do stworzenia użytkownika '%s'"
-
-#: src/Utils.vala:188
+#: src/Utils.vala:83
 msgid "Initial Setup could not set your hostname."
 msgstr "Instalator nie mógł ustawić twojej nazwy hosta."
 
-#: src/Utils.vala:199
+#: src/Utils.vala:94
 #, c-format
 msgid "No Permission to set hostname '%s'"
 msgstr "Brak uprawnień do ustawienia nazwy hosta '%s'"
 
-#: src/Utils.vala:202
+#: src/Utils.vala:97
 #, c-format
 msgid "Unable to set Hostname '%s'"
 msgstr "Nie można ustawić nazwy hosta '%s'"
@@ -61,31 +43,31 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Domyślny"
 
-#: src/Views/AccountView.vala:36
+#: src/Views/AccountView.vala:65
 msgid "Create an Account"
 msgstr "Utwórz konto"
 
-#: src/Views/AccountView.vala:40
+#: src/Views/AccountView.vala:69
 msgid "Full Name"
 msgstr "Imię i nazwisko"
 
-#: src/Views/AccountView.vala:45
+#: src/Views/AccountView.vala:74
 msgid "Username"
 msgstr "Nazwa użytkownika"
 
-#: src/Views/AccountView.vala:52
+#: src/Views/AccountView.vala:81
 msgid "Choose a Password"
 msgstr "Wybierz hasło"
 
-#: src/Views/AccountView.vala:68
+#: src/Views/AccountView.vala:97
 msgid "Confirm Password"
 msgstr "Potwierdź hasło"
 
-#: src/Views/AccountView.vala:78
+#: src/Views/AccountView.vala:107
 msgid "Device name"
 msgstr "Nazwa urządzenia"
 
-#: src/Views/AccountView.vala:91
+#: src/Views/AccountView.vala:120
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
@@ -93,27 +75,45 @@ msgstr ""
 "Widoczny dla innych urządzeń podczas udostępniania, np. za pomocą Bluetooth "
 "lub przez sieć."
 
-#: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
+#: src/Views/AccountView.vala:154 src/Views/KeyboardLayoutView.vala:52
 #: src/Views/NetworkView.vala:86
 msgid "Back"
 msgstr "Cofnij"
 
-#: src/Views/AccountView.vala:127
+#: src/Views/AccountView.vala:156
 msgid "Finish Setup"
 msgstr "Zakończ ustawienia"
 
-#: src/Views/AccountView.vala:219
+#: src/Views/AccountView.vala:238
 msgid "Passwords do not match"
 msgstr "Hasła do siebie nie pasują"
 
-#: src/Views/AccountView.vala:244
+#: src/Views/AccountView.vala:263
 msgid "The chosen username is already taken"
 msgstr "Wybrana nazwa użytkownika jest już zajęta"
 
-#: src/Views/AccountView.vala:246
+#: src/Views/AccountView.vala:265
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr "Nazwa użytkownika musi zawierać tylko małe litery i cyfry, bez spacji"
+
+#: src/Views/AccountView.vala:290
+msgid ""
+"Initial Setup could not create your user. Without it, you will not be able "
+"to log in and may need to reinstall the OS."
+msgstr ""
+"Instalator nie mógł utworzyć konta. Bez niego, nie będziesz mógł sie "
+"zalogować i może zainstalować ponownie system."
+
+#: src/Views/AccountView.vala:309
+#, c-format
+msgid "Creating User '%s' Failed"
+msgstr "Tworzenie użytkownika '%s' nie powiodło się"
+
+#: src/Views/AccountView.vala:313
+#, c-format
+msgid "No Permission to Create User '%s'"
+msgstr "Brak uprawnień do stworzenia użytkownika '%s'"
 
 #: src/Views/KeyboardLayoutView.vala:26
 msgid "Select Keyboard Layout"

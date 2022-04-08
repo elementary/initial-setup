@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-01 19:26+0000\n"
+"POT-Creation-Date: 2022-04-08 03:19+0000\n"
 "PO-Revision-Date: 2020-09-21 15:14+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/installer/"
@@ -19,35 +19,17 @@ msgstr ""
 msgid "Create a User"
 msgstr "एक वापरकर्ता तयार करा"
 
-#: src/Utils.vala:53
-msgid ""
-"Initial Setup could not create your user. Without it, you will not be able "
-"to log in and may need to reinstall the OS."
-msgstr ""
-"आरंभिक सेटअप आपला वापरकर्ता तयार करू शकला नाही. त्याशिवाय, आपण लॉग इन करण्यास सक्षम "
-"असणार नाही आणि ओएस पुन्हा स्थापित करण्याची आवश्यकता असू शकते."
-
-#: src/Utils.vala:65
-#, c-format
-msgid "Creating User '%s' Failed"
-msgstr "वापरकर्ता '%s' तयार करणे अयशस्वी झाले"
-
-#: src/Utils.vala:69
-#, c-format
-msgid "No Permission to Create User '%s'"
-msgstr "वापरकर्ता '%s' तयार करण्याची परवानगी नाही"
-
-#: src/Utils.vala:188
+#: src/Utils.vala:83
 msgid "Initial Setup could not set your hostname."
 msgstr ""
 
-#: src/Utils.vala:199
+#: src/Utils.vala:94
 #, fuzzy, c-format
 #| msgid "No Permission to Create User '%s'"
 msgid "No Permission to set hostname '%s'"
 msgstr "वापरकर्ता '%s' तयार करण्याची परवानगी नाही"
 
-#: src/Utils.vala:202
+#: src/Utils.vala:97
 #, c-format
 msgid "Unable to set Hostname '%s'"
 msgstr ""
@@ -61,57 +43,75 @@ msgstr "%s…"
 msgid "Default"
 msgstr "डीफॉल्ट"
 
-#: src/Views/AccountView.vala:36
+#: src/Views/AccountView.vala:65
 msgid "Create an Account"
 msgstr "नवीन खाते बनवा"
 
-#: src/Views/AccountView.vala:40
+#: src/Views/AccountView.vala:69
 msgid "Full Name"
 msgstr "संपूर्ण नाव"
 
-#: src/Views/AccountView.vala:45
+#: src/Views/AccountView.vala:74
 msgid "Username"
 msgstr "यूझरनेम"
 
-#: src/Views/AccountView.vala:52
+#: src/Views/AccountView.vala:81
 msgid "Choose a Password"
 msgstr "एक पासवर्ड निवडा"
 
-#: src/Views/AccountView.vala:68
+#: src/Views/AccountView.vala:97
 msgid "Confirm Password"
 msgstr "पासवर्ड नक्की करा"
 
-#: src/Views/AccountView.vala:78
+#: src/Views/AccountView.vala:107
 msgid "Device name"
 msgstr ""
 
-#: src/Views/AccountView.vala:91
+#: src/Views/AccountView.vala:120
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
 
-#: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
+#: src/Views/AccountView.vala:154 src/Views/KeyboardLayoutView.vala:52
 #: src/Views/NetworkView.vala:86
 msgid "Back"
 msgstr "मागे"
 
-#: src/Views/AccountView.vala:127
+#: src/Views/AccountView.vala:156
 msgid "Finish Setup"
 msgstr "सेटअप पूर्ण करा"
 
-#: src/Views/AccountView.vala:219
+#: src/Views/AccountView.vala:238
 msgid "Passwords do not match"
 msgstr "पासवर्डस जुळत नाहीत"
 
-#: src/Views/AccountView.vala:244
+#: src/Views/AccountView.vala:263
 msgid "The chosen username is already taken"
 msgstr "युजरनेम आधीच कुणीतरी वापरले आहे"
 
-#: src/Views/AccountView.vala:246
+#: src/Views/AccountView.vala:265
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr "युजरनेम मध्ये फक्त लहान(इंग्रजी) अक्षरे आणि अंक,रिकाम्या जागांशिवाय असावीत"
+
+#: src/Views/AccountView.vala:290
+msgid ""
+"Initial Setup could not create your user. Without it, you will not be able "
+"to log in and may need to reinstall the OS."
+msgstr ""
+"आरंभिक सेटअप आपला वापरकर्ता तयार करू शकला नाही. त्याशिवाय, आपण लॉग इन करण्यास सक्षम "
+"असणार नाही आणि ओएस पुन्हा स्थापित करण्याची आवश्यकता असू शकते."
+
+#: src/Views/AccountView.vala:309
+#, c-format
+msgid "Creating User '%s' Failed"
+msgstr "वापरकर्ता '%s' तयार करणे अयशस्वी झाले"
+
+#: src/Views/AccountView.vala:313
+#, c-format
+msgid "No Permission to Create User '%s'"
+msgstr "वापरकर्ता '%s' तयार करण्याची परवानगी नाही"
 
 #: src/Views/KeyboardLayoutView.vala:26
 #, fuzzy

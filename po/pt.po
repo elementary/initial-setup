@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-01 19:26+0000\n"
+"POT-Creation-Date: 2022-04-08 03:19+0000\n"
 "PO-Revision-Date: 2021-11-17 16:19+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/installer/"
@@ -19,34 +19,16 @@ msgstr ""
 msgid "Create a User"
 msgstr "Criar um Utilizador"
 
-#: src/Utils.vala:53
-msgid ""
-"Initial Setup could not create your user. Without it, you will not be able "
-"to log in and may need to reinstall the OS."
-msgstr ""
-"A configuração inicial não pôde criar o seu utilizador. Sem isso, não será "
-"capaz de iniciar sessão e poderá ter de reinstalar o sistema operativo."
-
-#: src/Utils.vala:65
-#, c-format
-msgid "Creating User '%s' Failed"
-msgstr "Falha ao criar o Utilizador '%s'"
-
-#: src/Utils.vala:69
-#, c-format
-msgid "No Permission to Create User '%s'"
-msgstr "Sem permissão para criar o utilizador '%s'"
-
-#: src/Utils.vala:188
+#: src/Utils.vala:83
 msgid "Initial Setup could not set your hostname."
 msgstr "A configuração inicial não conseguiu definir o nome de utilizador."
 
-#: src/Utils.vala:199
+#: src/Utils.vala:94
 #, c-format
 msgid "No Permission to set hostname '%s'"
 msgstr "Sem permissão para definir o nome da máquina '%s'"
 
-#: src/Utils.vala:202
+#: src/Utils.vala:97
 #, c-format
 msgid "Unable to set Hostname '%s'"
 msgstr "Não foi possível definir o nome da máquina '%s'"
@@ -60,31 +42,31 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Predefinido"
 
-#: src/Views/AccountView.vala:36
+#: src/Views/AccountView.vala:65
 msgid "Create an Account"
 msgstr "Criar uma Conta"
 
-#: src/Views/AccountView.vala:40
+#: src/Views/AccountView.vala:69
 msgid "Full Name"
 msgstr "Nome Completo"
 
-#: src/Views/AccountView.vala:45
+#: src/Views/AccountView.vala:74
 msgid "Username"
 msgstr "Nome de utilizador"
 
-#: src/Views/AccountView.vala:52
+#: src/Views/AccountView.vala:81
 msgid "Choose a Password"
 msgstr "Escolha uma palavra-passe"
 
-#: src/Views/AccountView.vala:68
+#: src/Views/AccountView.vala:97
 msgid "Confirm Password"
 msgstr "Confirmar palavra-passe"
 
-#: src/Views/AccountView.vala:78
+#: src/Views/AccountView.vala:107
 msgid "Device name"
 msgstr "Nome do dispositivo"
 
-#: src/Views/AccountView.vala:91
+#: src/Views/AccountView.vala:120
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
@@ -92,29 +74,47 @@ msgstr ""
 "Visível a outros dispositivos quando partilhado por ex: com Bluetooth ou "
 "através da rede."
 
-#: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
+#: src/Views/AccountView.vala:154 src/Views/KeyboardLayoutView.vala:52
 #: src/Views/NetworkView.vala:86
 msgid "Back"
 msgstr "Voltar"
 
-#: src/Views/AccountView.vala:127
+#: src/Views/AccountView.vala:156
 msgid "Finish Setup"
 msgstr "Terminar configuração"
 
-#: src/Views/AccountView.vala:219
+#: src/Views/AccountView.vala:238
 msgid "Passwords do not match"
 msgstr "As palavras-passe não coincidem"
 
-#: src/Views/AccountView.vala:244
+#: src/Views/AccountView.vala:263
 msgid "The chosen username is already taken"
 msgstr "Este nome de utilizador já está a ser utilizado"
 
-#: src/Views/AccountView.vala:246
+#: src/Views/AccountView.vala:265
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
 "Um nome de utilizador apenas pode conter letras minúsculas e números, sem "
 "espaços"
+
+#: src/Views/AccountView.vala:290
+msgid ""
+"Initial Setup could not create your user. Without it, you will not be able "
+"to log in and may need to reinstall the OS."
+msgstr ""
+"A configuração inicial não pôde criar o seu utilizador. Sem isso, não será "
+"capaz de iniciar sessão e poderá ter de reinstalar o sistema operativo."
+
+#: src/Views/AccountView.vala:309
+#, c-format
+msgid "Creating User '%s' Failed"
+msgstr "Falha ao criar o Utilizador '%s'"
+
+#: src/Views/AccountView.vala:313
+#, c-format
+msgid "No Permission to Create User '%s'"
+msgstr "Sem permissão para criar o utilizador '%s'"
 
 #: src/Views/KeyboardLayoutView.vala:26
 msgid "Select Keyboard Layout"
