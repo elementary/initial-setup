@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-01 19:26+0000\n"
+"POT-Creation-Date: 2022-04-08 03:19+0000\n"
 "PO-Revision-Date: 2018-02-05 00:11+0000\n"
 "Last-Translator: Rokar <mail@rokar.de>\n"
 "Language-Team: Kurdish <https://weblate.elementary.io/projects/installer/"
@@ -20,32 +20,16 @@ msgstr ""
 msgid "Create a User"
 msgstr "Hesab çê bike"
 
-#: src/Utils.vala:53
-msgid ""
-"Initial Setup could not create your user. Without it, you will not be able "
-"to log in and may need to reinstall the OS."
-msgstr ""
-
-#: src/Utils.vala:65
-#, c-format
-msgid "Creating User '%s' Failed"
-msgstr ""
-
-#: src/Utils.vala:69
-#, c-format
-msgid "No Permission to Create User '%s'"
-msgstr ""
-
-#: src/Utils.vala:188
+#: src/Utils.vala:83
 msgid "Initial Setup could not set your hostname."
 msgstr ""
 
-#: src/Utils.vala:199
+#: src/Utils.vala:94
 #, c-format
 msgid "No Permission to set hostname '%s'"
 msgstr ""
 
-#: src/Utils.vala:202
+#: src/Utils.vala:97
 #, c-format
 msgid "Unable to set Hostname '%s'"
 msgstr ""
@@ -59,56 +43,72 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Wekî erkên destpêkê"
 
-#: src/Views/AccountView.vala:36
+#: src/Views/AccountView.vala:65
 msgid "Create an Account"
 msgstr "Hesab çê bike"
 
-#: src/Views/AccountView.vala:40
+#: src/Views/AccountView.vala:69
 msgid "Full Name"
 msgstr "Nave Tije"
 
-#: src/Views/AccountView.vala:45
+#: src/Views/AccountView.vala:74
 msgid "Username"
 msgstr "Navê bikarhêner"
 
-#: src/Views/AccountView.vala:52
+#: src/Views/AccountView.vala:81
 msgid "Choose a Password"
 msgstr "Nasnav bijare"
 
-#: src/Views/AccountView.vala:68
+#: src/Views/AccountView.vala:97
 msgid "Confirm Password"
 msgstr "Nasnav tesdîq bike"
 
-#: src/Views/AccountView.vala:78
+#: src/Views/AccountView.vala:107
 msgid "Device name"
 msgstr ""
 
-#: src/Views/AccountView.vala:91
+#: src/Views/AccountView.vala:120
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
 
-#: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
+#: src/Views/AccountView.vala:154 src/Views/KeyboardLayoutView.vala:52
 #: src/Views/NetworkView.vala:86
 msgid "Back"
 msgstr "Paşve"
 
-#: src/Views/AccountView.vala:127
+#: src/Views/AccountView.vala:156
 msgid "Finish Setup"
 msgstr "Pêkhatin Xilas bike"
 
-#: src/Views/AccountView.vala:219
+#: src/Views/AccountView.vala:238
 msgid "Passwords do not match"
 msgstr ""
 
-#: src/Views/AccountView.vala:244
+#: src/Views/AccountView.vala:263
 msgid "The chosen username is already taken"
 msgstr ""
 
-#: src/Views/AccountView.vala:246
+#: src/Views/AccountView.vala:265
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
+msgstr ""
+
+#: src/Views/AccountView.vala:290
+msgid ""
+"Initial Setup could not create your user. Without it, you will not be able "
+"to log in and may need to reinstall the OS."
+msgstr ""
+
+#: src/Views/AccountView.vala:309
+#, c-format
+msgid "Creating User '%s' Failed"
+msgstr ""
+
+#: src/Views/AccountView.vala:313
+#, c-format
+msgid "No Permission to Create User '%s'"
 msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:26

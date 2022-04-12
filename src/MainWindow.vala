@@ -109,22 +109,6 @@ public class Installer.MainWindow : Hdy.Window {
         account_view = new AccountView ();
         deck.add (account_view);
         deck.visible_child = account_view;
-
-        account_view.next_step.connect (on_finish);
-    }
-
-    private void on_finish () {
-        if (account_view.created != null) {
-            account_view.created.set_language (Configuration.get_default ().lang);
-
-            set_settings.begin ((obj, res) => {
-                set_settings.end (res);
-                destroy ();
-            });
-        } else {
-            destroy ();
-        }
-
     }
 
     private async void set_timezone () {
@@ -156,34 +140,6 @@ public class Installer.MainWindow : Hdy.Window {
 
         if (accounts_service != null) {
             accounts_service.clock_format = Configuration.get_default ().clock_format;
-        }
-    }
-
-    private async void set_accounts_service_settings () {
-        AccountsService accounts_service = null;
-
-        try {
-            var act_service = yield GLib.Bus.get_proxy<FDO.Accounts> (GLib.BusType.SYSTEM,
-                                                                      "org.freedesktop.Accounts",
-                                                                      "/org/freedesktop/Accounts");
-            var user_path = act_service.find_user_by_name (account_view.created.user_name);
-
-            accounts_service = yield GLib.Bus.get_proxy (GLib.BusType.SYSTEM,
-                                                        "org.freedesktop.Accounts",
-                                                        user_path,
-                                                        GLib.DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
-        } catch (Error e) {
-            warning ("Unable to get AccountsService proxy, settings on new user may be incorrect: %s", e.message);
-        }
-
-        if (accounts_service != null) {
-            var layouts = Configuration.get_default ().keyboard_layout.to_accountsservice_array ();
-            if (Configuration.get_default ().keyboard_variant != null) {
-                layouts = Configuration.get_default ().keyboard_variant.to_accountsservice_array ();
-            }
-
-            accounts_service.keyboard_layouts = layouts;
-            accounts_service.left_handed = Configuration.get_default ().left_handed;
         }
     }
 

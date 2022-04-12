@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-01 19:26+0000\n"
+"POT-Creation-Date: 2022-04-08 03:19+0000\n"
 "PO-Revision-Date: 2022-02-02 13:50+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/installer/"
@@ -19,34 +19,16 @@ msgstr ""
 msgid "Create a User"
 msgstr "Crea un usuari"
 
-#: src/Utils.vala:53
-msgid ""
-"Initial Setup could not create your user. Without it, you will not be able "
-"to log in and may need to reinstall the OS."
-msgstr ""
-"La Configuració inicial no ha pogut crear l'usuari. Sense, no podreu entrar "
-"a la sessió i potser hauríeu de reinstal·lar el sistema."
-
-#: src/Utils.vala:65
-#, c-format
-msgid "Creating User '%s' Failed"
-msgstr "Ha fallat crear l'usuari \"%s\"."
-
-#: src/Utils.vala:69
-#, c-format
-msgid "No Permission to Create User '%s'"
-msgstr "No teniu permís per crear l'usuari \"%s\"."
-
-#: src/Utils.vala:188
+#: src/Utils.vala:83
 msgid "Initial Setup could not set your hostname."
 msgstr "La Configuració inicial no ha pogut el nom d'amfitrió."
 
-#: src/Utils.vala:199
+#: src/Utils.vala:94
 #, c-format
 msgid "No Permission to set hostname '%s'"
 msgstr "No teniu permís per establir el nom d'amfitrió \"%s\"."
 
-#: src/Utils.vala:202
+#: src/Utils.vala:97
 #, c-format
 msgid "Unable to set Hostname '%s'"
 msgstr "No es pot establir el nom d'amfitrió \"%s'."
@@ -60,31 +42,31 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Per defecte"
 
-#: src/Views/AccountView.vala:36
+#: src/Views/AccountView.vala:65
 msgid "Create an Account"
 msgstr "Crea un compte"
 
-#: src/Views/AccountView.vala:40
+#: src/Views/AccountView.vala:69
 msgid "Full Name"
 msgstr "Nom complet"
 
-#: src/Views/AccountView.vala:45
+#: src/Views/AccountView.vala:74
 msgid "Username"
 msgstr "Nom d'usuari"
 
-#: src/Views/AccountView.vala:52
+#: src/Views/AccountView.vala:81
 msgid "Choose a Password"
 msgstr "Trieu una contrasenya"
 
-#: src/Views/AccountView.vala:68
+#: src/Views/AccountView.vala:97
 msgid "Confirm Password"
 msgstr "Confirmeu la contrasenya"
 
-#: src/Views/AccountView.vala:78
+#: src/Views/AccountView.vala:107
 msgid "Device name"
 msgstr "Nom del dispositiu"
 
-#: src/Views/AccountView.vala:91
+#: src/Views/AccountView.vala:120
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
@@ -92,29 +74,47 @@ msgstr ""
 "Visible per a altres dispositius quan es comparteixi, per exemple, per "
 "Bluetooth o per xarxa."
 
-#: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
+#: src/Views/AccountView.vala:154 src/Views/KeyboardLayoutView.vala:52
 #: src/Views/NetworkView.vala:86
 msgid "Back"
 msgstr "Enrere"
 
-#: src/Views/AccountView.vala:127
+#: src/Views/AccountView.vala:156
 msgid "Finish Setup"
 msgstr "Acaba la configuració"
 
-#: src/Views/AccountView.vala:219
+#: src/Views/AccountView.vala:238
 msgid "Passwords do not match"
 msgstr "Les contrasenyes no coincideixen."
 
-#: src/Views/AccountView.vala:244
+#: src/Views/AccountView.vala:263
 msgid "The chosen username is already taken"
 msgstr "El nom d'usuari triat ja està agafat"
 
-#: src/Views/AccountView.vala:246
+#: src/Views/AccountView.vala:265
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
 "El nom d'usuari només pot contenir lletres en minúscula i números, sense "
 "espais"
+
+#: src/Views/AccountView.vala:290
+msgid ""
+"Initial Setup could not create your user. Without it, you will not be able "
+"to log in and may need to reinstall the OS."
+msgstr ""
+"La Configuració inicial no ha pogut crear l'usuari. Sense, no podreu entrar "
+"a la sessió i potser hauríeu de reinstal·lar el sistema."
+
+#: src/Views/AccountView.vala:309
+#, c-format
+msgid "Creating User '%s' Failed"
+msgstr "Ha fallat crear l'usuari \"%s\"."
+
+#: src/Views/AccountView.vala:313
+#, c-format
+msgid "No Permission to Create User '%s'"
+msgstr "No teniu permís per crear l'usuari \"%s\"."
 
 #: src/Views/KeyboardLayoutView.vala:26
 msgid "Select Keyboard Layout"

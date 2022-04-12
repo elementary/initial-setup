@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-01 19:26+0000\n"
-"PO-Revision-Date: 2022-01-16 10:11+0000\n"
+"POT-Creation-Date: 2022-04-08 03:19+0000\n"
+"PO-Revision-Date: 2022-03-27 04:29+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/installer/"
 "initial-setup/fi/>\n"
@@ -19,35 +19,16 @@ msgstr ""
 msgid "Create a User"
 msgstr "Luo käyttäjä"
 
-#: src/Utils.vala:53
-msgid ""
-"Initial Setup could not create your user. Without it, you will not be able "
-"to log in and may need to reinstall the OS."
-msgstr ""
-"Alkuasetukset ei voinut luoda käyttäjää. Ilman käyttäjää et pysty "
-"sisäänkirjautumaan, joten käyttöjärjestelmän uudelleenasennus saattaa olla "
-"tarpeen."
-
-#: src/Utils.vala:65
-#, c-format
-msgid "Creating User '%s' Failed"
-msgstr "Käyttäjän '%s' luominen epäonnistui"
-
-#: src/Utils.vala:69
-#, c-format
-msgid "No Permission to Create User '%s'"
-msgstr "Ei käyttöoikeuksia lisätä käyttäjää '%s'"
-
-#: src/Utils.vala:188
+#: src/Utils.vala:83
 msgid "Initial Setup could not set your hostname."
 msgstr "Alkuasetukset ei voinut asettaa laitenimeä."
 
-#: src/Utils.vala:199
+#: src/Utils.vala:94
 #, c-format
 msgid "No Permission to set hostname '%s'"
 msgstr "Ei käyttöoikeuksia asettaa laitenimeä '%s'"
 
-#: src/Utils.vala:202
+#: src/Utils.vala:97
 #, c-format
 msgid "Unable to set Hostname '%s'"
 msgstr "Ei voitu asettaa laitenimeä '%s'"
@@ -61,59 +42,78 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Oletus"
 
-#: src/Views/AccountView.vala:36
+#: src/Views/AccountView.vala:65
 msgid "Create an Account"
 msgstr "Luo tili"
 
-#: src/Views/AccountView.vala:40
+#: src/Views/AccountView.vala:69
 msgid "Full Name"
 msgstr "Koko nimi"
 
-#: src/Views/AccountView.vala:45
+#: src/Views/AccountView.vala:74
 msgid "Username"
 msgstr "Käyttäjätunnus"
 
-#: src/Views/AccountView.vala:52
+#: src/Views/AccountView.vala:81
 msgid "Choose a Password"
 msgstr "Valitse salasana"
 
-#: src/Views/AccountView.vala:68
+#: src/Views/AccountView.vala:97
 msgid "Confirm Password"
 msgstr "Vahvista salasana"
 
-#: src/Views/AccountView.vala:78
+#: src/Views/AccountView.vala:107
 msgid "Device name"
 msgstr "Laitteen nimi"
 
-#: src/Views/AccountView.vala:91
+#: src/Views/AccountView.vala:120
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr "Näkyvissä muille laitteille esimerkiksi Bluetooth- ja verkkojaoissa."
 
-#: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
+#: src/Views/AccountView.vala:154 src/Views/KeyboardLayoutView.vala:52
 #: src/Views/NetworkView.vala:86
 msgid "Back"
 msgstr "Takaisin"
 
-#: src/Views/AccountView.vala:127
+#: src/Views/AccountView.vala:156
 msgid "Finish Setup"
 msgstr "Viimeistele määritykset"
 
-#: src/Views/AccountView.vala:219
+#: src/Views/AccountView.vala:238
 msgid "Passwords do not match"
 msgstr "Salasanat eivät täsmää"
 
-#: src/Views/AccountView.vala:244
+#: src/Views/AccountView.vala:263
 msgid "The chosen username is already taken"
 msgstr "Valittu käyttäjätunnus on jo käytössä"
 
-#: src/Views/AccountView.vala:246
+#: src/Views/AccountView.vala:265
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
 "Käyttäjätunnus voi sisältää vain pieniä kirjaimia ja numeroita ilman "
 "välilyöntejä"
+
+#: src/Views/AccountView.vala:290
+msgid ""
+"Initial Setup could not create your user. Without it, you will not be able "
+"to log in and may need to reinstall the OS."
+msgstr ""
+"Alkuasetukset ei voinut luoda käyttäjää. Ilman käyttäjää et pysty "
+"sisäänkirjautumaan, joten käyttöjärjestelmän uudelleenasennus saattaa olla "
+"tarpeen."
+
+#: src/Views/AccountView.vala:309
+#, c-format
+msgid "Creating User '%s' Failed"
+msgstr "Käyttäjän '%s' luominen epäonnistui"
+
+#: src/Views/AccountView.vala:313
+#, c-format
+msgid "No Permission to Create User '%s'"
+msgstr "Ei käyttöoikeuksia lisätä käyttäjää '%s'"
 
 #: src/Views/KeyboardLayoutView.vala:26
 msgid "Select Keyboard Layout"
@@ -184,36 +184,35 @@ msgid "Currently active language"
 msgstr "Parhaillaan aktiivinen kieli"
 
 #: src/Views/NetworkView.vala:29
-#, fuzzy
-#| msgid "Connect to a Power Source"
 msgid "Connect Network"
-msgstr "Yhdistä virtalähteeseen"
+msgstr "Yhdistä verkkoon"
 
 #: src/Views/NetworkView.vala:34
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
 msgstr ""
+"Internetyhteys vaaditaan päivitysten vastaanottamista, uusien sovellusten "
+"asentamista ja verkkopalveluihin yhdistämistä varten"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:49
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
 msgstr ""
+"Valitse lähellä oleva langaton verkko oikean yläkulman verkkoilmaisimesta."
 
 #: src/Views/NetworkView.vala:63
-#, fuzzy
-#| msgid "Connect to a Power Source"
 msgid "Connect a network cable"
-msgstr "Yhdistä virtalähteeseen"
+msgstr "Yhdistä verkkokaapeli"
 
 #: src/Views/NetworkView.vala:88
 msgid "Skip"
-msgstr ""
+msgstr "Ohita"
 
 #: src/Views/NetworkView.vala:106
 msgid "Next"
-msgstr ""
+msgstr "Seuraava"
 
 #~ msgid "Cancel Installation"
 #~ msgstr "Peru asennus"
