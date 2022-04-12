@@ -1,6 +1,5 @@
-// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2017 elementary LLC. (https://elementary.io)
+ * Copyright 2022 elementary. Inc. (https://elementary.io)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,19 +19,21 @@ public class LocationView : AbstractInstallerView {
     private VariantWidget location_variant_widget;
 
     construct {
-        var image = new Gtk.Image.from_icon_name ("preferences-system-time", Gtk.IconSize.DIALOG);
-        image.valign = Gtk.Align.END;
+        var image = new Gtk.Image.from_icon_name ("preferences-system-time", Gtk.IconSize.DIALOG) {
+            valign = Gtk.Align.END
+        };
 
-        var title_label = new Gtk.Label (_("Location"));
+        var title_label = new Gtk.Label (_("Select Time Zone")) {
+            valign = Gtk.Align.START
+        };
         title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
-        title_label.valign = Gtk.Align.START;
 
         location_variant_widget = new VariantWidget ();
 
         var helper = LocationHelper.get_default ();
 
-        content_area.attach (image, 0, 0, 1, 1);
-        content_area.attach (title_label, 0, 1, 1, 1);
+        content_area.attach (image, 0, 0);
+        content_area.attach (title_label, 0, 1);
         content_area.attach (location_variant_widget, 1, 0, 1, 2);
 
         var back_button = new Gtk.Button.with_label (_("Back"));
@@ -83,7 +84,9 @@ public class LocationView : AbstractInstallerView {
                 return;
             }
 
-            location_variant_widget.variant_listbox.bind_model (layout.get_variants (), (variant) => { return new VariantRow (variant as InitialSetup.LocationVariant); });
+            location_variant_widget.variant_listbox.bind_model (layout.get_variants (), (variant) => {
+                return new VariantRow (variant as InitialSetup.LocationVariant);
+            });
             location_variant_widget.variant_listbox.select_row (location_variant_widget.variant_listbox.get_row_at_index (0));
 
             location_variant_widget.show_variants (_("Continent"), "<b>%s</b>".printf (layout.display_name));
@@ -93,13 +96,16 @@ public class LocationView : AbstractInstallerView {
             next_button.sensitive = true;
         });
 
-        location_variant_widget.main_listbox.bind_model (InitialSetup.LocationLayout.get_all (), (layout) => { return new LayoutRow (layout as InitialSetup.LocationLayout); });
+        location_variant_widget.main_listbox.bind_model (InitialSetup.LocationLayout.get_all (), (layout) => {
+            return new LayoutRow (layout as InitialSetup.LocationLayout);
+        });
 
         show_all ();
     }
 
     private class LayoutRow : Gtk.ListBoxRow {
         public unowned InitialSetup.LocationLayout layout;
+
         public LayoutRow (InitialSetup.LocationLayout layout) {
             this.layout = layout;
 
@@ -108,10 +114,13 @@ public class LocationView : AbstractInstallerView {
                 layout_description = _("%s…").printf (layout_description);
             }
 
-            var label = new Gtk.Label (layout_description);
-            label.margin = 6;
-            label.xalign = 0;
+            var label = new Gtk.Label (layout_description) {
+                ellipsize = Pango.EllipsizeMode.END,
+                margin = 6,
+                xalign = 0
+            };
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+
             add (label);
             show_all ();
         }
@@ -119,12 +128,17 @@ public class LocationView : AbstractInstallerView {
 
     private class VariantRow : Gtk.ListBoxRow {
         public unowned InitialSetup.LocationVariant variant;
+
         public VariantRow (InitialSetup.LocationVariant variant) {
             this.variant = variant;
-            var label = new Gtk.Label (variant.display_name);
-            label.margin = 6;
-            label.xalign = 0;
+
+            var label = new Gtk.Label (variant.display_name) {
+                ellipsize = Pango.EllipsizeMode.END,
+                margin = 6,
+                xalign = 0
+            };
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+
             add (label);
             show_all ();
         }
