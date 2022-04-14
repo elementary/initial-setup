@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-08 03:19+0000\n"
 "PO-Revision-Date: 2022-04-14 23:02+0000\n"
-"Last-Translator: Pikhosh <pikhosh@gmail.com>\n"
+"Last-Translator: Parsa Akhbar <parsaakhbar@gmail.com>\n"
 "Language-Team: Persian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/fa/>\n"
 "Language: fa\n"
@@ -110,7 +110,7 @@ msgstr "ایجاد کاربر '%s' ناموفق بود"
 #: src/Views/AccountView.vala:313
 #, c-format
 msgid "No Permission to Create User '%s'"
-msgstr ""
+msgstr "اجازه ساخت کاربر «%s»وجود ندارد"
 
 #: src/Views/KeyboardLayoutView.vala:26
 msgid "Select Keyboard Layout"
