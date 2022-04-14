@@ -3,22 +3,21 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-08 03:19+0000\n"
-"PO-Revision-Date: 2018-04-22 00:03+0000\n"
-"Last-Translator: Morteza Khazamipour <mormoroth@gmail.com>\n"
-"Language-Team: Persian <https://weblate.elementary.io/projects/installer/"
+"PO-Revision-Date: 2022-04-14 23:02+0000\n"
+"Last-Translator: Pikhosh <pikhosh@gmail.com>\n"
+"Language-Team: Persian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/fa/>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/MainWindow.vala:34
-#, fuzzy
 msgid "Create a User"
-msgstr "ساخت حساب"
+msgstr "ایجاد یک کاربر"
 
 #: src/Utils.vala:83
 msgid "Initial Setup could not set your hostname."
@@ -61,11 +60,11 @@ msgstr "انتخاب رمز عبور"
 
 #: src/Views/AccountView.vala:97
 msgid "Confirm Password"
-msgstr "تایید کردن پسورد"
+msgstr "تایید کلمه عبور"
 
 #: src/Views/AccountView.vala:107
 msgid "Device name"
-msgstr ""
+msgstr "نام دستگاه"
 
 #: src/Views/AccountView.vala:120
 msgid ""
@@ -106,7 +105,7 @@ msgstr ""
 #: src/Views/AccountView.vala:309
 #, c-format
 msgid "Creating User '%s' Failed"
-msgstr ""
+msgstr "ایجاد کاربر '%s' ناموفق بود"
 
 #: src/Views/AccountView.vala:313
 #, c-format
@@ -114,18 +113,16 @@ msgid "No Permission to Create User '%s'"
 msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:26
-#, fuzzy
-#| msgid "Keyboard Layout"
 msgid "Select Keyboard Layout"
-msgstr "قالب صفحه کلید"
+msgstr "انتخاب چیدمان صفحه کلید"
 
 #: src/Views/KeyboardLayoutView.vala:35
 msgid "Type to test your layout"
-msgstr "برای تست قالب چیزی بنویسید"
+msgstr "برای امتحان چیدمان تان چیزی بنویسید"
 
 #: src/Views/KeyboardLayoutView.vala:38
 msgid "Show keyboard layout"
-msgstr "نمایش قالب صفحه کلید"
+msgstr "نمایش چیدمان صفحه کلید"
 
 #: src/Views/KeyboardLayoutView.vala:54 src/Views/LanguageView.vala:111
 #: src/Views/LanguageView.vala:174
@@ -202,7 +199,7 @@ msgstr ""
 
 #: src/Views/NetworkView.vala:106
 msgid "Next"
-msgstr ""
+msgstr "بعدی"
 
 #~ msgid "Cancel Installation"
 #~ msgstr "انصراف از نصب"
