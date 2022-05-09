@@ -28,6 +28,7 @@
       <p>Improvements:</p>
       <ul>
         <li>Offer to switch to right-click primary mouse button</li>
+        <li>Suggest connecting to a network</li>
         <li>Updated translations</li>
       </ul>
     </release>
