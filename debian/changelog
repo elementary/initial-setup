@@ -1,3 +1,15 @@
+io.elementary.initial-setup (6.2.0) bionic; urgency=medium
+
+  * Release 6.2.0 (#143)
+  * Update translation files
+  * Update translation template
+  * AccountView: Centralize user creation (#139)
+  * Check for network access (#125)
+  * LanguageView": Offer to switch to left-handed setup if right
+    clicking "Next" (#133)
+
+ -- elementary, Inc. <builds@elementary.io>  Thu, 12 May 2022 16:38:31 +0000
+
 io.elementary.initial-setup (6.1.1) bionic; urgency=medium
 
   * Release 6.1.1 (#123)
