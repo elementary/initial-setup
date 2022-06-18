@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-08 03:19+0000\n"
-"PO-Revision-Date: 2022-02-01 23:42+0000\n"
+"PO-Revision-Date: 2022-06-18 21:35+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "installer/initial-setup/nb/>\n"
@@ -25,15 +25,14 @@ msgid "Initial Setup could not set your hostname."
 msgstr "Førstegangsoppsettet kunne ikke sette vertsnavnet ditt."
 
 #: src/Utils.vala:94
-#, fuzzy, c-format
-#| msgid "No Permission to Create User '%s'"
+#, c-format
 msgid "No Permission to set hostname '%s'"
-msgstr "Ingen tilgang til oppretting av brukeren \"%s\""
+msgstr "Ingen tilgang til å sette vertsnavnet «%s»"
 
 #: src/Utils.vala:97
 #, fuzzy, c-format
 msgid "Unable to set Hostname '%s'"
-msgstr "Kunne ikke sette vertsnavn «%s»"
+msgstr "Kunne ikke sette vertsnavnet «%s»"
 
 #: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:180
 #, c-format
@@ -182,10 +181,8 @@ msgid "Currently active language"
 msgstr "Nåværende språk"
 
 #: src/Views/NetworkView.vala:29
-#, fuzzy
-#| msgid "Connect to a Power Source"
 msgid "Connect Network"
-msgstr "Koble til strømkilde"
+msgstr "Koble til nettverk"
 
 #: src/Views/NetworkView.vala:34
 msgid ""
@@ -202,10 +199,8 @@ msgid ""
 msgstr "Velg et trådløsnettverk fra nettverksindikatoren øverst til høyre."
 
 #: src/Views/NetworkView.vala:63
-#, fuzzy
-#| msgid "Connect to a Power Source"
 msgid "Connect a network cable"
-msgstr "Koble til strømkilde"
+msgstr "Plugg i en nettverkskabel"
 
 #: src/Views/NetworkView.vala:88
 msgid "Skip"
