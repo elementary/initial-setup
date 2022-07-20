@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-08 03:19+0000\n"
 "PO-Revision-Date: 2022-07-20 04:58+0000\n"
-"Last-Translator: CrxRuiXuan <huaweidu@foxmail.com>\n"
+"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "installer/initial-setup/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -177,7 +177,7 @@ msgstr "当前选中的语言"
 
 #: src/Views/NetworkView.vala:29
 msgid "Connect Network"
-msgstr ""
+msgstr "连接网络"
 
 #: src/Views/NetworkView.vala:34
 msgid ""
