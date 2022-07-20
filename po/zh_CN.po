@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-08 03:19+0000\n"
-"PO-Revision-Date: 2022-01-15 12:51+0000\n"
-"Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
+"PO-Revision-Date: 2022-07-20 04:58+0000\n"
+"Last-Translator: CrxRuiXuan <huaweidu@foxmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "installer/initial-setup/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -183,17 +183,17 @@ msgstr ""
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
-msgstr ""
+msgstr "需要 Internet 连接才能接收更新、安装新应用程序和连接到在线服务"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:49
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
-msgstr ""
+msgstr "在右上角的网络指示器中选择附近的无线网络。"
 
 #: src/Views/NetworkView.vala:63
 msgid "Connect a network cable"
-msgstr ""
+msgstr "连接一根网线"
 
 #: src/Views/NetworkView.vala:88
 msgid "Skip"
