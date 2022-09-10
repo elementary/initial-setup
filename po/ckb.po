@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-08 03:19+0000\n"
-"PO-Revision-Date: 2022-08-04 14:23+0000\n"
+"PO-Revision-Date: 2022-09-10 12:23+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
 "installer/initial-setup/ckb/>\n"
@@ -40,7 +40,7 @@ msgstr "%s…"
 
 #: src/Objects/KeyboardVariant.vala:27
 msgid "Default"
-msgstr "بنەڕەتی"
+msgstr "بنەڕەت"
 
 #: src/Views/AccountView.vala:65
 msgid "Create an Account"
@@ -60,7 +60,7 @@ msgstr "تێپەڕەوشەیەک هەڵبژێرە"
 
 #: src/Views/AccountView.vala:97
 msgid "Confirm Password"
-msgstr "دڵنیابەوە لە تێپەڕەوشەکە"
+msgstr "دووبارە تێپەڕەوشەکە بنووسەوە بۆ دڵنیابوونەوە"
 
 #: src/Views/AccountView.vala:107
 msgid "Device name"
@@ -85,7 +85,7 @@ msgstr "تەواوکردنی دامەزراندن"
 
 #: src/Views/AccountView.vala:238
 msgid "Passwords do not match"
-msgstr "تێپەڕەوشەکان یەک نین"
+msgstr "تێپەڕەوشەکان هاوتا نین"
 
 #: src/Views/AccountView.vala:263
 msgid "The chosen username is already taken"
@@ -118,15 +118,15 @@ msgstr "هیچ مۆڵەتێک نییە بۆ دروستکردنی بەکارهێ�
 
 #: src/Views/KeyboardLayoutView.vala:26
 msgid "Select Keyboard Layout"
-msgstr "دیارکردنی ڕووکاری تەختەکلیل"
+msgstr "ڕووکاری تەختەکلیل دیاریبکە"
 
 #: src/Views/KeyboardLayoutView.vala:35
 msgid "Type to test your layout"
-msgstr "لێرە بنووسە بۆ تێستکردنی ڕووکاری تەختەکلیلەکەت"
+msgstr "لێرە بنووسە بۆ تاقیکردنەوەی ڕووکاری تەختەکلیلەکەت"
 
 #: src/Views/KeyboardLayoutView.vala:38
 msgid "Show keyboard layout"
-msgstr "پشاندنی ڕووکاری تەختەکلیل"
+msgstr "پشاندانی ڕووکاری تەختەکلیل"
 
 #: src/Views/KeyboardLayoutView.vala:54 src/Views/LanguageView.vala:111
 #: src/Views/LanguageView.vala:174
@@ -135,7 +135,7 @@ msgstr "دیاریکردن"
 
 #: src/Views/KeyboardLayoutView.vala:123
 msgid "Input Language"
-msgstr "زمانی ئینپوت"
+msgstr "زمانی بەکارهێنان"
 
 #: src/Views/LanguageView.vala:207
 msgid "Languages"
@@ -175,7 +175,7 @@ msgstr ""
 
 #: src/Views/LanguageView.vala:309
 msgid "Select a Language"
-msgstr "زمانێک دیاری بکە"
+msgstr "زمانێک دیاریکە"
 
 #: src/Views/LanguageView.vala:332 src/Views/LanguageView.vala:391
 msgid "Currently active language"
