@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-08 03:19+0000\n"
-"PO-Revision-Date: 2022-02-07 14:41+0000\n"
-"Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
+"PO-Revision-Date: 2022-09-30 15:23+0000\n"
+"Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ru/>\n"
 "Language: ru\n"
@@ -104,7 +104,7 @@ msgid ""
 "to log in and may need to reinstall the OS."
 msgstr ""
 "Начальная установка не может создать вашего пользователя. Без этого вы не "
-"сможете войти в систему и, возможно, придется переустановить ОС."
+"сможете войти в систему и, возможно, вам придётся переустановить ОС."
 
 #: src/Views/AccountView.vala:309
 #, c-format
@@ -150,9 +150,9 @@ msgid ""
 "The right mouse button was used where a primary click was expected. You can "
 "choose to always use the right mouse button for primary click."
 msgstr ""
-"Правая кнопка мыши была задействована в месте где ожидалось нажатие основной "
-"клавишей. Вы можете выбрать постоянное использование правой кнопки мыши как "
-"основной."
+"Правая кнопка мыши была задействована в месте, где ожидалось нажатие "
+"основной клавишей. Вы можете выбрать постоянное использование правой кнопки "
+"мыши как основной."
 
 #: src/Views/LanguageView.vala:244 src/Views/LanguageView.vala:251
 msgid "Right-Click as Primary"
@@ -171,7 +171,7 @@ msgid ""
 "The left mouse button was used where a primary click was expected. You can "
 "choose to always use the left mouse button for primary click."
 msgstr ""
-"Левая кнопка мыши была задействована в месте где ожидалось нажатие основной "
+"Левая кнопка мыши была задействована в месте, где ожидалось нажатие основной "
 "клавишей. Вы можете выбрать постоянное использование левой кнопки мыши как "
 "основной."
 
@@ -185,7 +185,7 @@ msgstr "Текущий язык"
 
 #: src/Views/NetworkView.vala:29
 msgid "Connect Network"
-msgstr "Подключится к интернету"
+msgstr "Подключится к Интернету"
 
 #: src/Views/NetworkView.vala:34
 msgid ""
@@ -193,7 +193,7 @@ msgid ""
 "connect to online services"
 msgstr ""
 "Для получения обновлений, установки новых приложений и подключения к онлайн-"
-"сервисам нужно соединение с интернетом"
+"сервисам нужно соединение с Интернетом"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:49
