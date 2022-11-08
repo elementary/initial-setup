@@ -2,200 +2,215 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-01 19:26+0000\n"
-"PO-Revision-Date: 2016-09-13 07:28+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2022-04-08 03:19+0000\n"
+"PO-Revision-Date: 2022-09-10 12:23+0000\n"
+"Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
+"Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
+"installer/initial-setup/ckb/>\n"
+"Language: ckb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
 
 #: src/MainWindow.vala:34
 msgid "Create a User"
-msgstr ""
+msgstr "دروستکردنی بەکارهێنەرێک"
 
-#: src/Utils.vala:53
-msgid ""
-"Initial Setup could not create your user. Without it, you will not be able "
-"to log in and may need to reinstall the OS."
-msgstr ""
-
-#: src/Utils.vala:65
-#, c-format
-msgid "Creating User '%s' Failed"
-msgstr ""
-
-#: src/Utils.vala:69
-#, c-format
-msgid "No Permission to Create User '%s'"
-msgstr ""
-
-#: src/Utils.vala:188
+#: src/Utils.vala:83
 msgid "Initial Setup could not set your hostname."
-msgstr ""
+msgstr "دامەزراندنی سەرەتایی نەیتوانی ناوی هۆستەکەت ڕێکبخات."
 
-#: src/Utils.vala:199
+#: src/Utils.vala:94
 #, c-format
 msgid "No Permission to set hostname '%s'"
-msgstr ""
+msgstr "هیچ مۆڵەتێک نییە بۆ ڕێکخستنی ناوی هۆستەکەت '%s'"
 
-#: src/Utils.vala:202
+#: src/Utils.vala:97
 #, c-format
 msgid "Unable to set Hostname '%s'"
-msgstr ""
+msgstr "ناتوانرێت ناوی هۆست '%s' دابنرێت"
 
 #: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:180
 #, c-format
 msgid "%s…"
-msgstr ""
+msgstr "%s…"
 
 #: src/Objects/KeyboardVariant.vala:27
 msgid "Default"
-msgstr ""
+msgstr "بنەڕەت"
 
-#: src/Views/AccountView.vala:36
+#: src/Views/AccountView.vala:65
 msgid "Create an Account"
-msgstr ""
+msgstr "دروستکدنی هەژمارێک"
 
-#: src/Views/AccountView.vala:40
+#: src/Views/AccountView.vala:69
 msgid "Full Name"
-msgstr ""
+msgstr "ناوی تەواو"
 
-#: src/Views/AccountView.vala:45
+#: src/Views/AccountView.vala:74
 msgid "Username"
-msgstr ""
+msgstr "ناوی بەکارهێنەر"
 
-#: src/Views/AccountView.vala:52
+#: src/Views/AccountView.vala:81
 msgid "Choose a Password"
-msgstr ""
+msgstr "تێپەڕەوشەیەک هەڵبژێرە"
 
-#: src/Views/AccountView.vala:68
+#: src/Views/AccountView.vala:97
 msgid "Confirm Password"
-msgstr ""
+msgstr "دووبارە تێپەڕەوشەکە بنووسەوە بۆ دڵنیابوونەوە"
 
-#: src/Views/AccountView.vala:78
+#: src/Views/AccountView.vala:107
 msgid "Device name"
-msgstr ""
+msgstr "ناوی ئامێر"
 
-#: src/Views/AccountView.vala:91
+#: src/Views/AccountView.vala:120
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
+"ئەم ناوە بۆ ئامێرەکانی تر لە کاتی هاوبەشکردندا دەبینرێت، بۆ نموونە. بە "
+"بلوتوز یان لە ڕێگەی تۆڕەوە پەیوەندی دەبەستیت."
 
-#: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
+#: src/Views/AccountView.vala:154 src/Views/KeyboardLayoutView.vala:52
 #: src/Views/NetworkView.vala:86
 msgid "Back"
-msgstr ""
+msgstr "گەڕانەوە"
 
-#: src/Views/AccountView.vala:127
+#: src/Views/AccountView.vala:156
 msgid "Finish Setup"
-msgstr ""
+msgstr "تەواوکردنی دامەزراندن"
 
-#: src/Views/AccountView.vala:219
+#: src/Views/AccountView.vala:238
 msgid "Passwords do not match"
-msgstr ""
+msgstr "تێپەڕەوشەکان هاوتا نین"
 
-#: src/Views/AccountView.vala:244
+#: src/Views/AccountView.vala:263
 msgid "The chosen username is already taken"
-msgstr ""
+msgstr "ناوی بەکارهێنەری هەڵبژێردراو پێشتر گیراوە"
 
-#: src/Views/AccountView.vala:246
+#: src/Views/AccountView.vala:265
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
+"ناوی بەکار‌هێنەر دەبێت تەنها لە پیتە بچوکەکان و ژمارەکان پێکبێت، بەبێ بۆشایی"
+
+#: src/Views/AccountView.vala:290
+msgid ""
+"Initial Setup could not create your user. Without it, you will not be able "
+"to log in and may need to reinstall the OS."
+msgstr ""
+"دامەزراندنی سەرەتایی نەیتوانی بەکارهێنەرەکەت دروست بکات. بەبێ بەکارهێنەریش، "
+"ناتوانیت بچیتە ناو سیستەمەکە، بۆیە لەوەیە پێویست بکات دوبارە سیستەمەکە "
+"دامەزرێنیتەوە."
+
+#: src/Views/AccountView.vala:309
+#, c-format
+msgid "Creating User '%s' Failed"
+msgstr "دروستکردنی بەکارهێنەر '%s' شکستی هێنا"
+
+#: src/Views/AccountView.vala:313
+#, c-format
+msgid "No Permission to Create User '%s'"
+msgstr "هیچ مۆڵەتێک نییە بۆ دروستکردنی بەکارهێنەری '%s'"
 
 #: src/Views/KeyboardLayoutView.vala:26
 msgid "Select Keyboard Layout"
-msgstr ""
+msgstr "ڕووکاری تەختەکلیل دیاریبکە"
 
 #: src/Views/KeyboardLayoutView.vala:35
 msgid "Type to test your layout"
-msgstr ""
+msgstr "لێرە بنووسە بۆ تاقیکردنەوەی ڕووکاری تەختەکلیلەکەت"
 
 #: src/Views/KeyboardLayoutView.vala:38
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "پشاندانی ڕووکاری تەختەکلیل"
 
 #: src/Views/KeyboardLayoutView.vala:54 src/Views/LanguageView.vala:111
 #: src/Views/LanguageView.vala:174
 msgid "Select"
-msgstr ""
+msgstr "دیاریکردن"
 
 #: src/Views/KeyboardLayoutView.vala:123
 msgid "Input Language"
-msgstr ""
+msgstr "زمانی بەکارهێنان"
 
 #: src/Views/LanguageView.vala:207
 msgid "Languages"
-msgstr ""
+msgstr "زمانەکان"
 
 #: src/Views/LanguageView.vala:242
 msgid "Use the right mouse button for primary click?"
-msgstr ""
+msgstr "بەکارهێنای دوگمەی لای ڕاستی ماوس بۆ کرتەی سەرەکی؟"
 
 #: src/Views/LanguageView.vala:243
 msgid ""
 "The right mouse button was used where a primary click was expected. You can "
 "choose to always use the right mouse button for primary click."
 msgstr ""
+"دوگمەی ڕاستی ماوس لەو شوێنانە بەکارهات کە چاوەڕوان دەکرا کرتەی سەرەکی بکرێت. "
+"دەتوانیت هەڵبژێریت کە هەمیشە دوگمەی ڕاستی ماوس بەکاربهێنیت بۆ کرتەی سەرەکی."
 
 #: src/Views/LanguageView.vala:244 src/Views/LanguageView.vala:251
 msgid "Right-Click as Primary"
-msgstr ""
+msgstr "کرتەی لای ڕاست وەکو سەرەکی"
 
 #: src/Views/LanguageView.vala:245 src/Views/LanguageView.vala:250
 msgid "Left-Click as Primary"
-msgstr ""
+msgstr "کرتەی لای چەپ وەکو سەرەکی"
 
 #: src/Views/LanguageView.vala:248
 msgid "Use the left mouse button for primary click?"
-msgstr ""
+msgstr "بەکارهێنای دوگمەی لای چەپی ماوس بۆ کرتەی سەرەکی؟"
 
 #: src/Views/LanguageView.vala:249
 msgid ""
 "The left mouse button was used where a primary click was expected. You can "
 "choose to always use the left mouse button for primary click."
 msgstr ""
+"دوگمەی چەپی ماوس لەو شوێنانە بەکارهات کە چاوەڕوان دەکرا کرتەی سەرەکی بکرێت. "
+"دەتوانیت هەڵبژێریت کە هەمیشە دوگمەی چەپی ماوس بەکاربهێنیت بۆ کرتەی سەرەکی."
 
 #: src/Views/LanguageView.vala:309
 msgid "Select a Language"
-msgstr ""
+msgstr "زمانێک دیاریکە"
 
 #: src/Views/LanguageView.vala:332 src/Views/LanguageView.vala:391
 msgid "Currently active language"
-msgstr ""
+msgstr "زمانی کارای ئێستا"
 
 #: src/Views/NetworkView.vala:29
 msgid "Connect Network"
-msgstr ""
+msgstr "پەیوەندیکردن بە تۆڕەوە"
 
 #: src/Views/NetworkView.vala:34
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
 msgstr ""
+"بۆ وەرگرتنی نوێکارییەکان و دامەزراندنی ئەپی نوێ و پەیوەندیکردن بە "
+"خزمەتگوزارییە ئۆنلاینەکانەوە پێویستە هێڵی ئینتەرنێت هەبێت"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:49
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
 msgstr ""
+"لە لای ڕاست لە سەرەوە، لە نیشاندەری تۆڕەکان؛ تۆڕێکی بێ وەیاری نزیک هەڵبژێرە."
 
 #: src/Views/NetworkView.vala:63
 msgid "Connect a network cable"
-msgstr ""
+msgstr "پەیوەستکردنی تۆڕێکی کەیبڵ"
 
 #: src/Views/NetworkView.vala:88
 msgid "Skip"
-msgstr ""
+msgstr "تێپەڕاندن"
 
 #: src/Views/NetworkView.vala:106
 msgid "Next"
-msgstr ""
+msgstr "دواتر"
 
 #~ msgid "translator-credits"
 #~ msgstr ""

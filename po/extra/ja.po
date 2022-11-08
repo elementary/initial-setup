@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-01 19:26+0000\n"
-"PO-Revision-Date: 2021-12-09 05:26+0000\n"
+"POT-Creation-Date: 2022-04-08 03:19+0000\n"
+"PO-Revision-Date: 2022-04-09 00:55+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/ja/>\n"
@@ -60,7 +60,7 @@ msgstr "2本指スワイプで1つ前の設定画面に戻れるように修正"
 #: data/io.elementary.initial-setup.appdata.xml.in:48
 #: data/io.elementary.initial-setup.appdata.xml.in:56
 msgid "Minor updates:"
-msgstr "軽微なアップデート:"
+msgstr "そのほかのアップデート:"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:50
 #: data/io.elementary.initial-setup.appdata.xml.in:62

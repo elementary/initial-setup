@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-01 19:26+0000\n"
-"PO-Revision-Date: 2022-01-13 01:18+0000\n"
+"POT-Creation-Date: 2022-04-08 03:19+0000\n"
+"PO-Revision-Date: 2022-02-02 08:50+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/installer/initial-"
 "setup/fr/>\n"
@@ -19,35 +19,16 @@ msgstr ""
 msgid "Create a User"
 msgstr "Créer un compte utilisateur"
 
-#: src/Utils.vala:53
-msgid ""
-"Initial Setup could not create your user. Without it, you will not be able "
-"to log in and may need to reinstall the OS."
-msgstr ""
-"La configuration initiale n'a pas pu créer votre utilisateur. Sans cela, "
-"vous ne pourrez pas vous connecter et aurez peut-être besoin de réinstaller "
-"le système d'exploitation."
-
-#: src/Utils.vala:65
-#, c-format
-msgid "Creating User '%s' Failed"
-msgstr "La création de l'utilisateur « %s » a échoué"
-
-#: src/Utils.vala:69
-#, c-format
-msgid "No Permission to Create User '%s'"
-msgstr "Aucun permission pour créer l'utilisateur '%s'"
-
-#: src/Utils.vala:188
+#: src/Utils.vala:83
 msgid "Initial Setup could not set your hostname."
 msgstr "La configuration initiale n'a pas pu définir votre nom d'hôte."
 
-#: src/Utils.vala:199
+#: src/Utils.vala:94
 #, c-format
 msgid "No Permission to set hostname '%s'"
 msgstr "Aucun autorisation pour créer le nom d'hôte « %s »"
 
-#: src/Utils.vala:202
+#: src/Utils.vala:97
 #, c-format
 msgid "Unable to set Hostname '%s'"
 msgstr "Impossible de définir le nom d'hôte « %s »"
@@ -61,31 +42,31 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Par défaut"
 
-#: src/Views/AccountView.vala:36
+#: src/Views/AccountView.vala:65
 msgid "Create an Account"
 msgstr "Créer un compte"
 
-#: src/Views/AccountView.vala:40
+#: src/Views/AccountView.vala:69
 msgid "Full Name"
 msgstr "Nom complet"
 
-#: src/Views/AccountView.vala:45
+#: src/Views/AccountView.vala:74
 msgid "Username"
 msgstr "Nom d'utilisateur"
 
-#: src/Views/AccountView.vala:52
+#: src/Views/AccountView.vala:81
 msgid "Choose a Password"
 msgstr "Choisissez un mot de passe"
 
-#: src/Views/AccountView.vala:68
+#: src/Views/AccountView.vala:97
 msgid "Confirm Password"
 msgstr "Confirmez le mot de passe"
 
-#: src/Views/AccountView.vala:78
+#: src/Views/AccountView.vala:107
 msgid "Device name"
 msgstr "Nom de l'appareil"
 
-#: src/Views/AccountView.vala:91
+#: src/Views/AccountView.vala:120
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
@@ -93,29 +74,48 @@ msgstr ""
 "Visible des autres appareils lors du partage, par ex. avec le Bluetooth ou "
 "sur le réseau."
 
-#: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
+#: src/Views/AccountView.vala:154 src/Views/KeyboardLayoutView.vala:52
 #: src/Views/NetworkView.vala:86
 msgid "Back"
 msgstr "Précédent"
 
-#: src/Views/AccountView.vala:127
+#: src/Views/AccountView.vala:156
 msgid "Finish Setup"
 msgstr "Terminer la configuration"
 
-#: src/Views/AccountView.vala:219
+#: src/Views/AccountView.vala:238
 msgid "Passwords do not match"
 msgstr "Les mots de passe ne correspondent pas"
 
-#: src/Views/AccountView.vala:244
+#: src/Views/AccountView.vala:263
 msgid "The chosen username is already taken"
 msgstr "Le nom d'utilisateur est déjà pris"
 
-#: src/Views/AccountView.vala:246
+#: src/Views/AccountView.vala:265
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
 "Le nom d'utilisateur ne peut contenir que des lettres minuscules et des "
 "nombres, mais pas d'espaces"
+
+#: src/Views/AccountView.vala:290
+msgid ""
+"Initial Setup could not create your user. Without it, you will not be able "
+"to log in and may need to reinstall the OS."
+msgstr ""
+"La configuration initiale n'a pas pu créer votre utilisateur. Sans cela, "
+"vous ne pourrez pas vous connecter et aurez peut-être besoin de réinstaller "
+"le système d'exploitation."
+
+#: src/Views/AccountView.vala:309
+#, c-format
+msgid "Creating User '%s' Failed"
+msgstr "La création de l'utilisateur « %s » a échoué"
+
+#: src/Views/AccountView.vala:313
+#, c-format
+msgid "No Permission to Create User '%s'"
+msgstr "Aucun permission pour créer l'utilisateur '%s'"
 
 #: src/Views/KeyboardLayoutView.vala:26
 msgid "Select Keyboard Layout"
@@ -185,28 +185,28 @@ msgid "Currently active language"
 msgstr "Langue actuellement active"
 
 #: src/Views/NetworkView.vala:29
-#, fuzzy
-#| msgid "Connect to a Power Source"
 msgid "Connect Network"
-msgstr "Connecter à une source d'alimentation"
+msgstr "Connexion au réseau"
 
 #: src/Views/NetworkView.vala:34
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
 msgstr ""
+"Une connexion Internet est requise pour recevoir des mises à jour, installer "
+"de nouvelles applications, et se connecter aux services en ligne"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:49
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
 msgstr ""
+"Sélectionnez un réseau Wi-Fi à proximité depuis l'indicateur de réseau en "
+"haut à droite."
 
 #: src/Views/NetworkView.vala:63
-#, fuzzy
-#| msgid "Connect to a Power Source"
 msgid "Connect a network cable"
-msgstr "Connecter à une source d'alimentation"
+msgstr "Connectez un câble réseau"
 
 #: src/Views/NetworkView.vala:88
 msgid "Skip"

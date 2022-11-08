@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-01 19:26+0000\n"
-"PO-Revision-Date: 2021-09-04 16:04+0000\n"
-"Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
+"POT-Creation-Date: 2022-04-08 03:19+0000\n"
+"PO-Revision-Date: 2022-09-30 15:23+0000\n"
+"Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/ru/>\n"
 "Language: ru\n"
@@ -44,7 +44,7 @@ msgid ""
 "a language and creating a user account."
 msgstr ""
 "Помогает выполнить основные задачи, прежде чем свежая установка станет "
-"пригодной для использования, например, выбор языка и создание учетной записи "
+"пригодной для использования, например, выбор языка и создание учётной записи "
 "пользователя."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:43
@@ -72,7 +72,7 @@ msgstr "Обновления переводов"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:58
 msgid "Set keyboard layout in accountsservice"
-msgstr "Установка раскладки клавиатуры в службе учетных записей"
+msgstr "Установка раскладки клавиатуры в службе учётных записей"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:59
 msgid "Add multitouch gestures"
@@ -84,7 +84,7 @@ msgstr "Установка правильных локалей"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:61
 msgid "New colorful avatar fallback"
-msgstr "Возвращение нового красочного аватара"
+msgstr "Новые красочные аватары"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:73
 msgid "Initial release"

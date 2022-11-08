@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.initial-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-01 19:26+0000\n"
+"POT-Creation-Date: 2022-04-08 03:19+0000\n"
 "PO-Revision-Date: 2021-08-01 12:30+0000\n"
 "Last-Translator: elSolus <tumbleweed@tuta.io>\n"
 "Language-Team: Punjabi <https://l10n.elementary.io/projects/installer/"
@@ -23,35 +23,17 @@ msgstr ""
 msgid "Create a User"
 msgstr "ਕੋਈ ਵਰਤੋਂਕਾਰ ਬਣਾਓ"
 
-#: src/Utils.vala:53
-msgid ""
-"Initial Setup could not create your user. Without it, you will not be able "
-"to log in and may need to reinstall the OS."
-msgstr ""
-"ਸ਼ੁਰੂਆਤੀ ਸੈੱਟਅਪ ਤੁਹਾਡੇ ਵਰਤੋਂਕਾਰ ਨੂੰ ਬਣਾ ਨਹੀਂ ਸਕਿਆ। ਇਸ ਤੋਂ ਬਿਨਾਂ ਤੁਸੀਂ ਲਾਗਇਨ ਨਹੀਂ ਕਰ ਸਕਦੇ ਅਤੇ ਹੋ "
-"ਸਕਦੈ ਤੁਹਾਨੂੰ ਅਪਰੇਟਿੰਗ ਸਿਸਟਮ ਦੁਬਾਰਾ ਇੰਸਟਾਲ ਕਰਨਾ ਪਵੇ।"
-
-#: src/Utils.vala:65
-#, c-format
-msgid "Creating User '%s' Failed"
-msgstr "ਵਰਤੋਂਕਾਰ '%s' ਬਣਾਉਣਾ ਨਾਕਾਮ ਰਿਹਾ"
-
-#: src/Utils.vala:69
-#, c-format
-msgid "No Permission to Create User '%s'"
-msgstr "ਵਰਤੋਂਕਾਰ '%s' ਬਣਾਉਣ ਦੀ ਇਜਾਜ਼ਤ ਨਹੀਂ ਹੈ"
-
-#: src/Utils.vala:188
+#: src/Utils.vala:83
 msgid "Initial Setup could not set your hostname."
 msgstr ""
 
-#: src/Utils.vala:199
+#: src/Utils.vala:94
 #, fuzzy, c-format
 #| msgid "No Permission to Create User '%s'"
 msgid "No Permission to set hostname '%s'"
 msgstr "ਵਰਤੋਂਕਾਰ '%s' ਬਣਾਉਣ ਦੀ ਇਜਾਜ਼ਤ ਨਹੀਂ ਹੈ"
 
-#: src/Utils.vala:202
+#: src/Utils.vala:97
 #, c-format
 msgid "Unable to set Hostname '%s'"
 msgstr ""
@@ -65,57 +47,75 @@ msgstr "%s…"
 msgid "Default"
 msgstr "ਡਿਫ਼ਾਲਟ"
 
-#: src/Views/AccountView.vala:36
+#: src/Views/AccountView.vala:65
 msgid "Create an Account"
 msgstr "ਕੋਈ ਖਾਤਾ ਬਣਾਓ"
 
-#: src/Views/AccountView.vala:40
+#: src/Views/AccountView.vala:69
 msgid "Full Name"
 msgstr "ਪੂਰਾ ਨਾਂ"
 
-#: src/Views/AccountView.vala:45
+#: src/Views/AccountView.vala:74
 msgid "Username"
 msgstr "ਵਰਤੋਂਕਾਰ-ਨਾਂ"
 
-#: src/Views/AccountView.vala:52
+#: src/Views/AccountView.vala:81
 msgid "Choose a Password"
 msgstr "ਪਾਸਵਰਡ ਚੁਣੋ"
 
-#: src/Views/AccountView.vala:68
+#: src/Views/AccountView.vala:97
 msgid "Confirm Password"
 msgstr "ਪਾਸਵਰਡ ਤਸਦੀਕ ਕਰੋ"
 
-#: src/Views/AccountView.vala:78
+#: src/Views/AccountView.vala:107
 msgid "Device name"
 msgstr ""
 
-#: src/Views/AccountView.vala:91
+#: src/Views/AccountView.vala:120
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
 
-#: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
+#: src/Views/AccountView.vala:154 src/Views/KeyboardLayoutView.vala:52
 #: src/Views/NetworkView.vala:86
 msgid "Back"
 msgstr "ਪਿੱਛੇ ਜਾਓ"
 
-#: src/Views/AccountView.vala:127
+#: src/Views/AccountView.vala:156
 msgid "Finish Setup"
 msgstr "ਸੈੱਟਅਪ ਮੁਕਾਓ"
 
-#: src/Views/AccountView.vala:219
+#: src/Views/AccountView.vala:238
 msgid "Passwords do not match"
 msgstr "ਪਾਸਵਰਡ ਮੇਲ ਨਹੀਂ ਖਾਂਦੇ"
 
-#: src/Views/AccountView.vala:244
+#: src/Views/AccountView.vala:263
 msgid "The chosen username is already taken"
 msgstr "ਚੁਣਿਆ ਹੋਇਆ ਵਰਤੋਂਕਾਰ-ਨਾਂ ਪਹਿਲਾਂ ਹੀ ਕਿਸੇ ਨੇ ਵਰਤਿਆ ਹੋਇਐ"
 
-#: src/Views/AccountView.vala:246
+#: src/Views/AccountView.vala:265
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr "ਵਰਤੋਂਕਾਰ-ਨਾਂ ਵਿੱਚ ਸਿਰਫ਼ ਅੰਗਰੇਜ਼ੀ ਦੇ ਛੋਟੇ ਅੱਖਰ ਅਤੇ ਨੰਬਰ ਵਰਤਣ ਦੀ ਇਜਾਜ਼ਤ ਹੈ, ਬਿਨਾਂ ਸਪੇਸ ਤੋਂ"
+
+#: src/Views/AccountView.vala:290
+msgid ""
+"Initial Setup could not create your user. Without it, you will not be able "
+"to log in and may need to reinstall the OS."
+msgstr ""
+"ਸ਼ੁਰੂਆਤੀ ਸੈੱਟਅਪ ਤੁਹਾਡੇ ਵਰਤੋਂਕਾਰ ਨੂੰ ਬਣਾ ਨਹੀਂ ਸਕਿਆ। ਇਸ ਤੋਂ ਬਿਨਾਂ ਤੁਸੀਂ ਲਾਗਇਨ ਨਹੀਂ ਕਰ ਸਕਦੇ ਅਤੇ ਹੋ "
+"ਸਕਦੈ ਤੁਹਾਨੂੰ ਅਪਰੇਟਿੰਗ ਸਿਸਟਮ ਦੁਬਾਰਾ ਇੰਸਟਾਲ ਕਰਨਾ ਪਵੇ।"
+
+#: src/Views/AccountView.vala:309
+#, c-format
+msgid "Creating User '%s' Failed"
+msgstr "ਵਰਤੋਂਕਾਰ '%s' ਬਣਾਉਣਾ ਨਾਕਾਮ ਰਿਹਾ"
+
+#: src/Views/AccountView.vala:313
+#, c-format
+msgid "No Permission to Create User '%s'"
+msgstr "ਵਰਤੋਂਕਾਰ '%s' ਬਣਾਉਣ ਦੀ ਇਜਾਜ਼ਤ ਨਹੀਂ ਹੈ"
 
 #: src/Views/KeyboardLayoutView.vala:26
 msgid "Select Keyboard Layout"

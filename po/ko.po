@@ -2,55 +2,36 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-01 19:26+0000\n"
-"PO-Revision-Date: 2019-05-05 18:32+0000\n"
+"POT-Creation-Date: 2022-04-08 03:19+0000\n"
+"PO-Revision-Date: 2022-08-07 18:13+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
-"Language-Team: Korean <https://l10n.elementary.io/projects/installer/initial-"
-"setup/ko/>\n"
+"Language-Team: Korean <https://l10n.elementary.io/projects/installer/"
+"initial-setup/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/MainWindow.vala:34
 msgid "Create a User"
 msgstr "사용자 계정 만들기"
 
-#: src/Utils.vala:53
-msgid ""
-"Initial Setup could not create your user. Without it, you will not be able "
-"to log in and may need to reinstall the OS."
-msgstr ""
-"초기 설정에서 사용자 계정이 만들어지지 않습니다. 사용자 계정이 없으면, 로그인"
-"할 수 없으며 OS를 다시 설치해야 할 수도 있습니다."
-
-#: src/Utils.vala:65
-#, c-format
-msgid "Creating User '%s' Failed"
-msgstr "'%s' 사용자를 만들지 못했습니다"
-
-#: src/Utils.vala:69
-#, c-format
-msgid "No Permission to Create User '%s'"
-msgstr "'%s' 사용자를 만들 수 있는 권한이 없습니다"
-
-#: src/Utils.vala:188
+#: src/Utils.vala:83
 msgid "Initial Setup could not set your hostname."
-msgstr ""
+msgstr "초기 설정에서 호스트 이름을 설정할 수 없습니다."
 
-#: src/Utils.vala:199
-#, fuzzy, c-format
-#| msgid "No Permission to Create User '%s'"
+#: src/Utils.vala:94
+#, c-format
 msgid "No Permission to set hostname '%s'"
-msgstr "'%s' 사용자를 만들 수 있는 권한이 없습니다"
+msgstr "'%s' 호스트 이름 설정 권한이 없습니다"
 
-#: src/Utils.vala:202
+#: src/Utils.vala:97
 #, c-format
 msgid "Unable to set Hostname '%s'"
-msgstr ""
+msgstr "'%s' 호스트 이름을 설정할 수 없습니다"
 
 #: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:180
 #, c-format
@@ -61,63 +42,79 @@ msgstr "%s…"
 msgid "Default"
 msgstr "기본"
 
-#: src/Views/AccountView.vala:36
+#: src/Views/AccountView.vala:65
 msgid "Create an Account"
 msgstr "계정 만들기"
 
-#: src/Views/AccountView.vala:40
+#: src/Views/AccountView.vala:69
 msgid "Full Name"
 msgstr "이름"
 
-#: src/Views/AccountView.vala:45
+#: src/Views/AccountView.vala:74
 msgid "Username"
 msgstr "사용자 이름"
 
-#: src/Views/AccountView.vala:52
+#: src/Views/AccountView.vala:81
 msgid "Choose a Password"
 msgstr "비밀번호 설정"
 
-#: src/Views/AccountView.vala:68
+#: src/Views/AccountView.vala:97
 msgid "Confirm Password"
 msgstr "비밀번호 확인"
 
-#: src/Views/AccountView.vala:78
+#: src/Views/AccountView.vala:107
 msgid "Device name"
-msgstr ""
+msgstr "장치 이름"
 
-#: src/Views/AccountView.vala:91
+#: src/Views/AccountView.vala:120
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
-msgstr ""
+msgstr "공유할 때 다른 장치에서 볼 수 있습니다, 예) 블루투스나 네트워크에서."
 
-#: src/Views/AccountView.vala:125 src/Views/KeyboardLayoutView.vala:52
+#: src/Views/AccountView.vala:154 src/Views/KeyboardLayoutView.vala:52
 #: src/Views/NetworkView.vala:86
 msgid "Back"
 msgstr "뒤로"
 
-#: src/Views/AccountView.vala:127
+#: src/Views/AccountView.vala:156
 msgid "Finish Setup"
 msgstr "설정 끝내기"
 
-#: src/Views/AccountView.vala:219
+#: src/Views/AccountView.vala:238
 msgid "Passwords do not match"
 msgstr "비밀번호가 맞지 않습니다"
 
-#: src/Views/AccountView.vala:244
+#: src/Views/AccountView.vala:263
 msgid "The chosen username is already taken"
 msgstr "사용자 이름이 이미 사용 중입니다"
 
-#: src/Views/AccountView.vala:246
+#: src/Views/AccountView.vala:265
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr "사용자 이름은 여백 없이 소문자와 숫자로만 구성할 수 있습니다"
 
+#: src/Views/AccountView.vala:290
+msgid ""
+"Initial Setup could not create your user. Without it, you will not be able "
+"to log in and may need to reinstall the OS."
+msgstr ""
+"초기 설정에서 사용자 계정이 만들어지지 않습니다. 사용자 계정이 없으면, 로그인"
+"할 수 없으며 OS를 다시 설치해야 할 수도 있습니다."
+
+#: src/Views/AccountView.vala:309
+#, c-format
+msgid "Creating User '%s' Failed"
+msgstr "'%s' 사용자를 만들지 못했습니다"
+
+#: src/Views/AccountView.vala:313
+#, c-format
+msgid "No Permission to Create User '%s'"
+msgstr "'%s' 사용자를 만들 수 있는 권한이 없습니다"
+
 #: src/Views/KeyboardLayoutView.vala:26
-#, fuzzy
-#| msgid "Keyboard Layout"
 msgid "Select Keyboard Layout"
-msgstr "키보드 배치"
+msgstr "키보드 레이아웃 선택"
 
 #: src/Views/KeyboardLayoutView.vala:35
 msgid "Type to test your layout"
@@ -125,7 +122,7 @@ msgstr "타이핑해서 키보드 배치를 확인해보세요"
 
 #: src/Views/KeyboardLayoutView.vala:38
 msgid "Show keyboard layout"
-msgstr "키보드 배치 보기"
+msgstr "키보드 레이아웃 보기"
 
 #: src/Views/KeyboardLayoutView.vala:54 src/Views/LanguageView.vala:111
 #: src/Views/LanguageView.vala:174
@@ -142,31 +139,33 @@ msgstr "언어"
 
 #: src/Views/LanguageView.vala:242
 msgid "Use the right mouse button for primary click?"
-msgstr ""
+msgstr "기본 클릭으로 마우스 오른쪽 버튼을 사용하시겠습니까?"
 
 #: src/Views/LanguageView.vala:243
 msgid ""
 "The right mouse button was used where a primary click was expected. You can "
 "choose to always use the right mouse button for primary click."
 msgstr ""
+"마우스 오른쪽 버튼은 기본 클릭이 예상되는 곳에 사용되었습니다. 기본 클릭에 항상 마우스 오른쪽 버튼을 사용하도록 선택할 수 있습니다."
 
 #: src/Views/LanguageView.vala:244 src/Views/LanguageView.vala:251
 msgid "Right-Click as Primary"
-msgstr ""
+msgstr "오른쪽 클릭 기본"
 
 #: src/Views/LanguageView.vala:245 src/Views/LanguageView.vala:250
 msgid "Left-Click as Primary"
-msgstr ""
+msgstr "왼쪽 클릭 기본"
 
 #: src/Views/LanguageView.vala:248
 msgid "Use the left mouse button for primary click?"
-msgstr ""
+msgstr "기본 클릭으로 마우스 왼쪽 버튼을 사용하시겠습니까?"
 
 #: src/Views/LanguageView.vala:249
 msgid ""
 "The left mouse button was used where a primary click was expected. You can "
 "choose to always use the left mouse button for primary click."
 msgstr ""
+"마우스 왼쪽 버튼은 기본 클릭이 예상되는 곳에 사용되었습니다. 기본 클릭에 항상 마우스 왼쪽 버튼을 사용하도록 선택할 수 있습니다."
 
 #: src/Views/LanguageView.vala:309
 msgid "Select a Language"
@@ -178,31 +177,31 @@ msgstr "현재 사용하고 있는 언어"
 
 #: src/Views/NetworkView.vala:29
 msgid "Connect Network"
-msgstr ""
+msgstr "네트워크 연결"
 
 #: src/Views/NetworkView.vala:34
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
-msgstr ""
+msgstr "업데이트, 새로운 앱 설치, 온라인 서비스 연결 등을 하려면 인터넷에 연결해야 합니다"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:49
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
-msgstr ""
+msgstr "오른쪽 상단의 네트워크 표시기에서 가까운 무선 네트워크를 선택합니다."
 
 #: src/Views/NetworkView.vala:63
 msgid "Connect a network cable"
-msgstr ""
+msgstr "네크워크 케이블 연결"
 
 #: src/Views/NetworkView.vala:88
 msgid "Skip"
-msgstr ""
+msgstr "건너 뛰기"
 
 #: src/Views/NetworkView.vala:106
 msgid "Next"
-msgstr ""
+msgstr "다음"
 
 #~ msgid "Cancel Installation"
 #~ msgstr "설치 취소"

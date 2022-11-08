@@ -24,10 +24,18 @@
     <binary>io.elementary.initial-setup</binary>
   </provides>
   <releases>
-    <release version="6.2.0" date="2022-01-11" urgency="medium">
+    <release version="6.2.1" date="2022-10-20" urgency="medium">
+      <p>Improvements:</p>
+      <ul>
+        <li>Updated translations</li>
+      </ul>
+    </release>
+
+    <release version="6.2.0" date="2022-05-09" urgency="medium">
       <p>Improvements:</p>
       <ul>
         <li>Offer to switch to right-click primary mouse button</li>
+        <li>Suggest connecting to a network</li>
         <li>Updated translations</li>
       </ul>
     </release>
