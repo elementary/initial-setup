@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-08 03:19+0000\n"
+"POT-Creation-Date: 2022-11-10 00:25+0000\n"
 "PO-Revision-Date: 2022-08-09 13:14+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/installer/"
@@ -188,13 +188,16 @@ msgstr "ネットワークに接続"
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
-msgstr "アップデートの取得や、新しいアプリのインストール、オンラインサービスへの接続には、インターネット接続が必要です"
+msgstr ""
+"アップデートの取得や、新しいアプリのインストール、オンラインサービスへの接続"
+"には、インターネット接続が必要です"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:49
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
-msgstr "右上のネットワークインジケーターから、付近の無線ネットワークを選択します。"
+msgstr ""
+"右上のネットワークインジケーターから、付近の無線ネットワークを選択します。"
 
 #: src/Views/NetworkView.vala:63
 msgid "Connect a network cable"

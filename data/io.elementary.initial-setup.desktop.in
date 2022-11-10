@@ -2,7 +2,7 @@
 Name=Set up elementary OS
 Comment=Set up the system
 Exec=pkexec io.elementary.initial-setup
-Icon=system-os-installer
+Icon=io.elementary.initial-setup
 Terminal=false
 Type=Application
 StartupNotify=true
