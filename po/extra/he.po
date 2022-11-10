@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-08 03:19+0000\n"
+"POT-Creation-Date: 2022-11-10 00:25+0000\n"
 "PO-Revision-Date: 2021-08-25 10:49+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/installer/initial-"
@@ -23,8 +23,8 @@ msgid "Set up the system"
 msgstr "התקנת המערכת"
 
 #: data/io.elementary.initial-setup.desktop.in:6
-msgid "system-os-installer"
-msgstr "system-os-installer"
+msgid "io.elementary.initial-setup"
+msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:7
 msgid "Initial Setup"
@@ -38,49 +38,52 @@ msgstr ""
 "מסייע במשימות חיוניות בטרם תחילת השימוש בהתקנה נקייה, כמו למשל לבחור את השפה "
 "וליצור חשבון משתמש."
 
-#: data/io.elementary.initial-setup.appdata.xml.in:43
+#: data/io.elementary.initial-setup.appdata.xml.in:51
 msgid "New features:"
 msgstr "יכולות חדשות:"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:45
+#: data/io.elementary.initial-setup.appdata.xml.in:53
 msgid "Confirm and change device name"
 msgstr "אישור ושינוי שם המכשיר"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:46
+#: data/io.elementary.initial-setup.appdata.xml.in:54
 msgid "Two-finger swipe to navigate back"
 msgstr "החלקה בשתי אצבעות כדי לנווט אחורה"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:48
 #: data/io.elementary.initial-setup.appdata.xml.in:56
+#: data/io.elementary.initial-setup.appdata.xml.in:64
 msgid "Minor updates:"
 msgstr "עדכונים משניים:"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:50
-#: data/io.elementary.initial-setup.appdata.xml.in:62
-#: data/io.elementary.initial-setup.appdata.xml.in:68
+#: data/io.elementary.initial-setup.appdata.xml.in:58
+#: data/io.elementary.initial-setup.appdata.xml.in:70
+#: data/io.elementary.initial-setup.appdata.xml.in:76
 msgid "Translation updates"
 msgstr "עדכון תרגומים"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:58
+#: data/io.elementary.initial-setup.appdata.xml.in:66
 msgid "Set keyboard layout in accountsservice"
 msgstr "הגדרת פריסת מקלדת בשירות החשבונות (accountsservice)"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:59
+#: data/io.elementary.initial-setup.appdata.xml.in:67
 msgid "Add multitouch gestures"
 msgstr "נוספה תמיכה במחוות מגע במספר נקודות"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:60
+#: data/io.elementary.initial-setup.appdata.xml.in:68
 msgid "Set correct locales"
 msgstr "הגדרות השפה הנכונות תיבחרנה"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:61
+#: data/io.elementary.initial-setup.appdata.xml.in:69
 msgid "New colorful avatar fallback"
 msgstr "תמונה ייצוגית צבעונית חדשה כנסיגה"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:73
+#: data/io.elementary.initial-setup.appdata.xml.in:81
 msgid "Initial release"
 msgstr "מהדורה ראשונה"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:80
+#: data/io.elementary.initial-setup.appdata.xml.in:88
 msgid "elementary, Inc."
 msgstr "elementary בע״מ"
+
+#~ msgid "system-os-installer"
+#~ msgstr "system-os-installer"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-08 03:19+0000\n"
+"POT-Creation-Date: 2022-11-10 00:25+0000\n"
 "PO-Revision-Date: 2022-08-04 14:23+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -30,8 +30,8 @@ msgid "Set up the system"
 msgstr "ڕێکخستنی سیستەمەکە"
 
 #: data/io.elementary.initial-setup.desktop.in:6
-msgid "system-os-installer"
-msgstr "system-os-installer"
+msgid "io.elementary.initial-setup"
+msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:7
 msgid "Initial Setup"
@@ -43,52 +43,55 @@ msgid ""
 "a language and creating a user account."
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:43
+#: data/io.elementary.initial-setup.appdata.xml.in:51
 msgid "New features:"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:45
+#: data/io.elementary.initial-setup.appdata.xml.in:53
 msgid "Confirm and change device name"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:46
+#: data/io.elementary.initial-setup.appdata.xml.in:54
 msgid "Two-finger swipe to navigate back"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:48
 #: data/io.elementary.initial-setup.appdata.xml.in:56
+#: data/io.elementary.initial-setup.appdata.xml.in:64
 msgid "Minor updates:"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:50
-#: data/io.elementary.initial-setup.appdata.xml.in:62
-#: data/io.elementary.initial-setup.appdata.xml.in:68
+#: data/io.elementary.initial-setup.appdata.xml.in:58
+#: data/io.elementary.initial-setup.appdata.xml.in:70
+#: data/io.elementary.initial-setup.appdata.xml.in:76
 msgid "Translation updates"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:58
+#: data/io.elementary.initial-setup.appdata.xml.in:66
 msgid "Set keyboard layout in accountsservice"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:59
+#: data/io.elementary.initial-setup.appdata.xml.in:67
 msgid "Add multitouch gestures"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:60
+#: data/io.elementary.initial-setup.appdata.xml.in:68
 msgid "Set correct locales"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:61
+#: data/io.elementary.initial-setup.appdata.xml.in:69
 msgid "New colorful avatar fallback"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:73
+#: data/io.elementary.initial-setup.appdata.xml.in:81
 msgid "Initial release"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:80
+#: data/io.elementary.initial-setup.appdata.xml.in:88
 msgid "elementary, Inc."
 msgstr ""
+
+#~ msgid "system-os-installer"
+#~ msgstr "system-os-installer"
 
 #~ msgid "Calculator"
 #~ msgstr "ژمێرەر"
