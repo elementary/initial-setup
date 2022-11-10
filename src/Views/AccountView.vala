@@ -58,7 +58,8 @@ public class Installer.AccountView : AbstractInstallerView {
     private Granite.ValidatedEntry hostname_entry;
 
     construct {
-        var avatar = new Hdy.Avatar (48, null, true) {
+        var avatar = new Hdy.Avatar (104, null, true) {
+            margin = 12,
             valign = Gtk.Align.END
         };
 
