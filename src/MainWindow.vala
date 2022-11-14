@@ -29,7 +29,7 @@ public class Installer.MainWindow : Hdy.Window {
         Object (
             deletable: false,
             height_request: 700,
-            icon_name: "system-os-installer",
+            icon_name: Application.get_default ().application_id,
             resizable: false,
             title: _("Create a User"),
             width_request: 950
