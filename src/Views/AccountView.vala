@@ -335,7 +335,41 @@ public class Installer.AccountView : AbstractInstallerView {
         created_user.set_password (pw_entry.text, "");
         yield set_accounts_service_settings ();
         yield set_locale ();
+        yield set_timezone ();
+        yield set_clock_format ();
         Utils.set_hostname (hostname_entry.text);
+    }
+
+    private async void set_timezone () {
+        try {
+            LocationHelper.DateTime1 datetime1 = yield Bus.get_proxy (BusType.SYSTEM, "org.freedesktop.timedate1", "/org/freedesktop/timedate1");
+            unowned Configuration configuration = Configuration.get_default ();
+            datetime1.set_timezone (configuration.timezone, true);
+        } catch (Error e) {
+            warning (e.message);
+        }
+    }
+
+    private async void set_clock_format () {
+        AccountsService accounts_service = null;
+
+        try {
+            var act_service = yield GLib.Bus.get_proxy<FDO.Accounts> (GLib.BusType.SYSTEM,
+                                                                      "org.freedesktop.Accounts",
+                                                                      "/org/freedesktop/Accounts");
+            var user_path = act_service.find_user_by_name (created_user.user_name);
+
+            accounts_service = yield GLib.Bus.get_proxy (GLib.BusType.SYSTEM,
+                                                        "org.freedesktop.Accounts",
+                                                        user_path,
+                                                        GLib.DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
+        } catch (Error e) {
+            warning ("Unable to get AccountsService proxy, clock format on new user may be incorrect: %s", e.message);
+        }
+
+        if (accounts_service != null) {
+            accounts_service.clock_format = Configuration.get_default ().clock_format;
+        }
     }
 
     private async void set_locale () {
