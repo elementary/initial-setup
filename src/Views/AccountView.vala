@@ -288,7 +288,6 @@ public class Installer.AccountView : AbstractInstallerView {
     private void create_new_user () {
         string? primary_text = null;
         string? error_message = null;
-        string secondary_text = _("Initial Setup could not create your user. Without it, you will not be able to log in and may need to reinstall the OS.");
 
         if (permission != null && permission.allowed) {
             try {
@@ -307,27 +306,31 @@ public class Installer.AccountView : AbstractInstallerView {
                     }
                 }
 
-                primary_text = _("Creating User '%s' Failed").printf (username_entry.text);
+                primary_text = _("Creating an account for “%s” failed").printf (username_entry.text);
                 error_message = e.message;
             }
         } else {
-            primary_text = _("No Permission to Create User '%s'").printf (username_entry.text);
+            primary_text = _("Couldn't get permission to create an account for “%s”").printf (username_entry.text);
         }
 
         if (primary_text != null) {
             var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
                 primary_text,
-                secondary_text,
-                "dialog-error",
+                _("Initial Setup could not create this account. Without it, you will not be able to log in and may need to reinstall the OS."),
+                "system-users",
                 Gtk.ButtonsType.CLOSE
-            );
+            ) {
+                badge_icon = new ThemedIcon ("dialog-error"),
+                modal = true,
+                transient_for = (Gtk.Window) get_toplevel ()
+            };
 
             if (error_message != null) {
                 error_dialog.show_error_details (error_message);
             }
 
-            error_dialog.run ();
-            error_dialog.destroy ();
+            error_dialog.present ();
+            error_dialog.response.connect (error_dialog.destroy);
         }
     }
 
@@ -335,7 +338,50 @@ public class Installer.AccountView : AbstractInstallerView {
         created_user.set_password (pw_entry.text, "");
         yield set_accounts_service_settings ();
         yield set_locale ();
-        Utils.set_hostname (hostname_entry.text);
+        set_hostname (hostname_entry.text);
+    }
+
+    public bool set_hostname (string hostname) {
+        string? primary_text = null;
+        string? error_message = null;
+
+        try {
+            var permission = new Polkit.Permission.sync ("org.freedesktop.hostname1.set-static-hostname", new Polkit.UnixProcess (Posix.getpid ()));
+
+            if (permission != null && permission.allowed) {
+                Utils.get_hostname_interface_instance ();
+                Utils.hostname_interface_instance.set_pretty_hostname (hostname, false);
+                Utils.hostname_interface_instance.set_static_hostname (Utils.gen_hostname (hostname), false);
+            } else {
+                primary_text = _("Couldn't get permission to name this device “%s”").printf (hostname);
+            }
+        } catch (GLib.Error e) {
+            primary_text = _("Unable to name this device “%s”").printf (hostname);
+            error_message = e.message;
+        }
+
+        if (primary_text != null) {
+            var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
+                primary_text,
+                _("Initial Setup could not set your hostname."),
+                "dialog-error",
+                Gtk.ButtonsType.CLOSE
+            ) {
+                modal = true,
+                transient_for = (Gtk.Window) get_toplevel ()
+            };
+
+            if (error_message != null) {
+                error_dialog.show_error_details (error_message);
+            }
+
+            error_dialog.present ();
+            error_dialog.response.connect (error_dialog.destroy);
+
+            return false;
+        }
+
+        return true;
     }
 
     private async void set_locale () {
