@@ -57,7 +57,7 @@ public class Installer.LanguageView : AbstractInstallerView {
             transition_type = Gtk.StackTransitionType.CROSSFADE,
             valign = Gtk.Align.START
         };
-        select_stack.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
+        select_stack.add_css_class (Granite.STYLE_CLASS_H2_LABEL);
         select_stack.add_child (select_label);
 
         select_stack.notify["transition-running"].connect (() => {
@@ -109,7 +109,7 @@ public class Installer.LanguageView : AbstractInstallerView {
         next_button = new Gtk.Button.with_label (_("Select")) {
             sensitive = false
         };
-        next_button.get_style_context ().add_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
+        next_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
         action_area.append (next_button);
 
@@ -118,13 +118,13 @@ public class Installer.LanguageView : AbstractInstallerView {
         lang_variant_widget.main_listbox.row_activated.connect (row_activated);
 
         next_button.clicked.connect (on_next_button_clicked);
-        next_button.button_press_event.connect ((event) => {
-            if (event.button == Gdk.BUTTON_SECONDARY) {
-                on_next_button_secondary_clicked ();
-            }
+        // next_button.button_press_event.connect ((event) => {
+        //     if (event.button == Gdk.BUTTON_SECONDARY) {
+        //         on_next_button_secondary_clicked ();
+        //     }
 
-            return base.button_press_event (event);
-        });
+        //     return base.button_press_event (event);
+        // });
 
         destroy.connect (() => {
             // We need to disconnect the signal otherwise it's called several time when destroying the window…
@@ -255,28 +255,28 @@ public class Installer.LanguageView : AbstractInstallerView {
             Gtk.ButtonsType.NONE
         ) {
             modal = true,
-            transient_for = (Gtk.Window) get_toplevel ()
+            transient_for = (Gtk.Window) get_root ()
         };
         var cancel_action_button = dialog.add_button (cancel_action_label, Gtk.ResponseType.CANCEL);
 
         var suggested_action_button = dialog.add_button (suggested_action_label, Gtk.ResponseType.ACCEPT);
-        suggested_action_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        suggested_action_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
-        suggested_action_button.button_press_event.connect ((event) => {
-            if (event.button == Gdk.BUTTON_SECONDARY) {
-                suggested_action_button.activate ();
-            }
+        // suggested_action_button.button_press_event.connect ((event) => {
+        //     if (event.button == Gdk.BUTTON_SECONDARY) {
+        //         suggested_action_button.activate ();
+        //     }
 
-            return base.button_press_event (event);
-        });
+        //     return base.button_press_event (event);
+        // });
 
-        cancel_action_button.button_press_event.connect ((event) => {
-            if (event.button == Gdk.BUTTON_SECONDARY) {
-                cancel_action_button.activate ();
-            }
+        // cancel_action_button.button_press_event.connect ((event) => {
+        //     if (event.button == Gdk.BUTTON_SECONDARY) {
+        //         cancel_action_button.activate ();
+        //     }
 
-            return base.button_press_event (event);
-        });
+        //     return base.button_press_event (event);
+        // });
 
         dialog.present ();
         dialog.response.connect ((response) => {
@@ -352,7 +352,7 @@ public class Installer.LanguageView : AbstractInstallerView {
                 ellipsize = Pango.EllipsizeMode.END,
                 xalign = 0
             };
-            label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+            label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
             var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
                 margin_top = 6,
@@ -413,7 +413,7 @@ public class Installer.LanguageView : AbstractInstallerView {
                 ellipsize = Pango.EllipsizeMode.END,
                 xalign = 0
             };
-            label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+            label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
             var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
                 margin_top = 6,

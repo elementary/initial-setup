@@ -40,7 +40,7 @@ public class Installer.MainWindow : Gtk.Window {
         language_view = new LanguageView ();
 
         leaflet = new Adw.Leaflet () {
-            can_swipe_back = true,
+            can_navigate_back = true,
             can_unfold = false
         };
         leaflet.append (language_view);
@@ -85,8 +85,8 @@ public class Installer.MainWindow : Gtk.Window {
         if (!NetworkMonitor.get_default ().get_network_available ()) {
             network_view = new NetworkView ();
 
-            deck.add (network_view);
-            deck.visible_child = network_view;
+            leaflet.append (network_view);
+            leaflet.visible_child = network_view;
 
             network_view.next_step.connect (load_account_view);
         } else {

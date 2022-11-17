@@ -22,7 +22,7 @@ public class Installer.NetworkView : AbstractInstallerView {
     private Gtk.Button skip_button;
 
     construct {
-        var image = new Gtk.Image.from_icon_name ("network-wireless", Gtk.IconSize.DIALOG) {
+        var image = new Gtk.Image.from_icon_name ("network-wireless") {
             pixel_size = 128,
             valign = Gtk.Align.END
         };
@@ -40,11 +40,11 @@ public class Installer.NetworkView : AbstractInstallerView {
         };
         details_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
-        var wireless_image = new Gtk.Image.from_icon_name ("network-wireless-signal-excellent-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
-
-        unowned var wireless_image_context = wireless_image.get_style_context ();
-        wireless_image_context.add_class (Granite.STYLE_CLASS_ACCENT);
-        wireless_image_context.add_class ("blue");
+        var wireless_image = new Gtk.Image.from_icon_name ("network-wireless-signal-excellent-symbolic") {
+            pixel_size = 24
+        };
+        wireless_image.add_css_class (Granite.STYLE_CLASS_ACCENT);
+        wireless_image.add_css_class ("blue");
 
         ///Translators: for RTL languages, the UI is flipped
         var wireless_label = new Gtk.Label (_("Choose a nearby wireless network from the network indicator in the top right.")) {
@@ -54,12 +54,11 @@ public class Installer.NetworkView : AbstractInstallerView {
             xalign = 0
         };
 
-        var wired_image = new Gtk.Image.from_icon_name ("network-wired-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
-
-        unowned var wired_image_context = wired_image.get_style_context ();
-        wired_image_context.add_class (Granite.STYLE_CLASS_ACCENT);
-        wired_image_context.add_class ("orange");
-
+        var wired_image = new Gtk.Image.from_icon_name ("network-wired-symbolic") {
+            pixel_size = 24
+        };
+        wired_image.add_css_class (Granite.STYLE_CLASS_ACCENT);
+        wired_image.add_css_class ("orange");
 
         var wired_label = new Gtk.Label (_("Connect a network cable")) {
             hexpand = true,
@@ -87,18 +86,16 @@ public class Installer.NetworkView : AbstractInstallerView {
         var back_button = new Gtk.Button.with_label (_("Back"));
 
         skip_button = new Gtk.Button.with_label (_("Skip"));
-        skip_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        skip_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
-        action_area.add (back_button);
-        action_area.add (skip_button);
+        action_area.append (back_button);
+        action_area.append (skip_button);
 
         back_button.clicked.connect (() => ((Adw.Leaflet) get_parent ()).navigate (Adw.NavigationDirection.BACK));
         skip_button.clicked.connect (() => (next_step ()));
 
         network_monitor = NetworkMonitor.get_default ();
         network_monitor.network_changed.connect (update);
-
-        show_all ();
     }
 
     private void update () {

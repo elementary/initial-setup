@@ -59,7 +59,8 @@ public class Installer.AccountView : AbstractInstallerView {
 
     construct {
         var avatar = new Adw.Avatar (104, null, true) {
-            margin = 12,
+            margin_top = 12,
+            margin_bottom = 12,
             valign = Gtk.Align.END
         };
 
@@ -321,7 +322,7 @@ public class Installer.AccountView : AbstractInstallerView {
             ) {
                 badge_icon = new ThemedIcon ("dialog-error"),
                 modal = true,
-                transient_for = (Gtk.Window) get_toplevel ()
+                transient_for = (Gtk.Window) get_root ()
             };
 
             if (error_message != null) {
@@ -367,7 +368,7 @@ public class Installer.AccountView : AbstractInstallerView {
                 Gtk.ButtonsType.CLOSE
             ) {
                 modal = true,
-                transient_for = (Gtk.Window) get_toplevel ()
+                transient_for = (Gtk.Window) get_root ()
             };
 
             if (error_message != null) {
