@@ -25,17 +25,6 @@ public class Installer.MainWindow : Gtk.Window {
     private KeyboardLayoutView keyboard_layout_view;
     private NetworkView network_view;
 
-    public MainWindow () {
-        Object (
-            deletable: false,
-            height_request: 700,
-            icon_name: Application.get_default ().application_id,
-            resizable: false,
-            title: _("Create a User"),
-            width_request: 950
-        );
-    }
-
     construct {
         language_view = new LanguageView ();
 
