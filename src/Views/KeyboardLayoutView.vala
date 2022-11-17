@@ -135,12 +135,12 @@ public class KeyboardLayoutView : AbstractInstallerView {
                 }
             }
 
-            // var layout = new LayoutWidget ();
-            // layout.set_layout (layout_string);
-
-            // var popover = new Gtk.Popover (keyboard_test_entry) {
-            //     child = layout
-            // };
+            string command = "gkbd-keyboard-display --layout=%s".printf (layout_string);
+            try {
+                AppInfo.create_from_commandline (command, null, AppInfoCreateFlags.NONE).launch (null, null);
+            } catch (Error e) {
+                warning ("Error launching keyboard layout display: %s", e.message);
+            }
         });
 
         input_variant_widget.main_listbox.bind_model (InitialSetup.KeyboardLayout.get_all (), (layout) => {

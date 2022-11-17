@@ -10,5 +10,4 @@ src/Views/AccountView.vala
 src/Views/KeyboardLayoutView.vala
 src/Views/LanguageView.vala
 src/Views/NetworkView.vala
-src/Widgets/LayoutWidget.vala
 src/Widgets/VariantWidget.vala
