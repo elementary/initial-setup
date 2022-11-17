@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-10 00:25+0000\n"
-"PO-Revision-Date: 2021-09-22 21:59+0000\n"
-"Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
+"PO-Revision-Date: 2022-11-19 09:36+0000\n"
+"Last-Translator: Joel Jose <joel750jose@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "installer/initial-setup/en_GB/>\n"
 "Language: en_GB\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: src/MainWindow.vala:34
 msgid "Create a User"
@@ -141,31 +141,35 @@ msgstr "Languages"
 
 #: src/Views/LanguageView.vala:242
 msgid "Use the right mouse button for primary click?"
-msgstr ""
+msgstr "Use the right mouse button for primary click?"
 
 #: src/Views/LanguageView.vala:243
 msgid ""
 "The right mouse button was used where a primary click was expected. You can "
 "choose to always use the right mouse button for primary click."
 msgstr ""
+"The right mouse button was used where a primary click was expected. You can "
+"choose to always use the right mouse button for primary click."
 
 #: src/Views/LanguageView.vala:244 src/Views/LanguageView.vala:251
 msgid "Right-Click as Primary"
-msgstr ""
+msgstr "Right-Click as Primary"
 
 #: src/Views/LanguageView.vala:245 src/Views/LanguageView.vala:250
 msgid "Left-Click as Primary"
-msgstr ""
+msgstr "Left-Click as Primary"
 
 #: src/Views/LanguageView.vala:248
 msgid "Use the left mouse button for primary click?"
-msgstr ""
+msgstr "Use the left mouse button for primary click?"
 
 #: src/Views/LanguageView.vala:249
 msgid ""
 "The left mouse button was used where a primary click was expected. You can "
 "choose to always use the left mouse button for primary click."
 msgstr ""
+"The left mouse button was used where a primary click was expected. You can "
+"choose to always use the left mouse button for primary click."
 
 #: src/Views/LanguageView.vala:309
 msgid "Select a Language"
