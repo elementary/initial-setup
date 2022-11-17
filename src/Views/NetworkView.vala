@@ -27,10 +27,7 @@ public class Installer.NetworkView : AbstractInstallerView {
             valign = Gtk.Align.END
         };
 
-        var title_label = new Gtk.Label (_("Connect Network")) {
-            valign = Gtk.Align.START
-        };
-        title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
+        var title_label = new Gtk.Label (_("Connect Network"));
 
         var details_label = new Gtk.Label (_("An Internet connection is required to receive updates, install new apps, and connect to online services")) {
             hexpand = true,
@@ -79,11 +76,14 @@ public class Installer.NetworkView : AbstractInstallerView {
         choice_grid.attach (wired_image, 0, 2);
         choice_grid.attach (wired_label, 1, 2);
 
-        content_area.attach (image, 0, 0);
-        content_area.attach (title_label, 0, 1);
-        content_area.attach (choice_grid, 1, 0, 1, 2);
+        title_area.append (image);
+        title_area.append (title_label);
 
-        var back_button = new Gtk.Button.with_label (_("Back"));
+        content_area.append (choice_grid);
+
+        var back_button = new Gtk.Button.with_label (_("Back")) {
+            width_request = 86
+        };
 
         skip_button = new Gtk.Button.with_label (_("Skip"));
         skip_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
