@@ -255,6 +255,7 @@ public class Installer.LanguageView : AbstractInstallerView {
             "input-mouse",
             Gtk.ButtonsType.NONE
         ) {
+            modal = true,
             transient_for = (Gtk.Window) get_toplevel ()
         };
         var cancel_action_button = dialog.add_button (cancel_action_label, Gtk.ResponseType.CANCEL);
@@ -278,16 +279,20 @@ public class Installer.LanguageView : AbstractInstallerView {
             return base.button_press_event (event);
         });
 
-        var result = dialog.run ();
-        dialog.destroy ();
+        dialog.present ();
+        dialog.response.connect ((response) => {
+            if (response == Gtk.ResponseType.ACCEPT) {
+                if (!mouse_settings.get_boolean ("left-handed")) {
+                    mouse_settings.set_boolean ("left-handed", true);
+                    Configuration.get_default ().left_handed = true;
+                } else if (mouse_settings.get_boolean ("left-handed")) {
+                    mouse_settings.set_boolean ("left-handed", false);
+                    Configuration.get_default ().left_handed = false;
+                }
+            }
 
-        if (!mouse_settings.get_boolean ("left-handed") && result == Gtk.ResponseType.ACCEPT) {
-            mouse_settings.set_boolean ("left-handed", true);
-            Configuration.get_default ().left_handed = true;
-        } else if (mouse_settings.get_boolean ("left-handed") && result == Gtk.ResponseType.ACCEPT) {
-            mouse_settings.set_boolean ("left-handed", false);
-            Configuration.get_default ().left_handed = false;
-        }
+            dialog.destroy ();
+        });
 
         next_step ();
     }
