@@ -27,10 +27,10 @@ public class Installer.App : Gtk.Application {
 
     public override void activate () {
         var window = new MainWindow () {
-            default_height = 700,
-            default_width = 950,
+            default_height = 600,
+            default_width = 850,
             deletable = false,
-            icon_name = Application.get_default ().application_id,
+            icon_name = application_id,
             title = _("Create a User")
         };
         window.show_all ();
