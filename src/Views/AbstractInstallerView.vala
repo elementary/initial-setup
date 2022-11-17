@@ -19,24 +19,40 @@ public abstract class AbstractInstallerView : Gtk.Box {
     public signal void next_step ();
 
     protected Gtk.Box title_area;
-    protected Gtk.Box content_area;
+    protected Gtk.FlowBoxChild content_area;
     protected Gtk.Box action_area;
 
     construct {
         title_area = new Gtk.Box (Gtk.Orientation.VERTICAL, 12) {
-            valign = Gtk.Align.CENTER
+            width_request = 300, // Prevent layout flipping in language view
         };
         title_area.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
 
-        content_area = new Gtk.Box (Gtk.Orientation.VERTICAL, 12);
-
-        var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12) {
-            homogeneous = true,
-            hexpand = true,
-            vexpand = true,
+        var title_child = new Gtk.FlowBoxChild () {
+            can_focus = false,
+            valign = Gtk.Align.CENTER
         };
-        box.add (title_area);
-        box.add (content_area);
+        title_child.add (title_area);
+
+        content_area = new Gtk.FlowBoxChild () {
+            can_focus = false,
+            vexpand = true
+        };
+
+        var flowbox = new Gtk.FlowBox () {
+            max_children_per_line = 2,
+            min_children_per_line = 1,
+            selection_mode = Gtk.SelectionMode.NONE,
+            vexpand = true,
+            column_spacing = 12,
+            row_spacing = 12
+        };
+        flowbox.add (title_child);
+        flowbox.add (content_area);
+
+        var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
+        size_group.add_widget (title_area);
+        size_group.add_widget (content_area);
 
         action_area = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
             halign = Gtk.Align.END,
@@ -49,7 +65,7 @@ public abstract class AbstractInstallerView : Gtk.Box {
         margin_bottom = 12;
         margin_start = 12;
         spacing = 24;
-        add (box);
+        add (flowbox);
         add (action_area);
     }
 }

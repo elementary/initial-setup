@@ -43,8 +43,7 @@ public class Installer.LanguageView : AbstractInstallerView {
 
     construct {
         var image = new Gtk.Image.from_icon_name ("preferences-desktop-locale", Gtk.IconSize.DIALOG) {
-            pixel_size = 128,
-            valign = Gtk.Align.END
+            pixel_size = 128
         };
 
         select_label = new Gtk.Label (null) {
@@ -68,7 +67,9 @@ public class Installer.LanguageView : AbstractInstallerView {
             }
         });
 
-        lang_variant_widget = new VariantWidget ();
+        lang_variant_widget = new VariantWidget () {
+            vexpand = true
+        };
         lang_variant_widget.variant_listbox.set_sort_func ((Gtk.ListBoxSortFunc) CountryRow.compare);
 
         lang_variant_widget.variant_listbox.row_activated.connect (() => {

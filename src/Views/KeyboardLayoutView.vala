@@ -20,8 +20,7 @@ public class KeyboardLayoutView : AbstractInstallerView {
 
     construct {
         var image = new Gtk.Image.from_icon_name ("input-keyboard", Gtk.IconSize.DIALOG) {
-            pixel_size = 128,
-            valign = Gtk.Align.END
+            pixel_size = 128
         };
 
         var title_label = new Gtk.Label (_("Select Keyboard Layout"));

@@ -117,13 +117,14 @@ public class Installer.AccountView : AbstractInstallerView {
         });
 
         var hostname_info = new Gtk.Label (_("Visible to other devices when sharing, e.g. with Bluetooth or over the network.")) {
+            hexpand = true,
             // Wrap without expanding the view
-            max_width_chars = 0,
-            margin_bottom = 18,
+            max_width_chars = 1,
             wrap = true,
             xalign = 0
         };
         hostname_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+        hostname_info.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
         var form_grid = new Gtk.Grid ();
         form_grid.row_spacing = 3;
@@ -476,18 +477,19 @@ public class Installer.AccountView : AbstractInstallerView {
 
         public string label {
             set {
-                label_widget.label = "<span font_size=\"small\">%s</span>".printf (value);
+                label_widget.label = value;
             }
         }
 
         public ErrorRevealer (string label) {
-            label_widget = new Gtk.Label ("<span font_size=\"small\">%s</span>".printf (label));
-            label_widget.halign = Gtk.Align.END;
-            label_widget.justify = Gtk.Justification.RIGHT;
-            label_widget.max_width_chars = 55;
-            label_widget.use_markup = true;
-            label_widget.wrap = true;
-            label_widget.xalign = 1;
+            label_widget = new Gtk.Label (label) {
+                halign = Gtk.Align.END,
+                justify = Gtk.Justification.RIGHT,
+                max_width_chars = 55,
+                wrap = true,
+                xalign = 1
+            };
+            label_widget.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
             transition_type = Gtk.RevealerTransitionType.CROSSFADE;
             add (label_widget);

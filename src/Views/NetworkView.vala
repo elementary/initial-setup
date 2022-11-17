@@ -23,11 +23,14 @@ public class Installer.NetworkView : AbstractInstallerView {
 
     construct {
         var image = new Gtk.Image.from_icon_name ("network-wireless", Gtk.IconSize.DIALOG) {
-            pixel_size = 128,
-            valign = Gtk.Align.END
+            pixel_size = 128
         };
 
-        var title_label = new Gtk.Label (_("Connect Network"));
+        var title_label = new Gtk.Label (_("Connect Network")) {
+            hexpand = true,
+            max_width_chars = 1, // Make Gtk wrap, but not expand the window
+            wrap = true
+        };
 
         var details_label = new Gtk.Label (_("An Internet connection is required to receive updates, install new apps, and connect to online services")) {
             hexpand = true,
