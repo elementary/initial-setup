@@ -14,8 +14,6 @@ i18n = import('i18n')
 accountservice_dep = dependency('accountsservice')
 gee_dep = dependency('gee-0.8')
 glib_dep = dependency('glib-2.0')
-gnome_keyboard_dep = dependency('libgnomekbd')
-gnome_keyboard_ui_dep = meson.get_compiler('c').find_library('libgnomekbdui')
 gobject_dep = dependency('gobject-2.0')
 granite_dep = dependency('granite', version: '>=6.0.0')
 handy_dep = dependency('libhandy-1', version: '>=0.90.0')
@@ -31,8 +29,6 @@ dependencies = [
     accountservice_dep,
     gee_dep,
     glib_dep,
-    gnome_keyboard_dep,
-    gnome_keyboard_ui_dep,
     gobject_dep,
     granite_dep,
     gtk_dep,
