@@ -42,6 +42,22 @@ public class Installer.MainWindow : Gtk.Window {
         set_titlebar (titlebar);
 
         language_view.next_step.connect (() => load_keyboard_view ());
+
+        leaflet.notify["visible-child"].connect (() => {
+            remove_forward_children ();
+        });
+
+        leaflet.notify["child-transition-running"].connect (() => {
+            remove_forward_children ();
+        });
+    }
+
+    private void remove_forward_children () {
+        if (!leaflet.child_transition_running) {
+            while (leaflet.get_adjacent_child (Adw.NavigationDirection.FORWARD) != null) {
+                leaflet.remove (leaflet.get_adjacent_child (Adw.NavigationDirection.FORWARD));
+            }
+        }
     }
 
     /*
@@ -52,10 +68,6 @@ public class Installer.MainWindow : Gtk.Window {
     private void load_keyboard_view () {
         if (keyboard_layout_view != null) {
             keyboard_layout_view.destroy ();
-        }
-
-        if (account_view != null) {
-            account_view.destroy ();
         }
 
         keyboard_layout_view = new KeyboardLayoutView ();
