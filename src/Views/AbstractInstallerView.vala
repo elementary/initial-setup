@@ -15,30 +15,41 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-public abstract class AbstractInstallerView : Gtk.Grid {
+public abstract class AbstractInstallerView : Gtk.Box {
     public signal void next_step ();
 
-    protected Gtk.Grid content_area;
-    protected Gtk.ButtonBox action_area;
+    protected Gtk.Box title_area;
+    protected Gtk.Box content_area;
+    protected Gtk.Box action_area;
 
     construct {
-        content_area = new Gtk.Grid () {
-            column_homogeneous = true,
-            column_spacing = 12,
-            row_spacing = 12,
-            expand = true,
-            orientation = Gtk.Orientation.VERTICAL
+        title_area = new Gtk.Box (Gtk.Orientation.VERTICAL, 12) {
+            valign = Gtk.Align.CENTER
         };
+        title_area.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
 
-        action_area = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL) {
-            spacing = 6,
-            layout_style = Gtk.ButtonBoxStyle.END
+        content_area = new Gtk.Box (Gtk.Orientation.VERTICAL, 12);
+
+        var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12) {
+            homogeneous = true,
+            hexpand = true,
+            vexpand = true,
+        };
+        box.add (title_area);
+        box.add (content_area);
+
+        action_area = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
+            halign = Gtk.Align.END,
+            homogeneous = true
         };
 
         orientation = Gtk.Orientation.VERTICAL;
-        margin = 12;
-        row_spacing = 24;
-        add (content_area);
+        margin_top = 12;
+        margin_end = 12;
+        margin_bottom = 12;
+        margin_start = 12;
+        spacing = 24;
+        add (box);
         add (action_area);
     }
 }

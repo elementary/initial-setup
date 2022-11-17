@@ -54,10 +54,8 @@ public class Installer.LanguageView : AbstractInstallerView {
         };
 
         select_stack = new Gtk.Stack () {
-            transition_type = Gtk.StackTransitionType.CROSSFADE,
-            valign = Gtk.Align.START
+            transition_type = Gtk.StackTransitionType.CROSSFADE
         };
-        select_stack.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
         select_stack.add (select_label);
 
         select_stack.notify["transition-running"].connect (() => {
@@ -107,6 +105,7 @@ public class Installer.LanguageView : AbstractInstallerView {
         }
 
         next_button = new Gtk.Button.with_label (_("Select")) {
+            width_request = 86,
             sensitive = false
         };
         next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
@@ -131,9 +130,10 @@ public class Installer.LanguageView : AbstractInstallerView {
             lang_variant_widget.main_listbox.row_selected.disconnect (row_selected);
         });
 
-        content_area.attach (image, 0, 0);
-        content_area.attach (select_stack, 0, 1);
-        content_area.attach (lang_variant_widget, 1, 0, 1, 2);
+        title_area.add (image);
+        title_area.add (select_stack);
+
+        content_area.add (lang_variant_widget);
 
         timeout ();
     }
