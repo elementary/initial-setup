@@ -52,7 +52,7 @@ public class KeyboardLayoutView : AbstractInstallerView {
         var next_button = new Gtk.Button.with_label (_("Select")) {
             sensitive = false
         };
-        next_button.get_style_context ().add_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
+        next_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
         action_area.append (back_button);
         action_area.append (next_button);
@@ -185,7 +185,7 @@ public class KeyboardLayoutView : AbstractInstallerView {
                 margin_start = 6,
                 xalign = 0
             };
-            label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+            label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
             child = label;
         }
@@ -204,7 +204,7 @@ public class KeyboardLayoutView : AbstractInstallerView {
                 margin_start = 6,
                 xalign = 0
             };
-            label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+            label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
             child = label;
         }

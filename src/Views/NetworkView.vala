@@ -35,7 +35,7 @@ public class Installer.NetworkView : AbstractInstallerView {
             wrap = true,
             xalign = 0
         };
-        details_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+        details_label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
         var wireless_image = new Gtk.Image.from_icon_name ("network-wireless-signal-excellent-symbolic") {
             pixel_size = 24
