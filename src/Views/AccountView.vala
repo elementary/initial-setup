@@ -64,8 +64,6 @@ public class Installer.AccountView : AbstractInstallerView {
         };
 
         var title_label = new Gtk.Label (_("Create an Account"));
-        title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
-        title_label.valign = Gtk.Align.START;
 
         var realname_label = new Granite.HeaderLabel (_("Full Name"));
 
@@ -148,11 +146,14 @@ public class Installer.AccountView : AbstractInstallerView {
         form_grid.attach (hostname_entry, 0, 14, 1, 1);
         form_grid.attach (hostname_info, 0, 15, 1, 1);
 
-        content_area.attach (avatar, 0, 0);
-        content_area.attach (title_label, 0, 1, 1, 1);
-        content_area.attach (form_grid, 1, 0, 1, 2);
+        title_area.add (avatar);
+        title_area.add (title_label);
 
-        var back_button = new Gtk.Button.with_label (_("Back"));
+        content_area.add (form_grid);
+
+        var back_button = new Gtk.Button.with_label (_("Back")) {
+            width_request = 86
+        };
 
         finish_button = new Gtk.Button.with_label (_("Finish Setup"));
         finish_button.can_default = true;
