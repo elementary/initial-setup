@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-17 17:51+0000\n"
-"PO-Revision-Date: 2022-11-15 12:37+0000\n"
+"PO-Revision-Date: 2022-11-24 12:25+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ru/>\n"
@@ -87,34 +87,30 @@ msgstr ""
 #: src/Views/AccountView.vala:309
 #, c-format
 msgid "Creating an account for “%s” failed"
-msgstr ""
+msgstr "Не удалось создать учётную запись «%s»"
 
 #: src/Views/AccountView.vala:313
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
-msgstr ""
+msgstr "Не удалось получить разрешение на создание учётной записи для «%s»"
 
 #: src/Views/AccountView.vala:319
-#, fuzzy
-#| msgid ""
-#| "Initial Setup could not create your user. Without it, you will not be "
-#| "able to log in and may need to reinstall the OS."
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
 msgstr ""
-"Начальная установка не может создать вашего пользователя. Без этого вы не "
-"сможете войти в систему и, возможно, вам придётся переустановить ОС."
+"Начальной настройке не удалось создать учётную запись. Без неё вы не сможете "
+"войти в систему и, вероятно, вам придётся переустановить ОС."
 
 #: src/Views/AccountView.vala:356
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
-msgstr ""
+msgstr "Не удалось получить разрешение на установку имени «%s» этому устройству"
 
 #: src/Views/AccountView.vala:359
 #, c-format
 msgid "Unable to name this device “%s”"
-msgstr ""
+msgstr "Не удалось установить имя «%s» этому устройству"
 
 #: src/Views/AccountView.vala:366
 msgid "Initial Setup could not set your hostname."
