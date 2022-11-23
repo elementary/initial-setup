@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-17 17:51+0000\n"
-"PO-Revision-Date: 2022-02-01 23:42+0000\n"
+"PO-Revision-Date: 2022-11-24 12:25+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://l10n.elementary.io/projects/installer/initial-"
-"setup/he/>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/installer/"
+"initial-setup/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/MainWindow.vala:34
@@ -83,34 +83,30 @@ msgstr "שם המשתמש יכול להכיל אותיות לטיניות קטנ
 #: src/Views/AccountView.vala:309
 #, c-format
 msgid "Creating an account for “%s” failed"
-msgstr ""
+msgstr "יצירת חשבון עבור „%s” נכשלה"
 
 #: src/Views/AccountView.vala:313
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
-msgstr ""
+msgstr "לא ניתן לקבל את ההרשאות ליצירת חשבון עבור „%s”"
 
 #: src/Views/AccountView.vala:319
-#, fuzzy
-#| msgid ""
-#| "Initial Setup could not create your user. Without it, you will not be "
-#| "able to log in and may need to reinstall the OS."
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
 msgstr ""
-"ההתקנה הראשונית לא הצליחה ליצור את המשתמש שלך. ללא המשתמש, לא תהיה לך אפשרות "
+"ההתקנה הראשונית לא הצליחה ליצור את החשבון הזה. ללא החשבון, לא תהיה לך אפשרות "
 "להיכנס ויהיה עליך להתקין את מערכת ההפעלה מחדש."
 
 #: src/Views/AccountView.vala:356
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
-msgstr ""
+msgstr "לא ניתן לקבל הרשאות לתת את השם „%s” להתקן הזה"
 
 #: src/Views/AccountView.vala:359
 #, c-format
 msgid "Unable to name this device “%s”"
-msgstr ""
+msgstr "לא ניתן לתת את השם „%s” להתקן הזה"
 
 #: src/Views/AccountView.vala:366
 msgid "Initial Setup could not set your hostname."
