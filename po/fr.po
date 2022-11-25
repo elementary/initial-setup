@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-17 17:51+0000\n"
-"PO-Revision-Date: 2022-02-02 08:50+0000\n"
+"PO-Revision-Date: 2022-11-27 08:25+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
-"Language-Team: French <https://l10n.elementary.io/projects/installer/initial-"
-"setup/fr/>\n"
+"Language-Team: French <https://l10n.elementary.io/projects/installer/"
+"initial-setup/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/MainWindow.vala:34
@@ -87,35 +87,31 @@ msgstr ""
 #: src/Views/AccountView.vala:309
 #, c-format
 msgid "Creating an account for “%s” failed"
-msgstr ""
+msgstr "La création d'un compte pour « %s » a échoué"
 
 #: src/Views/AccountView.vala:313
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
-msgstr ""
+msgstr "Impossible d'obtenir la permission pour créer un compte pour « %s »"
 
 #: src/Views/AccountView.vala:319
-#, fuzzy
-#| msgid ""
-#| "Initial Setup could not create your user. Without it, you will not be "
-#| "able to log in and may need to reinstall the OS."
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
 msgstr ""
-"La configuration initiale n'a pas pu créer votre utilisateur. Sans cela, "
-"vous ne pourrez pas vous connecter et aurez peut-être besoin de réinstaller "
-"le système d'exploitation."
+"La configuration initiale n'a pas pu créer ce compte. Sans cela, vous ne "
+"pourrez pas vous connecter et aurez peut-être besoin de réinstaller le "
+"système d'exploitation."
 
 #: src/Views/AccountView.vala:356
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
-msgstr ""
+msgstr "Impossible d'obtenir la permission de nommer cet appareil « %s »"
 
 #: src/Views/AccountView.vala:359
 #, c-format
 msgid "Unable to name this device “%s”"
-msgstr ""
+msgstr "Impossible de nommer cet appareil « %s »"
 
 #: src/Views/AccountView.vala:366
 msgid "Initial Setup could not set your hostname."
