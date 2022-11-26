@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-17 17:51+0000\n"
-"PO-Revision-Date: 2022-02-10 18:25+0000\n"
+"PO-Revision-Date: 2022-11-27 08:25+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/installer/"
 "initial-setup/tr/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/MainWindow.vala:34
@@ -75,45 +75,41 @@ msgstr "Parolalar eşleşmiyor"
 
 #: src/Views/AccountView.vala:264
 msgid "The chosen username is already taken"
-msgstr "Seçilen kullanıcı adı zaten alınmış"
+msgstr "Bu kullanıcı adı zaten alınmış"
 
 #: src/Views/AccountView.vala:266
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
-"Bir kullanıcı adı yalnızca küçük harf ve rakam içermeli, boşluk içermemelidir"
+"Kullanıcı adı yalnızca küçük harf ve rakam içerebilir, boşluk içermemelidir"
 
 #: src/Views/AccountView.vala:309
 #, c-format
 msgid "Creating an account for “%s” failed"
-msgstr ""
+msgstr "“%s” için hesap oluşturma başarısız oldu"
 
 #: src/Views/AccountView.vala:313
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
-msgstr ""
+msgstr "“%s” için bir hesap oluşturma izni alınamadı"
 
 #: src/Views/AccountView.vala:319
-#, fuzzy
-#| msgid ""
-#| "Initial Setup could not create your user. Without it, you will not be "
-#| "able to log in and may need to reinstall the OS."
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
 msgstr ""
-"İlk Kurulum kullanıcınızı oluşturamadı. Bu olmadan oturum açamazsınız ve "
+"İlk Kurulum bu hesabı oluşturamadı. Bu hesap olmadan oturum açamazsınız ve "
 "işletim sistemini yeniden kurmanız gerekebilir."
 
 #: src/Views/AccountView.vala:356
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
-msgstr ""
+msgstr "Bu cihazı “%s” olarak adlandırmak için izin alınamadı"
 
 #: src/Views/AccountView.vala:359
 #, c-format
 msgid "Unable to name this device “%s”"
-msgstr ""
+msgstr "Bu cihaz “%s” olarak adlandırılamıyor"
 
 #: src/Views/AccountView.vala:366
 msgid "Initial Setup could not set your hostname."
