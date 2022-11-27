@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-17 17:51+0000\n"
-"PO-Revision-Date: 2022-08-09 13:14+0000\n"
+"PO-Revision-Date: 2022-11-27 14:07+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ja/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/MainWindow.vala:34
@@ -86,34 +86,29 @@ msgstr ""
 #: src/Views/AccountView.vala:309
 #, c-format
 msgid "Creating an account for “%s” failed"
-msgstr ""
+msgstr "アカウント “%s” を作成できませんでした"
 
 #: src/Views/AccountView.vala:313
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
-msgstr ""
+msgstr "アカウント “%s” の作成に必要な権限を取得できませんでした"
 
 #: src/Views/AccountView.vala:319
-#, fuzzy
-#| msgid ""
-#| "Initial Setup could not create your user. Without it, you will not be "
-#| "able to log in and may need to reinstall the OS."
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
-msgstr ""
-"アカウントを作成できませんでした。アカウントがないとログインできないため、OS "
-"の再インストールが必要になる可能性があります。"
+msgstr "このアカウントを作成できませんでした。アカウントがないとログインできないため"
+"、OS の再インストールが必要になる可能性があります。"
 
 #: src/Views/AccountView.vala:356
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
-msgstr ""
+msgstr "このデバイス名を “%s” に設定するのに必要な権限を取得できませんでした"
 
 #: src/Views/AccountView.vala:359
 #, c-format
 msgid "Unable to name this device “%s”"
-msgstr ""
+msgstr "このデバイス名を “%s” に設定できませんでした"
 
 #: src/Views/AccountView.vala:366
 msgid "Initial Setup could not set your hostname."
