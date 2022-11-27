@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-17 17:51+0000\n"
-"PO-Revision-Date: 2022-11-27 14:07+0000\n"
+"PO-Revision-Date: 2022-11-27 14:08+0000\n"
 "Last-Translator: Josep Massagué <massako@protonmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ca/>\n"
@@ -109,7 +109,7 @@ msgstr ""
 #: src/Views/AccountView.vala:356
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
-msgstr ""
+msgstr "No s'ha pogut obtenir permís per anomenar aquest dispositiu \"%s\""
 
 #: src/Views/AccountView.vala:359
 #, c-format
