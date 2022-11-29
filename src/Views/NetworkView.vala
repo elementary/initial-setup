@@ -22,7 +22,7 @@ public class Installer.NetworkView : AbstractInstallerView {
     private Gtk.Button skip_button;
 
     construct {
-        var image = new Gtk.Image.from_icon_name ("network-wireless", Gtk.IconSize.DIALOG) {
+        var image = new Gtk.Image.from_icon_name ("preferences-system-network", Gtk.IconSize.DIALOG) {
             pixel_size = 128,
             valign = Gtk.Align.END
         };
@@ -37,50 +37,31 @@ public class Installer.NetworkView : AbstractInstallerView {
         };
         details_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
-        var wireless_image = new Gtk.Image.from_icon_name ("network-wireless-signal-excellent-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
+        var wireless_row = new ListRow (
+            ///Translators: for RTL languages, the UI is flipped
+            _("Choose a nearby wireless network from the network indicator in the top right."),
+            "network-wireless-symbolic",
+            "blue"
+        );
 
-        unowned var wireless_image_context = wireless_image.get_style_context ();
-        wireless_image_context.add_class (Granite.STYLE_CLASS_ACCENT);
-        wireless_image_context.add_class ("blue");
+        var wired_row = new ListRow (
+            _("Connect a network cable"),
+            "network-wired-symbolic",
+            "orange"
+        );
 
-        ///Translators: for RTL languages, the UI is flipped
-        var wireless_label = new Gtk.Label (_("Choose a nearby wireless network from the network indicator in the top right.")) {
-            hexpand = true,
-            max_width_chars = 1, // Make Gtk wrap, but not expand the window
-            wrap = true,
-            xalign = 0
-        };
-
-        var wired_image = new Gtk.Image.from_icon_name ("network-wired-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
-
-        unowned var wired_image_context = wired_image.get_style_context ();
-        wired_image_context.add_class (Granite.STYLE_CLASS_ACCENT);
-        wired_image_context.add_class ("orange");
-
-
-        var wired_label = new Gtk.Label (_("Connect a network cable")) {
-            hexpand = true,
-            max_width_chars = 1, // Make Gtk wrap, but not expand the window
-            wrap = true,
-            xalign = 0
-        };
-
-        var choice_grid = new Gtk.Grid () {
-            column_spacing = 12,
-            row_spacing = 32,
+        var choice_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 24) {
             valign = Gtk.Align.CENTER,
             vexpand = true
         };
-        choice_grid.attach (details_label, 0, 0, 2);
-        choice_grid.attach (wireless_image, 0, 1);
-        choice_grid.attach (wireless_label, 1, 1);
-        choice_grid.attach (wired_image, 0, 2);
-        choice_grid.attach (wired_label, 1, 2);
+        choice_box.add (details_label);
+        choice_box.add (wireless_row);
+        choice_box.add (wired_row);
 
         title_area.add (image);
         title_area.add (title_label);
 
-        content_area.add (choice_grid);
+        content_area.add (choice_box);
 
         var back_button = new Gtk.Button.with_label (_("Back")) {
             width_request = 86
@@ -106,6 +87,30 @@ public class Installer.NetworkView : AbstractInstallerView {
             network_monitor.network_changed.disconnect (update);
             skip_button.label = _("Next");
             next_step ();
+        }
+    }
+
+    private class ListRow : Gtk.Box {
+        public ListRow (string description, string icon_name, string color) {
+            var image = new Gtk.Image.from_icon_name (icon_name, Gtk.IconSize.DND) {
+                valign = Gtk.Align.START
+            };
+
+            unowned var image_context = image.get_style_context ();
+            image_context.add_class (Granite.STYLE_CLASS_ACCENT);
+            image_context.add_class (color);
+
+            var description_label = new Gtk.Label (description) {
+                hexpand = true,
+                max_width_chars = 1, // Make Gtk wrap, but not expand the window
+                use_markup = true,
+                wrap = true,
+                xalign = 0
+            };
+
+            spacing = 12;
+            add (image);
+            add (description_label);
         }
     }
 }
