@@ -30,7 +30,7 @@ namespace Utils {
                 hostname += c.to_string ();
                 met_alpha = true;
                 whitespace_before = false;
-            } else if (c.isdigit () && met_alpha) {
+            } else if ((c.isdigit () || c == '-') && met_alpha) {
                 hostname += c.to_string ();
                 whitespace_before = false;
             } else if (c.isspace () && !whitespace_before) {
