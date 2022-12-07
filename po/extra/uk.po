@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-07 18:14+0000\n"
-"PO-Revision-Date: 2022-11-11 14:29+0000\n"
+"PO-Revision-Date: 2022-12-10 06:25+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/uk/>\n"
@@ -51,44 +51,42 @@ msgstr ""
 #: data/io.elementary.initial-setup.appdata.xml.in:52
 #: data/io.elementary.initial-setup.appdata.xml.in:63
 msgid "Improvements:"
-msgstr ""
+msgstr "Удосконалення:"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:32
 msgid "Use larger icons in views"
-msgstr ""
+msgstr "Збільшені піктограми у поданнях"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:33
 msgid "Make window resizable"
-msgstr ""
+msgstr "Вікно змінюваного розміру"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:34
-#, fuzzy
-#| msgid "Set keyboard layout in accountsservice"
 msgid "Show keyboard layouts in a separate window"
-msgstr "Установлення розкладки клавіатури в службі облікових записів"
+msgstr "Показ розкладок клавіатури в окремому вікні"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:35
 msgid "Allow hyphens in device names"
-msgstr ""
+msgstr "Дозволено дефіс у назвах пристроїв"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:36
 #: data/io.elementary.initial-setup.appdata.xml.in:45
 #: data/io.elementary.initial-setup.appdata.xml.in:56
 #: data/io.elementary.initial-setup.appdata.xml.in:66
 msgid "Updated translations"
-msgstr ""
+msgstr "Оновлено переклади"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:54
 msgid "Offer to switch to right-click primary mouse button"
-msgstr ""
+msgstr "Пропозиція змінити основну кнопку миші на праву"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:55
 msgid "Suggest connecting to a network"
-msgstr ""
+msgstr "Пропозиція під'єднатися до мережі"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:65
 msgid "Avoid political naming of certain locales"
-msgstr ""
+msgstr "Уникнення політичних назв окремих локалей"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:73
 msgid "New features:"
