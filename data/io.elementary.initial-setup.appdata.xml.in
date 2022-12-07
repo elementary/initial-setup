@@ -23,29 +23,51 @@
   <provides>
     <binary>io.elementary.initial-setup</binary>
   </provides>
+
   <releases>
+    <release version="6.2.2" date="2022-12-06" urgency="medium">
+      <description>
+        <p>Improvements:</p>
+        <ul>
+          <li>Use larger icons in views</li>
+          <li>Make window resizable</li>
+          <li>Show keyboard layouts in a separate window</li>
+          <li>Allow hyphens in device names</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
     <release version="6.2.1" date="2022-10-20" urgency="medium">
-      <p>Improvements:</p>
-      <ul>
-        <li>Updated translations</li>
-      </ul>
+      <description>
+        <p>Improvements:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
     </release>
 
     <release version="6.2.0" date="2022-05-09" urgency="medium">
-      <p>Improvements:</p>
-      <ul>
-        <li>Offer to switch to right-click primary mouse button</li>
-        <li>Suggest connecting to a network</li>
-        <li>Updated translations</li>
-      </ul>
+      <description>
+        <p>Improvements:</p>
+        <ul>
+          <li>Offer to switch to right-click primary mouse button</li>
+          <li>Suggest connecting to a network</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
     </release>
+
     <release version="6.1.1" date="2021-08-26" urgency="medium">
-      <p>Improvements:</p>
-      <ul>
-        <li>Avoid political naming of certain locales</li>
-        <li>Updated translations</li>
-      </ul>
+      <description>
+        <p>Improvements:</p>
+        <ul>
+          <li>Avoid political naming of certain locales</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
     </release>
+
     <release version="6.1.0" date="2021-08-25" urgency="medium">
       <description>
         <p>New features:</p>
@@ -59,29 +81,8 @@
         </ul>
       </description>
     </release>
-    <release version="6.0.0" date="2021-07-14" urgency="medium">
-      <description>
-        <p>Minor updates:</p>
-        <ul>
-          <li>Set keyboard layout in accountsservice</li>
-          <li>Add multitouch gestures</li>
-          <li>Set correct locales</li>
-          <li>New colorful avatar fallback</li>
-          <li>Translation updates</li>
-        </ul>
-      </description>
-    </release>
-    <release version="1.0.2" date="2019-10-29" urgency="medium">
-      <description>
-        <p>Translation updates</p>
-      </description>
-    </release>
-    <release version="1.0.0" date="2019-09-26" urgency="medium">
-      <description>
-        <p>Initial release</p>
-      </description>
-    </release>
   </releases>
+
   <content_rating type="oars-1.1" />
   <translation type="gettext">io.elementary.initial-setup</translation>
   <compulsory_for_desktop>Pantheon</compulsory_for_desktop>
