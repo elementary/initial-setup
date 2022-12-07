@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-17 17:51+0000\n"
+"POT-Creation-Date: 2022-12-07 18:14+0000\n"
 "PO-Revision-Date: 2019-09-07 18:22+0000\n"
 "Last-Translator: Noel Lalaina <gerant@smart-tech.mg>\n"
 "Language-Team: Malagasy <https://l10n.elementary.io/projects/installer/"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
-#: src/MainWindow.vala:34
+#: src/Application.vala:34
 msgid "Create a User"
 msgstr ""
 
@@ -32,82 +32,82 @@ msgstr ""
 msgid "Create an Account"
 msgstr ""
 
-#: src/Views/AccountView.vala:70
+#: src/Views/AccountView.vala:68
 msgid "Full Name"
 msgstr "Anarana feno"
 
-#: src/Views/AccountView.vala:75
+#: src/Views/AccountView.vala:73
 msgid "Username"
 msgstr ""
 
-#: src/Views/AccountView.vala:82
+#: src/Views/AccountView.vala:80
 msgid "Choose a Password"
 msgstr ""
 
-#: src/Views/AccountView.vala:98
+#: src/Views/AccountView.vala:96
 msgid "Confirm Password"
 msgstr ""
 
-#: src/Views/AccountView.vala:108
+#: src/Views/AccountView.vala:106
 msgid "Device name"
 msgstr ""
 
-#: src/Views/AccountView.vala:121
+#: src/Views/AccountView.vala:119
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
 
-#: src/Views/AccountView.vala:155 src/Views/KeyboardLayoutView.vala:53
-#: src/Views/NetworkView.vala:87
+#: src/Views/AccountView.vala:154 src/Views/KeyboardLayoutView.vala:51
+#: src/Views/NetworkView.vala:66
 #, fuzzy
 msgid "Back"
 msgstr "Fafao Miverina"
 
-#: src/Views/AccountView.vala:157
+#: src/Views/AccountView.vala:158
 msgid "Finish Setup"
 msgstr ""
 
-#: src/Views/AccountView.vala:239
+#: src/Views/AccountView.vala:240
 msgid "Passwords do not match"
 msgstr ""
 
-#: src/Views/AccountView.vala:264
+#: src/Views/AccountView.vala:265
 msgid "The chosen username is already taken"
 msgstr ""
 
-#: src/Views/AccountView.vala:266
+#: src/Views/AccountView.vala:267
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
 
-#: src/Views/AccountView.vala:309
+#: src/Views/AccountView.vala:310
 #, c-format
 msgid "Creating an account for “%s” failed"
 msgstr ""
 
-#: src/Views/AccountView.vala:313
+#: src/Views/AccountView.vala:314
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
 msgstr ""
 
-#: src/Views/AccountView.vala:319
+#: src/Views/AccountView.vala:320
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
 msgstr ""
 
-#: src/Views/AccountView.vala:356
+#: src/Views/AccountView.vala:357
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
 msgstr ""
 
-#: src/Views/AccountView.vala:359
+#: src/Views/AccountView.vala:360
 #, c-format
 msgid "Unable to name this device “%s”"
 msgstr ""
 
-#: src/Views/AccountView.vala:366
+#: src/Views/AccountView.vala:367
 msgid "Initial Setup could not set your hostname."
 msgstr ""
 
@@ -115,15 +115,15 @@ msgstr ""
 msgid "Select Keyboard Layout"
 msgstr ""
 
-#: src/Views/KeyboardLayoutView.vala:36
+#: src/Views/KeyboardLayoutView.vala:33
 msgid "Type to test your layout"
 msgstr ""
 
-#: src/Views/KeyboardLayoutView.vala:39
+#: src/Views/KeyboardLayoutView.vala:36
 msgid "Show keyboard layout"
 msgstr ""
 
-#: src/Views/KeyboardLayoutView.vala:55 src/Views/LanguageView.vala:109
+#: src/Views/KeyboardLayoutView.vala:55 src/Views/LanguageView.vala:107
 #: src/Views/LanguageView.vala:172
 msgid "Select"
 msgstr ""
@@ -176,27 +176,27 @@ msgstr ""
 msgid "Connect Network"
 msgstr ""
 
-#: src/Views/NetworkView.vala:35
+#: src/Views/NetworkView.vala:32
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
 msgstr ""
 
 #. /Translators: for RTL languages, the UI is flipped
-#: src/Views/NetworkView.vala:50
+#: src/Views/NetworkView.vala:42
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
 msgstr ""
 
-#: src/Views/NetworkView.vala:64
+#: src/Views/NetworkView.vala:48
 msgid "Connect a network cable"
 msgstr ""
 
-#: src/Views/NetworkView.vala:89
+#: src/Views/NetworkView.vala:70
 msgid "Skip"
 msgstr ""
 
-#: src/Views/NetworkView.vala:107
+#: src/Views/NetworkView.vala:88
 msgid "Next"
 msgstr ""
 
