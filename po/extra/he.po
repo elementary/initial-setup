@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-17 17:51+0000\n"
+"POT-Creation-Date: 2022-12-07 18:14+0000\n"
 "PO-Revision-Date: 2021-08-25 10:49+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/installer/initial-"
@@ -38,52 +38,85 @@ msgstr ""
 "מסייע במשימות חיוניות בטרם תחילת השימוש בהתקנה נקייה, כמו למשל לבחור את השפה "
 "וליצור חשבון משתמש."
 
-#: data/io.elementary.initial-setup.appdata.xml.in:51
+#: data/io.elementary.initial-setup.appdata.xml.in:30
+#: data/io.elementary.initial-setup.appdata.xml.in:43
+#: data/io.elementary.initial-setup.appdata.xml.in:52
+#: data/io.elementary.initial-setup.appdata.xml.in:63
+msgid "Improvements:"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:32
+msgid "Use larger icons in views"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:33
+msgid "Make window resizable"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:34
+#, fuzzy
+#| msgid "Set keyboard layout in accountsservice"
+msgid "Show keyboard layouts in a separate window"
+msgstr "הגדרת פריסת מקלדת בשירות החשבונות (accountsservice)"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:35
+msgid "Allow hyphens in device names"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:36
+#: data/io.elementary.initial-setup.appdata.xml.in:45
+#: data/io.elementary.initial-setup.appdata.xml.in:56
+#: data/io.elementary.initial-setup.appdata.xml.in:66
+msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:54
+msgid "Offer to switch to right-click primary mouse button"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:55
+msgid "Suggest connecting to a network"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:65
+msgid "Avoid political naming of certain locales"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:73
 msgid "New features:"
 msgstr "יכולות חדשות:"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:53
+#: data/io.elementary.initial-setup.appdata.xml.in:75
 msgid "Confirm and change device name"
 msgstr "אישור ושינוי שם המכשיר"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:54
+#: data/io.elementary.initial-setup.appdata.xml.in:76
 msgid "Two-finger swipe to navigate back"
 msgstr "החלקה בשתי אצבעות כדי לנווט אחורה"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:56
-#: data/io.elementary.initial-setup.appdata.xml.in:64
+#: data/io.elementary.initial-setup.appdata.xml.in:78
 msgid "Minor updates:"
 msgstr "עדכונים משניים:"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:58
-#: data/io.elementary.initial-setup.appdata.xml.in:70
-#: data/io.elementary.initial-setup.appdata.xml.in:76
+#: data/io.elementary.initial-setup.appdata.xml.in:80
 msgid "Translation updates"
 msgstr "עדכון תרגומים"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:66
-msgid "Set keyboard layout in accountsservice"
-msgstr "הגדרת פריסת מקלדת בשירות החשבונות (accountsservice)"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:67
-msgid "Add multitouch gestures"
-msgstr "נוספה תמיכה במחוות מגע במספר נקודות"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:68
-msgid "Set correct locales"
-msgstr "הגדרות השפה הנכונות תיבחרנה"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:69
-msgid "New colorful avatar fallback"
-msgstr "תמונה ייצוגית צבעונית חדשה כנסיגה"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:81
-msgid "Initial release"
-msgstr "מהדורה ראשונה"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:88
+#: data/io.elementary.initial-setup.appdata.xml.in:89
 msgid "elementary, Inc."
 msgstr "elementary בע״מ"
+
+#~ msgid "Add multitouch gestures"
+#~ msgstr "נוספה תמיכה במחוות מגע במספר נקודות"
+
+#~ msgid "Set correct locales"
+#~ msgstr "הגדרות השפה הנכונות תיבחרנה"
+
+#~ msgid "New colorful avatar fallback"
+#~ msgstr "תמונה ייצוגית צבעונית חדשה כנסיגה"
+
+#~ msgid "Initial release"
+#~ msgstr "מהדורה ראשונה"
 
 #~ msgid "system-os-installer"
 #~ msgstr "system-os-installer"

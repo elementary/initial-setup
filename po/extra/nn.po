@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-17 17:51+0000\n"
+"POT-Creation-Date: 2022-12-07 18:14+0000\n"
 "PO-Revision-Date: 2020-07-04 18:12+0000\n"
 "Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
@@ -38,54 +38,76 @@ msgstr ""
 "Hjelper deg med enkle oppgåver før installeringa er brukande, som t.d. å "
 "velga språk og oppretting av ein brukar."
 
-#: data/io.elementary.initial-setup.appdata.xml.in:51
-msgid "New features:"
+#: data/io.elementary.initial-setup.appdata.xml.in:30
+#: data/io.elementary.initial-setup.appdata.xml.in:43
+#: data/io.elementary.initial-setup.appdata.xml.in:52
+#: data/io.elementary.initial-setup.appdata.xml.in:63
+msgid "Improvements:"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:53
-msgid "Confirm and change device name"
+#: data/io.elementary.initial-setup.appdata.xml.in:32
+msgid "Use larger icons in views"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:33
+msgid "Make window resizable"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:34
+msgid "Show keyboard layouts in a separate window"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:35
+msgid "Allow hyphens in device names"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:36
+#: data/io.elementary.initial-setup.appdata.xml.in:45
+#: data/io.elementary.initial-setup.appdata.xml.in:56
+#: data/io.elementary.initial-setup.appdata.xml.in:66
+msgid "Updated translations"
 msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:54
+msgid "Offer to switch to right-click primary mouse button"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:55
+msgid "Suggest connecting to a network"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:65
+msgid "Avoid political naming of certain locales"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:73
+msgid "New features:"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:75
+msgid "Confirm and change device name"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:76
 msgid "Two-finger swipe to navigate back"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:56
-#: data/io.elementary.initial-setup.appdata.xml.in:64
+#: data/io.elementary.initial-setup.appdata.xml.in:78
 #, fuzzy
 #| msgid "Translation updates"
 msgid "Minor updates:"
 msgstr "Oppdaterte oversettelsar"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:58
-#: data/io.elementary.initial-setup.appdata.xml.in:70
-#: data/io.elementary.initial-setup.appdata.xml.in:76
+#: data/io.elementary.initial-setup.appdata.xml.in:80
 msgid "Translation updates"
 msgstr "Oppdaterte oversettelsar"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:66
-msgid "Set keyboard layout in accountsservice"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:67
-msgid "Add multitouch gestures"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:68
-msgid "Set correct locales"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:69
-msgid "New colorful avatar fallback"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:81
-msgid "Initial release"
-msgstr "Fyrste utgåve"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:88
+#: data/io.elementary.initial-setup.appdata.xml.in:89
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
+
+#~ msgid "Initial release"
+#~ msgstr "Fyrste utgåve"
 
 #~ msgid "system-os-installer"
 #~ msgstr "system-os-installer"
