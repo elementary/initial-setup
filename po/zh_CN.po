@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-07 18:14+0000\n"
-"PO-Revision-Date: 2022-07-20 06:06+0000\n"
+"PO-Revision-Date: 2022-12-10 06:25+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "installer/initial-setup/zh_Hans/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
 #: src/Application.vala:34
@@ -83,34 +83,29 @@ msgstr "用户名只能包含小写字母和数字，不能包含空格"
 #: src/Views/AccountView.vala:310
 #, c-format
 msgid "Creating an account for “%s” failed"
-msgstr ""
+msgstr "为 “%s” 创建账号失败"
 
 #: src/Views/AccountView.vala:314
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
-msgstr ""
+msgstr "没有权限为 “%s” 创建账号"
 
 #: src/Views/AccountView.vala:320
-#, fuzzy
-#| msgid ""
-#| "Initial Setup could not create your user. Without it, you will not be "
-#| "able to log in and may need to reinstall the OS."
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
-msgstr ""
-"初始设置无法创建您的账户。如果缺少此账户，您将无法登入设备，还可能需要重新安"
-"装系统。"
+msgstr "初始设置无法创建此账户。若缺少此账户，您将无法登入设备，还可能需要重新安装系"
+"统。"
 
 #: src/Views/AccountView.vala:357
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
-msgstr ""
+msgstr "无法获取更改此设备名称 “%s” 的权限"
 
 #: src/Views/AccountView.vala:360
 #, c-format
 msgid "Unable to name this device “%s”"
-msgstr ""
+msgstr "无法命名此设备 “%s”"
 
 #: src/Views/AccountView.vala:367
 msgid "Initial Setup could not set your hostname."
