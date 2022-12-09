@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-07 18:14+0000\n"
-"PO-Revision-Date: 2022-11-11 14:29+0000\n"
+"PO-Revision-Date: 2022-12-10 06:25+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/ca/>\n"
@@ -43,44 +43,43 @@ msgstr ""
 #: data/io.elementary.initial-setup.appdata.xml.in:52
 #: data/io.elementary.initial-setup.appdata.xml.in:63
 msgid "Improvements:"
-msgstr ""
+msgstr "Millores:"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:32
 msgid "Use larger icons in views"
-msgstr ""
+msgstr "Icones més grosses a les vistes"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:33
 msgid "Make window resizable"
-msgstr ""
+msgstr "Es pot canviar la mida de la finestra."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:34
-#, fuzzy
-#| msgid "Set keyboard layout in accountsservice"
 msgid "Show keyboard layouts in a separate window"
-msgstr "Establiu la disposició del teclat al servei del compte."
+msgstr "Disposicions del teclat en una finestra independent"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:35
 msgid "Allow hyphens in device names"
-msgstr ""
+msgstr "Permet els guions als noms dels dispositius."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:36
 #: data/io.elementary.initial-setup.appdata.xml.in:45
 #: data/io.elementary.initial-setup.appdata.xml.in:56
 #: data/io.elementary.initial-setup.appdata.xml.in:66
 msgid "Updated translations"
-msgstr ""
+msgstr "Traduccions actualitzades"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:54
 msgid "Offer to switch to right-click primary mouse button"
 msgstr ""
+"Ofereix canviar al botó principal del ratolí amb el botó dret del ratolí."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:55
 msgid "Suggest connecting to a network"
-msgstr ""
+msgstr "Suggereix connectar-se a una xarxa."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:65
 msgid "Avoid political naming of certain locales"
-msgstr ""
+msgstr "Evita els noms polítics de determinades localitats."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:73
 msgid "New features:"
