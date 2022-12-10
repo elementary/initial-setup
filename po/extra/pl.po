@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-07 18:14+0000\n"
-"PO-Revision-Date: 2022-12-10 06:25+0000\n"
+"PO-Revision-Date: 2022-12-11 10:25+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/pl/>\n"
@@ -55,21 +55,19 @@ msgstr "Ulepszenia:"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:32
 msgid "Use larger icons in views"
-msgstr ""
+msgstr "Użyto większych ikon w widokach"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:33
 msgid "Make window resizable"
-msgstr ""
+msgstr "Okna mogą teraz zmieniać rozmiar"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:34
-#, fuzzy
-#| msgid "Set keyboard layout in accountsservice"
 msgid "Show keyboard layouts in a separate window"
-msgstr "Ustawiono układ klawiatury w accountsservice"
+msgstr "Pokazanie układów klawiatury w osobnym oknie"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:35
 msgid "Allow hyphens in device names"
-msgstr ""
+msgstr "Dozwolono używać myślników w nazwach urządzeń"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:36
 #: data/io.elementary.initial-setup.appdata.xml.in:45
@@ -80,11 +78,11 @@ msgstr "Zaktualizowano tłumaczenia"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:54
 msgid "Offer to switch to right-click primary mouse button"
-msgstr ""
+msgstr "Opcja zmiany na prawy przycisk myszy jako główny przycisk"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:55
 msgid "Suggest connecting to a network"
-msgstr ""
+msgstr "Proponowanie połączenia z siecią"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:65
 msgid "Avoid political naming of certain locales"
