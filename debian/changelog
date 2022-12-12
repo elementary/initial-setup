@@ -1,3 +1,21 @@
+io.elementary.initial-setup (6.2.2) bionic; urgency=medium
+
+  * Release 6.2.2 (#157)
+  * Update translation files
+  * Update translation template
+  * Add release notes for 6.2.2
+  * Utils: Allow hyphens (#155)
+  * NetworkView: change icon names, size (#154)
+  * Remove gnomekbd dep (#151)
+  * AbstractInstallerView: handle more layout (#150)
+  * Make MainWindow resizable (#148)
+  * Misc dialog cleanup (#149)
+  * MainWindow: set icon_name to App ID (#147)
+  * Use larger icons in views (#140)
+  * Ship own app icon (#145)
+
+ -- elementary, Inc. <builds@elementary.io>  Mon, 12 Dec 2022 16:16:50 +0000
+
 io.elementary.initial-setup (6.2.1) bionic; urgency=medium
 
   * Release 6.2.1 (#144)
