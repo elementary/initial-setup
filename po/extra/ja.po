@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-07 18:14+0000\n"
-"PO-Revision-Date: 2022-04-09 00:55+0000\n"
+"PO-Revision-Date: 2022-12-15 19:25+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
 #: data/io.elementary.initial-setup.desktop.in:3
@@ -50,44 +50,42 @@ msgstr ""
 #: data/io.elementary.initial-setup.appdata.xml.in:52
 #: data/io.elementary.initial-setup.appdata.xml.in:63
 msgid "Improvements:"
-msgstr ""
+msgstr "改善点:"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:32
 msgid "Use larger icons in views"
-msgstr ""
+msgstr "各画面でより大きなアイコンを使用するように修正"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:33
 msgid "Make window resizable"
-msgstr ""
+msgstr "ウィンドウサイズが変更可能に"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:34
-#, fuzzy
-#| msgid "Set keyboard layout in accountsservice"
 msgid "Show keyboard layouts in a separate window"
-msgstr "AccountsService を利用してキーボードレイアウトを設定するように変更"
+msgstr "キーボードレイアウトを別ウィンドウで表示するように修正"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:35
 msgid "Allow hyphens in device names"
-msgstr ""
+msgstr "デバイス名にハイフンを使用できるように修正"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:36
 #: data/io.elementary.initial-setup.appdata.xml.in:45
 #: data/io.elementary.initial-setup.appdata.xml.in:56
 #: data/io.elementary.initial-setup.appdata.xml.in:66
 msgid "Updated translations"
-msgstr ""
+msgstr "翻訳の更新"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:54
 msgid "Offer to switch to right-click primary mouse button"
-msgstr ""
+msgstr "マウスの主ボタンで右クリックを行うかどうか尋ねる機能を追加"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:55
 msgid "Suggest connecting to a network"
-msgstr ""
+msgstr "インターネットへの接続を提案するように修正"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:65
 msgid "Avoid political naming of certain locales"
-msgstr ""
+msgstr "一部地域名に政治的な問題があったのを修正"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:73
 msgid "New features:"
