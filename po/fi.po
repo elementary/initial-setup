@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-07 18:14+0000\n"
-"PO-Revision-Date: 2022-12-15 19:25+0000\n"
+"PO-Revision-Date: 2023-01-03 12:25+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/installer/"
 "initial-setup/fi/>\n"
@@ -85,12 +85,12 @@ msgstr ""
 #: src/Views/AccountView.vala:310
 #, c-format
 msgid "Creating an account for “%s” failed"
-msgstr ""
+msgstr "Tilin luominen käyttäjälle “%s” epäonnistui"
 
 #: src/Views/AccountView.vala:314
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
-msgstr ""
+msgstr "Ei saatu oikeutta luoda tiliä käyttäjälle “%s”"
 
 #: src/Views/AccountView.vala:320
 msgid ""
@@ -104,12 +104,12 @@ msgstr ""
 #: src/Views/AccountView.vala:357
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
-msgstr ""
+msgstr "Ei saatu oikeutta asettaa laitteelle nimeksi “%s”"
 
 #: src/Views/AccountView.vala:360
 #, c-format
 msgid "Unable to name this device “%s”"
-msgstr ""
+msgstr "Laitteen nimeäminen muotoon “%s” ei onnistu"
 
 #: src/Views/AccountView.vala:367
 msgid "Initial Setup could not set your hostname."
