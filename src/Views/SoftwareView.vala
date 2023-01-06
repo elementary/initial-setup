@@ -1,5 +1,5 @@
 /*-
- * Copyright 2020 elementary, Inc. (https://elementary.io)
+ * Copyright 2023 elementary, Inc. (https://elementary.io)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,12 +18,12 @@
 
 public class Installer.SoftwareView : AbstractInstallerView {
     construct {
-        var image = new Gtk.Image.from_icon_name ("system-software-update", Gtk.IconSize.DIALOG);
-        image.valign = Gtk.Align.END;
+        var image = new Gtk.Image.from_icon_name ("system-software-update", Gtk.IconSize.DIALOG) {
+            pixel_size = 128,
+            valign = Gtk.Align.END
+        };
 
         var title_label = new Gtk.Label (_("Software"));
-        title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
-        title_label.valign = Gtk.Align.START;
 
         var form_grid = new Gtk.Grid ();
         form_grid.row_spacing = 3;
@@ -42,7 +42,7 @@ public class Installer.SoftwareView : AbstractInstallerView {
         var additional_media_formats_switch = new Gtk.Switch ();
         additional_media_formats_switch.valign = Gtk.Align.CENTER;
 
-        unowned Configuration configuration = Configuration.get_default ();
+        unowned var configuration = Configuration.get_default ();
         configuration.bind_property ("install_additional_media_formats", additional_media_formats_switch, "active", BindingFlags.BIDIRECTIONAL);
 
         form_grid.attach (additional_media_formats_name_label, 0, 0);
@@ -54,9 +54,11 @@ public class Installer.SoftwareView : AbstractInstallerView {
 
         content_area.add (form_grid);
 
-        var back_button = new Gtk.Button.with_label (_("Back"));
+        var back_button = new Gtk.Button.with_label (_("Back")) {
+            width_request = 86
+        };
 
-        var next_button = new Gtk.Button.with_label (_("Finish Setup"));
+        var next_button = new Gtk.Button.with_label (_("Next"));
         next_button.sensitive = true;
         next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 

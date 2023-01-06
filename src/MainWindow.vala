@@ -24,8 +24,8 @@ public class Installer.MainWindow : Hdy.Window {
     private LanguageView language_view;
     private KeyboardLayoutView keyboard_layout_view;
     private NetworkView network_view;
-    private SoftwareView software_view;
     private ProgressView progress_view;
+    private SoftwareView software_view;
 
     construct {
         language_view = new LanguageView ();
@@ -73,7 +73,24 @@ public class Installer.MainWindow : Hdy.Window {
             deck.add (network_view);
             deck.visible_child = network_view;
 
-            network_view.next_step.connect (load_account_view);
+            network_view.next_step.connect (load_software_view);
+        } else {
+            load_software_view ();
+        }
+    }
+
+    private void load_software_view () {
+        if (software_view != null) {
+            software_view.destroy ();
+        }
+
+        if (NetworkMonitor.get_default ().get_network_available ()) {
+            software_view = new SoftwareView ();
+
+            deck.add (software_view);
+            deck.visible_child = software_view;
+
+            software_view.next_step.connect (load_account_view);
         } else {
             load_account_view ();
         }
@@ -89,81 +106,19 @@ public class Installer.MainWindow : Hdy.Window {
         deck.add (account_view);
         deck.visible_child = account_view;
 
-        account_view.next_step.connect (load_software_view);
-    }
-
-    private void load_software_view () {
-        if (software_view != null) {
-            software_view.destroy ();
-        }
-
-        software_view = new SoftwareView ();
-
-        deck.add (software_view);
-        deck.visible_child = software_view;
-
-        software_view.next_step.connect (on_finish);
+        account_view.next_step.connect (on_finish);
     }
 
     private void on_finish () {
+        if (progress_view != null) {
+            progress_view.destroy ();
+        }
+
         progress_view = new ProgressView ();
+
         deck.add (progress_view);
         deck.visible_child = progress_view;
 
-        //  if (account_view.created_user != null) {
-        //      unowned Configuration configuration = Configuration.get_default ();
-        //      progress_view.progressbar_label.label = _("Setting language");
-        //      account_view.created_user.set_language (configuration.lang);
-
-        //      progress_view.progressbar_label.label = _("Setting keyboard layout");
-        //      set_keyboard_and_locale.begin ((obj, res) => {
-        //          set_keyboard_and_locale.end (res);
-
-        //          install_additional_packages.begin ((obj, res) => {
-        //              install_additional_packages.end (res);
-        //              destroy ();
-        //          });
-        //      });
-        //  } else {
-        //      destroy ();
-        //  }
-    }
-
-    private async void install_additional_packages () {
-        unowned Configuration configuration = Configuration.get_default ();
-
-        string[] additional_packages_to_install = {};
-        if (configuration.install_additional_media_formats) {
-            additional_packages_to_install += "gstreamer1.0-libav";
-            additional_packages_to_install += "gstreamer1.0-plugins-bad";
-            additional_packages_to_install += "gstreamer1.0-plugins-ugly";
-        }
-
-        additional_packages_to_install += null;
-
-        if (additional_packages_to_install.length > 0) {
-            var client = new Pk.Client ();
-            var transaction_flags = Pk.Bitfield.from_enums (Pk.Filter.NEWEST, Pk.Filter.ARCH);
-
-            yield client.refresh_cache_async (true, null, (progress, status) => {
-                progress_view.progressbar.fraction = progress.percentage;
-            });
-
-            progress_view.progressbar_label.label = _("Refreshing the package cache");
-            var results = yield client.resolve_async (transaction_flags, additional_packages_to_install, null, (progress, status) => {});
-            var package_array = results.get_package_array ();
-
-            string[] packages_ids = {};
-            package_array.foreach ((package) => {
-                packages_ids += package.package_id;
-            });
-
-            packages_ids += null;
-
-            progress_view.progressbar_label.label = _("Installing additional packages");
-            yield client.install_packages_async (transaction_flags, packages_ids, null, (progress, status) => {
-                progress_view.progressbar.fraction = progress.percentage;
-            });
-        }
+        progress_view.start_setup ();
     }
 }

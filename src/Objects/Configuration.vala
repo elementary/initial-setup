@@ -34,4 +34,8 @@ public class Configuration : GLib.Object {
     public InitialSetup.KeyboardVariant? keyboard_variant { get; set; default = null; }
     public bool left_handed { get; set; }
     public bool install_additional_media_formats { get; set; default = false; }
+    public string realname { get; set; }
+    public string username { get; set; }
+    public string password { get; set; }
+    public string hostname { get; set; }
 }
