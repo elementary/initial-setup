@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-24 22:23+0000\n"
-"PO-Revision-Date: 2021-08-25 01:58+0000\n"
-"Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
+"POT-Creation-Date: 2022-12-07 18:14+0000\n"
+"PO-Revision-Date: 2021-12-22 16:21+0000\n"
+"Last-Translator: Yağızhan Burak Yakar <yagizhan49@protonmail.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/tr/>\n"
 "Language: tr\n"
@@ -30,8 +30,8 @@ msgid "Set up the system"
 msgstr "Sistemi ayarla"
 
 #: data/io.elementary.initial-setup.desktop.in:6
-msgid "system-os-installer"
-msgstr "system-os-installer"
+msgid "io.elementary.initial-setup"
+msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:7
 msgid "Initial Setup"
@@ -45,52 +45,88 @@ msgstr ""
 "Yeni bir kurulum kullanılabilir duruma gelmeden önce, bir dil seçmek ve bir "
 "kullanıcı hesabı oluşturmak gibi temel görevlerde yardımcı olur."
 
-#: data/io.elementary.initial-setup.appdata.xml.in:29
-msgid "New features:"
-msgstr " "
-
-#: data/io.elementary.initial-setup.appdata.xml.in:31
-msgid "Confirm and change device name"
-msgstr " "
+#: data/io.elementary.initial-setup.appdata.xml.in:30
+#: data/io.elementary.initial-setup.appdata.xml.in:43
+#: data/io.elementary.initial-setup.appdata.xml.in:52
+#: data/io.elementary.initial-setup.appdata.xml.in:63
+msgid "Improvements:"
+msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:32
-msgid "Two-finger swipe to navigate back"
-msgstr " "
+msgid "Use larger icons in views"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:33
+msgid "Make window resizable"
+msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:34
-#: data/io.elementary.initial-setup.appdata.xml.in:42
+#, fuzzy
+#| msgid "Set keyboard layout in accountsservice"
+msgid "Show keyboard layouts in a separate window"
+msgstr "Hesaplar hizmetinde klavye düzenini ayarla"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:35
+msgid "Allow hyphens in device names"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:36
+#: data/io.elementary.initial-setup.appdata.xml.in:45
+#: data/io.elementary.initial-setup.appdata.xml.in:56
+#: data/io.elementary.initial-setup.appdata.xml.in:66
+msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:54
+msgid "Offer to switch to right-click primary mouse button"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:55
+msgid "Suggest connecting to a network"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:65
+msgid "Avoid political naming of certain locales"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:73
+msgid "New features:"
+msgstr "Yeni özellikler:"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:75
+msgid "Confirm and change device name"
+msgstr "Cihaz adını onayla ve değiştir"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:76
+msgid "Two-finger swipe to navigate back"
+msgstr "Geri gitmek için iki parmakla kaydırma"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:78
 msgid "Minor updates:"
 msgstr "Küçük güncellemeler:"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:36
-#: data/io.elementary.initial-setup.appdata.xml.in:48
-#: data/io.elementary.initial-setup.appdata.xml.in:54
+#: data/io.elementary.initial-setup.appdata.xml.in:80
 msgid "Translation updates"
 msgstr "Çeviriler güncellendi"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:44
-msgid "Set keyboard layout in accountsservice"
-msgstr "Hesaplar hizmetinde klavye düzenini ayarla"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:45
-msgid "Add multitouch gestures"
-msgstr "Çoklu dokunma hareketleri eklendi"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:46
-msgid "Set correct locales"
-msgstr "Doğru yerel ayarlar ayarlandı"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:47
-msgid "New colorful avatar fallback"
-msgstr "Yeni renkli avatar yedeği eklendi"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:59
-msgid "Initial release"
-msgstr "İlk sürüm"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:94
+#: data/io.elementary.initial-setup.appdata.xml.in:89
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
+
+#~ msgid "Add multitouch gestures"
+#~ msgstr "Çoklu dokunma hareketleri eklendi"
+
+#~ msgid "Set correct locales"
+#~ msgstr "Doğru yerel ayarlar ayarlandı"
+
+#~ msgid "New colorful avatar fallback"
+#~ msgstr "Yeni renkli avatar yedeği eklendi"
+
+#~ msgid "Initial release"
+#~ msgstr "İlk sürüm"
+
+#~ msgid "system-os-installer"
+#~ msgstr "system-os-installer"
 
 #~ msgid "Calculator"
 #~ msgstr "Hesap Makinesi"

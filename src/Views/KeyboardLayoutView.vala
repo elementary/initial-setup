@@ -20,13 +20,11 @@ public class KeyboardLayoutView : AbstractInstallerView {
 
     construct {
         var image = new Gtk.Image.from_icon_name ("input-keyboard", Gtk.IconSize.DIALOG) {
+            pixel_size = 128,
             valign = Gtk.Align.END
         };
 
-        var title_label = new Gtk.Label (_("Select Keyboard Layout")) {
-            valign = Gtk.Align.START
-        };
-        title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
+        var title_label = new Gtk.Label (_("Select Keyboard Layout"));
 
         input_variant_widget = new VariantWidget ();
 
@@ -45,11 +43,14 @@ public class KeyboardLayoutView : AbstractInstallerView {
         stack_grid.add (input_variant_widget);
         stack_grid.add (keyboard_test_entry);
 
-        content_area.attach (image, 0, 0);
-        content_area.attach (title_label, 0, 1);
-        content_area.attach (stack_grid, 1, 0, 1, 2);
+        title_area.add (image);
+        title_area.add (title_label);
 
-        var back_button = new Gtk.Button.with_label (_("Back"));
+        content_area.add (stack_grid);
+
+        var back_button = new Gtk.Button.with_label (_("Back")) {
+            width_request = 86
+        };
 
         var next_button = new Gtk.Button.with_label (_("Select")) {
             sensitive = false
@@ -137,12 +138,12 @@ public class KeyboardLayoutView : AbstractInstallerView {
                 }
             }
 
-            var layout = new LayoutWidget ();
-            layout.set_layout (layout_string);
-
-            var popover = new Gtk.Popover (keyboard_test_entry);
-            popover.add (layout);
-            popover.show_all ();
+            string command = "gkbd-keyboard-display --layout=%s".printf (layout_string);
+            try {
+                AppInfo.create_from_commandline (command, null, AppInfoCreateFlags.NONE).launch (null, null);
+            } catch (Error e) {
+                warning ("Error launching keyboard layout display: %s", e.message);
+            }
         });
 
         input_variant_widget.main_listbox.bind_model (InitialSetup.KeyboardLayout.get_all (), (layout) => {

@@ -43,19 +43,19 @@ public class Installer.LanguageView : AbstractInstallerView {
 
     construct {
         var image = new Gtk.Image.from_icon_name ("preferences-desktop-locale", Gtk.IconSize.DIALOG) {
+            pixel_size = 128,
             valign = Gtk.Align.END
         };
 
         select_label = new Gtk.Label (null) {
             halign = Gtk.Align.CENTER,
+            valign = Gtk.Align.START,
             wrap = true
         };
 
         select_stack = new Gtk.Stack () {
-            transition_type = Gtk.StackTransitionType.CROSSFADE,
-            valign = Gtk.Align.START
+            transition_type = Gtk.StackTransitionType.CROSSFADE
         };
-        select_stack.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
         select_stack.add (select_label);
 
         select_stack.notify["transition-running"].connect (() => {
@@ -67,10 +67,6 @@ public class Installer.LanguageView : AbstractInstallerView {
                 });
             }
         });
-
-        var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.VERTICAL);
-        size_group.add_widget (select_stack);
-        size_group.add_widget (image);
 
         lang_variant_widget = new VariantWidget ();
         lang_variant_widget.variant_listbox.set_sort_func ((Gtk.ListBoxSortFunc) CountryRow.compare);
@@ -109,6 +105,7 @@ public class Installer.LanguageView : AbstractInstallerView {
         }
 
         next_button = new Gtk.Button.with_label (_("Select")) {
+            width_request = 86,
             sensitive = false
         };
         next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
@@ -120,15 +117,23 @@ public class Installer.LanguageView : AbstractInstallerView {
         lang_variant_widget.main_listbox.row_activated.connect (row_activated);
 
         next_button.clicked.connect (on_next_button_clicked);
+        next_button.button_press_event.connect ((event) => {
+            if (event.button == Gdk.BUTTON_SECONDARY) {
+                on_next_button_secondary_clicked ();
+            }
+
+            return base.button_press_event (event);
+        });
 
         destroy.connect (() => {
             // We need to disconnect the signal otherwise it's called several time when destroying the window…
             lang_variant_widget.main_listbox.row_selected.disconnect (row_selected);
         });
 
-        content_area.attach (image, 0, 0);
-        content_area.attach (select_stack, 0, 1);
-        content_area.attach (lang_variant_widget, 1, 0, 1, 2);
+        title_area.add (image);
+        title_area.add (select_stack);
+
+        content_area.add (lang_variant_widget);
 
         timeout ();
     }
@@ -225,6 +230,69 @@ public class Installer.LanguageView : AbstractInstallerView {
             Environment.set_variable ("LANGUAGE", lang, true);
             configuration.lang = lang;
         }
+
+        next_step ();
+    }
+
+    private void on_next_button_secondary_clicked () {
+        var mouse_settings = new GLib.Settings ("org.gnome.desktop.peripherals.mouse");
+
+        string primary_label = _("Use the right mouse button for primary click?");
+        string secondary_label = _("The right mouse button was used where a primary click was expected. You can choose to always use the right mouse button for primary click.");
+        string suggested_action_label = _("Right-Click as Primary");
+        string cancel_action_label = _("Left-Click as Primary");
+
+        if (mouse_settings.get_boolean ("left-handed")) {
+            primary_label = _("Use the left mouse button for primary click?");
+            secondary_label = _("The left mouse button was used where a primary click was expected. You can choose to always use the left mouse button for primary click.");
+            suggested_action_label = _("Left-Click as Primary");
+            cancel_action_label = _("Right-Click as Primary");
+        }
+
+        var dialog = new Granite.MessageDialog.with_image_from_icon_name (
+            primary_label,
+            secondary_label,
+            "input-mouse",
+            Gtk.ButtonsType.NONE
+        ) {
+            modal = true,
+            transient_for = (Gtk.Window) get_toplevel ()
+        };
+        var cancel_action_button = dialog.add_button (cancel_action_label, Gtk.ResponseType.CANCEL);
+
+        var suggested_action_button = dialog.add_button (suggested_action_label, Gtk.ResponseType.ACCEPT);
+        suggested_action_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+
+        suggested_action_button.button_press_event.connect ((event) => {
+            if (event.button == Gdk.BUTTON_SECONDARY) {
+                suggested_action_button.activate ();
+            }
+
+            return base.button_press_event (event);
+        });
+
+        cancel_action_button.button_press_event.connect ((event) => {
+            if (event.button == Gdk.BUTTON_SECONDARY) {
+                cancel_action_button.activate ();
+            }
+
+            return base.button_press_event (event);
+        });
+
+        dialog.present ();
+        dialog.response.connect ((response) => {
+            if (response == Gtk.ResponseType.ACCEPT) {
+                if (!mouse_settings.get_boolean ("left-handed")) {
+                    mouse_settings.set_boolean ("left-handed", true);
+                    Configuration.get_default ().left_handed = true;
+                } else if (mouse_settings.get_boolean ("left-handed")) {
+                    mouse_settings.set_boolean ("left-handed", false);
+                    Configuration.get_default ().left_handed = false;
+                }
+            }
+
+            dialog.destroy ();
+        });
 
         next_step ();
     }

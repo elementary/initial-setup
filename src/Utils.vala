@@ -20,111 +20,6 @@
  */
 
 namespace Utils {
-    private static Act.UserManager? usermanager = null;
-
-    public static unowned Act.UserManager? get_usermanager () {
-        if (usermanager != null && usermanager.is_loaded) {
-            return usermanager;
-        }
-
-        usermanager = Act.UserManager.get_default ();
-        return usermanager;
-    }
-
-    private static Polkit.Permission? permission = null;
-
-    public static Polkit.Permission? get_permission () {
-        if (permission != null)
-            return permission;
-        try {
-            permission = new Polkit.Permission.sync ("org.freedesktop.accounts.user-administration", new Polkit.UnixProcess (Posix.getpid ()));
-            return permission;
-        } catch (Error e) {
-            critical (e.message);
-            return null;
-        }
-    }
-
-    public static Act.User? create_new_user (string fullname, string username, string password) {
-        var permission = get_permission ();
-
-        string? primary_text = null;
-        string? error_message = null;
-        string secondary_text = _("Initial Setup could not create your user. Without it, you will not be able to log in and may need to reinstall the OS.");
-
-        if (permission != null && permission.allowed) {
-            try {
-                var user_manager = get_usermanager ();
-                if (user_manager != null) {
-                    var created_user = user_manager.create_user (username, fullname, Act.UserAccountType.ADMINISTRATOR);
-                    created_user.set_password (password, "");
-
-                    return created_user;
-                }
-            } catch (Error e) {
-                primary_text = _("Creating User '%s' Failed").printf (username);
-                error_message = e.message;
-            }
-        } else {
-            primary_text = _("No Permission to Create User '%s'").printf (username);
-        }
-
-        if (primary_text != null) {
-            var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
-                primary_text,
-                secondary_text,
-                "dialog-error",
-                Gtk.ButtonsType.CLOSE
-            );
-
-            if (error_message != null) {
-                error_dialog.show_error_details (error_message);
-            }
-
-            error_dialog.run ();
-            error_dialog.destroy ();
-        }
-
-        return null;
-    }
-
-    public static bool is_taken_username (string username) {
-        foreach (unowned Act.User user in get_usermanager ().list_users ()) {
-            if (user.get_user_name () == username) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public static bool is_valid_username (string username) {
-        try {
-            if (new Regex ("^[a-z]+[a-z0-9]*$").match (username)) {
-                return true;
-            }
-            return false;
-        } catch (Error e) {
-            critical (e.message);
-            return false;
-        }
-    }
-
-    public static string gen_username (string fullname) {
-        string username = "";
-        bool met_alpha = false;
-
-        foreach (char c in fullname.to_ascii ().to_utf8 ()) {
-            if (c.isalpha ()) {
-                username += c.to_string ().down ();
-                met_alpha = true;
-            } else if (c.isdigit () && met_alpha) {
-                username += c.to_string ();
-            }
-        }
-
-        return username;
-    }
-
     public static string gen_hostname (string pretty_hostname) {
         string hostname = "";
         bool met_alpha = false;
@@ -135,7 +30,7 @@ namespace Utils {
                 hostname += c.to_string ();
                 met_alpha = true;
                 whitespace_before = false;
-            } else if (c.isdigit () && met_alpha) {
+            } else if ((c.isdigit () || c == '-') && met_alpha) {
                 hostname += c.to_string ();
                 whitespace_before = false;
             } else if (c.isspace () && !whitespace_before) {
@@ -181,47 +76,5 @@ namespace Utils {
         }
 
         return hostname;
-    }
-
-    public static bool set_hostname (string hostname) {
-        string? primary_text = null;
-        string secondary_text = _("Initial Setup could not set your hostname.");
-        string? error_message = null;
-
-        try {
-            var permission = new Polkit.Permission.sync ("org.freedesktop.hostname1.set-static-hostname", new Polkit.UnixProcess (Posix.getpid ()));
-
-            if (permission != null && permission.allowed) {
-                get_hostname_interface_instance ();
-                hostname_interface_instance.set_pretty_hostname (hostname, false);
-                hostname_interface_instance.set_static_hostname (gen_hostname (hostname), false);
-            } else {
-                primary_text = _("No Permission to set hostname '%s'").printf (hostname);
-            }
-        } catch (GLib.Error e) {
-            primary_text = _("Unable to set Hostname '%s'").printf (hostname);
-            error_message = e.message;
-        }
-
-        if (primary_text != null) {
-            var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
-                primary_text,
-                secondary_text,
-                "dialog-error",
-                Gtk.ButtonsType.CLOSE
-            );
-
-            if (error_message != null) {
-                error_dialog.show_error_details (error_message);
-            }
-
-
-            error_dialog.run ();
-            error_dialog.destroy ();
-
-            return false;
-        }
-
-        return true;
     }
 }

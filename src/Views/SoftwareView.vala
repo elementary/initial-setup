@@ -49,9 +49,10 @@ public class Installer.SoftwareView : AbstractInstallerView {
         form_grid.attach (additional_media_formats_description_label, 0, 1);
         form_grid.attach (additional_media_formats_switch, 1, 0, 1, 2);
 
-        content_area.attach (image, 0, 0, 1, 1);
-        content_area.attach (title_label, 0, 1, 1, 1);
-        content_area.attach (form_grid, 1, 0, 1, 2);
+        title_area.add (image);
+        title_area.add (title_label);
+
+        content_area.add (form_grid);
 
         var back_button = new Gtk.Button.with_label (_("Back"));
 

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-24 22:23+0000\n"
-"PO-Revision-Date: 2021-08-25 01:58+0000\n"
+"POT-Creation-Date: 2022-12-07 18:14+0000\n"
+"PO-Revision-Date: 2022-12-10 06:25+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/uk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
 #: data/io.elementary.initial-setup.desktop.in:3
@@ -31,8 +31,8 @@ msgid "Set up the system"
 msgstr "Встановити систему"
 
 #: data/io.elementary.initial-setup.desktop.in:6
-msgid "system-os-installer"
-msgstr "system-os-installer"
+msgid "io.elementary.initial-setup"
+msgstr "io.elementary.initial-setup"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:7
 msgid "Initial Setup"
@@ -46,52 +46,86 @@ msgstr ""
 "Допомагає виконати основні завдання, перш ніж нова установка стане придатною "
 "для вжитку, наприклад, вибір мови та створення облікового запису користувача."
 
-#: data/io.elementary.initial-setup.appdata.xml.in:29
+#: data/io.elementary.initial-setup.appdata.xml.in:30
+#: data/io.elementary.initial-setup.appdata.xml.in:43
+#: data/io.elementary.initial-setup.appdata.xml.in:52
+#: data/io.elementary.initial-setup.appdata.xml.in:63
+msgid "Improvements:"
+msgstr "Удосконалення:"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:32
+msgid "Use larger icons in views"
+msgstr "Збільшені піктограми у поданнях"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:33
+msgid "Make window resizable"
+msgstr "Вікно змінюваного розміру"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:34
+msgid "Show keyboard layouts in a separate window"
+msgstr "Показ розкладок клавіатури в окремому вікні"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:35
+msgid "Allow hyphens in device names"
+msgstr "Дозволено дефіс у назвах пристроїв"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:36
+#: data/io.elementary.initial-setup.appdata.xml.in:45
+#: data/io.elementary.initial-setup.appdata.xml.in:56
+#: data/io.elementary.initial-setup.appdata.xml.in:66
+msgid "Updated translations"
+msgstr "Оновлено переклади"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:54
+msgid "Offer to switch to right-click primary mouse button"
+msgstr "Пропозиція змінити основну кнопку миші на праву"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:55
+msgid "Suggest connecting to a network"
+msgstr "Пропозиція під'єднатися до мережі"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:65
+msgid "Avoid political naming of certain locales"
+msgstr "Уникнення політичних назв окремих локалей"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:73
 msgid "New features:"
 msgstr "Нові можливості:"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:31
+#: data/io.elementary.initial-setup.appdata.xml.in:75
 msgid "Confirm and change device name"
 msgstr "Підтвердити та змінити назву пристрою"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:32
+#: data/io.elementary.initial-setup.appdata.xml.in:76
 msgid "Two-finger swipe to navigate back"
 msgstr "Проведення двома пальцями, щоб перейти назад"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:34
-#: data/io.elementary.initial-setup.appdata.xml.in:42
+#: data/io.elementary.initial-setup.appdata.xml.in:78
 msgid "Minor updates:"
 msgstr "Незначні оновлення:"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:36
-#: data/io.elementary.initial-setup.appdata.xml.in:48
-#: data/io.elementary.initial-setup.appdata.xml.in:54
+#: data/io.elementary.initial-setup.appdata.xml.in:80
 msgid "Translation updates"
 msgstr "Оновлено переклади"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:44
-msgid "Set keyboard layout in accountsservice"
-msgstr "Установлення розкладки клавіатури в службі облікових записів"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:45
-msgid "Add multitouch gestures"
-msgstr "Додано багатофункціональні жести"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:46
-msgid "Set correct locales"
-msgstr "Установлення правильних локалей"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:47
-msgid "New colorful avatar fallback"
-msgstr "Повернення нового барвистого аватара"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:59
-msgid "Initial release"
-msgstr "Початковий випуск"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:94
+#: data/io.elementary.initial-setup.appdata.xml.in:89
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
+
+#~ msgid "Add multitouch gestures"
+#~ msgstr "Додано багатофункціональні жести"
+
+#~ msgid "Set correct locales"
+#~ msgstr "Установлення правильних локалей"
+
+#~ msgid "New colorful avatar fallback"
+#~ msgstr "Повернення нового барвистого аватара"
+
+#~ msgid "Initial release"
+#~ msgstr "Початковий випуск"
+
+#~ msgid "system-os-installer"
+#~ msgstr "system-os-installer"
 
 #~ msgid "Calculator"
 #~ msgstr "Калькулятор"

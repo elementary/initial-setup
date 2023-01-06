@@ -23,19 +23,9 @@ public class Installer.MainWindow : Hdy.Window {
     private AccountView account_view;
     private LanguageView language_view;
     private KeyboardLayoutView keyboard_layout_view;
+    private NetworkView network_view;
     private SoftwareView software_view;
     private ProgressView progress_view;
-
-    public MainWindow () {
-        Object (
-            deletable: false,
-            height_request: 700,
-            icon_name: "system-os-installer",
-            resizable: false,
-            title: _("Create a User"),
-            width_request: 950
-        );
-    }
 
     construct {
         language_view = new LanguageView ();
@@ -69,7 +59,24 @@ public class Installer.MainWindow : Hdy.Window {
         deck.add (keyboard_layout_view);
         deck.visible_child = keyboard_layout_view;
 
-        keyboard_layout_view.next_step.connect (() => load_account_view ());
+        keyboard_layout_view.next_step.connect (() => load_network_view ());
+    }
+
+    private void load_network_view () {
+        if (network_view != null) {
+            network_view.destroy ();
+        }
+
+        if (!NetworkMonitor.get_default ().get_network_available ()) {
+            network_view = new NetworkView ();
+
+            deck.add (network_view);
+            deck.visible_child = network_view;
+
+            network_view.next_step.connect (load_account_view);
+        } else {
+            load_account_view ();
+        }
     }
 
     private void load_account_view () {
@@ -82,7 +89,7 @@ public class Installer.MainWindow : Hdy.Window {
         deck.add (account_view);
         deck.visible_child = account_view;
 
-        account_view.next_step.connect (() => load_software_view ());
+        account_view.next_step.connect (load_software_view);
     }
 
     private void load_software_view () {
@@ -103,65 +110,23 @@ public class Installer.MainWindow : Hdy.Window {
         deck.add (progress_view);
         deck.visible_child = progress_view;
 
-        if (account_view.created != null) {
-            unowned Configuration configuration = Configuration.get_default ();
-            progress_view.progressbar_label.label = _("Setting language");
-            account_view.created.set_language (configuration.lang);
+        //  if (account_view.created_user != null) {
+        //      unowned Configuration configuration = Configuration.get_default ();
+        //      progress_view.progressbar_label.label = _("Setting language");
+        //      account_view.created_user.set_language (configuration.lang);
 
-            progress_view.progressbar_label.label = _("Setting keyboard layout");
-            set_keyboard_and_locale.begin ((obj, res) => {
-                set_keyboard_and_locale.end (res);
+        //      progress_view.progressbar_label.label = _("Setting keyboard layout");
+        //      set_keyboard_and_locale.begin ((obj, res) => {
+        //          set_keyboard_and_locale.end (res);
 
-                install_additional_packages.begin ((obj, res) => {
-                    install_additional_packages.end (res);
-                    destroy ();
-                });
-            });
-        } else {
-            destroy ();
-        }
-    }
-
-    private async void set_keyboard_and_locale () {
-        yield set_keyboard_layout ();
-
-        string lang = Configuration.get_default ().lang;
-        string? locale = null;
-        bool success = yield LocaleHelper.language2locale (lang, out locale);
-
-        if (!success || locale == null || locale == "") {
-            warning ("Falling back to setting unconverted language as user's locale, may result in incorrect language");
-            account_view.created.set_language (lang);
-        } else {
-            account_view.created.set_language (locale);
-        }
-    }
-
-    private async void set_keyboard_layout () {
-        AccountsService accounts_service = null;
-
-        try {
-            var act_service = yield GLib.Bus.get_proxy<FDO.Accounts> (GLib.BusType.SYSTEM,
-                                                                      "org.freedesktop.Accounts",
-                                                                      "/org/freedesktop/Accounts");
-            var user_path = act_service.find_user_by_name (account_view.created.user_name);
-
-            accounts_service = yield GLib.Bus.get_proxy (GLib.BusType.SYSTEM,
-                                                        "org.freedesktop.Accounts",
-                                                        user_path,
-                                                        GLib.DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
-        } catch (Error e) {
-            warning ("Unable to get AccountsService proxy, keyboard layout on new user may be incorrect: %s", e.message);
-        }
-
-        if (accounts_service != null) {
-            var layouts = Configuration.get_default ().keyboard_layout.to_accountsservice_array ();
-            if (Configuration.get_default ().keyboard_variant != null) {
-                layouts = Configuration.get_default ().keyboard_variant.to_accountsservice_array ();
-            }
-
-            accounts_service.keyboard_layouts = layouts;
-        }
+        //          install_additional_packages.begin ((obj, res) => {
+        //              install_additional_packages.end (res);
+        //              destroy ();
+        //          });
+        //      });
+        //  } else {
+        //      destroy ();
+        //  }
     }
 
     private async void install_additional_packages () {

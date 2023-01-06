@@ -26,7 +26,13 @@ public class Installer.App : Gtk.Application {
     }
 
     public override void activate () {
-        var window = new MainWindow ();
+        var window = new MainWindow () {
+            default_height = 600,
+            default_width = 850,
+            deletable = false,
+            icon_name = application_id,
+            title = _("Create a User")
+        };
         window.show_all ();
         this.add_window (window);
     }

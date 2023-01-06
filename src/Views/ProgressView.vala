@@ -37,11 +37,20 @@ public class Installer.ProgressView : AbstractInstallerView {
         progressbar = new Gtk.ProgressBar ();
         progressbar.hexpand = true;
 
+        var progress_grid = new Gtk.Grid () {
+            column_homogeneous = true,
+            column_spacing = 12,
+            row_spacing = 12,
+            expand = true,
+            orientation = Gtk.Orientation.VERTICAL
+        };
+        progress_grid.attach (logo_stack, 0, 0, 2, 1);
+        progress_grid.attach (progressbar_label, 0, 1, 1, 1);
+        progress_grid.attach (progressbar, 0, 2, 2, 1);
+
         content_area.margin_end = 22;
         content_area.margin_start = 22;
-        content_area.attach (logo_stack, 0, 0, 2, 1);
-        content_area.attach (progressbar_label, 0, 1, 1, 1);
-        content_area.attach (progressbar, 0, 2, 2, 1);
+        content_area.add (progress_grid);
 
         get_style_context ().add_class ("progress-view");
 
