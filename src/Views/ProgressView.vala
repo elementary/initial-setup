@@ -144,7 +144,7 @@ public class Installer.ProgressView : AbstractInstallerView {
     }
 
     private async void set_settings () {
-        progressbar_label.label = _("Set password");    
+        progressbar_label.label = _("Set password");
         created_user.set_password (Configuration.get_default ().password, "");
         yield set_accounts_service_settings ();
         yield set_locale ();
@@ -265,7 +265,7 @@ public class Installer.ProgressView : AbstractInstallerView {
         }
 
         const string REMOTE = "freedesktop";
-        string REF = "runtime/org.freedesktop.Platform.ffmpeg-full/%s/22.08".printf (arch);
+        string ref = "runtime/org.freedesktop.Platform.ffmpeg-full/%s/22.08".printf (arch);
 
         var install_additional_media_formats = Configuration.get_default ().install_additional_media_formats;
 
@@ -281,7 +281,7 @@ public class Installer.ProgressView : AbstractInstallerView {
             Flatpak.Transaction transaction;
             transaction = new Flatpak.Transaction.for_installation (system_installation);
             transaction.add_default_dependency_sources ();
-            transaction.add_install (REMOTE, REF, null);
+            transaction.add_install (REMOTE, ref, null);
             transaction.run ();
         } catch (Error e) {
             warning ("Unable to install additional software: %s", e.message);
