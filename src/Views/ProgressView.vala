@@ -265,7 +265,7 @@ public class Installer.ProgressView : AbstractInstallerView {
         }
 
         const string REMOTE = "freedesktop";
-        string ref = "runtime/org.freedesktop.Platform.ffmpeg-full/%s/22.08".printf (arch);
+        string _ref = "runtime/org.freedesktop.Platform.ffmpeg-full/%s/22.08".printf (arch);
 
         var install_additional_media_formats = Configuration.get_default ().install_additional_media_formats;
 
@@ -281,7 +281,7 @@ public class Installer.ProgressView : AbstractInstallerView {
             Flatpak.Transaction transaction;
             transaction = new Flatpak.Transaction.for_installation (system_installation);
             transaction.add_default_dependency_sources ();
-            transaction.add_install (REMOTE, ref, null);
+            transaction.add_install (REMOTE, _ref, null);
             transaction.run ();
         } catch (Error e) {
             warning ("Unable to install additional software: %s", e.message);
