@@ -28,24 +28,6 @@ public class Installer.AccountView : AbstractInstallerView {
         }
     }
 
-    private Polkit.Permission? _permission = null;
-    private Polkit.Permission? permission {
-        get {
-            if (_permission != null) {
-                return _permission;
-            }
-
-            try {
-                _permission = new Polkit.Permission.sync ("org.freedesktop.accounts.user-administration", new Polkit.UnixProcess (Posix.getpid ()));
-            } catch (Error e) {
-                critical (e.message);
-            }
-
-            return _permission;
-        }
-    }
-
-    private Act.User? created_user = null;
     private ErrorRevealer confirm_entry_revealer;
     private ErrorRevealer pw_error_revealer;
     private ErrorRevealer username_error_revealer;
@@ -191,12 +173,22 @@ public class Installer.AccountView : AbstractInstallerView {
             update_finish_button ();
         });
 
-        finish_button.clicked.connect (create_new_user);
+        finish_button.clicked.connect (on_finish_button_clicked);
 
         show_all ();
 
         realname_entry.bind_property ("text", avatar, "text");
         realname_entry.grab_focus ();
+    }
+
+    private void on_finish_button_clicked () {
+        unowned var configuration = Configuration.get_default ();
+        configuration.realname = realname_entry.text;
+        configuration.username = username_entry.text;
+        configuration.password = pw_entry.text;
+        configuration.hostname = hostname_entry.text;
+
+        next_step ();
     }
 
     private bool check_password () {
@@ -283,146 +275,6 @@ public class Installer.AccountView : AbstractInstallerView {
             finish_button.has_default = true;
         } else {
             finish_button.sensitive = false;
-        }
-    }
-
-    private void create_new_user () {
-        string? primary_text = null;
-        string? error_message = null;
-
-        if (permission != null && permission.allowed) {
-            try {
-                created_user = user_manager.create_user (username_entry.text, realname_entry.text, Act.UserAccountType.ADMINISTRATOR);
-                set_settings.begin ((obj, res) => {
-                    set_settings.end (res);
-
-                    Application.get_default ().quit ();
-                });
-            } catch (Error e) {
-                if (created_user != null) {
-                    try {
-                        user_manager.delete_user (created_user, true);
-                    } catch (Error e) {
-                        critical ("Unable to clean up failed user: %s", e.message);
-                    }
-                }
-
-                primary_text = _("Creating an account for “%s” failed").printf (username_entry.text);
-                error_message = e.message;
-            }
-        } else {
-            primary_text = _("Couldn't get permission to create an account for “%s”").printf (username_entry.text);
-        }
-
-        if (primary_text != null) {
-            var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
-                primary_text,
-                _("Initial Setup could not create this account. Without it, you will not be able to log in and may need to reinstall the OS."),
-                "system-users",
-                Gtk.ButtonsType.CLOSE
-            ) {
-                badge_icon = new ThemedIcon ("dialog-error"),
-                modal = true,
-                transient_for = (Gtk.Window) get_toplevel ()
-            };
-
-            if (error_message != null) {
-                error_dialog.show_error_details (error_message);
-            }
-
-            error_dialog.present ();
-            error_dialog.response.connect (error_dialog.destroy);
-        }
-    }
-
-    private async void set_settings () {
-        created_user.set_password (pw_entry.text, "");
-        yield set_accounts_service_settings ();
-        yield set_locale ();
-        set_hostname (hostname_entry.text);
-    }
-
-    public bool set_hostname (string hostname) {
-        string? primary_text = null;
-        string? error_message = null;
-
-        try {
-            var permission = new Polkit.Permission.sync ("org.freedesktop.hostname1.set-static-hostname", new Polkit.UnixProcess (Posix.getpid ()));
-
-            if (permission != null && permission.allowed) {
-                Utils.get_hostname_interface_instance ();
-                Utils.hostname_interface_instance.set_pretty_hostname (hostname, false);
-                Utils.hostname_interface_instance.set_static_hostname (Utils.gen_hostname (hostname), false);
-            } else {
-                primary_text = _("Couldn't get permission to name this device “%s”").printf (hostname);
-            }
-        } catch (GLib.Error e) {
-            primary_text = _("Unable to name this device “%s”").printf (hostname);
-            error_message = e.message;
-        }
-
-        if (primary_text != null) {
-            var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
-                primary_text,
-                _("Initial Setup could not set your hostname."),
-                "dialog-error",
-                Gtk.ButtonsType.CLOSE
-            ) {
-                modal = true,
-                transient_for = (Gtk.Window) get_toplevel ()
-            };
-
-            if (error_message != null) {
-                error_dialog.show_error_details (error_message);
-            }
-
-            error_dialog.present ();
-            error_dialog.response.connect (error_dialog.destroy);
-
-            return false;
-        }
-
-        return true;
-    }
-
-    private async void set_locale () {
-        string lang = Configuration.get_default ().lang;
-        string? locale = null;
-        bool success = yield LocaleHelper.language2locale (lang, out locale);
-
-        if (!success || locale == null || locale == "") {
-            warning ("Falling back to setting unconverted language as user's locale, may result in incorrect language");
-            created_user.set_language (lang);
-        } else {
-            created_user.set_language (locale);
-        }
-    }
-
-    private async void set_accounts_service_settings () {
-        AccountsService accounts_service = null;
-
-        try {
-            var act_service = yield GLib.Bus.get_proxy<FDO.Accounts> (GLib.BusType.SYSTEM,
-                                                                      "org.freedesktop.Accounts",
-                                                                      "/org/freedesktop/Accounts");
-            var user_path = act_service.find_user_by_name (created_user.user_name);
-
-            accounts_service = yield GLib.Bus.get_proxy (GLib.BusType.SYSTEM,
-                                                        "org.freedesktop.Accounts",
-                                                        user_path,
-                                                        GLib.DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
-        } catch (Error e) {
-            warning ("Unable to get AccountsService proxy, settings on new user may be incorrect: %s", e.message);
-        }
-
-        if (accounts_service != null) {
-            var layouts = Configuration.get_default ().keyboard_layout.to_accountsservice_array ();
-            if (Configuration.get_default ().keyboard_variant != null) {
-                layouts = Configuration.get_default ().keyboard_variant.to_accountsservice_array ();
-            }
-
-            accounts_service.keyboard_layouts = layouts;
-            accounts_service.left_handed = Configuration.get_default ().left_handed;
         }
     }
 

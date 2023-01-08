@@ -13,6 +13,7 @@ You'll need the following dependencies:
 * gettext
 * granite >= 0.5
 * libaccountsservice-dev
+* libflatpak-dev
 * libgnomekbd-dev
 * libgtk-3-dev
 * libhandy-1-dev

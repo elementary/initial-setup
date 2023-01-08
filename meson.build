@@ -12,6 +12,7 @@ gnome = import('gnome')
 i18n = import('i18n')
 
 accountservice_dep = dependency('accountsservice')
+flatpak_dep = dependency ('flatpak')
 gee_dep = dependency('gee-0.8')
 glib_dep = dependency('glib-2.0')
 gobject_dep = dependency('gobject-2.0')
@@ -26,6 +27,7 @@ xml2_dep = dependency('libxml-2.0')
 
 dependencies = [
     accountservice_dep,
+    flatpak_dep,
     gee_dep,
     glib_dep,
     gobject_dep,

@@ -24,6 +24,8 @@ public class Installer.MainWindow : Hdy.Window {
     private LanguageView language_view;
     private KeyboardLayoutView keyboard_layout_view;
     private NetworkView network_view;
+    private ProgressView progress_view;
+    private SoftwareView software_view;
 
     construct {
         language_view = new LanguageView ();
@@ -71,7 +73,24 @@ public class Installer.MainWindow : Hdy.Window {
             deck.add (network_view);
             deck.visible_child = network_view;
 
-            network_view.next_step.connect (load_account_view);
+            network_view.next_step.connect (load_software_view);
+        } else {
+            load_software_view ();
+        }
+    }
+
+    private void load_software_view () {
+        if (software_view != null) {
+            software_view.destroy ();
+        }
+
+        if (NetworkMonitor.get_default ().get_network_available ()) {
+            software_view = new SoftwareView ();
+
+            deck.add (software_view);
+            deck.visible_child = software_view;
+
+            software_view.next_step.connect (load_account_view);
         } else {
             load_account_view ();
         }
@@ -86,5 +105,20 @@ public class Installer.MainWindow : Hdy.Window {
 
         deck.add (account_view);
         deck.visible_child = account_view;
+
+        account_view.next_step.connect (on_finish);
+    }
+
+    private void on_finish () {
+        if (progress_view != null) {
+            progress_view.destroy ();
+        }
+
+        progress_view = new ProgressView ();
+
+        deck.add (progress_view);
+        deck.visible_child = progress_view;
+
+        progress_view.start_setup ();
     }
 }
