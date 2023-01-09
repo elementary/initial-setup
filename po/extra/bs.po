@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 18:14+0000\n"
+"POT-Creation-Date: 2023-01-09 21:49+0000\n"
 "PO-Revision-Date: 2019-09-07 18:22+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Bosnian <https://l10n.elementary.io/projects/installer/"
@@ -21,10 +21,6 @@ msgstr ""
 
 #: data/io.elementary.initial-setup.desktop.in:4
 msgid "Set up the system"
-msgstr ""
-
-#: data/io.elementary.initial-setup.desktop.in:6
-msgid "io.elementary.initial-setup"
 msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:7

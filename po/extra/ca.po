@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 18:14+0000\n"
+"POT-Creation-Date: 2023-01-09 21:49+0000\n"
 "PO-Revision-Date: 2022-12-10 06:25+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/installer/"
@@ -21,10 +21,6 @@ msgstr "Configureu l'elementary OS"
 #: data/io.elementary.initial-setup.desktop.in:4
 msgid "Set up the system"
 msgstr "Configureu el sistema"
-
-#: data/io.elementary.initial-setup.desktop.in:6
-msgid "io.elementary.initial-setup"
-msgstr "io.elementary.initial-setup"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:7
 msgid "Initial Setup"
@@ -104,6 +100,9 @@ msgstr "Actualitzacions de la traducció"
 #: data/io.elementary.initial-setup.appdata.xml.in:89
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
+
+#~ msgid "io.elementary.initial-setup"
+#~ msgstr "io.elementary.initial-setup"
 
 #~ msgid "Add multitouch gestures"
 #~ msgstr "Afegiu-hi gests multitàctils"

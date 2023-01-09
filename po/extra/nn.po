@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 18:14+0000\n"
+"POT-Creation-Date: 2023-01-09 21:49+0000\n"
 "PO-Revision-Date: 2020-07-04 18:12+0000\n"
 "Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
@@ -21,10 +21,6 @@ msgstr "Gjer klar elementary OS"
 #: data/io.elementary.initial-setup.desktop.in:4
 msgid "Set up the system"
 msgstr "Gjer klar systemet"
-
-#: data/io.elementary.initial-setup.desktop.in:6
-msgid "io.elementary.initial-setup"
-msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:7
 msgid "Initial Setup"

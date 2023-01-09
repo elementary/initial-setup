@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 18:14+0000\n"
+"POT-Creation-Date: 2023-01-09 21:49+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 
@@ -12,10 +12,6 @@ msgstr ""
 
 #: data/io.elementary.initial-setup.desktop.in:4
 msgid "Set up the system"
-msgstr ""
-
-#: data/io.elementary.initial-setup.desktop.in:6
-msgid "io.elementary.initial-setup"
 msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:7
