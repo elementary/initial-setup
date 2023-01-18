@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-09 21:49+0000\n"
-"PO-Revision-Date: 2023-01-08 00:25+0000\n"
+"PO-Revision-Date: 2023-01-20 00:25+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/hu/>\n"
@@ -27,17 +27,19 @@ msgstr "Az elementary OS beállítása"
 
 #: data/io.elementary.initial-setup.desktop.in:4
 msgid "Set up the system"
-msgstr ""
+msgstr "A rendszer beállítása"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:7
 msgid "Initial Setup"
-msgstr ""
+msgstr "Első beállítások"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:10
 msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
 msgstr ""
+"A telepítés utáni kihagyhatatlan feladatokban segít, mint a nyelvválasztás "
+"vagy a felhasználói fiók létrehozása."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:30
 #: data/io.elementary.initial-setup.appdata.xml.in:43
