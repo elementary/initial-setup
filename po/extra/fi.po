@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-09 21:49+0000\n"
-"PO-Revision-Date: 2021-10-08 10:59+0000\n"
+"PO-Revision-Date: 2023-01-26 09:25+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/fi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
 #: data/io.elementary.initial-setup.desktop.in:3
@@ -31,20 +31,22 @@ msgstr "Järjestelmän alkuvalmistelu"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:7
 msgid "Initial Setup"
-msgstr ""
+msgstr "Alkuasetukset"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:10
 msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
 msgstr ""
+"Avustaa oleellisten järjestelmän asennuksen jälkeisten tehtävien kanssa, "
+"kuten kielen valinnassa ja käyttäjätilin luomisessa."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:30
 #: data/io.elementary.initial-setup.appdata.xml.in:43
 #: data/io.elementary.initial-setup.appdata.xml.in:52
 #: data/io.elementary.initial-setup.appdata.xml.in:63
 msgid "Improvements:"
-msgstr ""
+msgstr "Parannukset:"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:32
 msgid "Use larger icons in views"
