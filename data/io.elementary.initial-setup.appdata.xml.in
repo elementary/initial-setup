@@ -25,6 +25,15 @@
   </provides>
 
   <releases>
+    <release version="6.2.3" date="2022-01-27" urgency="medium">
+      <description>
+        <p>Improvements:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    
     <release version="6.2.2" date="2022-12-07" urgency="medium">
       <description>
         <p>Improvements:</p>
@@ -68,19 +77,7 @@
       </description>
     </release>
 
-    <release version="6.1.0" date="2021-08-25" urgency="medium">
-      <description>
-        <p>New features:</p>
-        <ul>
-          <li>Confirm and change device name</li>
-          <li>Two-finger swipe to navigate back</li>
-        </ul>
-        <p>Minor updates:</p>
-        <ul>
-          <li>Translation updates</li>
-        </ul>
-      </description>
-    </release>
+    <release version="6.1.0" date="2021-08-25" urgency="medium" />
   </releases>
 
   <content_rating type="oars-1.1" />

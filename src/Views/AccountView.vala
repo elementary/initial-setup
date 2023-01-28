@@ -28,6 +28,8 @@ public class Installer.AccountView : AbstractInstallerView {
         }
     }
 
+    private Utils.HostnameInterface? hostname_iface = null;
+
     private Polkit.Permission? _permission = null;
     private Polkit.Permission? permission {
         get {
@@ -45,7 +47,6 @@ public class Installer.AccountView : AbstractInstallerView {
         }
     }
 
-    private Act.User? created_user = null;
     private ErrorRevealer confirm_entry_revealer;
     private ErrorRevealer pw_error_revealer;
     private ErrorRevealer username_error_revealer;
@@ -109,11 +110,21 @@ public class Installer.AccountView : AbstractInstallerView {
 
         hostname_entry = new Granite.ValidatedEntry () {
             activates_default = true,
-            hexpand = true
+            hexpand = true,
+            sensitive = false,
         };
 
-        hostname_entry.map.connect (() => {
-            hostname_entry.text = Utils.get_hostname ();
+        Utils.HostnameInterface.get_default.begin ((obj, res) => {
+            try {
+                hostname_iface = Utils.HostnameInterface.get_default.end (res);
+                hostname_entry.text = hostname_iface.get_either_hostname ();
+                hostname_entry.sensitive = true;
+            } catch (Error e) {
+                hostname_entry.secondary_icon_name = "dialog-error-symbolic";
+                hostname_entry.secondary_icon_tooltip_text = _("Unable to setup Hostname interface: %s").printf (e.message);
+                hostname_entry.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
+                critical (e.message);
+            }
         });
 
         var hostname_info = new Gtk.Label (_("Visible to other devices when sharing, e.g. with Bluetooth or over the network.")) {
@@ -191,7 +202,7 @@ public class Installer.AccountView : AbstractInstallerView {
             update_finish_button ();
         });
 
-        finish_button.clicked.connect (create_new_user);
+        finish_button.clicked.connect (apply_settings);
 
         show_all ();
 
@@ -286,106 +297,82 @@ public class Installer.AccountView : AbstractInstallerView {
         }
     }
 
-    private void create_new_user () {
-        string? primary_text = null;
-        string? error_message = null;
+    private void apply_settings () {
+        finish_button.sensitive = false;
+        content_area.sensitive = false;
+        apply_settings_async.begin ((obj, res) => {
+            unowned Installer.AccountView self = (Installer.AccountView)obj;
+            self.apply_settings_async.end (res);
+            self.content_area.sensitive = true;
+        });
+    }
 
+    private async void apply_settings_async () {
+        if (!yield set_hostname (hostname_entry.text)) {
+            return;
+        }
+
+        var created_user = yield create_new_user ();
+        if (created_user == null) {
+            return;
+        }
+
+        created_user.set_password (pw_entry.text, "");
+        yield set_accounts_service_settings (created_user);
+        yield set_locale (created_user);
+        Application.get_default ().quit ();
+    }
+
+    private async Act.User? create_new_user () {
+        Act.User? created_user = null;
         if (permission != null && permission.allowed) {
             try {
-                created_user = user_manager.create_user (username_entry.text, realname_entry.text, Act.UserAccountType.ADMINISTRATOR);
-                set_settings.begin ((obj, res) => {
-                    set_settings.end (res);
-
-                    Application.get_default ().quit ();
-                });
+                created_user = yield user_manager.create_user_async (username_entry.text, realname_entry.text, Act.UserAccountType.ADMINISTRATOR, null);
+                return created_user;
             } catch (Error e) {
                 if (created_user != null) {
                     try {
-                        user_manager.delete_user (created_user, true);
+                        yield user_manager.delete_user_async (created_user, true, null);
                     } catch (Error e) {
                         critical ("Unable to clean up failed user: %s", e.message);
                     }
                 }
 
-                primary_text = _("Creating an account for “%s” failed").printf (username_entry.text);
-                error_message = e.message;
+                show_account_creation_error (
+                    _("Creating an account for “%s” failed").printf (username_entry.text),
+                    e.message
+                );
+
+                return null;
             }
         } else {
-            primary_text = _("Couldn't get permission to create an account for “%s”").printf (username_entry.text);
-        }
-
-        if (primary_text != null) {
-            var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
-                primary_text,
-                _("Initial Setup could not create this account. Without it, you will not be able to log in and may need to reinstall the OS."),
-                "system-users",
-                Gtk.ButtonsType.CLOSE
-            ) {
-                badge_icon = new ThemedIcon ("dialog-error"),
-                modal = true,
-                transient_for = (Gtk.Window) get_toplevel ()
-            };
-
-            if (error_message != null) {
-                error_dialog.show_error_details (error_message);
-            }
-
-            error_dialog.present ();
-            error_dialog.response.connect (error_dialog.destroy);
+            show_account_creation_error (_("Couldn't get permission to create an account for “%s”").printf (username_entry.text));
+            return null;
         }
     }
 
-    private async void set_settings () {
-        created_user.set_password (pw_entry.text, "");
-        yield set_accounts_service_settings ();
-        yield set_locale ();
-        set_hostname (hostname_entry.text);
-    }
-
-    public bool set_hostname (string hostname) {
-        string? primary_text = null;
-        string? error_message = null;
-
+    const int MAX_TRIES = 10;
+    public async bool set_hostname (string hostname) {
         try {
             var permission = new Polkit.Permission.sync ("org.freedesktop.hostname1.set-static-hostname", new Polkit.UnixProcess (Posix.getpid ()));
-
             if (permission != null && permission.allowed) {
-                Utils.get_hostname_interface_instance ();
-                Utils.hostname_interface_instance.set_pretty_hostname (hostname, false);
-                Utils.hostname_interface_instance.set_static_hostname (Utils.gen_hostname (hostname), false);
+                var static_hostname = Utils.gen_hostname (hostname);
+                yield hostname_iface.set_pretty_hostname (hostname, false);
+                yield hostname_iface.set_static_hostname (static_hostname, false);
+                Environ.set_variable (Environ.get (), "HOSTNAME", static_hostname, true);
             } else {
-                primary_text = _("Couldn't get permission to name this device “%s”").printf (hostname);
+                show_hostname_setup_error (_("Couldn't get permission to name this device “%s”").printf (hostname));
+                return false;
             }
         } catch (GLib.Error e) {
-            primary_text = _("Unable to name this device “%s”").printf (hostname);
-            error_message = e.message;
-        }
-
-        if (primary_text != null) {
-            var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
-                primary_text,
-                _("Initial Setup could not set your hostname."),
-                "dialog-error",
-                Gtk.ButtonsType.CLOSE
-            ) {
-                modal = true,
-                transient_for = (Gtk.Window) get_toplevel ()
-            };
-
-            if (error_message != null) {
-                error_dialog.show_error_details (error_message);
-            }
-
-            error_dialog.present ();
-            error_dialog.response.connect (error_dialog.destroy);
-
+            show_hostname_setup_error (_("Unable to name this device “%s”").printf (hostname), e.message);
             return false;
         }
 
         return true;
     }
 
-    private async void set_locale () {
+    private async void set_locale (Act.User? created_user) {
         string lang = Configuration.get_default ().lang;
         string? locale = null;
         bool success = yield LocaleHelper.language2locale (lang, out locale);
@@ -398,7 +385,7 @@ public class Installer.AccountView : AbstractInstallerView {
         }
     }
 
-    private async void set_accounts_service_settings () {
+    private async void set_accounts_service_settings (Act.User? created_user) {
         AccountsService accounts_service = null;
 
         try {
@@ -424,6 +411,45 @@ public class Installer.AccountView : AbstractInstallerView {
             accounts_service.keyboard_layouts = layouts;
             accounts_service.left_handed = Configuration.get_default ().left_handed;
         }
+    }
+
+    private void show_hostname_setup_error (string primary_text, string? error_message = null) {
+        var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
+            primary_text,
+            _("Initial Setup could not set your hostname."),
+            "dialog-error",
+            Gtk.ButtonsType.CLOSE
+        ) {
+            modal = true,
+            transient_for = (Gtk.Window) get_toplevel ()
+        };
+
+        if (error_message != null) {
+            error_dialog.show_error_details (error_message);
+        }
+
+        error_dialog.present ();
+        error_dialog.response.connect (error_dialog.destroy);
+    }
+
+    private void show_account_creation_error (string primary_text, string? error_message = null) {
+        var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
+            primary_text,
+            _("Initial Setup could not create this account. Without it, you will not be able to log in and may need to reinstall the OS."),
+            "system-users",
+            Gtk.ButtonsType.CLOSE
+        ) {
+            badge_icon = new ThemedIcon ("dialog-error"),
+            modal = true,
+            transient_for = (Gtk.Window) get_toplevel ()
+        };
+
+        if (error_message != null) {
+            error_dialog.show_error_details (error_message);
+        }
+
+        error_dialog.present ();
+        error_dialog.response.connect (error_dialog.destroy);
     }
 
     private bool is_taken_username (string username) {
