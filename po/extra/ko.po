@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-09 21:49+0000\n"
+"POT-Creation-Date: 2023-01-28 17:18+0000\n"
 "PO-Revision-Date: 2022-08-08 00:07+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/installer/initial-"
@@ -41,72 +41,69 @@ msgstr ""
 "언어 선택 및 사용자 계정 생성과 같은 새로 설치하기 전 필수 작업을 지원합니다."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:30
-#: data/io.elementary.initial-setup.appdata.xml.in:43
+#: data/io.elementary.initial-setup.appdata.xml.in:39
 #: data/io.elementary.initial-setup.appdata.xml.in:52
-#: data/io.elementary.initial-setup.appdata.xml.in:63
+#: data/io.elementary.initial-setup.appdata.xml.in:61
+#: data/io.elementary.initial-setup.appdata.xml.in:72
 msgid "Improvements:"
 msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:32
+#: data/io.elementary.initial-setup.appdata.xml.in:45
+#: data/io.elementary.initial-setup.appdata.xml.in:54
+#: data/io.elementary.initial-setup.appdata.xml.in:65
+#: data/io.elementary.initial-setup.appdata.xml.in:75
+msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:41
 msgid "Use larger icons in views"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:33
+#: data/io.elementary.initial-setup.appdata.xml.in:42
 msgid "Make window resizable"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:34
+#: data/io.elementary.initial-setup.appdata.xml.in:43
 #, fuzzy
 #| msgid "Set keyboard layout in accountsservice"
 msgid "Show keyboard layouts in a separate window"
 msgstr "계정 서비스에서 키보드 레이아웃 설정"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:35
+#: data/io.elementary.initial-setup.appdata.xml.in:44
 msgid "Allow hyphens in device names"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:36
-#: data/io.elementary.initial-setup.appdata.xml.in:45
-#: data/io.elementary.initial-setup.appdata.xml.in:56
-#: data/io.elementary.initial-setup.appdata.xml.in:66
-msgid "Updated translations"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:54
+#: data/io.elementary.initial-setup.appdata.xml.in:63
 msgid "Offer to switch to right-click primary mouse button"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:55
+#: data/io.elementary.initial-setup.appdata.xml.in:64
 msgid "Suggest connecting to a network"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:65
+#: data/io.elementary.initial-setup.appdata.xml.in:74
 msgid "Avoid political naming of certain locales"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:73
-msgid "New features:"
-msgstr "새로운 기능:"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:75
-msgid "Confirm and change device name"
-msgstr "컴퓨터 이름 정하고 바꾸기"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:76
-msgid "Two-finger swipe to navigate back"
-msgstr "두 손가락 스와이프로 뒤로 가기"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:78
-msgid "Minor updates:"
-msgstr "소소한 업데이트:"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:80
-msgid "Translation updates"
-msgstr "번역 업데이트"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:89
+#: data/io.elementary.initial-setup.appdata.xml.in:86
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
+
+#~ msgid "New features:"
+#~ msgstr "새로운 기능:"
+
+#~ msgid "Confirm and change device name"
+#~ msgstr "컴퓨터 이름 정하고 바꾸기"
+
+#~ msgid "Two-finger swipe to navigate back"
+#~ msgstr "두 손가락 스와이프로 뒤로 가기"
+
+#~ msgid "Minor updates:"
+#~ msgstr "소소한 업데이트:"
+
+#~ msgid "Translation updates"
+#~ msgstr "번역 업데이트"
 
 #~ msgid "Add multitouch gestures"
 #~ msgstr "멀티터치 제스처 추가"

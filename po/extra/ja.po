@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-09 21:49+0000\n"
+"POT-Creation-Date: 2023-01-28 17:18+0000\n"
 "PO-Revision-Date: 2022-12-15 19:25+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/installer/"
@@ -42,70 +42,67 @@ msgstr ""
 "援します。"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:30
-#: data/io.elementary.initial-setup.appdata.xml.in:43
+#: data/io.elementary.initial-setup.appdata.xml.in:39
 #: data/io.elementary.initial-setup.appdata.xml.in:52
-#: data/io.elementary.initial-setup.appdata.xml.in:63
+#: data/io.elementary.initial-setup.appdata.xml.in:61
+#: data/io.elementary.initial-setup.appdata.xml.in:72
 msgid "Improvements:"
 msgstr "改善点:"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:32
-msgid "Use larger icons in views"
-msgstr "各画面でより大きなアイコンを使用するように修正"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:33
-msgid "Make window resizable"
-msgstr "ウィンドウサイズが変更可能に"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:34
-msgid "Show keyboard layouts in a separate window"
-msgstr "キーボードレイアウトを別ウィンドウで表示するように修正"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:35
-msgid "Allow hyphens in device names"
-msgstr "デバイス名にハイフンを使用できるように修正"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:36
 #: data/io.elementary.initial-setup.appdata.xml.in:45
-#: data/io.elementary.initial-setup.appdata.xml.in:56
-#: data/io.elementary.initial-setup.appdata.xml.in:66
+#: data/io.elementary.initial-setup.appdata.xml.in:54
+#: data/io.elementary.initial-setup.appdata.xml.in:65
+#: data/io.elementary.initial-setup.appdata.xml.in:75
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:54
+#: data/io.elementary.initial-setup.appdata.xml.in:41
+msgid "Use larger icons in views"
+msgstr "各画面でより大きなアイコンを使用するように修正"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:42
+msgid "Make window resizable"
+msgstr "ウィンドウサイズが変更可能に"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:43
+msgid "Show keyboard layouts in a separate window"
+msgstr "キーボードレイアウトを別ウィンドウで表示するように修正"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:44
+msgid "Allow hyphens in device names"
+msgstr "デバイス名にハイフンを使用できるように修正"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:63
 msgid "Offer to switch to right-click primary mouse button"
 msgstr "マウスの主ボタンで右クリックを行うかどうか尋ねる機能を追加"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:55
+#: data/io.elementary.initial-setup.appdata.xml.in:64
 msgid "Suggest connecting to a network"
 msgstr "インターネットへの接続を提案するように修正"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:65
+#: data/io.elementary.initial-setup.appdata.xml.in:74
 msgid "Avoid political naming of certain locales"
 msgstr "一部地域名に政治的な問題があったのを修正"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:73
-msgid "New features:"
-msgstr "新機能:"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:75
-msgid "Confirm and change device name"
-msgstr "デバイス名を確認・変更できる機能を追加"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:76
-msgid "Two-finger swipe to navigate back"
-msgstr "2本指スワイプで1つ前の設定画面に戻れるように修正"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:78
-msgid "Minor updates:"
-msgstr "そのほかのアップデート:"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:80
-msgid "Translation updates"
-msgstr "翻訳の更新"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:89
+#: data/io.elementary.initial-setup.appdata.xml.in:86
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
+
+#~ msgid "New features:"
+#~ msgstr "新機能:"
+
+#~ msgid "Confirm and change device name"
+#~ msgstr "デバイス名を確認・変更できる機能を追加"
+
+#~ msgid "Two-finger swipe to navigate back"
+#~ msgstr "2本指スワイプで1つ前の設定画面に戻れるように修正"
+
+#~ msgid "Minor updates:"
+#~ msgstr "そのほかのアップデート:"
+
+#~ msgid "Translation updates"
+#~ msgstr "翻訳の更新"
 
 #~ msgid "Add multitouch gestures"
 #~ msgstr "マルチタッチジェスチャーを追加"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-09 21:49+0000\n"
+"POT-Creation-Date: 2023-01-28 17:18+0000\n"
 "PO-Revision-Date: 2022-12-10 06:25+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/installer/initial-"
@@ -35,70 +35,67 @@ msgstr ""
 "וליצור חשבון משתמש."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:30
-#: data/io.elementary.initial-setup.appdata.xml.in:43
+#: data/io.elementary.initial-setup.appdata.xml.in:39
 #: data/io.elementary.initial-setup.appdata.xml.in:52
-#: data/io.elementary.initial-setup.appdata.xml.in:63
+#: data/io.elementary.initial-setup.appdata.xml.in:61
+#: data/io.elementary.initial-setup.appdata.xml.in:72
 msgid "Improvements:"
 msgstr "שיפורים:"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:32
-msgid "Use larger icons in views"
-msgstr "שימוש בסמלים גדולים יותר בתצוגות"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:33
-msgid "Make window resizable"
-msgstr "החלונות ניתנים להגדלה והקטנה"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:34
-msgid "Show keyboard layouts in a separate window"
-msgstr "פריסות מקלדת יוצגו בחלון נפרד"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:35
-msgid "Allow hyphens in device names"
-msgstr "אפשר להשתמש במקפים בשמות המכשירים"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:36
 #: data/io.elementary.initial-setup.appdata.xml.in:45
-#: data/io.elementary.initial-setup.appdata.xml.in:56
-#: data/io.elementary.initial-setup.appdata.xml.in:66
+#: data/io.elementary.initial-setup.appdata.xml.in:54
+#: data/io.elementary.initial-setup.appdata.xml.in:65
+#: data/io.elementary.initial-setup.appdata.xml.in:75
 msgid "Updated translations"
 msgstr "עודכנו התרגומים"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:54
+#: data/io.elementary.initial-setup.appdata.xml.in:41
+msgid "Use larger icons in views"
+msgstr "שימוש בסמלים גדולים יותר בתצוגות"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:42
+msgid "Make window resizable"
+msgstr "החלונות ניתנים להגדלה והקטנה"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:43
+msgid "Show keyboard layouts in a separate window"
+msgstr "פריסות מקלדת יוצגו בחלון נפרד"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:44
+msgid "Allow hyphens in device names"
+msgstr "אפשר להשתמש במקפים בשמות המכשירים"
+
+#: data/io.elementary.initial-setup.appdata.xml.in:63
 msgid "Offer to switch to right-click primary mouse button"
 msgstr "הצעה להחלפת המקש הימני בעיקרי בעכבר"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:55
+#: data/io.elementary.initial-setup.appdata.xml.in:64
 msgid "Suggest connecting to a network"
 msgstr "הצעת התחברות לרשת"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:65
+#: data/io.elementary.initial-setup.appdata.xml.in:74
 msgid "Avoid political naming of certain locales"
 msgstr "קיימת מניעה ממתן שמות פוליטיים בשפות מסוימות"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:73
-msgid "New features:"
-msgstr "יכולות חדשות:"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:75
-msgid "Confirm and change device name"
-msgstr "אישור ושינוי שם המכשיר"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:76
-msgid "Two-finger swipe to navigate back"
-msgstr "החלקה בשתי אצבעות כדי לנווט אחורה"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:78
-msgid "Minor updates:"
-msgstr "עדכונים משניים:"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:80
-msgid "Translation updates"
-msgstr "עדכון תרגומים"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:89
+#: data/io.elementary.initial-setup.appdata.xml.in:86
 msgid "elementary, Inc."
 msgstr "elementary בע״מ"
+
+#~ msgid "New features:"
+#~ msgstr "יכולות חדשות:"
+
+#~ msgid "Confirm and change device name"
+#~ msgstr "אישור ושינוי שם המכשיר"
+
+#~ msgid "Two-finger swipe to navigate back"
+#~ msgstr "החלקה בשתי אצבעות כדי לנווט אחורה"
+
+#~ msgid "Minor updates:"
+#~ msgstr "עדכונים משניים:"
+
+#~ msgid "Translation updates"
+#~ msgstr "עדכון תרגומים"
 
 #~ msgid "Add multitouch gestures"
 #~ msgstr "נוספה תמיכה במחוות מגע במספר נקודות"
