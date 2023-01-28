@@ -25,16 +25,13 @@
   </provides>
 
   <releases>
-    <release version="6.2.3" date="2022-01-28" urgency="medium">
+    <release version="6.2.3" date="2022-01-27" urgency="medium">
       <description>
         <p>Improvements:</p>
         <ul>
           <li>Updated translations</li>
         </ul>
       </description>
-      <issues>
-        <issue url="https://github.com/elementary/triage/issues/92">First login after initial setup fails</issue>
-      </issues>
     </release>
     
     <release version="6.2.2" date="2022-12-07" urgency="medium">
