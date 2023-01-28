@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-09 21:49+0000\n"
+"POT-Creation-Date: 2023-01-28 17:18+0000\n"
 "PO-Revision-Date: 2019-09-07 18:22+0000\n"
 "Last-Translator: Wattana Gaming <artjang301@gmail.com>\n"
 "Language-Team: Thai <https://l10n.elementary.io/projects/installer/initial-"
@@ -28,70 +28,89 @@ msgstr "%s…"
 msgid "Default"
 msgstr "ค่าเริ่มต้น"
 
-#: src/Views/AccountView.vala:66
+#: src/Views/AccountView.vala:67
 msgid "Create an Account"
 msgstr "สร้างบัญชีผู้ใช้"
 
-#: src/Views/AccountView.vala:68
+#: src/Views/AccountView.vala:69
 msgid "Full Name"
 msgstr "ชื่อเต็ม"
 
-#: src/Views/AccountView.vala:73
+#: src/Views/AccountView.vala:74
 msgid "Username"
 msgstr "ชื่อผู้ใช้"
 
-#: src/Views/AccountView.vala:80
+#: src/Views/AccountView.vala:81
 msgid "Choose a Password"
 msgstr "ตั้งรหัสผ่าน"
 
-#: src/Views/AccountView.vala:96
+#: src/Views/AccountView.vala:97
 msgid "Confirm Password"
 msgstr "ยืนยันรหัส"
 
-#: src/Views/AccountView.vala:106
+#: src/Views/AccountView.vala:107
 msgid "Device name"
 msgstr ""
 
-#: src/Views/AccountView.vala:119
+#: src/Views/AccountView.vala:124
+#, c-format
+msgid "Unable to setup Hostname interface: %s"
+msgstr ""
+
+#: src/Views/AccountView.vala:130
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
 
-#: src/Views/AccountView.vala:154 src/Views/KeyboardLayoutView.vala:51
+#: src/Views/AccountView.vala:165 src/Views/KeyboardLayoutView.vala:51
 #: src/Views/NetworkView.vala:66
 #, fuzzy
 msgid "Back"
 msgstr "ลบ"
 
-#: src/Views/AccountView.vala:158
+#: src/Views/AccountView.vala:169
 msgid "Finish Setup"
 msgstr "เสร็จสิ้นการติดตั้ง"
 
-#: src/Views/AccountView.vala:240
+#: src/Views/AccountView.vala:251
 msgid "Passwords do not match"
 msgstr "รหัสผ่านไม่ตรงกัน"
 
-#: src/Views/AccountView.vala:265
+#: src/Views/AccountView.vala:276
 msgid "The chosen username is already taken"
 msgstr "ชื่อผู้ใช้นี้มีอยู้ในระบบแล้ว"
 
-#: src/Views/AccountView.vala:267
+#: src/Views/AccountView.vala:278
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr "ชื่อผู้ใช้จะต้องประกอบด้วยตัวอักษรและตัวเลขเล็กโดยไม่มีช่องว่าง"
 
-#: src/Views/AccountView.vala:310
+#: src/Views/AccountView.vala:342
 #, c-format
 msgid "Creating an account for “%s” failed"
 msgstr ""
 
-#: src/Views/AccountView.vala:314
+#: src/Views/AccountView.vala:349
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
 msgstr ""
 
-#: src/Views/AccountView.vala:320
+#: src/Views/AccountView.vala:364
+#, c-format
+msgid "Couldn't get permission to name this device “%s”"
+msgstr ""
+
+#: src/Views/AccountView.vala:368
+#, c-format
+msgid "Unable to name this device “%s”"
+msgstr ""
+
+#: src/Views/AccountView.vala:419
+msgid "Initial Setup could not set your hostname."
+msgstr ""
+
+#: src/Views/AccountView.vala:438
 #, fuzzy
 #| msgid ""
 #| "Initial Setup could not create your user. Without it, you will not be "
@@ -102,20 +121,6 @@ msgid ""
 msgstr ""
 "โปรแกรมติดตั้งไม่สามารถที่จะสร้างบัญชีผู้ใช้ได้. หากไม่มีบัญชีผู้ใช้, "
 "คุณจะไม่สามารถเข้าสู้ระบบได้และอาจจะต้องทำการติดตั้งใหม่"
-
-#: src/Views/AccountView.vala:357
-#, c-format
-msgid "Couldn't get permission to name this device “%s”"
-msgstr ""
-
-#: src/Views/AccountView.vala:360
-#, c-format
-msgid "Unable to name this device “%s”"
-msgstr ""
-
-#: src/Views/AccountView.vala:367
-msgid "Initial Setup could not set your hostname."
-msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:27
 #, fuzzy

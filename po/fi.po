@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-09 21:49+0000\n"
+"POT-Creation-Date: 2023-01-28 17:18+0000\n"
 "PO-Revision-Date: 2023-01-03 12:25+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/installer/"
@@ -28,71 +28,91 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Oletus"
 
-#: src/Views/AccountView.vala:66
+#: src/Views/AccountView.vala:67
 msgid "Create an Account"
 msgstr "Luo tili"
 
-#: src/Views/AccountView.vala:68
+#: src/Views/AccountView.vala:69
 msgid "Full Name"
 msgstr "Koko nimi"
 
-#: src/Views/AccountView.vala:73
+#: src/Views/AccountView.vala:74
 msgid "Username"
 msgstr "Käyttäjätunnus"
 
-#: src/Views/AccountView.vala:80
+#: src/Views/AccountView.vala:81
 msgid "Choose a Password"
 msgstr "Valitse salasana"
 
-#: src/Views/AccountView.vala:96
+#: src/Views/AccountView.vala:97
 msgid "Confirm Password"
 msgstr "Vahvista salasana"
 
-#: src/Views/AccountView.vala:106
+#: src/Views/AccountView.vala:107
 msgid "Device name"
 msgstr "Laitteen nimi"
 
-#: src/Views/AccountView.vala:119
+#: src/Views/AccountView.vala:124
+#, fuzzy, c-format
+#| msgid "Unable to set Hostname '%s'"
+msgid "Unable to setup Hostname interface: %s"
+msgstr "Ei voitu asettaa laitenimeä '%s'"
+
+#: src/Views/AccountView.vala:130
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr "Näkyvissä muille laitteille esimerkiksi Bluetooth- ja verkkojaoissa."
 
-#: src/Views/AccountView.vala:154 src/Views/KeyboardLayoutView.vala:51
+#: src/Views/AccountView.vala:165 src/Views/KeyboardLayoutView.vala:51
 #: src/Views/NetworkView.vala:66
 msgid "Back"
 msgstr "Takaisin"
 
-#: src/Views/AccountView.vala:158
+#: src/Views/AccountView.vala:169
 msgid "Finish Setup"
 msgstr "Viimeistele määritykset"
 
-#: src/Views/AccountView.vala:240
+#: src/Views/AccountView.vala:251
 msgid "Passwords do not match"
 msgstr "Salasanat eivät täsmää"
 
-#: src/Views/AccountView.vala:265
+#: src/Views/AccountView.vala:276
 msgid "The chosen username is already taken"
 msgstr "Valittu käyttäjätunnus on jo käytössä"
 
-#: src/Views/AccountView.vala:267
+#: src/Views/AccountView.vala:278
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
 "Käyttäjätunnus voi sisältää vain pieniä kirjaimia ja numeroita ilman "
 "välilyöntejä"
 
-#: src/Views/AccountView.vala:310
+#: src/Views/AccountView.vala:342
 #, c-format
 msgid "Creating an account for “%s” failed"
 msgstr "Tilin luominen käyttäjälle “%s” epäonnistui"
 
-#: src/Views/AccountView.vala:314
+#: src/Views/AccountView.vala:349
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
 msgstr "Ei saatu oikeutta luoda tiliä käyttäjälle “%s”"
 
-#: src/Views/AccountView.vala:320
+#: src/Views/AccountView.vala:364
+#, c-format
+msgid "Couldn't get permission to name this device “%s”"
+msgstr "Ei saatu oikeutta asettaa laitteelle nimeksi “%s”"
+
+#: src/Views/AccountView.vala:368
+#, c-format
+msgid "Unable to name this device “%s”"
+msgstr "Laitteen nimeäminen muotoon “%s” ei onnistu"
+
+#: src/Views/AccountView.vala:419
+msgid "Initial Setup could not set your hostname."
+msgstr "Alkuasetukset ei voinut asettaa laitenimeä."
+
+#: src/Views/AccountView.vala:438
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
@@ -100,20 +120,6 @@ msgstr ""
 "Alkuasetukset ei voinut luoda tätä tiliä. Ilman sitä et pysty "
 "sisäänkirjautumaan, joten käyttöjärjestelmän uudelleenasennus saattaa olla "
 "tarpeen."
-
-#: src/Views/AccountView.vala:357
-#, c-format
-msgid "Couldn't get permission to name this device “%s”"
-msgstr "Ei saatu oikeutta asettaa laitteelle nimeksi “%s”"
-
-#: src/Views/AccountView.vala:360
-#, c-format
-msgid "Unable to name this device “%s”"
-msgstr "Laitteen nimeäminen muotoon “%s” ei onnistu"
-
-#: src/Views/AccountView.vala:367
-msgid "Initial Setup could not set your hostname."
-msgstr "Alkuasetukset ei voinut asettaa laitenimeä."
 
 #: src/Views/KeyboardLayoutView.vala:27
 msgid "Select Keyboard Layout"
@@ -217,10 +223,6 @@ msgstr "Seuraava"
 #, c-format
 #~ msgid "No Permission to set hostname '%s'"
 #~ msgstr "Ei käyttöoikeuksia asettaa laitenimeä '%s'"
-
-#, c-format
-#~ msgid "Unable to set Hostname '%s'"
-#~ msgstr "Ei voitu asettaa laitenimeä '%s'"
 
 #, c-format
 #~ msgid "Creating User '%s' Failed"
