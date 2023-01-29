@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2022-11-28 14:25+0000\n"
+"PO-Revision-Date: 2023-01-31 10:25+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ca/>\n"
@@ -53,10 +53,9 @@ msgid "Device name"
 msgstr "Nom del dispositiu"
 
 #: src/Views/AccountView.vala:124
-#, fuzzy, c-format
-#| msgid "Unable to set Hostname '%s'"
+#, c-format
 msgid "Unable to setup Hostname interface: %s"
-msgstr "No es pot establir el nom d'amfitrió \"%s'."
+msgstr "No es pot establir el nom d'amfitrió: %s"
 
 #: src/Views/AccountView.vala:130
 msgid ""
