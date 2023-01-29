@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2022-11-27 14:07+0000\n"
+"PO-Revision-Date: 2023-01-31 10:25+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ja/>\n"
@@ -53,10 +53,9 @@ msgid "Device name"
 msgstr "デバイス名"
 
 #: src/Views/AccountView.vala:124
-#, fuzzy, c-format
-#| msgid "Unable to set Hostname '%s'"
+#, c-format
 msgid "Unable to setup Hostname interface: %s"
-msgstr "ホスト名 '%s' を設定できません"
+msgstr "ホスト名インターフェースをセットアップできません: %s"
 
 #: src/Views/AccountView.vala:130
 msgid ""
