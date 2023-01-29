@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2022-11-24 12:25+0000\n"
+"PO-Revision-Date: 2023-01-31 10:25+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://l10n.elementary.io/projects/installer/initial-"
-"setup/he/>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/installer/"
+"initial-setup/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -53,10 +53,9 @@ msgid "Device name"
 msgstr "שם המכשיר"
 
 #: src/Views/AccountView.vala:124
-#, fuzzy, c-format
-#| msgid "Unable to set Hostname '%s'"
+#, c-format
 msgid "Unable to setup Hostname interface: %s"
-msgstr "לא ניתן להגדיר שם מארח ‚%s’"
+msgstr "לא ניתן להגדיר מנשק שם מארח: %s"
 
 #: src/Views/AccountView.vala:130
 msgid ""
