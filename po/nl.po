@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2022-05-22 06:09+0000\n"
+"PO-Revision-Date: 2023-02-02 09:25+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
-"Language-Team: Dutch <https://l10n.elementary.io/projects/installer/initial-"
-"setup/nl/>\n"
+"Language-Team: Dutch <https://l10n.elementary.io/projects/installer/"
+"initial-setup/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/Application.vala:34
@@ -53,10 +53,9 @@ msgid "Device name"
 msgstr "Computernaam"
 
 #: src/Views/AccountView.vala:124
-#, fuzzy, c-format
-#| msgid "Unable to set Hostname '%s'"
+#, c-format
 msgid "Unable to setup Hostname interface: %s"
-msgstr "Kon hostnaam '%s' niet instellen"
+msgstr "Kon hostnaam-interface niet instellen: %s"
 
 #: src/Views/AccountView.vala:130
 msgid ""
@@ -93,38 +92,36 @@ msgstr ""
 #: src/Views/AccountView.vala:342
 #, c-format
 msgid "Creating an account for “%s” failed"
-msgstr ""
+msgstr "Aanmaken van een account voor “%s” is mislukt"
 
 #: src/Views/AccountView.vala:349
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
 msgstr ""
+"Kon geen toegangsrechten verschaffen om een account voor “%s” aan te maken"
 
 #: src/Views/AccountView.vala:364
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
-msgstr ""
+msgstr "Kon geen toegangsrechten verschaffen om het apparaat “%s” te noemen"
 
 #: src/Views/AccountView.vala:368
 #, c-format
 msgid "Unable to name this device “%s”"
-msgstr ""
+msgstr "Kon dit apparaat niet “%s” noemen"
 
 #: src/Views/AccountView.vala:419
 msgid "Initial Setup could not set your hostname."
 msgstr "Het opzetprogramma kon uw hostnaam niet instellen."
 
 #: src/Views/AccountView.vala:438
-#, fuzzy
-#| msgid ""
-#| "Initial Setup could not create your user. Without it, you will not be "
-#| "able to log in and may need to reinstall the OS."
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
 msgstr ""
-"Opzetprogramma kon de gebruiker niet aanmaken. Zonder deze gebruiker kunt u "
-"niet inloggen en moet u mogelijk het besturingssysteem opnieuw installeren."
+"Opzetprogramma kon het gebruikersaccount niet aanmaken. Zonder deze "
+"gebruiker kunt u niet inloggen en moet u mogelijk het besturingssysteem "
+"opnieuw installeren."
 
 #: src/Views/KeyboardLayoutView.vala:27
 msgid "Select Keyboard Layout"
