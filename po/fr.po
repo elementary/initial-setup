@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2022-11-27 08:25+0000\n"
+"PO-Revision-Date: 2023-02-02 09:25+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
-"Language-Team: French <https://l10n.elementary.io/projects/installer/initial-"
-"setup/fr/>\n"
+"Language-Team: French <https://l10n.elementary.io/projects/installer/"
+"initial-setup/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -53,10 +53,9 @@ msgid "Device name"
 msgstr "Nom de l'appareil"
 
 #: src/Views/AccountView.vala:124
-#, fuzzy, c-format
-#| msgid "Unable to set Hostname '%s'"
+#, c-format
 msgid "Unable to setup Hostname interface: %s"
-msgstr "Impossible de définir le nom d'hôte « %s »"
+msgstr "Impossible de configurer le nom d'hôte de l'interface : %s"
 
 #: src/Views/AccountView.vala:130
 msgid ""
