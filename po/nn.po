@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2020-07-25 01:12+0000\n"
+"PO-Revision-Date: 2023-02-04 10:25+0000\n"
 "Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
 "installer/initial-setup/nn/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/Application.vala:34
@@ -50,18 +50,20 @@ msgstr "Stadfest passord"
 
 #: src/Views/AccountView.vala:107
 msgid "Device name"
-msgstr ""
+msgstr "Namn på eininga"
 
 #: src/Views/AccountView.vala:124
 #, c-format
 msgid "Unable to setup Hostname interface: %s"
-msgstr ""
+msgstr "Klarte ikkje å setta opp grensesnitt for vertsnavnet: %s"
 
 #: src/Views/AccountView.vala:130
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
+"Blir vist for andre eininger når du delar med til dømes Bluetooth eller "
+"andre nettverk."
 
 #: src/Views/AccountView.vala:165 src/Views/KeyboardLayoutView.vala:51
 #: src/Views/NetworkView.vala:66
@@ -88,45 +90,39 @@ msgstr "Eit brukarnamn kan kun innehalde små bokstavar og tal, utan mellomrom"
 #: src/Views/AccountView.vala:342
 #, c-format
 msgid "Creating an account for “%s” failed"
-msgstr ""
+msgstr "Ein feil skjedde når konto \"%s\" skulle settast opp"
 
 #: src/Views/AccountView.vala:349
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
-msgstr ""
+msgstr "Fekk ikkje godkjenning for å laga ein konto til \"%s\""
 
 #: src/Views/AccountView.vala:364
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
-msgstr ""
+msgstr "Fekk ikkje godkjenning for å gje navn til eininga \"%s\""
 
 #: src/Views/AccountView.vala:368
 #, c-format
 msgid "Unable to name this device “%s”"
-msgstr ""
+msgstr "Kan ikkje gje \"%s\" som navn til eininga"
 
 #: src/Views/AccountView.vala:419
 msgid "Initial Setup could not set your hostname."
-msgstr ""
+msgstr "Fyrstegongsoppsett kunne ikkje setta eit vertsnavn."
 
 #: src/Views/AccountView.vala:438
-#, fuzzy
-#| msgid ""
-#| "Initial Setup could not create your user. Without it, you will not be "
-#| "able to log in and may need to reinstall the OS."
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
 msgstr ""
-"Fyrsteoppsett kunne ikkje laga ein brukar. Utan ein brukar vil du ikkje "
-"kunna logga inn, og du blir kanskje nøydd til å installera operativsystemet "
-"på nytt."
+"Fyrstegongsoppsett kunne ikkje laga denne brukaren. Utan ein brukar vil du "
+"ikkje kunna logga inn, og du blir kanskje nøydd til å installera "
+"operativsystemet på nytt."
 
 #: src/Views/KeyboardLayoutView.vala:27
-#, fuzzy
-#| msgid "Keyboard Layout"
 msgid "Select Keyboard Layout"
-msgstr "Tastaturoppsett"
+msgstr "Velg tastaturoppsett"
 
 #: src/Views/KeyboardLayoutView.vala:33
 msgid "Type to test your layout"
@@ -151,31 +147,35 @@ msgstr "Språk"
 
 #: src/Views/LanguageView.vala:240
 msgid "Use the right mouse button for primary click?"
-msgstr ""
+msgstr "Vil du bruka høgretrykk som hovedtrykk?"
 
 #: src/Views/LanguageView.vala:241
 msgid ""
 "The right mouse button was used where a primary click was expected. You can "
 "choose to always use the right mouse button for primary click."
 msgstr ""
+"Høgretrykk på musa vart brukt når ein forventar eit hovedtrykk. Du kan velja "
+"å alltid bruka høgretrykk som hovedtrykk."
 
 #: src/Views/LanguageView.vala:242 src/Views/LanguageView.vala:249
 msgid "Right-Click as Primary"
-msgstr ""
+msgstr "Høgretrykk som standard"
 
 #: src/Views/LanguageView.vala:243 src/Views/LanguageView.vala:248
 msgid "Left-Click as Primary"
-msgstr ""
+msgstr "Venstretrykk som standard"
 
 #: src/Views/LanguageView.vala:246
 msgid "Use the left mouse button for primary click?"
-msgstr ""
+msgstr "Vil du bruka venstretrykk som hovedtrykk?"
 
 #: src/Views/LanguageView.vala:247
 msgid ""
 "The left mouse button was used where a primary click was expected. You can "
 "choose to always use the left mouse button for primary click."
 msgstr ""
+"Venstretrykk på musa vart brukt når ein forventar eit hovedtrykk. Du kan "
+"velja å alltid bruka venstretrykk som hovedtrykk."
 
 #: src/Views/LanguageView.vala:312
 msgid "Select a Language"
@@ -187,31 +187,35 @@ msgstr "Noverande språk"
 
 #: src/Views/NetworkView.vala:30
 msgid "Connect Network"
-msgstr ""
+msgstr "Kopla til eit nettverk"
 
 #: src/Views/NetworkView.vala:32
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
 msgstr ""
+"Det er naudsynt å kopla til eit nettverk for å motta oppdateringar, "
+"installera nye appar og å kopla til nettkontoar"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:42
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
 msgstr ""
+"Velg eit trådlaust nettverk i nærleiken frå nettverksindikatoren oppe til "
+"høgre."
 
 #: src/Views/NetworkView.vala:48
 msgid "Connect a network cable"
-msgstr ""
+msgstr "Kopla til ein nettverkskabel"
 
 #: src/Views/NetworkView.vala:70
 msgid "Skip"
-msgstr ""
+msgstr "Hopp over"
 
 #: src/Views/NetworkView.vala:88
 msgid "Next"
-msgstr ""
+msgstr "Neste"
 
 #, fuzzy, c-format
 #~| msgid "No Permission to Create User '%s'"
