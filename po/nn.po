@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2023-02-04 10:25+0000\n"
+"PO-Revision-Date: 2023-02-07 09:25+0000\n"
 "Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
 "installer/initial-setup/nn/>\n"
@@ -122,7 +122,7 @@ msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:27
 msgid "Select Keyboard Layout"
-msgstr "Velg tastaturoppsett"
+msgstr "Vel tastaturoppsett"
 
 #: src/Views/KeyboardLayoutView.vala:33
 msgid "Type to test your layout"
