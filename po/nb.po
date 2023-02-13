@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2022-06-18 21:35+0000\n"
+"PO-Revision-Date: 2023-02-14 13:25+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "installer/initial-setup/nb/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/Application.vala:34
@@ -88,24 +88,24 @@ msgid ""
 msgstr "Brukernavnet kan kun inneholde små bokstaver og tall, uten mellomrom"
 
 #: src/Views/AccountView.vala:342
-#, c-format
+#, c-format, fuzzy
 msgid "Creating an account for “%s” failed"
-msgstr ""
+msgstr "Kunne ikke opprette konto for «%s»"
 
 #: src/Views/AccountView.vala:349
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
-msgstr ""
+msgstr "Fikk ikke tilgang til å opprette konto for «%s»"
 
 #: src/Views/AccountView.vala:364
-#, c-format
+#, c-format, fuzzy
 msgid "Couldn't get permission to name this device “%s”"
-msgstr ""
+msgstr "Fikk ikke tilgang til å navngi «%s»-enheten"
 
 #: src/Views/AccountView.vala:368
-#, c-format
+#, c-format, fuzzy
 msgid "Unable to name this device “%s”"
-msgstr ""
+msgstr "Kunne ikke navngi «%s»-enheten"
 
 #: src/Views/AccountView.vala:419
 #, fuzzy
