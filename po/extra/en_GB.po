@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2021-09-22 21:59+0000\n"
-"Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
+"PO-Revision-Date: 2023-02-18 09:25+0000\n"
+"Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "installer/initial-setup-extra/en_GB/>\n"
 "Language: en_GB\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: data/io.elementary.initial-setup.desktop.in:3
 #: data/io.elementary.initial-setup.appdata.xml.in:8
@@ -40,7 +40,7 @@ msgstr ""
 #: data/io.elementary.initial-setup.appdata.xml.in:61
 #: data/io.elementary.initial-setup.appdata.xml.in:72
 msgid "Improvements:"
-msgstr ""
+msgstr "Improvements:"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:32
 #: data/io.elementary.initial-setup.appdata.xml.in:45
@@ -48,37 +48,35 @@ msgstr ""
 #: data/io.elementary.initial-setup.appdata.xml.in:65
 #: data/io.elementary.initial-setup.appdata.xml.in:75
 msgid "Updated translations"
-msgstr ""
+msgstr "Updated translations"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:41
 msgid "Use larger icons in views"
-msgstr ""
+msgstr "Use larger icons in views"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:42
 msgid "Make window resizable"
-msgstr ""
+msgstr "Make window resizable"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:43
-#, fuzzy
-#| msgid "Set keyboard layout in accountsservice"
 msgid "Show keyboard layouts in a separate window"
-msgstr "Set keyboard layout in accountsservice"
+msgstr "Show keyboard layouts in a separate window"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:44
 msgid "Allow hyphens in device names"
-msgstr ""
+msgstr "Allow hyphens in device names"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:63
 msgid "Offer to switch to right-click primary mouse button"
-msgstr ""
+msgstr "Offer to switch to right-click primary mouse button"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:64
 msgid "Suggest connecting to a network"
-msgstr ""
+msgstr "Suggest connecting to a network"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:74
 msgid "Avoid political naming of certain locales"
-msgstr ""
+msgstr "Avoid political naming of certain locales"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:86
 msgid "elementary, Inc."
