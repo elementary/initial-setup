@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2023-02-10 17:25+0000\n"
-"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
+"PO-Revision-Date: 2023-02-27 03:50+0000\n"
+"Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/nl/>\n"
 "Language: nl\n"
@@ -40,7 +40,7 @@ msgstr ""
 #: data/io.elementary.initial-setup.appdata.xml.in:61
 #: data/io.elementary.initial-setup.appdata.xml.in:72
 msgid "Improvements:"
-msgstr ""
+msgstr "Verbeteringen:"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:32
 #: data/io.elementary.initial-setup.appdata.xml.in:45
@@ -52,11 +52,11 @@ msgstr "Bijgewerkte vertalingen"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:41
 msgid "Use larger icons in views"
-msgstr ""
+msgstr "Gebruik grotere iconen in weergaven"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:42
 msgid "Make window resizable"
-msgstr ""
+msgstr "Venster aanpasbaar maken"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:43
 #, fuzzy
