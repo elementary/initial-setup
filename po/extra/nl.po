@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2023-02-27 03:50+0000\n"
+"PO-Revision-Date: 2023-02-28 04:25+0000\n"
 "Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/nl/>\n"
@@ -59,18 +59,16 @@ msgid "Make window resizable"
 msgstr "Venster aanpasbaar maken"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:43
-#, fuzzy
-#| msgid "Set keyboard layout in accountsservice"
 msgid "Show keyboard layouts in a separate window"
-msgstr "Toetsenbordindeling instellen in accountservice"
+msgstr "Toetsenbordindeling weergeven in een apart venster"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:44
 msgid "Allow hyphens in device names"
-msgstr ""
+msgstr "Sta koppeltekens toe in apparaatnaam"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:63
 msgid "Offer to switch to right-click primary mouse button"
-msgstr ""
+msgstr "Bied aan om te wisselen naar rechter-klik primaire muisknop"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:64
 msgid "Suggest connecting to a network"
