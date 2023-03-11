@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2023-03-11 12:25+0000\n"
+"PO-Revision-Date: 2023-03-11 12:29+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/ka/>\n"
@@ -16,21 +16,23 @@ msgstr ""
 #: data/io.elementary.initial-setup.desktop.in:3
 #: data/io.elementary.initial-setup.appdata.xml.in:8
 msgid "Set up elementary OS"
-msgstr ""
+msgstr "Elementary OS-ის მორგება"
 
 #: data/io.elementary.initial-setup.desktop.in:4
 msgid "Set up the system"
-msgstr ""
+msgstr "სისტემის მორგება"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:7
 msgid "Initial Setup"
-msgstr ""
+msgstr "საწყისი მორგება"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:10
 msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
 msgstr ""
+"გეხმარებათ ძირითად ამოცანებში, სანამ სისტემას გამოყენებად მდგომარეობამდე "
+"მიიყვანთ. მაგალითად, ენის არჩევა და მომხმარებლის ანგარიშის შექმნა."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:30
 #: data/io.elementary.initial-setup.appdata.xml.in:39
@@ -50,27 +52,27 @@ msgstr "განახლებული თარგმანები"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:41
 msgid "Use larger icons in views"
-msgstr ""
+msgstr "ხედებში დიდი ხატულების ჩვენება"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:42
 msgid "Make window resizable"
-msgstr ""
+msgstr "ფანჯრის ზომის შეცვლადობა"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:43
 msgid "Show keyboard layouts in a separate window"
-msgstr ""
+msgstr "კლავიატურის განლაგებების ცალკე ფანჯარაში ჩვენება"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:44
 msgid "Allow hyphens in device names"
-msgstr ""
+msgstr "მოწყობილობის სახელებში გამოტოვების დაშვება"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:63
 msgid "Offer to switch to right-click primary mouse button"
-msgstr ""
+msgstr "თაგუნას ძირითადი ღილაკის მარჯვენაზე გადართვის შეთავაზება"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:64
 msgid "Suggest connecting to a network"
-msgstr ""
+msgstr "ქსელთან მიერთების მინიშნება"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:74
 msgid "Avoid political naming of certain locales"
