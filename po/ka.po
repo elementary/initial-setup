@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2023-03-11 12:29+0000\n"
+"PO-Revision-Date: 2023-03-12 13:25+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ka/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/Application.vala:34
 msgid "Create a User"
-msgstr ""
+msgstr "მომხმარებლის შექმნა"
 
 #: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:181
 #, c-format
@@ -30,19 +30,19 @@ msgstr "ნაგულისხმები"
 
 #: src/Views/AccountView.vala:67
 msgid "Create an Account"
-msgstr ""
+msgstr "ანგარიშის შექმნა"
 
 #: src/Views/AccountView.vala:69
 msgid "Full Name"
-msgstr ""
+msgstr "სრული სახელი"
 
 #: src/Views/AccountView.vala:74
 msgid "Username"
-msgstr ""
+msgstr "მომხმარებლის სახელი"
 
 #: src/Views/AccountView.vala:81
 msgid "Choose a Password"
-msgstr ""
+msgstr "პაროლი"
 
 #: src/Views/AccountView.vala:97
 msgid "Confirm Password"
@@ -50,7 +50,7 @@ msgstr "პაროლის დადასტურება"
 
 #: src/Views/AccountView.vala:107
 msgid "Device name"
-msgstr ""
+msgstr "მოწყობილობის სახელი"
 
 #: src/Views/AccountView.vala:124
 #, c-format
@@ -70,7 +70,7 @@ msgstr "უკან"
 
 #: src/Views/AccountView.vala:169
 msgid "Finish Setup"
-msgstr ""
+msgstr "მორგების დასრულება"
 
 #: src/Views/AccountView.vala:251
 msgid "Passwords do not match"
@@ -78,7 +78,7 @@ msgstr "პაროლები არ ემთხვევა"
 
 #: src/Views/AccountView.vala:276
 msgid "The chosen username is already taken"
-msgstr ""
+msgstr "მომხმარებლის სახელი უკვე დაკავებულია"
 
 #: src/Views/AccountView.vala:278
 msgid ""
@@ -88,7 +88,7 @@ msgstr ""
 #: src/Views/AccountView.vala:342
 #, c-format
 msgid "Creating an account for “%s” failed"
-msgstr ""
+msgstr "\"%s\"-სთვის ანგარიშის შექმნის შეცდომა"
 
 #: src/Views/AccountView.vala:349
 #, c-format
@@ -103,11 +103,11 @@ msgstr ""
 #: src/Views/AccountView.vala:368
 #, c-format
 msgid "Unable to name this device “%s”"
-msgstr ""
+msgstr "ამ მოწყობილობისთვის \"%s\"-ის დარქმევა შეუძლებელია"
 
 #: src/Views/AccountView.vala:419
 msgid "Initial Setup could not set your hostname."
-msgstr ""
+msgstr "საწყისი მორგებისას ჰოსტის სახელის დაყენების შეცდომა."
 
 #: src/Views/AccountView.vala:438
 msgid ""
@@ -142,7 +142,7 @@ msgstr "ენები"
 
 #: src/Views/LanguageView.vala:240
 msgid "Use the right mouse button for primary click?"
-msgstr ""
+msgstr "გამოიყენებთ თაგუნას მარჯვენა ღილაკს ძირითად ღილაკად?"
 
 #: src/Views/LanguageView.vala:241
 msgid ""
@@ -152,15 +152,15 @@ msgstr ""
 
 #: src/Views/LanguageView.vala:242 src/Views/LanguageView.vala:249
 msgid "Right-Click as Primary"
-msgstr ""
+msgstr "მარჯვენა ღილაკი ძირითადი"
 
 #: src/Views/LanguageView.vala:243 src/Views/LanguageView.vala:248
 msgid "Left-Click as Primary"
-msgstr ""
+msgstr "მარცხენა ღილაკი ძირითადი"
 
 #: src/Views/LanguageView.vala:246
 msgid "Use the left mouse button for primary click?"
-msgstr ""
+msgstr "გამოიყენებთ თაგუნას მარცხენა ღილაკს ძირითად ღილაკად?"
 
 #: src/Views/LanguageView.vala:247
 msgid ""
@@ -178,7 +178,7 @@ msgstr "ამჟამად აქტიური ენა"
 
 #: src/Views/NetworkView.vala:30
 msgid "Connect Network"
-msgstr ""
+msgstr "ქსელთან მიერთება"
 
 #: src/Views/NetworkView.vala:32
 msgid ""
@@ -194,11 +194,11 @@ msgstr ""
 
 #: src/Views/NetworkView.vala:48
 msgid "Connect a network cable"
-msgstr ""
+msgstr "შეაერთეთ ქსელის კაბელი"
 
 #: src/Views/NetworkView.vala:70
 msgid "Skip"
-msgstr ""
+msgstr "გამოტოვება"
 
 #: src/Views/NetworkView.vala:88
 msgid "Next"
