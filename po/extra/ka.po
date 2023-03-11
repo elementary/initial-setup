@@ -2,8 +2,16 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
+"PO-Revision-Date: 2023-03-11 12:25+0000\n"
+"Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <https://l10n.elementary.io/projects/installer/"
+"initial-setup-extra/ka/>\n"
+"Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: data/io.elementary.initial-setup.desktop.in:3
 #: data/io.elementary.initial-setup.appdata.xml.in:8
@@ -30,7 +38,7 @@ msgstr ""
 #: data/io.elementary.initial-setup.appdata.xml.in:61
 #: data/io.elementary.initial-setup.appdata.xml.in:72
 msgid "Improvements:"
-msgstr ""
+msgstr "გაუმჯობესებები:"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:32
 #: data/io.elementary.initial-setup.appdata.xml.in:45
@@ -38,7 +46,7 @@ msgstr ""
 #: data/io.elementary.initial-setup.appdata.xml.in:65
 #: data/io.elementary.initial-setup.appdata.xml.in:75
 msgid "Updated translations"
-msgstr ""
+msgstr "განახლებული თარგმანები"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:41
 msgid "Use larger icons in views"
@@ -66,8 +74,8 @@ msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:74
 msgid "Avoid political naming of certain locales"
-msgstr ""
+msgstr "ზოგიერთი ენის პოლიტიკური სახელების თავიდან აცილება"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:86
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
