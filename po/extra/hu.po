@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2023-01-20 00:25+0000\n"
+"PO-Revision-Date: 2023-04-06 22:59+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/hu/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.16.4\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
 #: data/io.elementary.initial-setup.desktop.in:3
@@ -47,7 +47,7 @@ msgstr ""
 #: data/io.elementary.initial-setup.appdata.xml.in:61
 #: data/io.elementary.initial-setup.appdata.xml.in:72
 msgid "Improvements:"
-msgstr ""
+msgstr "Fejlesztések:"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:32
 #: data/io.elementary.initial-setup.appdata.xml.in:45
