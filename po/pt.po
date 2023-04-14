@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2022-04-30 22:25+0000\n"
+"PO-Revision-Date: 2023-04-15 14:59+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/installer/"
 "initial-setup/pt/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.16.4\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/Application.vala:34
@@ -53,10 +53,9 @@ msgid "Device name"
 msgstr "Nome do dispositivo"
 
 #: src/Views/AccountView.vala:124
-#, fuzzy, c-format
-#| msgid "Unable to set Hostname '%s'"
+#, c-format
 msgid "Unable to setup Hostname interface: %s"
-msgstr "Não foi possível definir o nome da máquina '%s'"
+msgstr "Não foi possível configurar a interface do nome da máquina: %s"
 
 #: src/Views/AccountView.vala:130
 msgid ""
@@ -93,37 +92,35 @@ msgstr ""
 #: src/Views/AccountView.vala:342
 #, c-format
 msgid "Creating an account for “%s” failed"
-msgstr ""
+msgstr "Falha ao criar uma conta para “%s”"
 
 #: src/Views/AccountView.vala:349
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
-msgstr ""
+msgstr "Não foi possível obter permissão para criar uma conta para“%s”"
 
 #: src/Views/AccountView.vala:364
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
 msgstr ""
+"Não foi possível obter permissão para atribuir um nome a este dispositivo "
+"“%s”"
 
 #: src/Views/AccountView.vala:368
 #, c-format
 msgid "Unable to name this device “%s”"
-msgstr ""
+msgstr "Incapaz de atribuir um nome a este dispositivo “%s”"
 
 #: src/Views/AccountView.vala:419
 msgid "Initial Setup could not set your hostname."
 msgstr "A configuração inicial não conseguiu definir o nome de utilizador."
 
 #: src/Views/AccountView.vala:438
-#, fuzzy
-#| msgid ""
-#| "Initial Setup could not create your user. Without it, you will not be "
-#| "able to log in and may need to reinstall the OS."
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
 msgstr ""
-"A configuração inicial não pôde criar o seu utilizador. Sem isso, não será "
+"A configuração inicial não conseguiu criar esta conta. Sem isso, não será "
 "capaz de iniciar sessão e poderá ter de reinstalar o sistema operativo."
 
 #: src/Views/KeyboardLayoutView.vala:27
