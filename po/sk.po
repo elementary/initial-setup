@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2022-02-25 21:03+0000\n"
+"PO-Revision-Date: 2023-05-09 19:06+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
-"Language-Team: Slovak <https://l10n.elementary.io/projects/installer/initial-"
-"setup/sk/>\n"
+"Language-Team: Slovak <https://l10n.elementary.io/projects/installer/"
+"initial-setup/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/Application.vala:34
@@ -53,10 +53,9 @@ msgid "Device name"
 msgstr "Názov zariadenia"
 
 #: src/Views/AccountView.vala:124
-#, fuzzy, c-format
-#| msgid "Unable to set Hostname '%s'"
+#, c-format
 msgid "Unable to setup Hostname interface: %s"
-msgstr "Nastavenie názvu hostiteľa ‚%s‘ sa nepodarilo"
+msgstr "Nepodarilo sa nastavenie prostredia názvu hostiteľa: %s"
 
 #: src/Views/AccountView.vala:130
 msgid ""
@@ -92,39 +91,34 @@ msgstr ""
 #: src/Views/AccountView.vala:342
 #, c-format
 msgid "Creating an account for “%s” failed"
-msgstr ""
+msgstr "Vytvorenie účtu pre „%s“ sa nepodarilo"
 
 #: src/Views/AccountView.vala:349
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
-msgstr ""
+msgstr "Nepodarilo sa získať povolenie na vytvorenie účtu pre „%s“"
 
 #: src/Views/AccountView.vala:364
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
-msgstr ""
+msgstr "Nepodarilo sa získať povolenie na pomenovanie tohto zariadenia „%s“"
 
 #: src/Views/AccountView.vala:368
 #, c-format
 msgid "Unable to name this device “%s”"
-msgstr ""
+msgstr "Pomenovanie tohto zariadenia „%s“ sa nepodarilo"
 
 #: src/Views/AccountView.vala:419
 msgid "Initial Setup could not set your hostname."
 msgstr "Prvotnému nastaveniu sa nepodarilo nastaviť váš názov hostiteľa."
 
 #: src/Views/AccountView.vala:438
-#, fuzzy
-#| msgid ""
-#| "Initial Setup could not create your user. Without it, you will not be "
-#| "able to log in and may need to reinstall the OS."
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
 msgstr ""
-"V prvotnom nastavení sa nepodarilo vytvoriť váš používateľský účet. Bez neho "
-"sa nebudete môcť prihlásiť a možno bude potrebné preinštalovať operačný "
-"systém."
+"V prvotnom nastavení sa nepodarilo vytvoriť tento účet. Bez neho sa nebudete "
+"môcť prihlásiť a možno bude potrebné preinštalovať operačný systém."
 
 #: src/Views/KeyboardLayoutView.vala:27
 msgid "Select Keyboard Layout"
