@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
 "PO-Revision-Date: 2023-05-11 15:57+0000\n"
-"Last-Translator: Faisal Rachmadin <frachmadin@gmail.com>\n"
+"Last-Translator: Angelo <angelo@angeloanan.xyz>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/id/>\n"
 "Language: id\n"
@@ -50,7 +50,7 @@ msgstr "Konfirmasi Kata Sandi"
 
 #: src/Views/AccountView.vala:107
 msgid "Device name"
-msgstr ""
+msgstr "Nama perangkat"
 
 #: src/Views/AccountView.vala:124
 #, c-format
@@ -62,6 +62,8 @@ msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
+"Dapat dilihat oleh perangkat lain pada saat contoh menggunakan Bluetooth "
+"atau melalui jaringan."
 
 #: src/Views/AccountView.vala:165 src/Views/KeyboardLayoutView.vala:51
 #: src/Views/NetworkView.vala:66
