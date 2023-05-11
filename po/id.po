@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2023-05-11 15:57+0000\n"
-"Last-Translator: Ahmad Fadhli <ahmad.fadhli@protonmail.com>\n"
+"PO-Revision-Date: 2023-05-11 16:02+0000\n"
+"Last-Translator: Faisal Rachmadin <frachmadin@gmail.com>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/id/>\n"
 "Language: id\n"
@@ -121,7 +121,7 @@ msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:27
 msgid "Select Keyboard Layout"
-msgstr "Pilih Susunan Papan Tik"
+msgstr "Pilih Susunan Keyboard"
 
 #: src/Views/KeyboardLayoutView.vala:33
 msgid "Type to test your layout"
