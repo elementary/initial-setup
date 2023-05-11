@@ -3,8 +3,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
 "PO-Revision-Date: 2023-05-12 16:06+0000\n"
-"Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
-"io>\n"
+"Last-Translator: tavvfiq <taufiq.w@mail.ugm.ac.id>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/id/>\n"
 "Language: id\n"
@@ -32,6 +31,8 @@ msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
 msgstr ""
+"Membantu pada tugas-tugas penting sebelum instalasi baru dapat digunakan, "
+"seperti memilih bahasa dan membuat akun pengguna."
 
 #: data/io.elementary.initial-setup.appdata.xml.in:30
 #: data/io.elementary.initial-setup.appdata.xml.in:39
@@ -79,7 +80,7 @@ msgstr "Hindari penamaan politik untuk lokal tertentu"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:86
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #~ msgid "system-os-installer"
 #~ msgstr "system-os-installer"
