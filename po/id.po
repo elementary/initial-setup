@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
 "PO-Revision-Date: 2023-05-11 15:57+0000\n"
-"Last-Translator: Rtr0ID <Albertong27@gmail.com>\n"
+"Last-Translator: Ahmad Fadhli <ahmad.fadhli@protonmail.com>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/id/>\n"
 "Language: id\n"
@@ -120,10 +120,8 @@ msgstr ""
 "masuk dan kemungkinan perlu memasang ulang Sistem Operasi."
 
 #: src/Views/KeyboardLayoutView.vala:27
-#, fuzzy
-#| msgid "Keyboard Layout"
 msgid "Select Keyboard Layout"
-msgstr "Susunan Papan Tik"
+msgstr "Pilih Susunan Papan Tik"
 
 #: src/Views/KeyboardLayoutView.vala:33
 msgid "Type to test your layout"
