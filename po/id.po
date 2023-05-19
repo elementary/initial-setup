@@ -3,8 +3,9 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2023-05-11 16:02+0000\n"
-"Last-Translator: Faisal Rachmadin <frachmadin@gmail.com>\n"
+"PO-Revision-Date: 2023-05-20 15:06+0000\n"
+"Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
+"io>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/id/>\n"
 "Language: id\n"
@@ -76,7 +77,7 @@ msgstr "Selesaikan Penyiapan"
 
 #: src/Views/AccountView.vala:251
 msgid "Passwords do not match"
-msgstr "Password tidak sesuai"
+msgstr "Kata sandi tidak cocok"
 
 #: src/Views/AccountView.vala:276
 msgid "The chosen username is already taken"
@@ -121,7 +122,7 @@ msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:27
 msgid "Select Keyboard Layout"
-msgstr "Pilih Susunan Keyboard"
+msgstr "Pilih Tata Letak Papan Ketik"
 
 #: src/Views/KeyboardLayoutView.vala:33
 msgid "Type to test your layout"
@@ -129,7 +130,7 @@ msgstr "Ketik untuk menguji tata letak Anda"
 
 #: src/Views/KeyboardLayoutView.vala:36
 msgid "Show keyboard layout"
-msgstr "Tampilkan tata letak papan tik"
+msgstr "Tampilkan tata letak papan ketik"
 
 #: src/Views/KeyboardLayoutView.vala:55 src/Views/LanguageView.vala:107
 #: src/Views/LanguageView.vala:172
@@ -182,7 +183,7 @@ msgstr "Pilih Bahasa"
 
 #: src/Views/LanguageView.vala:335 src/Views/LanguageView.vala:394
 msgid "Currently active language"
-msgstr "Bahasa yang Aktif Saat Ini"
+msgstr "Bahasa yang aktif saat ini"
 
 #: src/Views/NetworkView.vala:30
 msgid "Connect Network"
