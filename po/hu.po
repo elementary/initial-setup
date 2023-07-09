@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2023-02-02 09:25+0000\n"
+"PO-Revision-Date: 2023-07-10 21:07+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/hu/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/Application.vala:34
@@ -112,14 +112,14 @@ msgstr "\"%s\" nem állítható be készüléknévként"
 
 #: src/Views/AccountView.vala:419
 msgid "Initial Setup could not set your hostname."
-msgstr "A Kezdeti telepítő nem tudta beállítani a gépnevet."
+msgstr "A Kezdeti beállítások nem tudta beállítani a gépnevet."
 
 #: src/Views/AccountView.vala:438
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
 msgstr ""
-"A Kezdeti telepítő nem tudta létrehozni a fiókot. Enélkül nem lesz képes "
+"A Kezdeti beállítások nem tudta létrehozni a fiókot. Enélkül nem lesz képes "
 "bejelentkezni és esetleg újra kell majd telepíteni a rendszert."
 
 #: src/Views/KeyboardLayoutView.vala:27
