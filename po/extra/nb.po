@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2023-07-09 13:07+0000\n"
+"PO-Revision-Date: 2023-07-11 23:07+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "installer/initial-setup-extra/nb/>\n"
@@ -72,7 +72,7 @@ msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:64
 msgid "Suggest connecting to a network"
-msgstr ""
+msgstr "Foreslå tilkobling til et nettverk"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:74
 msgid "Avoid political naming of certain locales"
