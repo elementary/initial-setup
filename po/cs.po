@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2022-02-02 13:50+0000\n"
-"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
-"Language-Team: Czech <https://l10n.elementary.io/projects/installer/initial-"
-"setup/cs/>\n"
+"PO-Revision-Date: 2023-07-14 02:27+0000\n"
+"Last-Translator: Jakub Kyzr <jakubkyzr@gmail.com>\n"
+"Language-Team: Czech <https://l10n.elementary.io/projects/installer/"
+"initial-setup/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/Application.vala:34
@@ -91,17 +91,17 @@ msgstr ""
 #: src/Views/AccountView.vala:342
 #, c-format
 msgid "Creating an account for “%s” failed"
-msgstr ""
+msgstr "Vytváření účtu pro „%s“ selhalo"
 
 #: src/Views/AccountView.vala:349
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
-msgstr ""
+msgstr "Nepodařilo se získat oprávnění k vytvoření účtu pro „%s“"
 
 #: src/Views/AccountView.vala:364
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
-msgstr ""
+msgstr "Nepodařilo se získat oprávnění k pojmenování tohoto zařízení „%s“"
 
 #: src/Views/AccountView.vala:368
 #, c-format
@@ -113,16 +113,12 @@ msgid "Initial Setup could not set your hostname."
 msgstr "V prvotním nastavení se nepodařilo nastavit název vašeho počítače."
 
 #: src/Views/AccountView.vala:438
-#, fuzzy
-#| msgid ""
-#| "Initial Setup could not create your user. Without it, you will not be "
-#| "able to log in and may need to reinstall the OS."
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
 msgstr ""
-"V prvotním nastavení se nepodařilo vytvořit váš uživatelský účet. Bez něj se "
-"nebudete moci přihlásit a možná bude třeba operační systém přeinstalovat."
+"V prvotním nastavení se nepodařilo vytvořit tento uživatelský účet. Bez něj "
+"se nebudete moci přihlásit a možná bude třeba operační systém přeinstalovat."
 
 #: src/Views/KeyboardLayoutView.vala:27
 msgid "Select Keyboard Layout"
