@@ -22,6 +22,6 @@ Standards-Version: 4.1.1
 
 Package: io.elementary.initial-setup
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: espeak, ${misc:Depends}, ${shlibs:Depends}
 Description: Perform essential OS setup
  Initial Setup assists users with essential tasks before a fresh install is usable.
