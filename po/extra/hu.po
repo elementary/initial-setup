@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-28 17:18+0000\n"
-"PO-Revision-Date: 2023-07-10 21:07+0000\n"
+"PO-Revision-Date: 2023-07-29 21:08+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/hu/>\n"
@@ -59,31 +59,31 @@ msgstr "Frissített fordítások"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:41
 msgid "Use larger icons in views"
-msgstr ""
+msgstr "Nagyobb ikonok használata a nézetekben"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:42
 msgid "Make window resizable"
-msgstr ""
+msgstr "Átméretezhető ablak"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:43
 msgid "Show keyboard layouts in a separate window"
-msgstr ""
+msgstr "Billentyűzetkiosztás megjelenítése külön ablakban"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:44
 msgid "Allow hyphens in device names"
-msgstr ""
+msgstr "Kötőjelek engedélyezése az eszköznevekben"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:63
 msgid "Offer to switch to right-click primary mouse button"
-msgstr ""
+msgstr "Elsődleges egérgomb jobbra cseréjének felajánlása"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:64
 msgid "Suggest connecting to a network"
-msgstr ""
+msgstr "Hálózatra való csatlakozás javaslása"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:74
 msgid "Avoid political naming of certain locales"
-msgstr ""
+msgstr "Néhány régió politikai megnevezésének elkerülése"
 
 #: data/io.elementary.initial-setup.appdata.xml.in:86
 msgid "elementary, Inc."
