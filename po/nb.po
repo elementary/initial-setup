@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-28 17:18+0000\n"
+"POT-Creation-Date: 2023-08-08 20:25+0000\n"
 "PO-Revision-Date: 2023-02-14 13:25+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -88,7 +88,7 @@ msgid ""
 msgstr "Brukernavnet kan kun inneholde små bokstaver og tall, uten mellomrom"
 
 #: src/Views/AccountView.vala:342
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "Creating an account for “%s” failed"
 msgstr "Kunne ikke opprette konto for «%s»"
 
@@ -98,12 +98,12 @@ msgid "Couldn't get permission to create an account for “%s”"
 msgstr "Fikk ikke tilgang til å opprette konto for «%s»"
 
 #: src/Views/AccountView.vala:364
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "Couldn't get permission to name this device “%s”"
 msgstr "Fikk ikke tilgang til å navngi «%s»-enheten"
 
 #: src/Views/AccountView.vala:368
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "Unable to name this device “%s”"
 msgstr "Kunne ikke navngi «%s»-enheten"
 
