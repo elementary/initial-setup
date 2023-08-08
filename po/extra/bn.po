@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-28 17:18+0000\n"
+"POT-Creation-Date: 2023-08-08 20:25+0000\n"
 "PO-Revision-Date: 2016-07-31 14:57+0000\n"
 "Last-Translator: M A Al Masud <Unknown>\n"
 "Language-Team: Bengali <bn@li.org>\n"
@@ -38,50 +38,54 @@ msgid ""
 msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:30
-#: data/io.elementary.initial-setup.appdata.xml.in:39
-#: data/io.elementary.initial-setup.appdata.xml.in:52
-#: data/io.elementary.initial-setup.appdata.xml.in:61
-#: data/io.elementary.initial-setup.appdata.xml.in:72
+#: data/io.elementary.initial-setup.appdata.xml.in:40
+#: data/io.elementary.initial-setup.appdata.xml.in:53
+#: data/io.elementary.initial-setup.appdata.xml.in:62
+#: data/io.elementary.initial-setup.appdata.xml.in:73
 msgid "Improvements:"
 msgstr ""
 
 #: data/io.elementary.initial-setup.appdata.xml.in:32
-#: data/io.elementary.initial-setup.appdata.xml.in:45
-#: data/io.elementary.initial-setup.appdata.xml.in:54
-#: data/io.elementary.initial-setup.appdata.xml.in:65
-#: data/io.elementary.initial-setup.appdata.xml.in:75
+msgid "Automatically prompt for screen reader after a timeout"
+msgstr ""
+
+#: data/io.elementary.initial-setup.appdata.xml.in:33
+#: data/io.elementary.initial-setup.appdata.xml.in:46
+#: data/io.elementary.initial-setup.appdata.xml.in:55
+#: data/io.elementary.initial-setup.appdata.xml.in:66
+#: data/io.elementary.initial-setup.appdata.xml.in:76
 msgid "Updated translations"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:41
+#: data/io.elementary.initial-setup.appdata.xml.in:42
 msgid "Use larger icons in views"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:42
+#: data/io.elementary.initial-setup.appdata.xml.in:43
 msgid "Make window resizable"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:43
+#: data/io.elementary.initial-setup.appdata.xml.in:44
 msgid "Show keyboard layouts in a separate window"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:44
+#: data/io.elementary.initial-setup.appdata.xml.in:45
 msgid "Allow hyphens in device names"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:63
+#: data/io.elementary.initial-setup.appdata.xml.in:64
 msgid "Offer to switch to right-click primary mouse button"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:64
+#: data/io.elementary.initial-setup.appdata.xml.in:65
 msgid "Suggest connecting to a network"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:74
+#: data/io.elementary.initial-setup.appdata.xml.in:75
 msgid "Avoid political naming of certain locales"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:86
+#: data/io.elementary.initial-setup.appdata.xml.in:87
 msgid "elementary, Inc."
 msgstr ""
 

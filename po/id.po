@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-28 17:18+0000\n"
+"POT-Creation-Date: 2023-08-08 20:25+0000\n"
 "PO-Revision-Date: 2023-05-20 15:06+0000\n"
 "Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
 "io>\n"
@@ -201,7 +201,8 @@ msgstr ""
 #: src/Views/NetworkView.vala:42
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
-msgstr "Pilih jaringan nirkabel terdekat dari indikator jaringan di kanan atas."
+msgstr ""
+"Pilih jaringan nirkabel terdekat dari indikator jaringan di kanan atas."
 
 #: src/Views/NetworkView.vala:48
 msgid "Connect a network cable"
