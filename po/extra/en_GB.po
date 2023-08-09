@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-08 23:03+0000\n"
-"PO-Revision-Date: 2023-02-18 09:25+0000\n"
+"PO-Revision-Date: 2023-08-11 10:08+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "installer/initial-setup-extra/en_GB/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
 msgid "Set up elementary OS"
@@ -45,7 +45,7 @@ msgstr "Improvements:"
 
 #: data/initial-setup.metainfo.xml.in:49
 msgid "Automatically prompt for screen reader after a timeout"
-msgstr ""
+msgstr "Automatically prompt for screen reader after a timeout"
 
 #: data/initial-setup.metainfo.xml.in:50 data/initial-setup.metainfo.xml.in:63
 #: data/initial-setup.metainfo.xml.in:72 data/initial-setup.metainfo.xml.in:83
