@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-08 23:03+0000\n"
-"PO-Revision-Date: 2022-12-21 13:25+0000\n"
+"PO-Revision-Date: 2023-08-11 10:08+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
-"Language-Team: French <https://l10n.elementary.io/projects/installer/initial-"
-"setup-extra/fr/>\n"
+"Language-Team: French <https://l10n.elementary.io/projects/installer/"
+"initial-setup-extra/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
 #: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
@@ -53,6 +53,8 @@ msgstr "Améliorations :"
 #: data/initial-setup.metainfo.xml.in:49
 msgid "Automatically prompt for screen reader after a timeout"
 msgstr ""
+"Demander automatiquement s'il faut activer le lecteur d'écran après un "
+"certain délai"
 
 #: data/initial-setup.metainfo.xml.in:50 data/initial-setup.metainfo.xml.in:63
 #: data/initial-setup.metainfo.xml.in:72 data/initial-setup.metainfo.xml.in:83
