@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-08 23:03+0000\n"
-"PO-Revision-Date: 2023-07-29 21:08+0000\n"
+"PO-Revision-Date: 2023-08-17 22:08+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/hu/>\n"
@@ -52,7 +52,7 @@ msgstr "Fejlesztések:"
 
 #: data/initial-setup.metainfo.xml.in:49
 msgid "Automatically prompt for screen reader after a timeout"
-msgstr ""
+msgstr "A képernyőolvasó automatikus felajánlása bizonyos idő elteltével"
 
 #: data/initial-setup.metainfo.xml.in:50 data/initial-setup.metainfo.xml.in:63
 #: data/initial-setup.metainfo.xml.in:72 data/initial-setup.metainfo.xml.in:83
