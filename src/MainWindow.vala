@@ -90,6 +90,10 @@ public class Installer.MainWindow : Gtk.Window {
             keyboard_layout_view.destroy ();
         }
 
+        if (account_view != null) {
+            account_view.destroy ();
+        }
+
         keyboard_layout_view = new KeyboardLayoutView ();
 
         leaflet.append (keyboard_layout_view);

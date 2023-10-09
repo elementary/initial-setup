@@ -22,7 +22,7 @@ public class Installer.NetworkView : AbstractInstallerView {
     private Gtk.Button skip_button;
 
     construct {
-        var image = new Gtk.Image.from_icon_name ("network-wireless") {
+        var image = new Gtk.Image.from_icon_name ("preferences-system-network") {
             pixel_size = 128,
             valign = Gtk.Align.END
         };
@@ -93,7 +93,7 @@ public class Installer.NetworkView : AbstractInstallerView {
             var image = new Gtk.Image.from_icon_name (icon_name) {
                 valign = Gtk.Align.START
             };
-            image.add_css_class ("large-icons");
+            image.add_css_class (Granite.STYLE_CLASS_LARGE_ICONS);
 
             unowned var image_context = image.get_style_context ();
             image_context.add_class (Granite.STYLE_CLASS_ACCENT);
