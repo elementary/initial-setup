@@ -495,7 +495,7 @@ public class Installer.AccountView : AbstractInstallerView {
     private class ErrorRevealer : Gtk.Box {
         public bool reveal_child { get; set; }
         public Gtk.Label label_widget { get; private set; }
-        public string label  { get; construct set; }
+        public string label { get; construct set; }
 
         public ErrorRevealer (string label) {
             Object (label: label);
