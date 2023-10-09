@@ -36,11 +36,7 @@ public class Installer.MainWindow : Gtk.Window {
         leaflet.append (language_view);
 
         child = leaflet;
-
-        var titlebar = new Gtk.Label ("") {
-            visible = false
-        };
-        set_titlebar (titlebar);
+        titlebar = new Gtk.Label ("") { visible = false };
 
         language_view.next_step.connect (() => {
             // Don't prompt for screen reader if we're able to navigate without it
