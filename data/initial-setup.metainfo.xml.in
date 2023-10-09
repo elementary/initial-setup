@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2019–2023 elementary, Inc. <contact@elementary.io> -->
+<component type="desktop-application">
+  <id>io.elementary.initial-setup</id>
+  <translation type="gettext">io.elementary.initial-setup</translation>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <compulsory_for_desktop>Pantheon</compulsory_for_desktop>
+
+  <name>Initial Setup</name>
+  <summary>Set up elementary OS</summary>
+  <description>
+    <p>Assists with essential tasks before a fresh install is usable, like choosing a language and creating a user account.</p>
+  </description>
+
+  <screenshots>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/initial-setup/6.3.0/data/screenshot-language.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/initial-setup/6.3.0/data/screenshot-keyboard.png</image>
+    </screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/initial-setup/6.3.0/data/screenshot-user.png</image>
+    </screenshot>
+  </screenshots>
+
+  <content_rating type="oars-1.1" />
+
+  <provides>
+    <binary>io.elementary.initial-setup</binary>
+  </provides>
+
+  <url type="bugtracker">https://github.com/elementary/initial-setup/issues</url>
+  <url type="donation">https://elementary.io/get-involved#funding</url>
+  <url type="help">https://github.com/elementary/initial-setup/discussions/categories/q-a</url>
+  <url type="homepage">https://elementary.io/</url>
+  <url type="translate">https://l10n.elementary.io/engage/installer</url>
+
+  <developer_name>elementary, Inc.</developer_name>
+  <project_group>elementary</project_group>
+  <update_contact>contact_at_elementary.io</update_contact>
+
+  <releases>
+    <release version="6.3.0" date="2023-08-08" urgency="medium">
+      <description>
+        <p>Improvements:</p>
+        <ul>
+          <li>Automatically prompt for screen reader after a timeout</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="6.2.2" date="2022-12-07" urgency="medium">
+      <description>
+        <p>Improvements:</p>
+        <ul>
+          <li>Use larger icons in views</li>
+          <li>Make window resizable</li>
+          <li>Show keyboard layouts in a separate window</li>
+          <li>Allow hyphens in device names</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="6.2.1" date="2022-10-20" urgency="medium">
+      <description>
+        <p>Improvements:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="6.2.0" date="2022-05-09" urgency="medium">
+      <description>
+        <p>Improvements:</p>
+        <ul>
+          <li>Offer to switch to right-click primary mouse button</li>
+          <li>Suggest connecting to a network</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="6.1.1" date="2021-08-26" urgency="medium">
+      <description>
+        <p>Improvements:</p>
+        <ul>
+          <li>Avoid political naming of certain locales</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="6.1.0" date="2021-08-25" urgency="medium" />
+  </releases>
+</component>

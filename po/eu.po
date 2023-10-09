@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-10 00:25+0000\n"
+"POT-Creation-Date: 2023-08-08 23:03+0000\n"
 "PO-Revision-Date: 2016-05-27 15:29+0000\n"
 "Last-Translator: Maxwell Barvian <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,25 +13,11 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 "X-Generator: Launchpad (build 18204)\n"
 
-#: src/MainWindow.vala:34
+#: src/Application.vala:34
 msgid "Create a User"
 msgstr ""
 
-#: src/Utils.vala:83
-msgid "Initial Setup could not set your hostname."
-msgstr ""
-
-#: src/Utils.vala:94
-#, c-format
-msgid "No Permission to set hostname '%s'"
-msgstr ""
-
-#: src/Utils.vala:97
-#, c-format
-msgid "Unable to set Hostname '%s'"
-msgstr ""
-
-#: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:180
+#: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:181
 #, c-format
 msgid "%s…"
 msgstr ""
@@ -40,7 +26,7 @@ msgstr ""
 msgid "Default"
 msgstr ""
 
-#: src/Views/AccountView.vala:65
+#: src/Views/AccountView.vala:67
 msgid "Create an Account"
 msgstr ""
 
@@ -64,137 +50,156 @@ msgstr ""
 msgid "Device name"
 msgstr ""
 
-#: src/Views/AccountView.vala:120
+#: src/Views/AccountView.vala:124
+#, c-format
+msgid "Unable to setup Hostname interface: %s"
+msgstr ""
+
+#: src/Views/AccountView.vala:130
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
 
-#: src/Views/AccountView.vala:154 src/Views/KeyboardLayoutView.vala:52
-#: src/Views/NetworkView.vala:86
+#: src/Views/AccountView.vala:165 src/Views/KeyboardLayoutView.vala:51
+#: src/Views/NetworkView.vala:66
 #, fuzzy
 msgid "Back"
 msgstr "Atzera tekla"
 
-#: src/Views/AccountView.vala:156
+#: src/Views/AccountView.vala:169
 msgid "Finish Setup"
 msgstr ""
 
-#: src/Views/AccountView.vala:238
+#: src/Views/AccountView.vala:251
 msgid "Passwords do not match"
 msgstr ""
 
-#: src/Views/AccountView.vala:263
+#: src/Views/AccountView.vala:276
 msgid "The chosen username is already taken"
 msgstr ""
 
-#: src/Views/AccountView.vala:265
+#: src/Views/AccountView.vala:278
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
 
-#: src/Views/AccountView.vala:290
+#: src/Views/AccountView.vala:342
+#, c-format
+msgid "Creating an account for “%s” failed"
+msgstr ""
+
+#: src/Views/AccountView.vala:349
+#, c-format
+msgid "Couldn't get permission to create an account for “%s”"
+msgstr ""
+
+#: src/Views/AccountView.vala:364
+#, c-format
+msgid "Couldn't get permission to name this device “%s”"
+msgstr ""
+
+#: src/Views/AccountView.vala:368
+#, c-format
+msgid "Unable to name this device “%s”"
+msgstr ""
+
+#: src/Views/AccountView.vala:419
+msgid "Initial Setup could not set your hostname."
+msgstr ""
+
+#: src/Views/AccountView.vala:438
 msgid ""
-"Initial Setup could not create your user. Without it, you will not be able "
-"to log in and may need to reinstall the OS."
+"Initial Setup could not create this account. Without it, you will not be "
+"able to log in and may need to reinstall the OS."
 msgstr ""
 
-#: src/Views/AccountView.vala:309
-#, c-format
-msgid "Creating User '%s' Failed"
-msgstr ""
-
-#: src/Views/AccountView.vala:313
-#, c-format
-msgid "No Permission to Create User '%s'"
-msgstr ""
-
-#: src/Views/KeyboardLayoutView.vala:26
+#: src/Views/KeyboardLayoutView.vala:27
 msgid "Select Keyboard Layout"
 msgstr ""
 
-#: src/Views/KeyboardLayoutView.vala:35
+#: src/Views/KeyboardLayoutView.vala:33
 msgid "Type to test your layout"
 msgstr ""
 
-#: src/Views/KeyboardLayoutView.vala:38
+#: src/Views/KeyboardLayoutView.vala:36
 msgid "Show keyboard layout"
 msgstr ""
 
-#: src/Views/KeyboardLayoutView.vala:54 src/Views/LanguageView.vala:111
-#: src/Views/LanguageView.vala:174
+#: src/Views/KeyboardLayoutView.vala:55 src/Views/LanguageView.vala:107
+#: src/Views/LanguageView.vala:172
 msgid "Select"
 msgstr ""
 
-#: src/Views/KeyboardLayoutView.vala:123
+#: src/Views/KeyboardLayoutView.vala:124
 msgid "Input Language"
 msgstr ""
 
-#: src/Views/LanguageView.vala:207
+#: src/Views/LanguageView.vala:205
 msgid "Languages"
 msgstr ""
 
-#: src/Views/LanguageView.vala:242
+#: src/Views/LanguageView.vala:240
 msgid "Use the right mouse button for primary click?"
 msgstr ""
 
-#: src/Views/LanguageView.vala:243
+#: src/Views/LanguageView.vala:241
 msgid ""
 "The right mouse button was used where a primary click was expected. You can "
 "choose to always use the right mouse button for primary click."
 msgstr ""
 
-#: src/Views/LanguageView.vala:244 src/Views/LanguageView.vala:251
+#: src/Views/LanguageView.vala:242 src/Views/LanguageView.vala:249
 msgid "Right-Click as Primary"
 msgstr ""
 
-#: src/Views/LanguageView.vala:245 src/Views/LanguageView.vala:250
+#: src/Views/LanguageView.vala:243 src/Views/LanguageView.vala:248
 msgid "Left-Click as Primary"
 msgstr ""
 
-#: src/Views/LanguageView.vala:248
+#: src/Views/LanguageView.vala:246
 msgid "Use the left mouse button for primary click?"
 msgstr ""
 
-#: src/Views/LanguageView.vala:249
+#: src/Views/LanguageView.vala:247
 msgid ""
 "The left mouse button was used where a primary click was expected. You can "
 "choose to always use the left mouse button for primary click."
 msgstr ""
 
-#: src/Views/LanguageView.vala:309
+#: src/Views/LanguageView.vala:312
 msgid "Select a Language"
 msgstr ""
 
-#: src/Views/LanguageView.vala:332 src/Views/LanguageView.vala:391
+#: src/Views/LanguageView.vala:335 src/Views/LanguageView.vala:394
 msgid "Currently active language"
 msgstr ""
 
-#: src/Views/NetworkView.vala:29
+#: src/Views/NetworkView.vala:30
 msgid "Connect Network"
 msgstr ""
 
-#: src/Views/NetworkView.vala:34
+#: src/Views/NetworkView.vala:32
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
 msgstr ""
 
 #. /Translators: for RTL languages, the UI is flipped
-#: src/Views/NetworkView.vala:49
+#: src/Views/NetworkView.vala:42
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
 msgstr ""
 
-#: src/Views/NetworkView.vala:63
+#: src/Views/NetworkView.vala:48
 msgid "Connect a network cable"
 msgstr ""
 
-#: src/Views/NetworkView.vala:88
+#: src/Views/NetworkView.vala:70
 msgid "Skip"
 msgstr ""
 
-#: src/Views/NetworkView.vala:106
+#: src/Views/NetworkView.vala:88
 msgid "Next"
 msgstr ""
 

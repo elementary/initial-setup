@@ -9,32 +9,33 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-    
+
+    strategy:
+      fail-fast: false
+      matrix:
+        version: [stable, unstable, development-target]
     container:
-      image: elementary/docker:horus-unstable
-    
+      image: ghcr.io/elementary/docker:${{ matrix.version }}
+
     steps:
-    - uses: actions/checkout@v3
-    - name: Install Dependencies
-      run: |
-        apt update
-        apt install -y desktop-file-utils gettext meson libaccountsservice-dev libgtk-4-dev libgee-0.8-dev libgranite-7-dev libadwaita-1-dev libxml2-dev libjson-glib-dev libpolkit-gobject-1-dev libpwquality-dev libxml2-utils valac
-    - name: Build
-      run: |
-        meson build
-        ninja -C build
+      - uses: actions/checkout@v4
+      - name: Install Dependencies
+        run: |
+          apt update
+          apt install -y desktop-file-utils gettext meson libaccountsservice-dev libgtk-4-dev libgee-0.8-dev libgranite-7-dev libadwaita-1-dev libxml2-dev libjson-glib-dev libpolkit-gobject-1-dev libpwquality-dev libxml2-utils valac
+      - name: Build
+        run: |
+          meson build
+          ninja -C build
 
   lint:
-
     runs-on: ubuntu-latest
-    
+
     container:
       image: valalang/lint
-      
-    steps:
-    - uses: actions/checkout@v3
-    - name: Lint
-      run: io.elementary.vala-lint -d .
 
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lint
+        run: io.elementary.vala-lint -d .

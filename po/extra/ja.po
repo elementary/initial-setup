@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-10 00:25+0000\n"
-"PO-Revision-Date: 2022-04-09 00:55+0000\n"
+"POT-Creation-Date: 2023-08-08 23:03+0000\n"
+"PO-Revision-Date: 2023-08-08 22:33+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/ja/>\n"
@@ -17,27 +17,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
-#: data/io.elementary.initial-setup.desktop.in:3
-#: data/io.elementary.initial-setup.appdata.xml.in:8
+#: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
 msgid "Set up elementary OS"
 msgstr "elementary OS をセットアップ"
 
-#: data/io.elementary.initial-setup.desktop.in:4
+#: data/initial-setup.desktop.in:4
 msgid "Set up the system"
 msgstr "システムをセットアップします"
 
-#: data/io.elementary.initial-setup.desktop.in:6
-msgid "io.elementary.initial-setup"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:7
+#: data/initial-setup.metainfo.xml.in:10
 msgid "Initial Setup"
 msgstr "初期設定"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:10
+#: data/initial-setup.metainfo.xml.in:13
 msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
@@ -45,52 +40,80 @@ msgstr ""
 "言語の選択やユーザーアカウントの作成など、新規インストール時に必要な作業を支"
 "援します。"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:51
-msgid "New features:"
-msgstr "新機能:"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:53
-msgid "Confirm and change device name"
-msgstr "デバイス名を確認・変更できる機能を追加"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:54
-msgid "Two-finger swipe to navigate back"
-msgstr "2本指スワイプで1つ前の設定画面に戻れるように修正"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:56
-#: data/io.elementary.initial-setup.appdata.xml.in:64
-msgid "Minor updates:"
-msgstr "そのほかのアップデート:"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:58
-#: data/io.elementary.initial-setup.appdata.xml.in:70
-#: data/io.elementary.initial-setup.appdata.xml.in:76
-msgid "Translation updates"
-msgstr "翻訳の更新"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:66
-msgid "Set keyboard layout in accountsservice"
-msgstr "AccountsService を利用してキーボードレイアウトを設定するように変更"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:67
-msgid "Add multitouch gestures"
-msgstr "マルチタッチジェスチャーを追加"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:68
-msgid "Set correct locales"
-msgstr "適切なロケールを設定するように修正"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:69
-msgid "New colorful avatar fallback"
-msgstr "アバター画像未設定時に背景を色付きで表示するように変更"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:81
-msgid "Initial release"
-msgstr "最初のリリース"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:88
+#: data/initial-setup.metainfo.xml.in:40
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
+
+#: data/initial-setup.metainfo.xml.in:47 data/initial-setup.metainfo.xml.in:57
+#: data/initial-setup.metainfo.xml.in:70 data/initial-setup.metainfo.xml.in:79
+#: data/initial-setup.metainfo.xml.in:90
+msgid "Improvements:"
+msgstr "改善点:"
+
+#: data/initial-setup.metainfo.xml.in:49
+msgid "Automatically prompt for screen reader after a timeout"
+msgstr "一定時間経過後にスクリーンリーダーの案内音声を流すように修正"
+
+#: data/initial-setup.metainfo.xml.in:50 data/initial-setup.metainfo.xml.in:63
+#: data/initial-setup.metainfo.xml.in:72 data/initial-setup.metainfo.xml.in:83
+#: data/initial-setup.metainfo.xml.in:93
+msgid "Updated translations"
+msgstr "翻訳の更新"
+
+#: data/initial-setup.metainfo.xml.in:59
+msgid "Use larger icons in views"
+msgstr "各画面でより大きなアイコンを使用するように修正"
+
+#: data/initial-setup.metainfo.xml.in:60
+msgid "Make window resizable"
+msgstr "ウィンドウサイズが変更可能に"
+
+#: data/initial-setup.metainfo.xml.in:61
+msgid "Show keyboard layouts in a separate window"
+msgstr "キーボードレイアウトを別ウィンドウで表示するように修正"
+
+#: data/initial-setup.metainfo.xml.in:62
+msgid "Allow hyphens in device names"
+msgstr "デバイス名にハイフンを使用できるように修正"
+
+#: data/initial-setup.metainfo.xml.in:81
+msgid "Offer to switch to right-click primary mouse button"
+msgstr "マウスの主ボタンで右クリックを行うかどうか尋ねる機能を追加"
+
+#: data/initial-setup.metainfo.xml.in:82
+msgid "Suggest connecting to a network"
+msgstr "インターネットへの接続を提案するように修正"
+
+#: data/initial-setup.metainfo.xml.in:92
+msgid "Avoid political naming of certain locales"
+msgstr "一部地域名に政治的な問題があったのを修正"
+
+#~ msgid "New features:"
+#~ msgstr "新機能:"
+
+#~ msgid "Confirm and change device name"
+#~ msgstr "デバイス名を確認・変更できる機能を追加"
+
+#~ msgid "Two-finger swipe to navigate back"
+#~ msgstr "2本指スワイプで1つ前の設定画面に戻れるように修正"
+
+#~ msgid "Minor updates:"
+#~ msgstr "そのほかのアップデート:"
+
+#~ msgid "Translation updates"
+#~ msgstr "翻訳の更新"
+
+#~ msgid "Add multitouch gestures"
+#~ msgstr "マルチタッチジェスチャーを追加"
+
+#~ msgid "Set correct locales"
+#~ msgstr "適切なロケールを設定するように修正"
+
+#~ msgid "New colorful avatar fallback"
+#~ msgstr "アバター画像未設定時に背景を色付きで表示するように変更"
+
+#~ msgid "Initial release"
+#~ msgstr "最初のリリース"
 
 #~ msgid "system-os-installer"
 #~ msgstr "system-os-installer"

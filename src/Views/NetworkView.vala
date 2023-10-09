@@ -37,49 +37,31 @@ public class Installer.NetworkView : AbstractInstallerView {
         };
         details_label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
-        var wireless_image = new Gtk.Image.from_icon_name ("network-wireless-signal-excellent-symbolic") {
-            pixel_size = 24
-        };
-        wireless_image.add_css_class (Granite.STYLE_CLASS_ACCENT);
-        wireless_image.add_css_class ("blue");
+        var wireless_row = new ListRow (
+            ///Translators: for RTL languages, the UI is flipped
+            _("Choose a nearby wireless network from the network indicator in the top right."),
+            "network-wireless-symbolic",
+            "blue"
+        );
 
-        ///Translators: for RTL languages, the UI is flipped
-        var wireless_label = new Gtk.Label (_("Choose a nearby wireless network from the network indicator in the top right.")) {
-            hexpand = true,
-            max_width_chars = 1, // Make Gtk wrap, but not expand the window
-            wrap = true,
-            xalign = 0
-        };
+        var wired_row = new ListRow (
+            _("Connect a network cable"),
+            "network-wired-symbolic",
+            "orange"
+        );
 
-        var wired_image = new Gtk.Image.from_icon_name ("network-wired-symbolic") {
-            pixel_size = 24
-        };
-        wired_image.add_css_class (Granite.STYLE_CLASS_ACCENT);
-        wired_image.add_css_class ("orange");
-
-        var wired_label = new Gtk.Label (_("Connect a network cable")) {
-            hexpand = true,
-            max_width_chars = 1, // Make Gtk wrap, but not expand the window
-            wrap = true,
-            xalign = 0
-        };
-
-        var choice_grid = new Gtk.Grid () {
-            column_spacing = 12,
-            row_spacing = 32,
+        var choice_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 24) {
             valign = Gtk.Align.CENTER,
             vexpand = true
         };
-        choice_grid.attach (details_label, 0, 0, 2);
-        choice_grid.attach (wireless_image, 0, 1);
-        choice_grid.attach (wireless_label, 1, 1);
-        choice_grid.attach (wired_image, 0, 2);
-        choice_grid.attach (wired_label, 1, 2);
+        choice_box.append (details_label);
+        choice_box.append (wireless_row);
+        choice_box.append (wired_row);
 
         title_area.append (image);
         title_area.append (title_label);
 
-        content_area.append (choice_grid);
+        content_area.append (choice_box);
 
         var back_button = new Gtk.Button.with_label (_("Back")) {
             width_request = 86
@@ -103,6 +85,31 @@ public class Installer.NetworkView : AbstractInstallerView {
             network_monitor.network_changed.disconnect (update);
             skip_button.label = _("Next");
             next_step ();
+        }
+    }
+
+    private class ListRow : Gtk.Box {
+        public ListRow (string description, string icon_name, string color) {
+            var image = new Gtk.Image.from_icon_name (icon_name) {
+                valign = Gtk.Align.START
+            };
+            image.add_css_class ("large-icons");
+
+            unowned var image_context = image.get_style_context ();
+            image_context.add_class (Granite.STYLE_CLASS_ACCENT);
+            image_context.add_class (color);
+
+            var description_label = new Gtk.Label (description) {
+                hexpand = true,
+                max_width_chars = 1, // Make Gtk wrap, but not expand the window
+                use_markup = true,
+                wrap = true,
+                xalign = 0
+            };
+
+            spacing = 12;
+            append (image);
+            append (description_label);
         }
     }
 }

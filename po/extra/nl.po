@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-10 00:25+0000\n"
-"PO-Revision-Date: 2022-05-22 06:09+0000\n"
+"POT-Creation-Date: 2023-08-08 23:03+0000\n"
+"PO-Revision-Date: 2023-02-28 04:25+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/installer/initial-"
 "setup-extra/nl/>\n"
@@ -11,26 +11,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 
-#: data/io.elementary.initial-setup.desktop.in:3
-#: data/io.elementary.initial-setup.appdata.xml.in:8
+#: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
 msgid "Set up elementary OS"
 msgstr "elementary OS installeren"
 
-#: data/io.elementary.initial-setup.desktop.in:4
+#: data/initial-setup.desktop.in:4
 msgid "Set up the system"
 msgstr "Het systeem installeren"
 
-#: data/io.elementary.initial-setup.desktop.in:6
-msgid "io.elementary.initial-setup"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:7
+#: data/initial-setup.metainfo.xml.in:10
 msgid "Initial Setup"
 msgstr "Initiële instelling"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:10
+#: data/initial-setup.metainfo.xml.in:13
 msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
@@ -38,52 +33,80 @@ msgstr ""
 "Assisteert met essentiële taken voordat een nieuwe installatie bruikbaar is "
 "zoals het kiezen van een taal en het aanmaken van een gebruikersaccount."
 
-#: data/io.elementary.initial-setup.appdata.xml.in:51
-msgid "New features:"
-msgstr "Nieuwe functionaliteit:"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:53
-msgid "Confirm and change device name"
-msgstr "Bevestigen en wijzig apparaatnaam"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:54
-msgid "Two-finger swipe to navigate back"
-msgstr "Vegen met twee vingers om terug te navigeren"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:56
-#: data/io.elementary.initial-setup.appdata.xml.in:64
-msgid "Minor updates:"
-msgstr "Kleine updates:"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:58
-#: data/io.elementary.initial-setup.appdata.xml.in:70
-#: data/io.elementary.initial-setup.appdata.xml.in:76
-msgid "Translation updates"
-msgstr "Bijgewerkte vertalingen"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:66
-msgid "Set keyboard layout in accountsservice"
-msgstr "Toetsenbordindeling instellen in accountservice"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:67
-msgid "Add multitouch gestures"
-msgstr "Multitouch-bewegingen toegevoegd"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:68
-msgid "Set correct locales"
-msgstr "Stel correcte locales in"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:69
-msgid "New colorful avatar fallback"
-msgstr "Nieuwe kleurrijke avatar fallback"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:81
-msgid "Initial release"
-msgstr "Eerste uitgave"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:88
+#: data/initial-setup.metainfo.xml.in:40
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
+
+#: data/initial-setup.metainfo.xml.in:47 data/initial-setup.metainfo.xml.in:57
+#: data/initial-setup.metainfo.xml.in:70 data/initial-setup.metainfo.xml.in:79
+#: data/initial-setup.metainfo.xml.in:90
+msgid "Improvements:"
+msgstr "Verbeteringen:"
+
+#: data/initial-setup.metainfo.xml.in:49
+msgid "Automatically prompt for screen reader after a timeout"
+msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:50 data/initial-setup.metainfo.xml.in:63
+#: data/initial-setup.metainfo.xml.in:72 data/initial-setup.metainfo.xml.in:83
+#: data/initial-setup.metainfo.xml.in:93
+msgid "Updated translations"
+msgstr "Bijgewerkte vertalingen"
+
+#: data/initial-setup.metainfo.xml.in:59
+msgid "Use larger icons in views"
+msgstr "Gebruik grotere iconen in weergaven"
+
+#: data/initial-setup.metainfo.xml.in:60
+msgid "Make window resizable"
+msgstr "Venstergrootte aanpasbaar maken"
+
+#: data/initial-setup.metainfo.xml.in:61
+msgid "Show keyboard layouts in a separate window"
+msgstr "Toetsenbordindeling weergeven in een apart venster"
+
+#: data/initial-setup.metainfo.xml.in:62
+msgid "Allow hyphens in device names"
+msgstr "Sta koppeltekens toe in apparaatnaam"
+
+#: data/initial-setup.metainfo.xml.in:81
+msgid "Offer to switch to right-click primary mouse button"
+msgstr "Bied aan om te wisselen naar rechter-klik primaire muisknop"
+
+#: data/initial-setup.metainfo.xml.in:82
+msgid "Suggest connecting to a network"
+msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:92
+msgid "Avoid political naming of certain locales"
+msgstr ""
+
+#~ msgid "New features:"
+#~ msgstr "Nieuwe functionaliteit:"
+
+#~ msgid "Confirm and change device name"
+#~ msgstr "Bevestigen en wijzig apparaatnaam"
+
+#~ msgid "Two-finger swipe to navigate back"
+#~ msgstr "Vegen met twee vingers om terug te navigeren"
+
+#~ msgid "Minor updates:"
+#~ msgstr "Kleine updates:"
+
+#~ msgid "Translation updates"
+#~ msgstr "Bijgewerkte vertalingen"
+
+#~ msgid "Add multitouch gestures"
+#~ msgstr "Multitouch-bewegingen toegevoegd"
+
+#~ msgid "Set correct locales"
+#~ msgstr "Stel correcte locales in"
+
+#~ msgid "New colorful avatar fallback"
+#~ msgstr "Nieuwe kleurrijke avatar fallback"
+
+#~ msgid "Initial release"
+#~ msgstr "Eerste uitgave"
 
 #~ msgid "system-os-installer"
 #~ msgstr "system-os-installer"

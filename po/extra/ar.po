@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-10 00:25+0000\n"
+"POT-Creation-Date: 2023-08-08 23:03+0000\n"
 "PO-Revision-Date: 2021-08-27 15:13+0000\n"
 "Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/installer/initial-"
@@ -14,24 +14,19 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: data/io.elementary.initial-setup.desktop.in:3
-#: data/io.elementary.initial-setup.appdata.xml.in:8
+#: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
 msgid "Set up elementary OS"
 msgstr "قم بإعداد elementary OS"
 
-#: data/io.elementary.initial-setup.desktop.in:4
+#: data/initial-setup.desktop.in:4
 msgid "Set up the system"
 msgstr "قم بإعداد النظام"
 
-#: data/io.elementary.initial-setup.desktop.in:6
-msgid "io.elementary.initial-setup"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:7
+#: data/initial-setup.metainfo.xml.in:10
 msgid "Initial Setup"
 msgstr "الإعداد الأولي"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:10
+#: data/initial-setup.metainfo.xml.in:13
 msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
@@ -39,52 +34,82 @@ msgstr ""
 "يساعد في المهام الأساسية قبل أن يكون التثبيت الجديد قابلاً للاستخدام، مثل "
 "اختيار اللغة وإنشاء مستخدم."
 
-#: data/io.elementary.initial-setup.appdata.xml.in:51
-msgid "New features:"
-msgstr "ميزات جديدة:"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:53
-msgid "Confirm and change device name"
-msgstr "تأكيد وتغيير اسم الجهاز"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:54
-msgid "Two-finger swipe to navigate back"
-msgstr "تمريرة بأصبعين للرجوع إلى الوراء"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:56
-#: data/io.elementary.initial-setup.appdata.xml.in:64
-msgid "Minor updates:"
-msgstr "تحديثات طفيفة:"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:58
-#: data/io.elementary.initial-setup.appdata.xml.in:70
-#: data/io.elementary.initial-setup.appdata.xml.in:76
-msgid "Translation updates"
-msgstr "تحديثات على الترجمة"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:66
-msgid "Set keyboard layout in accountsservice"
-msgstr "اختيار تخطيط لوحة المفاتيح في accountsservice"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:67
-msgid "Add multitouch gestures"
-msgstr "إضافة حركات اللمس المتعدد"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:68
-msgid "Set correct locales"
-msgstr "ضبط الأماكن بشكل صحيح"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:69
-msgid "New colorful avatar fallback"
-msgstr "ألوان بديلة احتياطية مكان الصورة الشخصية في حال لم توجد"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:81
-msgid "Initial release"
-msgstr "الإصدار الأولي"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:88
+#: data/initial-setup.metainfo.xml.in:40
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
+
+#: data/initial-setup.metainfo.xml.in:47 data/initial-setup.metainfo.xml.in:57
+#: data/initial-setup.metainfo.xml.in:70 data/initial-setup.metainfo.xml.in:79
+#: data/initial-setup.metainfo.xml.in:90
+msgid "Improvements:"
+msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:49
+msgid "Automatically prompt for screen reader after a timeout"
+msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:50 data/initial-setup.metainfo.xml.in:63
+#: data/initial-setup.metainfo.xml.in:72 data/initial-setup.metainfo.xml.in:83
+#: data/initial-setup.metainfo.xml.in:93
+msgid "Updated translations"
+msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:59
+msgid "Use larger icons in views"
+msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:60
+msgid "Make window resizable"
+msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:61
+#, fuzzy
+#| msgid "Set keyboard layout in accountsservice"
+msgid "Show keyboard layouts in a separate window"
+msgstr "اختيار تخطيط لوحة المفاتيح في accountsservice"
+
+#: data/initial-setup.metainfo.xml.in:62
+msgid "Allow hyphens in device names"
+msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:81
+msgid "Offer to switch to right-click primary mouse button"
+msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:82
+msgid "Suggest connecting to a network"
+msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:92
+msgid "Avoid political naming of certain locales"
+msgstr ""
+
+#~ msgid "New features:"
+#~ msgstr "ميزات جديدة:"
+
+#~ msgid "Confirm and change device name"
+#~ msgstr "تأكيد وتغيير اسم الجهاز"
+
+#~ msgid "Two-finger swipe to navigate back"
+#~ msgstr "تمريرة بأصبعين للرجوع إلى الوراء"
+
+#~ msgid "Minor updates:"
+#~ msgstr "تحديثات طفيفة:"
+
+#~ msgid "Translation updates"
+#~ msgstr "تحديثات على الترجمة"
+
+#~ msgid "Add multitouch gestures"
+#~ msgstr "إضافة حركات اللمس المتعدد"
+
+#~ msgid "Set correct locales"
+#~ msgstr "ضبط الأماكن بشكل صحيح"
+
+#~ msgid "New colorful avatar fallback"
+#~ msgstr "ألوان بديلة احتياطية مكان الصورة الشخصية في حال لم توجد"
+
+#~ msgid "Initial release"
+#~ msgstr "الإصدار الأولي"
 
 #~ msgid "system-os-installer"
 #~ msgstr "system-os-installer"

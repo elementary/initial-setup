@@ -30,7 +30,7 @@ namespace Utils {
                 hostname += c.to_string ();
                 met_alpha = true;
                 whitespace_before = false;
-            } else if (c.isdigit () && met_alpha) {
+            } else if ((c.isdigit () || c == '-') && met_alpha) {
                 hostname += c.to_string ();
                 whitespace_before = false;
             } else if (c.isspace () && !whitespace_before) {
@@ -44,37 +44,28 @@ namespace Utils {
 
     [DBus (name = "org.freedesktop.hostname1")]
     interface HostnameInterface : Object {
+        public abstract string hostname { owned get; }
         public abstract string pretty_hostname { owned get; }
         public abstract string static_hostname { owned get; }
 
-        public abstract void set_pretty_hostname (string hostname, bool interactive) throws GLib.Error;
-        public abstract void set_static_hostname (string hostname, bool interactive) throws GLib.Error;
-    }
+        public abstract async void set_pretty_hostname (string hostname, bool interactive) throws GLib.Error;
+        public abstract async void set_static_hostname (string hostname, bool interactive) throws GLib.Error;
 
-    private static HostnameInterface? hostname_interface_instance;
-    private static void get_hostname_interface_instance () {
-        if (hostname_interface_instance == null) {
-            try {
-                hostname_interface_instance = Bus.get_proxy_sync (
-                    BusType.SYSTEM,
-                    "org.freedesktop.hostname1",
-                    "/org/freedesktop/hostname1"
-                );
-            } catch (GLib.Error e) {
-                warning ("%s", e.message);
+        [DBus (visible = false)]
+        public string get_either_hostname () {
+            if (pretty_hostname.length > 0) {
+                return pretty_hostname;
+            } else {
+                return static_hostname;
             }
         }
-    }
 
-    public static string get_hostname () {
-        get_hostname_interface_instance ();
-
-        string hostname = hostname_interface_instance.pretty_hostname;
-
-        if (hostname.length == 0) {
-            hostname = hostname_interface_instance.static_hostname;
+        public static async HostnameInterface? get_default () throws GLib.Error {
+            return yield Bus.get_proxy (
+                BusType.SYSTEM,
+                "org.freedesktop.hostname1",
+                "/org/freedesktop/hostname1"
+            );
         }
-
-        return hostname;
     }
 }

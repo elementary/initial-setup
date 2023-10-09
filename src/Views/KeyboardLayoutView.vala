@@ -36,14 +36,14 @@ public class KeyboardLayoutView : AbstractInstallerView {
             secondary_icon_tooltip_text = _("Show keyboard layout")
         };
 
-        var stack_grid = new Gtk.Box (Gtk.Orientation.VERTICAL, 12);
-        stack_grid.append (input_variant_widget);
-        stack_grid.append (keyboard_test_entry);
-
         title_area.append (image);
         title_area.append (title_label);
 
-        content_area.append (stack_grid);
+        var stack_box = new Gtk.Box (VERTICAL, 12);
+        stack_box.append (input_variant_widget);
+        stack_box.append (keyboard_test_entry);
+
+        content_area.append (stack_box);
 
         var back_button = new Gtk.Button.with_label (_("Back")) {
             width_request = 86

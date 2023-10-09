@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-10 00:25+0000\n"
-"PO-Revision-Date: 2022-09-30 15:23+0000\n"
+"POT-Creation-Date: 2023-08-08 23:03+0000\n"
+"PO-Revision-Date: 2023-08-11 10:08+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/ru/>\n"
@@ -16,29 +16,24 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
-#: data/io.elementary.initial-setup.desktop.in:3
-#: data/io.elementary.initial-setup.appdata.xml.in:8
+#: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
 msgid "Set up elementary OS"
 msgstr "Установить elementary OS"
 
-#: data/io.elementary.initial-setup.desktop.in:4
+#: data/initial-setup.desktop.in:4
 msgid "Set up the system"
 msgstr "Установить систему"
 
-#: data/io.elementary.initial-setup.desktop.in:6
-msgid "io.elementary.initial-setup"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:7
+#: data/initial-setup.metainfo.xml.in:10
 msgid "Initial Setup"
-msgstr "Начальная установка"
+msgstr "Начальная настройка"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:10
+#: data/initial-setup.metainfo.xml.in:13
 msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
@@ -47,52 +42,81 @@ msgstr ""
 "пригодной для использования, например, выбор языка и создание учётной записи "
 "пользователя."
 
-#: data/io.elementary.initial-setup.appdata.xml.in:51
-msgid "New features:"
-msgstr "Новые возможности:"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:53
-msgid "Confirm and change device name"
-msgstr "Подтверждение и смена имени устройства"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:54
-msgid "Two-finger swipe to navigate back"
-msgstr "Проведение двумя пальцами, чтобы перейти назад"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:56
-#: data/io.elementary.initial-setup.appdata.xml.in:64
-msgid "Minor updates:"
-msgstr "Незначительные обновления:"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:58
-#: data/io.elementary.initial-setup.appdata.xml.in:70
-#: data/io.elementary.initial-setup.appdata.xml.in:76
-msgid "Translation updates"
-msgstr "Обновления переводов"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:66
-msgid "Set keyboard layout in accountsservice"
-msgstr "Установка раскладки клавиатуры в службе учётных записей"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:67
-msgid "Add multitouch gestures"
-msgstr "Добавлены мультитач-жесты"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:68
-msgid "Set correct locales"
-msgstr "Установка правильных локалей"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:69
-msgid "New colorful avatar fallback"
-msgstr "Новые красочные аватары"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:81
-msgid "Initial release"
-msgstr "Начальный выпуск"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:88
+#: data/initial-setup.metainfo.xml.in:40
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
+
+#: data/initial-setup.metainfo.xml.in:47 data/initial-setup.metainfo.xml.in:57
+#: data/initial-setup.metainfo.xml.in:70 data/initial-setup.metainfo.xml.in:79
+#: data/initial-setup.metainfo.xml.in:90
+msgid "Improvements:"
+msgstr "Улучшения:"
+
+#: data/initial-setup.metainfo.xml.in:49
+msgid "Automatically prompt for screen reader after a timeout"
+msgstr ""
+"Автоматическое предложение включить чтение с экрана через некоторое время"
+
+#: data/initial-setup.metainfo.xml.in:50 data/initial-setup.metainfo.xml.in:63
+#: data/initial-setup.metainfo.xml.in:72 data/initial-setup.metainfo.xml.in:83
+#: data/initial-setup.metainfo.xml.in:93
+msgid "Updated translations"
+msgstr "Обновлены переводы"
+
+#: data/initial-setup.metainfo.xml.in:59
+msgid "Use larger icons in views"
+msgstr "Использование больших значков"
+
+#: data/initial-setup.metainfo.xml.in:60
+msgid "Make window resizable"
+msgstr "Окно теперь может менять размер"
+
+#: data/initial-setup.metainfo.xml.in:61
+msgid "Show keyboard layouts in a separate window"
+msgstr "Показ раскладок клавиатуры в отдельном окне"
+
+#: data/initial-setup.metainfo.xml.in:62
+msgid "Allow hyphens in device names"
+msgstr "Разрешены дефисы в имени устройства"
+
+#: data/initial-setup.metainfo.xml.in:81
+msgid "Offer to switch to right-click primary mouse button"
+msgstr "Предложение использовать правую кнопку мыши как основную"
+
+#: data/initial-setup.metainfo.xml.in:82
+msgid "Suggest connecting to a network"
+msgstr "Предложение подключиться к Интернету"
+
+#: data/initial-setup.metainfo.xml.in:92
+msgid "Avoid political naming of certain locales"
+msgstr "Не использовать политические названия на некоторых языках"
+
+#~ msgid "New features:"
+#~ msgstr "Новые возможности:"
+
+#~ msgid "Confirm and change device name"
+#~ msgstr "Подтверждение и смена имени устройства"
+
+#~ msgid "Two-finger swipe to navigate back"
+#~ msgstr "Проведение двумя пальцами, чтобы перейти назад"
+
+#~ msgid "Minor updates:"
+#~ msgstr "Незначительные обновления:"
+
+#~ msgid "Translation updates"
+#~ msgstr "Обновления переводов"
+
+#~ msgid "Add multitouch gestures"
+#~ msgstr "Добавлены мультитач-жесты"
+
+#~ msgid "Set correct locales"
+#~ msgstr "Установка правильных локалей"
+
+#~ msgid "New colorful avatar fallback"
+#~ msgstr "Новые красочные аватары"
+
+#~ msgid "Initial release"
+#~ msgstr "Начальный выпуск"
 
 #~ msgid "system-os-installer"
 #~ msgstr "system-os-installer"
