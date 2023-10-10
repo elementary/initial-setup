@@ -117,12 +117,13 @@ public class Installer.LanguageView : AbstractInstallerView {
         lang_variant_widget.main_listbox.row_activated.connect (row_activated);
 
         next_button.clicked.connect (on_next_button_clicked);
-        next_button.button_press_event.connect ((event) => {
-            if (event.button == Gdk.BUTTON_SECONDARY) {
-                on_next_button_secondary_clicked ();
-            }
 
-            return base.button_press_event (event);
+        var secondary_click_gesture = new Gtk.GestureMultiPress (next_button) {
+            button = Gdk.BUTTON_SECONDARY
+        };
+        secondary_click_gesture.pressed.connect (() => {
+            on_next_button_secondary_clicked ();
+            secondary_click_gesture.set_state (CLAIMED);
         });
 
         destroy.connect (() => {
@@ -263,20 +264,20 @@ public class Installer.LanguageView : AbstractInstallerView {
         var suggested_action_button = dialog.add_button (suggested_action_label, Gtk.ResponseType.ACCEPT);
         suggested_action_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
-        suggested_action_button.button_press_event.connect ((event) => {
-            if (event.button == Gdk.BUTTON_SECONDARY) {
-                suggested_action_button.activate ();
-            }
-
-            return base.button_press_event (event);
+        var suggested_button_click_gesture = new Gtk.GestureMultiPress (suggested_action_button) {
+            button = Gdk.BUTTON_SECONDARY
+        };
+        suggested_button_click_gesture.pressed.connect (() => {
+            suggested_action_button.activate ();
+            suggested_button_click_gesture.set_state (CLAIMED);
         });
 
-        cancel_action_button.button_press_event.connect ((event) => {
-            if (event.button == Gdk.BUTTON_SECONDARY) {
-                cancel_action_button.activate ();
-            }
-
-            return base.button_press_event (event);
+        var cancel_button_click_gesture = new Gtk.GestureMultiPress (cancel_action_button) {
+            button = Gdk.BUTTON_SECONDARY
+        };
+        cancel_button_click_gesture.pressed.connect (() => {
+            cancel_action_button.activate ();
+            cancel_button_click_gesture.set_state (CLAIMED);
         });
 
         dialog.present ();
