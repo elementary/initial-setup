@@ -141,16 +141,19 @@ public class KeyboardLayoutView : AbstractInstallerView {
             if (country != null) {
                 var default_layout = country.down ();
 
-                // foreach (unowned var child in input_variant_widget.main_listbox.get_children ()) {
-                //     if (child is LayoutRow) {
-                //         unowned var row = (LayoutRow) child;
-                //         if (row.layout.name == default_layout) {
-                //             input_variant_widget.main_listbox.select_row (row);
-                //             row.grab_focus ();
-                //             break;
-                //         }
-                //     }
-                // }
+                var child = input_variant_widget.main_listbox.get_first_child ();
+                while (child != null) {
+                    if (child is LayoutRow) {
+                        unowned var row = (LayoutRow) child;
+                        if (row.layout.name == default_layout) {
+                            input_variant_widget.main_listbox.select_row (row);
+                            row.grab_focus ();
+                            break;
+                        }
+                    }
+
+                    child = child.get_next_sibling ();
+                }
             }
         });
     }
