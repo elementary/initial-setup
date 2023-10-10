@@ -355,8 +355,7 @@ public class Installer.LanguageView : AbstractInstallerView {
 
             image = new Gtk.Image () {
                 halign = Gtk.Align.END,
-                hexpand = true,
-                pixel_size = 16
+                hexpand = true
             };
 
             var label = new Gtk.Label (lang_entry.name) {
@@ -416,8 +415,7 @@ public class Installer.LanguageView : AbstractInstallerView {
 
             image = new Gtk.Image () {
                 halign = Gtk.Align.END,
-                hexpand = true,
-                pixel_size = 16
+                hexpand = true
             };
 
             var label = new Gtk.Label (country_entry.name) {
