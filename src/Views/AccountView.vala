@@ -1,18 +1,6 @@
-/*-
- * Copyright (c) 2017 elementary LLC. (https://elementary.io)
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+/*
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2017-2023 elementary, Inc. (https://elementary.io)
  */
 
 public class Installer.AccountView : AbstractInstallerView {
@@ -62,15 +50,17 @@ public class Installer.AccountView : AbstractInstallerView {
         var avatar = new Adw.Avatar (104, null, true) {
             margin_top = 12,
             margin_bottom = 12,
-            valign = Gtk.Align.END
+            valign = END
         };
 
         var title_label = new Gtk.Label (_("Create an Account"));
 
         var realname_label = new Granite.HeaderLabel (_("Full Name"));
 
-        realname_entry = new Gtk.Entry ();
-        realname_entry.hexpand = true;
+        realname_entry = new Gtk.Entry () {
+            hexpand = true,
+            input_purpose = NAME
+        };
 
         var username_label = new Granite.HeaderLabel (_("Username"));
 
@@ -84,8 +74,10 @@ public class Installer.AccountView : AbstractInstallerView {
         pw_error_revealer = new ErrorRevealer (".");
         pw_error_revealer.label_widget.add_css_class (Granite.STYLE_CLASS_WARNING);
 
-        pw_entry = new ValidatedEntry ();
-        pw_entry.visibility = false;
+        pw_entry = new ValidatedEntry () {
+            input_purpose = PASSWORD,
+            visibility = false
+        };
 
         pw_levelbar = new Gtk.LevelBar ();
         pw_levelbar = new Gtk.LevelBar.for_interval (0.0, 100.0);
@@ -98,6 +90,7 @@ public class Installer.AccountView : AbstractInstallerView {
         var confirm_label = new Granite.HeaderLabel (_("Confirm Password"));
 
         confirm_entry = new Granite.ValidatedEntry () {
+            input_purpose = PASSWORD,
             sensitive = false,
             visibility = false
         };
@@ -141,22 +134,22 @@ public class Installer.AccountView : AbstractInstallerView {
         form_grid.row_spacing = 3;
         form_grid.valign = Gtk.Align.CENTER;
         form_grid.vexpand = true;
-        form_grid.attach (realname_label, 0, 0, 1, 1);
-        form_grid.attach (realname_entry, 0, 1, 1, 1);
-        form_grid.attach (new ErrorRevealer ("."), 0, 2, 1, 1);
-        form_grid.attach (username_label, 0, 3, 1, 1);
-        form_grid.attach (username_entry, 0, 4, 1, 1);
-        form_grid.attach (username_error_revealer, 0, 5, 1, 1);
-        form_grid.attach (pw_label, 0, 6, 1, 1);
-        form_grid.attach (pw_entry, 0, 7, 2, 1);
-        form_grid.attach (pw_levelbar, 0, 8, 1, 1);
-        form_grid.attach (pw_error_revealer, 0, 9 , 1, 1);
-        form_grid.attach (confirm_label, 0, 10, 1, 1);
-        form_grid.attach (confirm_entry, 0, 11, 1, 1);
-        form_grid.attach (confirm_entry_revealer, 0, 12, 1, 1);
-        form_grid.attach (hostname_label, 0, 13, 1, 1);
-        form_grid.attach (hostname_entry, 0, 14, 1, 1);
-        form_grid.attach (hostname_info, 0, 15, 1, 1);
+        form_grid.attach (realname_label, 0, 0);
+        form_grid.attach (realname_entry, 0, 1);
+        form_grid.attach (new ErrorRevealer ("."), 0, 2);
+        form_grid.attach (username_label, 0, 3);
+        form_grid.attach (username_entry, 0, 4);
+        form_grid.attach (username_error_revealer, 0, 5);
+        form_grid.attach (pw_label, 0, 6);
+        form_grid.attach (pw_entry, 0, 7, 2);
+        form_grid.attach (pw_levelbar, 0, 8);
+        form_grid.attach (pw_error_revealer, 0, 9);
+        form_grid.attach (confirm_label, 0, 10);
+        form_grid.attach (confirm_entry, 0, 11);
+        form_grid.attach (confirm_entry_revealer, 0, 12);
+        form_grid.attach (hostname_label, 0, 13);
+        form_grid.attach (hostname_entry, 0, 14);
+        form_grid.attach (hostname_info, 0, 15);
 
         title_area.append (avatar);
         title_area.append (title_label);
@@ -176,7 +169,7 @@ public class Installer.AccountView : AbstractInstallerView {
         action_area.append (back_button);
         action_area.append (finish_button);
 
-        back_button.clicked.connect (() => ((Adw.Leaflet) get_parent ()).navigate (Adw.NavigationDirection.BACK));
+        back_button.clicked.connect (() => ((Adw.Leaflet) get_parent ()).navigate (BACK));
 
         realname_entry.changed.connect (() => {
             var username = gen_username (realname_entry.text);
@@ -499,31 +492,33 @@ public class Installer.AccountView : AbstractInstallerView {
 
     private class ErrorRevealer : Gtk.Box {
         public bool reveal_child { get; set; }
-        public Gtk.Label label_widget;
-
-        public string label {
-            set {
-                label_widget.label = "<span font_size=\"small\">%s</span>".printf (value);
-            }
-        }
+        public Gtk.Label label_widget { get; private set; }
+        public string label { get; construct set; }
 
         public ErrorRevealer (string label) {
-            label_widget = new Gtk.Label ("<span font_size=\"small\">%s</span>".printf (label));
-            label_widget.halign = Gtk.Align.END;
-            label_widget.justify = Gtk.Justification.RIGHT;
-            label_widget.max_width_chars = 55;
-            label_widget.use_markup = true;
-            label_widget.wrap = true;
-            label_widget.xalign = 1;
+            Object (label: label);
+        }
+
+        construct {
+            label_widget = new Gtk.Label (label) {
+                halign = END,
+                justify = RIGHT,
+                max_width_chars = 55,
+                use_markup = true,
+                wrap = true,
+                xalign = 1
+            };
+            label_widget.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
             var revealer = new Gtk.Revealer () {
                 child = label_widget,
-                transition_type = Gtk.RevealerTransitionType.CROSSFADE
+                transition_type = CROSSFADE
             };
 
             append (revealer);
 
             bind_property ("reveal-child", revealer, "reveal-child");
+            bind_property ("label", label_widget, "label");
         }
     }
 }

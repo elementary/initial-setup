@@ -116,14 +116,17 @@ public class Installer.LanguageView : AbstractInstallerView {
         lang_variant_widget.main_listbox.select_row (lang_variant_widget.main_listbox.get_row_at_index (0));
         lang_variant_widget.main_listbox.row_activated.connect (row_activated);
 
-        next_button.clicked.connect (on_next_button_clicked);
-        // next_button.button_press_event.connect ((event) => {
-        //     if (event.button == Gdk.BUTTON_SECONDARY) {
-        //         on_next_button_secondary_clicked ();
-        //     }
+        var secondary_click_gesture = new Gtk.GestureClick () {
+            button = Gdk.BUTTON_SECONDARY
+        };
 
-        //     return base.button_press_event (event);
-        // });
+        secondary_click_gesture.pressed.connect (() => {
+            on_next_button_secondary_clicked ();
+            secondary_click_gesture.set_state (CLAIMED);
+        });
+
+        next_button.add_controller (secondary_click_gesture);
+        next_button.clicked.connect (on_next_button_clicked);
 
         destroy.connect (() => {
             // We need to disconnect the signal otherwise it's called several time when destroying the window…
@@ -257,26 +260,31 @@ public class Installer.LanguageView : AbstractInstallerView {
             modal = true,
             transient_for = (Gtk.Window) get_root ()
         };
+
+        var cancel_button_click_gesture = new Gtk.GestureClick () {
+            button = Gdk.BUTTON_SECONDARY
+        };
+
         var cancel_action_button = dialog.add_button (cancel_action_label, Gtk.ResponseType.CANCEL);
+        cancel_action_button.add_controller (cancel_button_click_gesture);
+
+        var suggested_button_click_gesture = new Gtk.GestureClick () {
+            button = Gdk.BUTTON_SECONDARY
+        };
 
         var suggested_action_button = dialog.add_button (suggested_action_label, Gtk.ResponseType.ACCEPT);
+        suggested_action_button.add_controller (suggested_button_click_gesture);
         suggested_action_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
-        // suggested_action_button.button_press_event.connect ((event) => {
-        //     if (event.button == Gdk.BUTTON_SECONDARY) {
-        //         suggested_action_button.activate ();
-        //     }
+        suggested_button_click_gesture.pressed.connect (() => {
+            suggested_action_button.activate ();
+            suggested_button_click_gesture.set_state (CLAIMED);
+        });
 
-        //     return base.button_press_event (event);
-        // });
-
-        // cancel_action_button.button_press_event.connect ((event) => {
-        //     if (event.button == Gdk.BUTTON_SECONDARY) {
-        //         cancel_action_button.activate ();
-        //     }
-
-        //     return base.button_press_event (event);
-        // });
+        cancel_button_click_gesture.pressed.connect (() => {
+            cancel_action_button.activate ();
+            cancel_button_click_gesture.set_state (CLAIMED);
+        });
 
         dialog.present ();
         dialog.response.connect ((response) => {
