@@ -145,32 +145,39 @@ public class Installer.LanguageView : AbstractInstallerView {
         unowned LocaleHelper.LangEntry lang_entry = ((LangRow) row).lang_entry;
         unowned string lang_code = lang_entry.get_code ();
 
-        // foreach (unowned var child in lang_variant_widget.main_listbox.get_children ()) {
-        //     if (child is LangRow) {
-        //         unowned var lang_row = (LangRow) child;
-        //         if (lang_row.lang_entry.get_code () == lang_code) {
-        //             lang_row.selected = true;
-        //         } else {
-        //             lang_row.selected = false;
-        //         }
-        //     }
-        // }
+        var child = lang_variant_widget.main_listbox.get_first_child ();
+        while (child != null) {
+            if (child is LangRow) {
+                unowned var lang_row = (LangRow) child;
+                if (lang_row.lang_entry.get_code () == lang_code) {
+                    lang_row.selected = true;
+                } else {
+                    lang_row.selected = false;
+                }
+            }
+
+            child = child.get_next_sibling ();
+        }
 
         next_button.sensitive = true;
     }
 
     private void variant_row_selected (Gtk.ListBoxRow? row) {
         unowned LocaleHelper.CountryEntry country_entry = ((CountryRow) row).country_entry;
-        // foreach (unowned var child in lang_variant_widget.variant_listbox.get_children ()) {
-        //     if (child is CountryRow) {
-        //         unowned var country_row = (CountryRow) child;
-        //         if (country_row.country_entry.alpha_2 == country_entry.alpha_2) {
-        //             country_row.selected = true;
-        //         } else {
-        //             country_row.selected = false;
-        //         }
-        //     }
-        // }
+
+        var child = lang_variant_widget.variant_listbox.get_first_child ();
+        while (child != null) {
+            if (child is CountryRow) {
+                unowned var country_row = (CountryRow) child;
+                if (country_row.country_entry.alpha_2 == country_entry.alpha_2) {
+                    country_row.selected = true;
+                } else {
+                    country_row.selected = false;
+                }
+            }
+
+            child = child.get_next_sibling ();
+        }
 
         next_button.label = LocaleHelper.lang_gettext (N_("Select"), country_entry.get_full_code ());
         next_button.sensitive = true;
