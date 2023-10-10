@@ -1,18 +1,6 @@
-/*-
- * Copyright 2017-2021 elementary, Inc. (https://elementary.io)
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+/*
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2017-2023 elementary, Inc. (https://elementary.io)
  */
 
 public class KeyboardLayoutView : AbstractInstallerView {
@@ -36,17 +24,14 @@ public class KeyboardLayoutView : AbstractInstallerView {
             secondary_icon_tooltip_text = _("Show keyboard layout")
         };
 
-        var stack_grid = new Gtk.Grid () {
-            orientation = Gtk.Orientation.VERTICAL,
-            row_spacing = 12
-        };
-        stack_grid.add (input_variant_widget);
-        stack_grid.add (keyboard_test_entry);
+        var stack_box = new Gtk.Box (VERTICAL, 12);
+        stack_box.add (input_variant_widget);
+        stack_box.add (keyboard_test_entry);
 
         title_area.add (image);
         title_area.add (title_label);
 
-        content_area.add (stack_grid);
+        content_area.add (stack_box);
 
         var back_button = new Gtk.Button.with_label (_("Back")) {
             width_request = 86
@@ -93,7 +78,7 @@ public class KeyboardLayoutView : AbstractInstallerView {
             }
         });
 
-        back_button.clicked.connect (() => ((Hdy.Deck) get_parent ()).navigate (Hdy.NavigationDirection.BACK));
+        back_button.clicked.connect (() => ((Hdy.Deck) get_parent ()).navigate (BACK));
 
         next_button.clicked.connect (() => {
             unowned var vrow = input_variant_widget.variant_listbox.get_selected_row ();
@@ -182,13 +167,16 @@ public class KeyboardLayoutView : AbstractInstallerView {
             }
 
             var label = new Gtk.Label (layout_description) {
-                ellipsize = Pango.EllipsizeMode.END,
-                margin = 6,
+                ellipsize = END,
+                margin_top = 6,
+                margin_end = 6,
+                margin_bottom = 6,
+                margin_start = 6,
                 xalign = 0
             };
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
-            add (label);
+            child = label;
             show_all ();
         }
     }
@@ -205,7 +193,7 @@ public class KeyboardLayoutView : AbstractInstallerView {
             };
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
-            add (label);
+            child = label;
             show_all ();
         }
     }
