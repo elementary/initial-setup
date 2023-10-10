@@ -22,7 +22,7 @@ public class Installer.NetworkView : AbstractInstallerView {
     private Gtk.Button skip_button;
 
     construct {
-        var image = new Gtk.Image.from_icon_name ("preferences-system-network", Gtk.IconSize.DIALOG) {
+        var image = new Gtk.Image.from_icon_name ("preferences-system-network") {
             pixel_size = 128,
             valign = Gtk.Align.END
         };
@@ -35,7 +35,7 @@ public class Installer.NetworkView : AbstractInstallerView {
             wrap = true,
             xalign = 0
         };
-        details_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+        details_label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
         var wireless_row = new ListRow (
             ///Translators: for RTL languages, the UI is flipped
@@ -54,32 +54,30 @@ public class Installer.NetworkView : AbstractInstallerView {
             valign = Gtk.Align.CENTER,
             vexpand = true
         };
-        choice_box.add (details_label);
-        choice_box.add (wireless_row);
-        choice_box.add (wired_row);
+        choice_box.append (details_label);
+        choice_box.append (wireless_row);
+        choice_box.append (wired_row);
 
-        title_area.add (image);
-        title_area.add (title_label);
+        title_area.append (image);
+        title_area.append (title_label);
 
-        content_area.add (choice_box);
+        content_area.append (choice_box);
 
         var back_button = new Gtk.Button.with_label (_("Back")) {
             width_request = 86
         };
 
         skip_button = new Gtk.Button.with_label (_("Skip"));
-        skip_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        skip_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
-        action_area.add (back_button);
-        action_area.add (skip_button);
+        action_area.append (back_button);
+        action_area.append (skip_button);
 
-        back_button.clicked.connect (() => ((Hdy.Deck) get_parent ()).navigate (Hdy.NavigationDirection.BACK));
+        back_button.clicked.connect (() => ((Adw.Leaflet) get_parent ()).navigate (Adw.NavigationDirection.BACK));
         skip_button.clicked.connect (() => (next_step ()));
 
         network_monitor = NetworkMonitor.get_default ();
         network_monitor.network_changed.connect (update);
-
-        show_all ();
     }
 
     private void update () {
@@ -92,9 +90,10 @@ public class Installer.NetworkView : AbstractInstallerView {
 
     private class ListRow : Gtk.Box {
         public ListRow (string description, string icon_name, string color) {
-            var image = new Gtk.Image.from_icon_name (icon_name, Gtk.IconSize.DND) {
+            var image = new Gtk.Image.from_icon_name (icon_name) {
                 valign = Gtk.Align.START
             };
+            image.add_css_class (Granite.STYLE_CLASS_LARGE_ICONS);
 
             unowned var image_context = image.get_style_context ();
             image_context.add_class (Granite.STYLE_CLASS_ACCENT);
@@ -109,8 +108,8 @@ public class Installer.NetworkView : AbstractInstallerView {
             };
 
             spacing = 12;
-            add (image);
-            add (description_label);
+            append (image);
+            append (description_label);
         }
     }
 }

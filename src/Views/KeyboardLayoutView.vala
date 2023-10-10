@@ -7,7 +7,7 @@ public class KeyboardLayoutView : AbstractInstallerView {
     private VariantWidget input_variant_widget;
 
     construct {
-        var image = new Gtk.Image.from_icon_name ("input-keyboard", Gtk.IconSize.DIALOG) {
+        var image = new Gtk.Image.from_icon_name ("input-keyboard") {
             pixel_size = 128,
             valign = Gtk.Align.END
         };
@@ -25,13 +25,13 @@ public class KeyboardLayoutView : AbstractInstallerView {
         };
 
         var stack_box = new Gtk.Box (VERTICAL, 12);
-        stack_box.add (input_variant_widget);
-        stack_box.add (keyboard_test_entry);
+        stack_box.append (input_variant_widget);
+        stack_box.append (keyboard_test_entry);
 
-        title_area.add (image);
-        title_area.add (title_label);
+        title_area.append (image);
+        title_area.append (title_label);
 
-        content_area.add (stack_box);
+        content_area.append (stack_box);
 
         var back_button = new Gtk.Button.with_label (_("Back")) {
             width_request = 86
@@ -40,10 +40,10 @@ public class KeyboardLayoutView : AbstractInstallerView {
         var next_button = new Gtk.Button.with_label (_("Select")) {
             sensitive = false
         };
-        next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        next_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
-        action_area.add (back_button);
-        action_area.add (next_button);
+        action_area.append (back_button);
+        action_area.append (next_button);
 
         input_variant_widget.variant_listbox.row_activated.connect (() => {
             next_button.activate ();
@@ -78,7 +78,7 @@ public class KeyboardLayoutView : AbstractInstallerView {
             }
         });
 
-        back_button.clicked.connect (() => ((Hdy.Deck) get_parent ()).navigate (BACK));
+        back_button.clicked.connect (() => ((Adw.Leaflet) get_parent ()).navigate (BACK));
 
         next_button.clicked.connect (() => {
             unowned var vrow = input_variant_widget.variant_listbox.get_selected_row ();
@@ -135,14 +135,14 @@ public class KeyboardLayoutView : AbstractInstallerView {
             return new LayoutRow (layout as InitialSetup.KeyboardLayout);
         });
 
-        show_all ();
 
         Idle.add (() => {
             unowned string? country = Configuration.get_default ().country;
             if (country != null) {
                 var default_layout = country.down ();
 
-                foreach (unowned var child in input_variant_widget.main_listbox.get_children ()) {
+                var child = input_variant_widget.main_listbox.get_first_child ();
+                while (child != null) {
                     if (child is LayoutRow) {
                         unowned var row = (LayoutRow) child;
                         if (row.layout.name == default_layout) {
@@ -151,6 +151,8 @@ public class KeyboardLayoutView : AbstractInstallerView {
                             break;
                         }
                     }
+
+                    child = child.get_next_sibling ();
                 }
             }
         });
@@ -174,10 +176,9 @@ public class KeyboardLayoutView : AbstractInstallerView {
                 margin_start = 6,
                 xalign = 0
             };
-            label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+            label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
             child = label;
-            show_all ();
         }
     }
 
@@ -188,13 +189,15 @@ public class KeyboardLayoutView : AbstractInstallerView {
 
             var label = new Gtk.Label (variant.display_name) {
                 ellipsize = Pango.EllipsizeMode.END,
-                margin = 6,
+                margin_top = 6,
+                margin_end = 6,
+                margin_bottom = 6,
+                margin_start = 6,
                 xalign = 0
             };
-            label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+            label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
             child = label;
-            show_all ();
         }
     }
 }

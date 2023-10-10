@@ -26,7 +26,7 @@ public abstract class AbstractInstallerView : Gtk.Box {
         title_area = new Gtk.Box (Gtk.Orientation.VERTICAL, 12) {
             valign = Gtk.Align.CENTER
         };
-        title_area.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
+        title_area.add_css_class (Granite.STYLE_CLASS_H2_LABEL);
 
         content_area = new Gtk.Box (Gtk.Orientation.VERTICAL, 12);
 
@@ -35,8 +35,8 @@ public abstract class AbstractInstallerView : Gtk.Box {
             hexpand = true,
             vexpand = true,
         };
-        box.add (title_area);
-        box.add (content_area);
+        box.append (title_area);
+        box.append (content_area);
 
         action_area = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
             halign = Gtk.Align.END,
@@ -49,7 +49,7 @@ public abstract class AbstractInstallerView : Gtk.Box {
         margin_bottom = 12;
         margin_start = 12;
         spacing = 24;
-        add (box);
-        add (action_area);
+        append (box);
+        append (action_area);
     }
 }

@@ -42,7 +42,7 @@ public class Installer.LanguageView : AbstractInstallerView {
     }
 
     construct {
-        var image = new Gtk.Image.from_icon_name ("preferences-desktop-locale", Gtk.IconSize.DIALOG) {
+        var image = new Gtk.Image.from_icon_name ("preferences-desktop-locale") {
             pixel_size = 128,
             valign = Gtk.Align.END
         };
@@ -56,15 +56,11 @@ public class Installer.LanguageView : AbstractInstallerView {
         select_stack = new Gtk.Stack () {
             transition_type = Gtk.StackTransitionType.CROSSFADE
         };
-        select_stack.add (select_label);
+        select_stack.add_child (select_label);
 
         select_stack.notify["transition-running"].connect (() => {
             if (!select_stack.transition_running) {
-                select_stack.get_children ().foreach ((child) => {
-                    if (child != select_stack.get_visible_child ()) {
-                        child.destroy ();
-                    }
-                });
+                select_stack.remove (select_stack.get_visible_child ().get_prev_sibling ());
             }
         });
 
@@ -82,11 +78,11 @@ public class Installer.LanguageView : AbstractInstallerView {
             if (!((LangRow)row).preferred_row) {
                 if (before != null && ((LangRow)before).preferred_row) {
                     var separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
-                        margin = 3,
+                        margin_top = 3,
+                        margin_bottom = 3,
                         margin_end = 6,
                         margin_start = 6
                     };
-                    separator.show_all ();
 
                     row.set_header (separator);
                 }
@@ -97,44 +93,46 @@ public class Installer.LanguageView : AbstractInstallerView {
             if (lang_entry.key in preferred_langs) {
                 var pref_langrow = new LangRow (lang_entry.value);
                 pref_langrow.preferred_row = true;
-                lang_variant_widget.main_listbox.add (pref_langrow);
+                lang_variant_widget.main_listbox.append (pref_langrow);
             }
 
             var langrow = new LangRow (lang_entry.value);
-            lang_variant_widget.main_listbox.add (langrow);
+            lang_variant_widget.main_listbox.append (langrow);
         }
 
         next_button = new Gtk.Button.with_label (_("Select")) {
             width_request = 86,
             sensitive = false
         };
-        next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        next_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
-        action_area.add (next_button);
+        action_area.append (next_button);
 
         lang_variant_widget.main_listbox.row_selected.connect (row_selected);
         lang_variant_widget.main_listbox.select_row (lang_variant_widget.main_listbox.get_row_at_index (0));
         lang_variant_widget.main_listbox.row_activated.connect (row_activated);
 
-        next_button.clicked.connect (on_next_button_clicked);
-
-        var secondary_click_gesture = new Gtk.GestureMultiPress (next_button) {
+        var secondary_click_gesture = new Gtk.GestureClick () {
             button = Gdk.BUTTON_SECONDARY
         };
+
         secondary_click_gesture.pressed.connect (() => {
             on_next_button_secondary_clicked ();
             secondary_click_gesture.set_state (CLAIMED);
         });
+
+        next_button.add_controller (secondary_click_gesture);
+        next_button.clicked.connect (on_next_button_clicked);
 
         destroy.connect (() => {
             // We need to disconnect the signal otherwise it's called several time when destroying the window…
             lang_variant_widget.main_listbox.row_selected.disconnect (row_selected);
         });
 
-        title_area.add (image);
-        title_area.add (select_stack);
+        title_area.append (image);
+        title_area.append (select_stack);
 
-        content_area.add (lang_variant_widget);
+        content_area.append (lang_variant_widget);
 
         timeout ();
     }
@@ -143,7 +141,8 @@ public class Installer.LanguageView : AbstractInstallerView {
         unowned LocaleHelper.LangEntry lang_entry = ((LangRow) row).lang_entry;
         unowned string lang_code = lang_entry.get_code ();
 
-        foreach (unowned var child in lang_variant_widget.main_listbox.get_children ()) {
+        var child = lang_variant_widget.main_listbox.get_first_child ();
+        while (child != null) {
             if (child is LangRow) {
                 unowned var lang_row = (LangRow) child;
                 if (lang_row.lang_entry.get_code () == lang_code) {
@@ -152,6 +151,8 @@ public class Installer.LanguageView : AbstractInstallerView {
                     lang_row.selected = false;
                 }
             }
+
+            child = child.get_next_sibling ();
         }
 
         next_button.sensitive = true;
@@ -159,7 +160,9 @@ public class Installer.LanguageView : AbstractInstallerView {
 
     private void variant_row_selected (Gtk.ListBoxRow? row) {
         unowned LocaleHelper.CountryEntry country_entry = ((CountryRow) row).country_entry;
-        foreach (unowned var child in lang_variant_widget.variant_listbox.get_children ()) {
+
+        var child = lang_variant_widget.variant_listbox.get_first_child ();
+        while (child != null) {
             if (child is CountryRow) {
                 unowned var country_row = (CountryRow) child;
                 if (country_row.country_entry.alpha_2 == country_entry.alpha_2) {
@@ -168,6 +171,8 @@ public class Installer.LanguageView : AbstractInstallerView {
                     country_row.selected = false;
                 }
             }
+
+            child = child.get_next_sibling ();
         }
 
         next_button.label = LocaleHelper.lang_gettext (N_("Select"), country_entry.get_full_code ());
@@ -190,7 +195,7 @@ public class Installer.LanguageView : AbstractInstallerView {
             lang_variant_widget.variant_listbox.row_selected.connect (variant_row_selected);
             foreach (unowned var country in countries) {
                 var country_row = new CountryRow (country);
-                lang_variant_widget.variant_listbox.add (country_row);
+                lang_variant_widget.variant_listbox.append (country_row);
                 if (country.get_code () == main_country) {
                     lang_variant_widget.variant_listbox.select_row (country_row);
                 }
@@ -200,7 +205,6 @@ public class Installer.LanguageView : AbstractInstallerView {
                 lang_variant_widget.variant_listbox.select_row (lang_variant_widget.variant_listbox.get_row_at_index (0));
             }
 
-            lang_variant_widget.variant_listbox.show_all ();
             Environment.set_variable ("LANGUAGE", lang_code, true);
             Intl.textdomain (Build.GETTEXT_PACKAGE);
             lang_variant_widget.show_variants (_("Languages"), "<b>%s</b>".printf (lang_entry.name));
@@ -257,24 +261,29 @@ public class Installer.LanguageView : AbstractInstallerView {
             Gtk.ButtonsType.NONE
         ) {
             modal = true,
-            transient_for = (Gtk.Window) get_toplevel ()
+            transient_for = (Gtk.Window) get_root ()
         };
-        var cancel_action_button = dialog.add_button (cancel_action_label, Gtk.ResponseType.CANCEL);
 
-        var suggested_action_button = dialog.add_button (suggested_action_label, Gtk.ResponseType.ACCEPT);
-        suggested_action_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
-
-        var suggested_button_click_gesture = new Gtk.GestureMultiPress (suggested_action_button) {
+        var cancel_button_click_gesture = new Gtk.GestureClick () {
             button = Gdk.BUTTON_SECONDARY
         };
+
+        var cancel_action_button = dialog.add_button (cancel_action_label, Gtk.ResponseType.CANCEL);
+        cancel_action_button.add_controller (cancel_button_click_gesture);
+
+        var suggested_button_click_gesture = new Gtk.GestureClick () {
+            button = Gdk.BUTTON_SECONDARY
+        };
+
+        var suggested_action_button = dialog.add_button (suggested_action_label, Gtk.ResponseType.ACCEPT);
+        suggested_action_button.add_controller (suggested_button_click_gesture);
+        suggested_action_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
+
         suggested_button_click_gesture.pressed.connect (() => {
             suggested_action_button.activate ();
             suggested_button_click_gesture.set_state (CLAIMED);
         });
 
-        var cancel_button_click_gesture = new Gtk.GestureMultiPress (cancel_action_button) {
-            button = Gdk.BUTTON_SECONDARY
-        };
         cancel_button_click_gesture.pressed.connect (() => {
             cancel_action_button.activate ();
             cancel_button_click_gesture.set_state (CLAIMED);
@@ -312,8 +321,7 @@ public class Installer.LanguageView : AbstractInstallerView {
 
         unowned var label_text = LocaleHelper.lang_gettext (N_("Select a Language"), ((LangRow) row).lang_entry.get_code ());
         select_label = new Gtk.Label (label_text);
-        select_label.show_all ();
-        select_stack.add (select_label);
+        select_stack.add_child (select_label);
         select_stack.set_visible_child (select_label);
 
         select_number++;
@@ -347,24 +355,25 @@ public class Installer.LanguageView : AbstractInstallerView {
 
             image = new Gtk.Image () {
                 halign = Gtk.Align.END,
-                hexpand = true,
-                icon_size = Gtk.IconSize.BUTTON
+                hexpand = true
             };
 
             var label = new Gtk.Label (lang_entry.name) {
                 ellipsize = Pango.EllipsizeMode.END,
                 xalign = 0
             };
-            label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+            label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
-            var grid = new Gtk.Grid () {
-                column_spacing = 6,
-                margin = 6
+            var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
+                margin_top = 6,
+                margin_end = 6,
+                margin_bottom = 6,
+                margin_start = 6
             };
-            grid.add (label);
-            grid.add (image);
+            box.append (label);
+            box.append (image);
 
-            add (grid);
+            child = box;
         }
 
         public static int compare (LangRow langrow1, LangRow langrow2) {
@@ -406,24 +415,25 @@ public class Installer.LanguageView : AbstractInstallerView {
 
             image = new Gtk.Image () {
                 halign = Gtk.Align.END,
-                hexpand = true,
-                icon_size = Gtk.IconSize.BUTTON
+                hexpand = true
             };
 
             var label = new Gtk.Label (country_entry.name) {
                 ellipsize = Pango.EllipsizeMode.END,
                 xalign = 0
             };
-            label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+            label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
-            var grid = new Gtk.Grid () {
-                column_spacing = 6,
-                margin = 6
+            var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
+                margin_top = 6,
+                margin_end = 6,
+                margin_bottom = 6,
+                margin_start = 6
             };
-            grid.add (label);
-            grid.add (image);
+            box.append (label);
+            box.append (image);
 
-            add (grid);
+            child = box;
         }
 
 
