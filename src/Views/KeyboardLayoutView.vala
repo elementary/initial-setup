@@ -24,12 +24,12 @@ public class KeyboardLayoutView : AbstractInstallerView {
             secondary_icon_tooltip_text = _("Show keyboard layout")
         };
 
-        title_area.append (image);
-        title_area.append (title_label);
-
         var stack_box = new Gtk.Box (VERTICAL, 12);
         stack_box.append (input_variant_widget);
         stack_box.append (keyboard_test_entry);
+
+        title_area.append (image);
+        title_area.append (title_label);
 
         content_area.append (stack_box);
 
