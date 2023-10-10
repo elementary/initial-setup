@@ -60,11 +60,7 @@ public class Installer.LanguageView : AbstractInstallerView {
 
         select_stack.notify["transition-running"].connect (() => {
             if (!select_stack.transition_running) {
-                // select_stack.get_children ().foreach ((child) => {
-                //     if (child != select_stack.get_visible_child ()) {
-                //         child.destroy ();
-                //     }
-                // });
+                select_stack.remove (select_stack.get_visible_child ().get_prev_sibling ());
             }
         });
 
