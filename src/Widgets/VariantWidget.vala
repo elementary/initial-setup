@@ -1,23 +1,11 @@
-/*-
- * Copyright 2017-2020 elementary, Inc. (https://elementary.io)
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+/*
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2017-2023 elementary, Inc. (https://elementary.io)
  */
 
 public class VariantWidget : Gtk.Frame {
-    public Gtk.ListBox main_listbox { public get; private set; }
-    public Gtk.ListBox variant_listbox { public get; private set; }
+    public Gtk.ListBox main_listbox { get; private set; }
+    public Gtk.ListBox variant_listbox { get; private set; }
 
     public signal void going_to_main ();
 
@@ -31,7 +19,7 @@ public class VariantWidget : Gtk.Frame {
 
         var main_scrolled = new Gtk.ScrolledWindow () {
             child = main_listbox,
-            hscrollbar_policy = Gtk.PolicyType.NEVER
+            hscrollbar_policy = NEVER
         };
 
         variant_listbox = new Gtk.ListBox () {
@@ -40,12 +28,12 @@ public class VariantWidget : Gtk.Frame {
 
         var variant_scrolled = new Gtk.ScrolledWindow () {
             child = variant_listbox,
-            hscrollbar_policy = Gtk.PolicyType.NEVER,
+            hscrollbar_policy = NEVER,
             vexpand = true
         };
 
         back_button = new Gtk.Button () {
-            halign = Gtk.Align.START,
+            halign = START,
             margin_top = 6,
             margin_end = 6,
             margin_bottom = 6,
@@ -53,10 +41,14 @@ public class VariantWidget : Gtk.Frame {
         };
         back_button.add_css_class (Granite.STYLE_CLASS_BACK_BUTTON);
 
-        variant_title = new Gtk.Label (null);
-        variant_title.ellipsize = Pango.EllipsizeMode.END;
-        variant_title.max_width_chars = 20;
-        variant_title.use_markup = true;
+        variant_title = new Gtk.Label ("") {
+            hexpand = true,
+            justify = CENTER,
+            margin_end = 6,
+            margin_start = 6,
+            use_markup = true,
+            wrap = true
+        };
 
         var header_box = new Gtk.CenterBox () {
             hexpand = true
@@ -64,10 +56,10 @@ public class VariantWidget : Gtk.Frame {
         header_box.set_start_widget (back_button);
         header_box.set_center_widget (variant_title);
 
-        variant_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
-        variant_box.add_css_class (Granite.STYLE_CLASS_VIEW);
+        variant_box = new Gtk.Box (VERTICAL, 0);
+        variant_box.get_style_context ().add_class (Granite.STYLE_CLASS_VIEW);
         variant_box.append (header_box);
-        variant_box.append (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
+        variant_box.append (new Gtk.Separator (HORIZONTAL));
         variant_box.append (variant_scrolled);
 
         leaflet = new Adw.Leaflet () {
@@ -82,7 +74,7 @@ public class VariantWidget : Gtk.Frame {
 
         back_button.clicked.connect (() => {
             going_to_main ();
-            leaflet.navigate (Adw.NavigationDirection.BACK);
+            leaflet.navigate (BACK);
         });
     }
 
