@@ -57,7 +57,7 @@ public class VariantWidget : Gtk.Frame {
         header_box.set_center_widget (variant_title);
 
         variant_box = new Gtk.Box (VERTICAL, 0);
-        variant_box.get_style_context ().add_class (Granite.STYLE_CLASS_VIEW);
+        variant_box.add_css_class (Granite.STYLE_CLASS_VIEW);
         variant_box.append (header_box);
         variant_box.append (new Gtk.Separator (HORIZONTAL));
         variant_box.append (variant_scrolled);
@@ -85,9 +85,9 @@ public class VariantWidget : Gtk.Frame {
     }
 
     public void clear_variants () {
-        // variant_listbox.get_children ().foreach ((child) => {
-        //     child.destroy ();
-        // });
+        while (variant_listbox.get_first_child () != null) {
+            variant_listbox.get_first_child ().destroy ();
+        }
     }
 }
 
