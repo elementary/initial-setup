@@ -64,13 +64,13 @@ public class Installer.AccountView : AbstractInstallerView {
             input_purpose = NAME
         };
 
-        ((Gtk.Label) realname_label.get_first_child ()).mnemonic_widget = realname_entry;
+        realname_label.mnemonic_widget = realname_entry;
 
         var username_label = new Granite.HeaderLabel (_("Username"));
 
         username_entry = new Granite.ValidatedEntry ();
 
-        ((Gtk.Label) username_label.get_first_child ()).mnemonic_widget = username_entry;
+        username_label.mnemonic_widget = username_entry;
 
         username_error_revealer = new ErrorRevealer (".");
         username_error_revealer.label_widget.add_css_class (Granite.STYLE_CLASS_ERROR);
@@ -85,7 +85,7 @@ public class Installer.AccountView : AbstractInstallerView {
             visibility = false
         };
 
-        ((Gtk.Label) pw_label.get_first_child ()).mnemonic_widget = pw_entry;
+        pw_label.mnemonic_widget = pw_entry;
 
         pw_levelbar = new Gtk.LevelBar ();
         pw_levelbar = new Gtk.LevelBar.for_interval (0.0, 100.0);
@@ -103,7 +103,7 @@ public class Installer.AccountView : AbstractInstallerView {
             visibility = false
         };
 
-        ((Gtk.Label) confirm_label.get_first_child ()).mnemonic_widget = confirm_entry;
+        confirm_label.mnemonic_widget = confirm_entry;
 
         confirm_entry_revealer = new ErrorRevealer (".");
         confirm_entry_revealer.label_widget.add_css_class (Granite.STYLE_CLASS_ERROR);
@@ -118,7 +118,7 @@ public class Installer.AccountView : AbstractInstallerView {
             sensitive = false,
         };
 
-        ((Gtk.Label) hostname_label.get_first_child ()).mnemonic_widget = hostname_entry;
+        hostname_label.mnemonic_widget = hostname_entry;
 
         Utils.HostnameInterface.get_default.begin ((obj, res) => {
             try {
