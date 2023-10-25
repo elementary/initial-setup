@@ -5,6 +5,7 @@ Maintainer: elementary, Inc. <builds@elementary.io>
 Build-Depends: debhelper (>= 10.5.1),
                desktop-file-utils,
                gettext,
+               iso-codes,
                libaccountsservice-dev,
                libadwaita-1-dev,
                libgee-0.8-dev,
