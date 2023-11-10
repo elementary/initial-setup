@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-08 23:03+0000\n"
-"PO-Revision-Date: 2023-08-11 10:08+0000\n"
+"PO-Revision-Date: 2023-11-11 06:10+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/he/>\n"
@@ -11,15 +11,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.0.2\n"
 
 #: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
 msgid "Set up elementary OS"
-msgstr "התקנת elementary OS"
+msgstr "הקמת elementary OS"
 
 #: data/initial-setup.desktop.in:4
 msgid "Set up the system"
-msgstr "התקנת המערכת"
+msgstr "הקמת המערכת"
 
 #: data/initial-setup.metainfo.xml.in:10
 msgid "Initial Setup"
