@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-08 23:03+0000\n"
-"PO-Revision-Date: 2023-03-11 12:29+0000\n"
+"PO-Revision-Date: 2023-12-22 19:36+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/ka/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.0.2\n"
 
 #: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
 msgid "Set up elementary OS"
@@ -45,7 +45,7 @@ msgstr "გაუმჯობესებები:"
 
 #: data/initial-setup.metainfo.xml.in:49
 msgid "Automatically prompt for screen reader after a timeout"
-msgstr ""
+msgstr "ეკრანის მკითხველის შესახებ კითხვა მოლოდინის დროის ამოწურვის შემდეგ"
 
 #: data/initial-setup.metainfo.xml.in:50 data/initial-setup.metainfo.xml.in:63
 #: data/initial-setup.metainfo.xml.in:72 data/initial-setup.metainfo.xml.in:83
