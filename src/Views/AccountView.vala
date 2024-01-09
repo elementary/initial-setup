@@ -200,7 +200,6 @@ public class Installer.AccountView : AbstractInstallerView {
         finish_button.clicked.connect (apply_settings);
 
         realname_entry.bind_property ("text", avatar, "text");
-        realname_entry.grab_focus ();
     }
 
     private bool check_password () {
@@ -284,7 +283,7 @@ public class Installer.AccountView : AbstractInstallerView {
     private void update_finish_button () {
         if (username_entry.is_valid && pw_entry.is_valid && confirm_entry.is_valid && hostname_entry.is_valid) {
             finish_button.sensitive = true;
-            finish_button.receives_default = true;
+            ((Gtk.Window) get_root ()).default_widget = finish_button;
         } else {
             finish_button.sensitive = false;
         }
