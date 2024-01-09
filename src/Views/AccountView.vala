@@ -283,7 +283,6 @@ public class Installer.AccountView : AbstractInstallerView {
     private void update_finish_button () {
         if (username_entry.is_valid && pw_entry.is_valid && confirm_entry.is_valid && hostname_entry.is_valid) {
             finish_button.sensitive = true;
-
             ((Gtk.Window) get_root ()).default_widget = finish_button;
         } else {
             finish_button.sensitive = false;
