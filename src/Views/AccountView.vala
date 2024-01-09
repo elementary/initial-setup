@@ -75,8 +75,6 @@ public class Installer.AccountView : AbstractInstallerView {
         username_error_revealer = new ErrorRevealer (".");
         username_error_revealer.label_widget.add_css_class (Granite.STYLE_CLASS_ERROR);
 
-        var pw_label = new Granite.HeaderLabel (_("Choose a Password"));
-
         pw_error_revealer = new ErrorRevealer (".");
         pw_error_revealer.label_widget.add_css_class (Granite.STYLE_CLASS_WARNING);
 
@@ -85,7 +83,9 @@ public class Installer.AccountView : AbstractInstallerView {
             visibility = false
         };
 
-        pw_label.mnemonic_widget = pw_entry;
+        var pw_label = new Granite.HeaderLabel (_("Choose a Password")) {
+            mnemonic_widget = pw_entry
+        };
 
         pw_levelbar = new Gtk.LevelBar ();
         pw_levelbar = new Gtk.LevelBar.for_interval (0.0, 100.0);
