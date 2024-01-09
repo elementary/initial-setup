@@ -57,20 +57,20 @@ public class Installer.AccountView : AbstractInstallerView {
             mnemonic_widget = this
         };
 
-        var realname_label = new Granite.HeaderLabel (_("Full Name"));
-
         realname_entry = new Gtk.Entry () {
             hexpand = true,
             input_purpose = NAME
         };
 
-        realname_label.mnemonic_widget = realname_entry;
-
-        var username_label = new Granite.HeaderLabel (_("Username"));
+        var realname_label = new Granite.HeaderLabel (_("Full Name")) {
+            mnemonic_widget = realname_entry
+        };
 
         username_entry = new Granite.ValidatedEntry ();
 
-        username_label.mnemonic_widget = username_entry;
+        var username_label = new Granite.HeaderLabel (_("Username")) {
+            mnemonic_widget = username_entry
+        };
 
         username_error_revealer = new ErrorRevealer (".");
         username_error_revealer.label_widget.add_css_class (Granite.STYLE_CLASS_ERROR);
@@ -95,22 +95,18 @@ public class Installer.AccountView : AbstractInstallerView {
         pw_levelbar.add_offset_value ("high", 80.0);
         pw_levelbar.add_offset_value ("full", 100.0);
 
-        var confirm_label = new Granite.HeaderLabel (_("Confirm Password"));
-
         confirm_entry = new Granite.ValidatedEntry () {
             input_purpose = PASSWORD,
             sensitive = false,
             visibility = false
         };
 
-        confirm_label.mnemonic_widget = confirm_entry;
+        var confirm_label = new Granite.HeaderLabel (_("Confirm Password")) {
+            mnemonic_widget = confirm_entry
+        };
 
         confirm_entry_revealer = new ErrorRevealer (".");
         confirm_entry_revealer.label_widget.add_css_class (Granite.STYLE_CLASS_ERROR);
-
-        var hostname_label = new Granite.HeaderLabel (_("Device name")) {
-            margin_top = 16
-        };
 
         hostname_entry = new Granite.ValidatedEntry () {
             activates_default = true,
@@ -118,7 +114,11 @@ public class Installer.AccountView : AbstractInstallerView {
             sensitive = false,
         };
 
-        hostname_label.mnemonic_widget = hostname_entry;
+        var hostname_label = new Granite.HeaderLabel (_("Device name")) {
+            margin_top = 16,
+            mnemonic_widget = hostname_entry,
+            secondary_text = _("Visible to other devices when sharing, e.g. with Bluetooth or over the network.")
+        };
 
         Utils.HostnameInterface.get_default.begin ((obj, res) => {
             try {
@@ -132,15 +132,6 @@ public class Installer.AccountView : AbstractInstallerView {
                 critical (e.message);
             }
         });
-
-        var hostname_info = new Gtk.Label (_("Visible to other devices when sharing, e.g. with Bluetooth or over the network.")) {
-            // Wrap without expanding the view
-            max_width_chars = 0,
-            margin_bottom = 18,
-            wrap = true,
-            xalign = 0
-        };
-        hostname_info.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
         var form_grid = new Gtk.Grid ();
         form_grid.row_spacing = 3;
@@ -161,7 +152,6 @@ public class Installer.AccountView : AbstractInstallerView {
         form_grid.attach (confirm_entry_revealer, 0, 12);
         form_grid.attach (hostname_label, 0, 13);
         form_grid.attach (hostname_entry, 0, 14);
-        form_grid.attach (hostname_info, 0, 15);
 
         title_area.append (avatar);
         title_area.append (title_label);
