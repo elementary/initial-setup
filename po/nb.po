@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-08 23:03+0000\n"
+"POT-Creation-Date: 2024-01-10 16:53+0000\n"
 "PO-Revision-Date: 2023-02-14 13:25+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -15,11 +15,11 @@ msgstr ""
 "X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
-#: src/Application.vala:34
+#: src/Application.vala:33
 msgid "Create a User"
 msgstr "Opprett en bruker"
 
-#: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:181
+#: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:170
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -28,91 +28,91 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Forvalg"
 
-#: src/Views/AccountView.vala:67
+#: src/Views/AccountView.vala:56
 msgid "Create an Account"
 msgstr "Opprett en konto"
 
-#: src/Views/AccountView.vala:69
+#: src/Views/AccountView.vala:65
 msgid "Full Name"
 msgstr "Fullt navn"
 
-#: src/Views/AccountView.vala:74
+#: src/Views/AccountView.vala:71
 msgid "Username"
 msgstr "Brukernavn"
 
-#: src/Views/AccountView.vala:81
+#: src/Views/AccountView.vala:86
 msgid "Choose a Password"
 msgstr "Velg et passord"
 
-#: src/Views/AccountView.vala:97
+#: src/Views/AccountView.vala:104
 msgid "Confirm Password"
 msgstr "Bekreft passord"
 
-#: src/Views/AccountView.vala:107
+#: src/Views/AccountView.vala:117
 #, fuzzy
 msgid "Device name"
 msgstr "Enhetsnavn"
 
-#: src/Views/AccountView.vala:124
-#, fuzzy, c-format
-msgid "Unable to setup Hostname interface: %s"
-msgstr "Kunne ikke sette vertsnavnet «%s»"
-
-#: src/Views/AccountView.vala:130
+#: src/Views/AccountView.vala:120
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
 "Synlig for andre enheter ved deling. F.eks med Blåtann over nettverket."
 
-#: src/Views/AccountView.vala:165 src/Views/KeyboardLayoutView.vala:51
+#: src/Views/AccountView.vala:130
+#, fuzzy, c-format
+msgid "Unable to setup Hostname interface: %s"
+msgstr "Kunne ikke sette vertsnavnet «%s»"
+
+#: src/Views/AccountView.vala:161 src/Views/KeyboardLayoutView.vala:38
 #: src/Views/NetworkView.vala:66
 msgid "Back"
 msgstr "Tilbake"
 
-#: src/Views/AccountView.vala:169
+#: src/Views/AccountView.vala:165
 msgid "Finish Setup"
 msgstr "Fullfør oppsett"
 
-#: src/Views/AccountView.vala:251
+#: src/Views/AccountView.vala:245
 msgid "Passwords do not match"
 msgstr "Passordene samsvarer ikke"
 
-#: src/Views/AccountView.vala:276
+#: src/Views/AccountView.vala:270
 msgid "The chosen username is already taken"
 msgstr "Brukernavnet du har valgt er allerede i bruk"
 
-#: src/Views/AccountView.vala:278
+#: src/Views/AccountView.vala:272
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr "Brukernavnet kan kun inneholde små bokstaver og tall, uten mellomrom"
 
-#: src/Views/AccountView.vala:342
+#: src/Views/AccountView.vala:336
 #, fuzzy, c-format
 msgid "Creating an account for “%s” failed"
 msgstr "Kunne ikke opprette konto for «%s»"
 
-#: src/Views/AccountView.vala:349
+#: src/Views/AccountView.vala:343
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
 msgstr "Fikk ikke tilgang til å opprette konto for «%s»"
 
-#: src/Views/AccountView.vala:364
+#: src/Views/AccountView.vala:358
 #, fuzzy, c-format
 msgid "Couldn't get permission to name this device “%s”"
 msgstr "Fikk ikke tilgang til å navngi «%s»-enheten"
 
-#: src/Views/AccountView.vala:368
+#: src/Views/AccountView.vala:362
 #, fuzzy, c-format
 msgid "Unable to name this device “%s”"
 msgstr "Kunne ikke navngi «%s»-enheten"
 
-#: src/Views/AccountView.vala:419
+#: src/Views/AccountView.vala:413
 #, fuzzy
 msgid "Initial Setup could not set your hostname."
 msgstr "Førstegangsoppsettet kunne ikke sette vertsnavnet ditt."
 
-#: src/Views/AccountView.vala:438
+#: src/Views/AccountView.vala:432
 #, fuzzy
 #| msgid ""
 #| "Initial Setup could not create your user. Without it, you will not be "
@@ -124,36 +124,36 @@ msgstr ""
 "Innledende oppstart kunne ikke opprette din bruker. Uten den, vil du ikke "
 "kunne logge inn, og må kanskje reinstallere OS-et."
 
-#: src/Views/KeyboardLayoutView.vala:27
+#: src/Views/KeyboardLayoutView.vala:15
 msgid "Select Keyboard Layout"
 msgstr "Velg tastaturoppsett"
 
-#: src/Views/KeyboardLayoutView.vala:33
+#: src/Views/KeyboardLayoutView.vala:23
 msgid "Type to test your layout"
 msgstr "Skriv for å teste ditt oppsett"
 
-#: src/Views/KeyboardLayoutView.vala:36
+#: src/Views/KeyboardLayoutView.vala:26
 msgid "Show keyboard layout"
 msgstr "Vis tastaturoppsett"
 
-#: src/Views/KeyboardLayoutView.vala:55 src/Views/LanguageView.vala:107
-#: src/Views/LanguageView.vala:172
+#: src/Views/KeyboardLayoutView.vala:42 src/Views/LanguageView.vala:104
+#: src/Views/LanguageView.vala:179
 msgid "Select"
 msgstr "Velg"
 
-#: src/Views/KeyboardLayoutView.vala:124
+#: src/Views/KeyboardLayoutView.vala:111
 msgid "Input Language"
 msgstr "Inndataspråk"
 
-#: src/Views/LanguageView.vala:205
+#: src/Views/LanguageView.vala:211
 msgid "Languages"
 msgstr "Språk"
 
-#: src/Views/LanguageView.vala:240
+#: src/Views/LanguageView.vala:246
 msgid "Use the right mouse button for primary click?"
 msgstr "Høyre museknapp for primærklikk?"
 
-#: src/Views/LanguageView.vala:241
+#: src/Views/LanguageView.vala:247
 msgid ""
 "The right mouse button was used where a primary click was expected. You can "
 "choose to always use the right mouse button for primary click."
@@ -161,19 +161,19 @@ msgstr ""
 "Høyre museknapp ble brukt der et primærklikk var forventet. Du kan velge å "
 "alltid bruke høyre museknapp for primærklikk."
 
-#: src/Views/LanguageView.vala:242 src/Views/LanguageView.vala:249
+#: src/Views/LanguageView.vala:248 src/Views/LanguageView.vala:255
 msgid "Right-Click as Primary"
 msgstr "Høyreklikk som primærklikk"
 
-#: src/Views/LanguageView.vala:243 src/Views/LanguageView.vala:248
+#: src/Views/LanguageView.vala:249 src/Views/LanguageView.vala:254
 msgid "Left-Click as Primary"
 msgstr "Venstreklikk som primærklikk"
 
-#: src/Views/LanguageView.vala:246
+#: src/Views/LanguageView.vala:252
 msgid "Use the left mouse button for primary click?"
 msgstr "Venstre museknapp for primærklikk?"
 
-#: src/Views/LanguageView.vala:247
+#: src/Views/LanguageView.vala:253
 msgid ""
 "The left mouse button was used where a primary click was expected. You can "
 "choose to always use the left mouse button for primary click."
@@ -181,11 +181,11 @@ msgstr ""
 "Venstre museknapp ble brukt der et primærklikk var forventet. Du kan velge å "
 "alltid bruke venstre museknapp for primærklikk."
 
-#: src/Views/LanguageView.vala:312
+#: src/Views/LanguageView.vala:323
 msgid "Select a Language"
 msgstr "Velg et språk"
 
-#: src/Views/LanguageView.vala:335 src/Views/LanguageView.vala:394
+#: src/Views/LanguageView.vala:347 src/Views/LanguageView.vala:407
 msgid "Currently active language"
 msgstr "Nåværende språk"
 
@@ -215,7 +215,7 @@ msgstr "Plugg i en nettverkskabel"
 msgid "Skip"
 msgstr "Hopp over"
 
-#: src/Views/NetworkView.vala:88
+#: src/Views/NetworkView.vala:86
 msgid "Next"
 msgstr "Neste"
 
