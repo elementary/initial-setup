@@ -16,6 +16,8 @@ public class KeyboardLayoutView : AbstractInstallerView {
 
         input_variant_widget = new VariantWidget ();
 
+        title_label.mnemonic_widget = input_variant_widget.main_listbox;
+
         var keyboard_test_entry = new Gtk.Entry () {
             hexpand = true,
             placeholder_text = _("Type to test your layout"),
