@@ -1,0 +1,20 @@
+polkit.addRule(function(action, subject) {
+
+    // User must be lightdm and local and active.
+
+    if (subject.user != "lightdm" || ! (subject.local && subject.active)) {
+        return polkit.Result.NOT_HANDLED;
+    }
+
+    // Permit the following actions.
+
+    switch (action.id) {
+        case "org.freedesktop.hostname1.set-hostname":
+        case "org.freedesktop.hostname1.set-static-hostname":
+        case "org.freedesktop.accounts.user-administration":
+        case "io.elementary.pantheon.AccountsService.ModifyAny":
+            return polkit.Result.YES;
+        default:
+            return polkit.Result.NOT_HANDLED;
+    }
+});
