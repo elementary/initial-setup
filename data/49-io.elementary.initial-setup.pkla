@@ -7,7 +7,7 @@ ResultActive=yes
 
 [Host name]
 Identity=unix-user:lightdm
-Action=org.freedesktop.hostname1.set-hostname;org.freedesktop.hostname1.set-static-hostname;
+Action=org.freedesktop.hostname1.set-hostname;org.freedesktop.hostname1.set-static-hostname
 ResultAny=yes
 ResultInactive=yes
 ResultActive=yes
