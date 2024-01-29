@@ -24,6 +24,12 @@ public class Installer.App : Gtk.Application {
         Intl.setlocale (LocaleCategory.ALL, "");
     }
 
+    public override void startup () {
+        base.startup ();
+
+        Granite.init ();
+    }
+
     public override void activate () {
         var window = new MainWindow () {
             default_height = 600,
