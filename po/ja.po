@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-10 16:53+0000\n"
-"PO-Revision-Date: 2023-01-31 10:25+0000\n"
+"PO-Revision-Date: 2024-02-12 08:11+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ja/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/Application.vala:33
@@ -147,7 +147,7 @@ msgstr "言語"
 
 #: src/Views/LanguageView.vala:246
 msgid "Use the right mouse button for primary click?"
-msgstr "マウスの右ボタンを主ボタンに使用しますか？"
+msgstr "マウスの右ボタンを主ボタンに使用しますか?"
 
 #: src/Views/LanguageView.vala:247
 msgid ""
@@ -167,7 +167,7 @@ msgstr "左ボタンを主ボタンとして使う"
 
 #: src/Views/LanguageView.vala:252
 msgid "Use the left mouse button for primary click?"
-msgstr "マウスの左ボタンを主ボタンに使用しますか？"
+msgstr "マウスの左ボタンを主ボタンに使用しますか?"
 
 #: src/Views/LanguageView.vala:253
 msgid ""
