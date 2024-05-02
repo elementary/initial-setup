@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 16:53+0000\n"
+"POT-Creation-Date: 2024-05-02 03:30+0000\n"
 "PO-Revision-Date: 2023-11-11 06:10+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/installer/initial-"
@@ -33,53 +33,52 @@ msgstr ""
 "מסייע במשימות חיוניות בטרם תחילת השימוש בהתקנה נקייה, כמו למשל לבחור את השפה "
 "וליצור חשבון משתמש."
 
-#: data/initial-setup.metainfo.xml.in:40
-msgid "elementary, Inc."
-msgstr "elementary בע״מ"
-
-#: data/initial-setup.metainfo.xml.in:47 data/initial-setup.metainfo.xml.in:57
-#: data/initial-setup.metainfo.xml.in:70 data/initial-setup.metainfo.xml.in:79
-#: data/initial-setup.metainfo.xml.in:90
+#: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:59
+#: data/initial-setup.metainfo.xml.in:72 data/initial-setup.metainfo.xml.in:81
+#: data/initial-setup.metainfo.xml.in:92
 msgid "Improvements:"
 msgstr "שיפורים:"
 
-#: data/initial-setup.metainfo.xml.in:49
+#: data/initial-setup.metainfo.xml.in:51
 msgid "Automatically prompt for screen reader after a timeout"
 msgstr "להציג בקשה על מקריא המסך לאחר שפג הזמן להמתנה אוטומטית"
 
-#: data/initial-setup.metainfo.xml.in:50 data/initial-setup.metainfo.xml.in:63
-#: data/initial-setup.metainfo.xml.in:72 data/initial-setup.metainfo.xml.in:83
-#: data/initial-setup.metainfo.xml.in:93
+#: data/initial-setup.metainfo.xml.in:52 data/initial-setup.metainfo.xml.in:65
+#: data/initial-setup.metainfo.xml.in:74 data/initial-setup.metainfo.xml.in:85
+#: data/initial-setup.metainfo.xml.in:95
 msgid "Updated translations"
 msgstr "עודכנו התרגומים"
 
-#: data/initial-setup.metainfo.xml.in:59
+#: data/initial-setup.metainfo.xml.in:61
 msgid "Use larger icons in views"
 msgstr "שימוש בסמלים גדולים יותר בתצוגות"
 
-#: data/initial-setup.metainfo.xml.in:60
+#: data/initial-setup.metainfo.xml.in:62
 msgid "Make window resizable"
 msgstr "החלונות ניתנים להגדלה והקטנה"
 
-#: data/initial-setup.metainfo.xml.in:61
+#: data/initial-setup.metainfo.xml.in:63
 msgid "Show keyboard layouts in a separate window"
 msgstr "פריסות מקלדת יוצגו בחלון נפרד"
 
-#: data/initial-setup.metainfo.xml.in:62
+#: data/initial-setup.metainfo.xml.in:64
 msgid "Allow hyphens in device names"
 msgstr "אפשר להשתמש במקפים בשמות המכשירים"
 
-#: data/initial-setup.metainfo.xml.in:81
+#: data/initial-setup.metainfo.xml.in:83
 msgid "Offer to switch to right-click primary mouse button"
 msgstr "הצעה להחלפת המקש הימני בעיקרי בעכבר"
 
-#: data/initial-setup.metainfo.xml.in:82
+#: data/initial-setup.metainfo.xml.in:84
 msgid "Suggest connecting to a network"
 msgstr "הצעת התחברות לרשת"
 
-#: data/initial-setup.metainfo.xml.in:92
+#: data/initial-setup.metainfo.xml.in:94
 msgid "Avoid political naming of certain locales"
 msgstr "קיימת מניעה ממתן שמות פוליטיים בשפות מסוימות"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary בע״מ"
 
 #~ msgid "New features:"
 #~ msgstr "יכולות חדשות:"

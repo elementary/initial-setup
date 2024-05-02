@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 16:53+0000\n"
+"POT-Creation-Date: 2024-05-02 03:30+0000\n"
 "PO-Revision-Date: 2023-08-11 10:08+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/installer/initial-"
@@ -40,55 +40,54 @@ msgstr ""
 "Facilite les tâches essentielles avant qu'une nouvelle installation ne soit "
 "opérationnelle, comme choisir une langue et créer un compte utilisateur."
 
-#: data/initial-setup.metainfo.xml.in:40
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
-
-#: data/initial-setup.metainfo.xml.in:47 data/initial-setup.metainfo.xml.in:57
-#: data/initial-setup.metainfo.xml.in:70 data/initial-setup.metainfo.xml.in:79
-#: data/initial-setup.metainfo.xml.in:90
+#: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:59
+#: data/initial-setup.metainfo.xml.in:72 data/initial-setup.metainfo.xml.in:81
+#: data/initial-setup.metainfo.xml.in:92
 msgid "Improvements:"
 msgstr "Améliorations :"
 
-#: data/initial-setup.metainfo.xml.in:49
+#: data/initial-setup.metainfo.xml.in:51
 msgid "Automatically prompt for screen reader after a timeout"
 msgstr ""
 "Demander automatiquement s'il faut activer le lecteur d'écran après un "
 "certain délai"
 
-#: data/initial-setup.metainfo.xml.in:50 data/initial-setup.metainfo.xml.in:63
-#: data/initial-setup.metainfo.xml.in:72 data/initial-setup.metainfo.xml.in:83
-#: data/initial-setup.metainfo.xml.in:93
+#: data/initial-setup.metainfo.xml.in:52 data/initial-setup.metainfo.xml.in:65
+#: data/initial-setup.metainfo.xml.in:74 data/initial-setup.metainfo.xml.in:85
+#: data/initial-setup.metainfo.xml.in:95
 msgid "Updated translations"
 msgstr "Mise à jour des traductions"
 
-#: data/initial-setup.metainfo.xml.in:59
+#: data/initial-setup.metainfo.xml.in:61
 msgid "Use larger icons in views"
 msgstr "Utilisation de plus grandes icônes dans les vues"
 
-#: data/initial-setup.metainfo.xml.in:60
+#: data/initial-setup.metainfo.xml.in:62
 msgid "Make window resizable"
 msgstr "La fenêtre peut désormais être redimensionnée"
 
-#: data/initial-setup.metainfo.xml.in:61
+#: data/initial-setup.metainfo.xml.in:63
 msgid "Show keyboard layouts in a separate window"
 msgstr "Affichage des dispositions du clavier dans une fenêtre distincte"
 
-#: data/initial-setup.metainfo.xml.in:62
+#: data/initial-setup.metainfo.xml.in:64
 msgid "Allow hyphens in device names"
 msgstr "Autorisation des tirets dans le nom des périphériques"
 
-#: data/initial-setup.metainfo.xml.in:81
+#: data/initial-setup.metainfo.xml.in:83
 msgid "Offer to switch to right-click primary mouse button"
 msgstr "Il est désormais possible de modifier le bouton principal de la souris"
 
-#: data/initial-setup.metainfo.xml.in:82
+#: data/initial-setup.metainfo.xml.in:84
 msgid "Suggest connecting to a network"
 msgstr "Suggestion de connexion à un réseau"
 
-#: data/initial-setup.metainfo.xml.in:92
+#: data/initial-setup.metainfo.xml.in:94
 msgid "Avoid political naming of certain locales"
 msgstr "Nous avons évité les appellations politiques de certains lieux"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "New features:"
 #~ msgstr "Nouvelles fonctionnalités :"

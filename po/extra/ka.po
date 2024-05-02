@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 16:53+0000\n"
+"POT-Creation-Date: 2024-05-02 03:30+0000\n"
 "PO-Revision-Date: 2023-12-22 19:36+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/installer/"
@@ -33,50 +33,49 @@ msgstr ""
 "გეხმარებათ ძირითად ამოცანებში, სანამ სისტემას გამოყენებად მდგომარეობამდე "
 "მიიყვანთ. მაგალითად, ენის არჩევა და მომხმარებლის ანგარიშის შექმნა."
 
-#: data/initial-setup.metainfo.xml.in:40
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
-
-#: data/initial-setup.metainfo.xml.in:47 data/initial-setup.metainfo.xml.in:57
-#: data/initial-setup.metainfo.xml.in:70 data/initial-setup.metainfo.xml.in:79
-#: data/initial-setup.metainfo.xml.in:90
+#: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:59
+#: data/initial-setup.metainfo.xml.in:72 data/initial-setup.metainfo.xml.in:81
+#: data/initial-setup.metainfo.xml.in:92
 msgid "Improvements:"
 msgstr "გაუმჯობესებები:"
 
-#: data/initial-setup.metainfo.xml.in:49
+#: data/initial-setup.metainfo.xml.in:51
 msgid "Automatically prompt for screen reader after a timeout"
 msgstr "ეკრანის მკითხველის შესახებ კითხვა მოლოდინის დროის ამოწურვის შემდეგ"
 
-#: data/initial-setup.metainfo.xml.in:50 data/initial-setup.metainfo.xml.in:63
-#: data/initial-setup.metainfo.xml.in:72 data/initial-setup.metainfo.xml.in:83
-#: data/initial-setup.metainfo.xml.in:93
+#: data/initial-setup.metainfo.xml.in:52 data/initial-setup.metainfo.xml.in:65
+#: data/initial-setup.metainfo.xml.in:74 data/initial-setup.metainfo.xml.in:85
+#: data/initial-setup.metainfo.xml.in:95
 msgid "Updated translations"
 msgstr "განახლებული თარგმანები"
 
-#: data/initial-setup.metainfo.xml.in:59
+#: data/initial-setup.metainfo.xml.in:61
 msgid "Use larger icons in views"
 msgstr "ხედებში დიდი ხატულების ჩვენება"
 
-#: data/initial-setup.metainfo.xml.in:60
+#: data/initial-setup.metainfo.xml.in:62
 msgid "Make window resizable"
 msgstr "ფანჯრის ზომის შეცვლადობა"
 
-#: data/initial-setup.metainfo.xml.in:61
+#: data/initial-setup.metainfo.xml.in:63
 msgid "Show keyboard layouts in a separate window"
 msgstr "კლავიატურის განლაგებების ცალკე ფანჯარაში ჩვენება"
 
-#: data/initial-setup.metainfo.xml.in:62
+#: data/initial-setup.metainfo.xml.in:64
 msgid "Allow hyphens in device names"
 msgstr "მოწყობილობის სახელებში გამოტოვების დაშვება"
 
-#: data/initial-setup.metainfo.xml.in:81
+#: data/initial-setup.metainfo.xml.in:83
 msgid "Offer to switch to right-click primary mouse button"
 msgstr "თაგუნას ძირითადი ღილაკის მარჯვენაზე გადართვის შეთავაზება"
 
-#: data/initial-setup.metainfo.xml.in:82
+#: data/initial-setup.metainfo.xml.in:84
 msgid "Suggest connecting to a network"
 msgstr "ქსელთან მიერთების მინიშნება"
 
-#: data/initial-setup.metainfo.xml.in:92
+#: data/initial-setup.metainfo.xml.in:94
 msgid "Avoid political naming of certain locales"
 msgstr "ზოგიერთი ენის პოლიტიკური სახელების თავიდან აცილება"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."

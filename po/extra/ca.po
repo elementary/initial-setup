@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 16:53+0000\n"
+"POT-Creation-Date: 2024-05-02 03:30+0000\n"
 "PO-Revision-Date: 2023-08-16 12:08+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/installer/"
@@ -33,55 +33,54 @@ msgstr ""
 "Ajuda amb les tasques essencials abans que es pugui usar una instal·lació "
 "nova, com ara triar una llengua i crear un compte d'usuari."
 
-#: data/initial-setup.metainfo.xml.in:40
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
-
-#: data/initial-setup.metainfo.xml.in:47 data/initial-setup.metainfo.xml.in:57
-#: data/initial-setup.metainfo.xml.in:70 data/initial-setup.metainfo.xml.in:79
-#: data/initial-setup.metainfo.xml.in:90
+#: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:59
+#: data/initial-setup.metainfo.xml.in:72 data/initial-setup.metainfo.xml.in:81
+#: data/initial-setup.metainfo.xml.in:92
 msgid "Improvements:"
 msgstr "Millores:"
 
-#: data/initial-setup.metainfo.xml.in:49
+#: data/initial-setup.metainfo.xml.in:51
 msgid "Automatically prompt for screen reader after a timeout"
 msgstr ""
 "Demana automàticament el lector de pantalla després d'un temps d'espera."
 
-#: data/initial-setup.metainfo.xml.in:50 data/initial-setup.metainfo.xml.in:63
-#: data/initial-setup.metainfo.xml.in:72 data/initial-setup.metainfo.xml.in:83
-#: data/initial-setup.metainfo.xml.in:93
+#: data/initial-setup.metainfo.xml.in:52 data/initial-setup.metainfo.xml.in:65
+#: data/initial-setup.metainfo.xml.in:74 data/initial-setup.metainfo.xml.in:85
+#: data/initial-setup.metainfo.xml.in:95
 msgid "Updated translations"
 msgstr "Traduccions actualitzades"
 
-#: data/initial-setup.metainfo.xml.in:59
+#: data/initial-setup.metainfo.xml.in:61
 msgid "Use larger icons in views"
 msgstr "Icones més grosses a les vistes"
 
-#: data/initial-setup.metainfo.xml.in:60
+#: data/initial-setup.metainfo.xml.in:62
 msgid "Make window resizable"
 msgstr "Es pot canviar la mida de la finestra."
 
-#: data/initial-setup.metainfo.xml.in:61
+#: data/initial-setup.metainfo.xml.in:63
 msgid "Show keyboard layouts in a separate window"
 msgstr "Disposicions del teclat en una finestra independent"
 
-#: data/initial-setup.metainfo.xml.in:62
+#: data/initial-setup.metainfo.xml.in:64
 msgid "Allow hyphens in device names"
 msgstr "Permet els guions als noms dels dispositius."
 
-#: data/initial-setup.metainfo.xml.in:81
+#: data/initial-setup.metainfo.xml.in:83
 msgid "Offer to switch to right-click primary mouse button"
 msgstr ""
 "Ofereix canviar al botó principal del ratolí amb el botó dret del ratolí."
 
-#: data/initial-setup.metainfo.xml.in:82
+#: data/initial-setup.metainfo.xml.in:84
 msgid "Suggest connecting to a network"
 msgstr "Suggereix connectar-se a una xarxa."
 
-#: data/initial-setup.metainfo.xml.in:92
+#: data/initial-setup.metainfo.xml.in:94
 msgid "Avoid political naming of certain locales"
 msgstr "Evita els noms polítics de determinades localitats."
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "New features:"
 #~ msgstr "Característiques noves:"
