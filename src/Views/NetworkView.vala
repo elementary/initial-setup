@@ -27,7 +27,9 @@ public class Installer.NetworkView : AbstractInstallerView {
             valign = Gtk.Align.END
         };
 
-        var title_label = new Gtk.Label (_("Connect Network"));
+        title = _("Connect Network");
+
+        var title_label = new Gtk.Label (title);
 
         var details_label = new Gtk.Label (_("An Internet connection is required to receive updates, install new apps, and connect to online services")) {
             hexpand = true,

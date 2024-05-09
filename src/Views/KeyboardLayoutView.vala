@@ -12,7 +12,9 @@ public class KeyboardLayoutView : AbstractInstallerView {
             valign = Gtk.Align.END
         };
 
-        var title_label = new Gtk.Label (_("Select Keyboard Layout"));
+        title = _("Select Keyboard Layout");
+
+        var title_label = new Gtk.Label (title);
 
         input_variant_widget = new VariantWidget ();
 

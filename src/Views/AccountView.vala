@@ -53,7 +53,9 @@ public class Installer.AccountView : AbstractInstallerView {
             valign = END
         };
 
-        var title_label = new Gtk.Label (_("Create an Account")) {
+        title = _("Create an Account");
+
+        var title_label = new Gtk.Label (title) {
             mnemonic_widget = this
         };
 
