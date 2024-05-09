@@ -173,7 +173,7 @@ public class Installer.AccountView : AbstractInstallerView {
         action_area.append (back_button);
         action_area.append (finish_button);
 
-        back_button.clicked.connect (() => ((Adw.Leaflet) get_parent ()).navigate (BACK));
+        back_button.clicked.connect (() => ((Adw.NavigationView) get_parent ()).pop ());
 
         realname_entry.changed.connect (() => {
             var username = gen_username (realname_entry.text);

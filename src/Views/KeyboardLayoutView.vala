@@ -82,7 +82,7 @@ public class KeyboardLayoutView : AbstractInstallerView {
             }
         });
 
-        back_button.clicked.connect (() => ((Adw.Leaflet) get_parent ()).navigate (BACK));
+        back_button.clicked.connect (() => ((Adw.NavigationView) get_parent ()).pop ());
 
         next_button.clicked.connect (() => {
             unowned var vrow = input_variant_widget.variant_listbox.get_selected_row ();

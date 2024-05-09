@@ -75,7 +75,7 @@ public class Installer.NetworkView : AbstractInstallerView {
         action_area.append (back_button);
         action_area.append (skip_button);
 
-        back_button.clicked.connect (() => ((Adw.Leaflet) get_parent ()).navigate (Adw.NavigationDirection.BACK));
+        back_button.clicked.connect (() => ((Adw.NavigationView) get_parent ()).pop ());
         skip_button.clicked.connect (() => (next_step ()));
 
         network_monitor = NetworkMonitor.get_default ();

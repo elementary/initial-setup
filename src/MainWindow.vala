@@ -18,7 +18,7 @@
  */
 
 public class Installer.MainWindow : Gtk.Window {
-    private Adw.Leaflet leaflet;
+    private Adw.NavigationView navigationview;
 
     private AccountView account_view;
     private LanguageView language_view;
@@ -29,13 +29,10 @@ public class Installer.MainWindow : Gtk.Window {
     construct {
         language_view = new LanguageView ();
 
-        leaflet = new Adw.Leaflet () {
-            can_navigate_back = true,
-            can_unfold = false
-        };
-        leaflet.append (language_view);
+        navigationview = new Adw.NavigationView ();
+        navigationview.add (language_view);
 
-        child = leaflet;
+        child = navigationview;
         titlebar = new Gtk.Label ("") { visible = false };
 
         language_view.next_step.connect (() => {
@@ -92,8 +89,7 @@ public class Installer.MainWindow : Gtk.Window {
 
         keyboard_layout_view = new KeyboardLayoutView ();
 
-        leaflet.append (keyboard_layout_view);
-        leaflet.visible_child = keyboard_layout_view;
+        navigationview.push (keyboard_layout_view);
 
         keyboard_layout_view.next_step.connect (() => load_network_view ());
     }
@@ -106,8 +102,7 @@ public class Installer.MainWindow : Gtk.Window {
         if (!NetworkMonitor.get_default ().get_network_available ()) {
             network_view = new NetworkView ();
 
-            leaflet.append (network_view);
-            leaflet.visible_child = network_view;
+            navigationview.push (network_view);
 
             network_view.next_step.connect (load_account_view);
         } else {
@@ -122,7 +117,6 @@ public class Installer.MainWindow : Gtk.Window {
 
         account_view = new AccountView ();
 
-        leaflet.append (account_view);
-        leaflet.visible_child = account_view;
+        navigationview.push (account_view);
     }
 }
