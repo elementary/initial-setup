@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-09 17:05+0000\n"
+"POT-Creation-Date: 2024-05-09 17:07+0000\n"
 "PO-Revision-Date: 2023-11-11 06:10+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/installer/initial-"
@@ -32,6 +32,10 @@ msgid ""
 msgstr ""
 "מסייע במשימות חיוניות בטרם תחילת השימוש בהתקנה נקייה, כמו למשל לבחור את השפה "
 "וליצור חשבון משתמש."
+
+#: data/initial-setup.metainfo.xml.in:41
+msgid "elementary, Inc."
+msgstr "elementary בע״מ"
 
 #: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:63
 #: data/initial-setup.metainfo.xml.in:73 data/initial-setup.metainfo.xml.in:86
@@ -83,9 +87,6 @@ msgstr "הצעת התחברות לרשת"
 
 #~ msgid "Avoid political naming of certain locales"
 #~ msgstr "קיימת מניעה ממתן שמות פוליטיים בשפות מסוימות"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary בע״מ"
 
 #~ msgid "New features:"
 #~ msgstr "יכולות חדשות:"

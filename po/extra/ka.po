@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-09 17:05+0000\n"
+"POT-Creation-Date: 2024-05-09 17:07+0000\n"
 "PO-Revision-Date: 2023-12-22 19:36+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/installer/"
@@ -32,6 +32,10 @@ msgid ""
 msgstr ""
 "გეხმარებათ ძირითად ამოცანებში, სანამ სისტემას გამოყენებად მდგომარეობამდე "
 "მიიყვანთ. მაგალითად, ენის არჩევა და მომხმარებლის ანგარიშის შექმნა."
+
+#: data/initial-setup.metainfo.xml.in:41
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:63
 #: data/initial-setup.metainfo.xml.in:73 data/initial-setup.metainfo.xml.in:86
@@ -83,6 +87,3 @@ msgstr "ქსელთან მიერთების მინიშნე�
 
 #~ msgid "Avoid political naming of certain locales"
 #~ msgstr "ზოგიერთი ენის პოლიტიკური სახელების თავიდან აცილება"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

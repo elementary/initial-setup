@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-09 17:05+0000\n"
+"POT-Creation-Date: 2024-05-09 17:07+0000\n"
 "PO-Revision-Date: 2022-01-11 17:05+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/installer/initial-"
@@ -32,6 +32,10 @@ msgid ""
 msgstr ""
 "Pomáhá s nezbytnými úkony k tomu, aby novou instalaci bylo možné používat, "
 "jako je například výběr jazyka a vytvoření uživatelského účtu."
+
+#: data/initial-setup.metainfo.xml.in:41
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:63
 #: data/initial-setup.metainfo.xml.in:73 data/initial-setup.metainfo.xml.in:86
@@ -82,9 +86,6 @@ msgstr ""
 #: data/initial-setup.metainfo.xml.in:98
 msgid "Suggest connecting to a network"
 msgstr ""
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "New features:"
 #~ msgstr "Nové funkce:"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-09 17:05+0000\n"
+"POT-Creation-Date: 2024-05-09 17:07+0000\n"
 "PO-Revision-Date: 2023-08-11 10:08+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/installer/"
@@ -41,6 +41,10 @@ msgstr ""
 "Помогает выполнить основные задачи, прежде чем свежая установка станет "
 "пригодной для использования, например, выбор языка и создание учётной записи "
 "пользователя."
+
+#: data/initial-setup.metainfo.xml.in:41
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:63
 #: data/initial-setup.metainfo.xml.in:73 data/initial-setup.metainfo.xml.in:86
@@ -93,9 +97,6 @@ msgstr "Предложение подключиться к Интернету"
 
 #~ msgid "Avoid political naming of certain locales"
 #~ msgstr "Не использовать политические названия на некоторых языках"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "New features:"
 #~ msgstr "Новые возможности:"

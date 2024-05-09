@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-09 17:05+0000\n"
+"POT-Creation-Date: 2024-05-09 17:07+0000\n"
 "PO-Revision-Date: 2023-05-09 19:06+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/installer/initial-"
@@ -39,6 +39,10 @@ msgid ""
 msgstr ""
 "Pomáha so základnými úlohami aby bolo možné používať novú inštaláciu, ako "
 "napríklad s výberom jazyka a vytvorením používateľského účtu."
+
+#: data/initial-setup.metainfo.xml.in:41
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:63
 #: data/initial-setup.metainfo.xml.in:73 data/initial-setup.metainfo.xml.in:86
@@ -90,9 +94,6 @@ msgstr "Navrhnúť pripojenie sa k sieti"
 
 #~ msgid "Avoid political naming of certain locales"
 #~ msgstr "Vyhnúť sa politickému názvosloviu v určitých oblastiach"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "New features:"
 #~ msgstr "Nové funkcie:"

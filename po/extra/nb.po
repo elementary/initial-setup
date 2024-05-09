@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-09 17:05+0000\n"
+"POT-Creation-Date: 2024-05-09 17:07+0000\n"
 "PO-Revision-Date: 2023-07-26 20:07+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -32,6 +32,11 @@ msgid ""
 msgstr ""
 "Hjelper til med viktige oppgaver som gjøre en ny installasjon brukendes, som "
 "å velge språk og opprette en brukekonto."
+
+#: data/initial-setup.metainfo.xml.in:41
+#, fuzzy
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:63
 #: data/initial-setup.metainfo.xml.in:73 data/initial-setup.metainfo.xml.in:86
@@ -83,10 +88,6 @@ msgstr "Foreslå tilkobling til et nettverk"
 
 #~ msgid "Avoid political naming of certain locales"
 #~ msgstr "Ungått politiske navn for noen lokaliteter"
-
-#, fuzzy
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #, fuzzy
 #~| msgid "Translation updates"

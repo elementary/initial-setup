@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-09 17:05+0000\n"
+"POT-Creation-Date: 2024-05-09 17:07+0000\n"
 "PO-Revision-Date: 2023-02-28 04:25+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/installer/initial-"
@@ -32,6 +32,10 @@ msgid ""
 msgstr ""
 "Assisteert met essentiële taken voordat een nieuwe installatie bruikbaar is "
 "zoals het kiezen van een taal en het aanmaken van een gebruikersaccount."
+
+#: data/initial-setup.metainfo.xml.in:41
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:63
 #: data/initial-setup.metainfo.xml.in:73 data/initial-setup.metainfo.xml.in:86
@@ -80,9 +84,6 @@ msgstr "Bied aan om te wisselen naar rechter-klik primaire muisknop"
 #: data/initial-setup.metainfo.xml.in:98
 msgid "Suggest connecting to a network"
 msgstr ""
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "New features:"
 #~ msgstr "Nieuwe functionaliteit:"

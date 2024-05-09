@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-09 17:05+0000\n"
+"POT-Creation-Date: 2024-05-09 17:07+0000\n"
 "PO-Revision-Date: 2019-09-07 18:22+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Bulgarian <https://l10n.elementary.io/projects/installer/"
@@ -37,6 +37,11 @@ msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
 msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:41
+#, fuzzy
+msgid "elementary, Inc."
+msgstr "Настройка на Elementary ОС"
 
 #: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:63
 #: data/initial-setup.metainfo.xml.in:73 data/initial-setup.metainfo.xml.in:86
@@ -85,10 +90,6 @@ msgstr ""
 #: data/initial-setup.metainfo.xml.in:98
 msgid "Suggest connecting to a network"
 msgstr ""
-
-#, fuzzy
-#~ msgid "elementary, Inc."
-#~ msgstr "Настройка на Elementary ОС"
 
 #~ msgid "system-os-installer"
 #~ msgstr "system-os-installer"
