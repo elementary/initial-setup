@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-09 17:05+0000\n"
+"POT-Creation-Date: 2024-05-09 17:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,6 +33,10 @@ msgstr ""
 msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
+msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:41
+msgid "elementary, Inc."
 msgstr ""
 
 #: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:63
