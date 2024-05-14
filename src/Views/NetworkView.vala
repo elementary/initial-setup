@@ -96,10 +96,8 @@ public class Installer.NetworkView : AbstractInstallerView {
                 valign = Gtk.Align.START
             };
             image.add_css_class (Granite.STYLE_CLASS_LARGE_ICONS);
-
-            unowned var image_context = image.get_style_context ();
-            image_context.add_class (Granite.STYLE_CLASS_ACCENT);
-            image_context.add_class (color);
+            image.add_css_class (Granite.STYLE_CLASS_ACCENT);
+            image.add_css_class (color);
 
             var description_label = new Gtk.Label (description) {
                 hexpand = true,

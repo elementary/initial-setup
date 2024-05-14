@@ -511,7 +511,7 @@ public class Installer.AccountView : AbstractInstallerView {
                 wrap = true,
                 xalign = 1
             };
-            label_widget.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
+            label_widget.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
             var revealer = new Gtk.Revealer () {
                 child = label_widget,
