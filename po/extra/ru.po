@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-02 03:30+0000\n"
-"PO-Revision-Date: 2023-08-11 10:08+0000\n"
-"Last-Translator: lenemter <lenemter@gmail.com>\n"
+"POT-Creation-Date: 2024-05-09 17:07+0000\n"
+"PO-Revision-Date: 2024-05-13 05:13+0000\n"
+"Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/ru/>\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
 #: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
@@ -42,53 +42,61 @@ msgstr ""
 "пригодной для использования, например, выбор языка и создание учётной записи "
 "пользователя."
 
-#: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:59
-#: data/initial-setup.metainfo.xml.in:72 data/initial-setup.metainfo.xml.in:81
-#: data/initial-setup.metainfo.xml.in:92
+#: data/initial-setup.metainfo.xml.in:41
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:63
+#: data/initial-setup.metainfo.xml.in:73 data/initial-setup.metainfo.xml.in:86
+#: data/initial-setup.metainfo.xml.in:95
 msgid "Improvements:"
 msgstr "Улучшения:"
 
 #: data/initial-setup.metainfo.xml.in:51
+msgid "Improve screen reader labels for entries, pages, and buttons"
+msgstr "Улучшены метки экранного диктора для полей, страниц и кнопок"
+
+#: data/initial-setup.metainfo.xml.in:52
+msgid "Improve keyboard navigation"
+msgstr "Улучшена навигация с клавиатуры"
+
+#: data/initial-setup.metainfo.xml.in:53 data/initial-setup.metainfo.xml.in:66
+#: data/initial-setup.metainfo.xml.in:79 data/initial-setup.metainfo.xml.in:88
+#: data/initial-setup.metainfo.xml.in:99
+msgid "Updated translations"
+msgstr "Обновлены переводы"
+
+#: data/initial-setup.metainfo.xml.in:65
 msgid "Automatically prompt for screen reader after a timeout"
 msgstr ""
 "Автоматическое предложение включить чтение с экрана через некоторое время"
 
-#: data/initial-setup.metainfo.xml.in:52 data/initial-setup.metainfo.xml.in:65
-#: data/initial-setup.metainfo.xml.in:74 data/initial-setup.metainfo.xml.in:85
-#: data/initial-setup.metainfo.xml.in:95
-msgid "Updated translations"
-msgstr "Обновлены переводы"
-
-#: data/initial-setup.metainfo.xml.in:61
+#: data/initial-setup.metainfo.xml.in:75
 msgid "Use larger icons in views"
 msgstr "Использование больших значков"
 
-#: data/initial-setup.metainfo.xml.in:62
+#: data/initial-setup.metainfo.xml.in:76
 msgid "Make window resizable"
 msgstr "Окно теперь может менять размер"
 
-#: data/initial-setup.metainfo.xml.in:63
+#: data/initial-setup.metainfo.xml.in:77
 msgid "Show keyboard layouts in a separate window"
 msgstr "Показ раскладок клавиатуры в отдельном окне"
 
-#: data/initial-setup.metainfo.xml.in:64
+#: data/initial-setup.metainfo.xml.in:78
 msgid "Allow hyphens in device names"
 msgstr "Разрешены дефисы в имени устройства"
 
-#: data/initial-setup.metainfo.xml.in:83
+#: data/initial-setup.metainfo.xml.in:97
 msgid "Offer to switch to right-click primary mouse button"
 msgstr "Предложение использовать правую кнопку мыши как основную"
 
-#: data/initial-setup.metainfo.xml.in:84
+#: data/initial-setup.metainfo.xml.in:98
 msgid "Suggest connecting to a network"
 msgstr "Предложение подключиться к Интернету"
 
-#: data/initial-setup.metainfo.xml.in:94
-msgid "Avoid political naming of certain locales"
-msgstr "Не использовать политические названия на некоторых языках"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
+#~ msgid "Avoid political naming of certain locales"
+#~ msgstr "Не использовать политические названия на некоторых языках"
 
 #~ msgid "New features:"
 #~ msgstr "Новые возможности:"

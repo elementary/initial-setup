@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-02 03:30+0000\n"
+"POT-Creation-Date: 2024-05-09 17:07+0000\n"
 "PO-Revision-Date: 2023-05-09 19:06+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/installer/initial-"
@@ -40,52 +40,60 @@ msgstr ""
 "Pomáha so základnými úlohami aby bolo možné používať novú inštaláciu, ako "
 "napríklad s výberom jazyka a vytvorením používateľského účtu."
 
-#: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:59
-#: data/initial-setup.metainfo.xml.in:72 data/initial-setup.metainfo.xml.in:81
-#: data/initial-setup.metainfo.xml.in:92
+#: data/initial-setup.metainfo.xml.in:41
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:63
+#: data/initial-setup.metainfo.xml.in:73 data/initial-setup.metainfo.xml.in:86
+#: data/initial-setup.metainfo.xml.in:95
 msgid "Improvements:"
 msgstr "Vylepšenia:"
 
 #: data/initial-setup.metainfo.xml.in:51
-msgid "Automatically prompt for screen reader after a timeout"
+msgid "Improve screen reader labels for entries, pages, and buttons"
 msgstr ""
 
-#: data/initial-setup.metainfo.xml.in:52 data/initial-setup.metainfo.xml.in:65
-#: data/initial-setup.metainfo.xml.in:74 data/initial-setup.metainfo.xml.in:85
-#: data/initial-setup.metainfo.xml.in:95
+#: data/initial-setup.metainfo.xml.in:52
+msgid "Improve keyboard navigation"
+msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:53 data/initial-setup.metainfo.xml.in:66
+#: data/initial-setup.metainfo.xml.in:79 data/initial-setup.metainfo.xml.in:88
+#: data/initial-setup.metainfo.xml.in:99
 msgid "Updated translations"
 msgstr "Aktualizované preklady"
 
-#: data/initial-setup.metainfo.xml.in:61
+#: data/initial-setup.metainfo.xml.in:65
+msgid "Automatically prompt for screen reader after a timeout"
+msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:75
 msgid "Use larger icons in views"
 msgstr "V zobrazeniach používať väčšie ikony"
 
-#: data/initial-setup.metainfo.xml.in:62
+#: data/initial-setup.metainfo.xml.in:76
 msgid "Make window resizable"
 msgstr "Umožniť úpravu veľkosti okna"
 
-#: data/initial-setup.metainfo.xml.in:63
+#: data/initial-setup.metainfo.xml.in:77
 msgid "Show keyboard layouts in a separate window"
 msgstr "Zobrazovať rozloženia klávesnice v samostatnom okne"
 
-#: data/initial-setup.metainfo.xml.in:64
+#: data/initial-setup.metainfo.xml.in:78
 msgid "Allow hyphens in device names"
 msgstr "Povoliť používanie pomlčiek v názvoch zariadení"
 
-#: data/initial-setup.metainfo.xml.in:83
+#: data/initial-setup.metainfo.xml.in:97
 msgid "Offer to switch to right-click primary mouse button"
 msgstr "Ponúknuť možnosť prepnúť primárne tlačidlo myši na pravé tlačidlo"
 
-#: data/initial-setup.metainfo.xml.in:84
+#: data/initial-setup.metainfo.xml.in:98
 msgid "Suggest connecting to a network"
 msgstr "Navrhnúť pripojenie sa k sieti"
 
-#: data/initial-setup.metainfo.xml.in:94
-msgid "Avoid political naming of certain locales"
-msgstr "Vyhnúť sa politickému názvosloviu v určitých oblastiach"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
+#~ msgid "Avoid political naming of certain locales"
+#~ msgstr "Vyhnúť sa politickému názvosloviu v určitých oblastiach"
 
 #~ msgid "New features:"
 #~ msgstr "Nové funkcie:"
