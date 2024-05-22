@@ -75,18 +75,8 @@ public class Installer.MainWindow : Gtk.Window {
 
     /*
      * We need to load all the view after the language has being chosen and set.
-     * We need to rebuild the view everytime the next button is clicked to reflect language changes.
      */
-
     private void load_keyboard_view () {
-        if (keyboard_layout_view != null) {
-            keyboard_layout_view.destroy ();
-        }
-
-        if (account_view != null) {
-            account_view.destroy ();
-        }
-
         keyboard_layout_view = new KeyboardLayoutView ();
 
         navigationview.push (keyboard_layout_view);
@@ -95,10 +85,6 @@ public class Installer.MainWindow : Gtk.Window {
     }
 
     private void load_network_view () {
-        if (network_view != null) {
-            network_view.destroy ();
-        }
-
         if (!NetworkMonitor.get_default ().get_network_available ()) {
             network_view = new NetworkView ();
 
@@ -111,10 +97,6 @@ public class Installer.MainWindow : Gtk.Window {
     }
 
     private void load_account_view () {
-        if (account_view != null) {
-            account_view.destroy ();
-        }
-
         account_view = new AccountView ();
 
         navigationview.push (account_view);
