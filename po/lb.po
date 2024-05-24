@@ -3,205 +3,217 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
-"PO-Revision-Date: 2016-05-27 15:29+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2024-05-25 13:13+0000\n"
+"Last-Translator: Arno <arnoant21@gmail.com>\n"
+"Language-Team: Luxembourgish <https://l10n.elementary.io/projects/installer/"
+"initial-setup/lb/>\n"
+"Language: lb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
 
 #: src/Application.vala:39
 msgid "Create a User"
-msgstr ""
+msgstr "Benotzerkont schafen"
 
 #: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:170
 #, c-format
 msgid "%s…"
-msgstr ""
+msgstr "%s…"
 
 #: src/Objects/KeyboardVariant.vala:27
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: src/Views/AccountView.vala:56
 msgid "Create an Account"
-msgstr ""
+msgstr "Konto schafen"
 
 #: src/Views/AccountView.vala:65
 msgid "Full Name"
-msgstr ""
+msgstr "Voll Numm"
 
 #: src/Views/AccountView.vala:71
 msgid "Username"
-msgstr ""
+msgstr "Benotzernumm"
 
 #: src/Views/AccountView.vala:86
 msgid "Choose a Password"
-msgstr ""
+msgstr "Passwuert wielen"
 
 #: src/Views/AccountView.vala:104
 msgid "Confirm Password"
-msgstr ""
+msgstr "Passwuert confirméieren"
 
 #: src/Views/AccountView.vala:117
 msgid "Device name"
-msgstr ""
+msgstr "Apparatnumm"
 
 #: src/Views/AccountView.vala:120
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
+"Siichtbar fir aner Apparater beim Deelen, z.B. mat Bluetooth oder iwwer dem "
+"Netz."
 
 #: src/Views/AccountView.vala:130
 #, c-format
 msgid "Unable to setup Hostname interface: %s"
-msgstr ""
+msgstr "Den Hostnumm-Interface kann net konfiguréiert ginn: %s"
 
 #: src/Views/AccountView.vala:161 src/Views/KeyboardLayoutView.vala:38
 #: src/Views/NetworkView.vala:66
-#, fuzzy
 msgid "Back"
-msgstr "Zeréck-Tast"
+msgstr "Zréck"
 
 #: src/Views/AccountView.vala:165
 msgid "Finish Setup"
-msgstr ""
+msgstr "Setup fäerdeg maachen"
 
 #: src/Views/AccountView.vala:245
 msgid "Passwords do not match"
-msgstr ""
+msgstr "Passwierder passen net"
 
 #: src/Views/AccountView.vala:270
 msgid "The chosen username is already taken"
-msgstr ""
+msgstr "Benotzernumm ass scho benotzt"
 
 #: src/Views/AccountView.vala:272
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
+"E Benotzernumm däerf nëmme kleng Buschtawen an Zuelen enthalen, ouni Plazen"
 
 #: src/Views/AccountView.vala:336
 #, c-format
 msgid "Creating an account for “%s” failed"
-msgstr ""
+msgstr "Konnt net e Benotzerkont fir »%s« schafen"
 
 #: src/Views/AccountView.vala:343
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
-msgstr ""
+msgstr "Keng Erlaabnis fir e Benotzerkont fir »%s« ze schafen"
 
 #: src/Views/AccountView.vala:358
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
-msgstr ""
+msgstr "Keng Erlaabnis fir dësen Apparat »%s« ze nennen"
 
 #: src/Views/AccountView.vala:362
 #, c-format
 msgid "Unable to name this device “%s”"
-msgstr ""
+msgstr "Kann dësen Apparat net »%s« nennen"
 
 #: src/Views/AccountView.vala:413
 msgid "Initial Setup could not set your hostname."
-msgstr ""
+msgstr "Den initialen Setup konnt Ären Hostnumm net astellen."
 
 #: src/Views/AccountView.vala:432
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
 msgstr ""
+"Den initialen Setup konnt dëse Kont net schafen. Ouni dat, kënnt Dir net "
+"aloggen an Dir musst vläicht den OS nei installéieren."
 
 #: src/Views/KeyboardLayoutView.vala:15
 msgid "Select Keyboard Layout"
-msgstr ""
+msgstr "Tastaturlayout wielen"
 
 #: src/Views/KeyboardLayoutView.vala:23
 msgid "Type to test your layout"
-msgstr ""
+msgstr "Typt fir Äre Layout ze testen"
 
 #: src/Views/KeyboardLayoutView.vala:26
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "Tastaturlayout weisen"
 
 #: src/Views/KeyboardLayoutView.vala:42 src/Views/LanguageView.vala:104
 #: src/Views/LanguageView.vala:179
 msgid "Select"
-msgstr ""
+msgstr "Auswielen"
 
 #: src/Views/KeyboardLayoutView.vala:111
 msgid "Input Language"
-msgstr ""
+msgstr "Input Sprooch"
 
 #: src/Views/LanguageView.vala:211
 msgid "Languages"
-msgstr ""
+msgstr "Sproochen"
 
 #: src/Views/LanguageView.vala:246
 msgid "Use the right mouse button for primary click?"
-msgstr ""
+msgstr "Benotzt déi riets Maus Knäppchen fir primär Klick?"
 
 #: src/Views/LanguageView.vala:247
 msgid ""
 "The right mouse button was used where a primary click was expected. You can "
 "choose to always use the right mouse button for primary click."
 msgstr ""
+"Déi riets Maus Knäppchen gouf benotzt wou e primäre Klick erwaart gouf. Dir "
+"kënnt wielen ëmmer de rietse Maus Knäppchen fir de primäre Klick ze benotzen."
 
 #: src/Views/LanguageView.vala:248 src/Views/LanguageView.vala:255
 msgid "Right-Click as Primary"
-msgstr ""
+msgstr "Riets-Klick als Primär"
 
 #: src/Views/LanguageView.vala:249 src/Views/LanguageView.vala:254
 msgid "Left-Click as Primary"
-msgstr ""
+msgstr "Lénks-Klick als Primär"
 
 #: src/Views/LanguageView.vala:252
 msgid "Use the left mouse button for primary click?"
-msgstr ""
+msgstr "Benotzt déi lénks Maus Knäppchen fir primär Klick?"
 
 #: src/Views/LanguageView.vala:253
 msgid ""
 "The left mouse button was used where a primary click was expected. You can "
 "choose to always use the left mouse button for primary click."
 msgstr ""
+"Déi lénks Maus Knäppchen gouf benotzt wou e primäre Klick erwaart gouf. Dir "
+"kënnt wielen ëmmer de lénkse Maus Knäppchen fir de primäre Klick ze benotzen."
 
 #: src/Views/LanguageView.vala:323
 msgid "Select a Language"
-msgstr ""
+msgstr "Sprooch wielen"
 
 #: src/Views/LanguageView.vala:347 src/Views/LanguageView.vala:407
 msgid "Currently active language"
-msgstr ""
+msgstr "Aktuell aktiv Sprooch"
 
 #: src/Views/NetworkView.vala:30
 msgid "Connect Network"
-msgstr ""
+msgstr "Mat Netzwierk verbannen"
 
 #: src/Views/NetworkView.vala:32
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
 msgstr ""
+"Eng Internetverbindung ass erfuerderlech fir Updates ze kréien, nei Apps "
+"z'installéieren a mat Online Servicer ze verbannen"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:42
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
-msgstr ""
+msgstr "Wielt en drahtlose Netzwierk aus dem Netzwierkindikator uewe riets."
 
 #: src/Views/NetworkView.vala:48
 msgid "Connect a network cable"
-msgstr ""
+msgstr "Netzwierkkabel verbannen"
 
 #: src/Views/NetworkView.vala:70
 msgid "Skip"
-msgstr ""
+msgstr "Iwwersprangen"
 
 #: src/Views/NetworkView.vala:86
 msgid "Next"
-msgstr ""
+msgstr "Weider"
 
 #~ msgid "translator-credits"
 #~ msgstr ""
