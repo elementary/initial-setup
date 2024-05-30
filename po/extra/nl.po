@@ -2,16 +2,16 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
-"PO-Revision-Date: 2023-02-28 04:25+0000\n"
-"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
-"Language-Team: Dutch <https://l10n.elementary.io/projects/installer/initial-"
-"setup-extra/nl/>\n"
+"PO-Revision-Date: 2024-05-31 19:13+0000\n"
+"Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
+"Language-Team: Dutch <https://l10n.elementary.io/projects/installer/"
+"initial-setup-extra/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.5\n"
 
 #: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
 msgid "Set up elementary OS"
@@ -45,11 +45,11 @@ msgstr "Verbeteringen:"
 
 #: data/initial-setup.metainfo.xml.in:51
 msgid "Improve screen reader labels for entries, pages, and buttons"
-msgstr ""
+msgstr "Verbeter schermlezer labels voor invoer, pagina's en knoppen"
 
 #: data/initial-setup.metainfo.xml.in:52
 msgid "Improve keyboard navigation"
-msgstr ""
+msgstr "Verbeter toetsenbordnavigatie"
 
 #: data/initial-setup.metainfo.xml.in:53 data/initial-setup.metainfo.xml.in:66
 #: data/initial-setup.metainfo.xml.in:79 data/initial-setup.metainfo.xml.in:88
@@ -59,7 +59,7 @@ msgstr "Bijgewerkte vertalingen"
 
 #: data/initial-setup.metainfo.xml.in:65
 msgid "Automatically prompt for screen reader after a timeout"
-msgstr ""
+msgstr "Prompt schermlezer automatisch na een time-out"
 
 #: data/initial-setup.metainfo.xml.in:75
 msgid "Use larger icons in views"
@@ -83,7 +83,7 @@ msgstr "Bied aan om te wisselen naar rechter-klik primaire muisknop"
 
 #: data/initial-setup.metainfo.xml.in:98
 msgid "Suggest connecting to a network"
-msgstr ""
+msgstr "Stel voor om verbinding te maken met een netwerk"
 
 #~ msgid "New features:"
 #~ msgstr "Nieuwe functionaliteit:"
