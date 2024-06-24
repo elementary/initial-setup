@@ -1,7 +1,7 @@
 project(
   'io.elementary.initial-setup',
   'vala', 'c',
-  version: '6.3.0',
+  version: '8.0.0',
 )
 
 add_global_arguments('-DGETTEXT_PACKAGE="' + meson.project_name() + '"', language:'c')

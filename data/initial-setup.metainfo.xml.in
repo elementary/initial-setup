@@ -15,13 +15,13 @@
 
   <screenshots>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/initial-setup/6.3.0/data/screenshot-language.png</image>
+      <image>https://raw.githubusercontent.com/elementary/initial-setup/8.0.0/data/screenshot-language.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/initial-setup/6.3.0/data/screenshot-keyboard.png</image>
+      <image>https://raw.githubusercontent.com/elementary/initial-setup/8.0.0/data/screenshot-keyboard.png</image>
     </screenshot>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/initial-setup/6.3.0/data/screenshot-user.png</image>
+      <image>https://raw.githubusercontent.com/elementary/initial-setup/8.0.0/data/screenshot-user.png</image>
     </screenshot>
   </screenshots>
 
@@ -44,7 +44,7 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
-    <release version="8.0.0" date="2024-05-08" urgency="medium">
+    <release version="8.0.0" date="2024-05-09" urgency="medium">
       <description>
         <p>Improvements:</p>
         <ul>
