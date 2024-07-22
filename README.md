@@ -15,7 +15,7 @@ You'll need the following dependencies:
 * libaccountsservice-dev
 * libgnomekbd-dev
 * libgtk-4-dev
-* libadwaita-1-dev
+* libadwaita-1-dev >= 1.4
 * libjson-glib-dev
 * libpwquality-dev
 * libxml2-dev

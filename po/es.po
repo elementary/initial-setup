@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-02 03:30+0000\n"
-"PO-Revision-Date: 2022-02-18 00:04+0000\n"
-"Last-Translator: Jose Manuel Hernandez Farias <ing.josemhf@gmail.com>\n"
+"POT-Creation-Date: 2024-05-09 17:07+0000\n"
+"PO-Revision-Date: 2024-06-11 15:16+0000\n"
+"Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/installer/"
 "initial-setup/es/>\n"
 "Language: es\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.5.5\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/Application.vala:39
@@ -50,21 +50,20 @@ msgstr "Confirmar contraseña"
 
 #: src/Views/AccountView.vala:117
 msgid "Device name"
-msgstr "Nombre del dispositivo"
+msgstr "Nombre del equipo"
 
 #: src/Views/AccountView.vala:120
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
-"Visible para otros dispositivos al compartir, p. Ej. con Bluetooth o en la "
+"Visible para otros dispositivos al compartir, p. ej. con Bluetooth o en la "
 "red."
 
 #: src/Views/AccountView.vala:130
-#, fuzzy, c-format
-#| msgid "Unable to set Hostname '%s'"
+#, c-format
 msgid "Unable to setup Hostname interface: %s"
-msgstr "No se puede establecer el nombre de host '%s'"
+msgstr "No se pudo establecer una interfaz con el nombre de host: «%s»"
 
 #: src/Views/AccountView.vala:161 src/Views/KeyboardLayoutView.vala:38
 #: src/Views/NetworkView.vala:66
@@ -81,49 +80,45 @@ msgstr "Las contraseñas no coinciden"
 
 #: src/Views/AccountView.vala:270
 msgid "The chosen username is already taken"
-msgstr "Este nombre de usuario ya está en uso"
+msgstr "El nombre de usuario ya está en uso"
 
 #: src/Views/AccountView.vala:272
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
-"El nombre de usuario puede contener solo letras minúsculas y números, sin "
+"El nombre de usuario solo puede contener letras minúsculas o números, sin "
 "espacios"
 
 #: src/Views/AccountView.vala:336
 #, c-format
 msgid "Creating an account for “%s” failed"
-msgstr ""
+msgstr "No se pudo crear una cuenta para «%s»"
 
 #: src/Views/AccountView.vala:343
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
-msgstr ""
+msgstr "No se tienen permisos para crear una cuenta para «%s»"
 
 #: src/Views/AccountView.vala:358
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
-msgstr ""
+msgstr "No se tienen permisos para nombrar «%s» a este equipo"
 
 #: src/Views/AccountView.vala:362
 #, c-format
 msgid "Unable to name this device “%s”"
-msgstr ""
+msgstr "No se pudo nombrar «%s» a este equipo"
 
 #: src/Views/AccountView.vala:413
 msgid "Initial Setup could not set your hostname."
-msgstr "La configuración inicial no pudo establecer su nombre de host."
+msgstr "Configuración Inicial no pudo establecer su nombre de host."
 
 #: src/Views/AccountView.vala:432
-#, fuzzy
-#| msgid ""
-#| "Initial Setup could not create your user. Without it, you will not be "
-#| "able to log in and may need to reinstall the OS."
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
 msgstr ""
-"La configuración inicial no pudo crear su cuenta de usuario. Sin esta, no "
+"Configuración Inicial no pudo crear una cuenta de usuario. Sin ella, no "
 "podrá acceder al sistema y quizá tenga que reinstalarlo."
 
 #: src/Views/KeyboardLayoutView.vala:15
@@ -132,11 +127,11 @@ msgstr "Seleccionar distribución del teclado"
 
 #: src/Views/KeyboardLayoutView.vala:23
 msgid "Type to test your layout"
-msgstr "Escriba para probar la disposición"
+msgstr "Escriba para probar la distribución"
 
 #: src/Views/KeyboardLayoutView.vala:26
 msgid "Show keyboard layout"
-msgstr "Mostrar disposición del teclado"
+msgstr "Mostrar distribución del teclado"
 
 #: src/Views/KeyboardLayoutView.vala:42 src/Views/LanguageView.vala:104
 #: src/Views/LanguageView.vala:179
@@ -153,14 +148,14 @@ msgstr "Idiomas"
 
 #: src/Views/LanguageView.vala:246
 msgid "Use the right mouse button for primary click?"
-msgstr "¿Usar el botón derecho del ratón para el clic principal?"
+msgstr "¿Usar el botón derecho del ratón como el clic principal?"
 
 #: src/Views/LanguageView.vala:247
 msgid ""
 "The right mouse button was used where a primary click was expected. You can "
 "choose to always use the right mouse button for primary click."
 msgstr ""
-"El botón derecho del ratón se uso donde se esperaba un clic principal. Puede "
+"El botón derecho del ratón se usará donde como el clic principal. Puede "
 "elegir usar siempre el botón derecho del ratón como clic principal."
 
 #: src/Views/LanguageView.vala:248 src/Views/LanguageView.vala:255
@@ -180,9 +175,8 @@ msgid ""
 "The left mouse button was used where a primary click was expected. You can "
 "choose to always use the left mouse button for primary click."
 msgstr ""
-"Se usó el botón izquierdo del ratón donde se esperaba un clic principal. "
-"Puede elegir usar siempre el botón izquierdo del ratón para el clic "
-"principal."
+"Se usará el botón izquierdo del ratón como el clic principal. Puede elegir "
+"usar siempre el botón izquierdo del ratón para el clic principal."
 
 #: src/Views/LanguageView.vala:323
 msgid "Select a Language"
@@ -193,10 +187,8 @@ msgid "Currently active language"
 msgstr "Idioma elegido actualmente"
 
 #: src/Views/NetworkView.vala:30
-#, fuzzy
-#| msgid "Connect to a Power Source"
 msgid "Connect Network"
-msgstr "Conectar a una fuente de alimentación"
+msgstr "Conectar a una red"
 
 #: src/Views/NetworkView.vala:32
 msgid ""
@@ -215,10 +207,8 @@ msgstr ""
 "superior derecha."
 
 #: src/Views/NetworkView.vala:48
-#, fuzzy
-#| msgid "Connect to a Power Source"
 msgid "Connect a network cable"
-msgstr "Conectar a una fuente de alimentación"
+msgstr "Conecte un cable de red"
 
 #: src/Views/NetworkView.vala:70
 msgid "Skip"

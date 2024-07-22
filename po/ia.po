@@ -1,53 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the io.elementary.initial-setup package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: io.elementary.initial-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
-"PO-Revision-Date: 2018-01-20 19:55+0000\n"
-"Last-Translator: Laurence Bahiirwa <laurence@mediauganda.com>\n"
-"Language-Team: Ganda <https://weblate.elementary.io/projects/installer/"
-"initial-setup/lg/>\n"
-"Language: lg\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
-"X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/Application.vala:39
-#, fuzzy
 msgid "Create a User"
-msgstr "Gula wo akawunti"
+msgstr ""
 
 #: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:170
 #, c-format
 msgid "%s…"
-msgstr "%s…"
+msgstr ""
 
 #: src/Objects/KeyboardVariant.vala:27
 msgid "Default"
-msgstr "Esokelwako"
+msgstr ""
 
 #: src/Views/AccountView.vala:56
 msgid "Create an Account"
-msgstr "Gula wo akawunti"
+msgstr ""
 
 #: src/Views/AccountView.vala:65
 msgid "Full Name"
-msgstr "Erinnya mu juvu"
+msgstr ""
 
 #: src/Views/AccountView.vala:71
 msgid "Username"
-msgstr "Erinnya eri kozebwa"
+msgstr ""
 
 #: src/Views/AccountView.vala:86
 msgid "Choose a Password"
-msgstr "Tekamu pasiwadi"
+msgstr ""
 
 #: src/Views/AccountView.vala:104
 msgid "Confirm Password"
-msgstr "Kakasa pasiwadi"
+msgstr ""
 
 #: src/Views/AccountView.vala:117
 msgid "Device name"
@@ -67,26 +67,24 @@ msgstr ""
 #: src/Views/AccountView.vala:161 src/Views/KeyboardLayoutView.vala:38
 #: src/Views/NetworkView.vala:66
 msgid "Back"
-msgstr "Emabegga"
+msgstr ""
 
 #: src/Views/AccountView.vala:165
 msgid "Finish Setup"
-msgstr "Maliriza okutegekka Sofutiweya"
+msgstr ""
 
 #: src/Views/AccountView.vala:245
 msgid "Passwords do not match"
-msgstr "Pasiwadi tezifanana"
+msgstr ""
 
 #: src/Views/AccountView.vala:270
-#, fuzzy
 msgid "The chosen username is already taken"
-msgstr "Londa erinnya eddala"
+msgstr ""
 
 #: src/Views/AccountView.vala:272
-#, fuzzy
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
-msgstr "Erinnya liyina kubeera mu ennyukuta entono n'enamba nga temuli mabanga"
+msgstr ""
 
 #: src/Views/AccountView.vala:336
 #, c-format
@@ -119,31 +117,29 @@ msgid ""
 msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:15
-#, fuzzy
-#| msgid "Keyboard Layout"
 msgid "Select Keyboard Layout"
-msgstr "Empanga ya kiboodi"
+msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:23
 msgid "Type to test your layout"
-msgstr "Nnyiga ennyukuta okugezessa kiboodi yo"
+msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:26
 msgid "Show keyboard layout"
-msgstr "Lagga empanga ya kiboodi"
+msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:42 src/Views/LanguageView.vala:104
 #: src/Views/LanguageView.vala:179
 msgid "Select"
-msgstr "Londa"
+msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:111
 msgid "Input Language"
-msgstr "Olulimi olukozesebwa"
+msgstr ""
 
 #: src/Views/LanguageView.vala:211
 msgid "Languages"
-msgstr "Enimi"
+msgstr ""
 
 #: src/Views/LanguageView.vala:246
 msgid "Use the right mouse button for primary click?"
@@ -175,11 +171,11 @@ msgstr ""
 
 #: src/Views/LanguageView.vala:323
 msgid "Select a Language"
-msgstr "Londa olulimi"
+msgstr ""
 
 #: src/Views/LanguageView.vala:347 src/Views/LanguageView.vala:407
 msgid "Currently active language"
-msgstr "Olulimi olulikozesebwa"
+msgstr ""
 
 #: src/Views/NetworkView.vala:30
 msgid "Connect Network"
@@ -208,30 +204,3 @@ msgstr ""
 #: src/Views/NetworkView.vala:86
 msgid "Next"
 msgstr ""
-
-#~ msgid "Cancel Installation"
-#~ msgstr "Sazzamu Okutekako Sofutiweya"
-
-#~ msgid "Set up %s"
-#~ msgstr "Terezza %s"
-
-#~ msgid "Operating System"
-#~ msgstr "Sofutiweya wa kompyuta"
-
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "Launchpad Contributions:\n"
-#~ "  Christian Berkman https://launchpad.net/~christianberkman\n"
-#~ "  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount"
-
-#~ msgid "History"
-#~ msgstr "Ebyafaayo"
-
-#~ msgid "Result"
-#~ msgstr "Okuddamu"
-
-#~ msgid "Close"
-#~ msgstr "Ggalawo"
-
-#~ msgid "Add"
-#~ msgstr "Okugatta"

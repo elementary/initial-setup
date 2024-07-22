@@ -12,7 +12,9 @@ public class KeyboardLayoutView : AbstractInstallerView {
             valign = Gtk.Align.END
         };
 
-        var title_label = new Gtk.Label (_("Select Keyboard Layout"));
+        title = _("Select Keyboard Layout");
+
+        var title_label = new Gtk.Label (title);
 
         input_variant_widget = new VariantWidget ();
 
@@ -80,7 +82,7 @@ public class KeyboardLayoutView : AbstractInstallerView {
             }
         });
 
-        back_button.clicked.connect (() => ((Adw.Leaflet) get_parent ()).navigate (BACK));
+        back_button.clicked.connect (() => ((Adw.NavigationView) get_parent ()).pop ());
 
         next_button.clicked.connect (() => {
             unowned var vrow = input_variant_widget.variant_listbox.get_selected_row ();
@@ -138,7 +140,7 @@ public class KeyboardLayoutView : AbstractInstallerView {
         });
 
 
-        Idle.add (() => {
+        Idle.add_once (() => {
             unowned string? country = Configuration.get_default ().country;
             if (country != null) {
                 var default_layout = country.down ();

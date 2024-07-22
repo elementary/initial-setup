@@ -27,7 +27,9 @@ public class Installer.NetworkView : AbstractInstallerView {
             valign = Gtk.Align.END
         };
 
-        var title_label = new Gtk.Label (_("Connect Network"));
+        title = _("Connect Network");
+
+        var title_label = new Gtk.Label (title);
 
         var details_label = new Gtk.Label (_("An Internet connection is required to receive updates, install new apps, and connect to online services")) {
             hexpand = true,
@@ -73,7 +75,7 @@ public class Installer.NetworkView : AbstractInstallerView {
         action_area.append (back_button);
         action_area.append (skip_button);
 
-        back_button.clicked.connect (() => ((Adw.Leaflet) get_parent ()).navigate (Adw.NavigationDirection.BACK));
+        back_button.clicked.connect (() => ((Adw.NavigationView) get_parent ()).pop ());
         skip_button.clicked.connect (() => (next_step ()));
 
         network_monitor = NetworkMonitor.get_default ();
@@ -94,10 +96,8 @@ public class Installer.NetworkView : AbstractInstallerView {
                 valign = Gtk.Align.START
             };
             image.add_css_class (Granite.STYLE_CLASS_LARGE_ICONS);
-
-            unowned var image_context = image.get_style_context ();
-            image_context.add_class (Granite.STYLE_CLASS_ACCENT);
-            image_context.add_class (color);
+            image.add_css_class (Granite.STYLE_CLASS_ACCENT);
+            image.add_css_class (color);
 
             var description_label = new Gtk.Label (description) {
                 hexpand = true,

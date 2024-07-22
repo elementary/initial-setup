@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-02 03:30+0000\n"
-"PO-Revision-Date: 2021-09-29 21:46+0000\n"
-"Last-Translator: Alvaro <alvaroaraoz_92@hotmail.com>\n"
+"POT-Creation-Date: 2024-05-09 17:07+0000\n"
+"PO-Revision-Date: 2024-06-11 15:16+0000\n"
+"Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/es/>\n"
 "Language: es\n"
@@ -17,20 +17,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.5.5\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
 #: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
 msgid "Set up elementary OS"
-msgstr "Configurar elementary OS"
+msgstr "Configuración Inicial de elementary OS"
 
 #: data/initial-setup.desktop.in:4
 msgid "Set up the system"
-msgstr "Configurar el sistema"
+msgstr "Configura el sistema"
 
 #: data/initial-setup.metainfo.xml.in:10
 msgid "Initial Setup"
-msgstr "Configuración inicial"
+msgstr "Configuración Inicial"
 
 #: data/initial-setup.metainfo.xml.in:13
 msgid ""
@@ -40,52 +40,63 @@ msgstr ""
 "Ayuda con tareas esenciales antes de que se pueda utilizar una instalación "
 "nueva, como escoger un idioma y crear una cuenta de usuario."
 
-#: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:59
-#: data/initial-setup.metainfo.xml.in:72 data/initial-setup.metainfo.xml.in:81
-#: data/initial-setup.metainfo.xml.in:92
+#: data/initial-setup.metainfo.xml.in:41
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:63
+#: data/initial-setup.metainfo.xml.in:73 data/initial-setup.metainfo.xml.in:86
+#: data/initial-setup.metainfo.xml.in:95
 msgid "Improvements:"
-msgstr ""
+msgstr "Mejoras:"
 
 #: data/initial-setup.metainfo.xml.in:51
+msgid "Improve screen reader labels for entries, pages, and buttons"
+msgstr ""
+"Se han mejorado las etiquetas de las entradas, páginas y botones para los "
+"lectores de pantalla"
+
+#: data/initial-setup.metainfo.xml.in:52
+msgid "Improve keyboard navigation"
+msgstr "Se ha mejorador la navegación con el teclado"
+
+#: data/initial-setup.metainfo.xml.in:53 data/initial-setup.metainfo.xml.in:66
+#: data/initial-setup.metainfo.xml.in:79 data/initial-setup.metainfo.xml.in:88
+#: data/initial-setup.metainfo.xml.in:99
+msgid "Updated translations"
+msgstr "Traducciones actualizadas"
+
+#: data/initial-setup.metainfo.xml.in:65
 msgid "Automatically prompt for screen reader after a timeout"
 msgstr ""
+"Se solicita automáticamente por un lector de pantalla después de un límite "
+"de tiempo"
 
-#: data/initial-setup.metainfo.xml.in:52 data/initial-setup.metainfo.xml.in:65
-#: data/initial-setup.metainfo.xml.in:74 data/initial-setup.metainfo.xml.in:85
-#: data/initial-setup.metainfo.xml.in:95
-msgid "Updated translations"
-msgstr ""
-
-#: data/initial-setup.metainfo.xml.in:61
+#: data/initial-setup.metainfo.xml.in:75
 msgid "Use larger icons in views"
-msgstr ""
+msgstr "Se usan íconos más grandes en las vistas"
 
-#: data/initial-setup.metainfo.xml.in:62
+#: data/initial-setup.metainfo.xml.in:76
 msgid "Make window resizable"
-msgstr ""
+msgstr "La ventana ahora es redimensionable"
 
-#: data/initial-setup.metainfo.xml.in:63
+#: data/initial-setup.metainfo.xml.in:77
 msgid "Show keyboard layouts in a separate window"
-msgstr ""
+msgstr "Se muestran las distribuciones de teclado en una ventana separada"
 
-#: data/initial-setup.metainfo.xml.in:64
+#: data/initial-setup.metainfo.xml.in:78
 msgid "Allow hyphens in device names"
-msgstr ""
+msgstr "Ahora se permiten guiones para los nombres de equipos"
 
-#: data/initial-setup.metainfo.xml.in:83
+#: data/initial-setup.metainfo.xml.in:97
 msgid "Offer to switch to right-click primary mouse button"
 msgstr ""
+"Ahora se ofrece cambiar el clic principal del mouse al botón izquierdo o "
+"derecho"
 
-#: data/initial-setup.metainfo.xml.in:84
+#: data/initial-setup.metainfo.xml.in:98
 msgid "Suggest connecting to a network"
-msgstr ""
-
-#: data/initial-setup.metainfo.xml.in:94
-msgid "Avoid political naming of certain locales"
-msgstr ""
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
+msgstr "Ahora se sugiere conectarse a una red"
 
 #~ msgid "New features:"
 #~ msgstr "Nuevas características:"

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-02 03:30+0000\n"
-"PO-Revision-Date: 2024-02-12 08:11+0000\n"
+"POT-Creation-Date: 2024-05-09 17:07+0000\n"
+"PO-Revision-Date: 2024-06-20 12:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ja/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.5.5\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/Application.vala:39
@@ -91,22 +91,22 @@ msgstr ""
 #: src/Views/AccountView.vala:336
 #, c-format
 msgid "Creating an account for “%s” failed"
-msgstr "アカウント “%s” を作成できませんでした"
+msgstr "アカウント“%s”を作成できませんでした"
 
 #: src/Views/AccountView.vala:343
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
-msgstr "アカウント “%s” の作成に必要な権限を取得できませんでした"
+msgstr "アカウント“%s”の作成に必要な権限を取得できませんでした"
 
 #: src/Views/AccountView.vala:358
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
-msgstr "このデバイス名を “%s” に設定するのに必要な権限を取得できませんでした"
+msgstr "このデバイス名を“%s”に設定するのに必要な権限を取得できませんでした"
 
 #: src/Views/AccountView.vala:362
 #, c-format
 msgid "Unable to name this device “%s”"
-msgstr "このデバイス名を “%s” に設定できませんでした"
+msgstr "このデバイス名を“%s”に設定できませんでした"
 
 #: src/Views/AccountView.vala:413
 msgid "Initial Setup could not set your hostname."

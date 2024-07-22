@@ -53,7 +53,9 @@ public class Installer.AccountView : AbstractInstallerView {
             valign = END
         };
 
-        var title_label = new Gtk.Label (_("Create an Account")) {
+        title = _("Create an Account");
+
+        var title_label = new Gtk.Label (title) {
             mnemonic_widget = this
         };
 
@@ -171,7 +173,7 @@ public class Installer.AccountView : AbstractInstallerView {
         action_area.append (back_button);
         action_area.append (finish_button);
 
-        back_button.clicked.connect (() => ((Adw.Leaflet) get_parent ()).navigate (BACK));
+        back_button.clicked.connect (() => ((Adw.NavigationView) get_parent ()).pop ());
 
         realname_entry.changed.connect (() => {
             var username = gen_username (realname_entry.text);
@@ -509,7 +511,7 @@ public class Installer.AccountView : AbstractInstallerView {
                 wrap = true,
                 xalign = 1
             };
-            label_widget.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
+            label_widget.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
             var revealer = new Gtk.Revealer () {
                 child = label_widget,
