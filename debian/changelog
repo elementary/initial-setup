@@ -1,3 +1,9 @@
+io.elementary.initial-setup (8.0.0) noble; urgency=medium
+
+  * Release 8.0.0
+
+ -- Danielle Foré <danielle@elementary.io>  Fri, 26 Jul 2024 09:59:23 -0700
+
 io.elementary.initial-setup (6.3.0) jammy; urgency=medium
 
   * Release 6.3.0
