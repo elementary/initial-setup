@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
 "PO-Revision-Date: 2024-08-16 19:06+0000\n"
-"Last-Translator: Neylson Soares <neylsonsoarest+weblate@gmail.com>\n"
+"Last-Translator: Gilmar do Couto Borges <gilmarcborges@hotmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "installer/initial-setup/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -92,7 +92,7 @@ msgstr ""
 #: src/Views/AccountView.vala:336
 #, c-format
 msgid "Creating an account for “%s” failed"
-msgstr ""
+msgstr "Criação da conta para \"%s\" falhou"
 
 #: src/Views/AccountView.vala:343
 #, c-format
