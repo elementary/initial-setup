@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
-"PO-Revision-Date: 2019-10-25 15:24+0000\n"
-"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
+"PO-Revision-Date: 2024-08-16 19:18+0000\n"
+"Last-Translator: Stéfany Larissa <stelar.dev@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "installer/initial-setup-extra/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
 #: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
@@ -48,7 +48,7 @@ msgstr "elementary, Inc."
 #: data/initial-setup.metainfo.xml.in:73 data/initial-setup.metainfo.xml.in:86
 #: data/initial-setup.metainfo.xml.in:95
 msgid "Improvements:"
-msgstr ""
+msgstr "Melhorias:"
 
 #: data/initial-setup.metainfo.xml.in:51
 msgid "Improve screen reader labels for entries, pages, and buttons"
@@ -62,7 +62,7 @@ msgstr ""
 #: data/initial-setup.metainfo.xml.in:79 data/initial-setup.metainfo.xml.in:88
 #: data/initial-setup.metainfo.xml.in:99
 msgid "Updated translations"
-msgstr ""
+msgstr "Traduções atualizadas"
 
 #: data/initial-setup.metainfo.xml.in:65
 msgid "Automatically prompt for screen reader after a timeout"
@@ -70,19 +70,19 @@ msgstr ""
 
 #: data/initial-setup.metainfo.xml.in:75
 msgid "Use larger icons in views"
-msgstr ""
+msgstr "Usar ícones maiores nas visualizações"
 
 #: data/initial-setup.metainfo.xml.in:76
 msgid "Make window resizable"
-msgstr ""
+msgstr "Tornar janela redimensionável"
 
 #: data/initial-setup.metainfo.xml.in:77
 msgid "Show keyboard layouts in a separate window"
-msgstr ""
+msgstr "Mostrar layouts de teclado em uma janela separada"
 
 #: data/initial-setup.metainfo.xml.in:78
 msgid "Allow hyphens in device names"
-msgstr ""
+msgstr "Permitir hífens em nomes de dispositivos"
 
 #: data/initial-setup.metainfo.xml.in:97
 msgid "Offer to switch to right-click primary mouse button"
