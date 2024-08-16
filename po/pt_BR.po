@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
 "PO-Revision-Date: 2024-08-16 19:08+0000\n"
-"Last-Translator: José Rafael <jrafaeldesantana@gmail.com>\n"
+"Last-Translator: Gilmar do Couto Borges <gilmarcborges@hotmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "installer/initial-setup/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -149,7 +149,7 @@ msgstr "Idiomas"
 
 #: src/Views/LanguageView.vala:246
 msgid "Use the right mouse button for primary click?"
-msgstr ""
+msgstr "Usar o botão direito do mouse para clique primário?"
 
 #: src/Views/LanguageView.vala:247
 msgid ""
