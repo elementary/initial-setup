@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
-"PO-Revision-Date: 2024-08-16 19:06+0000\n"
+"PO-Revision-Date: 2024-08-16 19:08+0000\n"
 "Last-Translator: José Rafael <jrafaeldesantana@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "installer/initial-setup/pt_BR/>\n"
@@ -111,20 +111,16 @@ msgstr "Não foi possível nomear este dispositivo como “%s”"
 
 #: src/Views/AccountView.vala:413
 msgid "Initial Setup could not set your hostname."
-msgstr "A Configuração Inicial não conseguiu definir o seu nome do host."
+msgstr "O instalador não conseguiu definir o seu nome do host."
 
 #: src/Views/AccountView.vala:432
-#, fuzzy
-#| msgid ""
-#| "Initial Setup could not create your user. Without it, you will not be "
-#| "able to log in and may need to reinstall the OS."
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
 msgstr ""
-"A Configuração Inicial não pode criar seu usuário. Sem ele, você não poderá "
-"iniciar uma sessão e é possível que necessite reinstalar o Sistema "
-"Operacional."
+"O instalador não conseguiu criar esta conta. Sem ele, você não poderá "
+"iniciar uma sessão e é possível que necessite reinstalar o sistema "
+"operacional."
 
 #: src/Views/KeyboardLayoutView.vala:15
 msgid "Select Keyboard Layout"
