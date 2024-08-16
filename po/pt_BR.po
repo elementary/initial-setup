@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
-"PO-Revision-Date: 2024-08-16 19:05+0000\n"
-"Last-Translator: Gilmar do Couto Borges <gilmarcborges@hotmail.com>\n"
+"PO-Revision-Date: 2024-08-16 19:06+0000\n"
+"Last-Translator: Neylson Soares <neylsonsoarest+weblate@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "installer/initial-setup/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -63,7 +63,7 @@ msgstr ""
 #: src/Views/AccountView.vala:130
 #, c-format
 msgid "Unable to setup Hostname interface: %s"
-msgstr ""
+msgstr "Não foi possível configurar a interface do nome da máquina: %s"
 
 #: src/Views/AccountView.vala:161 src/Views/KeyboardLayoutView.vala:38
 #: src/Views/NetworkView.vala:66
@@ -97,17 +97,17 @@ msgstr ""
 #: src/Views/AccountView.vala:343
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
-msgstr ""
+msgstr "Não foi possível obter permissão para criar uma conta para “%s”"
 
 #: src/Views/AccountView.vala:358
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
-msgstr ""
+msgstr "Não foi possível obter permissão para nomear este dispositivo como “%s”"
 
 #: src/Views/AccountView.vala:362
 #, c-format
 msgid "Unable to name this device “%s”"
-msgstr ""
+msgstr "Não foi possível nomear este dispositivo como “%s”"
 
 #: src/Views/AccountView.vala:413
 msgid "Initial Setup could not set your hostname."
