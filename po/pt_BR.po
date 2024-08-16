@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
 "PO-Revision-Date: 2024-08-16 19:05+0000\n"
-"Last-Translator: Diogo Pessoa <diogopessoabr@gmail.com>\n"
+"Last-Translator: Gilmar do Couto Borges <gilmarcborges@hotmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "installer/initial-setup/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -57,6 +57,8 @@ msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
+"Visível para outros dispositivos quando compartilhar, exemplo por Bluetooth "
+"ou na rede."
 
 #: src/Views/AccountView.vala:130
 #, c-format
