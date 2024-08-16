@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
 "PO-Revision-Date: 2024-08-16 19:18+0000\n"
-"Last-Translator: Stéfany Larissa <stelar.dev@gmail.com>\n"
+"Last-Translator: José Rafael <jrafaeldesantana@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "installer/initial-setup-extra/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -52,11 +52,11 @@ msgstr "Melhorias:"
 
 #: data/initial-setup.metainfo.xml.in:51
 msgid "Improve screen reader labels for entries, pages, and buttons"
-msgstr ""
+msgstr "Melhoria na leitura de tela para páginas e botões"
 
 #: data/initial-setup.metainfo.xml.in:52
 msgid "Improve keyboard navigation"
-msgstr ""
+msgstr "Melhoria na navegação por teclado"
 
 #: data/initial-setup.metainfo.xml.in:53 data/initial-setup.metainfo.xml.in:66
 #: data/initial-setup.metainfo.xml.in:79 data/initial-setup.metainfo.xml.in:88
@@ -66,7 +66,7 @@ msgstr "Traduções atualizadas"
 
 #: data/initial-setup.metainfo.xml.in:65
 msgid "Automatically prompt for screen reader after a timeout"
-msgstr ""
+msgstr "Solicita automaticamente para o leitor de tela após um tempo limite"
 
 #: data/initial-setup.metainfo.xml.in:75
 msgid "Use larger icons in views"
@@ -87,10 +87,12 @@ msgstr "Permitir hífens em nomes de dispositivos"
 #: data/initial-setup.metainfo.xml.in:97
 msgid "Offer to switch to right-click primary mouse button"
 msgstr ""
+"Oferece a possibilidade de selecionar o botão direito do mouse como clique "
+"primário"
 
 #: data/initial-setup.metainfo.xml.in:98
 msgid "Suggest connecting to a network"
-msgstr ""
+msgstr "Sugere conexão com a rede"
 
 #, fuzzy
 #~| msgid "Translation updates"
