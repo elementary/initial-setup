@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
-"PO-Revision-Date: 2024-06-20 12:16+0000\n"
+"PO-Revision-Date: 2024-09-01 01:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/installer/"
 "initial-setup/ja/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/Application.vala:39
@@ -126,7 +126,7 @@ msgstr "キーボードレイアウトを選択"
 
 #: src/Views/KeyboardLayoutView.vala:23
 msgid "Type to test your layout"
-msgstr "入力してレイアウトを試してください"
+msgstr "入力してレイアウトを確認"
 
 #: src/Views/KeyboardLayoutView.vala:26
 msgid "Show keyboard layout"
