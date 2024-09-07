@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
-"PO-Revision-Date: 2022-02-13 19:31+0000\n"
-"Last-Translator: Tommy Chiang <ty1208chiang@gmail.com>\n"
+"PO-Revision-Date: 2024-09-07 17:04+0000\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "installer/initial-setup/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
 #: src/Application.vala:39
@@ -56,13 +56,12 @@ msgstr "裝置名稱"
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
-msgstr ""
+msgstr "藉由藍牙或網路分享時其他裝置所看到的名字。"
 
 #: src/Views/AccountView.vala:130
-#, fuzzy, c-format
-#| msgid "Unable to set Hostname '%s'"
+#, c-format
 msgid "Unable to setup Hostname interface: %s"
-msgstr "無法設定主機名稱「%s」"
+msgstr "無法設定主機名稱介面：%s"
 
 #: src/Views/AccountView.vala:161 src/Views/KeyboardLayoutView.vala:38
 #: src/Views/NetworkView.vala:66
@@ -89,38 +88,33 @@ msgstr "使用者名稱只可由小寫英文字母及數字組成，並且不能
 #: src/Views/AccountView.vala:336
 #, c-format
 msgid "Creating an account for “%s” failed"
-msgstr ""
+msgstr "建立帳號「%s」失敗了"
 
 #: src/Views/AccountView.vala:343
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
-msgstr ""
+msgstr "無法取得權限以建立「%s」的帳號"
 
 #: src/Views/AccountView.vala:358
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
-msgstr ""
+msgstr "無法取得權限以將此裝置命名為「%s」"
 
 #: src/Views/AccountView.vala:362
 #, c-format
 msgid "Unable to name this device “%s”"
-msgstr ""
+msgstr "無法將此裝置命名為「%s」"
 
 #: src/Views/AccountView.vala:413
 msgid "Initial Setup could not set your hostname."
-msgstr "初始化安裝無法設定您的主機名稱。"
+msgstr "《初始化安裝》無法設定您的主機名稱。"
 
 #: src/Views/AccountView.vala:432
-#, fuzzy
-#| msgid ""
-#| "Initial Setup could not create your user. Without it, you will not be "
-#| "able to log in and may need to reinstall the OS."
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
-msgstr ""
-"Initial Setup 未能建立你的帳號。在此情況下，您將不能登入，並可能需要重新安裝"
-"作業系統。"
+msgstr "《初始化安裝》未能建立此帳號。在此情況下，您將無法登入，並可能需要重新安裝作"
+"業系統。"
 
 #: src/Views/KeyboardLayoutView.vala:15
 msgid "Select Keyboard Layout"
@@ -149,31 +143,33 @@ msgstr "語言"
 
 #: src/Views/LanguageView.vala:246
 msgid "Use the right mouse button for primary click?"
-msgstr ""
+msgstr "要使用滑鼠右鍵進行主要點擊嗎？"
 
 #: src/Views/LanguageView.vala:247
 msgid ""
 "The right mouse button was used where a primary click was expected. You can "
 "choose to always use the right mouse button for primary click."
-msgstr ""
+msgstr "您在預期進行主要點擊的地方按下了滑鼠右鍵。您可以選擇總是使用滑鼠右鍵進行主要"
+"點擊。"
 
 #: src/Views/LanguageView.vala:248 src/Views/LanguageView.vala:255
 msgid "Right-Click as Primary"
-msgstr ""
+msgstr "右鍵為主要"
 
 #: src/Views/LanguageView.vala:249 src/Views/LanguageView.vala:254
 msgid "Left-Click as Primary"
-msgstr ""
+msgstr "左鍵為主要"
 
 #: src/Views/LanguageView.vala:252
 msgid "Use the left mouse button for primary click?"
-msgstr ""
+msgstr "要使用滑鼠左鍵進行主要點擊嗎？"
 
 #: src/Views/LanguageView.vala:253
 msgid ""
 "The left mouse button was used where a primary click was expected. You can "
 "choose to always use the left mouse button for primary click."
-msgstr ""
+msgstr "您在預期進行主要點擊的地方按下了滑鼠左鍵。您可以選擇總是使用滑鼠左鍵進行主要"
+"點擊。"
 
 #: src/Views/LanguageView.vala:323
 msgid "Select a Language"
@@ -191,13 +187,13 @@ msgstr "連接網路"
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
-msgstr ""
+msgstr "需要網際網路連線才能接收更新、安裝新應用程式，或連線至線上服務"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:42
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
-msgstr ""
+msgstr "從右上角的網路指示器選擇一個附近的無線網路。"
 
 #: src/Views/NetworkView.vala:48
 msgid "Connect a network cable"
@@ -205,11 +201,11 @@ msgstr "連接網路線"
 
 #: src/Views/NetworkView.vala:70
 msgid "Skip"
-msgstr ""
+msgstr "略過"
 
 #: src/Views/NetworkView.vala:86
 msgid "Next"
-msgstr ""
+msgstr "繼續"
 
 #, c-format
 #~ msgid "No Permission to set hostname '%s'"
