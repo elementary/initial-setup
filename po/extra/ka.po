@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
-"PO-Revision-Date: 2023-12-22 19:36+0000\n"
+"PO-Revision-Date: 2024-09-12 22:16+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/ka/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
 msgid "Set up elementary OS"
@@ -46,10 +46,12 @@ msgstr "გაუმჯობესებები:"
 #: data/initial-setup.metainfo.xml.in:51
 msgid "Improve screen reader labels for entries, pages, and buttons"
 msgstr ""
+"ეკრანის წამკითხველის ჭდეების გაუმჯობესება ელემენტებისთვის, გვერდებისთვის და "
+"ღილაკებისთვის"
 
 #: data/initial-setup.metainfo.xml.in:52
 msgid "Improve keyboard navigation"
-msgstr ""
+msgstr "კლავიატურით ნავიგაციის გაუმჯობესება"
 
 #: data/initial-setup.metainfo.xml.in:53 data/initial-setup.metainfo.xml.in:66
 #: data/initial-setup.metainfo.xml.in:79 data/initial-setup.metainfo.xml.in:88
