@@ -3,17 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
-"PO-Revision-Date: 2023-01-31 10:25+0000\n"
-"Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
-"Language-Team: Polish <https://l10n.elementary.io/projects/installer/initial-"
-"setup/pl/>\n"
+"PO-Revision-Date: 2024-09-23 10:39+0000\n"
+"Last-Translator: Marcin Serwin <marcin@serwin.dev>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/installer/"
+"initial-setup/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/Application.vala:39
@@ -69,7 +69,7 @@ msgstr "Nie można ustawić interfejsu nazwy hosta: %s"
 #: src/Views/AccountView.vala:161 src/Views/KeyboardLayoutView.vala:38
 #: src/Views/NetworkView.vala:66
 msgid "Back"
-msgstr "Cofnij"
+msgstr "Wróć"
 
 #: src/Views/AccountView.vala:165
 msgid "Finish Setup"
