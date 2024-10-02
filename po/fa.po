@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
-"PO-Revision-Date: 2024-09-30 16:16+0000\n"
+"PO-Revision-Date: 2024-10-03 21:16+0000\n"
 "Last-Translator: Hossein <hossein17@duck.com>\n"
 "Language-Team: Persian <https://l10n.elementary.io/projects/installer/"
 "initial-setup/fa/>\n"
@@ -76,7 +76,7 @@ msgstr "اتمام نصب"
 
 #: src/Views/AccountView.vala:245
 msgid "Passwords do not match"
-msgstr "رمز عبور یکسان نمیباشد"
+msgstr "رمزهای عبور مطابقت ندارند"
 
 #: src/Views/AccountView.vala:270
 msgid "The chosen username is already taken"
