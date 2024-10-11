@@ -22,7 +22,7 @@ json_glib_dep = dependency('json-glib-1.0')
 polkit_dep = dependency('polkit-gobject-1')
 posix_dep = meson.get_compiler('vala').find_library('posix')
 pwquality_dep = dependency('pwquality')
-xml2_dep = dependency('libxml-2.0')
+xkbregistry_dep = dependency('xkbregistry')
 
 dependencies = [
     accountservice_dep,
@@ -36,7 +36,7 @@ dependencies = [
     polkit_dep,
     posix_dep,
     pwquality_dep,
-    xml2_dep,
+    xkbregistry_dep,
 ]
 
 subdir('po')
