@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 18:14+0000\n"
-"PO-Revision-Date: 2022-11-11 14:29+0000\n"
+"POT-Creation-Date: 2024-05-09 17:07+0000\n"
+"PO-Revision-Date: 2024-05-14 09:13+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/uk/>\n"
@@ -16,29 +16,24 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.14.2\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
-#: data/io.elementary.initial-setup.desktop.in:3
-#: data/io.elementary.initial-setup.appdata.xml.in:8
+#: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
 msgid "Set up elementary OS"
 msgstr "Встановити elementary OS"
 
-#: data/io.elementary.initial-setup.desktop.in:4
+#: data/initial-setup.desktop.in:4
 msgid "Set up the system"
 msgstr "Встановити систему"
 
-#: data/io.elementary.initial-setup.desktop.in:6
-msgid "io.elementary.initial-setup"
-msgstr "io.elementary.initial-setup"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:7
+#: data/initial-setup.metainfo.xml.in:10
 msgid "Initial Setup"
 msgstr "Початкове налаштування"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:10
+#: data/initial-setup.metainfo.xml.in:13
 msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
@@ -46,73 +41,80 @@ msgstr ""
 "Допомагає виконати основні завдання, перш ніж нова установка стане придатною "
 "для вжитку, наприклад, вибір мови та створення облікового запису користувача."
 
-#: data/io.elementary.initial-setup.appdata.xml.in:30
-#: data/io.elementary.initial-setup.appdata.xml.in:43
-#: data/io.elementary.initial-setup.appdata.xml.in:52
-#: data/io.elementary.initial-setup.appdata.xml.in:63
-msgid "Improvements:"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:32
-msgid "Use larger icons in views"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:33
-msgid "Make window resizable"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:34
-#, fuzzy
-#| msgid "Set keyboard layout in accountsservice"
-msgid "Show keyboard layouts in a separate window"
-msgstr "Установлення розкладки клавіатури в службі облікових записів"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:35
-msgid "Allow hyphens in device names"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:36
-#: data/io.elementary.initial-setup.appdata.xml.in:45
-#: data/io.elementary.initial-setup.appdata.xml.in:56
-#: data/io.elementary.initial-setup.appdata.xml.in:66
-msgid "Updated translations"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:54
-msgid "Offer to switch to right-click primary mouse button"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:55
-msgid "Suggest connecting to a network"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:65
-msgid "Avoid political naming of certain locales"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:73
-msgid "New features:"
-msgstr "Нові можливості:"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:75
-msgid "Confirm and change device name"
-msgstr "Підтвердити та змінити назву пристрою"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:76
-msgid "Two-finger swipe to navigate back"
-msgstr "Проведення двома пальцями, щоб перейти назад"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:78
-msgid "Minor updates:"
-msgstr "Незначні оновлення:"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:80
-msgid "Translation updates"
-msgstr "Оновлено переклади"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:89
+#: data/initial-setup.metainfo.xml.in:41
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
+
+#: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:63
+#: data/initial-setup.metainfo.xml.in:73 data/initial-setup.metainfo.xml.in:86
+#: data/initial-setup.metainfo.xml.in:95
+msgid "Improvements:"
+msgstr "Удосконалення:"
+
+#: data/initial-setup.metainfo.xml.in:51
+msgid "Improve screen reader labels for entries, pages, and buttons"
+msgstr ""
+"Удосконалення міток для зчитування з екрана для записів, сторінок і кнопок"
+
+#: data/initial-setup.metainfo.xml.in:52
+msgid "Improve keyboard navigation"
+msgstr "Покращення навігації клавіатурою"
+
+#: data/initial-setup.metainfo.xml.in:53 data/initial-setup.metainfo.xml.in:66
+#: data/initial-setup.metainfo.xml.in:79 data/initial-setup.metainfo.xml.in:88
+#: data/initial-setup.metainfo.xml.in:99
+msgid "Updated translations"
+msgstr "Оновлено переклади"
+
+#: data/initial-setup.metainfo.xml.in:65
+msgid "Automatically prompt for screen reader after a timeout"
+msgstr ""
+"Автоматичний запит на зчитування з екрана після завершення часу очікування"
+
+#: data/initial-setup.metainfo.xml.in:75
+msgid "Use larger icons in views"
+msgstr "Збільшені піктограми у поданнях"
+
+#: data/initial-setup.metainfo.xml.in:76
+msgid "Make window resizable"
+msgstr "Вікно змінюваного розміру"
+
+#: data/initial-setup.metainfo.xml.in:77
+msgid "Show keyboard layouts in a separate window"
+msgstr "Показ розкладок клавіатури в окремому вікні"
+
+#: data/initial-setup.metainfo.xml.in:78
+msgid "Allow hyphens in device names"
+msgstr "Дозволено дефіс у назвах пристроїв"
+
+#: data/initial-setup.metainfo.xml.in:97
+msgid "Offer to switch to right-click primary mouse button"
+msgstr "Пропозиція змінити основну кнопку миші на праву"
+
+#: data/initial-setup.metainfo.xml.in:98
+msgid "Suggest connecting to a network"
+msgstr "Пропозиція під'єднатися до мережі"
+
+#~ msgid "Avoid political naming of certain locales"
+#~ msgstr "Уникнення політичних назв окремих локалей"
+
+#~ msgid "New features:"
+#~ msgstr "Нові можливості:"
+
+#~ msgid "Confirm and change device name"
+#~ msgstr "Підтвердити та змінити назву пристрою"
+
+#~ msgid "Two-finger swipe to navigate back"
+#~ msgstr "Проведення двома пальцями, щоб перейти назад"
+
+#~ msgid "Minor updates:"
+#~ msgstr "Незначні оновлення:"
+
+#~ msgid "Translation updates"
+#~ msgstr "Оновлено переклади"
+
+#~ msgid "io.elementary.initial-setup"
+#~ msgstr "io.elementary.initial-setup"
 
 #~ msgid "Add multitouch gestures"
 #~ msgstr "Додано багатофункціональні жести"

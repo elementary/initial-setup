@@ -1,18 +1,6 @@
-/*-
- * Copyright (c) 2017 elementary LLC. (https://elementary.io)
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+/*
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2017-2023 elementary, Inc. (https://elementary.io)
  */
 
 public class Installer.AccountView : AbstractInstallerView {
@@ -27,6 +15,8 @@ public class Installer.AccountView : AbstractInstallerView {
             return _user_manager;
         }
     }
+
+    private Utils.HostnameInterface? hostname_iface = null;
 
     private Polkit.Permission? _permission = null;
     private Polkit.Permission? permission {
@@ -45,7 +35,6 @@ public class Installer.AccountView : AbstractInstallerView {
         }
     }
 
-    private Act.User? created_user = null;
     private ErrorRevealer confirm_entry_revealer;
     private ErrorRevealer pw_error_revealer;
     private ErrorRevealer username_error_revealer;
@@ -58,32 +47,47 @@ public class Installer.AccountView : AbstractInstallerView {
     private Granite.ValidatedEntry hostname_entry;
 
     construct {
-        var avatar = new Hdy.Avatar (104, null, true) {
-            margin = 12,
-            valign = Gtk.Align.END
+        var avatar = new Adw.Avatar (104, null, true) {
+            margin_top = 12,
+            margin_bottom = 12,
+            valign = END
         };
 
-        var title_label = new Gtk.Label (_("Create an Account"));
+        title = _("Create an Account");
 
-        var realname_label = new Granite.HeaderLabel (_("Full Name"));
+        var title_label = new Gtk.Label (title) {
+            mnemonic_widget = this
+        };
 
-        realname_entry = new Gtk.Entry ();
-        realname_entry.hexpand = true;
+        realname_entry = new Gtk.Entry () {
+            hexpand = true,
+            input_purpose = NAME
+        };
 
-        var username_label = new Granite.HeaderLabel (_("Username"));
+        var realname_label = new Granite.HeaderLabel (_("Full Name")) {
+            mnemonic_widget = realname_entry
+        };
 
         username_entry = new Granite.ValidatedEntry ();
 
-        username_error_revealer = new ErrorRevealer (".");
-        username_error_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
+        var username_label = new Granite.HeaderLabel (_("Username")) {
+            mnemonic_widget = username_entry
+        };
 
-        var pw_label = new Granite.HeaderLabel (_("Choose a Password"));
+        username_error_revealer = new ErrorRevealer (".");
+        username_error_revealer.label_widget.add_css_class (Granite.STYLE_CLASS_ERROR);
 
         pw_error_revealer = new ErrorRevealer (".");
-        pw_error_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_WARNING);
+        pw_error_revealer.label_widget.add_css_class (Granite.STYLE_CLASS_WARNING);
 
-        pw_entry = new ValidatedEntry ();
-        pw_entry.visibility = false;
+        pw_entry = new ValidatedEntry () {
+            input_purpose = PASSWORD,
+            visibility = false
+        };
+
+        var pw_label = new Granite.HeaderLabel (_("Choose a Password")) {
+            mnemonic_widget = pw_entry
+        };
 
         pw_levelbar = new Gtk.LevelBar ();
         pw_levelbar = new Gtk.LevelBar.for_interval (0.0, 100.0);
@@ -93,77 +97,83 @@ public class Installer.AccountView : AbstractInstallerView {
         pw_levelbar.add_offset_value ("high", 80.0);
         pw_levelbar.add_offset_value ("full", 100.0);
 
-        var confirm_label = new Granite.HeaderLabel (_("Confirm Password"));
-
         confirm_entry = new Granite.ValidatedEntry () {
+            input_purpose = PASSWORD,
             sensitive = false,
             visibility = false
         };
 
-        confirm_entry_revealer = new ErrorRevealer (".");
-        confirm_entry_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
-
-        var hostname_label = new Granite.HeaderLabel (_("Device name")) {
-            margin_top = 16
+        var confirm_label = new Granite.HeaderLabel (_("Confirm Password")) {
+            mnemonic_widget = confirm_entry
         };
+
+        confirm_entry_revealer = new ErrorRevealer (".");
+        confirm_entry_revealer.label_widget.add_css_class (Granite.STYLE_CLASS_ERROR);
 
         hostname_entry = new Granite.ValidatedEntry () {
             activates_default = true,
-            hexpand = true
+            hexpand = true,
+            sensitive = false,
         };
 
-        hostname_entry.map.connect (() => {
-            hostname_entry.text = Utils.get_hostname ();
+        var hostname_label = new Granite.HeaderLabel (_("Device name")) {
+            margin_top = 16,
+            mnemonic_widget = hostname_entry,
+            secondary_text = _("Visible to other devices when sharing, e.g. with Bluetooth or over the network.")
+        };
+
+        Utils.HostnameInterface.get_default.begin ((obj, res) => {
+            try {
+                hostname_iface = Utils.HostnameInterface.get_default.end (res);
+                hostname_entry.text = hostname_iface.get_either_hostname ();
+                hostname_entry.sensitive = true;
+            } catch (Error e) {
+                hostname_entry.secondary_icon_name = "dialog-error-symbolic";
+                hostname_entry.secondary_icon_tooltip_text = _("Unable to setup Hostname interface: %s").printf (e.message);
+                hostname_entry.add_css_class (Granite.STYLE_CLASS_ERROR);
+                critical (e.message);
+            }
         });
-
-        var hostname_info = new Gtk.Label (_("Visible to other devices when sharing, e.g. with Bluetooth or over the network.")) {
-            // Wrap without expanding the view
-            max_width_chars = 0,
-            margin_bottom = 18,
-            wrap = true,
-            xalign = 0
-        };
-        hostname_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
         var form_grid = new Gtk.Grid ();
         form_grid.row_spacing = 3;
         form_grid.valign = Gtk.Align.CENTER;
         form_grid.vexpand = true;
-        form_grid.attach (realname_label, 0, 0, 1, 1);
-        form_grid.attach (realname_entry, 0, 1, 1, 1);
-        form_grid.attach (new ErrorRevealer ("."), 0, 2, 1, 1);
-        form_grid.attach (username_label, 0, 3, 1, 1);
-        form_grid.attach (username_entry, 0, 4, 1, 1);
-        form_grid.attach (username_error_revealer, 0, 5, 1, 1);
-        form_grid.attach (pw_label, 0, 6, 1, 1);
-        form_grid.attach (pw_entry, 0, 7, 2, 1);
-        form_grid.attach (pw_levelbar, 0, 8, 1, 1);
-        form_grid.attach (pw_error_revealer, 0, 9 , 1, 1);
-        form_grid.attach (confirm_label, 0, 10, 1, 1);
-        form_grid.attach (confirm_entry, 0, 11, 1, 1);
-        form_grid.attach (confirm_entry_revealer, 0, 12, 1, 1);
-        form_grid.attach (hostname_label, 0, 13, 1, 1);
-        form_grid.attach (hostname_entry, 0, 14, 1, 1);
-        form_grid.attach (hostname_info, 0, 15, 1, 1);
+        form_grid.attach (realname_label, 0, 0);
+        form_grid.attach (realname_entry, 0, 1);
+        form_grid.attach (new ErrorRevealer ("."), 0, 2);
+        form_grid.attach (username_label, 0, 3);
+        form_grid.attach (username_entry, 0, 4);
+        form_grid.attach (username_error_revealer, 0, 5);
+        form_grid.attach (pw_label, 0, 6);
+        form_grid.attach (pw_entry, 0, 7, 2);
+        form_grid.attach (pw_levelbar, 0, 8);
+        form_grid.attach (pw_error_revealer, 0, 9);
+        form_grid.attach (confirm_label, 0, 10);
+        form_grid.attach (confirm_entry, 0, 11);
+        form_grid.attach (confirm_entry_revealer, 0, 12);
+        form_grid.attach (hostname_label, 0, 13);
+        form_grid.attach (hostname_entry, 0, 14);
 
-        title_area.add (avatar);
-        title_area.add (title_label);
+        title_area.append (avatar);
+        title_area.append (title_label);
 
-        content_area.add (form_grid);
+        content_area.append (form_grid);
 
         var back_button = new Gtk.Button.with_label (_("Back")) {
             width_request = 86
         };
 
-        finish_button = new Gtk.Button.with_label (_("Finish Setup"));
-        finish_button.can_default = true;
-        finish_button.sensitive = false;
-        finish_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        finish_button = new Gtk.Button.with_label (_("Finish Setup")) {
+            receives_default = true,
+            sensitive = false
+        };
+        finish_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
-        action_area.add (back_button);
-        action_area.add (finish_button);
+        action_area.append (back_button);
+        action_area.append (finish_button);
 
-        back_button.clicked.connect (() => ((Hdy.Deck) get_parent ()).navigate (Hdy.NavigationDirection.BACK));
+        back_button.clicked.connect (() => ((Adw.NavigationView) get_parent ()).pop ());
 
         realname_entry.changed.connect (() => {
             var username = gen_username (realname_entry.text);
@@ -191,12 +201,9 @@ public class Installer.AccountView : AbstractInstallerView {
             update_finish_button ();
         });
 
-        finish_button.clicked.connect (create_new_user);
-
-        show_all ();
+        finish_button.clicked.connect (apply_settings);
 
         realname_entry.bind_property ("text", avatar, "text");
-        realname_entry.grab_focus ();
     }
 
     private bool check_password () {
@@ -280,112 +287,88 @@ public class Installer.AccountView : AbstractInstallerView {
     private void update_finish_button () {
         if (username_entry.is_valid && pw_entry.is_valid && confirm_entry.is_valid && hostname_entry.is_valid) {
             finish_button.sensitive = true;
-            finish_button.has_default = true;
+            ((Gtk.Window) get_root ()).default_widget = finish_button;
         } else {
             finish_button.sensitive = false;
         }
     }
 
-    private void create_new_user () {
-        string? primary_text = null;
-        string? error_message = null;
+    private void apply_settings () {
+        finish_button.sensitive = false;
+        content_area.sensitive = false;
+        apply_settings_async.begin ((obj, res) => {
+            unowned Installer.AccountView self = (Installer.AccountView)obj;
+            self.apply_settings_async.end (res);
+            self.content_area.sensitive = true;
+        });
+    }
 
+    private async void apply_settings_async () {
+        if (!yield set_hostname (hostname_entry.text)) {
+            return;
+        }
+
+        var created_user = yield create_new_user ();
+        if (created_user == null) {
+            return;
+        }
+
+        created_user.set_password (pw_entry.text, "");
+        yield set_accounts_service_settings (created_user);
+        yield set_locale (created_user);
+        Application.get_default ().quit ();
+    }
+
+    private async Act.User? create_new_user () {
+        Act.User? created_user = null;
         if (permission != null && permission.allowed) {
             try {
-                created_user = user_manager.create_user (username_entry.text, realname_entry.text, Act.UserAccountType.ADMINISTRATOR);
-                set_settings.begin ((obj, res) => {
-                    set_settings.end (res);
-
-                    Application.get_default ().quit ();
-                });
+                created_user = yield user_manager.create_user_async (username_entry.text, realname_entry.text, Act.UserAccountType.ADMINISTRATOR, null);
+                return created_user;
             } catch (Error e) {
                 if (created_user != null) {
                     try {
-                        user_manager.delete_user (created_user, true);
+                        yield user_manager.delete_user_async (created_user, true, null);
                     } catch (Error e) {
                         critical ("Unable to clean up failed user: %s", e.message);
                     }
                 }
 
-                primary_text = _("Creating an account for “%s” failed").printf (username_entry.text);
-                error_message = e.message;
+                show_account_creation_error (
+                    _("Creating an account for “%s” failed").printf (username_entry.text),
+                    e.message
+                );
+
+                return null;
             }
         } else {
-            primary_text = _("Couldn't get permission to create an account for “%s”").printf (username_entry.text);
-        }
-
-        if (primary_text != null) {
-            var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
-                primary_text,
-                _("Initial Setup could not create this account. Without it, you will not be able to log in and may need to reinstall the OS."),
-                "system-users",
-                Gtk.ButtonsType.CLOSE
-            ) {
-                badge_icon = new ThemedIcon ("dialog-error"),
-                modal = true,
-                transient_for = (Gtk.Window) get_toplevel ()
-            };
-
-            if (error_message != null) {
-                error_dialog.show_error_details (error_message);
-            }
-
-            error_dialog.present ();
-            error_dialog.response.connect (error_dialog.destroy);
+            show_account_creation_error (_("Couldn't get permission to create an account for “%s”").printf (username_entry.text));
+            return null;
         }
     }
 
-    private async void set_settings () {
-        created_user.set_password (pw_entry.text, "");
-        yield set_accounts_service_settings ();
-        yield set_locale ();
-        set_hostname (hostname_entry.text);
-    }
-
-    public bool set_hostname (string hostname) {
-        string? primary_text = null;
-        string? error_message = null;
-
+    const int MAX_TRIES = 10;
+    public async bool set_hostname (string hostname) {
         try {
             var permission = new Polkit.Permission.sync ("org.freedesktop.hostname1.set-static-hostname", new Polkit.UnixProcess (Posix.getpid ()));
-
             if (permission != null && permission.allowed) {
-                Utils.get_hostname_interface_instance ();
-                Utils.hostname_interface_instance.set_pretty_hostname (hostname, false);
-                Utils.hostname_interface_instance.set_static_hostname (Utils.gen_hostname (hostname), false);
+                var static_hostname = Utils.gen_hostname (hostname);
+                yield hostname_iface.set_pretty_hostname (hostname, false);
+                yield hostname_iface.set_static_hostname (static_hostname, false);
+                Environ.set_variable (Environ.get (), "HOSTNAME", static_hostname, true);
             } else {
-                primary_text = _("Couldn't get permission to name this device “%s”").printf (hostname);
+                show_hostname_setup_error (_("Couldn't get permission to name this device “%s”").printf (hostname));
+                return false;
             }
         } catch (GLib.Error e) {
-            primary_text = _("Unable to name this device “%s”").printf (hostname);
-            error_message = e.message;
-        }
-
-        if (primary_text != null) {
-            var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
-                primary_text,
-                _("Initial Setup could not set your hostname."),
-                "dialog-error",
-                Gtk.ButtonsType.CLOSE
-            ) {
-                modal = true,
-                transient_for = (Gtk.Window) get_toplevel ()
-            };
-
-            if (error_message != null) {
-                error_dialog.show_error_details (error_message);
-            }
-
-            error_dialog.present ();
-            error_dialog.response.connect (error_dialog.destroy);
-
+            show_hostname_setup_error (_("Unable to name this device “%s”").printf (hostname), e.message);
             return false;
         }
 
         return true;
     }
 
-    private async void set_locale () {
+    private async void set_locale (Act.User? created_user) {
         string lang = Configuration.get_default ().lang;
         string? locale = null;
         bool success = yield LocaleHelper.language2locale (lang, out locale);
@@ -398,7 +381,7 @@ public class Installer.AccountView : AbstractInstallerView {
         }
     }
 
-    private async void set_accounts_service_settings () {
+    private async void set_accounts_service_settings (Act.User? created_user) {
         AccountsService accounts_service = null;
 
         try {
@@ -424,6 +407,45 @@ public class Installer.AccountView : AbstractInstallerView {
             accounts_service.keyboard_layouts = layouts;
             accounts_service.left_handed = Configuration.get_default ().left_handed;
         }
+    }
+
+    private void show_hostname_setup_error (string primary_text, string? error_message = null) {
+        var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
+            primary_text,
+            _("Initial Setup could not set your hostname."),
+            "dialog-error",
+            Gtk.ButtonsType.CLOSE
+        ) {
+            modal = true,
+            transient_for = (Gtk.Window) get_root ()
+        };
+
+        if (error_message != null) {
+            error_dialog.show_error_details (error_message);
+        }
+
+        error_dialog.present ();
+        error_dialog.response.connect (error_dialog.destroy);
+    }
+
+    private void show_account_creation_error (string primary_text, string? error_message = null) {
+        var error_dialog = new Granite.MessageDialog.with_image_from_icon_name (
+            primary_text,
+            _("Initial Setup could not create this account. Without it, you will not be able to log in and may need to reinstall the OS."),
+            "system-users",
+            Gtk.ButtonsType.CLOSE
+        ) {
+            badge_icon = new ThemedIcon ("dialog-error"),
+            modal = true,
+            transient_for = (Gtk.Window) get_root ()
+        };
+
+        if (error_message != null) {
+            error_dialog.show_error_details (error_message);
+        }
+
+        error_dialog.present ();
+        error_dialog.response.connect (error_dialog.destroy);
     }
 
     private bool is_taken_username (string username) {
@@ -471,26 +493,35 @@ public class Installer.AccountView : AbstractInstallerView {
         }
     }
 
-    private class ErrorRevealer : Gtk.Revealer {
-        public Gtk.Label label_widget;
-
-        public string label {
-            set {
-                label_widget.label = "<span font_size=\"small\">%s</span>".printf (value);
-            }
-        }
+    private class ErrorRevealer : Gtk.Box {
+        public bool reveal_child { get; set; }
+        public Gtk.Label label_widget { get; private set; }
+        public string label { get; construct set; }
 
         public ErrorRevealer (string label) {
-            label_widget = new Gtk.Label ("<span font_size=\"small\">%s</span>".printf (label));
-            label_widget.halign = Gtk.Align.END;
-            label_widget.justify = Gtk.Justification.RIGHT;
-            label_widget.max_width_chars = 55;
-            label_widget.use_markup = true;
-            label_widget.wrap = true;
-            label_widget.xalign = 1;
+            Object (label: label);
+        }
 
-            transition_type = Gtk.RevealerTransitionType.CROSSFADE;
-            add (label_widget);
+        construct {
+            label_widget = new Gtk.Label (label) {
+                halign = END,
+                justify = RIGHT,
+                max_width_chars = 55,
+                use_markup = true,
+                wrap = true,
+                xalign = 1
+            };
+            label_widget.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
+
+            var revealer = new Gtk.Revealer () {
+                child = label_widget,
+                transition_type = CROSSFADE
+            };
+
+            append (revealer);
+
+            bind_property ("reveal-child", revealer, "reveal-child");
+            bind_property ("label", label_widget, "label");
         }
     }
 }

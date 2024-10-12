@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 18:14+0000\n"
-"PO-Revision-Date: 2019-06-18 03:43+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementary.io>\n"
+"POT-Creation-Date: 2024-05-09 17:07+0000\n"
+"PO-Revision-Date: 2023-05-12 16:06+0000\n"
+"Last-Translator: tavvfiq <taufiq.w@mail.ugm.ac.id>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/id/>\n"
 "Language: id\n"
@@ -11,96 +11,82 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 4.17\n"
 
-#: data/io.elementary.initial-setup.desktop.in:3
-#: data/io.elementary.initial-setup.appdata.xml.in:8
+#: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
 msgid "Set up elementary OS"
-msgstr ""
+msgstr "Menyiapkan elementary OS"
 
-#: data/io.elementary.initial-setup.desktop.in:4
+#: data/initial-setup.desktop.in:4
 msgid "Set up the system"
-msgstr ""
+msgstr "Menyiapkan sistem"
 
-#: data/io.elementary.initial-setup.desktop.in:6
-msgid "io.elementary.initial-setup"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:7
+#: data/initial-setup.metainfo.xml.in:10
 msgid "Initial Setup"
-msgstr ""
+msgstr "Persiapan Awal"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:10
+#: data/initial-setup.metainfo.xml.in:13
 msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
 msgstr ""
+"Membantu pada tugas-tugas penting sebelum instalasi baru dapat digunakan, "
+"seperti memilih bahasa dan membuat akun pengguna."
 
-#: data/io.elementary.initial-setup.appdata.xml.in:30
-#: data/io.elementary.initial-setup.appdata.xml.in:43
-#: data/io.elementary.initial-setup.appdata.xml.in:52
-#: data/io.elementary.initial-setup.appdata.xml.in:63
-msgid "Improvements:"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:32
-msgid "Use larger icons in views"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:33
-msgid "Make window resizable"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:34
-msgid "Show keyboard layouts in a separate window"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:35
-msgid "Allow hyphens in device names"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:36
-#: data/io.elementary.initial-setup.appdata.xml.in:45
-#: data/io.elementary.initial-setup.appdata.xml.in:56
-#: data/io.elementary.initial-setup.appdata.xml.in:66
-msgid "Updated translations"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:54
-msgid "Offer to switch to right-click primary mouse button"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:55
-msgid "Suggest connecting to a network"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:65
-msgid "Avoid political naming of certain locales"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:73
-msgid "New features:"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:75
-msgid "Confirm and change device name"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:76
-msgid "Two-finger swipe to navigate back"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:78
-msgid "Minor updates:"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:80
-msgid "Translation updates"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:89
+#: data/initial-setup.metainfo.xml.in:41
 msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:63
+#: data/initial-setup.metainfo.xml.in:73 data/initial-setup.metainfo.xml.in:86
+#: data/initial-setup.metainfo.xml.in:95
+msgid "Improvements:"
+msgstr "Peningkatan:"
+
+#: data/initial-setup.metainfo.xml.in:51
+msgid "Improve screen reader labels for entries, pages, and buttons"
 msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:52
+msgid "Improve keyboard navigation"
+msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:53 data/initial-setup.metainfo.xml.in:66
+#: data/initial-setup.metainfo.xml.in:79 data/initial-setup.metainfo.xml.in:88
+#: data/initial-setup.metainfo.xml.in:99
+msgid "Updated translations"
+msgstr "Terjemahan yang diperbarui"
+
+#: data/initial-setup.metainfo.xml.in:65
+msgid "Automatically prompt for screen reader after a timeout"
+msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:75
+msgid "Use larger icons in views"
+msgstr "Menggunakan ikon yang lebih besar dalam tampilan"
+
+#: data/initial-setup.metainfo.xml.in:76
+msgid "Make window resizable"
+msgstr "Membuat jendela dapat diubah ukurannya"
+
+#: data/initial-setup.metainfo.xml.in:77
+msgid "Show keyboard layouts in a separate window"
+msgstr "Menampilkan tata letak keyboard di jendela terpisah"
+
+#: data/initial-setup.metainfo.xml.in:78
+msgid "Allow hyphens in device names"
+msgstr "Izinkan tanda hubung dalam nama perangkat"
+
+#: data/initial-setup.metainfo.xml.in:97
+msgid "Offer to switch to right-click primary mouse button"
+msgstr "Tawarkan untuk beralih ke klik kanan tombol mouse utama"
+
+#: data/initial-setup.metainfo.xml.in:98
+msgid "Suggest connecting to a network"
+msgstr "Menyarankan untuk menyambung ke jaringan"
+
+#~ msgid "Avoid political naming of certain locales"
+#~ msgstr "Hindari penamaan politik untuk lokal tertentu"
 
 #~ msgid "system-os-installer"
 #~ msgstr "system-os-installer"

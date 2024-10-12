@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 18:14+0000\n"
+"POT-Creation-Date: 2024-05-09 17:07+0000\n"
 "PO-Revision-Date: 2021-08-27 15:13+0000\n"
 "Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/installer/initial-"
@@ -15,11 +15,11 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: src/Application.vala:34
+#: src/Application.vala:39
 msgid "Create a User"
 msgstr "أنشئ مستخدماً"
 
-#: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:181
+#: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:170
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -28,69 +28,89 @@ msgstr "%s…"
 msgid "Default"
 msgstr "الافتراضي"
 
-#: src/Views/AccountView.vala:66
+#: src/Views/AccountView.vala:56
 msgid "Create an Account"
 msgstr "أنشئ حساباً"
 
-#: src/Views/AccountView.vala:68
+#: src/Views/AccountView.vala:65
 msgid "Full Name"
 msgstr "الاسم الكامل"
 
-#: src/Views/AccountView.vala:73
+#: src/Views/AccountView.vala:71
 msgid "Username"
 msgstr "اسم المستخدم"
 
-#: src/Views/AccountView.vala:80
+#: src/Views/AccountView.vala:86
 msgid "Choose a Password"
 msgstr "اختر كلمة مرور"
 
-#: src/Views/AccountView.vala:96
+#: src/Views/AccountView.vala:104
 msgid "Confirm Password"
 msgstr "قم بتأكيد كلمة المرور"
 
-#: src/Views/AccountView.vala:106
+#: src/Views/AccountView.vala:117
 msgid "Device name"
 msgstr "اسم الجهاز"
 
-#: src/Views/AccountView.vala:119
+#: src/Views/AccountView.vala:120
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr "يتم إظهاره للأجهزة الأخرى عند المشاركة مع جهاز بلوتوث أو عبر الشبكة."
 
-#: src/Views/AccountView.vala:154 src/Views/KeyboardLayoutView.vala:51
+#: src/Views/AccountView.vala:130
+#, fuzzy, c-format
+#| msgid "Unable to set Hostname '%s'"
+msgid "Unable to setup Hostname interface: %s"
+msgstr "فشل تعيين اسم الجهاز '%s'"
+
+#: src/Views/AccountView.vala:161 src/Views/KeyboardLayoutView.vala:38
 #: src/Views/NetworkView.vala:66
 msgid "Back"
 msgstr "ارجع"
 
-#: src/Views/AccountView.vala:158
+#: src/Views/AccountView.vala:165
 msgid "Finish Setup"
 msgstr "أنه الإعداد"
 
-#: src/Views/AccountView.vala:240
+#: src/Views/AccountView.vala:245
 msgid "Passwords do not match"
 msgstr "كلمتا المرور غير متطابقتين"
 
-#: src/Views/AccountView.vala:265
+#: src/Views/AccountView.vala:270
 msgid "The chosen username is already taken"
 msgstr "اسم المستخدم مأخوذ"
 
-#: src/Views/AccountView.vala:267
+#: src/Views/AccountView.vala:272
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr "اسم المستخدم يجب أن يحتوي فقط على حروف صغيرة أو أرقام، وبدون فراغات"
 
-#: src/Views/AccountView.vala:310
+#: src/Views/AccountView.vala:336
 #, c-format
 msgid "Creating an account for “%s” failed"
 msgstr ""
 
-#: src/Views/AccountView.vala:314
+#: src/Views/AccountView.vala:343
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
 msgstr ""
 
-#: src/Views/AccountView.vala:320
+#: src/Views/AccountView.vala:358
+#, c-format
+msgid "Couldn't get permission to name this device “%s”"
+msgstr ""
+
+#: src/Views/AccountView.vala:362
+#, c-format
+msgid "Unable to name this device “%s”"
+msgstr ""
+
+#: src/Views/AccountView.vala:413
+msgid "Initial Setup could not set your hostname."
+msgstr "لم يتمكن برنامج الإعداد الأولي من ضبط اسم الجهاز الخاص بك."
+
+#: src/Views/AccountView.vala:432
 #, fuzzy
 #| msgid ""
 #| "Initial Setup could not create your user. Without it, you will not be "
@@ -102,78 +122,64 @@ msgstr ""
 "لم يتمكن برنامج الإعداد الأولي من إنشاء مستخدم. بدونه، لن تتمكن من تسجيل "
 "الدخول ومن المحتمل أنك ستحتاج لإعادة تثبيت نظام التشغيل."
 
-#: src/Views/AccountView.vala:357
-#, c-format
-msgid "Couldn't get permission to name this device “%s”"
-msgstr ""
-
-#: src/Views/AccountView.vala:360
-#, c-format
-msgid "Unable to name this device “%s”"
-msgstr ""
-
-#: src/Views/AccountView.vala:367
-msgid "Initial Setup could not set your hostname."
-msgstr "لم يتمكن برنامج الإعداد الأولي من ضبط اسم الجهاز الخاص بك."
-
-#: src/Views/KeyboardLayoutView.vala:27
+#: src/Views/KeyboardLayoutView.vala:15
 msgid "Select Keyboard Layout"
 msgstr "اختر تخطيط لوحة المفاتيح"
 
-#: src/Views/KeyboardLayoutView.vala:33
+#: src/Views/KeyboardLayoutView.vala:23
 msgid "Type to test your layout"
 msgstr "اكتب لاختبار تخطيطك"
 
-#: src/Views/KeyboardLayoutView.vala:36
+#: src/Views/KeyboardLayoutView.vala:26
 msgid "Show keyboard layout"
 msgstr "أظهر تخطيط لوحة المفاتيح"
 
-#: src/Views/KeyboardLayoutView.vala:55 src/Views/LanguageView.vala:107
-#: src/Views/LanguageView.vala:172
+#: src/Views/KeyboardLayoutView.vala:42 src/Views/LanguageView.vala:104
+#: src/Views/LanguageView.vala:179
 msgid "Select"
 msgstr "اختر"
 
-#: src/Views/KeyboardLayoutView.vala:124
+#: src/Views/KeyboardLayoutView.vala:111
 msgid "Input Language"
 msgstr "لغة الإدخال"
 
-#: src/Views/LanguageView.vala:205
+#: src/Views/LanguageView.vala:211
 msgid "Languages"
 msgstr "اللغات"
 
-#: src/Views/LanguageView.vala:240
+#: src/Views/LanguageView.vala:246
 msgid "Use the right mouse button for primary click?"
 msgstr ""
 
-#: src/Views/LanguageView.vala:241
+#: src/Views/LanguageView.vala:247
 msgid ""
 "The right mouse button was used where a primary click was expected. You can "
 "choose to always use the right mouse button for primary click."
 msgstr ""
 
-#: src/Views/LanguageView.vala:242 src/Views/LanguageView.vala:249
+#: src/Views/LanguageView.vala:248 src/Views/LanguageView.vala:255
 msgid "Right-Click as Primary"
 msgstr ""
 
-#: src/Views/LanguageView.vala:243 src/Views/LanguageView.vala:248
+#: src/Views/LanguageView.vala:249 src/Views/LanguageView.vala:254
 msgid "Left-Click as Primary"
 msgstr ""
 
-#: src/Views/LanguageView.vala:246
+#: src/Views/LanguageView.vala:252
 msgid "Use the left mouse button for primary click?"
 msgstr ""
 
-#: src/Views/LanguageView.vala:247
+#: src/Views/LanguageView.vala:253
 msgid ""
 "The left mouse button was used where a primary click was expected. You can "
 "choose to always use the left mouse button for primary click."
 msgstr ""
 
-#: src/Views/LanguageView.vala:312
+#: src/Views/LanguageView.vala:323
 msgid "Select a Language"
 msgstr "اختر اللغة"
 
-#: src/Views/LanguageView.vala:335 src/Views/LanguageView.vala:394
+#: src/Views/LanguageView.vala:347 src/Views/LanguageView.vala:407
 msgid "Currently active language"
 msgstr "اللغة المفعلة حالياً"
 
@@ -201,17 +207,13 @@ msgstr ""
 msgid "Skip"
 msgstr ""
 
-#: src/Views/NetworkView.vala:88
+#: src/Views/NetworkView.vala:86
 msgid "Next"
 msgstr ""
 
 #, c-format
 #~ msgid "No Permission to set hostname '%s'"
 #~ msgstr "ليس هناك صلاحية لتعيين اسم الجهاز '%s'"
-
-#, c-format
-#~ msgid "Unable to set Hostname '%s'"
-#~ msgstr "فشل تعيين اسم الجهاز '%s'"
 
 #, c-format
 #~ msgid "Creating User '%s' Failed"

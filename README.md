@@ -11,11 +11,11 @@ An initial setup app to create new users
 You'll need the following dependencies:
 * desktop-file-utils
 * gettext
-* granite >= 0.5
+* libgranite-7-dev >= 7.4.0
 * libaccountsservice-dev
 * libgnomekbd-dev
-* libgtk-3-dev
-* libhandy-1-dev
+* libgtk-4-dev
+* libadwaita-1-dev >= 1.4
 * libjson-glib-dev
 * libpwquality-dev
 * libxml2-dev

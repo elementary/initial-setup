@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 18:14+0000\n"
-"PO-Revision-Date: 2022-11-11 14:29+0000\n"
+"POT-Creation-Date: 2024-05-09 17:07+0000\n"
+"PO-Revision-Date: 2024-06-16 21:16+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "installer/initial-setup-extra/nb/>\n"
@@ -11,26 +11,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.5.5\n"
 
-#: data/io.elementary.initial-setup.desktop.in:3
-#: data/io.elementary.initial-setup.appdata.xml.in:8
+#: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
 msgid "Set up elementary OS"
 msgstr "Sett opp elementary OS"
 
-#: data/io.elementary.initial-setup.desktop.in:4
+#: data/initial-setup.desktop.in:4
 msgid "Set up the system"
 msgstr "Sett opp systemet"
 
-#: data/io.elementary.initial-setup.desktop.in:6
-msgid "io.elementary.initial-setup"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:7
+#: data/initial-setup.metainfo.xml.in:10
 msgid "Initial Setup"
 msgstr "Førstegangsoppsett"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:10
+#: data/initial-setup.metainfo.xml.in:13
 msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
@@ -38,74 +33,69 @@ msgstr ""
 "Hjelper til med viktige oppgaver som gjøre en ny installasjon brukendes, som "
 "å velge språk og opprette en brukekonto."
 
-#: data/io.elementary.initial-setup.appdata.xml.in:30
-#: data/io.elementary.initial-setup.appdata.xml.in:43
-#: data/io.elementary.initial-setup.appdata.xml.in:52
-#: data/io.elementary.initial-setup.appdata.xml.in:63
-msgid "Improvements:"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:32
-msgid "Use larger icons in views"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:33
-msgid "Make window resizable"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:34
-msgid "Show keyboard layouts in a separate window"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:35
-msgid "Allow hyphens in device names"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:36
-#: data/io.elementary.initial-setup.appdata.xml.in:45
-#: data/io.elementary.initial-setup.appdata.xml.in:56
-#: data/io.elementary.initial-setup.appdata.xml.in:66
-msgid "Updated translations"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:54
-msgid "Offer to switch to right-click primary mouse button"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:55
-msgid "Suggest connecting to a network"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:65
-msgid "Avoid political naming of certain locales"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:73
-msgid "New features:"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:75
-msgid "Confirm and change device name"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:76
-msgid "Two-finger swipe to navigate back"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:78
-#, fuzzy
-#| msgid "Translation updates"
-msgid "Minor updates:"
-msgstr "Oppdater oversettelser"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:80
-msgid "Translation updates"
-msgstr "Oppdater oversettelser"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:89
+#: data/initial-setup.metainfo.xml.in:41
 #, fuzzy
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
+
+#: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:63
+#: data/initial-setup.metainfo.xml.in:73 data/initial-setup.metainfo.xml.in:86
+#: data/initial-setup.metainfo.xml.in:95
+msgid "Improvements:"
+msgstr "Forbedringer:"
+
+#: data/initial-setup.metainfo.xml.in:51
+msgid "Improve screen reader labels for entries, pages, and buttons"
+msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:52
+msgid "Improve keyboard navigation"
+msgstr "Forbedret tastaturnavigasjon"
+
+#: data/initial-setup.metainfo.xml.in:53 data/initial-setup.metainfo.xml.in:66
+#: data/initial-setup.metainfo.xml.in:79 data/initial-setup.metainfo.xml.in:88
+#: data/initial-setup.metainfo.xml.in:99
+msgid "Updated translations"
+msgstr "Oppdaterte oversettelser"
+
+#: data/initial-setup.metainfo.xml.in:65
+msgid "Automatically prompt for screen reader after a timeout"
+msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:75
+msgid "Use larger icons in views"
+msgstr "Større ikoner i visninger"
+
+#: data/initial-setup.metainfo.xml.in:76
+msgid "Make window resizable"
+msgstr "Vinduer kan endre størrelse"
+
+#: data/initial-setup.metainfo.xml.in:77
+msgid "Show keyboard layouts in a separate window"
+msgstr "Vis tastaturoppsett i eget vindu"
+
+#: data/initial-setup.metainfo.xml.in:78
+msgid "Allow hyphens in device names"
+msgstr "Tillat bindestrek i enhetsnavn"
+
+#: data/initial-setup.metainfo.xml.in:97
+msgid "Offer to switch to right-click primary mouse button"
+msgstr "Tilby bytte til høyreklikk som primær museknapp"
+
+#: data/initial-setup.metainfo.xml.in:98
+msgid "Suggest connecting to a network"
+msgstr "Foreslå tilkobling til et nettverk"
+
+#~ msgid "Avoid political naming of certain locales"
+#~ msgstr "Ungått politiske navn for noen lokaliteter"
+
+#, fuzzy
+#~| msgid "Translation updates"
+#~ msgid "Minor updates:"
+#~ msgstr "Oppdater oversettelser"
+
+#~ msgid "Translation updates"
+#~ msgstr "Oppdater oversettelser"
 
 #~ msgid "Initial release"
 #~ msgstr "Første utgivelse"

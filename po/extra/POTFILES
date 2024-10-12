@@ -1,2 +1,2 @@
-data/io.elementary.initial-setup.desktop.in
-data/io.elementary.initial-setup.appdata.xml.in
+data/initial-setup.desktop.in
+data/initial-setup.metainfo.xml.in

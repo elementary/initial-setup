@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 18:14+0000\n"
-"PO-Revision-Date: 2019-09-07 18:22+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"POT-Creation-Date: 2024-05-09 17:07+0000\n"
+"PO-Revision-Date: 2024-09-07 17:04+0000\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "installer/initial-setup-extra/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -17,97 +17,78 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
-#: data/io.elementary.initial-setup.desktop.in:3
-#: data/io.elementary.initial-setup.appdata.xml.in:8
+#: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
 msgid "Set up elementary OS"
-msgstr ""
+msgstr "為 elementary OS 進行初始設定"
 
-#: data/io.elementary.initial-setup.desktop.in:4
+#: data/initial-setup.desktop.in:4
 msgid "Set up the system"
-msgstr ""
+msgstr "為系統進行初始設定"
 
-#: data/io.elementary.initial-setup.desktop.in:6
-msgid "io.elementary.initial-setup"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:7
+#: data/initial-setup.metainfo.xml.in:10
 msgid "Initial Setup"
-msgstr ""
+msgstr "初始化安裝"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:10
+#: data/initial-setup.metainfo.xml.in:13
 msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
-msgstr ""
+msgstr "在新安裝時協助進行必要的作業，像是選擇語言和建立使用者帳號。"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:30
-#: data/io.elementary.initial-setup.appdata.xml.in:43
-#: data/io.elementary.initial-setup.appdata.xml.in:52
-#: data/io.elementary.initial-setup.appdata.xml.in:63
-msgid "Improvements:"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:32
-msgid "Use larger icons in views"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:33
-msgid "Make window resizable"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:34
-msgid "Show keyboard layouts in a separate window"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:35
-msgid "Allow hyphens in device names"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:36
-#: data/io.elementary.initial-setup.appdata.xml.in:45
-#: data/io.elementary.initial-setup.appdata.xml.in:56
-#: data/io.elementary.initial-setup.appdata.xml.in:66
-msgid "Updated translations"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:54
-msgid "Offer to switch to right-click primary mouse button"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:55
-msgid "Suggest connecting to a network"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:65
-msgid "Avoid political naming of certain locales"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:73
-msgid "New features:"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:75
-msgid "Confirm and change device name"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:76
-msgid "Two-finger swipe to navigate back"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:78
-msgid "Minor updates:"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:80
-msgid "Translation updates"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:89
+#: data/initial-setup.metainfo.xml.in:41
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
+
+#: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:63
+#: data/initial-setup.metainfo.xml.in:73 data/initial-setup.metainfo.xml.in:86
+#: data/initial-setup.metainfo.xml.in:95
+msgid "Improvements:"
+msgstr "改善項目："
+
+#: data/initial-setup.metainfo.xml.in:51
+msgid "Improve screen reader labels for entries, pages, and buttons"
+msgstr "改善項目、頁面和按鈕的螢幕閱讀器標籤"
+
+#: data/initial-setup.metainfo.xml.in:52
+msgid "Improve keyboard navigation"
+msgstr "改善鍵盤瀏覽"
+
+#: data/initial-setup.metainfo.xml.in:53 data/initial-setup.metainfo.xml.in:66
+#: data/initial-setup.metainfo.xml.in:79 data/initial-setup.metainfo.xml.in:88
+#: data/initial-setup.metainfo.xml.in:99
+msgid "Updated translations"
+msgstr "翻譯更新"
+
+#: data/initial-setup.metainfo.xml.in:65
+msgid "Automatically prompt for screen reader after a timeout"
+msgstr "經過一段時間之後自動詢問使用螢幕閱讀器"
+
+#: data/initial-setup.metainfo.xml.in:75
+msgid "Use larger icons in views"
+msgstr "在各畫面中使用更大的圖示"
+
+#: data/initial-setup.metainfo.xml.in:76
+msgid "Make window resizable"
+msgstr "讓視窗可以調整大小"
+
+#: data/initial-setup.metainfo.xml.in:77
+msgid "Show keyboard layouts in a separate window"
+msgstr "讓鍵盤配置在另一個視窗中顯示"
+
+#: data/initial-setup.metainfo.xml.in:78
+msgid "Allow hyphens in device names"
+msgstr "允許裝置名稱中使用 hyphen"
+
+#: data/initial-setup.metainfo.xml.in:97
+msgid "Offer to switch to right-click primary mouse button"
+msgstr "主動提供切換至右鍵為主要點擊的選項"
+
+#: data/initial-setup.metainfo.xml.in:98
+msgid "Suggest connecting to a network"
+msgstr "提供連線到網路的建議"
 
 #~ msgid "system-os-installer"
 #~ msgstr "system-os-installer"

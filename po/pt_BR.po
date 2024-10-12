@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 18:14+0000\n"
-"PO-Revision-Date: 2021-07-15 22:57+0000\n"
-"Last-Translator: lucaspifonseca <lucaspifonseca@gmail.com>\n"
+"POT-Creation-Date: 2024-05-09 17:07+0000\n"
+"PO-Revision-Date: 2024-08-18 21:16+0000\n"
+"Last-Translator: José Rafael <jrafaeldesantana@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "installer/initial-setup/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -12,14 +12,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
-#: src/Application.vala:34
+#: src/Application.vala:39
 msgid "Create a User"
 msgstr "Crie um usuário"
 
-#: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:181
+#: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:170
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -28,185 +28,198 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Padrão"
 
-#: src/Views/AccountView.vala:66
+#: src/Views/AccountView.vala:56
 msgid "Create an Account"
 msgstr "Criar uma conta"
 
-#: src/Views/AccountView.vala:68
+#: src/Views/AccountView.vala:65
 msgid "Full Name"
 msgstr "Nome completo"
 
-#: src/Views/AccountView.vala:73
+#: src/Views/AccountView.vala:71
 msgid "Username"
 msgstr "Nome de usuário"
 
-#: src/Views/AccountView.vala:80
+#: src/Views/AccountView.vala:86
 msgid "Choose a Password"
 msgstr "Escolha uma senha"
 
-#: src/Views/AccountView.vala:96
+#: src/Views/AccountView.vala:104
 msgid "Confirm Password"
 msgstr "Confirmar a Senha"
 
-#: src/Views/AccountView.vala:106
+#: src/Views/AccountView.vala:117
 msgid "Device name"
-msgstr ""
+msgstr "Nome do dispositivo"
 
-#: src/Views/AccountView.vala:119
+#: src/Views/AccountView.vala:120
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
+"Visível para outros dispositivos quando compartilhar, por exemplo, com "
+"Bluetooth ou na rede."
 
-#: src/Views/AccountView.vala:154 src/Views/KeyboardLayoutView.vala:51
+#: src/Views/AccountView.vala:130
+#, c-format
+msgid "Unable to setup Hostname interface: %s"
+msgstr "Não foi possível configurar a interface do nome da máquina: %s"
+
+#: src/Views/AccountView.vala:161 src/Views/KeyboardLayoutView.vala:38
 #: src/Views/NetworkView.vala:66
 msgid "Back"
 msgstr "Voltar"
 
-#: src/Views/AccountView.vala:158
+#: src/Views/AccountView.vala:165
 msgid "Finish Setup"
 msgstr "Finalizar configuração"
 
-#: src/Views/AccountView.vala:240
+#: src/Views/AccountView.vala:245
 msgid "Passwords do not match"
 msgstr "Senhas não coincidem"
 
-#: src/Views/AccountView.vala:265
+#: src/Views/AccountView.vala:270
 msgid "The chosen username is already taken"
 msgstr "O nome de usuário escolhido está sendo utilizado"
 
-#: src/Views/AccountView.vala:267
+#: src/Views/AccountView.vala:272
 msgid ""
 "A username must only contain lowercase letters and numbers, without spaces"
 msgstr ""
 "Um nome de usuário deve conter apenas letras minúsculas e números, sem "
 "espaços"
 
-#: src/Views/AccountView.vala:310
+#: src/Views/AccountView.vala:336
 #, c-format
 msgid "Creating an account for “%s” failed"
-msgstr ""
+msgstr "Criação da conta para \"%s\" falhou"
 
-#: src/Views/AccountView.vala:314
+#: src/Views/AccountView.vala:343
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
-msgstr ""
+msgstr "Não foi possível obter permissão para criar uma conta para “%s”"
 
-#: src/Views/AccountView.vala:320
-#, fuzzy
-#| msgid ""
-#| "Initial Setup could not create your user. Without it, you will not be "
-#| "able to log in and may need to reinstall the OS."
+#: src/Views/AccountView.vala:358
+#, c-format
+msgid "Couldn't get permission to name this device “%s”"
+msgstr "Não foi possível obter permissão para nomear este dispositivo como “%s”"
+
+#: src/Views/AccountView.vala:362
+#, c-format
+msgid "Unable to name this device “%s”"
+msgstr "Não foi possível nomear este dispositivo como “%s”"
+
+#: src/Views/AccountView.vala:413
+msgid "Initial Setup could not set your hostname."
+msgstr "O instalador não conseguiu definir o seu nome do host."
+
+#: src/Views/AccountView.vala:432
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
 msgstr ""
-"A Configuração Inicial não pode criar seu usuário. Sem ele, você não poderá "
-"iniciar uma sessão e é possível que necessite reinstalar o Sistema "
-"Operacional."
+"O instalador não conseguiu criar esta conta. Sem ele, você não poderá "
+"iniciar uma sessão e é possível que necessite reinstalar o sistema "
+"operacional."
 
-#: src/Views/AccountView.vala:357
-#, c-format
-msgid "Couldn't get permission to name this device “%s”"
-msgstr ""
-
-#: src/Views/AccountView.vala:360
-#, c-format
-msgid "Unable to name this device “%s”"
-msgstr ""
-
-#: src/Views/AccountView.vala:367
-msgid "Initial Setup could not set your hostname."
-msgstr ""
-
-#: src/Views/KeyboardLayoutView.vala:27
+#: src/Views/KeyboardLayoutView.vala:15
 msgid "Select Keyboard Layout"
-msgstr "Selecione o Layout de teclado"
+msgstr "Selecione o layout do teclado"
 
-#: src/Views/KeyboardLayoutView.vala:33
+#: src/Views/KeyboardLayoutView.vala:23
 msgid "Type to test your layout"
 msgstr "Digite para testar seu layout"
 
-#: src/Views/KeyboardLayoutView.vala:36
+#: src/Views/KeyboardLayoutView.vala:26
 msgid "Show keyboard layout"
 msgstr "Mostrar layout de teclado"
 
-#: src/Views/KeyboardLayoutView.vala:55 src/Views/LanguageView.vala:107
-#: src/Views/LanguageView.vala:172
+#: src/Views/KeyboardLayoutView.vala:42 src/Views/LanguageView.vala:104
+#: src/Views/LanguageView.vala:179
 msgid "Select"
 msgstr "Selecionar"
 
-#: src/Views/KeyboardLayoutView.vala:124
+#: src/Views/KeyboardLayoutView.vala:111
 msgid "Input Language"
 msgstr "Idioma de Entrada"
 
-#: src/Views/LanguageView.vala:205
+#: src/Views/LanguageView.vala:211
 msgid "Languages"
 msgstr "Idiomas"
 
-#: src/Views/LanguageView.vala:240
+#: src/Views/LanguageView.vala:246
 msgid "Use the right mouse button for primary click?"
-msgstr ""
+msgstr "Usar o botão direito do mouse para o clique principal?"
 
-#: src/Views/LanguageView.vala:241
+#: src/Views/LanguageView.vala:247
 msgid ""
 "The right mouse button was used where a primary click was expected. You can "
 "choose to always use the right mouse button for primary click."
 msgstr ""
+"O botão direito do mouse foi utilizado onde se esperava o clique principal. "
+"Você pode optar por utilizar sempre o botão direito do mouse para o clique "
+"principal."
 
-#: src/Views/LanguageView.vala:242 src/Views/LanguageView.vala:249
+#: src/Views/LanguageView.vala:248 src/Views/LanguageView.vala:255
 msgid "Right-Click as Primary"
-msgstr ""
+msgstr "Botão direito do mouse como principal"
 
-#: src/Views/LanguageView.vala:243 src/Views/LanguageView.vala:248
+#: src/Views/LanguageView.vala:249 src/Views/LanguageView.vala:254
 msgid "Left-Click as Primary"
-msgstr ""
+msgstr "Botão esquerdo do mouse como principal"
 
-#: src/Views/LanguageView.vala:246
+#: src/Views/LanguageView.vala:252
 msgid "Use the left mouse button for primary click?"
-msgstr ""
+msgstr "Usar o botão esquerdo do mouse como clique principal?"
 
-#: src/Views/LanguageView.vala:247
+#: src/Views/LanguageView.vala:253
 msgid ""
 "The left mouse button was used where a primary click was expected. You can "
 "choose to always use the left mouse button for primary click."
 msgstr ""
+"O botão esquerdo do mouse foi utilizado onde se esperava um clique "
+"principal. Você pode optar por utilizar sempre o botão esquerdo do mouse "
+"para o clique principal."
 
-#: src/Views/LanguageView.vala:312
+#: src/Views/LanguageView.vala:323
 msgid "Select a Language"
 msgstr "Escolha o Idioma"
 
-#: src/Views/LanguageView.vala:335 src/Views/LanguageView.vala:394
+#: src/Views/LanguageView.vala:347 src/Views/LanguageView.vala:407
 msgid "Currently active language"
 msgstr "Linguagem atualmente ativa"
 
 #: src/Views/NetworkView.vala:30
 msgid "Connect Network"
-msgstr ""
+msgstr "Conectar rede"
 
 #: src/Views/NetworkView.vala:32
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
 msgstr ""
+"Uma conexão com a internet é necessária para receber atualizações, instalar "
+"novas aplicações e se conectar aos serviços online"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:42
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
 msgstr ""
+"Escolha uma rede sem fio mais próxima a partir do indicador de rede no canto "
+"superior direito."
 
 #: src/Views/NetworkView.vala:48
 msgid "Connect a network cable"
-msgstr ""
+msgstr "Conectar um cabo de rede"
 
 #: src/Views/NetworkView.vala:70
 msgid "Skip"
-msgstr ""
+msgstr "Pular"
 
-#: src/Views/NetworkView.vala:88
+#: src/Views/NetworkView.vala:86
 msgid "Next"
-msgstr ""
+msgstr "Próximo"
 
 #, fuzzy, c-format
 #~| msgid "No Permission to Create User '%s'"

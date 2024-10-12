@@ -1,6 +1,5 @@
-// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2016 elementary LLC. (https://elementary.io)
+ * Copyright 2016-2022 elementary, Inc. (https://elementary.io)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,6 +24,12 @@ public class Installer.App : Gtk.Application {
         Intl.setlocale (LocaleCategory.ALL, "");
     }
 
+    public override void startup () {
+        base.startup ();
+
+        Granite.init ();
+    }
+
     public override void activate () {
         var window = new MainWindow () {
             default_height = 600,
@@ -33,8 +38,8 @@ public class Installer.App : Gtk.Application {
             icon_name = application_id,
             title = _("Create a User")
         };
-        window.show_all ();
-        this.add_window (window);
+        window.present ();
+        add_window (window);
     }
 }
 

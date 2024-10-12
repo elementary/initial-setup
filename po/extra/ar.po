@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 18:14+0000\n"
+"POT-Creation-Date: 2024-05-09 17:07+0000\n"
 "PO-Revision-Date: 2021-08-27 15:13+0000\n"
 "Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/installer/initial-"
@@ -14,24 +14,19 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: data/io.elementary.initial-setup.desktop.in:3
-#: data/io.elementary.initial-setup.appdata.xml.in:8
+#: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
 msgid "Set up elementary OS"
 msgstr "قم بإعداد elementary OS"
 
-#: data/io.elementary.initial-setup.desktop.in:4
+#: data/initial-setup.desktop.in:4
 msgid "Set up the system"
 msgstr "قم بإعداد النظام"
 
-#: data/io.elementary.initial-setup.desktop.in:6
-msgid "io.elementary.initial-setup"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:7
+#: data/initial-setup.metainfo.xml.in:10
 msgid "Initial Setup"
 msgstr "الإعداد الأولي"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:10
+#: data/initial-setup.metainfo.xml.in:13
 msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
@@ -39,73 +34,74 @@ msgstr ""
 "يساعد في المهام الأساسية قبل أن يكون التثبيت الجديد قابلاً للاستخدام، مثل "
 "اختيار اللغة وإنشاء مستخدم."
 
-#: data/io.elementary.initial-setup.appdata.xml.in:30
-#: data/io.elementary.initial-setup.appdata.xml.in:43
-#: data/io.elementary.initial-setup.appdata.xml.in:52
-#: data/io.elementary.initial-setup.appdata.xml.in:63
+#: data/initial-setup.metainfo.xml.in:41
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:63
+#: data/initial-setup.metainfo.xml.in:73 data/initial-setup.metainfo.xml.in:86
+#: data/initial-setup.metainfo.xml.in:95
 msgid "Improvements:"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:32
+#: data/initial-setup.metainfo.xml.in:51
+msgid "Improve screen reader labels for entries, pages, and buttons"
+msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:52
+msgid "Improve keyboard navigation"
+msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:53 data/initial-setup.metainfo.xml.in:66
+#: data/initial-setup.metainfo.xml.in:79 data/initial-setup.metainfo.xml.in:88
+#: data/initial-setup.metainfo.xml.in:99
+msgid "Updated translations"
+msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:65
+msgid "Automatically prompt for screen reader after a timeout"
+msgstr ""
+
+#: data/initial-setup.metainfo.xml.in:75
 msgid "Use larger icons in views"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:33
+#: data/initial-setup.metainfo.xml.in:76
 msgid "Make window resizable"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:34
+#: data/initial-setup.metainfo.xml.in:77
 #, fuzzy
 #| msgid "Set keyboard layout in accountsservice"
 msgid "Show keyboard layouts in a separate window"
 msgstr "اختيار تخطيط لوحة المفاتيح في accountsservice"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:35
+#: data/initial-setup.metainfo.xml.in:78
 msgid "Allow hyphens in device names"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:36
-#: data/io.elementary.initial-setup.appdata.xml.in:45
-#: data/io.elementary.initial-setup.appdata.xml.in:56
-#: data/io.elementary.initial-setup.appdata.xml.in:66
-msgid "Updated translations"
-msgstr ""
-
-#: data/io.elementary.initial-setup.appdata.xml.in:54
+#: data/initial-setup.metainfo.xml.in:97
 msgid "Offer to switch to right-click primary mouse button"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:55
+#: data/initial-setup.metainfo.xml.in:98
 msgid "Suggest connecting to a network"
 msgstr ""
 
-#: data/io.elementary.initial-setup.appdata.xml.in:65
-msgid "Avoid political naming of certain locales"
-msgstr ""
+#~ msgid "New features:"
+#~ msgstr "ميزات جديدة:"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:73
-msgid "New features:"
-msgstr "ميزات جديدة:"
+#~ msgid "Confirm and change device name"
+#~ msgstr "تأكيد وتغيير اسم الجهاز"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:75
-msgid "Confirm and change device name"
-msgstr "تأكيد وتغيير اسم الجهاز"
+#~ msgid "Two-finger swipe to navigate back"
+#~ msgstr "تمريرة بأصبعين للرجوع إلى الوراء"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:76
-msgid "Two-finger swipe to navigate back"
-msgstr "تمريرة بأصبعين للرجوع إلى الوراء"
+#~ msgid "Minor updates:"
+#~ msgstr "تحديثات طفيفة:"
 
-#: data/io.elementary.initial-setup.appdata.xml.in:78
-msgid "Minor updates:"
-msgstr "تحديثات طفيفة:"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:80
-msgid "Translation updates"
-msgstr "تحديثات على الترجمة"
-
-#: data/io.elementary.initial-setup.appdata.xml.in:89
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
+#~ msgid "Translation updates"
+#~ msgstr "تحديثات على الترجمة"
 
 #~ msgid "Add multitouch gestures"
 #~ msgstr "إضافة حركات اللمس المتعدد"

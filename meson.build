@@ -1,7 +1,7 @@
 project(
   'io.elementary.initial-setup',
   'vala', 'c',
-  version: '6.2.1',
+  version: '8.0.0',
 )
 
 add_global_arguments('-DGETTEXT_PACKAGE="' + meson.project_name() + '"', language:'c')
@@ -13,12 +13,11 @@ i18n = import('i18n')
 
 accountservice_dep = dependency('accountsservice')
 gee_dep = dependency('gee-0.8')
-glib_dep = dependency('glib-2.0')
+glib_dep = dependency('glib-2.0', version: '>=2.74')
 gobject_dep = dependency('gobject-2.0')
-granite_dep = dependency('granite', version: '>=6.0.0')
-handy_dep = dependency('libhandy-1', version: '>=0.90.0')
-gtk_dep = dependency('gtk+-3.0')
-handy_dep = dependency('libhandy-1', version: '>= 0.90.0')
+granite_dep = dependency('granite-7', version: '>=7.4.0')
+gtk_dep = dependency('gtk4')
+adw_dep = dependency('libadwaita-1', version: '>=1.4.0')
 json_glib_dep = dependency('json-glib-1.0')
 polkit_dep = dependency('polkit-gobject-1')
 posix_dep = meson.get_compiler('vala').find_library('posix')
@@ -32,7 +31,7 @@ dependencies = [
     gobject_dep,
     granite_dep,
     gtk_dep,
-    handy_dep,
+    adw_dep,
     json_glib_dep,
     polkit_dep,
     posix_dep,
