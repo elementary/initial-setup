@@ -14,8 +14,7 @@ Build-Depends: debhelper (>= 10.5.1),
                libjson-glib-dev,
                libpolkit-gobject-1-dev,
                libpwquality-dev,
-               libxml2-dev,
-               libxml2-utils,
+               libxkbregistry-dev,
                meson,
                valac
 Standards-Version: 4.1.1
