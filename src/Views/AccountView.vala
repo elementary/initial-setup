@@ -271,7 +271,7 @@ public class Installer.AccountView : AbstractInstallerView {
             if (username_is_taken) {
                 username_error_revealer.label = _("The chosen username is already taken");
             } else if (!username_is_valid) {
-                username_error_revealer.label = _("A username must only contain lowercase letters and numbers, without spaces");
+                username_error_revealer.label = _("A username must only contain lowercase letters, numbers, hyphens, and underscores, without spaces");
             }
 
             username_error_revealer.reveal_child = true;
@@ -459,7 +459,7 @@ public class Installer.AccountView : AbstractInstallerView {
 
     private bool is_valid_username (string username) {
         try {
-            if (new Regex ("^[a-z]+[a-z0-9]*$").match (username)) {
+            if (new Regex ("^[a-z]+[-a-z0-9_]*$").match (username)) {
                 return true;
             }
             return false;
@@ -472,12 +472,16 @@ public class Installer.AccountView : AbstractInstallerView {
     private string gen_username (string fullname) {
         string username = "";
         bool met_alpha = false;
+        const char[] ALLOWED_MARKS = {
+            '-',
+            '_'
+        };
 
         foreach (char c in fullname.to_ascii ().to_utf8 ()) {
             if (c.isalpha ()) {
                 username += c.to_string ().down ();
                 met_alpha = true;
-            } else if (c.isdigit () && met_alpha) {
+            } else if ((c.isdigit () || c in ALLOWED_MARKS) && met_alpha) {
                 username += c.to_string ();
             }
         }
