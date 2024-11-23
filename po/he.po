@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
-"PO-Revision-Date: 2024-07-22 09:16+0000\n"
+"PO-Revision-Date: 2024-11-24 07:16+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/installer/"
 "initial-setup/he/>\n"
@@ -46,7 +46,7 @@ msgstr "נא לבחור ססמה"
 
 #: src/Views/AccountView.vala:104
 msgid "Confirm Password"
-msgstr "אימות ססמה"
+msgstr "אימות סיסמה"
 
 #: src/Views/AccountView.vala:117
 msgid "Device name"
@@ -74,7 +74,7 @@ msgstr "סיום ההתקנה"
 
 #: src/Views/AccountView.vala:245
 msgid "Passwords do not match"
-msgstr "הססמאות אינן תואמות"
+msgstr "הסיסמאות אינן תואמות"
 
 #: src/Views/AccountView.vala:270
 msgid "The chosen username is already taken"
