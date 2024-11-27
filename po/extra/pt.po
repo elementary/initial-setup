@@ -8,9 +8,8 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
-"PO-Revision-Date: 2024-11-27 12:43+0000\n"
-"Last-Translator: Gabriel Fernando da Silva Ferreira "
-"<gabrielfernandoferreiraepg@gmail.com>\n"
+"PO-Revision-Date: 2024-11-28 13:16+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/pt/>\n"
 "Language: pt\n"
@@ -57,7 +56,7 @@ msgstr "Melhora os rótulos do leitor de ecrã para introduções, páginas e bo
 
 #: data/initial-setup.metainfo.xml.in:52
 msgid "Improve keyboard navigation"
-msgstr "Melhorar navegação pelo teclado"
+msgstr "Melhora a navegação pelo teclado"
 
 #: data/initial-setup.metainfo.xml.in:53 data/initial-setup.metainfo.xml.in:66
 #: data/initial-setup.metainfo.xml.in:79 data/initial-setup.metainfo.xml.in:88
@@ -67,33 +66,31 @@ msgstr ""
 
 #: data/initial-setup.metainfo.xml.in:65
 msgid "Automatically prompt for screen reader after a timeout"
-msgstr ""
+msgstr "Invoca automaticamente o leitor de ecrã após um tempo limite"
 
 #: data/initial-setup.metainfo.xml.in:75
 msgid "Use larger icons in views"
-msgstr ""
+msgstr "Utiliza ícones maiores nas visualizações"
 
 #: data/initial-setup.metainfo.xml.in:76
 msgid "Make window resizable"
-msgstr ""
+msgstr "Tornar a janela redimensionável"
 
 #: data/initial-setup.metainfo.xml.in:77
-#, fuzzy
-#| msgid "Set keyboard layout in accountsservice"
 msgid "Show keyboard layouts in a separate window"
-msgstr "Definir o esquema do teclado no serviço de contas"
+msgstr "Mostrar os esquemas de teclado numa janela separada"
 
 #: data/initial-setup.metainfo.xml.in:78
 msgid "Allow hyphens in device names"
-msgstr ""
+msgstr "Permite hífens nos nomes de dispositivos"
 
 #: data/initial-setup.metainfo.xml.in:97
 msgid "Offer to switch to right-click primary mouse button"
-msgstr ""
+msgstr "Oferece a troca para o botão direito do rato no botão principal do rato"
 
 #: data/initial-setup.metainfo.xml.in:98
 msgid "Suggest connecting to a network"
-msgstr ""
+msgstr "Sugere a ligação a uma rede"
 
 #~ msgid "New features:"
 #~ msgstr "Novas funcionalidades:"
