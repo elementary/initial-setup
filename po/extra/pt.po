@@ -9,7 +9,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
 "PO-Revision-Date: 2024-11-28 13:16+0000\n"
-"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"Last-Translator: Bruno Costa Castro Alves <bruno.costa.castro.alves@gmail."
+"com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/pt/>\n"
 "Language: pt\n"
@@ -62,7 +63,7 @@ msgstr "Melhora a navegação pelo teclado"
 #: data/initial-setup.metainfo.xml.in:79 data/initial-setup.metainfo.xml.in:88
 #: data/initial-setup.metainfo.xml.in:99
 msgid "Updated translations"
-msgstr ""
+msgstr "Traduções atualizadas"
 
 #: data/initial-setup.metainfo.xml.in:65
 msgid "Automatically prompt for screen reader after a timeout"
