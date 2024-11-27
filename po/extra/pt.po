@@ -9,7 +9,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
 "PO-Revision-Date: 2024-11-27 12:43+0000\n"
-"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"Last-Translator: Gabriel Fernando da Silva Ferreira "
+"<gabrielfernandoferreiraepg@gmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/pt/>\n"
 "Language: pt\n"
@@ -56,7 +57,7 @@ msgstr "Melhora os rótulos do leitor de ecrã para introduções, páginas e bo
 
 #: data/initial-setup.metainfo.xml.in:52
 msgid "Improve keyboard navigation"
-msgstr ""
+msgstr "Melhorar navegação pelo teclado"
 
 #: data/initial-setup.metainfo.xml.in:53 data/initial-setup.metainfo.xml.in:66
 #: data/initial-setup.metainfo.xml.in:79 data/initial-setup.metainfo.xml.in:88
