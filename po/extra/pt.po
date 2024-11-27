@@ -8,8 +8,9 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
-"PO-Revision-Date: 2021-11-17 16:19+0000\n"
-"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"PO-Revision-Date: 2024-11-27 12:39+0000\n"
+"Last-Translator: Bruno Costa Castro Alves <bruno.costa.castro.alves@gmail."
+"com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/pt/>\n"
 "Language: pt\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
 #: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
@@ -48,7 +49,7 @@ msgstr "elementary, Inc."
 #: data/initial-setup.metainfo.xml.in:73 data/initial-setup.metainfo.xml.in:86
 #: data/initial-setup.metainfo.xml.in:95
 msgid "Improvements:"
-msgstr ""
+msgstr "Melhorias:"
 
 #: data/initial-setup.metainfo.xml.in:51
 msgid "Improve screen reader labels for entries, pages, and buttons"
