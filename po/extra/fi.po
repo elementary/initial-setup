@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
-"PO-Revision-Date: 2023-01-26 09:25+0000\n"
+"PO-Revision-Date: 2024-12-02 02:00+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/installer/"
 "initial-setup-extra/fi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
 #: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
@@ -62,7 +62,7 @@ msgstr ""
 #: data/initial-setup.metainfo.xml.in:79 data/initial-setup.metainfo.xml.in:88
 #: data/initial-setup.metainfo.xml.in:99
 msgid "Updated translations"
-msgstr ""
+msgstr "Päivitetyt käännökset"
 
 #: data/initial-setup.metainfo.xml.in:65
 msgid "Automatically prompt for screen reader after a timeout"
@@ -78,7 +78,7 @@ msgstr ""
 
 #: data/initial-setup.metainfo.xml.in:77
 msgid "Show keyboard layouts in a separate window"
-msgstr ""
+msgstr "Näytä näppäimistöasettelut erillisessä ikkunassa"
 
 #: data/initial-setup.metainfo.xml.in:78
 msgid "Allow hyphens in device names"
@@ -90,7 +90,7 @@ msgstr ""
 
 #: data/initial-setup.metainfo.xml.in:98
 msgid "Suggest connecting to a network"
-msgstr ""
+msgstr "Ehdota yhdistämistä verkkoon"
 
 #~ msgid "New features:"
 #~ msgstr "Uudet ominaisuudet:"
