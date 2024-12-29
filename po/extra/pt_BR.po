@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-09 17:07+0000\n"
-"PO-Revision-Date: 2024-08-17 20:16+0000\n"
-"Last-Translator: Stéfany Larissa <stelar.dev@gmail.com>\n"
+"PO-Revision-Date: 2024-10-26 22:58+0000\n"
+"Last-Translator: Diogo Pessoa <diogopessoabr@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "installer/initial-setup-extra/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -66,7 +66,7 @@ msgstr "Traduções atualizadas"
 
 #: data/initial-setup.metainfo.xml.in:65
 msgid "Automatically prompt for screen reader after a timeout"
-msgstr "Solicita automaticamente para o leitor de tela após um tempo limite"
+msgstr "Solicita automaticamente o leitor de tela após um tempo limite"
 
 #: data/initial-setup.metainfo.xml.in:75
 msgid "Use larger icons in views"
@@ -78,11 +78,11 @@ msgstr "Tornar janela redimensionável"
 
 #: data/initial-setup.metainfo.xml.in:77
 msgid "Show keyboard layouts in a separate window"
-msgstr "Mostrar layouts de teclado em uma janela separada"
+msgstr "Mostra layouts de teclado em uma janela separada"
 
 #: data/initial-setup.metainfo.xml.in:78
 msgid "Allow hyphens in device names"
-msgstr "Permitir hífens em nomes de dispositivos"
+msgstr "Permite hifens em nomes de dispositivos"
 
 #: data/initial-setup.metainfo.xml.in:97
 msgid "Offer to switch to right-click primary mouse button"
