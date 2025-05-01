@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-09 17:07+0000\n"
+"POT-Creation-Date: 2025-05-01 18:04+0000\n"
 "PO-Revision-Date: 2024-05-11 13:13+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/installer/"
@@ -37,55 +37,56 @@ msgstr ""
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:63
-#: data/initial-setup.metainfo.xml.in:73 data/initial-setup.metainfo.xml.in:86
-#: data/initial-setup.metainfo.xml.in:95
+#: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:61
+#: data/initial-setup.metainfo.xml.in:75 data/initial-setup.metainfo.xml.in:85
+#: data/initial-setup.metainfo.xml.in:98 data/initial-setup.metainfo.xml.in:107
 msgid "Improvements:"
 msgstr "Millores:"
 
-#: data/initial-setup.metainfo.xml.in:51
+#: data/initial-setup.metainfo.xml.in:51 data/initial-setup.metainfo.xml.in:65
+#: data/initial-setup.metainfo.xml.in:78 data/initial-setup.metainfo.xml.in:91
+#: data/initial-setup.metainfo.xml.in:100
+#: data/initial-setup.metainfo.xml.in:111
+msgid "Updated translations"
+msgstr "Traduccions actualitzades"
+
+#: data/initial-setup.metainfo.xml.in:63
 msgid "Improve screen reader labels for entries, pages, and buttons"
 msgstr ""
 "Millora de les etiquetes dels lectors de pantalla per a entrades, pàgines i "
 "botons"
 
-#: data/initial-setup.metainfo.xml.in:52
+#: data/initial-setup.metainfo.xml.in:64
 msgid "Improve keyboard navigation"
 msgstr "Millora de la navegació amb el teclat"
 
-#: data/initial-setup.metainfo.xml.in:53 data/initial-setup.metainfo.xml.in:66
-#: data/initial-setup.metainfo.xml.in:79 data/initial-setup.metainfo.xml.in:88
-#: data/initial-setup.metainfo.xml.in:99
-msgid "Updated translations"
-msgstr "Traduccions actualitzades"
-
-#: data/initial-setup.metainfo.xml.in:65
+#: data/initial-setup.metainfo.xml.in:77
 msgid "Automatically prompt for screen reader after a timeout"
 msgstr ""
 "Demana automàticament el lector de pantalla després d'un temps d'espera."
 
-#: data/initial-setup.metainfo.xml.in:75
+#: data/initial-setup.metainfo.xml.in:87
 msgid "Use larger icons in views"
 msgstr "Icones més grosses a les vistes"
 
-#: data/initial-setup.metainfo.xml.in:76
+#: data/initial-setup.metainfo.xml.in:88
 msgid "Make window resizable"
 msgstr "Es pot canviar la mida de la finestra."
 
-#: data/initial-setup.metainfo.xml.in:77
+#: data/initial-setup.metainfo.xml.in:89
 msgid "Show keyboard layouts in a separate window"
 msgstr "Disposicions del teclat en una finestra independent"
 
-#: data/initial-setup.metainfo.xml.in:78
+#: data/initial-setup.metainfo.xml.in:90
 msgid "Allow hyphens in device names"
 msgstr "Permet els guions als noms dels dispositius."
 
-#: data/initial-setup.metainfo.xml.in:97
+#: data/initial-setup.metainfo.xml.in:109
 msgid "Offer to switch to right-click primary mouse button"
 msgstr ""
 "Ofereix canviar al botó principal del ratolí amb el botó dret del ratolí."
 
-#: data/initial-setup.metainfo.xml.in:98
+#: data/initial-setup.metainfo.xml.in:110
 msgid "Suggest connecting to a network"
 msgstr "Suggereix connectar-se a una xarxa."
 
