@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-09 17:07+0000\n"
+"POT-Creation-Date: 2025-05-01 18:04+0000\n"
 "PO-Revision-Date: 2024-09-19 07:21+0000\n"
 "Last-Translator: hnklp <hynek.puta@seznam.cz>\n"
-"Language-Team: Czech <https://l10n.elementary.io/projects/installer/"
-"initial-setup/cs/>\n"
+"Language-Team: Czech <https://l10n.elementary.io/projects/installer/initial-"
+"setup/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +19,7 @@ msgstr ""
 msgid "Create a User"
 msgstr "Vytvořit uživatele"
 
-#: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:170
+#: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:172
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -32,87 +32,91 @@ msgstr "Výchozí"
 msgid "Create an Account"
 msgstr "Vytvořit účet"
 
-#: src/Views/AccountView.vala:65
+#: src/Views/AccountView.vala:67
 msgid "Full Name"
 msgstr "Celé jméno"
 
-#: src/Views/AccountView.vala:71
+#: src/Views/AccountView.vala:73
 msgid "Username"
 msgstr "Uživatelské jméno"
 
-#: src/Views/AccountView.vala:86
+#: src/Views/AccountView.vala:88
 msgid "Choose a Password"
 msgstr "Zvolte si heslo"
 
-#: src/Views/AccountView.vala:104
+#: src/Views/AccountView.vala:106
 msgid "Confirm Password"
 msgstr "Potvrďte heslo"
 
-#: src/Views/AccountView.vala:117
+#: src/Views/AccountView.vala:119
 msgid "Device name"
 msgstr "Název zařízení"
 
-#: src/Views/AccountView.vala:120
+#: src/Views/AccountView.vala:122
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
 "Viditelné pro ostatní zařízení při sdílení, např. přes Bluetooth nebo síť."
 
-#: src/Views/AccountView.vala:130
+#: src/Views/AccountView.vala:132
 #, fuzzy, c-format
 #| msgid "Unable to set Hostname '%s'"
 msgid "Unable to setup Hostname interface: %s"
 msgstr "Nastavení názvu počítače „%s“ se nepodařilo"
 
-#: src/Views/AccountView.vala:161 src/Views/KeyboardLayoutView.vala:38
-#: src/Views/NetworkView.vala:66
+#: src/Views/AccountView.vala:163 src/Views/KeyboardLayoutView.vala:40
+#: src/Views/NetworkView.vala:68
 msgid "Back"
 msgstr "Zpět"
 
-#: src/Views/AccountView.vala:165
+#: src/Views/AccountView.vala:167
 msgid "Finish Setup"
 msgstr "Dokončit nastavení"
 
-#: src/Views/AccountView.vala:245
+#: src/Views/AccountView.vala:247
 msgid "Passwords do not match"
 msgstr "Zadání hesla se neshodují"
 
-#: src/Views/AccountView.vala:270
+#: src/Views/AccountView.vala:272
 msgid "The chosen username is already taken"
 msgstr "Zvolené uživatelské jméno už je obsazené"
 
-#: src/Views/AccountView.vala:272
+#: src/Views/AccountView.vala:274
+#, fuzzy
+#| msgid ""
+#| "A username must only contain lowercase letters and numbers, without spaces"
 msgid ""
-"A username must only contain lowercase letters and numbers, without spaces"
+"A username must only contain lowercase letters, numbers, hyphens, and "
+"underscores, without spaces"
 msgstr ""
 "Uživatelské jméno může obsahovat pouze malá písmena a číslice, bez mezer"
 
-#: src/Views/AccountView.vala:336
+#: src/Views/AccountView.vala:338
 #, c-format
 msgid "Creating an account for “%s” failed"
 msgstr "Vytváření účtu pro „%s“ selhalo"
 
-#: src/Views/AccountView.vala:343
+#: src/Views/AccountView.vala:345
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
 msgstr "Nepodařilo se získat oprávnění k vytvoření účtu pro „%s“"
 
-#: src/Views/AccountView.vala:358
+#: src/Views/AccountView.vala:360
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
 msgstr "Nepodařilo se získat oprávnění k pojmenování tohoto zařízení „%s“"
 
-#: src/Views/AccountView.vala:362
+#: src/Views/AccountView.vala:364
 #, c-format
 msgid "Unable to name this device “%s”"
 msgstr "Nepovedlo se nastavit pojmenování zařízení \"%s\""
 
-#: src/Views/AccountView.vala:413
+#: src/Views/AccountView.vala:415
 msgid "Initial Setup could not set your hostname."
 msgstr "V prvotním nastavení se nepodařilo nastavit název vašeho počítače."
 
-#: src/Views/AccountView.vala:432
+#: src/Views/AccountView.vala:434
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
@@ -124,20 +128,20 @@ msgstr ""
 msgid "Select Keyboard Layout"
 msgstr "Vyberte rozložení klávesnice"
 
-#: src/Views/KeyboardLayoutView.vala:23
+#: src/Views/KeyboardLayoutView.vala:25
 msgid "Type to test your layout"
 msgstr "Vyzkoušejte rozložení klávesnice psaním"
 
-#: src/Views/KeyboardLayoutView.vala:26
+#: src/Views/KeyboardLayoutView.vala:28
 msgid "Show keyboard layout"
 msgstr "Zobrazit rozložení klávesnice"
 
-#: src/Views/KeyboardLayoutView.vala:42 src/Views/LanguageView.vala:104
+#: src/Views/KeyboardLayoutView.vala:44 src/Views/LanguageView.vala:104
 #: src/Views/LanguageView.vala:179
 msgid "Select"
 msgstr "Vybrat"
 
-#: src/Views/KeyboardLayoutView.vala:111
+#: src/Views/KeyboardLayoutView.vala:113
 msgid "Input Language"
 msgstr "Jazyk vstupu z klávesnice"
 
@@ -183,7 +187,7 @@ msgstr ""
 msgid "Select a Language"
 msgstr "Vyberte jazyk"
 
-#: src/Views/LanguageView.vala:347 src/Views/LanguageView.vala:407
+#: src/Views/LanguageView.vala:348 src/Views/LanguageView.vala:408
 msgid "Currently active language"
 msgstr "Právě používaný jazyk"
 
@@ -191,7 +195,7 @@ msgstr "Právě používaný jazyk"
 msgid "Connect Network"
 msgstr "Připojte síť"
 
-#: src/Views/NetworkView.vala:32
+#: src/Views/NetworkView.vala:34
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
@@ -200,20 +204,20 @@ msgstr ""
 "nových aplikací a připojování k online službám"
 
 #. /Translators: for RTL languages, the UI is flipped
-#: src/Views/NetworkView.vala:42
+#: src/Views/NetworkView.vala:44
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
 msgstr "Vyberte Wi-Fi síť poblíž z indikátoru sítě vpravo nahoře."
 
-#: src/Views/NetworkView.vala:48
+#: src/Views/NetworkView.vala:50
 msgid "Connect a network cable"
 msgstr "Připojte kabel datové sítě"
 
-#: src/Views/NetworkView.vala:70
+#: src/Views/NetworkView.vala:72
 msgid "Skip"
 msgstr "Přeskočit"
 
-#: src/Views/NetworkView.vala:86
+#: src/Views/NetworkView.vala:88
 msgid "Next"
 msgstr "Další"
 

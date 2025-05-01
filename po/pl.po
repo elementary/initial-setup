@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-09 17:07+0000\n"
+"POT-Creation-Date: 2025-05-01 18:04+0000\n"
 "PO-Revision-Date: 2024-09-23 10:39+0000\n"
 "Last-Translator: Marcin Serwin <marcin@serwin.dev>\n"
-"Language-Team: Polish <https://l10n.elementary.io/projects/installer/"
-"initial-setup/pl/>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/installer/initial-"
+"setup/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid "Create a User"
 msgstr "Utwórz konto użytkownika"
 
-#: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:170
+#: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:172
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -33,27 +33,27 @@ msgstr "Domyślny"
 msgid "Create an Account"
 msgstr "Utwórz konto"
 
-#: src/Views/AccountView.vala:65
+#: src/Views/AccountView.vala:67
 msgid "Full Name"
 msgstr "Imię i nazwisko"
 
-#: src/Views/AccountView.vala:71
+#: src/Views/AccountView.vala:73
 msgid "Username"
 msgstr "Nazwa użytkownika"
 
-#: src/Views/AccountView.vala:86
+#: src/Views/AccountView.vala:88
 msgid "Choose a Password"
 msgstr "Wybierz hasło"
 
-#: src/Views/AccountView.vala:104
+#: src/Views/AccountView.vala:106
 msgid "Confirm Password"
 msgstr "Potwierdź hasło"
 
-#: src/Views/AccountView.vala:117
+#: src/Views/AccountView.vala:119
 msgid "Device name"
 msgstr "Nazwa urządzenia"
 
-#: src/Views/AccountView.vala:120
+#: src/Views/AccountView.vala:122
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
@@ -61,58 +61,62 @@ msgstr ""
 "Widoczny dla innych urządzeń podczas udostępniania, np. za pomocą Bluetooth "
 "lub przez sieć."
 
-#: src/Views/AccountView.vala:130
+#: src/Views/AccountView.vala:132
 #, c-format
 msgid "Unable to setup Hostname interface: %s"
 msgstr "Nie można ustawić interfejsu nazwy hosta: %s"
 
-#: src/Views/AccountView.vala:161 src/Views/KeyboardLayoutView.vala:38
-#: src/Views/NetworkView.vala:66
+#: src/Views/AccountView.vala:163 src/Views/KeyboardLayoutView.vala:40
+#: src/Views/NetworkView.vala:68
 msgid "Back"
 msgstr "Wróć"
 
-#: src/Views/AccountView.vala:165
+#: src/Views/AccountView.vala:167
 msgid "Finish Setup"
 msgstr "Zakończ ustawienia"
 
-#: src/Views/AccountView.vala:245
+#: src/Views/AccountView.vala:247
 msgid "Passwords do not match"
 msgstr "Hasła do siebie nie pasują"
 
-#: src/Views/AccountView.vala:270
+#: src/Views/AccountView.vala:272
 msgid "The chosen username is already taken"
 msgstr "Wybrana nazwa użytkownika jest już zajęta"
 
-#: src/Views/AccountView.vala:272
+#: src/Views/AccountView.vala:274
+#, fuzzy
+#| msgid ""
+#| "A username must only contain lowercase letters and numbers, without spaces"
 msgid ""
-"A username must only contain lowercase letters and numbers, without spaces"
+"A username must only contain lowercase letters, numbers, hyphens, and "
+"underscores, without spaces"
 msgstr "Nazwa użytkownika musi zawierać tylko małe litery i cyfry, bez spacji"
 
-#: src/Views/AccountView.vala:336
+#: src/Views/AccountView.vala:338
 #, c-format
 msgid "Creating an account for “%s” failed"
 msgstr "Tworzenie konta dla „%s” nie powiodło się"
 
-#: src/Views/AccountView.vala:343
+#: src/Views/AccountView.vala:345
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
 msgstr "Nie udało się uzyskać uprawnień do stworzenia konta dla „%s”"
 
-#: src/Views/AccountView.vala:358
+#: src/Views/AccountView.vala:360
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
 msgstr "Nie udało się uzyskać uprawnień do nazwania tego urządzenia „%s”"
 
-#: src/Views/AccountView.vala:362
+#: src/Views/AccountView.vala:364
 #, c-format
 msgid "Unable to name this device “%s”"
 msgstr "Nie udało się nazwać tego urządzenia „%s”"
 
-#: src/Views/AccountView.vala:413
+#: src/Views/AccountView.vala:415
 msgid "Initial Setup could not set your hostname."
 msgstr "Instalator nie mógł ustawić twojej nazwy hosta."
 
-#: src/Views/AccountView.vala:432
+#: src/Views/AccountView.vala:434
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
@@ -124,20 +128,20 @@ msgstr ""
 msgid "Select Keyboard Layout"
 msgstr "Wybierz układ klawiatury"
 
-#: src/Views/KeyboardLayoutView.vala:23
+#: src/Views/KeyboardLayoutView.vala:25
 msgid "Type to test your layout"
 msgstr "Napisz, aby wypróbować swój układ"
 
-#: src/Views/KeyboardLayoutView.vala:26
+#: src/Views/KeyboardLayoutView.vala:28
 msgid "Show keyboard layout"
 msgstr "Pokaż układ klawiatury"
 
-#: src/Views/KeyboardLayoutView.vala:42 src/Views/LanguageView.vala:104
+#: src/Views/KeyboardLayoutView.vala:44 src/Views/LanguageView.vala:104
 #: src/Views/LanguageView.vala:179
 msgid "Select"
 msgstr "Wybierz"
 
-#: src/Views/KeyboardLayoutView.vala:111
+#: src/Views/KeyboardLayoutView.vala:113
 msgid "Input Language"
 msgstr "Wpisz język"
 
@@ -183,7 +187,7 @@ msgstr ""
 msgid "Select a Language"
 msgstr "Wybierz język"
 
-#: src/Views/LanguageView.vala:347 src/Views/LanguageView.vala:407
+#: src/Views/LanguageView.vala:348 src/Views/LanguageView.vala:408
 msgid "Currently active language"
 msgstr "Aktywny język"
 
@@ -191,7 +195,7 @@ msgstr "Aktywny język"
 msgid "Connect Network"
 msgstr "Podłącz z siecią"
 
-#: src/Views/NetworkView.vala:32
+#: src/Views/NetworkView.vala:34
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
@@ -200,21 +204,21 @@ msgstr ""
 "instalować nowe aplikacje i do łączenia z usługami online"
 
 #. /Translators: for RTL languages, the UI is flipped
-#: src/Views/NetworkView.vala:42
+#: src/Views/NetworkView.vala:44
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
 msgstr ""
 "Wybierz pobliską sieć bezprzewodową z indykatora sieci w prawym górnym rogu."
 
-#: src/Views/NetworkView.vala:48
+#: src/Views/NetworkView.vala:50
 msgid "Connect a network cable"
 msgstr "Podłącz kabel sieciowy"
 
-#: src/Views/NetworkView.vala:70
+#: src/Views/NetworkView.vala:72
 msgid "Skip"
 msgstr "Pomiń"
 
-#: src/Views/NetworkView.vala:86
+#: src/Views/NetworkView.vala:88
 msgid "Next"
 msgstr "Dalej"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-09 17:07+0000\n"
+"POT-Creation-Date: 2025-05-01 18:04+0000\n"
 "PO-Revision-Date: 2023-02-14 13:25+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -19,7 +19,7 @@ msgstr ""
 msgid "Create a User"
 msgstr "Opprett en bruker"
 
-#: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:170
+#: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:172
 #, c-format
 msgid "%s…"
 msgstr "%s…"
@@ -32,87 +32,91 @@ msgstr "Forvalg"
 msgid "Create an Account"
 msgstr "Opprett en konto"
 
-#: src/Views/AccountView.vala:65
+#: src/Views/AccountView.vala:67
 msgid "Full Name"
 msgstr "Fullt navn"
 
-#: src/Views/AccountView.vala:71
+#: src/Views/AccountView.vala:73
 msgid "Username"
 msgstr "Brukernavn"
 
-#: src/Views/AccountView.vala:86
+#: src/Views/AccountView.vala:88
 msgid "Choose a Password"
 msgstr "Velg et passord"
 
-#: src/Views/AccountView.vala:104
+#: src/Views/AccountView.vala:106
 msgid "Confirm Password"
 msgstr "Bekreft passord"
 
-#: src/Views/AccountView.vala:117
+#: src/Views/AccountView.vala:119
 #, fuzzy
 msgid "Device name"
 msgstr "Enhetsnavn"
 
-#: src/Views/AccountView.vala:120
+#: src/Views/AccountView.vala:122
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
 "Synlig for andre enheter ved deling. F.eks med Blåtann over nettverket."
 
-#: src/Views/AccountView.vala:130
+#: src/Views/AccountView.vala:132
 #, fuzzy, c-format
 msgid "Unable to setup Hostname interface: %s"
 msgstr "Kunne ikke sette vertsnavnet «%s»"
 
-#: src/Views/AccountView.vala:161 src/Views/KeyboardLayoutView.vala:38
-#: src/Views/NetworkView.vala:66
+#: src/Views/AccountView.vala:163 src/Views/KeyboardLayoutView.vala:40
+#: src/Views/NetworkView.vala:68
 msgid "Back"
 msgstr "Tilbake"
 
-#: src/Views/AccountView.vala:165
+#: src/Views/AccountView.vala:167
 msgid "Finish Setup"
 msgstr "Fullfør oppsett"
 
-#: src/Views/AccountView.vala:245
+#: src/Views/AccountView.vala:247
 msgid "Passwords do not match"
 msgstr "Passordene samsvarer ikke"
 
-#: src/Views/AccountView.vala:270
+#: src/Views/AccountView.vala:272
 msgid "The chosen username is already taken"
 msgstr "Brukernavnet du har valgt er allerede i bruk"
 
-#: src/Views/AccountView.vala:272
+#: src/Views/AccountView.vala:274
+#, fuzzy
+#| msgid ""
+#| "A username must only contain lowercase letters and numbers, without spaces"
 msgid ""
-"A username must only contain lowercase letters and numbers, without spaces"
+"A username must only contain lowercase letters, numbers, hyphens, and "
+"underscores, without spaces"
 msgstr "Brukernavnet kan kun inneholde små bokstaver og tall, uten mellomrom"
 
-#: src/Views/AccountView.vala:336
+#: src/Views/AccountView.vala:338
 #, fuzzy, c-format
 msgid "Creating an account for “%s” failed"
 msgstr "Kunne ikke opprette konto for «%s»"
 
-#: src/Views/AccountView.vala:343
+#: src/Views/AccountView.vala:345
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
 msgstr "Fikk ikke tilgang til å opprette konto for «%s»"
 
-#: src/Views/AccountView.vala:358
+#: src/Views/AccountView.vala:360
 #, fuzzy, c-format
 msgid "Couldn't get permission to name this device “%s”"
 msgstr "Fikk ikke tilgang til å navngi «%s»-enheten"
 
-#: src/Views/AccountView.vala:362
+#: src/Views/AccountView.vala:364
 #, fuzzy, c-format
 msgid "Unable to name this device “%s”"
 msgstr "Kunne ikke navngi «%s»-enheten"
 
-#: src/Views/AccountView.vala:413
+#: src/Views/AccountView.vala:415
 #, fuzzy
 msgid "Initial Setup could not set your hostname."
 msgstr "Førstegangsoppsettet kunne ikke sette vertsnavnet ditt."
 
-#: src/Views/AccountView.vala:432
+#: src/Views/AccountView.vala:434
 #, fuzzy
 #| msgid ""
 #| "Initial Setup could not create your user. Without it, you will not be "
@@ -128,20 +132,20 @@ msgstr ""
 msgid "Select Keyboard Layout"
 msgstr "Velg tastaturoppsett"
 
-#: src/Views/KeyboardLayoutView.vala:23
+#: src/Views/KeyboardLayoutView.vala:25
 msgid "Type to test your layout"
 msgstr "Skriv for å teste ditt oppsett"
 
-#: src/Views/KeyboardLayoutView.vala:26
+#: src/Views/KeyboardLayoutView.vala:28
 msgid "Show keyboard layout"
 msgstr "Vis tastaturoppsett"
 
-#: src/Views/KeyboardLayoutView.vala:42 src/Views/LanguageView.vala:104
+#: src/Views/KeyboardLayoutView.vala:44 src/Views/LanguageView.vala:104
 #: src/Views/LanguageView.vala:179
 msgid "Select"
 msgstr "Velg"
 
-#: src/Views/KeyboardLayoutView.vala:111
+#: src/Views/KeyboardLayoutView.vala:113
 msgid "Input Language"
 msgstr "Inndataspråk"
 
@@ -185,7 +189,7 @@ msgstr ""
 msgid "Select a Language"
 msgstr "Velg et språk"
 
-#: src/Views/LanguageView.vala:347 src/Views/LanguageView.vala:407
+#: src/Views/LanguageView.vala:348 src/Views/LanguageView.vala:408
 msgid "Currently active language"
 msgstr "Nåværende språk"
 
@@ -193,7 +197,7 @@ msgstr "Nåværende språk"
 msgid "Connect Network"
 msgstr "Koble til nettverk"
 
-#: src/Views/NetworkView.vala:32
+#: src/Views/NetworkView.vala:34
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
@@ -202,20 +206,20 @@ msgstr ""
 "programmer, og koble til nettbaserte tjenester"
 
 #. /Translators: for RTL languages, the UI is flipped
-#: src/Views/NetworkView.vala:42
+#: src/Views/NetworkView.vala:44
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
 msgstr "Velg et trådløsnettverk fra nettverksindikatoren øverst til høyre."
 
-#: src/Views/NetworkView.vala:48
+#: src/Views/NetworkView.vala:50
 msgid "Connect a network cable"
 msgstr "Plugg i en nettverkskabel"
 
-#: src/Views/NetworkView.vala:70
+#: src/Views/NetworkView.vala:72
 msgid "Skip"
 msgstr "Hopp over"
 
-#: src/Views/NetworkView.vala:86
+#: src/Views/NetworkView.vala:88
 msgid "Next"
 msgstr "Neste"
 
