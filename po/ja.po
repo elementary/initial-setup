@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-01 18:04+0000\n"
-"PO-Revision-Date: 2025-03-02 15:16+0000\n"
+"PO-Revision-Date: 2025-05-02 18:06+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
-"Language-Team: Japanese <https://l10n.elementary.io/projects/installer/"
+"Language-Team: Japanese <https://l10n.elementaryos.org/projects/installer/"
 "initial-setup/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.9.2\n"
+"X-Generator: Weblate 5.10.4\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/Application.vala:39
@@ -83,14 +83,11 @@ msgid "The chosen username is already taken"
 msgstr "指定されたユーザー名はすでに使われています"
 
 #: src/Views/AccountView.vala:274
-#, fuzzy
-#| msgid ""
-#| "A username must only contain lowercase letters and numbers, without spaces"
 msgid ""
 "A username must only contain lowercase letters, numbers, hyphens, and "
 "underscores, without spaces"
-msgstr ""
-"ユーザー名には小文字と数字のみが許可されます。空白は使用しないでください"
+msgstr "ユーザー名には小文字・数字・ハイフン・アンダースコアのみを使用できます。空白"
+"は使用できません"
 
 #: src/Views/AccountView.vala:338
 #, c-format
