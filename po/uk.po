@@ -3,9 +3,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-01 18:04+0000\n"
-"PO-Revision-Date: 2024-03-15 21:13+0000\n"
+"PO-Revision-Date: 2025-05-07 00:55+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
-"Language-Team: Ukrainian <https://l10n.elementary.io/projects/installer/"
+"Language-Team: Ukrainian <https://l10n.elementaryos.org/projects/installer/"
 "initial-setup/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.10.4\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/Application.vala:39
@@ -84,13 +84,12 @@ msgid "The chosen username is already taken"
 msgstr "Вибране ім'я користувача вже використовується"
 
 #: src/Views/AccountView.vala:274
-#, fuzzy
-#| msgid ""
-#| "A username must only contain lowercase letters and numbers, without spaces"
 msgid ""
 "A username must only contain lowercase letters, numbers, hyphens, and "
 "underscores, without spaces"
-msgstr "Ім'я користувача повинно містити лише малі літери і цифри без пробілів"
+msgstr ""
+"Ім'я користувача повинно містити лише малі букви, цифри, дефіси та "
+"підкреслення без пробілів"
 
 #: src/Views/AccountView.vala:338
 #, c-format
