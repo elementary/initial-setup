@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-01 18:04+0000\n"
-"PO-Revision-Date: 2024-11-13 14:00+0000\n"
-"Last-Translator: Corentin Noël <tintou@noel.tf>\n"
-"Language-Team: French <https://l10n.elementary.io/projects/installer/initial-"
-"setup/fr/>\n"
+"PO-Revision-Date: 2025-05-20 10:09+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
+"Language-Team: French <https://l10n.elementaryos.org/projects/installer/"
+"initial-setup/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/Application.vala:39
@@ -83,15 +83,12 @@ msgid "The chosen username is already taken"
 msgstr "Le nom d'utilisateur est déjà pris"
 
 #: src/Views/AccountView.vala:274
-#, fuzzy
-#| msgid ""
-#| "A username must only contain lowercase letters and numbers, without spaces"
 msgid ""
 "A username must only contain lowercase letters, numbers, hyphens, and "
 "underscores, without spaces"
 msgstr ""
-"Le nom d'utilisateur ne peut contenir que des lettres minuscules et des "
-"nombres, mais pas d'espaces"
+"Le nom d'utilisateur ne peut contenir que des lettres minuscules, des "
+"chiffres, des traits d'union et des tirets bas, mais pas d'espaces"
 
 #: src/Views/AccountView.vala:338
 #, c-format
