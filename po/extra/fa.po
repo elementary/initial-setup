@@ -2,87 +2,89 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-01 18:04+0000\n"
-"PO-Revision-Date: 2022-04-14 23:02+0000\n"
-"Last-Translator: Pikhosh <pikhosh@gmail.com>\n"
-"Language-Team: Persian <https://l10n.elementary.io/projects/installer/"
+"PO-Revision-Date: 2025-06-13 09:55+0000\n"
+"Last-Translator: Muhammad-Noraeii <Muhammad.Noraeii@gmail.com>\n"
+"Language-Team: Persian <https://l10n.elementaryos.org/projects/installer/"
 "initial-setup-extra/fa/>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
 msgid "Set up elementary OS"
-msgstr ""
+msgstr "راه‌اندازی elementary OS"
 
 #: data/initial-setup.desktop.in:4
 msgid "Set up the system"
-msgstr ""
+msgstr "راه‌اندازی سیستم"
 
 #: data/initial-setup.metainfo.xml.in:10
 msgid "Initial Setup"
-msgstr ""
+msgstr "راه‌اندازی اولیه"
 
 #: data/initial-setup.metainfo.xml.in:13
 msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
 msgstr ""
+"کمک به انجام کارهای ضروری قبل از اینکه نصب تازه قابل استفاده باشد، مانند "
+"انتخاب زبان و ایجاد حساب کاربری."
 
 #: data/initial-setup.metainfo.xml.in:41
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:61
 #: data/initial-setup.metainfo.xml.in:75 data/initial-setup.metainfo.xml.in:85
 #: data/initial-setup.metainfo.xml.in:98 data/initial-setup.metainfo.xml.in:107
 msgid "Improvements:"
-msgstr ""
+msgstr "بهبودها:"
 
 #: data/initial-setup.metainfo.xml.in:51 data/initial-setup.metainfo.xml.in:65
 #: data/initial-setup.metainfo.xml.in:78 data/initial-setup.metainfo.xml.in:91
 #: data/initial-setup.metainfo.xml.in:100
 #: data/initial-setup.metainfo.xml.in:111
 msgid "Updated translations"
-msgstr ""
+msgstr "ترجمه‌های به‌روز شده"
 
 #: data/initial-setup.metainfo.xml.in:63
 msgid "Improve screen reader labels for entries, pages, and buttons"
-msgstr ""
+msgstr "بهبود برچسب‌های صفحه‌خوان برای موارد ورودی، صفحات و دکمه‌ها"
 
 #: data/initial-setup.metainfo.xml.in:64
 msgid "Improve keyboard navigation"
-msgstr ""
+msgstr "بهبود ناوبری با صفحه‌کلید"
 
 #: data/initial-setup.metainfo.xml.in:77
 msgid "Automatically prompt for screen reader after a timeout"
-msgstr ""
+msgstr "پس از گذشت زمان مشخص به‌صورت خودکار درخواست فعال‌سازی صفحه‌خوان شود"
 
 #: data/initial-setup.metainfo.xml.in:87
 msgid "Use larger icons in views"
-msgstr ""
+msgstr "استفاده از آیکون‌های بزرگ‌تر در نماها"
 
 #: data/initial-setup.metainfo.xml.in:88
 msgid "Make window resizable"
-msgstr ""
+msgstr "امکان تغییر اندازه پنجره فراهم شود"
 
 #: data/initial-setup.metainfo.xml.in:89
 msgid "Show keyboard layouts in a separate window"
-msgstr ""
+msgstr "نمایش چیدمان‌های صفحه‌کلید در پنجره‌ای جداگانه"
 
 #: data/initial-setup.metainfo.xml.in:90
 msgid "Allow hyphens in device names"
-msgstr ""
+msgstr "اجازه استفاده از خط تیره در نام دستگاه‌ها"
 
 #: data/initial-setup.metainfo.xml.in:109
 msgid "Offer to switch to right-click primary mouse button"
-msgstr ""
+msgstr "پیشنهاد تغییر دکمه اصلی ماوس به کلیک راست"
 
 #: data/initial-setup.metainfo.xml.in:110
 msgid "Suggest connecting to a network"
-msgstr ""
+msgstr "پیشنهاد اتصال به شبکه"
 
 #~ msgid "New features:"
 #~ msgstr "ویژگی های جدید:"
