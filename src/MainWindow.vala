@@ -17,7 +17,7 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class Installer.MainWindow : Gtk.Window {
+public class Installer.MainWindow : Gtk.Window, PantheonWayland.ExtendedBehavior {
     private Adw.NavigationView navigationview;
 
     private AccountView account_view;
@@ -71,6 +71,30 @@ public class Installer.MainWindow : Gtk.Window {
 
             return Source.REMOVE;
         });
+
+        child.realize.connect (() => {
+            connect_to_shell ();
+            if (display is Gdk.Wayland.Display) {
+                make_centered ();
+            } else {
+                make_centered_x11 ();
+            }
+        });
+    }
+
+    private void make_centered_x11 () {
+        var display = Gdk.Display.get_default ();
+        if (display is Gdk.X11.Display) {
+            unowned var xdisplay = ((Gdk.X11.Display) display).get_xdisplay ();
+
+            var window = ((Gdk.X11.Surface) get_surface ()).get_xid ();
+
+            var prop = xdisplay.intern_atom ("_MUTTER_HINTS", false);
+
+            var value = "centered=1";
+
+            xdisplay.change_property (window, prop, X.XA_STRING, 8, 0, (uchar[]) value, value.length);
+        }
     }
 
     /*

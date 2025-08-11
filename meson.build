@@ -17,12 +17,16 @@ glib_dep = dependency('glib-2.0', version: '>=2.74')
 gobject_dep = dependency('gobject-2.0')
 granite_dep = dependency('granite-7', version: '>=7.4.0')
 gtk_dep = dependency('gtk4')
+gtk_wayland_dep = dependency('gtk4-wayland')
+gtk_x11_dep = dependency('gtk4-x11')
 adw_dep = dependency('libadwaita-1', version: '>=1.4.0')
 json_glib_dep = dependency('json-glib-1.0')
+pantheon_wayland_dep = dependency('pantheon-wayland-1')
 polkit_dep = dependency('polkit-gobject-1')
 posix_dep = meson.get_compiler('vala').find_library('posix')
 pwquality_dep = dependency('pwquality')
 xkbregistry_dep = dependency('xkbregistry')
+x11_dep = dependency('x11')
 
 dependencies = [
     accountservice_dep,
@@ -31,12 +35,16 @@ dependencies = [
     gobject_dep,
     granite_dep,
     gtk_dep,
+    gtk_wayland_dep,
+    gtk_x11_dep,
     adw_dep,
     json_glib_dep,
+    pantheon_wayland_dep,
     polkit_dep,
     posix_dep,
     pwquality_dep,
     xkbregistry_dep,
+    x11_dep
 ]
 
 subdir('po')
