@@ -23,7 +23,7 @@ jobs:
       - name: Install Dependencies
         run: |
           apt update
-          apt install -y desktop-file-utils gettext meson libaccountsservice-dev libgtk-4-dev libgee-0.8-dev libgranite-7-dev libadwaita-1-dev libxkbregistry-dev libjson-glib-dev libpolkit-gobject-1-dev libpwquality-dev valac
+          apt install -y desktop-file-utils gettext meson libaccountsservice-dev libgtk-4-dev libgee-0.8-dev libgranite-7-dev libadwaita-1-dev libxkbregistry-dev libjson-glib-dev libpantheon-wayland-1-dev libpolkit-gobject-1-dev libpwquality-dev valac
       - name: Build
         run: |
           meson build
