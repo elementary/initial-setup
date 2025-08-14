@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-01 18:04+0000\n"
+"POT-Creation-Date: 2025-08-14 10:29+0000\n"
 "PO-Revision-Date: 2023-05-18 21:06+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/installer/"
@@ -28,31 +28,31 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Varsayılan"
 
-#: src/Views/AccountView.vala:56
+#: src/Views/AccountView.vala:58
 msgid "Create an Account"
 msgstr "Hesap Oluştur"
 
-#: src/Views/AccountView.vala:67
+#: src/Views/AccountView.vala:69
 msgid "Full Name"
 msgstr "Tam Ad"
 
-#: src/Views/AccountView.vala:73
+#: src/Views/AccountView.vala:75
 msgid "Username"
 msgstr "Kullanıcı Adı"
 
-#: src/Views/AccountView.vala:88
+#: src/Views/AccountView.vala:90
 msgid "Choose a Password"
 msgstr "Bir Parola Seçin"
 
-#: src/Views/AccountView.vala:106
+#: src/Views/AccountView.vala:109
 msgid "Confirm Password"
 msgstr "Parolayı Onayla"
 
-#: src/Views/AccountView.vala:119
+#: src/Views/AccountView.vala:122
 msgid "Device name"
 msgstr "Cihaz adı"
 
-#: src/Views/AccountView.vala:122
+#: src/Views/AccountView.vala:125
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
@@ -60,29 +60,51 @@ msgstr ""
 "Bluetooth veya ağ üzerinden paylaşım yaparken diğer cihazlar tarafından "
 "görülebilir."
 
-#: src/Views/AccountView.vala:132
+#: src/Views/AccountView.vala:135
 #, c-format
 msgid "Unable to setup Hostname interface: %s"
 msgstr "Ana Bilgisayar Adı arabirimi ayarlanamıyor: %s"
 
-#: src/Views/AccountView.vala:163 src/Views/KeyboardLayoutView.vala:40
+#: src/Views/AccountView.vala:166 src/Views/KeyboardLayoutView.vala:40
 #: src/Views/NetworkView.vala:68
 msgid "Back"
 msgstr "Geri"
 
-#: src/Views/AccountView.vala:167
+#: src/Views/AccountView.vala:170
 msgid "Finish Setup"
 msgstr "Kurulumu Bitir"
 
-#: src/Views/AccountView.vala:247
+#: src/Views/AccountView.vala:235
+msgid "Acceptable password"
+msgstr ""
+
+#: src/Views/AccountView.vala:237
+#, fuzzy
+#| msgid "Choose a Password"
+msgid "Good password"
+msgstr "Bir Parola Seçin"
+
+#: src/Views/AccountView.vala:239
+#, fuzzy
+#| msgid "Choose a Password"
+msgid "Great password"
+msgstr "Bir Parola Seçin"
+
+#: src/Views/AccountView.vala:260
 msgid "Passwords do not match"
 msgstr "Parolalar eşleşmiyor"
 
-#: src/Views/AccountView.vala:272
+#: src/Views/AccountView.vala:266
+#, fuzzy
+#| msgid "Passwords do not match"
+msgid "Passwords match"
+msgstr "Parolalar eşleşmiyor"
+
+#: src/Views/AccountView.vala:301
 msgid "The chosen username is already taken"
 msgstr "Bu kullanıcı adı zaten alınmış"
 
-#: src/Views/AccountView.vala:274
+#: src/Views/AccountView.vala:303
 #, fuzzy
 #| msgid ""
 #| "A username must only contain lowercase letters and numbers, without spaces"
@@ -92,31 +114,31 @@ msgid ""
 msgstr ""
 "Kullanıcı adı yalnızca küçük harf ve rakam içerebilir, boşluk içermemelidir"
 
-#: src/Views/AccountView.vala:338
+#: src/Views/AccountView.vala:368
 #, c-format
 msgid "Creating an account for “%s” failed"
 msgstr "“%s” için hesap oluşturma başarısız oldu"
 
-#: src/Views/AccountView.vala:345
+#: src/Views/AccountView.vala:375
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
 msgstr "“%s” için bir hesap oluşturma izni alınamadı"
 
-#: src/Views/AccountView.vala:360
+#: src/Views/AccountView.vala:390
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
 msgstr "Bu cihazı “%s” olarak adlandırmak için izin alınamadı"
 
-#: src/Views/AccountView.vala:364
+#: src/Views/AccountView.vala:394
 #, c-format
 msgid "Unable to name this device “%s”"
 msgstr "Bu cihaz “%s” olarak adlandırılamıyor"
 
-#: src/Views/AccountView.vala:415
+#: src/Views/AccountView.vala:445
 msgid "Initial Setup could not set your hostname."
 msgstr "İlk Kurulum, ana bilgisayar adınızı ayarlayamadı."
 
-#: src/Views/AccountView.vala:434
+#: src/Views/AccountView.vala:464
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."

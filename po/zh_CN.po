@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-01 18:04+0000\n"
+"POT-Creation-Date: 2025-08-14 10:29+0000\n"
 "PO-Revision-Date: 2025-08-03 11:55+0000\n"
 "Last-Translator: JieXu <xujie0739@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://"
@@ -28,90 +28,113 @@ msgstr "%s…"
 msgid "Default"
 msgstr "默认"
 
-#: src/Views/AccountView.vala:56
+#: src/Views/AccountView.vala:58
 msgid "Create an Account"
 msgstr "新建账户"
 
-#: src/Views/AccountView.vala:67
+#: src/Views/AccountView.vala:69
 msgid "Full Name"
 msgstr "全名"
 
-#: src/Views/AccountView.vala:73
+#: src/Views/AccountView.vala:75
 msgid "Username"
 msgstr "用户名"
 
-#: src/Views/AccountView.vala:88
+#: src/Views/AccountView.vala:90
 msgid "Choose a Password"
 msgstr "选择密码"
 
-#: src/Views/AccountView.vala:106
+#: src/Views/AccountView.vala:109
 msgid "Confirm Password"
 msgstr "确认密码"
 
-#: src/Views/AccountView.vala:119
+#: src/Views/AccountView.vala:122
 msgid "Device name"
 msgstr "设备名称"
 
-#: src/Views/AccountView.vala:122
+#: src/Views/AccountView.vala:125
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr "共享时对其他设备可见，例如通过蓝牙或网络。"
 
-#: src/Views/AccountView.vala:132
+#: src/Views/AccountView.vala:135
 #, c-format
 msgid "Unable to setup Hostname interface: %s"
 msgstr "无法设置主机名：%s"
 
-#: src/Views/AccountView.vala:163 src/Views/KeyboardLayoutView.vala:40
+#: src/Views/AccountView.vala:166 src/Views/KeyboardLayoutView.vala:40
 #: src/Views/NetworkView.vala:68
 msgid "Back"
 msgstr "返回"
 
-#: src/Views/AccountView.vala:167
+#: src/Views/AccountView.vala:170
 msgid "Finish Setup"
 msgstr "完成设置"
 
-#: src/Views/AccountView.vala:247
+#: src/Views/AccountView.vala:235
+msgid "Acceptable password"
+msgstr ""
+
+#: src/Views/AccountView.vala:237
+#, fuzzy
+#| msgid "Choose a Password"
+msgid "Good password"
+msgstr "选择密码"
+
+#: src/Views/AccountView.vala:239
+#, fuzzy
+#| msgid "Choose a Password"
+msgid "Great password"
+msgstr "选择密码"
+
+#: src/Views/AccountView.vala:260
 msgid "Passwords do not match"
 msgstr "密码不匹配"
 
-#: src/Views/AccountView.vala:272
+#: src/Views/AccountView.vala:266
+#, fuzzy
+#| msgid "Passwords do not match"
+msgid "Passwords match"
+msgstr "密码不匹配"
+
+#: src/Views/AccountView.vala:301
 msgid "The chosen username is already taken"
 msgstr "用户名已存在"
 
-#: src/Views/AccountView.vala:274
+#: src/Views/AccountView.vala:303
 msgid ""
 "A username must only contain lowercase letters, numbers, hyphens, and "
 "underscores, without spaces"
-msgstr "用户名只能由小写英文字母、数字、连字符 (\"-\")、下划线 (\"_\") "
-"组成，并且不能有空格"
+msgstr ""
+"用户名只能由小写英文字母、数字、连字符 (\"-\")、下划线 (\"_\") 组成，并且不能"
+"有空格"
 
-#: src/Views/AccountView.vala:338
+#: src/Views/AccountView.vala:368
 #, c-format
 msgid "Creating an account for “%s” failed"
 msgstr "为 “%s” 创建账号失败"
 
-#: src/Views/AccountView.vala:345
+#: src/Views/AccountView.vala:375
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
 msgstr "没有权限为 “%s” 创建账号"
 
-#: src/Views/AccountView.vala:360
+#: src/Views/AccountView.vala:390
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
 msgstr "无法获取更改此设备名称 “%s” 的权限"
 
-#: src/Views/AccountView.vala:364
+#: src/Views/AccountView.vala:394
 #, c-format
 msgid "Unable to name this device “%s”"
 msgstr "无法命名此设备 “%s”"
 
-#: src/Views/AccountView.vala:415
+#: src/Views/AccountView.vala:445
 msgid "Initial Setup could not set your hostname."
 msgstr "初始化安装无法设置您的主机名。"
 
-#: src/Views/AccountView.vala:434
+#: src/Views/AccountView.vala:464
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
