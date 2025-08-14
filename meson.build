@@ -16,7 +16,7 @@ gee_dep = dependency('gee-0.8')
 glib_dep = dependency('glib-2.0', version: '>=2.74')
 gobject_dep = dependency('gobject-2.0')
 granite_dep = dependency('granite-7', version: '>=7.4.0')
-gtk_dep = dependency('gtk4')
+gtk_dep = dependency('gtk4', version: '>=4.14') # Gtk.Accessible.announce
 gtk_wayland_dep = dependency('gtk4-wayland')
 gtk_x11_dep = dependency('gtk4-x11')
 adw_dep = dependency('libadwaita-1', version: '>=1.4.0')
