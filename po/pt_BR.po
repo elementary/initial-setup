@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-01 18:04+0000\n"
+"POT-Creation-Date: 2025-08-14 10:29+0000\n"
 "PO-Revision-Date: 2025-05-17 18:55+0000\n"
 "Last-Translator: Leonardo Lemos <leonardolemos@live.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementaryos.org/projects/"
@@ -28,31 +28,31 @@ msgstr "%s…"
 msgid "Default"
 msgstr "Padrão"
 
-#: src/Views/AccountView.vala:56
+#: src/Views/AccountView.vala:58
 msgid "Create an Account"
 msgstr "Criar uma conta"
 
-#: src/Views/AccountView.vala:67
+#: src/Views/AccountView.vala:69
 msgid "Full Name"
 msgstr "Nome completo"
 
-#: src/Views/AccountView.vala:73
+#: src/Views/AccountView.vala:75
 msgid "Username"
 msgstr "Nome de usuário"
 
-#: src/Views/AccountView.vala:88
+#: src/Views/AccountView.vala:90
 msgid "Choose a Password"
 msgstr "Escolha uma senha"
 
-#: src/Views/AccountView.vala:106
+#: src/Views/AccountView.vala:109
 msgid "Confirm Password"
 msgstr "Confirmar a Senha"
 
-#: src/Views/AccountView.vala:119
+#: src/Views/AccountView.vala:122
 msgid "Device name"
 msgstr "Nome do dispositivo"
 
-#: src/Views/AccountView.vala:122
+#: src/Views/AccountView.vala:125
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
@@ -60,29 +60,51 @@ msgstr ""
 "Visível para outros dispositivos quando compartilhar, por exemplo, com "
 "Bluetooth ou na rede."
 
-#: src/Views/AccountView.vala:132
+#: src/Views/AccountView.vala:135
 #, c-format
 msgid "Unable to setup Hostname interface: %s"
 msgstr "Não foi possível configurar a interface do nome da máquina: %s"
 
-#: src/Views/AccountView.vala:163 src/Views/KeyboardLayoutView.vala:40
+#: src/Views/AccountView.vala:166 src/Views/KeyboardLayoutView.vala:40
 #: src/Views/NetworkView.vala:68
 msgid "Back"
 msgstr "Voltar"
 
-#: src/Views/AccountView.vala:167
+#: src/Views/AccountView.vala:170
 msgid "Finish Setup"
 msgstr "Finalizar configuração"
 
-#: src/Views/AccountView.vala:247
+#: src/Views/AccountView.vala:235
+msgid "Acceptable password"
+msgstr ""
+
+#: src/Views/AccountView.vala:237
+#, fuzzy
+#| msgid "Choose a Password"
+msgid "Good password"
+msgstr "Escolha uma senha"
+
+#: src/Views/AccountView.vala:239
+#, fuzzy
+#| msgid "Choose a Password"
+msgid "Great password"
+msgstr "Escolha uma senha"
+
+#: src/Views/AccountView.vala:260
 msgid "Passwords do not match"
 msgstr "Senhas não coincidem"
 
-#: src/Views/AccountView.vala:272
+#: src/Views/AccountView.vala:266
+#, fuzzy
+#| msgid "Passwords do not match"
+msgid "Passwords match"
+msgstr "Senhas não coincidem"
+
+#: src/Views/AccountView.vala:301
 msgid "The chosen username is already taken"
 msgstr "O nome de usuário escolhido está sendo utilizado"
 
-#: src/Views/AccountView.vala:274
+#: src/Views/AccountView.vala:303
 msgid ""
 "A username must only contain lowercase letters, numbers, hyphens, and "
 "underscores, without spaces"
@@ -90,32 +112,32 @@ msgstr ""
 "Um nome de usuário deve conter apenas letras minúsculas, números, hifens e "
 "sublinhados, sem espaços"
 
-#: src/Views/AccountView.vala:338
+#: src/Views/AccountView.vala:368
 #, c-format
 msgid "Creating an account for “%s” failed"
 msgstr "Criação da conta para \"%s\" falhou"
 
-#: src/Views/AccountView.vala:345
+#: src/Views/AccountView.vala:375
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
 msgstr "Não foi possível obter permissão para criar uma conta para “%s”"
 
-#: src/Views/AccountView.vala:360
+#: src/Views/AccountView.vala:390
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
 msgstr ""
 "Não foi possível obter permissão para nomear este dispositivo como “%s”"
 
-#: src/Views/AccountView.vala:364
+#: src/Views/AccountView.vala:394
 #, c-format
 msgid "Unable to name this device “%s”"
 msgstr "Não foi possível nomear este dispositivo como “%s”"
 
-#: src/Views/AccountView.vala:415
+#: src/Views/AccountView.vala:445
 msgid "Initial Setup could not set your hostname."
 msgstr "O instalador não conseguiu definir o seu nome do host."
 
-#: src/Views/AccountView.vala:434
+#: src/Views/AccountView.vala:464
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."

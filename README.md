@@ -14,9 +14,10 @@ You'll need the following dependencies:
 * libgranite-7-dev >= 7.4.0
 * libaccountsservice-dev
 * libgnomekbd-dev
-* libgtk-4-dev
+* libgtk-4-dev >=4.14
 * libadwaita-1-dev >= 1.4
 * libjson-glib-dev
+* libpantheon-wayland-1-dev
 * libpwquality-dev
 * libxkbregistry-dev
 * meson

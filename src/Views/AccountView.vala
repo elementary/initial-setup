@@ -46,6 +46,8 @@ public class Installer.AccountView : AbstractInstallerView {
     private Gtk.LevelBar pw_levelbar;
     private Granite.ValidatedEntry hostname_entry;
 
+    private uint announce_timeout_id;
+
     construct {
         var avatar = new Adw.Avatar (104, null, true) {
             margin_top = 12,
@@ -102,6 +104,7 @@ public class Installer.AccountView : AbstractInstallerView {
             sensitive = false,
             visibility = false
         };
+        confirm_entry.update_property (Gtk.AccessibleProperty.REQUIRED, true, -1);
 
         var confirm_label = new Granite.HeaderLabel (_("Confirm Password")) {
             mnemonic_widget = confirm_entry
@@ -227,6 +230,14 @@ public class Installer.AccountView : AbstractInstallerView {
                 pw_error_revealer.reveal_child = false;
 
                 pw_levelbar.value = quality;
+
+                if (quality <= 50) {
+                    queue_announce (pw_entry, _("Acceptable password"));
+                } else if (quality <= 75) {
+                    queue_announce (pw_entry, _("Good password"));
+                } else {
+                    queue_announce (pw_entry, _("Great password"));
+                }
             } else {
                 pw_entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "dialog-warning-symbolic");
 
@@ -234,6 +245,8 @@ public class Installer.AccountView : AbstractInstallerView {
                 pw_error_revealer.label = ((PasswordQuality.Error) quality).to_string (error);
 
                 pw_levelbar.value = 0;
+
+                queue_announce (pw_entry, pw_error_revealer.label);
             }
             return true;
         }
@@ -246,8 +259,11 @@ public class Installer.AccountView : AbstractInstallerView {
             if (pw_entry.text != confirm_entry.text) {
                 confirm_entry_revealer.label = _("Passwords do not match");
                 confirm_entry_revealer.reveal_child = true;
+
+                queue_announce (confirm_entry, confirm_entry_revealer.label);
             } else {
                 confirm_entry_revealer.reveal_child = false;
+                queue_announce (confirm_entry, _("Passwords match"));
                 return true;
             }
         } else {
@@ -255,6 +271,19 @@ public class Installer.AccountView : AbstractInstallerView {
         }
 
         return false;
+    }
+
+    private void queue_announce (Gtk.Entry entry, string announcement) {
+        if (announce_timeout_id != 0) {
+            Source.remove (announce_timeout_id);
+            announce_timeout_id = 0;
+        }
+
+        announce_timeout_id = Timeout.add (500, () => {
+            entry.announce (announcement, MEDIUM);
+            announce_timeout_id = 0;
+            return GLib.Source.REMOVE;
+        });
     }
 
     private bool check_username () {
@@ -275,6 +304,7 @@ public class Installer.AccountView : AbstractInstallerView {
             }
 
             username_error_revealer.reveal_child = true;
+            queue_announce (username_entry, username_error_revealer.label);
         }
 
         return false;
