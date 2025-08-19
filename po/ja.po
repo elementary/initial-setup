@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 10:29+0000\n"
-"PO-Revision-Date: 2025-05-02 18:06+0000\n"
+"PO-Revision-Date: 2025-08-17 12:55+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementaryos.org/projects/installer/"
 "initial-setup/ja/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/Application.vala:39
@@ -76,29 +76,23 @@ msgstr "セットアップを完了"
 
 #: src/Views/AccountView.vala:235
 msgid "Acceptable password"
-msgstr ""
+msgstr "悪くはないパスワード"
 
 #: src/Views/AccountView.vala:237
-#, fuzzy
-#| msgid "Choose a Password"
 msgid "Good password"
-msgstr "パスワードを入力"
+msgstr "よいパスワード"
 
 #: src/Views/AccountView.vala:239
-#, fuzzy
-#| msgid "Choose a Password"
 msgid "Great password"
-msgstr "パスワードを入力"
+msgstr "強力なパスワード"
 
 #: src/Views/AccountView.vala:260
 msgid "Passwords do not match"
 msgstr "パスワードが一致しません"
 
 #: src/Views/AccountView.vala:266
-#, fuzzy
-#| msgid "Passwords do not match"
 msgid "Passwords match"
-msgstr "パスワードが一致しません"
+msgstr "パスワードが一致します"
 
 #: src/Views/AccountView.vala:301
 msgid "The chosen username is already taken"
