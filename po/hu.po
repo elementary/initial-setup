@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 10:29+0000\n"
-"PO-Revision-Date: 2025-05-24 12:04+0000\n"
+"PO-Revision-Date: 2025-09-12 11:55+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementaryos.org/projects/installer/"
 "initial-setup/hu/>\n"
@@ -76,29 +76,23 @@ msgstr "Beállítás befejezése"
 
 #: src/Views/AccountView.vala:235
 msgid "Acceptable password"
-msgstr ""
+msgstr "Elfogadható jelszó"
 
 #: src/Views/AccountView.vala:237
-#, fuzzy
-#| msgid "Choose a Password"
 msgid "Good password"
-msgstr "Válasszon egy jelszót"
+msgstr "Jó jelszó"
 
 #: src/Views/AccountView.vala:239
-#, fuzzy
-#| msgid "Choose a Password"
 msgid "Great password"
-msgstr "Válasszon egy jelszót"
+msgstr "Nagyszerű jelszó"
 
 #: src/Views/AccountView.vala:260
 msgid "Passwords do not match"
 msgstr "A jelszavak nem egyeznek"
 
 #: src/Views/AccountView.vala:266
-#, fuzzy
-#| msgid "Passwords do not match"
 msgid "Passwords match"
-msgstr "A jelszavak nem egyeznek"
+msgstr "A jelszavak egyeznek"
 
 #: src/Views/AccountView.vala:301
 msgid "The chosen username is already taken"
