@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 10:29+0000\n"
-"PO-Revision-Date: 2023-01-03 12:25+0000\n"
+"PO-Revision-Date: 2025-09-29 18:55+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
-"Language-Team: Finnish <https://l10n.elementary.io/projects/installer/"
+"Language-Team: Finnish <https://l10n.elementaryos.org/projects/installer/"
 "initial-setup/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:40+0000\n"
 
 #: src/Application.vala:39
@@ -75,44 +75,35 @@ msgstr "Viimeistele määritykset"
 
 #: src/Views/AccountView.vala:235
 msgid "Acceptable password"
-msgstr ""
+msgstr "Hyväksyttävä salasana"
 
 #: src/Views/AccountView.vala:237
-#, fuzzy
-#| msgid "Choose a Password"
 msgid "Good password"
-msgstr "Valitse salasana"
+msgstr "Hyvä salasana"
 
 #: src/Views/AccountView.vala:239
-#, fuzzy
-#| msgid "Choose a Password"
 msgid "Great password"
-msgstr "Valitse salasana"
+msgstr "Erinomainen salasana"
 
 #: src/Views/AccountView.vala:260
 msgid "Passwords do not match"
 msgstr "Salasanat eivät täsmää"
 
 #: src/Views/AccountView.vala:266
-#, fuzzy
-#| msgid "Passwords do not match"
 msgid "Passwords match"
-msgstr "Salasanat eivät täsmää"
+msgstr "Salasanat täsmäävät"
 
 #: src/Views/AccountView.vala:301
 msgid "The chosen username is already taken"
 msgstr "Valittu käyttäjätunnus on jo käytössä"
 
 #: src/Views/AccountView.vala:303
-#, fuzzy
-#| msgid ""
-#| "A username must only contain lowercase letters and numbers, without spaces"
 msgid ""
 "A username must only contain lowercase letters, numbers, hyphens, and "
 "underscores, without spaces"
 msgstr ""
-"Käyttäjätunnus voi sisältää vain pieniä kirjaimia ja numeroita ilman "
-"välilyöntejä"
+"Käyttäjätunnus voi sisältää vain pieniä kirjaimia, numeroita, tavuviivoja, "
+"alaviivoja, ilman välilyöntejä"
 
 #: src/Views/AccountView.vala:368
 #, c-format
