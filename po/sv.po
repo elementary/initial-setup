@@ -3,22 +3,21 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 10:29+0000\n"
-"PO-Revision-Date: 2018-03-20 00:11+0000\n"
-"Last-Translator: Smalbenet <smalbenet@gmail.com>\n"
-"Language-Team: Swedish <https://weblate.elementary.io/projects/installer/"
+"PO-Revision-Date: 2025-10-22 08:07+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <https://l10n.elementaryos.org/projects/installer/"
 "initial-setup/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
 
 #: src/Application.vala:39
-#, fuzzy
 msgid "Create a User"
-msgstr "Skapa ett konto"
+msgstr "Skapa en användare"
 
 #: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:172
 #, c-format
@@ -51,18 +50,20 @@ msgstr "Bekräfta lösenord"
 
 #: src/Views/AccountView.vala:122
 msgid "Device name"
-msgstr ""
+msgstr "Enhetsnamn"
 
 #: src/Views/AccountView.vala:125
 msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
+"Synlig för andra enheter vid delning, t.ex. med Bluetooth eller via "
+"nätverket."
 
 #: src/Views/AccountView.vala:135
 #, c-format
 msgid "Unable to setup Hostname interface: %s"
-msgstr ""
+msgstr "Det går inte att konfigurera Hostname-gränssnittet: %s"
 
 #: src/Views/AccountView.vala:166 src/Views/KeyboardLayoutView.vala:40
 #: src/Views/NetworkView.vala:68
@@ -75,78 +76,71 @@ msgstr "Slutför installation"
 
 #: src/Views/AccountView.vala:235
 msgid "Acceptable password"
-msgstr ""
+msgstr "Acceptabelt lösenord"
 
 #: src/Views/AccountView.vala:237
-#, fuzzy
-#| msgid "Choose a Password"
 msgid "Good password"
-msgstr "Välj ett lösenord"
+msgstr "Bra lösenord"
 
 #: src/Views/AccountView.vala:239
-#, fuzzy
-#| msgid "Choose a Password"
 msgid "Great password"
-msgstr "Välj ett lösenord"
+msgstr "Bra lösenord"
 
 #: src/Views/AccountView.vala:260
 msgid "Passwords do not match"
 msgstr "Lösenorden stämmer inte överens med varandra"
 
 #: src/Views/AccountView.vala:266
-#, fuzzy
-#| msgid "Passwords do not match"
 msgid "Passwords match"
-msgstr "Lösenorden stämmer inte överens med varandra"
+msgstr "Lösenorden stämmer överens"
 
 #: src/Views/AccountView.vala:301
-#, fuzzy
 msgid "The chosen username is already taken"
-msgstr "Användarnamnet används redan"
+msgstr "Det valda användarnamnet är redan upptaget"
 
 #: src/Views/AccountView.vala:303
-#, fuzzy
 msgid ""
 "A username must only contain lowercase letters, numbers, hyphens, and "
 "underscores, without spaces"
 msgstr ""
-"Användarnamnet kan bara innehålla små bokstäver och siffror, utan mellanslag"
+"Ett användarnamn får endast innehålla gemener, siffror, bindestreck och "
+"understreck, utan mellanslag"
 
 #: src/Views/AccountView.vala:368
 #, c-format
 msgid "Creating an account for “%s” failed"
-msgstr ""
+msgstr "Det gick inte att skapa ett konto för \"%s\""
 
 #: src/Views/AccountView.vala:375
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
-msgstr ""
+msgstr "Det gick inte att få tillstånd att skapa ett konto för \"%s\""
 
 #: src/Views/AccountView.vala:390
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
-msgstr ""
+msgstr "Kunde inte få tillstånd att namnge den här enheten \"%s\""
 
 #: src/Views/AccountView.vala:394
 #, c-format
 msgid "Unable to name this device “%s”"
-msgstr ""
+msgstr "Det går inte att namnge den här enheten \"%s\""
 
 #: src/Views/AccountView.vala:445
 msgid "Initial Setup could not set your hostname."
-msgstr ""
+msgstr "Initial Setup kunde inte ställa in ditt värdnamn."
 
 #: src/Views/AccountView.vala:464
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
 msgstr ""
+"Den initiala installationen kunde inte skapa detta konto. Utan det kommer du "
+"inte att kunna logga in och kan behöva installera om operativsystemet."
 
 #: src/Views/KeyboardLayoutView.vala:15
-#, fuzzy
-#| msgid "Keyboard Layout"
 msgid "Select Keyboard Layout"
-msgstr "Tangentbordsuppsättning"
+msgstr "Välj tangentbordslayout"
 
 #: src/Views/KeyboardLayoutView.vala:25
 msgid "Type to test your layout"
@@ -171,31 +165,35 @@ msgstr "Språk"
 
 #: src/Views/LanguageView.vala:246
 msgid "Use the right mouse button for primary click?"
-msgstr ""
+msgstr "Använda höger musknapp för primärt klick?"
 
 #: src/Views/LanguageView.vala:247
 msgid ""
 "The right mouse button was used where a primary click was expected. You can "
 "choose to always use the right mouse button for primary click."
 msgstr ""
+"Höger musknapp användes där ett primärt klick förväntades. Du kan välja att "
+"alltid använda höger musknapp för primärt klick."
 
 #: src/Views/LanguageView.vala:248 src/Views/LanguageView.vala:255
 msgid "Right-Click as Primary"
-msgstr ""
+msgstr "Högerklicka som primär"
 
 #: src/Views/LanguageView.vala:249 src/Views/LanguageView.vala:254
 msgid "Left-Click as Primary"
-msgstr ""
+msgstr "Vänsterklicka som primär"
 
 #: src/Views/LanguageView.vala:252
 msgid "Use the left mouse button for primary click?"
-msgstr ""
+msgstr "Använd vänster musknapp för primärt klick?"
 
 #: src/Views/LanguageView.vala:253
 msgid ""
 "The left mouse button was used where a primary click was expected. You can "
 "choose to always use the left mouse button for primary click."
 msgstr ""
+"Vänster musknapp användes där ett primärt klick förväntades. Du kan välja "
+"att alltid använda vänster musknapp för primärt klick."
 
 #: src/Views/LanguageView.vala:323
 msgid "Select a Language"
@@ -207,31 +205,35 @@ msgstr "Nuvarande aktivt språk"
 
 #: src/Views/NetworkView.vala:30
 msgid "Connect Network"
-msgstr ""
+msgstr "Anslut nätverk"
 
 #: src/Views/NetworkView.vala:34
 msgid ""
 "An Internet connection is required to receive updates, install new apps, and "
 "connect to online services"
 msgstr ""
+"En internetanslutning krävs för att ta emot uppdateringar, installera nya "
+"appar och ansluta till onlinetjänster"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:44
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
 msgstr ""
+"Välj ett trådlöst nätverk i närheten från nätverksindikatorn längst upp till "
+"höger."
 
 #: src/Views/NetworkView.vala:50
 msgid "Connect a network cable"
-msgstr ""
+msgstr "Anslut en nätverkskabel"
 
 #: src/Views/NetworkView.vala:72
 msgid "Skip"
-msgstr ""
+msgstr "Hoppa över"
 
 #: src/Views/NetworkView.vala:88
 msgid "Next"
-msgstr ""
+msgstr "Nästa"
 
 #~ msgid "Cancel Installation"
 #~ msgstr "Avbryt installation"
