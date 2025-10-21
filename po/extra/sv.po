@@ -8,88 +8,90 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 10:29+0000\n"
-"PO-Revision-Date: 2019-09-07 18:22+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
-"Language-Team: Swedish <https://l10n.elementary.io/projects/installer/"
+"PO-Revision-Date: 2025-10-22 08:07+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <https://l10n.elementaryos.org/projects/installer/"
 "initial-setup-extra/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2016-09-27 06:42+0000\n"
 
 #: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
 msgid "Set up elementary OS"
-msgstr ""
+msgstr "Konfigurera elementärt operativsystem"
 
 #: data/initial-setup.desktop.in:4
 msgid "Set up the system"
-msgstr ""
+msgstr "Ställ in systemet"
 
 #: data/initial-setup.metainfo.xml.in:10
 msgid "Initial Setup"
-msgstr ""
+msgstr "Initial konfiguration"
 
 #: data/initial-setup.metainfo.xml.in:13
 msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
 msgstr ""
+"Hjälper till med viktiga uppgifter innan en ny installation kan användas, "
+"som att välja språk och skapa ett användarkonto."
 
 #: data/initial-setup.metainfo.xml.in:41
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:61
 #: data/initial-setup.metainfo.xml.in:75 data/initial-setup.metainfo.xml.in:85
 #: data/initial-setup.metainfo.xml.in:98 data/initial-setup.metainfo.xml.in:107
 msgid "Improvements:"
-msgstr ""
+msgstr "Förbättringar:"
 
 #: data/initial-setup.metainfo.xml.in:51 data/initial-setup.metainfo.xml.in:65
 #: data/initial-setup.metainfo.xml.in:78 data/initial-setup.metainfo.xml.in:91
 #: data/initial-setup.metainfo.xml.in:100
 #: data/initial-setup.metainfo.xml.in:111
 msgid "Updated translations"
-msgstr ""
+msgstr "Uppdaterade översättningar"
 
 #: data/initial-setup.metainfo.xml.in:63
 msgid "Improve screen reader labels for entries, pages, and buttons"
-msgstr ""
+msgstr "Förbättra etiketter för skärmläsare för poster, sidor och knappar"
 
 #: data/initial-setup.metainfo.xml.in:64
 msgid "Improve keyboard navigation"
-msgstr ""
+msgstr "Förbättra navigering med tangentbordet"
 
 #: data/initial-setup.metainfo.xml.in:77
 msgid "Automatically prompt for screen reader after a timeout"
-msgstr ""
+msgstr "Automatisk uppmaning till skärmläsare efter en timeout"
 
 #: data/initial-setup.metainfo.xml.in:87
 msgid "Use larger icons in views"
-msgstr ""
+msgstr "Använd större ikoner i vyerna"
 
 #: data/initial-setup.metainfo.xml.in:88
 msgid "Make window resizable"
-msgstr ""
+msgstr "Gör fönstret skalbart"
 
 #: data/initial-setup.metainfo.xml.in:89
 msgid "Show keyboard layouts in a separate window"
-msgstr ""
+msgstr "Visa tangentbordslayouter i ett separat fönster"
 
 #: data/initial-setup.metainfo.xml.in:90
 msgid "Allow hyphens in device names"
-msgstr ""
+msgstr "Tillåt bindestreck i enhetsnamn"
 
 #: data/initial-setup.metainfo.xml.in:109
 msgid "Offer to switch to right-click primary mouse button"
-msgstr ""
+msgstr "Erbjudande att byta till högerklick på primär musknapp"
 
 #: data/initial-setup.metainfo.xml.in:110
 msgid "Suggest connecting to a network"
-msgstr ""
+msgstr "Föreslå anslutning till ett nätverk"
 
 #~ msgid "system-os-installer"
 #~ msgstr "system-os-installer"
