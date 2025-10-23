@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 10:29+0000\n"
-"PO-Revision-Date: 2025-10-22 08:07+0000\n"
+"PO-Revision-Date: 2025-10-23 09:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/installer/"
 "initial-setup/sv/>\n"
@@ -34,7 +34,7 @@ msgstr "Skapa ett konto"
 
 #: src/Views/AccountView.vala:69
 msgid "Full Name"
-msgstr "Fullständiga namn"
+msgstr "Fullständigt namn"
 
 #: src/Views/AccountView.vala:75
 msgid "Username"
@@ -72,7 +72,7 @@ msgstr "Tillbaka"
 
 #: src/Views/AccountView.vala:170
 msgid "Finish Setup"
-msgstr "Slutför installation"
+msgstr "Slutför konfiguration"
 
 #: src/Views/AccountView.vala:235
 msgid "Acceptable password"
@@ -84,7 +84,7 @@ msgstr "Bra lösenord"
 
 #: src/Views/AccountView.vala:239
 msgid "Great password"
-msgstr "Bra lösenord"
+msgstr "Mycket bra lösenord"
 
 #: src/Views/AccountView.vala:260
 msgid "Passwords do not match"
@@ -114,12 +114,12 @@ msgstr "Det gick inte att skapa ett konto för \"%s\""
 #: src/Views/AccountView.vala:375
 #, c-format
 msgid "Couldn't get permission to create an account for “%s”"
-msgstr "Det gick inte att få tillstånd att skapa ett konto för \"%s\""
+msgstr "Det gick inte att få behörighet att skapa ett konto för \"%s\""
 
 #: src/Views/AccountView.vala:390
 #, c-format
 msgid "Couldn't get permission to name this device “%s”"
-msgstr "Kunde inte få tillstånd att namnge den här enheten \"%s\""
+msgstr "Kunde inte få behörighet att namnge den här enheten \"%s\""
 
 #: src/Views/AccountView.vala:394
 #, c-format
@@ -128,15 +128,15 @@ msgstr "Det går inte att namnge den här enheten \"%s\""
 
 #: src/Views/AccountView.vala:445
 msgid "Initial Setup could not set your hostname."
-msgstr "Initial Setup kunde inte ställa in ditt värdnamn."
+msgstr "Initial konfiguration kunde inte ställa in ditt värdnamn."
 
 #: src/Views/AccountView.vala:464
 msgid ""
 "Initial Setup could not create this account. Without it, you will not be "
 "able to log in and may need to reinstall the OS."
 msgstr ""
-"Den initiala installationen kunde inte skapa detta konto. Utan det kommer du "
-"inte att kunna logga in och kan behöva installera om operativsystemet."
+"Initial konfiguration kunde inte skapa detta konto. Utan det kommer du inte "
+"att kunna logga in och kan behöva installera om operativsystemet."
 
 #: src/Views/KeyboardLayoutView.vala:15
 msgid "Select Keyboard Layout"
@@ -144,11 +144,11 @@ msgstr "Välj tangentbordslayout"
 
 #: src/Views/KeyboardLayoutView.vala:25
 msgid "Type to test your layout"
-msgstr "Skriv för att kontrollera din uppsättning"
+msgstr "Skriv för att testa din layout"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Show keyboard layout"
-msgstr "Visa tangentbordsuppsättning"
+msgstr "Visa tangentbordslayout"
 
 #: src/Views/KeyboardLayoutView.vala:44 src/Views/LanguageView.vala:104
 #: src/Views/LanguageView.vala:179
@@ -213,7 +213,7 @@ msgid ""
 "connect to online services"
 msgstr ""
 "En internetanslutning krävs för att ta emot uppdateringar, installera nya "
-"appar och ansluta till onlinetjänster"
+"appar och ansluta till nättjänster"
 
 #. /Translators: for RTL languages, the UI is flipped
 #: src/Views/NetworkView.vala:44
