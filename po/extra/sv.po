@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 10:29+0000\n"
-"PO-Revision-Date: 2025-10-22 08:07+0000\n"
+"PO-Revision-Date: 2025-10-23 09:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/installer/"
 "initial-setup-extra/sv/>\n"
@@ -22,11 +22,11 @@ msgstr ""
 
 #: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
 msgid "Set up elementary OS"
-msgstr "Konfigurera elementärt operativsystem"
+msgstr "Konfigurera elementary OS"
 
 #: data/initial-setup.desktop.in:4
 msgid "Set up the system"
-msgstr "Ställ in systemet"
+msgstr "Konfigurera systemet"
 
 #: data/initial-setup.metainfo.xml.in:10
 msgid "Initial Setup"
@@ -67,7 +67,7 @@ msgstr "Förbättra navigering med tangentbordet"
 
 #: data/initial-setup.metainfo.xml.in:77
 msgid "Automatically prompt for screen reader after a timeout"
-msgstr "Automatisk uppmaning till skärmläsare efter en timeout"
+msgstr "Automatisk uppmaning till skärmläsare efter en tidsgräns"
 
 #: data/initial-setup.metainfo.xml.in:87
 msgid "Use larger icons in views"
@@ -75,7 +75,7 @@ msgstr "Använd större ikoner i vyerna"
 
 #: data/initial-setup.metainfo.xml.in:88
 msgid "Make window resizable"
-msgstr "Gör fönstret skalbart"
+msgstr "Gör fönster möjliga att storleksändra"
 
 #: data/initial-setup.metainfo.xml.in:89
 msgid "Show keyboard layouts in a separate window"
@@ -87,7 +87,7 @@ msgstr "Tillåt bindestreck i enhetsnamn"
 
 #: data/initial-setup.metainfo.xml.in:109
 msgid "Offer to switch to right-click primary mouse button"
-msgstr "Erbjudande att byta till högerklick på primär musknapp"
+msgstr "Möjligt att byta till högerklick på primär musknapp"
 
 #: data/initial-setup.metainfo.xml.in:110
 msgid "Suggest connecting to a network"
