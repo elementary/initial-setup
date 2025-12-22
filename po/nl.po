@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 10:29+0000\n"
-"PO-Revision-Date: 2025-12-01 09:55+0000\n"
-"Last-Translator: Bas Ernst <bas@ernstgenova.it>\n"
+"PO-Revision-Date: 2025-12-23 08:55+0000\n"
+"Last-Translator: Bas Ernst <50556177+ErnstBas@users.noreply.github.com>\n"
 "Language-Team: Dutch <https://l10n.elementaryos.org/projects/installer/"
 "initial-setup/nl/>\n"
 "Language: nl\n"
@@ -76,7 +76,7 @@ msgstr "Installatie voltooien"
 
 #: src/Views/AccountView.vala:235
 msgid "Acceptable password"
-msgstr "Aanvaardbaar wachtwoord"
+msgstr "Acceptabel wachtwoord"
 
 #: src/Views/AccountView.vala:237
 msgid "Good password"
