@@ -38,14 +38,13 @@ public class VariantWidget : Gtk.Frame {
             vexpand = true
         };
 
-        var back_button = new Gtk.Button.with_label (main_page.title) {
+        var back_button = new Granite.BackButton (main_page.title) {
             halign = START,
             margin_top = 6,
             margin_end = 6,
             margin_bottom = 6,
             margin_start = 6
         };
-        back_button.add_css_class (Granite.STYLE_CLASS_BACK_BUTTON);
 
         var variant_title = new Gtk.Label ("") {
             hexpand = true,
