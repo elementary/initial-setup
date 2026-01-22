@@ -28,8 +28,9 @@ public class VariantWidget : Gtk.Frame {
 
         var main_page = new Adw.NavigationPage (main_scrolled, main_title);
 
-        variant_listbox = new Gtk.ListBox ();
-        variant_listbox.activate_on_single_click = false;
+        variant_listbox = new Gtk.ListBox () {
+            activate_on_single_click = false
+        };
 
         var variant_scrolled = new Gtk.ScrolledWindow () {
             child = variant_listbox,
