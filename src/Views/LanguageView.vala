@@ -64,7 +64,7 @@ public class Installer.LanguageView : AbstractInstallerView {
             }
         });
 
-        lang_variant_widget = new VariantWidget ();
+        lang_variant_widget = new VariantWidget (_("Languages"));
 
         lang_variant_widget.variant_listbox.set_sort_func ((Gtk.ListBoxSortFunc) CountryRow.compare);
 
@@ -208,7 +208,7 @@ public class Installer.LanguageView : AbstractInstallerView {
 
             Environment.set_variable ("LANGUAGE", lang_code, true);
             Intl.textdomain (Build.GETTEXT_PACKAGE);
-            lang_variant_widget.show_variants (_("Languages"), "<b>%s</b>".printf (lang_entry.name));
+            lang_variant_widget.show_variants (lang_entry.name);
     }
 
     private void on_next_button_clicked () {

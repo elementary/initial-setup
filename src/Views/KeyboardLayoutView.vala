@@ -16,7 +16,7 @@ public class KeyboardLayoutView : AbstractInstallerView {
 
         var title_label = new Gtk.Label (title);
 
-        input_variant_widget = new VariantWidget ();
+        input_variant_widget = new VariantWidget (_("Input Language"));
 
         title_label.mnemonic_widget = input_variant_widget.main_listbox;
 
@@ -110,7 +110,7 @@ public class KeyboardLayoutView : AbstractInstallerView {
             input_variant_widget.variant_listbox.bind_model (layout.get_variants (), (variant) => { return new VariantRow (variant as InitialSetup.KeyboardVariant); });
             input_variant_widget.variant_listbox.select_row (input_variant_widget.variant_listbox.get_row_at_index (0));
 
-            input_variant_widget.show_variants (_("Input Language"), "<b>%s</b>".printf (layout.display_name));
+            input_variant_widget.show_variants (layout.display_name);
         });
 
         input_variant_widget.main_listbox.row_selected.connect ((row) => {
