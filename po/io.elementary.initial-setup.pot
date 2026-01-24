@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.initial-setup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 10:29+0000\n"
+"POT-Creation-Date: 2026-01-24 22:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,6 +138,10 @@ msgstr ""
 msgid "Select Keyboard Layout"
 msgstr ""
 
+#: src/Views/KeyboardLayoutView.vala:19
+msgid "Input Language"
+msgstr ""
+
 #: src/Views/KeyboardLayoutView.vala:25
 msgid "Type to test your layout"
 msgstr ""
@@ -151,11 +155,7 @@ msgstr ""
 msgid "Select"
 msgstr ""
 
-#: src/Views/KeyboardLayoutView.vala:113
-msgid "Input Language"
-msgstr ""
-
-#: src/Views/LanguageView.vala:211
+#: src/Views/LanguageView.vala:67
 msgid "Languages"
 msgstr ""
 
