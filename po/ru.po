@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 10:29+0000\n"
+"POT-Creation-Date: 2026-01-24 22:32+0000\n"
 "PO-Revision-Date: 2025-08-28 13:09+0000\n"
 "Last-Translator: Leo <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementaryos.org/projects/installer/"
@@ -144,6 +144,10 @@ msgstr ""
 msgid "Select Keyboard Layout"
 msgstr "Выберите раскладку клавиатуры"
 
+#: src/Views/KeyboardLayoutView.vala:19
+msgid "Input Language"
+msgstr "Язык ввода"
+
 #: src/Views/KeyboardLayoutView.vala:25
 msgid "Type to test your layout"
 msgstr "Проверьте вашу раскладку здесь"
@@ -157,11 +161,7 @@ msgstr "Показать раскладку клавиатуры"
 msgid "Select"
 msgstr "Выбрать"
 
-#: src/Views/KeyboardLayoutView.vala:113
-msgid "Input Language"
-msgstr "Язык ввода"
-
-#: src/Views/LanguageView.vala:211
+#: src/Views/LanguageView.vala:67
 msgid "Languages"
 msgstr "Языки"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 10:29+0000\n"
+"POT-Creation-Date: 2026-01-24 22:32+0000\n"
 "PO-Revision-Date: 2025-08-21 13:55+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementaryos.org/projects/installer/"
@@ -143,6 +143,10 @@ msgstr ""
 msgid "Select Keyboard Layout"
 msgstr "Sélectionner la disposition du clavier"
 
+#: src/Views/KeyboardLayoutView.vala:19
+msgid "Input Language"
+msgstr "Langue d'entrée"
+
 #: src/Views/KeyboardLayoutView.vala:25
 msgid "Type to test your layout"
 msgstr "Écrivez pour essayer la disposition du clavier"
@@ -156,11 +160,7 @@ msgstr "Afficher la disposition du clavier"
 msgid "Select"
 msgstr "Sélectionner"
 
-#: src/Views/KeyboardLayoutView.vala:113
-msgid "Input Language"
-msgstr "Langue d'entrée"
-
-#: src/Views/LanguageView.vala:211
+#: src/Views/LanguageView.vala:67
 msgid "Languages"
 msgstr "Langues"
 

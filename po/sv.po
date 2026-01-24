@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 10:29+0000\n"
+"POT-Creation-Date: 2026-01-24 22:32+0000\n"
 "PO-Revision-Date: 2025-10-23 09:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/installer/"
@@ -142,6 +142,10 @@ msgstr ""
 msgid "Select Keyboard Layout"
 msgstr "Välj tangentbordslayout"
 
+#: src/Views/KeyboardLayoutView.vala:19
+msgid "Input Language"
+msgstr "Inmatningsspråk"
+
 #: src/Views/KeyboardLayoutView.vala:25
 msgid "Type to test your layout"
 msgstr "Skriv för att testa din layout"
@@ -155,11 +159,7 @@ msgstr "Visa tangentbordslayout"
 msgid "Select"
 msgstr "Välj"
 
-#: src/Views/KeyboardLayoutView.vala:113
-msgid "Input Language"
-msgstr "Inmatningsspråk"
-
-#: src/Views/LanguageView.vala:211
+#: src/Views/LanguageView.vala:67
 msgid "Languages"
 msgstr "Språk"
 

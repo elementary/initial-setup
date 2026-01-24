@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 10:29+0000\n"
+"POT-Creation-Date: 2026-01-24 22:32+0000\n"
 "PO-Revision-Date: 2016-10-12 01:34+0200\n"
 "Last-Translator: Maxwell Barvian <Unknown>\n"
 "Language-Team: \n"
@@ -136,6 +136,11 @@ msgstr ""
 msgid "Select Keyboard Layout"
 msgstr "Επιλέξτε μια γλώσσα"
 
+#: src/Views/KeyboardLayoutView.vala:19
+#, fuzzy
+msgid "Input Language"
+msgstr "Επιλέξτε μια γλώσσα"
+
 #: src/Views/KeyboardLayoutView.vala:25
 msgid "Type to test your layout"
 msgstr ""
@@ -149,12 +154,7 @@ msgstr ""
 msgid "Select"
 msgstr ""
 
-#: src/Views/KeyboardLayoutView.vala:113
-#, fuzzy
-msgid "Input Language"
-msgstr "Επιλέξτε μια γλώσσα"
-
-#: src/Views/LanguageView.vala:211
+#: src/Views/LanguageView.vala:67
 #, fuzzy
 msgid "Languages"
 msgstr "Επιλέξτε μια γλώσσα"

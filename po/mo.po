@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 10:29+0000\n"
+"POT-Creation-Date: 2026-01-24 22:32+0000\n"
 "PO-Revision-Date: 2018-05-26 10:54+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/installer/"
@@ -146,6 +146,10 @@ msgstr ""
 msgid "Select Keyboard Layout"
 msgstr "Configurarea tastaturii"
 
+#: src/Views/KeyboardLayoutView.vala:19
+msgid "Input Language"
+msgstr "Limba de introducere"
+
 #: src/Views/KeyboardLayoutView.vala:25
 msgid "Type to test your layout"
 msgstr "Tastați pentru a testa aspectul"
@@ -159,11 +163,7 @@ msgstr "Afișați aspectul tastaturii"
 msgid "Select"
 msgstr "Selectați"
 
-#: src/Views/KeyboardLayoutView.vala:113
-msgid "Input Language"
-msgstr "Limba de introducere"
-
-#: src/Views/LanguageView.vala:211
+#: src/Views/LanguageView.vala:67
 msgid "Languages"
 msgstr "Limbi"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 10:29+0000\n"
+"POT-Creation-Date: 2026-01-24 22:32+0000\n"
 "PO-Revision-Date: 2018-04-18 00:05+0000\n"
 "Last-Translator: Alex Skywalker <alexskywalkerbg@gmail.com>\n"
 "Language-Team: Bulgarian <https://weblate.elementary.io/projects/installer/"
@@ -148,6 +148,10 @@ msgstr ""
 msgid "Select Keyboard Layout"
 msgstr "Клавиатурна подредба"
 
+#: src/Views/KeyboardLayoutView.vala:19
+msgid "Input Language"
+msgstr "Език за въвеждане"
+
 #: src/Views/KeyboardLayoutView.vala:25
 msgid "Type to test your layout"
 msgstr "Пишете, за да изпробвате подредбата"
@@ -161,11 +165,7 @@ msgstr "Покажи клавиатурната подредба"
 msgid "Select"
 msgstr "Избери"
 
-#: src/Views/KeyboardLayoutView.vala:113
-msgid "Input Language"
-msgstr "Език за въвеждане"
-
-#: src/Views/LanguageView.vala:211
+#: src/Views/LanguageView.vala:67
 msgid "Languages"
 msgstr "Езици"
 

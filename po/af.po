@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 10:29+0000\n"
+"POT-Creation-Date: 2026-01-24 22:32+0000\n"
 "PO-Revision-Date: 2019-05-01 03:40+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Afrikaans <https://l10n.elementary.io/projects/installer/"
@@ -144,6 +144,11 @@ msgstr ""
 msgid "Select Keyboard Layout"
 msgstr "Kies 'n taal"
 
+#: src/Views/KeyboardLayoutView.vala:19
+#, fuzzy
+msgid "Input Language"
+msgstr "Kies 'n taal"
+
 #: src/Views/KeyboardLayoutView.vala:25
 msgid "Type to test your layout"
 msgstr ""
@@ -157,12 +162,7 @@ msgstr ""
 msgid "Select"
 msgstr ""
 
-#: src/Views/KeyboardLayoutView.vala:113
-#, fuzzy
-msgid "Input Language"
-msgstr "Kies 'n taal"
-
-#: src/Views/LanguageView.vala:211
+#: src/Views/LanguageView.vala:67
 #, fuzzy
 msgid "Languages"
 msgstr "Kies 'n taal"

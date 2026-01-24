@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 10:29+0000\n"
+"POT-Creation-Date: 2026-01-24 22:32+0000\n"
 "PO-Revision-Date: 2017-04-01 19:21+0000\n"
 "Last-Translator: Lawrence Aberba <karabutaworld@gmail.com>\n"
 "Language-Team: ak (generated) <http://weblate.elementary.io/projects/desktop/"
@@ -138,6 +138,11 @@ msgstr ""
 msgid "Select Keyboard Layout"
 msgstr "Paw kasa"
 
+#: src/Views/KeyboardLayoutView.vala:19
+#, fuzzy
+msgid "Input Language"
+msgstr "Paw kasa"
+
 #: src/Views/KeyboardLayoutView.vala:25
 msgid "Type to test your layout"
 msgstr ""
@@ -151,12 +156,7 @@ msgstr ""
 msgid "Select"
 msgstr ""
 
-#: src/Views/KeyboardLayoutView.vala:113
-#, fuzzy
-msgid "Input Language"
-msgstr "Paw kasa"
-
-#: src/Views/LanguageView.vala:211
+#: src/Views/LanguageView.vala:67
 #, fuzzy
 msgid "Languages"
 msgstr "Paw kasa"
