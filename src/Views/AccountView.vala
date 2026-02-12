@@ -349,15 +349,16 @@ public class Installer.AccountView : AbstractInstallerView {
     }
 
     private async Act.User? create_new_user () {
-        Act.User? created_user = null;
         if (permission == null || !permission.allowed) {
             show_account_creation_error (_("Couldn't get permission to create an account for “%s”").printf (username_entry.text));
             return null;
         }
 
+        Act.User? created_user = null;
         try {
             // Sync to avoid https://github.com/elementary/initial-setup/issues/222
             created_user = user_manager.create_user (username_entry.text, realname_entry.text, ADMINISTRATOR);
+            created_user.set_password_mode (REGULAR);
             created_user.set_password (pw_entry.text, "");
 
             return created_user;
