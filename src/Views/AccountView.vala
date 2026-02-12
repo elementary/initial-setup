@@ -356,7 +356,8 @@ public class Installer.AccountView : AbstractInstallerView {
         }
 
         try {
-            created_user = yield user_manager.create_user_async (username_entry.text, realname_entry.text, Act.UserAccountType.ADMINISTRATOR, null);
+            // Sync to avoid https://github.com/elementary/initial-setup/issues/222
+            created_user = user_manager.create_user (username_entry.text, realname_entry.text, Act.UserAccountType.ADMINISTRATOR);
             created_user.set_password (pw_entry.text, "");
 
             return created_user;
