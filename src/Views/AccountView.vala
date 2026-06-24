@@ -343,36 +343,39 @@ public class Installer.AccountView : AbstractInstallerView {
             return;
         }
 
-        created_user.set_password (pw_entry.text, "");
         yield set_accounts_service_settings (created_user);
         yield set_locale (created_user);
         Application.get_default ().quit ();
     }
 
     private async Act.User? create_new_user () {
-        Act.User? created_user = null;
-        if (permission != null && permission.allowed) {
-            try {
-                created_user = yield user_manager.create_user_async (username_entry.text, realname_entry.text, Act.UserAccountType.ADMINISTRATOR, null);
-                return created_user;
-            } catch (Error e) {
-                if (created_user != null) {
-                    try {
-                        yield user_manager.delete_user_async (created_user, true, null);
-                    } catch (Error e) {
-                        critical ("Unable to clean up failed user: %s", e.message);
-                    }
-                }
-
-                show_account_creation_error (
-                    _("Creating an account for “%s” failed").printf (username_entry.text),
-                    e.message
-                );
-
-                return null;
-            }
-        } else {
+        if (permission == null || !permission.allowed) {
             show_account_creation_error (_("Couldn't get permission to create an account for “%s”").printf (username_entry.text));
+            return null;
+        }
+
+        Act.User? created_user = null;
+        try {
+            // Sync to avoid https://github.com/elementary/initial-setup/issues/222
+            created_user = user_manager.create_user (username_entry.text, realname_entry.text, ADMINISTRATOR);
+            created_user.set_password_mode (REGULAR);
+            created_user.set_password (pw_entry.text, "");
+
+            return created_user;
+        } catch (Error e) {
+            if (created_user != null) {
+                try {
+                    yield user_manager.delete_user_async (created_user, true, null);
+                } catch (Error e) {
+                    critical ("Unable to clean up failed user: %s", e.message);
+                }
+            }
+
+            show_account_creation_error (
+                _("Creating an account for “%s” failed").printf (username_entry.text),
+                e.message
+            );
+
             return null;
         }
     }
