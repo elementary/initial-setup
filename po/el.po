@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-24 22:32+0000\n"
-"PO-Revision-Date: 2026-06-28 20:30+0000\n"
+"PO-Revision-Date: 2026-06-29 23:56+0000\n"
 "Last-Translator: Jim Spentzos <jimspentzos2000@gmail.com>\n"
 "Language-Team: Greek <https://l10n.elementaryos.org/projects/installer/"
 "initial-setup/el/>\n"
@@ -30,11 +30,11 @@ msgstr "Προεπιλογή"
 
 #: src/Views/AccountView.vala:58
 msgid "Create an Account"
-msgstr ""
+msgstr "Δημιουργία λογαριασμού"
 
 #: src/Views/AccountView.vala:69
 msgid "Full Name"
-msgstr ""
+msgstr "Ονοματεπώνυμο"
 
 #: src/Views/AccountView.vala:75
 msgid "Username"
@@ -42,15 +42,15 @@ msgstr "Όνομα χρήστη"
 
 #: src/Views/AccountView.vala:90
 msgid "Choose a Password"
-msgstr ""
+msgstr "Επιλέξτε έναν κωδικό πρόσβασης"
 
 #: src/Views/AccountView.vala:109
 msgid "Confirm Password"
-msgstr ""
+msgstr "Επιβεβαίωση κωδικού πρόσβασης"
 
 #: src/Views/AccountView.vala:122
 msgid "Device name"
-msgstr ""
+msgstr "Όνομα συσκευής"
 
 #: src/Views/AccountView.vala:125
 msgid ""
@@ -218,7 +218,7 @@ msgstr ""
 
 #: src/Views/NetworkView.vala:72
 msgid "Skip"
-msgstr ""
+msgstr "Παράλειψη"
 
 #: src/Views/NetworkView.vala:88
 msgid "Next"
