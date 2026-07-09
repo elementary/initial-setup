@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-24 22:32+0000\n"
-"PO-Revision-Date: 2026-06-29 23:56+0000\n"
+"PO-Revision-Date: 2026-07-10 15:01+0000\n"
 "Last-Translator: Jim Spentzos <jimspentzos2000@gmail.com>\n"
 "Language-Team: Greek <https://l10n.elementaryos.org/projects/installer/"
 "initial-setup/el/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/Application.vala:39
 msgid "Create a User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 #: src/Helpers/LocaleHelper.vala:132 src/Views/KeyboardLayoutView.vala:172
 #, c-format
@@ -57,6 +57,7 @@ msgid ""
 "Visible to other devices when sharing, e.g. with Bluetooth or over the "
 "network."
 msgstr ""
+"Ορατό σε άλλες συσκευές κατά την κοινοποίηση, π.χ. μέσω Bluetooth ή δικτύου."
 
 #: src/Views/AccountView.vala:135
 #, c-format
@@ -70,31 +71,31 @@ msgstr "Πίσω"
 
 #: src/Views/AccountView.vala:170
 msgid "Finish Setup"
-msgstr ""
+msgstr "Ολοκλήρωση ρύθμισης"
 
 #: src/Views/AccountView.vala:235
 msgid "Acceptable password"
-msgstr ""
+msgstr "Αποδεκτός κωδικός πρόσβασης"
 
 #: src/Views/AccountView.vala:237
 msgid "Good password"
-msgstr ""
+msgstr "Καλός κωδικός πρόσβασης"
 
 #: src/Views/AccountView.vala:239
 msgid "Great password"
-msgstr ""
+msgstr "Εξαιρετικός κωδικός πρόσβασης"
 
 #: src/Views/AccountView.vala:260
 msgid "Passwords do not match"
-msgstr ""
+msgstr "Οι κωδικοί πρόσβασης δεν ταυτίζονται"
 
 #: src/Views/AccountView.vala:266
 msgid "Passwords match"
-msgstr ""
+msgstr "Οι κωδικοί πρόσβασης ταυτίζονται"
 
 #: src/Views/AccountView.vala:301
 msgid "The chosen username is already taken"
-msgstr ""
+msgstr "Το επιλεγμένο όνομα χρήστη χρησιμοποιείται ήδη"
 
 #: src/Views/AccountView.vala:303
 msgid ""
@@ -133,23 +134,20 @@ msgid ""
 msgstr ""
 
 #: src/Views/KeyboardLayoutView.vala:15
-#, fuzzy
-#| msgid "Select a Language"
 msgid "Select Keyboard Layout"
-msgstr "Επιλέξτε μια γλώσσα"
+msgstr "Επιλογή διάταξης πληκτρολογίου"
 
 #: src/Views/KeyboardLayoutView.vala:19
-#, fuzzy
 msgid "Input Language"
-msgstr "Επιλέξτε μια γλώσσα"
+msgstr "Γλώσσα εισόδου"
 
 #: src/Views/KeyboardLayoutView.vala:25
 msgid "Type to test your layout"
-msgstr ""
+msgstr "Πληκτρολογήστε για να δοκιμάσετε τη διάταξή σας"
 
 #: src/Views/KeyboardLayoutView.vala:28
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "Εμφάνιση διάταξης πληκτρολογίου"
 
 #: src/Views/KeyboardLayoutView.vala:44 src/Views/LanguageView.vala:104
 #: src/Views/LanguageView.vala:179
@@ -172,11 +170,11 @@ msgstr ""
 
 #: src/Views/LanguageView.vala:248 src/Views/LanguageView.vala:255
 msgid "Right-Click as Primary"
-msgstr ""
+msgstr "Δεξί κλικ ως κύριο"
 
 #: src/Views/LanguageView.vala:249 src/Views/LanguageView.vala:254
 msgid "Left-Click as Primary"
-msgstr ""
+msgstr "Αριστερό κλικ ως κύριο"
 
 #: src/Views/LanguageView.vala:252
 msgid "Use the left mouse button for primary click?"
@@ -194,11 +192,11 @@ msgstr "Επιλέξτε μια γλώσσα"
 
 #: src/Views/LanguageView.vala:348 src/Views/LanguageView.vala:408
 msgid "Currently active language"
-msgstr ""
+msgstr "Τρέχουσα ενεργή γλώσσα"
 
 #: src/Views/NetworkView.vala:30
 msgid "Connect Network"
-msgstr ""
+msgstr "Σύνδεση δικτύου"
 
 #: src/Views/NetworkView.vala:34
 msgid ""
@@ -211,10 +209,12 @@ msgstr ""
 msgid ""
 "Choose a nearby wireless network from the network indicator in the top right."
 msgstr ""
+"Επιλέξτε ένα κοντινό ασύρματο δίκτυο από την ένδειξη δικτύου στην πάνω δεξιά "
+"γωνία."
 
 #: src/Views/NetworkView.vala:50
 msgid "Connect a network cable"
-msgstr ""
+msgstr "Συνδέστε ένα καλώδιο δικτύου"
 
 #: src/Views/NetworkView.vala:72
 msgid "Skip"
