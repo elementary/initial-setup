@@ -2,87 +2,89 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-24 22:32+0000\n"
-"PO-Revision-Date: 2019-09-07 18:22+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
-"Language-Team: Kurdish <https://l10n.elementary.io/projects/installer/"
+"PO-Revision-Date: 2026-08-17 10:01+0000\n"
+"Last-Translator: Cyax <fakecyax@gmail.com>\n"
+"Language-Team: Kurdish <https://l10n.elementaryos.org/projects/installer/"
 "initial-setup-extra/ku/>\n"
 "Language: ku\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 2026.5\n"
 
 #: data/initial-setup.desktop.in:3 data/initial-setup.metainfo.xml.in:11
 msgid "Set up elementary OS"
-msgstr ""
+msgstr "elementary OS saz bike"
 
 #: data/initial-setup.desktop.in:4
 msgid "Set up the system"
-msgstr ""
+msgstr "Pergalê saz bike"
 
 #: data/initial-setup.metainfo.xml.in:10
 msgid "Initial Setup"
-msgstr ""
+msgstr "Sazkirina destpêkê"
 
 #: data/initial-setup.metainfo.xml.in:13
 msgid ""
 "Assists with essential tasks before a fresh install is usable, like choosing "
 "a language and creating a user account."
 msgstr ""
+"Berî ku sazkirinek nû were bikaranîn, bi karên bingehîn re dibe alîkar, wekî "
+"hilbijartina zimanekî û afirandina jimarê bikarhênerekî."
 
 #: data/initial-setup.metainfo.xml.in:41
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/initial-setup.metainfo.xml.in:49 data/initial-setup.metainfo.xml.in:61
 #: data/initial-setup.metainfo.xml.in:75 data/initial-setup.metainfo.xml.in:85
 #: data/initial-setup.metainfo.xml.in:98 data/initial-setup.metainfo.xml.in:107
 msgid "Improvements:"
-msgstr ""
+msgstr "Pêşxistin:"
 
 #: data/initial-setup.metainfo.xml.in:51 data/initial-setup.metainfo.xml.in:65
 #: data/initial-setup.metainfo.xml.in:78 data/initial-setup.metainfo.xml.in:91
 #: data/initial-setup.metainfo.xml.in:100
 #: data/initial-setup.metainfo.xml.in:111
 msgid "Updated translations"
-msgstr ""
+msgstr "Wergerên rojanekirî"
 
 #: data/initial-setup.metainfo.xml.in:63
 msgid "Improve screen reader labels for entries, pages, and buttons"
-msgstr ""
+msgstr "Ji bo têketin, rûpel û bişkoka etîketên xwînera dîmenderê baştir bike"
 
 #: data/initial-setup.metainfo.xml.in:64
 msgid "Improve keyboard navigation"
-msgstr ""
+msgstr "Tevgera kilîtdankê çêtir bike"
 
 #: data/initial-setup.metainfo.xml.in:77
 msgid "Automatically prompt for screen reader after a timeout"
-msgstr ""
+msgstr "Piştî demboriyê, xwînerê dîmenderê xweber pirs bike"
 
 #: data/initial-setup.metainfo.xml.in:87
 msgid "Use larger icons in views"
-msgstr ""
+msgstr "Di nîşandanê de îkonên mezintir bi kar bîne"
 
 #: data/initial-setup.metainfo.xml.in:88
 msgid "Make window resizable"
-msgstr ""
+msgstr "Mezinahiya çarçoveyê guherbar bike"
 
 #: data/initial-setup.metainfo.xml.in:89
 msgid "Show keyboard layouts in a separate window"
-msgstr ""
+msgstr "Awaya kilîtdankê di çarçovyekê cûda de nîşan bide"
 
 #: data/initial-setup.metainfo.xml.in:90
 msgid "Allow hyphens in device names"
-msgstr ""
+msgstr "Mafê bide daçekan di navên amûran de"
 
 #: data/initial-setup.metainfo.xml.in:109
 msgid "Offer to switch to right-click primary mouse button"
-msgstr ""
+msgstr "Guhertina bişkoka bingehîn a rast-tikandin pêşniyar bike"
 
 #: data/initial-setup.metainfo.xml.in:110
 msgid "Suggest connecting to a network"
-msgstr ""
+msgstr "Girdanê bo torê pêşniyar bike"
 
 #~ msgid "system-os-installer"
 #~ msgstr "system-os-installer"
