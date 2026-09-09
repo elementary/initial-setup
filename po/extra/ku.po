@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-24 22:32+0000\n"
-"PO-Revision-Date: 2026-08-17 10:01+0000\n"
+"PO-Revision-Date: 2026-09-10 04:38+0000\n"
 "Last-Translator: Cyax <fakecyax@gmail.com>\n"
 "Language-Team: Kurdish <https://l10n.elementaryos.org/projects/installer/"
 "initial-setup-extra/ku/>\n"
@@ -41,7 +41,7 @@ msgstr "elementary, Inc."
 #: data/initial-setup.metainfo.xml.in:75 data/initial-setup.metainfo.xml.in:85
 #: data/initial-setup.metainfo.xml.in:98 data/initial-setup.metainfo.xml.in:107
 msgid "Improvements:"
-msgstr "Pêşxistin:"
+msgstr "Pêşvexistin:"
 
 #: data/initial-setup.metainfo.xml.in:51 data/initial-setup.metainfo.xml.in:65
 #: data/initial-setup.metainfo.xml.in:78 data/initial-setup.metainfo.xml.in:91
